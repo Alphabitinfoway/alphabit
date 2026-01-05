@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   document.getElementById("year").textContent = new Date().getFullYear();
-
 
   // ======== CAROUSEL ========
   let track = document.querySelector(".carousel");
 
   if (track) {
-
     function updatePositions() {
       let cards = document.querySelectorAll(".carousel .card");
       if (cards.length < 3) return;
@@ -23,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updatePositions();
     setInterval(slide, 2500);
   }
-
 
   // ======== PROCESS STEPS ========
   const steps = document.querySelectorAll(".step");
@@ -63,14 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
     steps.forEach((step) => observer.observe(step));
   }
 
-
   // ======== PRESENCE SLIDER ========
   if (window.innerWidth <= 768) {
     const container = document.querySelector(".Presence-container");
     const cards = Array.from(document.querySelectorAll(".Presence-card"));
 
     if (container && cards.length > 0) {
-
       cards.forEach((card) => {
         const clone = card.cloneNode(true);
         container.appendChild(clone);
@@ -97,7 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-
   // ======== COUNTING ========
   const counters = document.querySelectorAll(".counting-number");
   const section = document.querySelector(".counting-section");
@@ -106,16 +99,17 @@ document.addEventListener("DOMContentLoaded", () => {
   function startCounting() {
     counters.forEach((counter) => {
       const target = +counter.getAttribute("data-target");
+      const suffix = counter.getAttribute("data-suffix") || "";
       let current = 0;
       const speed = target / 200;
 
       const updateCount = () => {
         if (current < target) {
           current += speed;
-          counter.innerText = Math.floor(current) + "+";
+          counter.innerText = Math.floor(current) + suffix;
           requestAnimationFrame(updateCount);
         } else {
-          counter.innerText = target + "+";
+          counter.innerText = target + suffix;
         }
       };
 
@@ -135,9 +129,9 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       { threshold: 0.3 }
     );
+
     observer.observe(section);
   }
-
 
   // ======== EXPLORE BUTTON ========
   const button = document.querySelector(".explore-btn");
@@ -159,9 +153,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
   // ======== SOLUTION SECTION ========
-  const solCards = document.querySelectorAll(".card1, .card2, .card3, .card4, .card5");
+  const solCards = document.querySelectorAll(
+    ".card1, .card2, .card3, .card4, .card5"
+  );
   const solSection = document.querySelector(".solutions-section");
 
   if (solSection && solCards.length > 0) {
@@ -183,7 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
     observerSolution.observe(solSection);
   }
 
-
   // ======== FOOTER SECTION ========
   const footer = document.querySelector(".Footer");
 
@@ -199,64 +193,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observerFooter.observe(footer);
   }
-
 });
-
 
 // our history
 
- const items = document.querySelectorAll('.timeline-item');
+const items = document.querySelectorAll(".timeline-item");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('show');
+        entry.target.classList.add("show");
       }
     });
-  }, {
-    threshold: 0.3
+  },
+  {
+    threshold: 0.3,
+  }
+);
+
+items.forEach((item) => observer.observe(item));
+
+// counting numbers FOR ABOUT PAGE
+
+const counters = document.querySelectorAll(".counting");
+const section = document.querySelector(".aboutpage-container2");
+let started = false;
+
+function startCounting() {
+  counters.forEach((counter) => {
+    const target = +counter.getAttribute("data-target");
+    const suffix = counter.getAttribute("data-suffix") || "";
+    let current = 0;
+    const speed = target / 200;
+
+    const updateCount = () => {
+      if (current < target) {
+        current += speed;
+        counter.innerText = Math.floor(current) + suffix;
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.innerText = target + suffix;
+      }
+    };
+
+    updateCount();
   });
+}
 
-  items.forEach(item => observer.observe(item));
-
-
-  // counting numbers FOR ABOUT PAGE
-  
-  const counters = document.querySelectorAll(".counting");
-  const section = document.querySelector(".aboutpage-container2");
-  let started = false;
-
-  function startCounting() {
-    counters.forEach((counter) => {
-      const target = +counter.getAttribute("data-target");
-      let current = 0;
-      const speed = target / 200;
-
-      const updateCount = () => {
-        if (current < target) {
-          current += speed;
-          counter.innerText = Math.floor(current) + "+";
-          requestAnimationFrame(updateCount);
-        } else {
-          counter.innerText = target + "+";
+if (section) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !started) {
+          startCounting();
+          started = true;
         }
-      };
-
-      updateCount();
-    });
-  }
-
-  if (section) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !started) {
-            startCounting();
-            started = true;
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-    observer.observe(section);
-  }
+      });
+    },
+    { threshold: 0.3 }
+  );
+  observer.observe(section);
+}

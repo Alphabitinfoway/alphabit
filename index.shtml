@@ -72,17 +72,17 @@
   <!-- Counting-number Section -->
   <section class="counting-section">
     <div class="counting-item">
-      <h1 class="counting-number" data-target="10">0+</h1>
+      <h1 class="counting-number" data-target="10" data-suffix="+">0+</h1>
       <h6 class="counting-text">YEARS OF EXPERIENCE</h6>
     </div>
 
     <div class="counting-item">
-      <h1 class="counting-number" data-target="100">0+</h1>
+      <h1 class="counting-number" data-target="100" data-suffix="+">0+</h1>
       <h6 class="counting-text">PROJECTS COMPLETED</h6>
     </div>
 
     <div class="counting-item">
-      <h1 class="counting-number" data-target="60">0+</h1>
+      <h1 class="counting-number" data-target="60" data-suffix="K+">0</h1>
       <h6 class="counting-text">PRODUCT USERS</h6>
     </div>
   </section>
@@ -192,10 +192,11 @@
       </div>
       <div class="about-description">
         <p class="description-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          "Small Scale to Large Scale Industrial Solution Provider with AI
+          Automation” Founded in the year 2018, Alphabit Infoway Pvt.Ltd. is a
+          leading AI (Artificial Intelligent) solution provider along with
+          Software Development, Web & Mobile App Development helping small scale
+          to large scale global business to bring AI Automation.
         </p>
       </div>
     </div>
@@ -212,8 +213,8 @@
         </div>
         <div class="explore-text">
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            Connect your Idea, Task and Process to Innovate with Gen-AI and
+            Custom ML Development
           </p>
           <h1 class="explore-count">1.8 <span>x</span></h1>
           <div class="explore-title">Faster Service</div>
