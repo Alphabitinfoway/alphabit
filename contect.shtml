@@ -1,31 +1,42 @@
 <!--#include file="head.shtml" -->
 
 <!--#include file="header.shtml" -->
+<section class="nexa-contact-wrap">
 
-
-<div class="contact-grid">
-  <div class="contact-block hero-text">
-    <p class="greeting">👋 Hello Innovator,</p>
-    <h1>Any questions? simply ask us. this is your home!</h1>
+  <div class="nexa-tile nexa-intro">
+    <p class="nexa-greeting">👋 Hello Innovator,</p>
+    <h1>
+      Any questions?<br>
+      simply ask us.<br>
+      this is your home!
+    </h1>
   </div>
 
-  <div class="contact-block info-dark email-section">
-    <p class="field-label">Connect :</p>
-    <p class="detail">info@alphabitinfoway.com</p>
-    <p class="detail">alphabitinfoway@gmail.com</p>
+  <div class="nexa-tile nexa-media-sm">
+    <span>Image</span>
   </div>
 
-  <div class="contact-block image-placeholder img-sm">Image</div>
-
-  <div class="contact-block info-dark phone-section">
-    <p class="field-label">Direct Contact :</p>
-    <p class="detail">+91 94092 07327</p>
-    <p class="detail">+91 97230 28141</p>
+  <div class="nexa-tile nexa-info-dark nexa-connect">
+    <p class="nexa-meta">Connect :</p>
+    <a href="mailto:info@alphabitinfoway.com" class="nexa-contact-link">
+      info@alphabitinfoway.com
+    </a>
+    <a href="mailto:alphabitinfoway@gmail.com" class="nexa-contact-link">
+      alphabitinfoway@gmail.com
+    </a>
   </div>
 
-  <div class="contact-block image-placeholder img-lg">Image</div>
+  <div class="nexa-tile nexa-info-dark nexa-direct">
+    <p class="nexa-meta">Direct Contact :</p>
+    <a href="tel:+919409207327" class="nexa-contact-link">+91 94092 07327</a>
+    <a href="tel:+919723028141" class="nexa-contact-link">+91 97230 28141</a>
+  </div>
 
-  <div class="contact-block image-placeholder bottom-banner"></div>
-  
-  <!--#include file="footer.shtml" -->
-</div>
+  <div class="nexa-tile nexa-media-lg">
+    <span>Image</span>
+  </div>
+
+  <div class="nexa-tile nexa-wide-panel"></div>
+
+</section>
+

@@ -5209,81 +5209,114 @@ header {
 
 
 /* *****************************contect page start ************************************/
-:root {
-  --page-bg: #f5f5f5;
-  --card-dark: #1a1a1a;
-  --card-gray: #e0e0e0;
-  --font-main: #111;
-}
-
-
-.contact-grid {
-  max-width: 1100px;
-  margin: 0 auto;
+.nexa-contact-wrap {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
   display: grid;
-  gap: 16px;
-  /* Defining the Bento Grid structure */
+  gap: 18px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: 
-    "hero hero img-sm email"
-    "hero hero phone img-lg"
-    "banner banner banner banner";
+  grid-template-areas:
+    "intro intro mediasm connect"
+    "intro intro direct medialg"
+    "wide wide wide wide";
 }
 
-.contact-block {
-  border-radius: 28px; /* High rounding as per image */
-  padding: 35px;
+/* BASE TILE */
+.nexa-tile {
+  border-radius: 28px;
+  padding: 36px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-/* Typography & Content */
-.hero-text { grid-area: hero; justify-content: flex-start; }
-.hero-text h1 {
-  font-size: 3.2rem;
-  letter-spacing: -1px;
-  line-height: 1.1;
-  color: var(--font-main);
-  margin: 15px 0;
+/* HERO */
+.nexa-intro {
+  grid-area: intro;
+  padding-right: 60px;
 }
 
-.greeting { font-size: 1.1rem; color: #666; font-weight: 500; }
-.field-label { font-size: 0.75rem; color: #888; text-transform: none; margin-bottom: 12px; }
-.detail { font-size: 0.95rem; margin: 2px 0; font-weight: 500; }
-
-/* Block Themes */
-.info-dark { background-color: var(--card-dark); color: white; justify-content: center; }
-.image-placeholder { 
-  background-color: var(--card-gray); 
-  color: #888; 
-  align-items: center; 
-  justify-content: center; 
-  font-weight: 600;
+.nexa-intro h1 {
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
 }
 
-/* Layout Assignments */
-.email-section { grid-area: email; }
-.phone-section { grid-area: phone; }
-.img-sm { grid-area: img-sm; min-height: 200px; }
-.img-lg { grid-area: img-lg; min-height: 280px; }
-.bottom-banner { grid-area: banner; min-height: 450px; }
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .contact-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-      "hero hero"
-      "email img-sm"
-      "phone img-lg"
-      "banner banner";
-  }
+.nexa-greeting {
+  font-size: 14px;
+  font-weight: 500;
 }
 
-@media (max-width: 650px) {
-  .contact-grid {
+/* DARK INFO */
+.nexa-info-dark {
+  background: #111;
+  color: #fff;
+}
+
+.nexa-connect { grid-area: connect; }
+.nexa-direct { grid-area: direct; }
+
+/* TEXT */
+.nexa-meta {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+.nexa-contact-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* MEDIA */
+.nexa-media-sm {
+  grid-area: mediasm;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+}
+
+.nexa-media-lg {
+  grid-area: medialg;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+}
+
+/* BOTTOM */
+.nexa-wide-panel {
+  grid-area: wide;
+  background: #e5e5e5;
+  min-height: 260px;
+}
+
+/* HOVER */
+.nexa-tile:not(.nexa-intro):hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nexa-contact-wrap {
     grid-template-columns: 1fr;
-    grid-template-areas: "hero" "email" "img-sm" "phone" "img-lg" "banner";
+    grid-template-areas:
+      "intro"
+      "mediasm"
+      "connect"
+      "direct"
+      "medialg"
+      "wide";
   }
-  .hero-text h1 { font-size: 2.2rem; }
+
+  .nexa-intro {
+    padding-right: 0;
+  }
 }
