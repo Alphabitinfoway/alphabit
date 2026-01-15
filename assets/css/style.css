@@ -4881,7 +4881,7 @@ header {
         }
 
         .offerings-main-heading {
-            font-size: 72px;
+            font-size: 42px;
             font-weight: 600;
             font-style: bold;
             color: #1a1a1a;
@@ -5208,3 +5208,82 @@ header {
 }
 
 
+/* *****************************contect page start ************************************/
+:root {
+  --page-bg: #f5f5f5;
+  --card-dark: #1a1a1a;
+  --card-gray: #e0e0e0;
+  --font-main: #111;
+}
+
+
+.contact-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+  /* Defining the Bento Grid structure */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+    "hero hero img-sm email"
+    "hero hero phone img-lg"
+    "banner banner banner banner";
+}
+
+.contact-block {
+  border-radius: 28px; /* High rounding as per image */
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography & Content */
+.hero-text { grid-area: hero; justify-content: flex-start; }
+.hero-text h1 {
+  font-size: 3.2rem;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: var(--font-main);
+  margin: 15px 0;
+}
+
+.greeting { font-size: 1.1rem; color: #666; font-weight: 500; }
+.field-label { font-size: 0.75rem; color: #888; text-transform: none; margin-bottom: 12px; }
+.detail { font-size: 0.95rem; margin: 2px 0; font-weight: 500; }
+
+/* Block Themes */
+.info-dark { background-color: var(--card-dark); color: white; justify-content: center; }
+.image-placeholder { 
+  background-color: var(--card-gray); 
+  color: #888; 
+  align-items: center; 
+  justify-content: center; 
+  font-weight: 600;
+}
+
+/* Layout Assignments */
+.email-section { grid-area: email; }
+.phone-section { grid-area: phone; }
+.img-sm { grid-area: img-sm; min-height: 200px; }
+.img-lg { grid-area: img-lg; min-height: 280px; }
+.bottom-banner { grid-area: banner; min-height: 450px; }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "hero hero"
+      "email img-sm"
+      "phone img-lg"
+      "banner banner";
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "hero" "email" "img-sm" "phone" "img-lg" "banner";
+  }
+  .hero-text h1 { font-size: 2.2rem; }
+}

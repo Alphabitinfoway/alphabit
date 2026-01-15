@@ -10,11 +10,11 @@
       </div>
       <nav class="navbar">
         <h6><a href="index.shtml">Home</a></h6>
-        <h6><a href="#services">Services</a></h6>
+        <h6><a href="services.shtml">Services</a></h6>
         <h6><a href="#products">Products</a></h6>
         <h6><a href="#technology">Technology</a></h6>
         <h6><a href="about.shtml">About</a></h6>
-        <h6><a href="#contact">Insights</a></h6>
+        <h6><a href="contact.shtml">Insights</a></h6>
       </nav>
       <button class="contact-btn">Contact Us</button>
     </header>

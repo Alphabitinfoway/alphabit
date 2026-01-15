@@ -1,0 +1,31 @@
+<!--#include file="head.shtml" -->
+
+<!--#include file="header.shtml" -->
+
+
+<div class="contact-grid">
+  <div class="contact-block hero-text">
+    <p class="greeting">👋 Hello Innovator,</p>
+    <h1>Any questions? simply ask us. this is your home!</h1>
+  </div>
+
+  <div class="contact-block info-dark email-section">
+    <p class="field-label">Connect :</p>
+    <p class="detail">info@alphabitinfoway.com</p>
+    <p class="detail">alphabitinfoway@gmail.com</p>
+  </div>
+
+  <div class="contact-block image-placeholder img-sm">Image</div>
+
+  <div class="contact-block info-dark phone-section">
+    <p class="field-label">Direct Contact :</p>
+    <p class="detail">+91 94092 07327</p>
+    <p class="detail">+91 97230 28141</p>
+  </div>
+
+  <div class="contact-block image-placeholder img-lg">Image</div>
+
+  <div class="contact-block image-placeholder bottom-banner"></div>
+  
+  <!--#include file="footer.shtml" -->
+</div>
