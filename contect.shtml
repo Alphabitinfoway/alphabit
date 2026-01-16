@@ -1,42 +1,153 @@
 <!--#include file="head.shtml" -->
 
 <!--#include file="header.shtml" -->
-<section class="nexa-contact-wrap">
+<section class="neo-contact-section">
+  <div class="neo-contact-wrapper">
 
-  <div class="nexa-tile nexa-intro">
-    <p class="nexa-greeting">👋 Hello Innovator,</p>
-    <h1>
-      Any questions?<br>
-      simply ask us.<br>
-      this is your home!
-    </h1>
+    <div class="neo-contact-grid">
+
+      <div class="neo-contact-card neo-contact-text">
+        <span>👋 Hello Innovator,</span>
+        <h1>
+          Any questions?<br>
+          simply ask us.<br>
+          this is your home!
+        </h1>
+      </div>
+
+      <div class="neo-contact-card neo-contact-img-small">
+        Image
+      </div>
+
+      <div class="neo-contact-card neo-contact-info neo-contact-email">
+        <p class="neo-contact-label">Connect:</p>
+        <a href="mailto:info@alphabitinfoway.com">info@alphabitinfoway.com</a>
+        <a href="mailto:alphabitinfoway@gmail.com">alphabitinfoway@gmail.com</a>
+      </div>
+
+      <div class="neo-contact-card neo-contact-info neo-contact-phone">
+        <p class="neo-contact-label">Direct Contact:</p>
+        <p>+91 94092 07327</p>
+        <p>+91 97230 28141</p>
+      </div>
+
+      <div class="neo-contact-card neo-contact-img-large">
+        Image
+      </div>
+
+    </div>
+
+    <div class="neo-contact-footer-banner"></div>
+
   </div>
-
-  <div class="nexa-tile nexa-media-sm">
-    <span>Image</span>
-  </div>
-
-  <div class="nexa-tile nexa-info-dark nexa-connect">
-    <p class="nexa-meta">Connect :</p>
-    <a href="mailto:info@alphabitinfoway.com" class="nexa-contact-link">
-      info@alphabitinfoway.com
-    </a>
-    <a href="mailto:alphabitinfoway@gmail.com" class="nexa-contact-link">
-      alphabitinfoway@gmail.com
-    </a>
-  </div>
-
-  <div class="nexa-tile nexa-info-dark nexa-direct">
-    <p class="nexa-meta">Direct Contact :</p>
-    <a href="tel:+919409207327" class="nexa-contact-link">+91 94092 07327</a>
-    <a href="tel:+919723028141" class="nexa-contact-link">+91 97230 28141</a>
-  </div>
-
-  <div class="nexa-tile nexa-media-lg">
-    <span>Image</span>
-  </div>
-
-  <div class="nexa-tile nexa-wide-panel"></div>
-
+  
 </section>
 
+
+
+<!-- waiting section  -->
+
+<section class="wait-section">
+
+  <!-- TOP -->
+  <div class="wait-top">
+    <h2 class="wait-title">
+      We’ve been<br>
+      waiting for you!
+    </h2>
+
+    <p class="wait-desc">
+      Add the best talent on the market, an<br>
+      agile skilled management & seamless<br>
+      involvement
+    </p>
+  </div>
+
+  <hr class="wait-divider">
+
+  <!-- BOTTOM INFO -->
+  <div class="wait-info">
+
+    <div class="wait-box">
+      <p>+91 94092 07327<br>+91 97230 28141</p>
+    </div>
+
+    <div class="wait-box">
+      <p>info@alphabitinfoway.com<br>alphabitinfoway@gmail.com</p>
+    </div>
+
+    <div class="wait-box">
+      <p>
+        Rajkot Office:<br>
+        813 - Runway Heights, Ayodhya Chowk,<br>
+        150 Feet Ring Road, Rajkot - 360006
+      </p>
+    </div>
+
+    <div class="wait-box">
+      <p>
+        Ahmedabad Office:<br>
+        305 - Kraft 7, S.G. Highway,<br>
+        Ahmedabad - 380081
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!--*******************************map section ********************** -->
+<!-- CONTACT SECTION -->
+<section class="nx-contact-section">
+  <div class="nx-contact-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="nx-contact-left">
+      <h2>
+        We want to hear<br>
+        from you. let’s<br>
+        us know how we<br>
+        can help!
+      </h2>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="nx-contact-right">
+      <form class="nx-contact-form">
+        <div class="nx-form-row">
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+        </div>
+
+        <div class="nx-form-row">
+          <input type="tel" placeholder="Phone">
+          <input type="email" placeholder="Email">
+        </div>
+
+        <input type="text" class="nx-full" placeholder="Subject">
+        <textarea class="nx-full" placeholder="Message"></textarea>
+
+        <button type="submit">Contact Us</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+
+<section class="nx-map-section">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.621757240847!2d70.7659254152201!3d22.322744484197364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c9a1c4803efb%3A0x92b2458223ba82bb!2sRunway%20Hights%2C%20Krishna%20Society%2C%20Madhapar%2C%20Rajkot%2C%20Gujarat%20360006!5e0!3m2!1sen!2sin!4v1705299892485!5m2!1sen!2sin"
+    width="100%"
+    height="380"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+
+
+      <!--#include file="footer.shtml" -->

@@ -5209,114 +5209,404 @@ header {
 
 
 /* *****************************contect page start ************************************/
-.nexa-contact-wrap {
+    :root {
+      --neo-light-bg: #f5f5f5;
+      --neo-dark-bg: #1a1a1a;
+      --neo-dark-text: #1a1a1a;
+      --neo-light-text: #ffffff;
+      --neo-gray-bg: #e0e0e0;
+      --neo-radius: 30px;
+    }
+
+    .neo-contact-section{
+      margin-top: 100px;
+    }
+
+    /* MAIN WRAPPER */
+    .neo-contact-wrapper {
+
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* GRID LAYOUT */
+    .neo-contact-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 992px) {
+      .neo-contact-grid {
+        grid-template-columns: 1.5fr 0.8fr 1.2fr;
+        grid-template-rows: auto auto;
+      }
+
+      .neo-contact-text {
+        grid-row: span 2;
+      }
+    }
+
+    /* COMMON CARD */
+    .neo-contact-card {
+      padding: 40px;
+      border-radius: var(--neo-radius);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* TEXT BLOCK */
+    .neo-contact-text span {
+      font-weight: 600;
+      color: #555;
+    }
+
+    .neo-contact-text h1 {
+      margin-top: 20px;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.1;
+      color: var(--neo-dark-text);
+    }
+
+    /* DARK INFO CARDS */
+    .neo-contact-info {
+      background: var(--neo-dark-bg);
+      color: var(--neo-light-text);
+    }
+
+    .neo-contact-label {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .neo-contact-info a {
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+
+    /* IMAGE PLACEHOLDERS */
+    .neo-contact-img-small,
+    .neo-contact-img-large {
+      background: var(--neo-gray-bg);
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #555;
+    }
+
+    .neo-contact-email {
+      height: 230px;
+      margin-top: 20px;
+      padding-top: 0;
+    }
+
+    .neo-contact-img-small {
+      height: 250px;
+      margin-top: 80px;
+    }
+
+    .neo-contact-phone {
+      height: 150px;
+  
+    }
+
+    .neo-contact-img-large {
+      height: 250px;
+      margin-top: -96px;
+          margin-bottom: 20px;
+    }
+
+    /* BOTTOM BANNER */
+    .neo-contact-footer-banner {
+      top: 50px;
+      height: 400px;
+      background: var(--neo-gray-bg);
+      border-radius: var(--neo-radius);
+      margin-top: 20px;
+    }
+/************************* waiting section *********************************/
+
+.wait-section {
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 100px auto;
   padding: 0 20px;
-  display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    "intro intro mediasm connect"
-    "intro intro direct medialg"
-    "wide wide wide wide";
+  
 }
 
-/* BASE TILE */
-.nexa-tile {
-  border-radius: 28px;
-  padding: 36px;
+/* TOP */
+.wait-top {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 60px;
 }
 
-/* HERO */
-.nexa-intro {
-  grid-area: intro;
-  padding-right: 60px;
-}
-
-.nexa-intro h1 {
-  font-size: clamp(36px, 5vw, 52px);
+.wait-title {
+  font-size: 56px;
+  font-weight: 700;
   line-height: 1.05;
-  letter-spacing: -1.5px;
+  letter-spacing: -1px;
+  color: #111;
 }
 
-.nexa-greeting {
+.wait-desc {
+  max-width: 320px;
   font-size: 14px;
-  font-weight: 500;
+  line-height: 1.6;
+  color: #777;
 }
 
-/* DARK INFO */
-.nexa-info-dark {
-  background: #111;
-  color: #fff;
+/* DIVIDER */
+.wait-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin-bottom: 40px;
 }
 
-.nexa-connect { grid-area: connect; }
-.nexa-direct { grid-area: direct; }
-
-/* TEXT */
-.nexa-meta {
-  font-size: 13px;
-  opacity: 0.6;
-  margin-bottom: 10px;
+/* BOTTOM INFO */
+.wait-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.nexa-contact-link {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  margin-bottom: 6px;
+.wait-box {
+  padding: 20px 24px;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.2;
+  border-right: 2 px solid #b0aeae;
 }
 
-/* MEDIA */
-.nexa-media-sm {
-  grid-area: mediasm;
-  background: #e5e5e5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 160px;
+.wait-box:last-child {
+  border-right: none;
 }
 
-.nexa-media-lg {
-  grid-area: medialg;
-  background: #e5e5e5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 220px;
-}
+.wait-box strong {
 
-/* BOTTOM */
-.nexa-wide-panel {
-  grid-area: wide;
-  background: #e5e5e5;
-  min-height: 260px;
-}
-
-/* HOVER */
-.nexa-tile:not(.nexa-intro):hover {
-  transform: translateY(-6px);
-  transition: 0.3s ease;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .nexa-contact-wrap {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "intro"
-      "mediasm"
-      "connect"
-      "direct"
-      "medialg"
-      "wide";
+  .wait-top {
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .nexa-intro {
-    padding-right: 0;
+  .wait-title {
+    font-size: 42px;
+  }
+
+  .wait-info {
+    grid-template-columns: 1fr;
+  }
+
+  .wait-box {
+    border-right: none;
+    border-bottom: 1px solid #DCDCDC;
+  }
+
+  .wait-box:last-child {
+    border-bottom: none;
+  }
+}
+
+
+/* *********************** map  section ************************** */
+
+    /* CONTACT SECTION */
+
+/* ==============================
+   CONTACT SECTION
+============================== */
+.nx-contact-section {
+  position: relative;
+  background: radial-gradient(circle at left, #222, #000);
+  padding: 70px 40px;
+  overflow: hidden;
+}
+
+/* LOGO BACKGROUND */
+.nx-contact-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 480px;
+  height: 420px;
+  background-image: url("../images/about-logo-white.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+  pointer-events: none;
+}
+
+/* CONTAINER */
+.nx-contact-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* LEFT TEXT */
+.nx-contact-left h2 {
+  color: #fff;
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* ==============================
+   FORM STYLING
+============================== */
+.nx-contact-form {
+  width: 100%;
+}
+
+.nx-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.nx-contact-form input,
+.nx-contact-form textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  padding: 10px 6px;
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.nx-contact-form input::placeholder,
+.nx-contact-form textarea::placeholder {
+  color: #777;
+}
+
+.nx-full {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.nx-contact-form textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+/* BUTTON */
+.nx-contact-form button {
+  background: #ff5a1f;
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.25s ease;
+}
+
+.nx-contact-form button:hover {
+  background: #ff6b38;
+}
+
+/* ==============================
+   MAP
+============================== */
+.nx-map-section iframe {
+  width: 100%;
+  height: 380px;
+  border: none;
+  display: block;
+}
+
+/* ==============================
+   RESPONSIVE FIXES
+============================== */
+
+/* TABLET */
+@media (max-width: 1200px) {
+  .nx-contact-section::before {
+    width: 420px;
+    height: 360px;
+    opacity: 0.1;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+
+  .nx-contact-section {
+    padding: 60px 20px;
+  }
+
+  .nx-contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .nx-contact-left h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  /* CENTER LOGO ON MOBILE */
+  .nx-contact-section::before {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 260px;
+    opacity: 1;
+  }
+
+  /* FORM FIX */
+  .nx-form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 22px;
+  }
+
+  .nx-contact-form input,
+  .nx-contact-form textarea {
+    font-size: 15px;
+    padding: 12px 8px;
+  }
+
+  .nx-full {
+    margin-bottom: 24px;
+  }
+
+  .nx-contact-form textarea {
+    min-height: 110px;
+  }
+
+  .nx-contact-form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .nx-contact-left h2 {
+    font-size: 24px;
+  }
+
+  .nx-contact-section::before {
+    width: 240px;
+    height: 220px;
   }
 }
