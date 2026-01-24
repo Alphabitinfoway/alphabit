@@ -255,3 +255,26 @@ if (section) {
   );
   observer.observe(section);
 }
+
+
+
+// service page  section -3
+
+const timelineOptions = {
+  root: null,
+  threshold: 0.25,
+  rootMargin: "0px 0px -80px 0px"
+};
+
+const timelineObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      entry.target.style.transitionDelay = `${index * 0.15}s`;
+      entry.target.classList.add("visible");
+      timelineObserver.unobserve(entry.target);
+    }
+  });
+}, timelineOptions);
+
+document.querySelectorAll(".brand-timeline .timeline-step")
+  .forEach(step => timelineObserver.observe(step)); 

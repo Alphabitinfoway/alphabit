@@ -1,0 +1,221 @@
+<!--#include file="head.shtml" -->
+
+<!--#include file="header.shtml" -->
+
+<section class="uxdon-hero-wrap">
+  <div class="uxdon-shell">
+
+    <h1 class="uxdon-hero-heading">
+      Donate your design for newest designer to try better
+    </h1>
+
+    <div class="uxdon-hero-metrics">
+      <div class="uxdon-metric-card">
+        <span class="uxdon-metric-count">320+</span>
+        <span class="uxdon-metric-label">Comments</span>
+      </div>
+
+      <div class="uxdon-metric-card">
+        <span class="uxdon-metric-count">20,512+</span>
+        <span class="uxdon-metric-label">Likes</span>
+      </div>
+
+      <div class="uxdon-metric-card">
+        <span class="uxdon-metric-count">04</span>
+        <span class="uxdon-metric-label">November</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="uxdon-showcase-wrap">
+  <div class="uxdon-shell">
+    <div class="uxdon-showcase-frame"></div>
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section class="uxdon-article-wrap">
+  <div class="uxdon-shell">
+
+    <div class="uxdon-article-grid">
+
+      <!-- LEFT SIDE METRICS -->
+      <aside class="uxdon-article-metrics">
+        <div class="uxdon-article-metric">
+          <span class="uxdon-article-num">247</span>
+          <span class="uxdon-article-label">Views</span>
+        </div>
+
+        <div class="uxdon-article-metric">
+          <span class="uxdon-article-num">14</span>
+          <span class="uxdon-article-label">Shares</span>
+        </div>
+      </aside>
+
+      <!-- RIGHT SIDE CONTENT (ALL INSIDE SAME FLOW) -->
+      <div class="uxdon-article-flow">
+
+        <p class="uxdon-article-paragraph">
+         We love to bring designs to life as a developer, and I aim to do this using whatever front end tools aren't necessary. my preferred tools are more moderns JavaScript libraries like React.js but I like use whatever best for the websites needs. There are several reasons why a business would consider a rebrand and it doesn’t necessarily mean the business has been unsuccessful.
+        </p>
+
+        <p class="uxdon-article-paragraph">
+          But in order that you may see whence all this born error of those who accuse pleasure and praise pain will open the whole matter, and explain the very things which were said by that discoverer of truth and, as it’s were, the architect of a happy life.
+        </p>
+
+        <!-- IMAGE -->
+        <div class="uxdon-article-image"></div>
+
+        <!-- BLOCK -->
+        <div class="uxdon-article-block">
+          <h3 class="uxdon-article-title">Research &amp; strategy</h3>
+          <p>
+           We love to bring designs to life as a developer & I aim to do this using whatever front end tools necessary my preferred tools are more modern JavaScript libraries like React.js but I like to use whatever is best for the website need. there are several reason why a business would consider a rebrands doesn’t necessarily mean the business has been unsuccessful.
+          </p>
+        </div>
+
+        <!-- BLOCK -->
+        <div class="uxdon-article-block">
+          <h3 class="uxdon-article-title">Research &amp; strategy</h3>
+          <p>
+           We love to bring designs to life as a developer & I aim to do this using whatever front end tools necessary my preferred tools are more modern JavaScript libraries like React.js but I like to use whatever is best for the website need. there are several reason why a business would consider a rebrands doesn’t necessarily mean the business has been unsuccessful.
+          </p>
+        </div>
+
+        <!-- SMALL IMAGE -->
+        <div class="uxdon-article-image uxdon-article-image-sm"></div>
+
+        <!-- TAGS -->
+        <div class="uxdon-article-tags">
+          <strong>Tags:</strong>
+          <span>design</span>, <span>figma</span>, <span>update</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="uxdon-comment-wrap">
+  <div class="uxdon-shell">
+
+    <h2 class="uxdon-comment-title">Write a comment</h2>
+
+    <form class="uxdon-comment-form">
+
+      <div class="uxdon-form-grid">
+        <div class="uxdon-form-field">
+          <label>First Name</label>
+          <input type="text" />
+        </div>
+
+        <div class="uxdon-form-field">
+          <label>Last Name</label>
+          <input type="text" />
+        </div>
+
+        <div class="uxdon-form-field">
+          <label>Phone</label>
+          <input type="tel" />
+        </div>
+
+        <div class="uxdon-form-field">
+          <label>Email</label>
+          <input type="email" />
+        </div>
+      </div>
+
+      <div class="uxdon-form-field uxdon-full">
+        <label>Subject</label>
+        <input type="text" />
+      </div>
+
+      <div class="uxdon-form-field uxdon-full">
+        <label>Message</label>
+        <textarea rows="3"></textarea>
+      </div>
+
+      <button class="uxdon-submit-btn">Submit Comment</button>
+
+    </form>
+
+  </div>
+</section>
+
+
+<section class="uxdon-related-wrap">
+  <div class="uxdon-shell">
+
+    <h2 class="uxdon-related-title">Related articles</h2>
+
+    <div class="uxdon-related-grid">
+
+      <!-- CARD 1 -->
+      <article class="uxdon-related-card">
+        <div class="uxdon-related-image"></div>
+
+        <div class="uxdon-related-footer">
+          <h3 class="uxdon-related-heading">
+            Lorem Ipsum Lorem<br> Ipsum
+          </h3>
+
+          <!-- ARROW IMAGE (replace src) -->
+          <img
+            src="./assets/images/arrow.png"
+            alt="Open article"
+            class="uxdon-related-arrow"
+          />
+        </div>
+
+        <div class="uxdon-related-divider"></div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="uxdon-related-card">
+        <div class="uxdon-related-image"></div>
+
+        <div class="uxdon-related-footer">
+          <h3 class="uxdon-related-heading">
+            Lorem Ipsum Lorem<br> Ipsum
+          </h3>
+
+          <img
+            src="./assets/images/arrow.png"
+            alt="Open article"
+            class="uxdon-related-arrow"
+          />
+        </div>
+
+        <div class="uxdon-related-divider"></div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="uxdon-related-card">
+        <div class="uxdon-related-image"></div>
+
+        <div class="uxdon-related-footer">
+          <h3 class="uxdon-related-heading">
+            Lorem Ipsum Lorem<br> Ipsum
+          </h3>
+
+          <img
+            src="./assets/images/arrow.png"
+            alt="Open article"
+            class="uxdon-related-arrow"
+          />
+        </div>
+
+        <div class="uxdon-related-divider"></div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+   <!--#include file="footer.shtml" -->

@@ -1,0 +1,145 @@
+<!--#include file="head.shtml" -->
+
+<!--#include file="header.shtml" -->
+
+<section class="insights-section">
+
+  <!-- Header Area -->
+  <div class="insights-top">
+    <h1 class="insights-heading">
+      Alphabit's Latest<br />
+      Thinking and<br />
+      Insights<br/>
+      
+    </h1>
+
+    <div class="insights-summary">
+      <p class="insights-text">
+        Explore the latest ideas, technology trends, and growth strategies from Alphabet’s experts.
+      </p>
+
+      <div class="insights-metrics">
+        <div class="metric-block">
+          <h3 class="metric-value">400+</h3>
+          <span class="metric-title">Total Posts</span>
+        </div>
+        <div class="metric-block">
+          <h3 class="metric-value">99+</h3>
+          <span class="metric-title">Expert Writers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards Area -->
+  <div class="insights-grid">
+
+    <!-- Main Card -->
+    <article class="primary-article">
+      <div class="primary-info">
+        <div>
+          <h3 class="primary-title">Lorem Ipsum Lorem</h3>
+          <p class="primary-label">Featured Post</p>
+          <span class="primary-date">DEC – 2026</span>
+        </div>
+        <span class="primary-arrow">↗</span>
+      </div>
+    </article>
+
+    <!-- Side Cards -->
+    <div class="auxiliary-articles">
+      <article class="aux-card"></article>
+      <article class="aux-card"></article>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- section 2 -->
+ <section class="insight-feed">
+
+  <div class="feed-wrapper">
+
+    <!-- LEFT CONTENT -->
+    <aside class="feed-intro">
+      <h2 class="feed-heading">
+        Latest<br />
+        insight the<br />
+        Alphabit!
+      </h2>
+
+      <p class="feed-description">
+        Add the best talent on the market, an agile skilled management & seamless involvement
+      </p>
+    </aside>
+
+    <!-- RIGHT GRID -->
+    <div class="feed-grid">
+
+      <!-- Card -->
+      <article class="feed-card">
+        <div class="feed-thumb"></div>
+        <div class="feed-card-footer">
+          <p>Lorem Ipsum Lorem<br />Ipsum</p>
+          <span class="feed-arrow">↗</span>
+        </div>
+      </article>
+
+      <article class="feed-card">
+        <div class="feed-thumb"></div>
+        <div class="feed-card-footer">
+          <p>Lorem Ipsum Lorem<br />Ipsum</p>
+          <span class="feed-arrow">↗</span>
+        </div>
+      </article>
+
+      <article class="feed-card">
+        <div class="feed-thumb"></div>
+        <div class="feed-card-footer">
+          <p>Lorem Ipsum Lorem<br />Ipsum</p>
+          <span class="feed-arrow">↗</span>
+        </div>
+      </article>
+
+      <article class="feed-card">
+        <div class="feed-thumb"></div>
+        <div class="feed-card-footer">
+          <p>Lorem Ipsum Lorem<br />Ipsum</p>
+          <span class="feed-arrow">↗</span>
+        </div>
+      </article>
+
+      <article class="feed-card">
+        <div class="feed-thumb"></div>
+        <div class="feed-card-footer">
+          <p>Lorem Ipsum Lorem<br />Ipsum</p>
+          <span class="feed-arrow">↗</span>
+        </div>
+      </article>
+
+      <article class="feed-card">
+        <div class="feed-thumb"></div>
+        <div class="feed-card-footer">
+          <p>Lorem Ipsum Lorem<br />Ipsum</p>
+          <span class="feed-arrow">↗</span>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="feed-pagination">
+    <button class="page-nav">←</button>
+    <button class="page-num active">1</button>
+    <button class="page-num">2</button>
+    <button class="page-num">3</button>
+    <button class="page-num">4</button>
+    <button class="page-nav">→</button>
+  </div>
+
+</section>
+   <!--#include file="footer.shtml" -->
