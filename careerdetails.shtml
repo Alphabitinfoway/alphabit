@@ -1,0 +1,261 @@
+<!--#include file="head.shtml" -->
+
+<!--#include file="header.shtml" -->
+
+<section class="ab-job-section">
+  <div class="ab-job-container">
+    <!-- IMAGE BOX -->
+    <div class="ab-job-image">
+      <span>image</span>
+    </div>
+
+    <!-- JOB CARD -->
+    <div class="ab-job-card">
+      <ul class="ab-job-list">
+        <li>
+          <span>Experience</span>
+          <strong>5+ Years Experience</strong>
+        </li>
+        <li>
+          <span>Working Hours</span>
+          <strong>09 AM to 05 PM</strong>
+        </li>
+        <li>
+          <span>Working Days</span>
+          <strong>Weekly 5 days (Sun to Thur)</strong>
+        </li>
+        <li>
+          <span>Salary</span>
+          <strong>$24k – 65k (Yearly)</strong>
+        </li>
+        <li>
+          <span>Vacancy</span>
+          <strong>No of Vacancies: 2</strong>
+        </li>
+        <li>
+          <span>Deadline</span>
+          <strong>03 July 2022</strong>
+        </li>
+      </ul>
+
+      <a href="#" class="ab-job-btn">Apply for the Job</a>
+    </div>
+  </div>
+</section>
+
+<!-- requirment section  -->
+<section class="ab-job-page">
+  <div class="ab-job-container">
+    <!-- HEADER -->
+    <div class="ab-job-header">
+      <h1 class="ab-job-title">React full stack developer</h1>
+
+      <div class="ab-job-meta">
+        <div>
+          <span>Location</span>
+          <strong>Rajkot, Gujarat</strong>
+        </div>
+        <div>
+          <span>Date</span>
+          <strong>28 December, 2025</strong>
+        </div>
+        <div>
+          <span>Job Type</span>
+          <strong>Full time (Remote)</strong>
+        </div>
+      </div>
+    </div>
+
+    <hr class="ab-divider" />
+
+    <!-- INTRO -->
+    <p class="ab-job-intro">
+      We’re looking for a Junior - Mid-level Designer to join our team. You’ll
+      support the execution of graphic and digital design projects, working
+      closely with the internal team of creatives, project managers, the
+      Creative Director and development team to blend user needs and business
+      goals into seamless, effective design experiences. You will need to
+      demonstrate a fundamental understanding of design principles, an openness
+      to learn and take direction, along with a strong aesthetic design
+      intuition.
+    </p>
+
+    <!-- WHAT YOU WILL DO -->
+    <div class="ab-job-section-block">
+      <h2>What you will do</h2>
+      <ul>
+        <li>
+          <img src="./assets/images/arrow.png" /> Support Growth team in
+          expanding customer base within legal industry as well as new markets
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Find prospective customer
+          leads via LinkedIn Sales Navigator, industry directories, personal
+          network and other sources
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Qualify prospective customer
+          leads via email, phone, and Linkedin messaging
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Track and analyze prospective
+          customer pipeline, presenting stats and progress to Growth team
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Identify trends in prospective
+          customer engagement with various outreach campaigns
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Help strategize, implement, and
+          maintain an efficient sales system, primarily within Hubspot Sales and
+          Hubspot Marketing
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Create and maintain sales and
+          marketing materials, like pricing sheets and feature highlights
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Support special projects, like
+          event sponsorships and industry partnerships
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Contribute to customer support
+          initiatives
+        </li>
+      </ul>
+    </div>
+
+    <!-- REQUIREMENTS -->
+    <div class="ab-job-section-block">
+      <h2>Requirements</h2>
+      <ul>
+        <li>
+          <img src="./assets/images/arrow.png" /> Worked with any professional
+          plugin development team or More than one Plugins approved at
+          wordpress.org/CodeCanyon
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Solid and strong PHP
+          knowledge.
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Really good understanding in
+          OOP, Namespace, Traits & Design Patterns
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Intermediate to Advanced
+          JavaScript knowledge.
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Fluent English speaking and
+          writing is preferred but not required.
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Writing reusable, testable,
+          secured and efficient PHP, JavaScript, HTML5, CSS3, MySQL and AJAX
+          Code.
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Excellent knowledge about WP
+          custom post type, custom taxonomy, and custom meta box
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Fluent in WordPress, PHP,
+          plugins, themes security, JavaScript, and other technologies
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Clear concepts of WordPress
+          Actions, Hooks, custom queries, meta fields.
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Proficient with relational
+          (SQL) and non-relational database platforms
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Optimize performance of
+          applications utilizing industry standards on all ends of the
+          architecture.
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Creating database schemas that
+          represent and support business processes.
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Coordinating the workflow
+          between the UI/UX Designer, the QA, and yourself.
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Problem-solving capabilities
+        </li>
+        <li><img src="./assets/images/arrow.png" />Age 20 to 35 years</li>
+      </ul>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="ab-job-section-block">
+      <h2>Educational Qualification</h2>
+      <ul>
+        <li>
+          <img src="./assets/images/arrow.png" /> It doesn’t matter where you
+          went to college or what your CGPA was as long as you are smart,
+          passionate, ready to work hard and have fun.
+        </li>
+      </ul>
+    </div>
+
+    <!-- PERKS -->
+    <div class="ab-job-section-block">
+      <h2>Perks & Benefits</h2>
+      <ul>
+        <li>
+          <img src="./assets/images/arrow.png" /> Competitive compensation and
+          equity package
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> 99% company paid medical,
+          dental, and vision coverage for employees and dependents (for US
+          employees)
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Flexible Spending Account
+          (FSA) and Dependent Care Flexible Spending Account (DCFSA)
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Healthcare reimbursement (for
+          International employees)
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Life, AD&D, Short and Long
+          Term Disability Insurance
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" /> 401(k) with 4% company
+          matching
+        </li>
+
+        <li>
+          <img src="./assets/images/arrow.png" /> Professional development
+          reimbursement
+        </li>
+        <li><img src="./assets/images/arrow.png" />Wellness stipends</li>
+        <li><img src="./assets/images/arrow.png" /> Unlimited PTO</li>
+        <li><img src="./assets/images/arrow.png" /> Paid parental leave</li>
+        <li>
+          <img src="./assets/images/arrow.png" /> Remote work opportunities
+        </li>
+        <li>
+          <img src="./assets/images/arrow.png" />Home office & technology
+          reimbursement
+        </li>
+      </ul>
+    </div>
+
+    <hr class="ab-divider" />
+
+    <!-- FOOTER NOTE -->
+    <p class="ab-job-footer">
+      We’re committed to creating the happiest company working for and is proud
+      to provide equal opportunity to all.
+    </p>
+  </div>
+</section>

@@ -1,15 +1,15 @@
 <!--#include file="head.shtml" -->
 
 <!--#include file="header.shtml" -->
+
 <section class="service-hero">
 
-  <!-- LEFT CONTENT -->
   <div class="service-hero__content">
     <h1 class="service-hero__title">
       Convert Your Business<br>
       Plan into Our Service &<br>
       Connnnect the Bits for<br>
-      Solutions///
+      Solutions.
     </h1>
 
     <p class="service-hero__text">
@@ -19,14 +19,12 @@
     </p>
   </div>
 
-  <!-- RIGHT VISUAL -->
   <div class="service-hero__visual">
     <div class="service-box service-box--primary"></div>
     <div class="service-box service-box--secondary"></div>
   </div>
 
 </section>
-
 
 
   <!-- Counting-number Section -->
@@ -48,151 +46,185 @@
   </section>
 
 <!-- second section -->
-  <div class="premium-offerings-wrapper">
-        <div class="offerings-header-container">
-            <h1 class="offerings-main-heading">Our exclusive services</h1>
-            <p class="offerings-intro-text">We bet on brands that shift categories and add value to people's lives, and on founders who are motivated to shape</p>
+<div class="premium-offerings-wrapper">
+  <div class="offerings-header-container">
+    
+    <h1 class="offerings-main-heading">
+      Our Exclusive Services
+    </h1>
+
+    <p class="offerings-intro-text">
+      We partner with brands that challenge categories and add real value
+      to people’s lives, working closely with founders who are driven to
+      shape meaningful and lasting experiences.
+    </p>
+
+  </div>
+</div>
+<div class="offerings-grid-layout">
+
+    <!-- Card 1 -->
+    <div class="offering-item-box">
+      <div class="offering-head">
+        <div class="offering-icon-holder">
+          <img src="./assets/images/e-service1.png" alt="Interaction Design">
         </div>
+        <h3 class="offering-heading-text">Interaction Design</h3>
+      </div>
 
-        <div class="offerings-grid-layout">
-            <!-- Interaction Design Card 1 -->
-            <div class="offering-item-box">
-                <div class="offering-icon-holder">
-                    <img src="./assets/images/e-service1.png" alt="Interaction Design Icon">
-                </div>
-                <h3 class="offering-heading-text">Interaction Design</h3>
-                <ul class="offering-features-menu">
-                    <li>User Interface</li>
-                    <li>User Experience</li>
-                    <li>Design System</li>
-                    <li>Wireframe</li>
-                    <li>Prototype</li>
-                    <li>Website & Mobile App</li>
-                    <li>iOS + Android</li>
-                </ul>
-            </div>
-
-            <!-- Branding Design Card 1 -->
-            <div class="offering-item-box">
-                <div class="offering-icon-holder">
-                    <img src="./assets/images/e-service2.png" alt="Branding Design Icon">
-                </div>
-                <h3 class="offering-heading-text">Branding Design</h3>
-                <ul class="offering-features-menu">
-                    <li>User Interface</li>
-                    <li>User Experience</li>
-                    <li>Design System</li>
-                    <li>Wireframe</li>
-                    <li>Prototype</li>
-                    <li>Website & Mobile App</li>
-                    <li>iOS + Android</li>
-                </ul>
-            </div>
-
-            <!-- Design & Development Card 1 -->
-            <div class="offering-item-box">
-                <div class="offering-icon-holder">
-                    <img src="./assets/images/e-service3.png" alt="Design & Development Icon">
-                </div>
-                <h3 class="offering-heading-text">Design & Development</h3>
-                <ul class="offering-features-menu">
-                    <li>User Interface</li>
-                    <li>User Experience</li>
-                    <li>Design System</li>
-                    <li>Wireframe</li>
-                    <li>Prototype</li>
-                    <li>Website & Mobile App</li>
-                    <li>iOS + Android</li>
-                </ul>
-            </div>
-
-            <!-- eCommerce Development Card 1 -->
-            <div class="offering-item-box">
-                <div class="offering-icon-holder">
-                    <img src="./assets/images/e-service4.png" alt="eCommerce Development Icon">
-                </div>
-                <h3 class="offering-heading-text">eCommerce Development</h3>
-                <ul class="offering-features-menu">
-                    <li>User Interface</li>
-                    <li>User Experience</li>
-                    <li>Design System</li>
-                    <li>Wireframe</li>
-                    <li>Prototype</li>
-                    <li>Website & Mobile App</li>
-                    <li>iOS + Android</li>
-                </ul>
-            </div>
-
-            <!-- Interaction Design Card 2 -->
-            <div class="offering-item-box">
-                <div class="offering-icon-holder">
-                    <img src="./assets/images/e-service1.png" alt="Interaction Design Icon">
-                </div>
-                <h3 class="offering-heading-text">Interaction Design</h3>
-                <ul class="offering-features-menu">
-                    <li>User Interface</li>
-                    <li>User Experience</li>
-                    <li>Design System</li>
-                    <li>Wireframe</li>
-                    <li>Prototype</li>
-                    <li>Website & Mobile App</li>
-                    <li>iOS + Android</li>
-                </ul>
-            </div>
-
-            <!-- Branding Design Card 2 -->
-            <div class="offering-item-box">
-                <div class="offering-icon-holder">
-                    <img src="./assets/images/e-service2.png" alt="Branding Design Icon">
-                </div>
-                <h3 class="offering-heading-text">Branding Design</h3>
-                <ul class="offering-features-menu">
-                    <li>User Interface</li>
-                    <li>User Experience</li>
-                    <li>Design System</li>
-                    <li>Wireframe</li>
-                    <li>Prototype</li>
-                    <li>Website & Mobile App</li>
-                    <li>iOS + Android</li>
-                </ul>
-            </div>
-
-            <!-- Design & Development Card 2 -->
-            <div class="offering-item-box">
-                <div class="offering-icon-holder">
-                    <img src="./assets/images/e-service3.png" alt="Design & Development Icon">
-                </div>
-                <h3 class="offering-heading-text">Design & Development</h3>
-                <ul class="offering-features-menu">
-                    <li>User Interface</li>
-                    <li>User Experience</li>
-                    <li>Design System</li>
-                    <li>Wireframe</li>
-                    <li>Prototype</li>
-                    <li>Website & Mobile App</li>
-                    <li>iOS + Android</li>
-                </ul>
-            </div>
-
-            <!-- eCommerce Development Card 2 -->
-            <div class="offering-item-box">
-                <div class="offering-icon-holder">
-                    <img src="./assets/images/e-service4.png" alt="eCommerce Development Icon">
-                </div>
-                <h3 class="offering-heading-text">eCommerce Development</h3>
-                <ul class="offering-features-menu">
-                    <li>User Interface</li>
-                    <li>User Experience</li>
-                    <li>Design System</li>
-                    <li>Wireframe</li>
-                    <li>Prototype</li>
-                    <li>Website & Mobile App</li>
-                    <li>iOS + Android</li>
-                </ul>
-            </div>
-        </div>
+      <ul class="offering-features-menu">
+        <li>User Interface</li>
+        <li>User Experience</li>
+        <li>Design System</li>
+        <li>Wireframe</li>
+        <li>Prototype</li>
+        <li>Website & Mobile App</li>
+        <li>iOS + Android</li>
+      </ul>
     </div>
 
+    <!-- Card 2 -->
+    <div class="offering-item-box">
+      <div class="offering-head">
+        <div class="offering-icon-holder">
+          <img src="./assets/images/e-service2.png" alt="Branding Design">
+        </div>
+        <h3 class="offering-heading-text">Branding Design</h3>
+      </div>
+
+      <ul class="offering-features-menu">
+        <li>User Interface</li>
+        <li>User Experience</li>
+        <li>Design System</li>
+        <li>Wireframe</li>
+        <li>Prototype</li>
+        <li>Website & Mobile App</li>
+        <li>iOS + Android</li>
+      </ul>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="offering-item-box">
+      <div class="offering-head">
+        <div class="offering-icon-holder">
+          <img src="./assets/images/e-service3.png" alt="Design & Development">
+        </div>
+        <h3 class="offering-heading-text">Design & Development</h3>
+      </div>
+
+      <ul class="offering-features-menu">
+        <li>User Interface</li>
+        <li>User Experience</li>
+        <li>Design System</li>
+        <li>Wireframe</li>
+        <li>Prototype</li>
+        <li>Website & Mobile App</li>
+        <li>iOS + Android</li>
+      </ul>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="offering-item-box">
+      <div class="offering-head">
+        <div class="offering-icon-holder">
+          <img src="./assets/images/e-service4.png" alt="eCommerce Development">
+        </div>
+        <h3 class="offering-heading-text">eCommerce Development</h3>
+      </div>
+
+      <ul class="offering-features-menu">
+        <li>User Interface</li>
+        <li>User Experience</li>
+        <li>Design System</li>
+        <li>Wireframe</li>
+        <li>Prototype</li>
+        <li>Website & Mobile App</li>
+        <li>iOS + Android</li>
+      </ul>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="offering-item-box">
+      <div class="offering-head">
+        <div class="offering-icon-holder">
+          <img src="./assets/images/e-service1.png" alt="Interaction Design">
+        </div>
+        <h3 class="offering-heading-text">Interaction Design</h3>
+      </div>
+
+      <ul class="offering-features-menu">
+        <li>User Interface</li>
+        <li>User Experience</li>
+        <li>Design System</li>
+        <li>Wireframe</li>
+        <li>Prototype</li>
+        <li>Website & Mobile App</li>
+        <li>iOS + Android</li>
+      </ul>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="offering-item-box">
+      <div class="offering-head">
+        <div class="offering-icon-holder">
+          <img src="./assets/images/e-service2.png" alt="Branding Design">
+        </div>
+        <h3 class="offering-heading-text">Branding Design</h3>
+      </div>
+
+      <ul class="offering-features-menu">
+        <li>User Interface</li>
+        <li>User Experience</li>
+        <li>Design System</li>
+        <li>Wireframe</li>
+        <li>Prototype</li>
+        <li>Website & Mobile App</li>
+        <li>iOS + Android</li>
+      </ul>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="offering-item-box">
+      <div class="offering-head">
+        <div class="offering-icon-holder">
+          <img src="./assets/images/e-service3.png" alt="Design & Development">
+        </div>
+        <h3 class="offering-heading-text">Design & Development</h3>
+      </div>
+
+      <ul class="offering-features-menu">
+        <li>User Interface</li>
+        <li>User Experience</li>
+        <li>Design System</li>
+        <li>Wireframe</li>
+        <li>Prototype</li>
+        <li>Website & Mobile App</li>
+        <li>iOS + Android</li>
+      </ul>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="offering-item-box">
+      <div class="offering-head">
+        <div class="offering-icon-holder">
+          <img src="./assets/images/e-service4.png" alt="eCommerce Development">
+        </div>
+        <h3 class="offering-heading-text">eCommerce Development</h3>
+      </div>
+
+      <ul class="offering-features-menu">
+        <li>User Interface</li>
+        <li>User Experience</li>
+        <li>Design System</li>
+        <li>Wireframe</li>
+        <li>Prototype</li>
+        <li>Website & Mobile App</li>
+        <li>iOS + Android</li>
+      </ul>
+    </div>
+
+  </div>
+           
 <!-- image section -->
    <div class="servicesec-image-container">
     <div class="Simage-box">
@@ -200,25 +232,45 @@
     </div>
   </div>
     <!-- ***********barnd section -3 *************** -->
+  <section class="brand-timeline">
+  <div class="timeline-top-content">
 
-<section class="brand-timeline">
-
-   <div class="timeline-top-content"> 
+    <!-- LEFT SIDE -->
     <div class="timeline-header">
-      <span class="timeline-tag">WE UNDERSTAND EVERY <br/>BITS OF BRANDING</span>
+
+      <!-- TAG + GROW SAME LINE -->
+      <div class="tag-grow-row">
+        <span class="timeline-tag">
+          WE UNDERSTAND EVERY <br>
+          BITS OF BRANDING
+        </span>
+
+        <span class="grow-text">GROW</span>
+      </div>
+
       <h2 class="timeline-title">
-        GROW <br>
         YOUR <strong>BUSINESS</strong> &<br>
         GET MORE PROFIT<br>
         WITH <span class="outline-text">BRANDING!</span>
       </h2>
     </div>
 
+    <!-- RIGHT SIDE -->
     <div class="header-description">
-      <p>If You Expect that More Customers Buy Your Product or Services, Remember That They Are Also Investing Single Penny for Creating Your Business To Branded.</p>
-      <p style="margin-top: 20px;">Good branding creates a dialogue between the consumer and the brand, even if that dialogue only happens on an emotional level. After the first good experience with your brand, your customer forms more of an attachment to the company. After that, they’re more likely to seek out further interactions or make further purchases. Good branding facilitates that, and makes it easier for a customer who wants to be loyal to actually follow through on that loyalty.</p>
+      <p>
+        If you expect that more customers buy your products or services,
+        remember that they are also investing every single penny in
+        creating your business brand.
+      </p>
+
+      <p>
+        Good branding creates a dialogue between the consumer and the brand,
+        even if that dialogue only happens on an emotional level.
+      </p>
     </div>
+
   </div>
+
 
   <!-- TIMELINE -->
   <div class="timeline-wrapper">
@@ -379,11 +431,5 @@
       </div>
     </div>
   </section> 
-
-
-
-
-
-
 
       <!--#include file="footer.shtml" -->

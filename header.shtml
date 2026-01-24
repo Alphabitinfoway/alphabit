@@ -16,5 +16,5 @@
         <h6><a href="about.shtml">About</a></h6>
         <h6><a href="contect.shtml">Insights</a></h6>
       </nav>
-      <button class="contact-btn">Contact Us</button>
+      <button class="contact-btn"><a href="contect.shtml">Contact Us</a></button>
     </header>
