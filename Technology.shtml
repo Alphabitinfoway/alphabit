@@ -1,0 +1,427 @@
+<!--#include file="head.shtml" -->
+
+<!--#include file="header.shtml" -->
+
+ 
+<div class="techpage-wrapper">
+
+  <!-- HERO IMAGE -->
+  <div class="techpage-hero-image">
+    image
+  </div>
+
+  <!-- HERO TEXT -->
+  <div class="techpage-hero-content">
+    <div class="techpage-hero-title">
+      Reliable Full Stack Development Services
+    </div>
+
+    <div class="techpage-hero-text">
+We’re looking for a Junior - Mid-level Designer to join our team. You’ll support the execution of graphic and digital design projects, working closely with the internal team of creatives, project managers, the Creative Director and development team to blend user needs and business goals into seamless, effective design experiences. You will need to demonstrate a fundamental understanding of design principles, an openness to learn and take direction, along with a strong aesthetic design intuition.
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <section class="techpage-stats">
+
+    <div class="techpage-stat-card">
+      <div class="techpage-stat-inner">
+        <div class="techpage-stat-value">
+          <span class="stat-number" data-target="80">0</span>
+          <span class="stat-plus">+</span>
+        </div>
+        <span class="techpage-stat-label">Web Developers</span>
+      </div>
+    </div>
+
+    <div class="techpage-stat-card">
+      <div class="techpage-stat-inner">
+        <div class="techpage-stat-value">
+          <span class="stat-number" data-target="10">0</span>
+          <span class="stat-plus">+</span>
+        </div>
+        <span class="techpage-stat-label">Years of Experience</span>
+      </div>
+    </div>
+
+    <div class="techpage-stat-card">
+      <div class="techpage-stat-inner">
+        <div class="techpage-stat-value">
+          <span class="stat-number" data-target="100">0</span>
+          <span class="stat-plus">+</span>
+        </div>
+        <span class="techpage-stat-label">Project Completed</span>
+      </div>
+    </div>
+
+    <div class="techpage-stat-card">
+      <div class="techpage-stat-inner">
+        <div class="techpage-stat-value">
+          <span class="stat-number" data-target="80">0</span>
+          <span class="stat-plus">+</span>
+        </div>
+        <span class="techpage-stat-label">5-Star Clutch Reviews</span>
+      </div>
+    </div>
+
+  </section>
+
+  
+
+</div>
+
+
+  <!-- Tech Section - 2  -->
+   <section class="tech-wireframe-section">
+  <div class="tech-wireframe-container">
+
+    <!-- Heading -->
+    <h2 class="tech-wireframe-title">
+      We replace unreliable wireframe and<br>
+      expensive agencies for one of the best<br>
+      organized layer.
+    </h2>
+
+    <!-- Right Content Block -->
+    <div class="tech-wireframe-right">
+      <div class="tech-wireframe-media"></div>
+
+      <div class="tech-wireframe-content">
+        <p class="tech-wireframe-text">
+       We’re looking for a Junior - Mid-level Designer to join our team. You’ll support the execution of graphic and digital design projects, working closely with the internal team of creatives, project managers, the Creative Director and development team to blend user needs and business goals into seamless, effective design experiences. You will need to demonstrate a fundamental understanding of design principles, an openness to learn and take direction, along with a strong aesthetic design intuition.
+        </p>
+
+        <p class="tech-wireframe-text">
+         We’re looking for a Junior - Mid-level Designer to join our team. You’ll support the execution of graphic and digital design projects, working closely with the internal team of creatives, project managers, the Creative Director and development team to blend user needs and business goals into seamless, effective design experiences. You will need to demonstrate a fundamental understanding of design principles, an openness to learn and take direction, along with a strong aesthetic design intuition.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Tech service - 3  -->
+<section class="tech-feature-section">
+
+  <div class="tech-feature-card">
+    <div class="tech-feature-media"></div>
+
+    <div class="tech-feature-content">
+      <h3 class="tech-feature-title">
+        Cost-Effectively Smarter Full<br>
+        Stack Developers For Entrepreneurs
+      </h3>
+
+      <p class="tech-feature-text">
+        Hire Full Stack Web Development Company to launch your web and mobile
+        applications using a variety of frontend and backend technology stacks.
+        Our best full stack development agency makes it ever more affordable
+        and dependable for entrepreneurs to hire a full-stack web developer company.
+        You can achieve excellent results at friendly costs to your wallet if
+        you use our end-to-end full stack development services.
+      </p>
+    </div>
+  </div>
+
+  <div class="tech-feature-card">
+    <div class="tech-feature-media"></div>
+
+    <div class="tech-feature-content">
+      <h3 class="tech-feature-title">
+        Cost-Effectively Smarter Full<br>
+        Stack Developers For Entrepreneurs
+      </h3>
+
+      <p class="tech-feature-text">
+        Hire Full Stack Web Development Company to launch your web and mobile
+        applications using a variety of frontend and backend technology stacks.
+        Our best full stack development agency makes it ever more affordable
+        and dependable for entrepreneurs to hire a full-stack web developer company.
+        You can achieve excellent results at friendly costs to your wallet if
+        you use our end-to-end full stack development services.
+      </p>
+    </div>
+  </div>
+
+  <div class="tech-feature-card">
+    <div class="tech-feature-media"></div>
+
+    <div class="tech-feature-content">
+      <h3 class="tech-feature-title">
+        Cost-Effectively Smarter Full<br>
+        Stack Developers For Entrepreneurs
+      </h3>
+
+      <p class="tech-feature-text">
+        Hire Full Stack Web Development Company to launch your web and mobile
+        applications using a variety of frontend and backend technology stacks.
+        Our best full stack development agency makes it ever more affordable
+        and dependable for entrepreneurs to hire a full-stack web developer company.
+        You can achieve excellent results at friendly costs to your wallet if
+        you use our end-to-end full stack development services.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- black banner section -->
+<section class="tech-black-banner">
+  <h2 class="tech-black-banner__text">
+    WORLD WIDE TOP RATED IT COMPANY ON CLUTCH
+  </h2>
+</section>
+
+
+
+  <section class="tech-stack-section">
+    
+    <!-- Left Visual Box -->
+    <div class="tech-visual-card"></div>
+
+    <!-- Right Content -->
+    <div class="tech-stack-content">
+
+      <h1 class="tech-stack-heading">
+        GET 100% CUSTOMIZABLE <br />
+
+        <span class="tech-highlight-grey">FULL STACK</span>
+        <span class="tech-highlight-outline">DEVELOPMENT</span><br />
+
+        <span class="tech-highlight-dark">FROM EXPERTS</span>
+      </h1>
+
+      <p class="tech-stack-text">
+      The tasks of the two other categories of developers are combined into one role by full-stack development. They are a massive benefit to your team because they can do the duties related to both of these developers. Our full stack development agency has experience creating mobile and web apps
+      </p>
+
+      <p class="tech-stack-text">
+    The need for Full Stack Development with AI is increasing as businesses become more competitive. Engineers and developers gain knowledge of the stack that creates and manages comprehensive software from front to backend in our fully loaded development company. The easiest way to save time, eliminate mistakes, and get the most out of your investment is to work with a reputable Full Web Stack Development Company that can handle the process from conception to finished product.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- section 5 service -->
+
+  <section class="tech-services-section">
+
+  <div class="tech-services-header">
+    <h2 class="tech-services-title">
+      Our Premium<br>Services
+    </h2>
+
+    <p class="tech-services-description">
+      As a certified IT company, Sapphire helps organizations thrive digitally
+      by offering innovative solutions using cutting-edge tools and frameworks.
+      Contact us to learn more!
+    </p>
+  </div>
+
+  <div class="tech-services-grid">
+
+    <div class="tech-service-card">
+      <img src="./assets/images/arrow.png" alt="arrow" class="tech-service-arrow">
+      <span>Mobile App<br>Development</span>
+    </div>
+
+    <div class="tech-service-card">
+      <img src="./assets/images/arrow.png" alt="arrow" class="tech-service-arrow">
+      <span>Software<br>Development</span>
+    </div>
+
+    <div class="tech-service-card">
+      <img src="./assets/images/arrow.png" alt="arrow" class="tech-service-arrow">
+      <span>Web<br>Development</span>
+    </div>
+
+    <div class="tech-service-card">
+      <img src="./assets/images/arrow.png" alt="arrow" class="tech-service-arrow">
+      <span>.Net<br>Development</span>
+    </div>
+
+    <div class="tech-service-card">
+      <img src="./assets/images/arrow.png" alt="arrow" class="tech-service-arrow">
+      <span>Flutter App<br>Development</span>
+    </div>
+
+    <div class="tech-service-card">
+      <img src="./assets/images/arrow.png" alt="arrow" class="tech-service-arrow">
+      <span>PHP<br>Development</span>
+    </div>
+
+    <div class="tech-service-card">
+      <img src="./assets/images/arrow.png" alt="arrow" class="tech-service-arrow">
+      <span>Hire Dedicated<br>Developers</span>
+    </div>
+
+    <div class="tech-service-card">
+      <img src="./assets/images/arrow.png" alt="arrow" class="tech-service-arrow">
+      <span>MERN Stack<br>Development</span>
+    </div>
+
+    <div class="tech-service-card">
+      <img src="./assets/images/arrow.png" alt="arrow" class="tech-service-arrow">
+      <span>Full Stack<br>Development</span>
+    </div>
+
+    <div class="tech-service-card">
+      <img src="./assets/images/arrow.png" alt="arrow" class="tech-service-arrow">
+      <span>Laravel<br>Development</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- section 6 -->
+<section class="tech-benefits-section">
+
+  <!-- Header -->
+  <div class="tech-benefits-header">
+    <h2 class="tech-benefits-title">
+      Key Benefits of Our Full
+      Stack Development Services
+    </h2>
+
+    <p class="tech-benefits-description">
+      Full-stack development offers the know-how required to see your project
+      through to completion, regardless of your need for reduced development
+      time or economic alternatives.
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="tech-benefits-grid">
+
+    <div class="tech-benefit-card">
+      <h4 class="tech-benefit-heading">Comprehensive Expertise</h4>
+      <p class="tech-benefit-text">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </div>
+
+    <div class="tech-benefit-card">
+      <h4 class="tech-benefit-heading">Cost-Efficient</h4>
+      <p class="tech-benefit-text">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </div>
+
+    <div class="tech-benefit-card">
+      <h4 class="tech-benefit-heading">Faster Time to Market</h4>
+      <p class="tech-benefit-text">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </div>
+
+    <div class="tech-benefit-card">
+      <h4 class="tech-benefit-heading">Enhanced Flexibility</h4>
+      <p class="tech-benefit-text">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </div>
+
+    <div class="tech-benefit-card">
+      <h4 class="tech-benefit-heading">Better Problem-Solving</h4>
+      <p class="tech-benefit-text">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </div>
+
+    <div class="tech-benefit-card">
+      <h4 class="tech-benefit-heading">End-to-End Project Ownership</h4>
+      <p class="tech-benefit-text">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+ <section class="schedule-section">
+    <div class="schedule-content">
+      <p>👋🏼 Hey Innovator,</p>
+      <h2>
+        I'm Your<span class="span-image"></span
+        ><span class="span-orange"> AI</span
+        ><span class="span-white">(Alphabit Infoway)</span>
+      </h2>
+      <h2>
+        <span class="span-orange">Buddy, </span>Let's<span
+          class="span-image"
+        ></span>
+        Convert
+      </h2>
+      <h2>
+        Your <span class="span-white">Idea</span
+        ><span class="span-image"></span> into
+        <span class="span-white">Reality</span>
+      </h2>
+    </div>
+    <button class="schedule-btn">Schedule a Meeting</button>
+  </section>
+  <section class="aboutpage-container7">
+    <div class="title-header">
+      <h2 class="section-title">WE WORKED WITH LARGEST</h2>
+      <h2 class="section-title">GLOBAL <span class="orange-bg">BRAND</span></h2>
+    </div>
+
+    <div class="logo-container">
+      <div class="logo-section">
+        <div class="logo-box empty-box"></div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/Sport University.png" alt="" />
+        </div>
+      </div>
+      <div class="logo-section">
+        <div class="logo-box">
+          <img src="./assets/images/logo/Daksh Prajapat.png" alt="" />
+        </div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/Prosure.png" alt="" />
+        </div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/RES Solar.png" alt="" />
+        </div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/serona.png" alt="" />
+        </div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/Shivon.png" alt="" />
+        </div>
+      </div>
+      <div class="logo-section">
+        <div class="logo-box empty-box"></div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/Shayad Food.png" alt="" />
+        </div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/Red Carpet.png" alt="" />
+        </div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/SAHAYOG ENERGY.png" alt="" />
+        </div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/Dalunar.png" alt="" />
+        </div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/Soncera.png" alt="" />
+        </div>
+      </div>
+      <div class="logo-section">
+        <div class="logo-box empty-box"></div>
+        <div class="logo-box empty-box"></div>
+        <div class="logo-box empty-box"></div>
+        <div class="logo-box empty-box"></div>
+        <div class="logo-box">
+          <img src="./assets/images/logo/Tiffin Uncle.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--#include file="footer.shtml" -->

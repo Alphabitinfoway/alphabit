@@ -183,18 +183,22 @@ header {
   display: inline-block;
   background: #ff5622;
   border: none;
-  color: white;
+  
   padding: 7px 10px;
   height: 42px;
   width: 130px;
   border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
+
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.2s ease,
     background-color 0.15s ease;
   will-change: transform, box-shadow;
+}
+.contect-btnn{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .contact-btn:hover,
@@ -7767,3 +7771,671 @@ header {
   }
 }
  
+
+/* *******************************Technology page start****************************************** */
+
+/* ===== WRAPPER ===== */
+.techpage-wrapper{
+  max-width:1200px;
+  margin:40px auto;
+  padding:0 16px;
+}
+
+/* ===== HERO SECTION ===== */
+.techpage-hero-image{
+  margin-top: 200px;
+  height:360px;
+  background:#e5e5e5;
+  border-radius:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:32px;
+  color:#666;
+}
+
+.techpage-hero-content{
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+  margin:30px 0 50px;
+}
+
+.techpage-hero-title{
+  font-size:36px;
+  font-weight:700;
+  max-width:520px;
+}
+
+.techpage-hero-text{
+  max-width:540px;
+  font-size:15px;
+  line-height:1.6;
+  color:#666;
+}
+
+/* ===== STATS BAR ===== */
+.techpage-stats{
+  display:flex;
+  border-top:1px solid #ededed;      
+  border-bottom:1px solid #ededed;   
+}
+
+/* ===== STAT ITEM ===== */
+.techpage-stat-card{
+  flex:1;
+  padding:28px 12px;
+  display:flex;
+  justify-content:center;
+  position:relative;
+}
+
+/* vertical divider */
+.techpage-stat-card:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:20%;
+  height:60%;
+  width:1px;
+  background:#ededed;
+}
+
+/* ===== INNER ===== */
+.techpage-stat-inner{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+/* ===== NUMBER + PLUS WRAPPER ===== */
+.techpage-stat-value{
+  display:flex;
+  align-items:flex-start;
+  gap:4px;
+}
+
+/* main number */
+.stat-number{
+  font-size:44px;
+  font-weight:800;
+  color:transparent;
+  -webkit-text-stroke:2px #ff6a3d;
+  line-height:1;
+  white-space:nowrap;
+}
+
+.stat-plus {
+  font-size:42px;
+  line-height:1;
+  margin-top:px;
+  text-shadow: 1px 1px 0 #ff5622, -1px 1px 0 #ff5622, 1px -1px 0 #ff5622, -1px -1px 0 #ff5622;
+  color: #f5f5f5;
+}
+@media (max-width: 1024px) {
+
+  /* HERO TEXT STACK */
+  .techpage-hero-image{
+ margin-top: 100px;
+  }
+  .techpage-hero-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .techpage-hero-title,
+  .techpage-hero-text {
+    max-width: 100%;
+  }
+
+  /* STATS STACK */
+  .techpage-stats {
+    flex-direction: column;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .techpage-stat-card {
+    padding: 24px 12px;
+  }
+
+  /* REMOVE vertical divider */
+  .techpage-stat-card::after {
+    display: none;
+  }
+
+  /* ADD horizontal divider under each stat */
+  .techpage-stat-card:not(:last-child) {
+    border-bottom: 1px solid #ededed;  
+  }
+}
+
+
+
+/* texh section -2  */
+
+/* Section */
+.tech-wireframe-section {
+  background: #f5f5f5;
+  padding: 20px 20px;
+}
+
+/* Container */
+.tech-wireframe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading (full left) */
+.tech-wireframe-title {
+  max-width: 520px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;
+  margin-left: 120px;
+  margin-bottom: 30px;
+}
+
+/* Right block starts AFTER center line */
+.tech-wireframe-right {
+  margin-left: 280px; 
+}
+
+/* Grey box */
+.tech-wireframe-media {
+  width: 100%;
+  max-width: 720px;
+  height: 360px;
+  background: #e2e2e2;
+  border-radius: 22px;
+  margin-bottom: 20px;
+}
+
+/* Bottom text */
+.tech-wireframe-content {
+  max-width: 720px;
+  display: flex;
+  gap: 30px;
+}
+
+.tech-wireframe-text {
+  flex: 1;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #777;
+}
+@media (max-width: 1024px) and (min-width: 601px) {
+
+  /* Center everything */
+  .tech-wireframe-title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .tech-wireframe-right {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech-wireframe-content {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+
+  /* Left aligned like image */
+  .tech-wireframe-title {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .tech-wireframe-right {
+    margin-left: 0;
+    align-items: flex-start;
+  }
+
+    .tech-wireframe-content {
+    flex-direction: column; 
+    gap: 16px;
+  }
+
+  }
+
+
+
+
+
+
+/* tech service-3 */
+
+/* Section */
+.tech-feature-section {
+  background: #f6f6f6;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Card */
+.tech-feature-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Left Grey Box */
+.tech-feature-media {
+  width: 320px;
+  height: 180px;
+  background: #e1e1e1;
+  border-radius: 18px;
+  flex-shrink: 0;
+}
+
+/* Content */
+.tech-feature-content {
+  max-width: 620px;
+}
+
+.tech-feature-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.tech-feature-text {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #777;
+}
+@media (max-width: 1024px) {
+  .tech-feature-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tech-feature-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-feature-media {
+    width: 100%;
+    height: 160px;
+  }
+
+  .tech-feature-title {
+    font-size: 18px;
+    text-align: left;
+  }
+  .tech-feature-content{
+    text-align: left;
+  }
+}
+
+
+
+/* blck banner section */
+/* BLACK BANNER */
+.tech-black-banner {
+  width: 100%;
+  background: #0f0f0f;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* OUTLINE TEXT */
+.tech-black-banner__text {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #000;
+  text-shadow: 1px 1px 0 #f5f5f5, -1px 1px 0 #f5f5f5, 1px -1px 0 #f5f5f5, -1px -1px 0 #f5f5f5;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .tech-black-banner__text {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    text-align: left;
+  }
+}
+
+
+
+
+/* Main Section */
+.tech-stack-section {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 40px;
+  margin: 110px auto;
+}
+
+/* Left Grey Box */
+.tech-visual-card {
+  width: 420px;
+  height: 500px;
+  background: #e6e6e6;
+  border-radius: 30px;
+}
+
+/* Right Content */
+.tech-stack-content {
+  max-width: 600px;
+}
+
+/* Heading */
+.tech-stack-heading {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+/* FULL STACK */
+.tech-highlight-grey {
+    color: #666;
+  display: inline-block;
+}
+
+/* DEVELOPMENT */
+.tech-highlight-outline {
+  color: #f5f5f5;
+  text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+  font-weight: 900;
+  margin-left: 6px;
+}
+
+/* FROM EXPERTS */
+.tech-highlight-dark {
+  color: black;
+}
+
+/* Text */
+.tech-stack-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #777;
+  margin-bottom: 15px;
+}
+@media (max-width: 1024px) {
+  .tech-stack-section {
+    gap: 30px;
+    margin: 80px 40px;
+  }
+
+  .tech-visual-card {
+    width: 360px;
+    height: 440px;
+  }
+
+  .tech-stack-heading {
+    font-size: 32px;
+  }
+
+  .tech-stack-content {
+    max-width: 520px;
+  }
+}
+@media (max-width: 768px) {
+  .tech-stack-section {
+    flex-direction: column;
+    text-align: left;
+    margin: 60px 20px;
+    gap: 25px;
+  }
+
+  .tech-visual-card {
+    width: 100%;
+    max-width: 480px;
+    height: 380px;
+    margin: 0 auto;
+  }
+
+  .tech-stack-content {
+    max-width: 100%;
+  }
+
+  .tech-stack-heading {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .tech-highlight-outline {
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .tech-stack-heading {
+    font-size: 24px;
+  }
+
+  .tech-stack-text {
+    font-size: 10px;
+  }
+
+  .tech-visual-card {
+    height: 320px;
+  }
+}
+
+
+
+
+
+/* Section 5 */
+.tech-services-section {
+  background:black;
+  padding: 80px 60px;
+  color: #ffffff;
+}
+
+/* Header */
+.tech-services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.tech-services-title {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.tech-services-description {
+  max-width: 520px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #9a9a9a;
+}
+
+/* Grid */
+.tech-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+/* Card */
+.tech-service-card {
+  background: #000;
+  border: 2px solid rgba(224, 221, 221, 0.92);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Card Hover */
+.tech-service-card:hover {
+  background: #111;
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-4px);
+}
+
+/* Arrow */
+.tech-service-arrow {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+/* Text */
+.tech-service-card span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* ================== Responsive ================== */
+
+@media (max-width: 1024px) {
+  .tech-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tech-services-header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-services-section {
+    padding: 60px 20px;
+  }
+
+  .tech-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-services-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* section 6 */
+
+
+/* Section */
+.tech-benefits-section {
+  background: #fafafa;
+  padding: 90px 60px;
+}
+
+/* Header */
+.tech-benefits-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.tech-benefits-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+}
+
+.tech-benefits-description {
+  max-width: 480px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #777;
+}
+
+/* Grid */
+.tech-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.tech-benefit-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.tech-benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Heading */
+.tech-benefit-heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: #4f46e5; /* blue/purple tone */
+  margin-bottom: 12px;
+}
+
+/* Card Text */
+.tech-benefit-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #777;
+}
+@media (max-width: 1024px) {
+  .tech-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-benefits-header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-benefits-section {
+    padding: 60px 20px;
+  }
+
+  .tech-benefits-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}

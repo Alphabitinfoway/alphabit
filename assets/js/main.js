@@ -278,3 +278,31 @@ const timelineObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".brand-timeline .timeline-step")
   .forEach(step => timelineObserver.observe(step)); 
+
+
+
+
+  // Tech page counter :
+
+/* ===== COUNTER ANIMATION SCRIPT ===== */
+const statNumbers = document.querySelectorAll('.stat-number');
+const animationLimit = 200;
+
+statNumbers.forEach(statEl => {
+  const animateStat = () => {
+    const finalValue = Number(statEl.dataset.target);
+    const currentValue = Number(statEl.innerText);
+    const stepValue = Math.ceil(finalValue / animationLimit);
+
+    if (currentValue < finalValue) {
+      statEl.innerText = currentValue + stepValue;
+      setTimeout(animateStat, 20);
+    } else {
+      statEl.innerText = finalValue;
+    }
+  };
+
+  animateStat();
+});
+
+
