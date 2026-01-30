@@ -12,9 +12,9 @@
         <h6><a href="index.shtml">Home</a></h6>
         <h6><a href="services.shtml">Services</a></h6>
         <h6><a href="#products">Products</a></h6>
-        <h6><a href="#technology">Technology</a></h6>
+        <h6><a href="Technology.shtml">Technology</a></h6>
         <h6><a href="about.shtml">About</a></h6>
-        <h6><a href="contect.shtml">Insights</a></h6>
+        <h6><a href="#">Insights</a></h6>
       </nav>
       <button class="contact-btn"><a href="contect.shtml" class="contect-btnn">Contact Us</a></button>
     </header>
