@@ -306,3 +306,23 @@ statNumbers.forEach(statEl => {
 });
 
 
+
+const toggle = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".navbar");
+
+toggle.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
+/* Dropdown click for mobile */
+document.querySelectorAll(".dropdown-toggle").forEach(item => {
+  item.addEventListener("click", function(e) {
+    if (window.innerWidth <= 992) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("active");
+    }
+  });
+});
+
+
+
