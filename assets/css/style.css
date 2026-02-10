@@ -16,6 +16,15 @@ body {
 
 }
 
+.feed-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  border-radius: 20px;
+        
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -5510,8 +5519,8 @@ header {
 
 /* OUTLINE TEXT */
 .outline-text {
-  color: transparent;
-  -webkit-text-stroke: 1.5px #000;
+  text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+color: #f5f5f5;
 }
 
 /* RIGHT SIDE */
@@ -6176,7 +6185,7 @@ header {
 }
 
 .insights-heading {
-  
+  font-family: "Sora", sans-serif;
   font-size: 62px;
   font-weight: 600;
   line-height: 1.15;
@@ -6188,7 +6197,6 @@ header {
 
 
 .insights-text {
-  
   font-size: 14px;
   color: #777;
   margin-bottom: 24px;
