@@ -9,8 +9,8 @@
     <h1 class="insights-heading">
       Alphabit's Latest<br />
       Thinking and<br />
-      Insights<br/>
-      
+      Insights<br />
+
     </h1>
 
     <div class="insights-summary">
@@ -58,7 +58,7 @@
 
 
 <!-- section 2 -->
- <section class="insight-feed">
+<section class="insight-feed">
 
   <div class="feed-wrapper">
 
@@ -76,60 +76,10 @@
     </aside>
 
     <!-- RIGHT GRID -->
-    <div class="feed-grid">
+  <div class="feed-grid" id="blog-feed-container">
+  <!-- Blogs will load here dynamically -->
+</div>
 
-      <!-- Card -->
-      <article class="feed-card">
-        <div class="feed-thumb"></div>
-        <div class="feed-card-footer">
-          <p>Lorem Ipsum Lorem<br />Ipsum</p>
-          <span class="feed-arrow">↗</span>
-        </div>
-      </article>
-
-      <article class="feed-card">
-        <div class="feed-thumb"></div>
-        <div class="feed-card-footer">
-          <p>Lorem Ipsum Lorem<br />Ipsum</p>
-          <span class="feed-arrow">↗</span>
-        </div>
-      </article>
-
-      <article class="feed-card">
-        <div class="feed-thumb"></div>
-        <div class="feed-card-footer">
-          <p>Lorem Ipsum Lorem<br />Ipsum</p>
-          <span class="feed-arrow">↗</span>
-        </div>
-      </article>
-
-      <article class="feed-card">
-        <div class="feed-thumb"></div>
-        <div class="feed-card-footer">
-          <p>Lorem Ipsum Lorem<br />Ipsum</p>
-          <span class="feed-arrow">↗</span>
-        </div>
-      </article>
-
-      <article class="feed-card">
-        <div class="feed-thumb"></div>
-        <div class="feed-card-footer">
-          <p>Lorem Ipsum Lorem<br />Ipsum</p>
-          <span class="feed-arrow">↗</span>
-        </div>
-      </article>
-
-      <article class="feed-card">
-        <div class="feed-thumb"></div>
-        <div class="feed-card-footer">
-          <p>Lorem Ipsum Lorem<br />Ipsum</p>
-          <span class="feed-arrow">↗</span>
-        </div>
-      </article>
-
-    </div>
-
-  </div>
 
   <!-- Pagination -->
   <div class="feed-pagination">
@@ -142,4 +92,4 @@
   </div>
 
 </section>
-   <!--#include file="footer.shtml" -->
+<!--#include file="footer.shtml" -->

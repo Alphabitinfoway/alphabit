@@ -278,3 +278,169 @@ const timelineObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".brand-timeline .timeline-step")
   .forEach(step => timelineObserver.observe(step)); 
+
+
+
+
+  // Tech page counter :
+
+/* ===== COUNTER ANIMATION SCRIPT ===== */
+const statNumbers = document.querySelectorAll('.stat-number');
+const animationLimit = 200;
+
+statNumbers.forEach(statEl => {
+  const animateStat = () => {
+    const finalValue = Number(statEl.dataset.target);
+    const currentValue = Number(statEl.innerText);
+    const stepValue = Math.ceil(finalValue / animationLimit);
+
+    if (currentValue < finalValue) {
+      statEl.innerText = currentValue + stepValue;
+      setTimeout(animateStat, 20);
+    } else {
+      statEl.innerText = finalValue;
+    }
+  };
+
+  animateStat();
+});
+
+
+
+const toggle = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".navbar");
+
+toggle.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
+/* Dropdown click for mobile */
+document.querySelectorAll(".dropdown-toggle").forEach(item => {
+  item.addEventListener("click", function(e) {
+    if (window.innerWidth <= 992) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("active");
+    }
+  });
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const API_URL = "https://alphabit-web-1.onrender.com/users/getBlogs";
+
+  const blogContainer = document.getElementById('blog-feed-container');
+  const primaryCard = document.querySelector('.primary-article');
+  const auxCards = document.querySelectorAll('.aux-card');
+
+  async function fetchBlogPosts() {
+    try {
+
+      const response = await fetch(API_URL);
+      const posts = await response.json();
+
+      if(!posts || posts.length === 0) return;
+
+      // Latest first (assuming latest = last created)
+      const sortedPosts = posts.reverse();
+
+      renderTopCards(sortedPosts);
+      renderFeedGrid(sortedPosts.slice(3));
+
+    } catch (err) {
+      console.error("Fetch error:", err);
+    }
+  }
+
+
+  // ==========================
+  // TOP 3 CARDS
+  // ==========================
+  function renderTopCards(posts){
+
+    const latest = posts[0];
+    const second = posts[1];
+    const third = posts[2];
+
+    //  MAIN CARD
+    if(latest && primaryCard){
+
+      primaryCard.style.backgroundImage =
+        `url(${latest.image || 'https://picsum.photos/800/600'})`;
+
+      primaryCard.style.backgroundSize = "cover";
+      primaryCard.style.backgroundPosition = "center";
+
+      primaryCard.innerHTML = `
+        <div class="primary-info">
+          <div>
+            <h3 class="primary-title">${latest.title}</h3>
+            <p class="primary-label">Featured Post</p>
+            <span class="primary-date">${new Date(latest.createdAt).toDateString()}</span>
+          </div>
+          <a href="blog-detail.html?id=${latest._id}" class="primary-arrow">↗</a>
+        </div>
+      `;
+    }
+
+    //SIDE CARDS
+    [second, third].forEach((post, index)=>{
+
+      if(post && auxCards[index]){
+
+        auxCards[index].style.backgroundImage =
+          `url(${post.image || 'https://picsum.photos/400/300'})`;
+
+        auxCards[index].style.backgroundSize = "cover";
+        auxCards[index].style.backgroundPosition = "center";
+
+        auxCards[index].innerHTML = `
+          <a href="blog-detail.html?id=${post._id}" style="display:block;width:100%;height:100%;"></a>
+        `;
+      }
+
+    });
+  }
+
+
+  // ==========================
+  //  GRID BLOGS
+  // ==========================
+  function renderFeedGrid(posts){
+
+    blogContainer.innerHTML = "";
+
+    posts.forEach(post => {
+
+      const imageUrl = post.image
+        ? post.image
+        : `https://picsum.photos/seed/${post._id}/400/300`;
+
+      const article = document.createElement("article");
+      article.className = "feed-card";
+
+      article.innerHTML = `
+        <div class="feed-thumb">
+          <img src="${imageUrl}" alt="${post.title}">
+        </div>
+
+        <div class="feed-card-footer">
+          <p>${post.title}</p>
+          <a href="blog-detail.html?id=${post._id}" class="feed-arrow">↗</a>
+        </div>
+      `;
+
+      blogContainer.appendChild(article);
+    });
+
+  }
+
+  fetchBlogPosts();
+
+});
+
+
+
