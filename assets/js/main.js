@@ -443,4 +443,91 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// const form = document.getElementById("contactForm");
 
+// form.addEventListener("submit", async function (e) {
+//   e.preventDefault();
+
+//   let isValid = true;
+
+//   document.querySelectorAll(".error-text").forEach(el => el.remove());
+//   document.querySelectorAll(".input-error").forEach(el => el.classList.remove("input-error"));
+
+//   const inputs = form.querySelectorAll("input, textarea");
+
+//   inputs.forEach(input => {
+//     const value = input.value.trim();
+
+//     if (!value) {
+//       showError(input, "This field is required");
+//       isValid = false;
+//       return;
+//     }
+
+//     if (input.name === "email") {
+//       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+//       if (!emailPattern.test(value)) {
+//         showError(input, "Enter valid email");
+//         isValid = false;
+//       }
+//     }
+
+//     if (input.name === "phone") {
+//       const phonePattern = /^[+]?[\d\s]{10,15}$/;
+//       if (!phonePattern.test(value)) {
+//         showError(input, "Enter valid phone number");
+//         isValid = false;
+//       }
+//     }
+
+//     if (input.name === "message" && value.length < 10) {
+//       showError(input, "Message must be at least 10 characters");
+//       isValid = false;
+//     }
+//   });
+
+//   if (!isValid) return;
+
+//   const submitBtn = form.querySelector("button");
+//   submitBtn.disabled = true;
+//   submitBtn.innerText = "Sending...";
+
+//   const data = {
+//     firstName: form.firstName.value.trim(),
+//     lastName: form.lastName.value.trim(),
+//     phoneNumber: form.phone.value.trim(), 
+//     email: form.email.value.trim(),
+//     subject: form.subject.value.trim(),
+//     message: form.message.value.trim(),
+//   };
+
+//  try {
+//   const response = await fetch("https://alphabit-web-1.onrender.com/users/contactUS", {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify(data),
+//   });
+
+//   if (!response.ok) {
+//     throw new Error("Failed to send message");
+//   }
+
+//   // Always show fixed success message
+//   alert("Message sent successfully!");
+//   form.reset();
+
+// } catch (error) {
+//   alert("Something went wrong!");
+// }
+
+// });
+
+// function showError(input, message) {
+//   input.classList.add("input-error");
+
+//   const error = document.createElement("div");
+//   error.className = "error-text";
+//   error.innerText = message;
+
+//   input.parentNode.insertBefore(error, input.nextSibling);
+// }

@@ -194,19 +194,15 @@
     <div class="schedule-content">
       <p>👋🏼 Hey Innovator,</p>
       <h2>
-        I'm Your<span class="span-image"></span
-        ><span class="span-orange"> AI</span
-        ><span class="span-white">(Alphabit Infoway)</span>
+        I'm Your<img src="./assets/images/home/Hey Innovator/1.jpg" class="span-image"></span><span class="span-orange"> AI</span><span class="span-white">(Alphabit
+          Infoway)</span>
       </h2>
       <h2>
-        <span class="span-orange">Buddy, </span>Let's<span
-          class="span-image"
-        ></span>
+        <span class="span-orange">Buddy, </span>Let's<img src="./assets/images/home/Hey Innovator/2.jpg"class="span-image"></span>
         Convert
       </h2>
       <h2>
-        Your <span class="span-white">Idea</span
-        ><span class="span-image"></span> into
+        Your <span class="span-white">Idea</span><img src="./assets/images/home/Hey Innovator/3.jpg" class="span-image"></span> into
         <span class="span-white">Reality</span>
       </h2>
     </div>

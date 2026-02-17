@@ -113,22 +113,23 @@
 
     <!-- RIGHT FORM -->
     <div class="nx-contact-right">
-      <form class="nx-contact-form">
-        <div class="nx-form-row">
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
-        </div>
+   <form class="nx-contact-form" id="contactForm" novalidate>
+  <div class="nx-form-row">
+    <input type="text" name="firstName" placeholder="First Name">
+    <input type="text" name="lastName" placeholder="Last Name">
+  </div>
 
-        <div class="nx-form-row">
-          <input type="tel" placeholder="Phone">
-          <input type="email" placeholder="Email">
-        </div>
+  <div class="nx-form-row">
+    <input type="tel" name="phone" placeholder="Phone">
+    <input type="email" name="email" placeholder="Email">
+  </div>
 
-        <input type="text" class="nx-full" placeholder="Subject">
-        <textarea class="nx-full" placeholder="Message"></textarea>
+  <input type="text" name="subject" class="nx-full" placeholder="Subject">
+  <textarea name="message" class="nx-full" placeholder="Message"></textarea>
 
-        <button type="submit">Contact Us</button>
-      </form>
+  <button type="submit">Contact Us</button>
+</form>
+
     </div>
 
   </div>
@@ -148,6 +149,7 @@
   </iframe>
 </section>
 
-
+<script src="./assets/js/contectus.js"></script>
+<link rel="stylesheet" href="./assets/css/contectFrom.css">
 
       <!--#include file="footer.shtml" -->
