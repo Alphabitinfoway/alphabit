@@ -277,12 +277,12 @@ const timelineObserver = new IntersectionObserver((entries) => {
 }, timelineOptions);
 
 document.querySelectorAll(".brand-timeline .timeline-step")
-  .forEach(step => timelineObserver.observe(step)); 
+  .forEach(step => timelineObserver.observe(step));
 
 
 
 
-  // Tech page counter :
+// Tech page counter :
 
 /* ===== COUNTER ANIMATION SCRIPT ===== */
 const statNumbers = document.querySelectorAll('.stat-number');
@@ -316,7 +316,7 @@ toggle.addEventListener("click", () => {
 
 /* Dropdown click for mobile */
 document.querySelectorAll(".dropdown-toggle").forEach(item => {
-  item.addEventListener("click", function(e) {
+  item.addEventListener("click", function (e) {
     if (window.innerWidth <= 992) {
       e.preventDefault();
       this.parentElement.classList.toggle("active");
@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await fetch(API_URL);
       const posts = await response.json();
 
-      if(!posts || posts.length === 0) return;
+      if (!posts || posts.length === 0) return;
 
       // Latest first (assuming latest = last created)
       const sortedPosts = posts.reverse();
@@ -359,14 +359,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================
   // TOP 3 CARDS
   // ==========================
-  function renderTopCards(posts){
+  function renderTopCards(posts) {
 
     const latest = posts[0];
     const second = posts[1];
     const third = posts[2];
 
     //  MAIN CARD
-    if(latest && primaryCard){
+    if (latest && primaryCard) {
 
       primaryCard.style.backgroundImage =
         `url(${latest.image || 'https://picsum.photos/800/600'})`;
@@ -381,15 +381,15 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="primary-label">Featured Post</p>
             <span class="primary-date">${new Date(latest.createdAt).toDateString()}</span>
           </div>
-          <a href="blog-detail.html?id=${latest._id}" class="primary-arrow">↗</a>
+          <a href="blogdetails.shtml?id=${latest._id}" class="primary-arrow">↗</a>
         </div>
       `;
     }
 
     //SIDE CARDS
-    [second, third].forEach((post, index)=>{
+    [second, third].forEach((post, index) => {
 
-      if(post && auxCards[index]){
+      if (post && auxCards[index]) {
 
         auxCards[index].style.backgroundImage =
           `url(${post.image || 'https://picsum.photos/400/300'})`;
@@ -398,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
         auxCards[index].style.backgroundPosition = "center";
 
         auxCards[index].innerHTML = `
-          <a href="blog-detail.html?id=${post._id}" style="display:block;width:100%;height:100%;"></a>
+          <a href="blogdetails.shtml?id=${post._id}" style="display:block;width:100%;height:100%;"></a>
         `;
       }
 
@@ -409,9 +409,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================
   //  GRID BLOGS
   // ==========================
-  function renderFeedGrid(posts){
-
-    blogContainer.innerHTML = "";
+  function renderFeedGrid(posts) {
 
     posts.forEach(post => {
 
@@ -429,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <div class="feed-card-footer">
           <p>${post.title}</p>
-          <a href="blog-detail.html?id=${post._id}" class="feed-arrow">↗</a>
+          <a href="blogdetails.shtml?id=${post._id}" class="feed-arrow">↗</a>
         </div>
       `;
 
@@ -531,3 +529,90 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //   input.parentNode.insertBefore(error, input.nextSibling);
 // }
+
+//************************************** */ homepage blog section*************************/
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const blogContainer = document.getElementById("blog-container");
+
+  if (!blogContainer) {
+    console.error("Blog container not found!");
+    return;
+  }
+
+  const API_URL = "https://alphabit-web-1.onrender.com/users/getBlogs";
+  async function fetchBlogs() {
+    try {
+      const response = await fetch(API_URL);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const posts = await response.json();
+
+      // Pehle sort karo (latest first)
+      const sortedPosts = posts.sort(
+        (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+      );
+
+      // Fir sirf 3 latest lo
+      renderBlogs(sortedPosts.slice(0, 3));
+
+
+    } catch (error) {
+      console.error("Error fetching blogs:", error);
+      blogContainer.innerHTML =
+        '<p class="error-message">Failed to load blog posts.</p>';
+    }
+  }
+
+
+  function renderBlogs(posts) {
+
+    blogContainer.innerHTML = "";
+
+    posts.forEach(post => {
+
+      const imageUrl = post.image
+        ? post.image
+        : `https://picsum.photos/seed/${post._id}/400/300`;
+
+      const blogCard = document.createElement("div");
+      blogCard.className = "blog-card";
+
+      blogCard.innerHTML = `
+        <h3 class="blog-title">
+          ${post.title}
+        </h3>
+
+     <div class="blog-image" 
+     style="background-image: url('${imageUrl}'); background-size: cover; background-position: center;">
+</div>
+</div>
+
+
+        <p class="blog-desc">
+          ${post.description ? post.description.substring(0, 100) + "..." : ""}
+        </p>
+
+        <div class="blog-author">
+          <h4>${post.author || "Admin"}</h4>
+          <span>${new Date(post.createdAt).toDateString()} - STORY</span>
+        </div>
+      `;
+
+      blogCard.addEventListener("click", () => {
+        window.location.href = `blogdetails.shtml?id=${post._id}`;
+      });
+
+      blogContainer.appendChild(blogCard);
+    });
+  }
+
+  fetchBlogs();
+});
+
+

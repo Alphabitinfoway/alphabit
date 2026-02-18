@@ -22,7 +22,6 @@
       <a href="#" class="dropdown-toggle">Insights</a>
       <ul class="dropdown-menu">
         <li><a href="blog.shtml">Blog</a></li>
-        <li><a href="blogdetails.shtml">Blog Details</a></li>
         <li><a href="career.shtml">Career</a></li>
         <li><a href="careerdetails.shtml">Career Details</a></li>
       </ul>

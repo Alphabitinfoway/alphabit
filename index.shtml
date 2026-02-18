@@ -606,53 +606,8 @@
       <h2 class="section-title"><span class="orange-bg">BLOG</span> SLIDER</h2>
     </div>
 
-    <div class="blog-container">
-      <div class="blog-card">
-        <h3 class="blog-title">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </h3>
-        <div class="blog-image"></div>
-        <p class="blog-desc">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-        <div class="blog-author">
-          <h4>OLIVER KUGAR</h4>
-          <span>20 DEC 2024 - STORY</span>
-        </div>
-      </div>
-      <div class="blog-card">
-        <h3 class="blog-title">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </h3>
-        <div class="blog-image"></div>
-        <p class="blog-desc">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-        <div class="blog-author">
-          <h4>OLIVER KUGAR</h4>
-          <span>20 DEC 2024 - STORY</span>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <h3 class="blog-title">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </h3>
-        <div class="blog-image"></div>
-        <p class="blog-desc">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-        <div class="blog-author">
-          <h4>OLIVER KUGAR</h4>
-          <span>20 DEC 2024 - STORY</span>
-        </div>
-      </div>
+    <div class="blog-container"  id="blog-container">
+ 
     </div>
   </section>
 
