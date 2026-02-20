@@ -307,23 +307,28 @@ statNumbers.forEach(statEl => {
 
 
 
-const toggle = document.querySelector(".menu-toggle");
-const navbar = document.querySelector(".navbar");
+const toggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
 
-toggle.addEventListener("click", () => {
-  navbar.classList.toggle("active");
+toggle.addEventListener('click', () => {
+  toggle.classList.toggle('active');
+  navbar.classList.toggle('active');
 });
 
-/* Dropdown click for mobile */
-document.querySelectorAll(".dropdown-toggle").forEach(item => {
-  item.addEventListener("click", function (e) {
-    if (window.innerWidth <= 992) {
-      e.preventDefault();
-      this.parentElement.classList.toggle("active");
-    }
+document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    btn.closest('.dropdown').classList.toggle('active');
   });
 });
 
+// Bahar click karo toh band ho jaye
+document.addEventListener('click', (e) => {
+  if (!toggle.contains(e.target) && !navbar.contains(e.target)) {
+    toggle.classList.remove('active');
+    navbar.classList.remove('active');
+  }
+});
 
 
 

@@ -113,7 +113,7 @@
       <h2 class="section-title">OUR <span class="orange-bg">HISTORY</span></h2>
     </div>
 
-    <div class="timeline">
+    <div class="timeline" style="align-items: center;">
       <div class="timeline-item left">
         <div class="year-badge">2018</div>
         <div class="timeline-card">

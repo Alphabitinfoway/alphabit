@@ -153,14 +153,14 @@
             <img src="./assets/images/profile1.png" alt="Profile Image 1" />
           </div>
         </div>
-        <div class="profile-text">
-          <h6 class="profile-text1">32K +</h6>
-          <div class="client-stack">
-            <h6>happy clients</h6>
-            <h6>of our</h6>
-            <h6>services</h6>
-          </div>
-        </div>
+       <div class="profile-text">
+  <h6 class="profile-text1">32K +</h6>
+  <div class="client-stack">
+    <h6>happy clients</h6>
+    <h6>of our</h6>
+    <h6>services</h6>
+  </div>
+</div>
       </div>
       <div class="about-description">
         <p class="description-text">
@@ -192,425 +192,429 @@
           <div class="explore-title">Faster Service</div>
         </div>
       </div>
-      <div >
-  <img src="./assets/images/home/About/1.jpg" alt="About Image" class="image-card1">
-</div>
+      <div>
+        <img src="./assets/images/home/About/1.jpg" alt="About Image" class="image-card1">
+      </div>
       <div>
         <img src="./assets/images/home/About/2.jpg" alt="About Image" class="image-card2">
       </div>
+    </div>
+</div>
+</section>
+<!-- Cross-line Section -->
+<section class="cross-line-section">
+  <div class="cross-line orange-line">
+    <div class="marquee">
+      <span>
+        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
+        Design <img src="./assets/images/arrow.png" alt="" /> Software
+        Development <img src="./assets/images/arrow.png" alt="" /> App
+        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
+        <img src="./assets/images/arrow.png" alt="" />
+      </span>
+      <span>
+        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
+        Design <img src="./assets/images/arrow.png" alt="" /> Software
+        Development <img src="./assets/images/arrow.png" alt="" /> App
+        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
+        <img src="./assets/images/arrow.png" alt="" />
+      </span>
+      <span>
+        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
+        Design <img src="./assets/images/arrow.png" alt="" /> Software
+        Development <img src="./assets/images/arrow.png" alt="" /> App
+        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
+        <img src="./assets/images/arrow.png" alt="" />
+      </span>
+      <span>
+        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
+        Design <img src="./assets/images/arrow.png" alt="" /> Software
+        Development <img src="./assets/images/arrow.png" alt="" /> App
+        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
+        <img src="./assets/images/arrow.png" alt="" />
+      </span>
+      <span>
+        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
+        Design <img src="./assets/images/arrow.png" alt="" /> Software
+        Development <img src="./assets/images/arrow.png" alt="" /> App
+        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
+        <img src="./assets/images/arrow.png" alt="" />
+      </span>
+      <span>
+        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
+        Design <img src="./assets/images/arrow.png" alt="" /> Software
+        Development <img src="./assets/images/arrow.png" alt="" /> App
+        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
+        <img src="./assets/images/arrow.png" alt="" />
+      </span>
+    </div>
+  </div>
+
+  <div class="cross-line gray-line">
+    <div class="marquee">
+      <span>
+        Over 100+ Clients
+        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.png" alt="" />
+      </span>
+      <span>
+        Over 100+ Clients
+        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.png" alt="" />
+      </span>
+      <span>
+        Over 100+ Clients
+        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.png" alt="" />
+      </span>
+      <span>
+        Over 100+ Clients
+        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.png" alt="" />
+      </span>
+      <span>
+        Over 100+ Clients
+        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.png" alt="" />
+      </span>
+      <span>
+        Over 100+ Clients
+        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.png" alt="" />
+      </span>
+      <span>
+        Over 100+ Clients
+        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.png" alt="" />
+      </span>
+    </div>
+  </div>
+</section>
+<!-- Schedule Section -->
+<section class="schedule-section">
+  <div class="schedule-content">
+    <p>👋🏼 Hey Innovator,</p>
+    <h2>
+      I'm Your<img src="./assets/images/home/Hey Innovator/1.jpg" class="span-image"></span><span class="span-orange">
+        AI</span><span class="span-white">(Alphabit
+        Infoway)</span>
+    </h2>
+    <h2>
+      <span class="span-orange">Buddy, </span>Let's<img src="./assets/images/home/Hey Innovator/2.jpg"
+        class="span-image"></span>
+      Convert
+    </h2>
+    <h2>
+      Your <span class="span-white">Idea</span><img src="./assets/images/home/Hey Innovator/3.jpg"
+        class="span-image"></span> into
+      <span class="span-white">Reality</span>
+    </h2>
+  </div>
+  <button class="schedule-btn">Schedule a Meeting</button>
+</section>
+<!-- Delivering Excellence Section -->
+<section class="delivering-excellence">
+  <div class="title-header">
+    <h2 class="section-title">
+      DELIVERING <span class="orange-bg">EXCELLENCE</span> TO
+    </h2>
+    <h2 class="section-title">TRANSFORM BUSINESSES</h2>
+  </div>
+  <div class="bg-card"></div>
+  <div class="excellence-title">Data Backups</div>
+  <div class="carousel">
+    <div class="card"><img src="./assets/images/img1.jpeg" /></div>
+    <div class="card"><img src="./assets/images/img2.jpeg" /></div>
+    <div class="card"><img src="" /></div>
+    <div class="card"><img src="" /></div>
+    <div class="card"><img src="" /></div>
+  </div>
+  <p class="excellence-description">
+    We carefully maintain our client's project backups to make sure to
+    minimize the chances of data misfortunes.
+  </p>
+</section>
+<!-- Working Process Section -->
+<section class="working-process-section">
+  <div class="title-header">
+    <h2 class="section-title">
+      WORKING <span class="orange-bg">PROCESS</span>
+    </h2>
+  </div>
+
+  <div class="timeline">
+    <div class="step right">
+      <div class="icon-wrapper">
+        <div class="step-icon purple">
+          <img src="./assets/images/icon1.png" alt="process icon" />
+        </div>
+      </div>
+      <div class="process-card">
+        <h3>Requirement Gathering</h3>
+        <p>
+          Focus would be on documentation first for clarity and better
+          understanding from both sides and come to the same page.
+        </p>
       </div>
     </div>
-  </section>
-  <!-- Cross-line Section -->
-  <section class="cross-line-section">
-    <div class="cross-line orange-line">
-      <div class="marquee">
-        <span>
-          Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-          Design <img src="./assets/images/arrow.png" alt="" /> Software
-          Development <img src="./assets/images/arrow.png" alt="" /> App
-          Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-          <img src="./assets/images/arrow.png" alt="" />
-        </span>
-        <span>
-          Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-          Design <img src="./assets/images/arrow.png" alt="" /> Software
-          Development <img src="./assets/images/arrow.png" alt="" /> App
-          Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-          <img src="./assets/images/arrow.png" alt="" />
-        </span>
-        <span>
-          Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-          Design <img src="./assets/images/arrow.png" alt="" /> Software
-          Development <img src="./assets/images/arrow.png" alt="" /> App
-          Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-          <img src="./assets/images/arrow.png" alt="" />
-        </span>
-        <span>
-          Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-          Design <img src="./assets/images/arrow.png" alt="" /> Software
-          Development <img src="./assets/images/arrow.png" alt="" /> App
-          Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-          <img src="./assets/images/arrow.png" alt="" />
-        </span>
-        <span>
-          Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-          Design <img src="./assets/images/arrow.png" alt="" /> Software
-          Development <img src="./assets/images/arrow.png" alt="" /> App
-          Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-          <img src="./assets/images/arrow.png" alt="" />
-        </span>
-        <span>
-          Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-          Design <img src="./assets/images/arrow.png" alt="" /> Software
-          Development <img src="./assets/images/arrow.png" alt="" /> App
-          Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-          <img src="./assets/images/arrow.png" alt="" />
-        </span>
+    <div class="step left">
+      <div class="process-card">
+        <h3>Designs, Wireframes, & Mockups</h3>
+        <p>
+          We help our clients to create an interactive and wonder to watch UI
+          designs that describes user-friendly flow of web/app/platform.
+        </p>
+      </div>
+      <div class="icon-wrapper">
+        <div class="step-icon purple">
+          <img src="./assets/images/icon2.png" alt="process icon" />
+        </div>
+      </div>
+    </div>
+    <div class="step right">
+      <div class="icon-wrapper">
+        <div class="step-icon purple">
+          <img src="./assets/images/icon3.png" alt="process icon" />
+        </div>
+      </div>
+      <div class="process-card">
+        <h3>Prototype Demo</h3>
+        <p>
+          After finalizing and designs approval, we freeze the scope and help
+          our client with demo or prototype to have a look and feel of the
+          app/web/platform.
+        </p>
       </div>
     </div>
 
-    <div class="cross-line gray-line">
-      <div class="marquee">
-        <span>
-          Over 100+ Clients
-          <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-          <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-          <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-          <img src="./assets/images/arrow2.png" alt="" />
-        </span>
-        <span>
-          Over 100+ Clients
-          <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-          <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-          <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-          <img src="./assets/images/arrow2.png" alt="" />
-        </span>
-        <span>
-          Over 100+ Clients
-          <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-          <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-          <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-          <img src="./assets/images/arrow2.png" alt="" />
-        </span>
-        <span>
-          Over 100+ Clients
-          <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-          <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-          <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-          <img src="./assets/images/arrow2.png" alt="" />
-        </span>
-        <span>
-          Over 100+ Clients
-          <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-          <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-          <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-          <img src="./assets/images/arrow2.png" alt="" />
-        </span>
-        <span>
-          Over 100+ Clients
-          <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-          <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-          <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-          <img src="./assets/images/arrow2.png" alt="" />
-        </span>
-        <span>
-          Over 100+ Clients
-          <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-          <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-          <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-          <img src="./assets/images/arrow2.png" alt="" />
-        </span>
+    <div class="step left">
+      <div class="process-card">
+        <h3>Changes And Confirmation</h3>
+        <p>
+          Clients can feel free to add and mention the required changes as per
+          expectations they need in the existing platform. We'll proceed with
+          client's confirmation on the same.
+        </p>
+      </div>
+      <div class="icon-wrapper">
+        <div class="step-icon purple">
+          <img src="./assets/images/icon4.png" alt="process icon" />
+        </div>
       </div>
     </div>
-  </section>
-  <!-- Schedule Section -->
-  <section class="schedule-section">
-    <div class="schedule-content">
-      <p>👋🏼 Hey Innovator,</p>
-      <h2>
-        I'm Your<img src="./assets/images/home/Hey Innovator/1.jpg" class="span-image"></span><span class="span-orange"> AI</span><span class="span-white">(Alphabit
-          Infoway)</span>
-      </h2>
-      <h2>
-        <span class="span-orange">Buddy, </span>Let's<img src="./assets/images/home/Hey Innovator/2.jpg"class="span-image"></span>
-        Convert
-      </h2>
-      <h2>
-        Your <span class="span-white">Idea</span><img src="./assets/images/home/Hey Innovator/3.jpg" class="span-image"></span> into
-        <span class="span-white">Reality</span>
-      </h2>
+    <div class="step right">
+      <div class="icon-wrapper">
+        <div class="step-icon purple">
+          <img src="./assets/images/icon5.png" alt="process icon" />
+        </div>
+      </div>
+      <div class="process-card">
+        <h3>Development</h3>
+        <p>
+          With client approval, we start the development with the technologies
+          best suited for you, and deliver you results in the timeframe as
+          committed by our technical team.
+        </p>
+      </div>
     </div>
-    <button class="schedule-btn">Schedule a Meeting</button>
-  </section>
-  <!-- Delivering Excellence Section -->
-  <section class="delivering-excellence">
-    <div class="title-header">
-      <h2 class="section-title">
-        DELIVERING <span class="orange-bg">EXCELLENCE</span> TO
-      </h2>
-      <h2 class="section-title">TRANSFORM BUSINESSES</h2>
+    <div class="step left">
+      <div class="process-card">
+        <h3>Deployment</h3>
+        <p>
+          We are open to help our clients with final testing, UAT, training,
+          and final deployment of the source code, and launching in client's
+          platform.
+        </p>
+      </div>
+      <div class="icon-wrapper">
+        <div class="step-icon purple">
+          <img src="./assets/images/icon6.png" alt="process icon" />
+        </div>
+      </div>
     </div>
-    <div class="bg-card"></div>
-    <div class="excellence-title">Data Backups</div>
-    <div class="carousel">
-      <div class="card"><img src="./assets/images/img1.jpeg" /></div>
-      <div class="card"><img src="./assets/images/img2.jpeg" /></div>
-      <div class="card"><img src="" /></div>
-      <div class="card"><img src="" /></div>
-      <div class="card"><img src="" /></div>
+
+    <div class="step right">
+      <div class="icon-wrapper">
+        <div class="step-icon purple">
+          <img src="./assets/images/icon7.png" alt="process icon" />
+        </div>
+      </div>
+      <div class="process-card">
+        <h3>Support And Maintenance</h3>
+        <p>
+          We provide free service and support as per decided terms in our
+          agreement. We also provide packages further monthly or yearly based
+          on your requirement
+        </p>
+      </div>
     </div>
-    <p class="excellence-description">
-      We carefully maintain our client's project backups to make sure to
-      minimize the chances of data misfortunes.
+    <div class="step left">
+      <div class="process-card">
+        <h3>SEO</h3>
+        <p>
+          We are open to help our clients for promoting their
+          businesses/products with providing complimentary SEO services,
+          providing them a help hand to market their product/business.
+        </p>
+      </div>
+      <div class="icon-wrapper">
+        <div class="step-icon purple">
+          <img src="./assets/images/icon8.png" alt="process icon" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- target industries Section -->
+<section class="target-industries-section">
+  <div class="title-header">
+    <h2 class="section-title">
+      TARGETED <span class="orange-bg">INDUSTRIES</span>
+    </h2>
+  </div>
+
+  <!-- floating icons -->
+  <div class="icons-wrapper">
+    <div class="icon icon-1">
+      <img src="./assets/images/industry/Frame.png" alt="" />
+    </div>
+
+    <div class="icon icon-2">
+      <img src="./assets/images/industry/Frame(4).png" alt="" />
+    </div>
+
+    <div class="icon icon-3">
+      <img src="./assets/images/industry/Frame(5).png" alt="" />
+    </div>
+
+    <div class="icon icon-4">
+      <img src="./assets/images/industry/Frame(6).png" alt="" />
+    </div>
+
+    <div class="icon icon-5">
+      <img src="./assets/images/industry/Frame(7).png" alt="" />
+    </div>
+
+    <div class="icon icon-6">
+      <img src="./assets/images/industry/Frame(8).png" alt="" />
+    </div>
+
+    <div class="icon icon-7">
+      <img src="./assets/images/industry/Frame(9).png" alt="" />
+    </div>
+
+    <div class="icon icon-8">
+      <img src="./assets/images/industry/Frame(3).png" alt="" />
+    </div>
+
+    <div class="icon icon-9">
+      <img src="./assets/images/industry/Frame(1).png" alt="" />
+    </div>
+
+    <div class="icon icon-10">
+      <img src="./assets/images/industry/Frame(2).png" alt="" />
+    </div>
+  </div>
+
+  <div class="center-text">
+    <p>Where <img src="./assets/images/home/Trageted Industries/1.jpg" class="gray-pill"></><span>Ambition</span></p>
+    <p>Finds <span>Direction.</span> <img src="./assets/images/home/Trageted Industries/2.jpg" class="gray-pill"></span>
     </p>
-  </section>
-  <!-- Working Process Section -->
-  <section class="working-process-section">
-    <div class="title-header">
-      <h2 class="section-title">
-        WORKING <span class="orange-bg">PROCESS</span>
-      </h2>
+  </div>
+</section>
+<!-- Expertise Section -->
+<section class="expertise-section">
+  <div class="title-header">
+    <h2 class="section-title">WAYS TO LEVERAGE OUR</h2>
+    <h2 class="section-title">
+      DEVELOPMENT <span class="orange-bg">EXPERTISE</span>
+    </h2>
+  </div>
+
+  <div class="expertise-cards">
+    <div class="expertise-card">
+      <div class="icon-box">
+        <img src="./assets/images/home/Experties/Clarity & Commitment.jpg" alt="icon" />
+      </div>
+      <h3>Clarity & Commitment</h3>
+      <p>
+        Perfect for projects with well-defined requirements. We lock in the scope, budget, and timeline upfront,
+        ensuring you get exactly what you expect—delivered on time and within the agreed price.
+
+      </p>
     </div>
 
-    <div class="timeline">
-      <div class="step right">
-        <div class="icon-wrapper">
-          <div class="step-icon purple">
-            <img src="./assets/images/icon1.png" alt="process icon" />
-          </div>
-        </div>
-        <div class="process-card">
-          <h3>Requirement Gathering</h3>
-          <p>
-            Focus would be on documentation first for clarity and better
-            understanding from both sides and come to the same page.
-          </p>
-        </div>
+    <div class="expertise-card">
+      <div class="icon-box">
+        <img src="./assets/images/home/Experties/Your Extended Team.jpg" alt="icon" />
       </div>
-      <div class="step left">
-        <div class="process-card">
-          <h3>Designs, Wireframes, & Mockups</h3>
-          <p>
-            We help our clients to create an interactive and wonder to watch UI
-            designs that describes user-friendly flow of web/app/platform.
-          </p>
-        </div>
-        <div class="icon-wrapper">
-          <div class="step-icon purple">
-            <img src="./assets/images/icon2.png" alt="process icon" />
-          </div>
-        </div>
-      </div>
-      <div class="step right">
-        <div class="icon-wrapper">
-          <div class="step-icon purple">
-            <img src="./assets/images/icon3.png" alt="process icon" />
-          </div>
-        </div>
-        <div class="process-card">
-          <h3>Prototype Demo</h3>
-          <p>
-            After finalizing and designs approval, we freeze the scope and help
-            our client with demo or prototype to have a look and feel of the
-            app/web/platform.
-          </p>
-        </div>
-      </div>
+      <h3>Your Extended Team</h3>
+      <p>
+        Scale your development capacity instantly. Hire Alphabit’s expert developers to work exclusively on your
+        vision. You maintain full control over the team and workflow, paying only for the hours or resources you
+        utilize.
 
-      <div class="step left">
-        <div class="process-card">
-          <h3>Changes And Confirmation</h3>
-          <p>
-            Clients can feel free to add and mention the required changes as per
-            expectations they need in the existing platform. We'll proceed with
-            client's confirmation on the same.
-          </p>
-        </div>
-        <div class="icon-wrapper">
-          <div class="step-icon purple">
-            <img src="./assets/images/icon4.png" alt="process icon" />
-          </div>
-        </div>
-      </div>
-      <div class="step right">
-        <div class="icon-wrapper">
-          <div class="step-icon purple">
-            <img src="./assets/images/icon5.png" alt="process icon" />
-          </div>
-        </div>
-        <div class="process-card">
-          <h3>Development</h3>
-          <p>
-            With client approval, we start the development with the technologies
-            best suited for you, and deliver you results in the timeframe as
-            committed by our technical team.
-          </p>
-        </div>
-      </div>
-      <div class="step left">
-        <div class="process-card">
-          <h3>Deployment</h3>
-          <p>
-            We are open to help our clients with final testing, UAT, training,
-            and final deployment of the source code, and launching in client's
-            platform.
-          </p>
-        </div>
-        <div class="icon-wrapper">
-          <div class="step-icon purple">
-            <img src="./assets/images/icon6.png" alt="process icon" />
-          </div>
-        </div>
-      </div>
-
-      <div class="step right">
-        <div class="icon-wrapper">
-          <div class="step-icon purple">
-            <img src="./assets/images/icon7.png" alt="process icon" />
-          </div>
-        </div>
-        <div class="process-card">
-          <h3>Support And Maintenance</h3>
-          <p>
-            We provide free service and support as per decided terms in our
-            agreement. We also provide packages further monthly or yearly based
-            on your requirement
-          </p>
-        </div>
-      </div>
-      <div class="step left">
-        <div class="process-card">
-          <h3>SEO</h3>
-          <p>
-            We are open to help our clients for promoting their
-            businesses/products with providing complimentary SEO services,
-            providing them a help hand to market their product/business.
-          </p>
-        </div>
-        <div class="icon-wrapper">
-          <div class="step-icon purple">
-            <img src="./assets/images/icon8.png" alt="process icon" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- target industries Section -->
-  <section class="target-industries-section">
-    <div class="title-header">
-      <h2 class="section-title">
-        TARGETED <span class="orange-bg">INDUSTRIES</span>
-      </h2>
+      </p>
     </div>
 
-    <!-- floating icons -->
-    <div class="icons-wrapper">
-      <div class="icon icon-1">
-        <img src="./assets/images/industry/Frame.png" alt="" />
+    <div class="expertise-card">
+      <div class="icon-box">
+        <img src="./assets/images/home/Experties/Seamless Integration.jpg" alt="icon" />
       </div>
+      <h3>Seamless Integration</h3>
+      <p>
+        Need hands-on collaboration? We deploy our skilled professionals directly to your office. Get the temporary,
+        high-impact support you need to accelerate development and integrate seamlessly with your in-house team.
 
-      <div class="icon icon-2">
-        <img src="./assets/images/industry/Frame(4).png" alt="" />
-      </div>
-
-      <div class="icon icon-3">
-        <img src="./assets/images/industry/Frame(5).png" alt="" />
-      </div>
-
-      <div class="icon icon-4">
-        <img src="./assets/images/industry/Frame(6).png" alt="" />
-      </div>
-
-      <div class="icon icon-5">
-        <img src="./assets/images/industry/Frame(7).png" alt="" />
-      </div>
-
-      <div class="icon icon-6">
-        <img src="./assets/images/industry/Frame(8).png" alt="" />
-      </div>
-
-      <div class="icon icon-7">
-        <img src="./assets/images/industry/Frame(9).png" alt="" />
-      </div>
-
-      <div class="icon icon-8">
-        <img src="./assets/images/industry/Frame(3).png" alt="" />
-      </div>
-
-      <div class="icon icon-9">
-        <img src="./assets/images/industry/Frame(1).png" alt="" />
-      </div>
-
-      <div class="icon icon-10">
-        <img src="./assets/images/industry/Frame(2).png" alt="" />
-      </div>
+      </p>
     </div>
-
-    <div class="center-text">
-      <p>Where <img src="./assets/images/home/Trageted Industries/1.jpg" class="gray-pill"></><span>Ambition</span></p>
-      <p>Finds <span>Direction.</span> <img src="./assets/images/home/Trageted Industries/2.jpg"class="gray-pill"></span></p>
+  </div>
+</section>
+<!-- My Presence Section -->
+<section class="Presence-section">
+  <div class="title-header">
+    <h2 class="section-title">MY <span class="orange-bg"> PRESENCE</span></h2>
+  </div>
+  <div class="Presence-container">
+    <div class="Presence-card">
+      <img src="./assets/images/plogo1.png" alt="" />
     </div>
-  </section>
-  <!-- Expertise Section -->
-  <section class="expertise-section">
-    <div class="title-header">
-      <h2 class="section-title">WAYS TO LEVERAGE OUR</h2>
-      <h2 class="section-title">
-        DEVELOPMENT <span class="orange-bg">EXPERTISE</span>
-      </h2>
+    <div class="Presence-card">
+      <img src="./assets/images/plogo2.png" alt="" />
     </div>
-
-    <div class="expertise-cards">
-      <div class="expertise-card">
-        <div class="icon-box">
-          <img src="./assets/images/home/Experties/Clarity & Commitment.jpg" alt="icon" />
-        </div>
-        <h3>Clarity & Commitment</h3>
-        <p>
-          Perfect for projects with well-defined requirements. We lock in the scope, budget, and timeline upfront,
-          ensuring you get exactly what you expect—delivered on time and within the agreed price.
-
-        </p>
-      </div>
-
-      <div class="expertise-card">
-        <div class="icon-box">
-          <img src="./assets/images/home/Experties/Your Extended Team.jpg" alt="icon" />
-        </div>
-        <h3>Your Extended Team</h3>
-        <p>
-          Scale your development capacity instantly. Hire Alphabit’s expert developers to work exclusively on your
-          vision. You maintain full control over the team and workflow, paying only for the hours or resources you
-          utilize.
-
-        </p>
-      </div>
-
-      <div class="expertise-card">
-        <div class="icon-box">
-          <img src="./assets/images/home/Experties/Seamless Integration.jpg" alt="icon" />
-        </div>
-        <h3>Seamless Integration</h3>
-        <p>
-          Need hands-on collaboration? We deploy our skilled professionals directly to your office. Get the temporary,
-          high-impact support you need to accelerate development and integrate seamlessly with your in-house team.
-
-        </p>
-      </div>
+    <div class="Presence-card">
+      <img src="./assets/images/plogo3.png" alt="" />
     </div>
-  </section>
-  <!-- My Presence Section -->
-  <section class="Presence-section">
-    <div class="title-header">
-      <h2 class="section-title">MY <span class="orange-bg"> PRESENCE</span></h2>
+    <div class="Presence-card">
+      <img src="./assets/images/plogo4.png" alt="" />
     </div>
-    <div class="Presence-container">
-      <div class="Presence-card">
-        <img src="./assets/images/plogo1.png" alt="" />
-      </div>
-      <div class="Presence-card">
-        <img src="./assets/images/plogo2.png" alt="" />
-      </div>
-      <div class="Presence-card">
-        <img src="./assets/images/plogo3.png" alt="" />
-      </div>
-      <div class="Presence-card">
-        <img src="./assets/images/plogo4.png" alt="" />
-      </div>
-    </div>
-  </section>
-  <!-- Blog Slider Section -->
-  <section class="Blog-section">
-    <div class="title-header">
-      <h2 class="section-title"><span class="orange-bg">BLOG</span> SLIDER</h2>
-    </div>
+  </div>
+</section>
+<!-- Blog Slider Section -->
+<section class="Blog-section">
+  <div class="title-header">
+    <h2 class="section-title"><span class="orange-bg">BLOG</span> SLIDER</h2>
+  </div>
 
-    <div class="blog-container"  id="blog-container">
- 
-    </div>
-  </section>
+  <div class="blog-container" id="blog-container">
 
-  <!-- Footer -->
-  <!--#include file="footer.shtml" -->
+  </div>
+</section>
+
+<!-- Footer -->
+<!--#include file="footer.shtml" -->
 </div>
