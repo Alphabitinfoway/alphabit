@@ -277,12 +277,12 @@ const timelineObserver = new IntersectionObserver((entries) => {
 }, timelineOptions);
 
 document.querySelectorAll(".brand-timeline .timeline-step")
-  .forEach(step => timelineObserver.observe(step)); 
+  .forEach(step => timelineObserver.observe(step));
 
 
 
 
-  // Tech page counter :
+// Tech page counter :
 
 /* ===== COUNTER ANIMATION SCRIPT ===== */
 const statNumbers = document.querySelectorAll('.stat-number');
@@ -307,23 +307,28 @@ statNumbers.forEach(statEl => {
 
 
 
-const toggle = document.querySelector(".menu-toggle");
-const navbar = document.querySelector(".navbar");
+const toggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
 
-toggle.addEventListener("click", () => {
-  navbar.classList.toggle("active");
+toggle.addEventListener('click', () => {
+  toggle.classList.toggle('active');
+  navbar.classList.toggle('active');
 });
 
-/* Dropdown click for mobile */
-document.querySelectorAll(".dropdown-toggle").forEach(item => {
-  item.addEventListener("click", function(e) {
-    if (window.innerWidth <= 992) {
-      e.preventDefault();
-      this.parentElement.classList.toggle("active");
-    }
+document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    btn.closest('.dropdown').classList.toggle('active');
   });
 });
 
+// Bahar click karo toh band ho jaye
+document.addEventListener('click', (e) => {
+  if (!toggle.contains(e.target) && !navbar.contains(e.target)) {
+    toggle.classList.remove('active');
+    navbar.classList.remove('active');
+  }
+});
 
 
 
@@ -342,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await fetch(API_URL);
       const posts = await response.json();
 
-      if(!posts || posts.length === 0) return;
+      if (!posts || posts.length === 0) return;
 
       // Latest first (assuming latest = last created)
       const sortedPosts = posts.reverse();
@@ -359,14 +364,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================
   // TOP 3 CARDS
   // ==========================
-  function renderTopCards(posts){
+  function renderTopCards(posts) {
 
     const latest = posts[0];
     const second = posts[1];
     const third = posts[2];
 
     //  MAIN CARD
-    if(latest && primaryCard){
+    if (latest && primaryCard) {
 
       primaryCard.style.backgroundImage =
         `url(${latest.image || 'https://picsum.photos/800/600'})`;
@@ -381,15 +386,15 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="primary-label">Featured Post</p>
             <span class="primary-date">${new Date(latest.createdAt).toDateString()}</span>
           </div>
-          <a href="blog-detail.html?id=${latest._id}" class="primary-arrow">↗</a>
+          <a href="blogdetails.shtml?id=${latest._id}" class="primary-arrow">↗</a>
         </div>
       `;
     }
 
     //SIDE CARDS
-    [second, third].forEach((post, index)=>{
+    [second, third].forEach((post, index) => {
 
-      if(post && auxCards[index]){
+      if (post && auxCards[index]) {
 
         auxCards[index].style.backgroundImage =
           `url(${post.image || 'https://picsum.photos/400/300'})`;
@@ -398,7 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
         auxCards[index].style.backgroundPosition = "center";
 
         auxCards[index].innerHTML = `
-          <a href="blog-detail.html?id=${post._id}" style="display:block;width:100%;height:100%;"></a>
+          <a href="blogdetails.shtml?id=${post._id}" style="display:block;width:100%;height:100%;"></a>
         `;
       }
 
@@ -409,9 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================
   //  GRID BLOGS
   // ==========================
-  function renderFeedGrid(posts){
-
-    blogContainer.innerHTML = "";
+  function renderFeedGrid(posts) {
 
     posts.forEach(post => {
 
@@ -429,7 +432,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <div class="feed-card-footer">
           <p>${post.title}</p>
-          <a href="blog-detail.html?id=${post._id}" class="feed-arrow">↗</a>
+          <a href="blogdetails.shtml?id=${post._id}" class="feed-arrow">↗</a>
         </div>
       `;
 
@@ -442,5 +445,179 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
+// const form = document.getElementById("contactForm");
+
+// form.addEventListener("submit", async function (e) {
+//   e.preventDefault();
+
+//   let isValid = true;
+
+//   document.querySelectorAll(".error-text").forEach(el => el.remove());
+//   document.querySelectorAll(".input-error").forEach(el => el.classList.remove("input-error"));
+
+//   const inputs = form.querySelectorAll("input, textarea");
+
+//   inputs.forEach(input => {
+//     const value = input.value.trim();
+
+//     if (!value) {
+//       showError(input, "This field is required");
+//       isValid = false;
+//       return;
+//     }
+
+//     if (input.name === "email") {
+//       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+//       if (!emailPattern.test(value)) {
+//         showError(input, "Enter valid email");
+//         isValid = false;
+//       }
+//     }
+
+//     if (input.name === "phone") {
+//       const phonePattern = /^[+]?[\d\s]{10,15}$/;
+//       if (!phonePattern.test(value)) {
+//         showError(input, "Enter valid phone number");
+//         isValid = false;
+//       }
+//     }
+
+//     if (input.name === "message" && value.length < 10) {
+//       showError(input, "Message must be at least 10 characters");
+//       isValid = false;
+//     }
+//   });
+
+//   if (!isValid) return;
+
+//   const submitBtn = form.querySelector("button");
+//   submitBtn.disabled = true;
+//   submitBtn.innerText = "Sending...";
+
+//   const data = {
+//     firstName: form.firstName.value.trim(),
+//     lastName: form.lastName.value.trim(),
+//     phoneNumber: form.phone.value.trim(), 
+//     email: form.email.value.trim(),
+//     subject: form.subject.value.trim(),
+//     message: form.message.value.trim(),
+//   };
+
+//  try {
+//   const response = await fetch("https://alphabit-web-1.onrender.com/users/contactUS", {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify(data),
+//   });
+
+//   if (!response.ok) {
+//     throw new Error("Failed to send message");
+//   }
+
+//   // Always show fixed success message
+//   alert("Message sent successfully!");
+//   form.reset();
+
+// } catch (error) {
+//   alert("Something went wrong!");
+// }
+
+// });
+
+// function showError(input, message) {
+//   input.classList.add("input-error");
+
+//   const error = document.createElement("div");
+//   error.className = "error-text";
+//   error.innerText = message;
+
+//   input.parentNode.insertBefore(error, input.nextSibling);
+// }
+
+//************************************** */ homepage blog section*************************/
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const blogContainer = document.getElementById("blog-container");
+
+  if (!blogContainer) {
+    console.error("Blog container not found!");
+    return;
+  }
+
+  const API_URL = "https://alphabit-web-1.onrender.com/users/getBlogs";
+  async function fetchBlogs() {
+    try {
+      const response = await fetch(API_URL);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const posts = await response.json();
+
+      // Pehle sort karo (latest first)
+      const sortedPosts = posts.sort(
+        (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+      );
+
+      // Fir sirf 3 latest lo
+      renderBlogs(sortedPosts.slice(0, 3));
+
+
+    } catch (error) {
+      console.error("Error fetching blogs:", error);
+      blogContainer.innerHTML =
+        '<p class="error-message">Failed to load blog posts.</p>';
+    }
+  }
+
+
+  function renderBlogs(posts) {
+
+    blogContainer.innerHTML = "";
+
+    posts.forEach(post => {
+
+      const imageUrl = post.image
+        ? post.image
+        : `https://picsum.photos/seed/${post._id}/400/300`;
+
+      const blogCard = document.createElement("div");
+      blogCard.className = "blog-card";
+
+      blogCard.innerHTML = `
+        <h3 class="blog-title">
+          ${post.title}
+        </h3>
+
+     <div class="blog-image" 
+     style="background-image: url('${imageUrl}'); background-size: cover; background-position: center;">
+</div>
+</div>
+
+
+        <p class="blog-desc">
+          ${post.description ? post.description.substring(0, 100) + "..." : ""}
+        </p>
+
+        <div class="blog-author">
+          <h4>${post.author || "Admin"}</h4>
+          <span>${new Date(post.createdAt).toDateString()} - STORY</span>
+        </div>
+      `;
+
+      blogCard.addEventListener("click", () => {
+        window.location.href = `blogdetails.shtml?id=${post._id}`;
+      });
+
+      blogContainer.appendChild(blogCard);
+    });
+  }
+
+  fetchBlogs();
+});
 
 

@@ -38,7 +38,7 @@
         </li>
       </ul>
 
-      <a href="#" class="ab-job-btn">Apply for the Job</a>
+      <a href="#" class="ab-job-btn" id="applyBtn">Apply for the Job</a>
     </div>
   </div>
 </section>
@@ -259,3 +259,42 @@
     </p>
   </div>
 </section>
+
+<!-- Application Modal -->
+<div id="applicationModal" class="ab-modal">
+  <div class="ab-modal-content">
+    <span class="ab-modal-close">&times;</span>
+    <h2 class="ab-modal-title">Apply Now</h2>
+
+    <form id="applicationForm" enctype="multipart/form-data">
+
+      <!-- Hidden Job ID -->
+      <input type="hidden" id="jobId" value="698ed15f9f09fdcdce95477d">
+
+      <!-- Full Name -->
+      <div class="ab-form-group">
+        <label>Full Name</label>
+        <input type="text" id="fullName" required>
+      </div>
+
+      <!-- Email -->
+      <div class="ab-form-group">
+        <label>Email Address</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <!-- Resume -->
+      <div class="ab-form-group">
+        <label>Upload Resume (PDF/DOC)</label>
+        <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+      </div>
+
+      <button type="submit" class="ab-job-btn ab-submit-btn">
+        Submit Application
+      </button>
+
+    </form>
+  </div>
+</div>
+
+<script src="./assets/js/career.js"></script>

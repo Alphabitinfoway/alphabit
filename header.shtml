@@ -1,10 +1,6 @@
 <header>
   <div class="logo-img">
-    <img
-      src="./assets/images/logo.png"
-      alt="Alphabit Infoway Logo"
-      class="logo"
-    />
+    <img src="./assets/images/logo.png" alt="Alphabit Infoway Logo" class="logo" />
   </div>
   <div class="menu-toggle">
     <span></span>
@@ -22,16 +18,16 @@
       <a href="#" class="dropdown-toggle">Insights</a>
       <ul class="dropdown-menu">
         <li><a href="blog.shtml">Blog</a></li>
-        <li><a href="blogdetails.shtml">Blog Details</a></li>
         <li><a href="career.shtml">Career</a></li>
         <li><a href="careerdetails.shtml">Career Details</a></li>
       </ul>
     </h6>
+    <button class="contact-btn mobile-contact-btn">
+      <a href="contect.shtml" class="contect-btnn">Contact Us</a>
+    </button>
   </nav>
-  <!-- <button class="case-study-btn">
-<a href="casestudy.shtml" class="case-study-btn">Case Study</a>
-  </button> -->
-  <button class="contact-btn">
+
+  <button class="contact-btn desktop-contact-btn">
     <a href="contect.shtml" class="contect-btnn">Contact Us</a>
   </button>
 </header>

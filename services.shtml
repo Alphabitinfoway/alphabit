@@ -20,8 +20,12 @@
   </div>
 
   <div class="service-hero__visual">
-    <div class="service-box service-box--primary"></div>
-    <div class="service-box service-box--secondary"></div>
+    <div>
+      <img src="./assets/images/Service/1.png" alt="Service 1" class="service-box service-box--primary">
+    </div>
+    <div >
+      <img src="./assets/images/Service/2.jpg" alt="Service 2" class="service-box service-box--secondary">
+    </div>
   </div>
 
 </section>
@@ -69,17 +73,17 @@
         <div class="offering-icon-holder">
           <img src="./assets/images/e-service1.png" alt="Interaction Design">
         </div>
-        <h3 class="offering-heading-text">Interaction Design</h3>
+        <h3 class="offering-heading-text"> AI & Machine Learning Solutions</h3>
       </div>
 
       <ul class="offering-features-menu">
-        <li>User Interface</li>
-        <li>User Experience</li>
-        <li>Design System</li>
-        <li>Wireframe</li>
-        <li>Prototype</li>
-        <li>Website & Mobile App</li>
-        <li>iOS + Android</li>
+        <li>Generative AI Integration</li>
+        <li>Natural Language Processing (NLP)</li>
+        <li>Computer Vision & Image Recognition</li>
+        <li>Predictive Analytics</li>
+        <li>Custom Chatbot Development</li>
+        <li>Recommendation Engines</li>
+        <li>Automated Data Processing</li>
       </ul>
     </div>
 
@@ -89,17 +93,17 @@
         <div class="offering-icon-holder">
           <img src="./assets/images/e-service2.png" alt="Branding Design">
         </div>
-        <h3 class="offering-heading-text">Branding Design</h3>
+        <h3 class="offering-heading-text">Cyber Security & Compliance</h3>
       </div>
 
       <ul class="offering-features-menu">
-        <li>User Interface</li>
-        <li>User Experience</li>
-        <li>Design System</li>
-        <li>Wireframe</li>
-        <li>Prototype</li>
-        <li>Website & Mobile App</li>
-        <li>iOS + Android</li>
+        <li>Vulnerability Assessment</li>
+        <li>Penetration Testing</li>
+        <li>Network Security Architecture</li>
+        <li>Threat Detection & Response</li>
+        <li>Cloud Security Compliance</li>
+        <li>Data Encryption & Privacy</li>
+        <li>Identity Access Management (IAM)</li>
       </ul>
     </div>
 
@@ -109,17 +113,17 @@
         <div class="offering-icon-holder">
           <img src="./assets/images/e-service3.png" alt="Design & Development">
         </div>
-        <h3 class="offering-heading-text">Design & Development</h3>
+        <h3 class="offering-heading-text">Full Stack Web Development</h3>
       </div>
 
       <ul class="offering-features-menu">
-        <li>User Interface</li>
-        <li>User Experience</li>
-        <li>Design System</li>
-        <li>Wireframe</li>
-        <li>Prototype</li>
-        <li>Website & Mobile App</li>
-        <li>iOS + Android</li>
+        <li>MERN / MEAN Stack Development</li>
+        <li>Custom Enterprise Software</li>
+        <li>SaaS Application Development</li>
+        <li>Progressive Web Apps (PWA)</li>
+        <li>API Development & Integration</li>
+        <li>WCloud Migration & Deployment</li>
+        <li>Database Management</li>
       </ul>
     </div>
 
@@ -129,97 +133,17 @@
         <div class="offering-icon-holder">
           <img src="./assets/images/e-service4.png" alt="eCommerce Development">
         </div>
-        <h3 class="offering-heading-text">eCommerce Development</h3>
+        <h3 class="offering-heading-text">Mobile App & Product Design</h3>
       </div>
 
       <ul class="offering-features-menu">
-        <li>User Interface</li>
-        <li>User Experience</li>
-        <li>Design System</li>
-        <li>Wireframe</li>
-        <li>Prototype</li>
-        <li>Website & Mobile App</li>
-        <li>iOS + Android</li>
-      </ul>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="offering-item-box">
-      <div class="offering-head">
-        <div class="offering-icon-holder">
-          <img src="./assets/images/e-service1.png" alt="Interaction Design">
-        </div>
-        <h3 class="offering-heading-text">Interaction Design</h3>
-      </div>
-
-      <ul class="offering-features-menu">
-        <li>User Interface</li>
-        <li>User Experience</li>
-        <li>Design System</li>
-        <li>Wireframe</li>
-        <li>Prototype</li>
-        <li>Website & Mobile App</li>
-        <li>iOS + Android</li>
-      </ul>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="offering-item-box">
-      <div class="offering-head">
-        <div class="offering-icon-holder">
-          <img src="./assets/images/e-service2.png" alt="Branding Design">
-        </div>
-        <h3 class="offering-heading-text">Branding Design</h3>
-      </div>
-
-      <ul class="offering-features-menu">
-        <li>User Interface</li>
-        <li>User Experience</li>
-        <li>Design System</li>
-        <li>Wireframe</li>
-        <li>Prototype</li>
-        <li>Website & Mobile App</li>
-        <li>iOS + Android</li>
-      </ul>
-    </div>
-
-    <!-- Card 7 -->
-    <div class="offering-item-box">
-      <div class="offering-head">
-        <div class="offering-icon-holder">
-          <img src="./assets/images/e-service3.png" alt="Design & Development">
-        </div>
-        <h3 class="offering-heading-text">Design & Development</h3>
-      </div>
-
-      <ul class="offering-features-menu">
-        <li>User Interface</li>
-        <li>User Experience</li>
-        <li>Design System</li>
-        <li>Wireframe</li>
-        <li>Prototype</li>
-        <li>Website & Mobile App</li>
-        <li>iOS + Android</li>
-      </ul>
-    </div>
-
-    <!-- Card 8 -->
-    <div class="offering-item-box">
-      <div class="offering-head">
-        <div class="offering-icon-holder">
-          <img src="./assets/images/e-service4.png" alt="eCommerce Development">
-        </div>
-        <h3 class="offering-heading-text">eCommerce Development</h3>
-      </div>
-
-      <ul class="offering-features-menu">
-        <li>User Interface</li>
-        <li>User Experience</li>
-        <li>Design System</li>
-        <li>Wireframe</li>
-        <li>Prototype</li>
-        <li>Website & Mobile App</li>
-        <li>iOS + Android</li>
+        <li>Native iOS & Android Apps</li>
+        <li>Cross-Platform (Flutter/React Native)</li>
+        <li>UI/UX Strategy & Research</li>
+        <li>Wireframing & Prototyping</li>
+        <li>Product Roadmap Planning</li>
+        <li>App Maintenance & Support</li>
+        <li>Wearable Technology Apps</li>
       </ul>
     </div>
 
@@ -227,8 +151,9 @@
            
 <!-- image section -->
    <div class="servicesec-image-container">
-    <div class="Simage-box">
-      image
+    <div >
+          <img src="./assets/images/Service/3.jpg" alt="Service Image" class="Simage-box">
+  
     </div>
   </div>
     <!-- ***********barnd section -3 *************** -->
@@ -249,23 +174,22 @@
       </div>
 
       <h2 class="timeline-title">
-        YOUR <strong>BUSINESS</strong> &<br>
-        GET MORE PROFIT<br>
-        WITH <span class="outline-text">BRANDING!</span>
+        YOUR <strong>BUSINESS</strong> <br>
+        WITH INTELLIGENT<br>
+         <span class="outline-text">SOLUTIONS.</span>
       </h2>
     </div>
 
     <!-- RIGHT SIDE -->
     <div class="header-description">
       <p>
-        If you expect that more customers buy your products or services,
-        remember that they are also investing every single penny in
-        creating your business brand.
+        Your software isn't just a tool; it is the engine of your business. When customers interact with your website or app, they expect speed, security, and reliability.
+
       </p>
 
       <p>
-        Good branding creates a dialogue between the consumer and the brand,
-        even if that dialogue only happens on an emotional level.
+        At Alphabit Infoway, we don't just write code—we build the foundation for your success. From AI integration to seamless Web & App development, we ensure every digital interaction converts users into loyal customers.
+
       </p>
     </div>
 
@@ -350,33 +274,25 @@
   </div>
 </section>
 
-    
-    <!-- Schedule Section -->
+ 
   <section class="schedule-section">
     <div class="schedule-content">
       <p>👋🏼 Hey Innovator,</p>
       <h2>
-        I'm Your<span class="span-image"></span
-        ><span class="span-orange"> AI</span
-        ><span class="span-white">(Alphabit Infoway)</span>
+        I'm Your<img src="./assets/images/home/Hey Innovator/1.jpg" class="span-image"></span><span class="span-orange"> AI</span><span class="span-white">(Alphabit
+          Infoway)</span>
       </h2>
       <h2>
-        <span class="span-orange">Buddy, </span>Let's<span
-          class="span-image"
-        ></span>
+        <span class="span-orange">Buddy, </span>Let's<img src="./assets/images/home/Hey Innovator/2.jpg"class="span-image"></span>
         Convert
       </h2>
       <h2>
-        Your <span class="span-white">Idea</span
-        ><span class="span-image"></span> into
+        Your <span class="span-white">Idea</span><img src="./assets/images/home/Hey Innovator/3.jpg" class="span-image"></span> into
         <span class="span-white">Reality</span>
       </h2>
     </div>
     <button class="schedule-btn">Schedule a Meeting</button>
   </section>
-  
-
-
 
 <!-- **************************section -4 *********************** -->
  

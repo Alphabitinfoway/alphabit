@@ -56,7 +56,6 @@
 
 </section>
 
-
 <!-- section 2 -->
 <section class="insight-feed">
 
@@ -76,20 +75,132 @@
     </aside>
 
     <!-- RIGHT GRID -->
-  <div class="feed-grid" id="blog-feed-container">
-  <!-- Blogs will load here dynamically -->
-</div>
+    <div>
+      <div class="feed-grid" id="blog-feed-container">
+        <!-- Blogs will load here dynamically -->
+      </div>
 
+      <!-- Pagination -->
+      <div class="feed-pagination" id="pagination"></div>
+    </div>
 
-  <!-- Pagination -->
-  <div class="feed-pagination">
-    <button class="page-nav">←</button>
-    <button class="page-num active">1</button>
-    <button class="page-num">2</button>
-    <button class="page-num">3</button>
-    <button class="page-num">4</button>
-    <button class="page-nav">→</button>
   </div>
 
 </section>
 <!--#include file="footer.shtml" -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const blogContainer = document.getElementById("blog-feed-container");
+  const paginationContainer = document.getElementById("pagination");
+
+  const API_URL = "https://alphabit-web-1.onrender.com/users/getBlogs";
+
+  const postsPerPage = 6;
+  let currentPage = 1;
+  let allPosts = [];
+
+  async function fetchBlogs() {
+    try {
+      const response = await fetch(API_URL);
+      const data = await response.json();
+
+      // Sort latest first
+      allPosts = data.sort(
+        (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+      );
+
+      renderPage(currentPage);
+      setupPagination();
+
+    } catch (error) {
+      console.error("Error loading blogs:", error);
+    }
+  }
+
+  function renderPage(page) {
+    blogContainer.innerHTML = "";
+
+    const start = (page - 1) * postsPerPage;
+    const end = start + postsPerPage;
+
+    const paginatedPosts = allPosts.slice(start, end);
+
+    paginatedPosts.forEach(post => {
+
+      const imageUrl = post.image && post.image.startsWith("http")
+        ? post.image
+        : post.image
+          ? `https://alphabit-web-1.onrender.com/uploads/${post.image}`
+          : `https://picsum.photos/seed/${post._id}/400/300`;
+
+      const article = document.createElement("article");
+      article.className = "feed-card";
+
+      article.innerHTML = `
+        <div class="feed-thumb"
+          style="background-image:url('${imageUrl}');
+                 background-size:cover;
+                 background-position:center;">
+        </div>
+
+        <div class="feed-card-footer">
+          <p>${post.title}</p>
+          <a href="blogdetails.shtml?id=${post._id}" class="feed-arrow">↗</a>
+        </div>
+      `;
+
+      blogContainer.appendChild(article);
+    });
+  }
+
+  function setupPagination() {
+    paginationContainer.innerHTML = "";
+
+    const totalPages = Math.ceil(allPosts.length / postsPerPage);
+
+    // Previous
+    const prevBtn = document.createElement("button");
+    prevBtn.textContent = "←";
+    prevBtn.className = "page-nav";
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.onclick = () => {
+      currentPage--;
+      renderPage(currentPage);
+      setupPagination();
+    };
+    paginationContainer.appendChild(prevBtn);
+
+    // Page Numbers
+    for (let i = 1; i <= totalPages; i++) {
+      const pageBtn = document.createElement("button");
+      pageBtn.textContent = i;
+      pageBtn.className = "page-num";
+
+      if (i === currentPage) pageBtn.classList.add("active");
+
+      pageBtn.onclick = () => {
+        currentPage = i;
+        renderPage(currentPage);
+        setupPagination();
+      };
+
+      paginationContainer.appendChild(pageBtn);
+    }
+
+    // Next
+    const nextBtn = document.createElement("button");
+    nextBtn.textContent = "→";
+    nextBtn.className = "page-nav";
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.onclick = () => {
+      currentPage++;
+      renderPage(currentPage);
+      setupPagination();
+    };
+    paginationContainer.appendChild(nextBtn);
+  }
+
+  fetchBlogs();
+});
+</script>
