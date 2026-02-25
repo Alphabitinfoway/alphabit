@@ -11,8 +11,8 @@
 
       <span class="ab-careers-inline">
         <span class="ab-careers-profiles">
-          <img src="./assets/images/profile1.png" alt="profile 1">
-          <img src="./assets/images/profile2.png" alt="profile 2">
+          <img src="./assets/images/Career/1.jpg" alt="profile 1">
+          <img src="./assets/images/Career/2.jpg" alt="profile 2">
         </span>
 
         <span class="ab-careers-title-highlight">
@@ -31,9 +31,10 @@
     </div>
 
     <!-- IMAGE BOX -->
-    <div class="ab-careers-image-box">
-      image
-    </div>
+<div>
+      <img src="./assets/images/Career/3.jpg" alt="Career Image" 
+      class="ab-careers-image-box-img">
+   </div>
 
   </div>
 </div>
@@ -71,12 +72,20 @@
 
     <!-- IMAGE GRID -->
     <div class="ab-values-grid">
-      <div class="ab-grid-item left"></div>
-      <div class="ab-grid-item center"></div>
+      <div class="ab-grid-item left">
+        <img src="./assets/images/Career/4.jpg" alt="Career Image 4" class="ab-grid-item left">
+      </div>
+      <div class="ab-grid-item center">
+        <img src="./assets/images/Career/5.jpg" alt="Career Image 5" class="ab-grid-item center">
+      </div>
 
       <div class="ab-grid-right">
-        <div class="ab-grid-item small"></div>
-        <div class="ab-grid-item medium"></div>
+        <div class="ab-grid-item small">
+          <img src="./assets/images/Career/6.jpg" alt="Career Image 6" class="ab-grid-item small">
+        </div>
+        <div class="ab-grid-item medium">
+          <img src="./assets/images/Career/7.jpg" alt="Career Image 7" class="ab-grid-item medium">
+        </div>
       </div>
     </div>
 

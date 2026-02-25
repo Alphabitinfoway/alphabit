@@ -4124,14 +4124,9 @@ header {
 .about-image1 {
   height: 777px;
   width: 850px;
-  background-color: #dcdcdc;
+
   border-radius: 40px;
-  font-size: 60px;
-  font-weight: 600;
-  color: #000;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+
 }
 
 .about-image2 {
@@ -4173,13 +4168,7 @@ header {
   height: 381px;
   width: 381px;
   border-radius: 40px;
-  background-color: #dcdcdc;
-  font-size: 60px;
-  font-weight: 600;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 .text {
@@ -4203,7 +4192,7 @@ header {
   height: 260px;
   width: 318px;
   object-fit: contain;
-  margin-top: -120px !important;
+  margin-top: 0px!important;
   margin-left: -60px !important;
   z-index: 0;
 }
@@ -5147,7 +5136,7 @@ header {
   }
 
   .about-image1 {
-    height: 310px;
+    height: 230px;
     width: 100%;
     max-width: 720px;
     font-size: 60px;
@@ -5185,7 +5174,7 @@ header {
   }
 
   .about-card1 {
-    height: 145px;
+    height: 230px;
     width: 100%;
     font-size: 60px;
     border-radius: 20px;
@@ -5471,7 +5460,6 @@ header {
 /* BOX COMMON */
 .service-box {
   position: absolute;
-  background: linear-gradient(145deg, #1a1a1a, #0e0e0e);
   border-radius: 24px;
 }
 
@@ -5550,7 +5538,7 @@ header {
   .service-box {
 
     position: absolute;
-    background: #e3e3e3;
+    border-radius: 24px;  
   }
 
   .service-box--primary {
@@ -5569,7 +5557,7 @@ header {
 
 /**************************** section 2 *******************************/
 .premium-offerings-wrapper {
-
+  
   top: 10;
   background-color: #f5f5f5;
   padding: 60px 40px;
@@ -6176,11 +6164,7 @@ header {
 /* IMAGE PLACEHOLDERS */
 .neo-contact-img-small,
 .neo-contact-img-large {
-  background: var(--neo-gray-bg);
-  align-items: center;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #555;
+
 }
 
 .neo-contact-email {
@@ -6190,7 +6174,7 @@ header {
 }
 
 .neo-contact-img-small {
-  height: 250px;
+  height: 350px;
   margin-top: 80px;
 }
 
@@ -6201,8 +6185,9 @@ header {
 
 .neo-contact-img-large {
   height: 250px;
-  margin-top: -96px;
+  margin-top: -100px;
   margin-bottom: 20px;
+  border-radius: var(--neo-radius);
 }
 
 /* BOTTOM BANNER */
@@ -7516,18 +7501,14 @@ header {
 }
 
 /* IMAGE BOX */
-.ab-careers-image-box {
-  margin: 48px auto 0;
-  height: 360px;
-  background: #e3e3e3;
-  border-radius: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  font-weight: 500;
-  color: #111;
+.ab-careers-image-box-img {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  object-fit: cover;
+  border-radius: 20px;
 }
+
 
 /* ================= DESKTOP / LAPTOP ================= */
 
@@ -7544,6 +7525,7 @@ header {
 
   .ab-careers-description {
     max-width: 560px;
+    margin-bottom: 20px;
   }
 
   .ab-careers-image-box {
@@ -7591,7 +7573,7 @@ header {
   }
 
   .ab-careers-image-box {
-    height: 220px;
+    height: 200px;
     margin-top: 32px;
     border-radius: 20px;
   }
@@ -7611,7 +7593,7 @@ header {
 .ab-values-container {
   max-width: 1280px;
   width: 100%;
-  padding: 120px 24px 0;
+  padding: 60px 24px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -7669,7 +7651,7 @@ header {
 
 /* BASE CARD */
 .ab-grid-item {
-  background: #e3e3e3;
+
   border-radius: 24px;
 }
 
@@ -7683,7 +7665,7 @@ header {
 /* CENTER (MAIN) */
 .ab-grid-item.center {
   width: 340px;
-  height: 460px;
+  height: 490px;
   border-radius: 32px;
   margin-bottom: 40px;
 }
@@ -7697,12 +7679,12 @@ header {
 
 .ab-grid-item.small {
   width: 200px;
-  height: 100px;
+  height: 150px;
   border-radius: 20px;
 }
 
 .ab-grid-item.medium {
-  width: 280px;
+  width: 320px;
   height: 260px;
   border-radius: 26px;
 }
@@ -7729,6 +7711,7 @@ header {
     max-width: 100%;
     margin-bottom: 28px;
     gap: 12px;
+    margin-top: 20px;
   }
 
   .ab-values-title {
@@ -7751,15 +7734,15 @@ header {
 
   /* TOP SMALL CARD */
   .ab-grid-item.left {
-    width: 72%;
-    height: 120px;
+    width: 80%;
+    height: 320px;
     border-radius: 18px;
   }
 
   /* BOTTOM BIG CARD */
   .ab-grid-item.center {
     width: 100%;
-    height: 220px;
+    height: 420px;
     border-radius: 22px;
     margin-bottom: 0;
   }
@@ -7769,7 +7752,24 @@ header {
     display: none;
   }
 }
-
+@media screen and (max-width: 480px) {
+  .ab-values-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ab-grid-item.left {
+    width: 100%;
+    height: 280px;
+  }
+  .ab-grid-item.center {
+    width: 100%;
+    height: 360px;
+  }
+  .ab-careers-image-box-img {
+    height: 180px;
+    margin: 20px 0;
+  }
+}
 
 /* hiring section  */
 
@@ -8417,14 +8417,13 @@ header {
 .techpage-hero-image {
   margin-top: 200px;
   height: 360px;
-  background: #e5e5e5;
   border-radius: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  color: #666;
+  background-image: url("../images/Technology/hero.jpg");
+  background-size: cover;     
+  background-position: center; 
+  background-repeat: no-repeat;
 }
+
 
 .techpage-hero-content {
   display: flex;
@@ -8606,7 +8605,7 @@ header {
   /* Center everything */
   .tech-wireframe-title {
     margin-left: 100px;
-    text-align: center;
+   
   }
 
   .tech-wireframe-right {
@@ -8624,7 +8623,13 @@ header {
 
 @media (max-width: 600px) {
 
-  /* Left aligned like image */
+
+  .techpage-hero-image {
+    height: 180px;
+  }
+  .tech-wireframe-media{
+    height: 180px;
+  }
   .tech-wireframe-title {
     margin-left: 0;
     text-align: left;
@@ -8662,7 +8667,7 @@ header {
 .tech-feature-card {
   background: #ffffff;
   border-radius: 22px;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   gap: 30px;
   max-width: 1100px;
@@ -8774,7 +8779,7 @@ header {
 .tech-visual-card {
   width: 420px;
   height: 500px;
-  background: #e6e6e6;
+  
   border-radius: 30px;
 }
 
@@ -8849,7 +8854,6 @@ header {
 
   .tech-visual-card {
     width: 100%;
-    max-width: 480px;
     height: 380px;
     margin: 0 auto;
   }
@@ -8878,7 +8882,14 @@ header {
   }
 
   .tech-visual-card {
-    height: 320px;
+    height: 220px;
+  }
+
+   .tech-stack-section {
+    flex-direction: column;
+    text-align: left;
+    margin: 30px 20px;
+    gap: 35px;
   }
 }
 

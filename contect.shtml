@@ -15,8 +15,8 @@
         </h1>
       </div>
 
-      <div class="neo-contact-card neo-contact-img-small">
-        Image
+      <div >
+       <img src="./assets/images/Contact Us/1.png" alt="Contact Image" class="neo-contact-card neo-contact-img-small">
       </div>
 
       <div class="neo-contact-card neo-contact-info neo-contact-email">
@@ -32,7 +32,7 @@
       </div>
 
       <div class="neo-contact-card neo-contact-img-large">
-        Image
+       <img src="./assets/images/Contact Us/2.jpg" alt="Contact Image" class="neo-contact-img-large">
       </div>
 
     </div>

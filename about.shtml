@@ -19,10 +19,14 @@
   </section>
   <section class="aboutpage-container2">
     <div class="aboutus2">
-      <div class="about-image1">Image</div>
+      <div class="about-image1">
+        <img src="./assets/images/About/1.jpg" alt="About Image" class="about-image1">
+      </div>
       <div class="about-image2">
         <div class="about-image3">
-          <div class="about-card">Image</div>
+          <div class="about-card">
+            <img src="./assets/images/About/2.png" class="about-card">
+          </div>
           <div class="about-card text">
             <img src="./assets/images/about-logo-white.png" alt="" />
             <p>We helped to get companies with $25M+ funding</p>
@@ -36,7 +40,7 @@
             <p>We have 100+ satisfied clients</p>
             <h1 class="counting" data-target="100" data-suffix="+">0+</h1>
           </div>
-          <div class="about-card1">Image</div>
+          <div class="about-card1"><img src="./assets/images/About/3.jpg" class="about-card1"></div>
         </div>
       </div>
     </div>
@@ -156,7 +160,7 @@
     <div class="believes-wrapper">
       <!-- MISSION -->
       <div class="believes-card">
-        <div class="card-icon">icon</div>
+        <div ><img src="./assets/images/About/mission.jpg" alt="Mission Icon" class="card-icon"/></div>
         <h3 class="card-title">MISSION</h3>
         <p class="card-text">
           Creating a flexible environment where every employee can accept and
@@ -167,7 +171,9 @@
 
       <!-- VISION -->
       <div class="believes-card">
-        <div class="card-icon">icon</div>
+        <div class="card-icon">
+          <img src="./assets/images/About/vision.jpg" alt="Vision Icon"  class="card-icon"/>
+        </div>
         <h3 class="card-title">VISION</h3>
         <p class="card-text">
           We aim to be the leading technology and service provider company whose
@@ -180,7 +186,7 @@
 
       <!-- WORK ETHICS -->
       <div class="believes-card">
-        <div class="card-icon">icon</div>
+        <div class="card-icon"><img src="./assets/images/About/work ethics.jpg" alt="Work Ethics Icon" class="card-icon"></div>
         <h3 class="card-title">WORK ETHICS</h3>
         <p class="card-text">
           We always give the best possible solution for your business. Unbiased,

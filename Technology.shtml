@@ -6,9 +6,8 @@
 <div class="techpage-wrapper">
 
   <!-- HERO IMAGE -->
-  <div class="techpage-hero-image">
-    image
-  </div>
+ <div class="techpage-hero-image">
+</div>
 
   <!-- HERO TEXT -->
   <div class="techpage-hero-content">
@@ -85,7 +84,9 @@ At Alphabit Infoway, we don't just write code; we engineer digital ecosystems. F
 
     <!-- Right Content Block -->
     <div class="tech-wireframe-right">
-      <div class="tech-wireframe-media"></div>
+      <div >
+        <img src="./assets/images/Technology/2.jpg" alt="Wireframe Image" class="tech-wireframe-media">
+      </div>
 
       <div class="tech-wireframe-content">
         <p class="tech-wireframe-text">
@@ -108,7 +109,9 @@ At Alphabit Infoway, we don't just write code; we engineer digital ecosystems. F
 <section class="tech-feature-section">
 
   <div class="tech-feature-card">
-    <div class="tech-feature-media"></div>
+    <div>
+      <img src="./assets/images/Technology/3.jpg" alt="Custom Enterprise Solutions"  class="tech-feature-media">
+    </div>
 
     <div class="tech-feature-content">
       <h3 class="tech-feature-title">
@@ -123,7 +126,9 @@ At Alphabit Infoway, we don't just write code; we engineer digital ecosystems. F
   </div>
 
   <div class="tech-feature-card">
-    <div class="tech-feature-media"></div>
+     <div>
+      <img src="./assets/images/Technology/4.jpg" alt="Custom Enterprise Solutions"  class="tech-feature-media">
+    </div>
 
     <div class="tech-feature-content">
       <h3 class="tech-feature-title">
@@ -138,7 +143,9 @@ At Alphabit Infoway, we don't just write code; we engineer digital ecosystems. F
   </div>
 
   <div class="tech-feature-card">
-    <div class="tech-feature-media"></div>
+    <div>
+      <img src="./assets/images/Technology/5.jpg" alt="Custom Enterprise Solutions"  class="tech-feature-media">
+    </div>
 
     <div class="tech-feature-content">
       <h3 class="tech-feature-title">
@@ -167,7 +174,9 @@ At Alphabit Infoway, we don't just write code; we engineer digital ecosystems. F
   <section class="tech-stack-section">
     
     <!-- Left Visual Box -->
-    <div class="tech-visual-card"></div>
+    <div class="tech-visual-card">
+      <img src="./assets/images/Technology/6.jpg" alt="Tech Stack Image" class="tech-visual-card">
+    </div>
 
     <!-- Right Content -->
     <div class="tech-stack-content">
