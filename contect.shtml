@@ -1,46 +1,56 @@
 <!--#include file="head.shtml" -->
 
 <!--#include file="header.shtml" -->
+
 <section class="neo-contact-section">
   <div class="neo-contact-wrapper">
 
-    <div class="neo-contact-grid">
+    <!-- FLEX CONTAINER (replaces grid) -->
+    <div class="neo-contact-flex">
 
-      <div class="neo-contact-card neo-contact-text">
+      <!-- COL LEFT: Headline -->
+      <div class="neo-col-left">
         <span>👋 Hello Innovator,</span>
         <h1>
           Any questions?<br>
           simply ask us.<br>
-          this is your home!
+          this is your<br>
+          home!
         </h1>
       </div>
 
-      <div class="neo-contact-card neo-contact-img-small">
-        Image
+      <!-- COL MID: Robot img + Phone card -->
+      <div class="neo-col-mid">
+        <div class="neo-img-robot">
+          <img src="./assets/images/Contact Us/1.png" alt="Robot">
+        </div>
+        <div class="neo-phone neo-card">
+          <p class="neo-label">Direct Contact :</p>
+          <p>+91 94092 07327</p>
+          <p>+91 97230 28141</p>
+        </div>
       </div>
 
-      <div class="neo-contact-card neo-contact-info neo-contact-email">
-        <p class="neo-contact-label">Connect:</p>
-        <a href="mailto:info@alphabitinfoway.com">info@alphabitinfoway.com</a>
-        <a href="mailto:alphabitinfoway@gmail.com">alphabitinfoway@gmail.com</a>
-      </div>
-
-      <div class="neo-contact-card neo-contact-info neo-contact-phone">
-        <p class="neo-contact-label">Direct Contact:</p>
-        <p>+91 94092 07327</p>
-        <p>+91 97230 28141</p>
-      </div>
-
-      <div class="neo-contact-card neo-contact-img-large">
-        Image
+      <!-- COL RIGHT: Email card + Office img -->
+      <div class="neo-col-right">
+        <div class="neo-email neo-card">
+          <p class="neo-label">Connect :</p>
+          <a href="mailto:info@alphabitinfoway.com">info@alphabitinfoway.com</a>
+          <a href="mailto:alphabitinfoway@gmail.com">alphabitinfoway@gmail.com</a>
+        </div>
+        <div class="neo-img-office">
+          <img src="./assets/images/Contact Us/2.jpg" alt="Office">
+        </div>
       </div>
 
     </div>
 
-    <div class="neo-contact-footer-banner"></div>
+    <!-- BOTTOM BANNER -->
+    <div class="neo-contact-footer-banner">
+      <img src="./assets/images/Contact Us/3.jpg" alt="Meeting">
+    </div>
 
   </div>
-  
 </section>
 
 
