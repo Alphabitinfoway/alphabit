@@ -4226,10 +4226,10 @@ header {
 }
 
 .text.light img {
-  height: 212px !important;
+  height: 180px !important;
   width: 260px !important;
   margin-top: -160px !important;
-  margin-left: -50px !important;
+  /* margin-left: -50px !important; */
 }
 
 /* ==================section-3================== */
@@ -4558,7 +4558,7 @@ header {
   }
 
   .text img {
-    height: 220px;
+    height: 180px;
     width: 280px;
   }
 
@@ -4816,7 +4816,7 @@ header {
   }
 
   .text.light img {
-    height: 130px !important;
+    height: 100px !important;
     width: 160px !important;
     margin-top: -100px !important;
     margin-left: -8px !important;
@@ -5181,10 +5181,10 @@ header {
   }
 
   .text img {
-    height: 275px;
+    height: 185px;
     width: 268px;
     margin-top: 0px !important;
-    margin-left: -140px !important;
+    /* margin-left: -140px !important; */
   }
 
   .text h1 {
@@ -5200,10 +5200,10 @@ header {
   }
 
   .text.light img {
-    height: 275px !important;
+    height: 185px !important;
     width: 268px !important;
     margin-top: 0px !important;
-    margin-left: -140px !important;
+    margin-left: -400px !important;
   }
 
   .text.light h1 {
@@ -6083,231 +6083,319 @@ header {
 
 /* *****************************contect page start ************************************/
 :root {
-  --neo-light-bg: #f5f5f5;
   --neo-dark-bg: #1a1a1a;
   --neo-dark-text: #1a1a1a;
-  --neo-light-text: #ffffff;
   --neo-gray-bg: #e0e0e0;
-  --neo-radius: 30px;
+  --neo-radius: 24px;
 }
+
+
 
 .neo-contact-section {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
-/* MAIN WRAPPER */
 .neo-contact-wrapper {
-
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   padding: 40px 20px;
 }
 
-/* GRID LAYOUT */
-.neo-contact-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr;
+/* ─────────────────────────────────────────
+   FLEX LAYOUT:
+   [  col-left  ] [ col-mid ] [ col-right ]
+   col-left  → headline (full height)
+   col-mid   → robot img (top) + phone card (bottom)
+   col-right → email card (top) + office img (bottom)
+───────────────────────────────────────── */
+
+.neo-contact-flex {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
 }
 
-@media (min-width: 992px) {
-  .neo-contact-grid {
-    grid-template-columns: 1.5fr 0.8fr 1.2fr;
-    grid-template-rows: auto auto;
-  }
-
-  .neo-contact-text {
-    grid-row: span 2;
-  }
+/* ── COL LEFT: Headline ── */
+.neo-col-left {
+  flex: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 44px 40px;
 }
 
-/* COMMON CARD */
-.neo-contact-card {
-  padding: 40px;
+.neo-col-left span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.neo-col-left h1 {
+  font-size: clamp(2rem, 3.8vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  color: var(--neo-dark-text);
+  letter-spacing: -1px;
+}
+
+/* ── COL MID & RIGHT: shared column style ── */
+.neo-col-mid,
+.neo-col-right {
+  flex: 0.85;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.neo-col-right {
+  flex: 1.1;
+}
+
+/* ── CARD BASE ── */
+.neo-card {
   border-radius: var(--neo-radius);
+  overflow: hidden;
+}
+
+/* ── Robot Image (col-mid top) ── */
+.neo-img-robot {
+  flex: 1;
+  min-height: 240px;
+  border-radius: var(--neo-radius);
+  overflow: hidden;
+}
+
+.neo-img-robot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Phone Card (col-mid bottom) ── */
+.neo-phone {
+  background: var(--neo-dark-bg);
+  color: #fff;
+  padding: 24px 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 130px;
+  border-radius: var(--neo-radius);
 }
 
-/* TEXT BLOCK */
-.neo-contact-text span {
-  font-weight: 600;
-  color: #555;
+.neo-phone p {
+  font-size: 14px;
+  line-height: 1.8;
 }
 
-.neo-contact-text h1 {
-  margin-top: 20px;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 1.1;
-  color: var(--neo-dark-text);
-}
-
-/* DARK INFO CARDS */
-.neo-contact-info {
+/* ── Email Card (col-right top) ── */
+.neo-email {
   background: var(--neo-dark-bg);
-  color: var(--neo-light-text);
+  color: #fff;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 140px;
+  border-radius: var(--neo-radius);
 }
 
-.neo-contact-label {
+.neo-email a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.8;
+  display: block;
+}
+
+.neo-email a:hover { text-decoration: underline; }
+
+/* ── Office Image (col-right bottom) ── */
+.neo-img-office {
+  flex: 1;
+  min-height: 230px;
+  border-radius: var(--neo-radius);
+  overflow: hidden;
+}
+
+.neo-img-office img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Label shared ── */
+.neo-label {
   color: #888;
-  font-size: 0.9rem;
+  font-size: 12px;
+  letter-spacing: 0.5px;
   margin-bottom: 10px;
 }
 
-.neo-contact-info a {
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 5px;
-}
-
-/* IMAGE PLACEHOLDERS */
-.neo-contact-img-small,
-.neo-contact-img-large {
-
-}
-
-.neo-contact-email {
-  height: 230px;
-  margin-top: 20px;
-  padding-top: 0;
-}
-
-.neo-contact-img-small {
-  height: 350px;
-  margin-top: 80px;
-}
-
-.neo-contact-phone {
-  height: 150px;
-
-}
-
-.neo-contact-img-large {
-  height: 250px;
-  margin-top: -100px;
-  margin-bottom: 20px;
-  border-radius: var(--neo-radius);
-}
-
-/* BOTTOM BANNER */
+/* ── BOTTOM BANNER ── */
 .neo-contact-footer-banner {
-  top: 50px;
-  height: 400px;
+  height: 510px;
   background: var(--neo-gray-bg);
   border-radius: var(--neo-radius);
-  margin-top: 20px;
+  margin-top: 28px;
+  overflow: hidden;
 }
 
-
-@media (max-width: 767px) {
-
-  .neo-contact-section {
-    margin-top: 60px;
-  }
-
-  .neo-contact-wrapper {
-    padding: 20px 15px;
-  }
-
-  .neo-contact-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  /* RESET PROBLEMATIC DESKTOP VALUES */
-  .neo-contact-card {
-    padding: 24px;
-    height: auto !important;
-    margin: 0 !important;
-  }
-
-  /* TEXT */
-  .neo-contact-text h1 {
-    font-size: 2rem;
-    line-height: 1.25;
-  }
-
-  /* IMAGE CARDS */
-  .neo-contact-img-small,
-  .neo-contact-img-large {
-    height: 180px;
-    font-size: 1.2rem;
-  }
-
-  /* INFO CARDS */
-  .neo-contact-email,
-  .neo-contact-phone {
-    padding-top: 24px;
-  }
-
-  /* CONTENT ORDER (UX FRIENDLY) */
-  .neo-contact-text {
-    order: 1;
-  }
-
-  .neo-contact-img-small {
-    order: 2;
-  }
-
-  .neo-contact-email {
-    order: 3;
-  }
-
-  .neo-contact-phone {
-    order: 4;
-  }
-
-  .neo-contact-img-large {
-    order: 5;
-  }
-
-  /* FOOTER BANNER */
-  .neo-contact-footer-banner {
-    height: 200px;
-    margin-top: 16px;
-  }
+.neo-contact-footer-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
 
-  .neo-contact-grid {
-    grid-template-columns: 1fr 1fr;
+
+  .neo-contact-section{
+    margin-top: 120px;
+  }
+  /* Layout */
+  .neo-contact-flex {
+    flex-wrap: wrap;
     gap: 20px;
   }
 
-  /* FULL WIDTH INTRO */
-  .neo-contact-text {
-    grid-column: span 2;
+  /* Full width headline */
+  .neo-col-left {
+    flex: 0 0 100%;
+    padding: 28px 20px;
   }
 
-  /* REMOVE DESKTOP OFFSETS */
-  .neo-contact-img-small,
-  .neo-contact-img-large,
-  .neo-contact-email {
-    margin: 0;
-    height: auto;
+  .neo-col-left h1 {
+    font-size: 2.4rem;
+    line-height: 1.15;
   }
 
-  .neo-contact-img-small,
-  .neo-contact-img-large {
+  /* 2 column layout below headline */
+  .neo-col-mid,
+  .neo-col-right {
+    flex: 1 1 calc(50% - 10px);
+    gap: 20px;
+  }
+
+  /* 🔥 Balanced image height */
+  .neo-img-robot,
+  .neo-img-office {
     height: 220px;
+    min-height: 220px;
+    border-radius: 20px;
   }
 
-  /* LARGE IMAGE FULL WIDTH */
-  .neo-contact-img-large {
-    grid-column: span 2;
+  /* Card adjustments */
+  .neo-phone,
+  .neo-email {
+    padding: 22px 24px;
+    min-height: auto;
+    border-radius: 20px;
   }
 
-  .neo-contact-card {
-    padding: 30px;
+  .neo-label {
+    font-size: 12px;
   }
 
+  /* Hide banner on tablet */
   .neo-contact-footer-banner {
-    height: 280px;
+    display: none;
   }
 }
+@media (max-width: 767px) {
+
+  /* Section spacing */
+  .neo-contact-section { 
+    margin-top: 80px; 
+  }
+
+  .neo-contact-wrapper { 
+    padding: 20px 16px; 
+  }
+
+  /* Stack layout */
+  .neo-contact-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Left Column */
+  .neo-col-left {
+    padding: 10px 5px;
+  }
+
+  .neo-col-left span {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .neo-col-left h1 { 
+    font-size: 1.9rem;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+  }
+
+  /* Mid & Right Columns */
+  .neo-col-mid,
+  .neo-col-right {
+    gap: 20px;
+  }
+
+  /* 🔥 IMAGE HEIGHT OPTIMIZED */
+  .neo-img-robot,
+  .neo-img-office {
+    height: 160px;
+    min-height: 160px;
+    border-radius: 18px;
+  }
+
+  .neo-img-robot img,
+  .neo-img-office img {
+ 
+    height: 310px;
+  }
+
+  /* Phone Card */
+  .neo-phone {
+    padding: 20px;
+    min-height: auto;
+    border-radius: 18px;
+  }
+
+  .neo-phone p {
+    font-size: 14px;
+  }
+
+  /* Email Card */
+  .neo-email {
+    padding: 22px;
+    min-height: auto;
+    border-radius: 18px;
+  }
+
+  .neo-email a {
+    font-size: 14px;
+  }
+
+  /* Label */
+  .neo-label {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  /* Hide Bottom Banner on Mobile */
+  .neo-contact-footer-banner {
+    display: none;
+  }
+
+}
+
 
 /************************* waiting section *********************************/
 
@@ -6633,7 +6721,7 @@ header {
 
 
 .insights-text {
-  font-size: 14px;
+  font-size: 18px;
   color: #777;
   margin-bottom: 24px;
 }
@@ -6768,13 +6856,18 @@ header {
   .insights-heading {
     font-size: 30px;
   }
-
+ .insights-section{
+ margin: 160px auto 0 auto;
+  }
   .metric-value {
     font-size: 22px;
   }
 
   .primary-article {
     padding: 20px;
+  }
+  .primary-title {
+    font-size: 18px;
   }
 }
 
