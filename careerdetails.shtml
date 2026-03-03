@@ -261,10 +261,19 @@
 </section>
 
 <!-- Application Modal -->
+ 
 <div id="applicationModal" class="ab-modal">
   <div class="ab-modal-content">
     <span class="ab-modal-close">&times;</span>
     <h2 class="ab-modal-title">Apply Now</h2>
+
+    <!-- Success UI (Hidden by Default) -->
+<div id="successUI" class="success-ui" style="display:none;">
+  <div class="success-icon">✔</div>
+  <h3>Application Submitted Successfully</h3>
+  <p>Thank you for applying. Our team will contact you soon.</p>
+  <button type="button" onclick="closeSuccess()">Close</button>
+</div>
 
     <form id="applicationForm" enctype="multipart/form-data">
 
@@ -292,6 +301,9 @@
       <button type="submit" class="ab-job-btn ab-submit-btn">
         Submit Application
       </button>
+
+
+      
 
     </form>
   </div>

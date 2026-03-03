@@ -41,19 +41,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
 document.getElementById("applicationForm").addEventListener("submit", async function (e) {
   e.preventDefault();
 
   const formData = new FormData();
-
-  // 👇 Database ke hisaab se exact field names
   formData.append("jobId", document.getElementById("jobId").value);
   formData.append("fullName", document.getElementById("fullName").value);
   formData.append("email", document.getElementById("email").value);
 
   const fileInput = document.getElementById("resume");
-  formData.append("CV", fileInput.files[0]); // backend multer field name
+  formData.append("CV", fileInput.files[0]);
 
   try {
     const response = await fetch(
@@ -64,17 +61,22 @@ document.getElementById("applicationForm").addEventListener("submit", async func
       }
     );
 
-    const result = await response.json();
-
     if (response.ok) {
-      alert("Application Submitted Successfully ✅");
-      document.getElementById("applicationForm").reset();
+      document.getElementById("applicationForm").style.display = "none";
+      document.getElementById("successUI").style.display = "block";
     } else {
-      alert(result.message || "Submission Failed ❌");
+      alert("Submission Failed");
     }
 
   } catch (error) {
-    console.error("Error:", error);
-    alert("Server Error ❌");
+    alert("Server Error");
   }
 });
+
+function closeSuccess() {
+  document.getElementById("successUI").style.display = "none";
+  document.getElementById("applicationForm").style.display = "block";
+  document.getElementById("applicationForm").reset();
+  document.getElementById("applicationModal").style.display = "none";
+  document.body.style.overflow = "auto";
+}

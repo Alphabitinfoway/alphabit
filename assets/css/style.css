@@ -178,7 +178,8 @@ header {
   gap: 4px;
 }
 
-.navbar h6:not(:first-child) a::after {
+/* Arrow only for Insights */
+.dropdown-toggle::after {
   content: "";
   display: inline-block;
   width: 12px;
@@ -188,7 +189,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.3s ease;
-  margin-left: 4px;
+  margin-left: 6px;
 }
 
 .navbar a:hover {
@@ -487,14 +488,6 @@ header {
     align-items: center;
   }
 
-  /* Arrow */
-  .dropdown-toggle::after {
-    content: "›";
-    font-size: 20px;
-    color: #999;
-    transition: transform 0.3s ease, color 0.3s ease;
-    line-height: 1;
-  }
 
   .dropdown.active .dropdown-toggle::after {
     transform: rotate(90deg);
@@ -847,7 +840,7 @@ header {
 }
 
 .counting-item h1 {
-  font-size: 72px;
+  font-size: 52px;
   font-weight: 700;
   color: #1a1a1a;
   text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
@@ -860,7 +853,7 @@ header {
   font-weight: 600;
   line-height: 1.2;
   text-align: left;
-  /* margin-left: 12px; */
+  margin-left: 18px;
 }
 
 /* ========== Solutions Section ========== */
@@ -2482,7 +2475,7 @@ header {
   }
 
   .counting-item h1 {
-    font-size: 68px;
+    font-size: 48px;
   }
 
   .counting-item h6 {
@@ -4570,7 +4563,7 @@ header {
   .text.light img {
     height: 175px !important;
     width: 225px !important;
-    margin-top: -160px !important;
+    margin-top: -16px !important;
     margin-left: -45px !important;
   }
 
@@ -4719,7 +4712,7 @@ header {
     height: 330px;
   }
 
-  /* =============section-7================= */
+    /* =============section-7================= */
 
   .logo-container {
     width: 1020px;
@@ -4754,7 +4747,7 @@ header {
     max-width: 53%;
   }
 
-  /* ==================== section-2=================== */
+  /* ====================section-2=================== */
   .aboutpage-container2 {
     margin-top: 0;
     margin-bottom: 0;
@@ -5519,6 +5512,7 @@ header {
 @media (max-width: 576px) {
   .service-hero {
     padding-bottom: 120px;
+    gap: 20px;
   }
 
   .service-hero__visual {
@@ -5544,13 +5538,13 @@ header {
   .service-box--primary {
     width: 292px;
     height: 210px;
-    left: 10px;
+    left: -5px;
   }
 
   .service-box--secondary {
     width: 255px;
     height: 162px;
-    left: 12px;
+    left: -5px;
   }
 }
 
@@ -5733,7 +5727,7 @@ header {
 
   /* Wrapper padding */
   .premium-offerings-wrapper {
-    padding: 10px 10px;
+    padding: 30px 10px;
 
   }
 
@@ -6092,7 +6086,7 @@ header {
 
 
 .neo-contact-section {
-  margin-top: 200px;
+  margin-top:150px;
 }
 
 .neo-contact-wrapper {
@@ -6770,16 +6764,17 @@ header {
 .primary-title {
   font-size: 20px;
   margin-bottom: 6px;
+  color: #d9d9d9;
 }
 
 .primary-label {
   font-size: 14px;
-  color: #555;
+  color: hsl(0, 4%, 85%);
 }
 
 .primary-date {
   font-size: 12px;
-  color: #777;
+  color: hsl(0, 4%, 85%);
 }
 
 .primary-arrow {
@@ -7131,6 +7126,7 @@ header {
 .uxdon-article-flow {
   max-width: 720px;
   overflow-wrap: break-word;
+  margin: 5px 0 24px;
 }
 
 .uxdon-article-paragraph {
@@ -7207,7 +7203,7 @@ header {
 
   .uxdon-shell {
     margin-top: 80px;
-    padding: 0 16px;
+    padding: 0 24px;
   }
 
   /* Hero Section */
@@ -8796,6 +8792,10 @@ header {
 }
 
 @media (max-width: 1024px) {
+
+  .tech-feature-section {
+    padding: 60px 20px;
+  }
   .tech-feature-card {
     flex-direction: column;
     align-items: center;
@@ -8808,6 +8808,10 @@ header {
 }
 
 @media (max-width: 600px) {
+  
+  .tech-feature-section {
+    padding: 30px 20px;
+  }
   .tech-feature-media {
     width: 100%;
     height: 160px;
@@ -8853,7 +8857,7 @@ header {
 /* MOBILE */
 @media (max-width: 768px) {
   .tech-black-banner__text {
-    font-size: 24px;
+    font-size: 30px;
     letter-spacing: 1.5px;
     text-align: left;
   }
