@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    const API_URL = 'https://alphabit-web-1.onrender.com/users/getBlogs';
+    const API_URL = `${BASE_URL}/users/getBlogs`;
 
     async function fetchBlogPosts() {
 

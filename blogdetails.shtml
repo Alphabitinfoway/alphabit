@@ -110,91 +110,91 @@
 
     </form> -->
 
-  </div>
+</div>
 </section>
 
 <script>
-// BACK BUTTON
-function goBack() {
-  window.history.back();
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const params = new URLSearchParams(window.location.search);
-  const blogId = params.get("id");
-
-  if (!blogId) {
-    alert("Blog ID missing in URL!");
-    return;
+  // BACK BUTTON
+  function goBack() {
+    window.history.back();
   }
 
-  const API_URL = "https://alphabit-web-1.onrender.com/users/getBlogs";
+  document.addEventListener("DOMContentLoaded", () => {
 
-  fetch(API_URL)
-    .then(res => res.json())
-    .then(data => {
+    const params = new URLSearchParams(window.location.search);
+    const blogId = params.get("id");
 
-      const blog = data.find(item => item._id === blogId);
+    if (!blogId) {
+      alert("Blog ID missing in URL!");
+      return;
+    }
 
-      if (!blog) {
-        alert("Blog not found!");
-        return;
-      }
+    const API_URL = `${BASE_URL}/users/getBlogs`;
 
-      loadBlog(blog);
+    fetch(API_URL)
+      .then(res => res.json())
+      .then(data => {
 
-    })
-    .catch(err => {
-      console.error(err);
-      alert("Error loading blog");
-    });
+        const blog = data.find(item => item._id === blogId);
 
-});
+        if (!blog) {
+          alert("Blog not found!");
+          return;
+        }
+
+        loadBlog(blog);
+
+      })
+      .catch(err => {
+        console.error(err);
+        alert("Error loading blog");
+      });
+
+  });
 
 
-function loadBlog(blog) {
+  function loadBlog(blog) {
 
-  // TITLE
-  document.getElementById("blog-title").textContent = blog.title;
+    // TITLE
+    document.getElementById("blog-title").textContent = blog.title;
 
-  // DATE
-  const date = new Date(blog.createdAt);
-  document.getElementById("blog-day").textContent = date.getDate();
-  document.getElementById("blog-month").textContent =
-    date.toLocaleString("default", { month: "long" });
+    // DATE
+    const date = new Date(blog.createdAt);
+    document.getElementById("blog-day").textContent = date.getDate();
+    document.getElementById("blog-month").textContent =
+      date.toLocaleString("default", { month: "long" });
 
-  // IMAGE
-  const imageUrl = blog.image && blog.image.startsWith("http")
-    ? blog.image
-    : blog.image
-      ? `https://alphabit-web-1.onrender.com/uploads/${blog.image}`
-      : `https://picsum.photos/seed/${blog._id}/1200/600`;
+    // IMAGE
+    const imageUrl = blog.image && blog.image.startsWith("http")
+      ? blog.image
+      : blog.image
+        ? `${BASE_URL}/uploads/${blog.image}`
+        : `https://picsum.photos/seed/${blog._id}/1200/600`;
 
-  const imageDiv = document.getElementById("blog-image");
-  imageDiv.style.backgroundImage = `url('${imageUrl}')`;
-  imageDiv.style.backgroundSize = "cover";
-  imageDiv.style.backgroundPosition = "center";
+    const imageDiv = document.getElementById("blog-image");
+    imageDiv.style.backgroundImage = `url('${imageUrl}')`;
+    imageDiv.style.backgroundSize = "cover";
+    imageDiv.style.backgroundPosition = "center";
 
-  // CONTENT
-  const contentDiv = document.getElementById("blog-content");
+    // CONTENT
+    const contentDiv = document.getElementById("blog-content");
 
-  if (blog.content) {
-    contentDiv.innerHTML = blog.content;
-  } else {
-    contentDiv.innerHTML = `
+    if (blog.content) {
+      contentDiv.innerHTML = blog.content;
+    } else {
+      contentDiv.innerHTML = `
       <p class="uxdon-article-paragraph">
         ${blog.description || "No content available."}
       </p>`;
+    }
   }
-}
 
-// COMMENT SUBMIT (Frontend only)
-document.getElementById("commentForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Comment submitted successfully!");
-  this.reset();
-});
+  // COMMENT SUBMIT (Frontend only)
+  document.getElementById("commentForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Comment submitted successfully!");
+    this.reset();
+  });
 </script>
 
 <!--#include file="footer.shtml" -->
