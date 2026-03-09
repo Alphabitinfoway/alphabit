@@ -543,7 +543,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const blogContainer = document.getElementById("blog-container");
 
   if (!blogContainer) {
-    console.error("Blog container not found!");
     return;
   }
 
@@ -604,7 +603,6 @@ document.addEventListener("DOMContentLoaded", () => {
         </p>
 
         <div class="blog-author">
-          <h4>${post.author || "Admin"}</h4>
           <span>${new Date(post.createdAt).toDateString()} - STORY</span>
         </div>
       `;

@@ -190,11 +190,14 @@
   }
 
   // COMMENT SUBMIT (Frontend only)
-  document.getElementById("commentForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Comment submitted successfully!");
-    this.reset();
-  });
+  const commentForm = document.getElementById("commentForm");
+  if (commentForm) {
+    commentForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Comment submitted successfully!");
+      this.reset();
+    });
+  }
 </script>
 
 <!--#include file="footer.shtml" -->
