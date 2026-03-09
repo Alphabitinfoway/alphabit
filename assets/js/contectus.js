@@ -19,7 +19,7 @@ form.addEventListener("submit", async function (e) {
   };
 
   try {
-    const response = await fetch("https://alphabit-web-1.onrender.com/users/contactUS", {
+    const response = await fetch(`${BASE_URL}/users/contactUS`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -1,80 +1,82 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-    const applyBtn = document.getElementById('applyBtn');
-    const modal = document.getElementById('applicationModal');
-    const closeBtn = document.querySelector('.ab-modal-close');
-    const form = document.getElementById('applicationForm');
+  const applyBtn = document.getElementById('applyBtn');
+  const modal = document.getElementById('applicationModal');
+  const closeBtn = document.querySelector('.ab-modal-close');
+  const form = document.getElementById('applicationForm');
 
-    if (applyBtn && modal) {
-        applyBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
-        });
-    }
-
-    if (closeBtn && modal) {
-        closeBtn.addEventListener('click', function () {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restore scrolling
-        });
-    }
-
-    // Close modal when clicking outside
-    window.addEventListener('click', function (e) {
-        if (e.target == modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
+  if (applyBtn && modal) {
+    applyBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
     });
+  }
 
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Here you would typically collect form data and send it to a server
-            // For now, we'll just show a success message
-            alert('Application submitted successfully!');
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            form.reset();
-        });
+  if (closeBtn && modal) {
+    closeBtn.addEventListener('click', function () {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Restore scrolling
+    });
+  }
+
+  // Close modal when clicking outside
+  window.addEventListener('click', function (e) {
+    if (e.target == modal) {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
     }
-});
+  });
 
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      // Here you would typically collect form data and send it to a server
+      // For now, we'll just show a success message
+      alert('Application submitted successfully!');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+      form.reset();
+    });
+  }
+});
 
 document.getElementById("applicationForm").addEventListener("submit", async function (e) {
   e.preventDefault();
 
   const formData = new FormData();
-
-  // 👇 Database ke hisaab se exact field names
   formData.append("jobId", document.getElementById("jobId").value);
   formData.append("fullName", document.getElementById("fullName").value);
   formData.append("email", document.getElementById("email").value);
 
   const fileInput = document.getElementById("resume");
-  formData.append("CV", fileInput.files[0]); // backend multer field name
+  formData.append("CV", fileInput.files[0]);
 
   try {
     const response = await fetch(
-      "https://alphabit-web-1.onrender.com/apply/698ed15f9f09fdcdce95477d",
+      `${BASE_URL}/apply/698ed15f9f09fdcdce95477d`,
       {
         method: "POST",
         body: formData
       }
     );
 
-    const result = await response.json();
-
     if (response.ok) {
-      alert("Application Submitted Successfully ✅");
-      document.getElementById("applicationForm").reset();
+      document.getElementById("applicationForm").style.display = "none";
+      document.getElementById("successUI").style.display = "block";
     } else {
-      alert(result.message || "Submission Failed ❌");
+      alert("Submission Failed");
     }
 
   } catch (error) {
-    console.error("Error:", error);
-    alert("Server Error ❌");
+    alert("Server Error");
   }
 });
+
+function closeSuccess() {
+  document.getElementById("successUI").style.display = "none";
+  document.getElementById("applicationForm").style.display = "block";
+  document.getElementById("applicationForm").reset();
+  document.getElementById("applicationModal").style.display = "none";
+  document.body.style.overflow = "auto";
+}

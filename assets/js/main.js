@@ -335,7 +335,7 @@ document.addEventListener('click', (e) => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const API_URL = "https://alphabit-web-1.onrender.com/users/getBlogs";
+  const API_URL = `${BASE_URL}/users/getBlogs`;
 
   const blogContainer = document.getElementById('blog-feed-container');
   const primaryCard = document.querySelector('.primary-article');
@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   };
 
 //  try {
-//   const response = await fetch("https://alphabit-web-1.onrender.com/users/contactUS", {
+//   const response = await fetch(`${BASE_URL}/users/contactUS`, {
 //     method: "POST",
 //     headers: { "Content-Type": "application/json" },
 //     body: JSON.stringify(data),
@@ -543,11 +543,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const blogContainer = document.getElementById("blog-container");
 
   if (!blogContainer) {
-    console.error("Blog container not found!");
     return;
   }
 
-  const API_URL = "https://alphabit-web-1.onrender.com/users/getBlogs";
+  const API_URL = `${BASE_URL}/users/getBlogs`;
   async function fetchBlogs() {
     try {
       const response = await fetch(API_URL);
@@ -604,7 +603,6 @@ document.addEventListener("DOMContentLoaded", () => {
         </p>
 
         <div class="blog-author">
-          <h4>${post.author || "Admin"}</h4>
           <span>${new Date(post.createdAt).toDateString()} - STORY</span>
         </div>
       `;

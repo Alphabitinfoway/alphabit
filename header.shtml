@@ -19,7 +19,7 @@
       <ul class="dropdown-menu">
         <li><a href="blog.shtml">Blog</a></li>
         <li><a href="career.shtml">Career</a></li>
-        <li><a href="careerdetails.shtml">Career Details</a></li>
+        <!-- <li><a href="careerdetails.shtml">Career Details</a></li> -->
       </ul>
     </h6>
     <button class="contact-btn mobile-contact-btn">

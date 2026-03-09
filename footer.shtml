@@ -25,7 +25,7 @@
           WITH US
         </h1>
 
-        <p class="footer-email">hello@example.com</p>
+        <p class="footer-email">info@alphabitinfoway.com</p>
       </div>
     </div>
 
@@ -35,7 +35,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© <span id="year"></span> ALPHABIT INFOVAY</p>
+    <p>© <span id="year"></span> ALPHABIT INFOWAY</p>
     <div class="footer-links">
       <a href="#">AGENCY</a>
       <a href="#">CAREER</a>
@@ -44,6 +44,7 @@
     </div>
   </div>
 </section>
+<script src="./assets/js/config.js"></script>
 <script src="./assets/js/main.js"></script>
 </div>
 <script src="./assets/js/scroll-animate.js"></script>
