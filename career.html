@@ -1,13 +1,60 @@
-<!--#include file="head.shtml" -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!--#include file="header.shtml" --> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alphabit Infoway - Connecting the bits" />
+  <meta name="keywords" content="Alphabit Infoway website" />
+  <meta name="author" content="Alphabit InfoWay" />
+  <title>Alphabit Infoway</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+</head>
+
+<body>
+<div class="container">
+<header>
+    <div class="logo-img">
+      <img src="./assets/images/logo.png" alt="Alphabit Infoway Logo" class="logo" />
+    </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar">
+      <h6><a href="index">Home</a></h6>
+      <h6><a href="services">Services</a></h6>
+      <h6><a href="#products">Products</a></h6>
+      <h6><a href="Technology">Technology</a></h6>
+      <h6><a href="about">About</a></h6>
+      <!-- DROPDOWN -->
+      <h6 class="dropdown">
+        <a href="#" class="dropdown-toggle">Insights</a>
+        <ul class="dropdown-menu">
+          <li><a href="blog">Blog</a></li>
+          <li><a href="career">Career</a></li>
+        </ul>
+      </h6>
+      <button class="contact-btn mobile-contact-btn">
+        <a href="contact" class="contact-btnn">Contact Us</a>
+      </button>
+    </nav>
+    <button class="contact-btn desktop-contact-btn">
+      <a href="contact" class="contact-btnn">Contact Us</a>
+    </button>
+  </header>
 
 <div class="ab-careers-page">
   <div class="ab-careers-container">
 
     <!-- TITLE -->
     <h1 class="ab-careers-title">
-      Let’s Join The Family of Alphabit &
+      Let's Join The Family of Alphabit &
 
       <span class="ab-careers-inline">
         <span class="ab-careers-profiles">
@@ -159,7 +206,7 @@
             </h2>
 
             <p class="ab-why-subtitle">
-                We bet on brands that shift categories and add value to people’s lives;
+                We bet on brands that shift categories and add value to people's lives;
                 and on founders who are motivated to shape
             </p>
         </div>
@@ -255,5 +302,43 @@
     </div>
 </section>
 
+  <!-- Footer -->
+  <section class="Footer">
+    <div class="footer-bg-clip">
+      <div class="footer-bg-circle"></div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-icons">
+          <a target="_blank" href="#"><img src="./assets/images/twitter2.png" alt="twitter" /></a>
+          <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img src="./assets/images/linkedin2.png" alt="linkedin" /></a>
+          <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img src="./assets/images/instagram.png" alt="instagram" /></a>
+          <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img src="./assets/images/facebook2.png" alt="facebook" /></a>
+        </div>
+        <div class="footer-text">
+          <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
+          <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+          <p class="footer-email">info@alphabitinfoway.com</p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <img src="./assets/images/AI Model.png" alt="Robot" />
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+      <div class="footer-links">
+        <a href="#">AGENCY</a>
+        <a href="#">CAREER</a>
+        <a href="#">PRIVACY</a>
+        <a href="#">TERMS &amp; CONDITION</a>
+      </div>
+    </div>
+  </section>
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/main.js"></script>
+</div>
+<script src="./assets/js/scroll-animate.js"></script>
+</body>
 
-   <!--#include file="footer.shtml" -->
+</html>
