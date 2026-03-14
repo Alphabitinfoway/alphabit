@@ -13,103 +13,116 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+  <script src="./assets/js/config.js"></script>
+  <style>
+    .uxdon-showcase-frame img {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .uxdon-showcase-frame img.loaded {
+      opacity: 1;
+    }
+  </style>
 </head>
 
 <body>
-<div class="container">
-<header>
-    <div class="logo-img">
-      <img src="./assets/images/logo.png" alt="Alphabit Infoway Logo" class="logo" />
-    </div>
-    <div class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <nav class="navbar">
-      <h6><a href="index">Home</a></h6>
-      <h6><a href="services">Services</a></h6>
-      <h6><a href="#products">Products</a></h6>
-      <h6><a href="Technology">Technology</a></h6>
-      <h6><a href="about">About</a></h6>
-      <h6 class="dropdown">
-        <a href="#" class="dropdown-toggle">Insights</a>
-        <ul class="dropdown-menu">
-          <li><a href="blog">Blog</a></li>
-          <li><a href="career">Career</a></li>
-        </ul>
-      </h6>
-      <button class="contact-btn mobile-contact-btn">
+  <div class="container">
+    <header>
+      <div class="logo-img">
+        <img src="./assets/images/logo.png" alt="Alphabit Infoway Logo" class="logo" />
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navbar">
+        <h6><a href="index">Home</a></h6>
+        <h6><a href="services">Services</a></h6>
+        <h6><a href="#products">Products</a></h6>
+        <h6><a href="Technology">Technology</a></h6>
+        <h6><a href="about">About</a></h6>
+        <h6 class="dropdown">
+          <a href="#" class="dropdown-toggle">Insights</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog">Blog</a></li>
+            <li><a href="career">Career</a></li>
+          </ul>
+        </h6>
+        <button class="contact-btn mobile-contact-btn">
+          <a href="contact" class="contact-btnn">Contact Us</a>
+        </button>
+      </nav>
+      <button class="contact-btn desktop-contact-btn">
         <a href="contact" class="contact-btnn">Contact Us</a>
       </button>
-    </nav>
-    <button class="contact-btn desktop-contact-btn">
-      <a href="contact" class="contact-btnn">Contact Us</a>
-    </button>
-  </header>
+    </header>
 
-<!-- HERO -->
-<section class="uxdon-hero-wrap">
-  <div class="uxdon-shell">
+    <!-- HERO -->
+    <section class="uxdon-hero-wrap">
+      <div class="uxdon-shell">
 
-    <h1 class="uxdon-hero-heading" id="blog-title"></h1>
+        <h1 class="uxdon-hero-heading" id="blog-title"></h1>
 
-    <div class="uxdon-hero-metrics">
-      <div class="uxdon-metric-card">
-        <span class="uxdon-metric-count">320+</span>
-        <span class="uxdon-metric-label">Comments</span>
-      </div>
+        <div class="uxdon-hero-metrics">
+          <div class="uxdon-metric-card">
+            <span class="uxdon-metric-count">320+</span>
+            <span class="uxdon-metric-label">Comments</span>
+          </div>
 
-      <div class="uxdon-metric-card">
-        <span class="uxdon-metric-count">20,512+</span>
-        <span class="uxdon-metric-label">Likes</span>
-      </div>
+          <div class="uxdon-metric-card">
+            <span class="uxdon-metric-count">20,512+</span>
+            <span class="uxdon-metric-label">Likes</span>
+          </div>
 
-      <div class="uxdon-metric-card">
-        <span class="uxdon-metric-count" id="blog-day"></span>
-        <span class="uxdon-metric-label" id="blog-month"></span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- SHOWCASE IMAGE -->
-<section class="uxdon-showcase-wrap">
-  <div class="uxdon-shell">
-    <div class="uxdon-showcase-frame" id="blog-image"></div>
-  </div>
-</section>
-
-<!-- ARTICLE CONTENT -->
-<section class="uxdon-article-wrap">
-  <div class="uxdon-shell">
-    <div class="uxdon-article-grid">
-
-      <!-- STATIC METRICS -->
-      <aside class="uxdon-article-metrics">
-        <div class="uxdon-article-metric">
-          <span class="uxdon-article-num">247</span>
-          <span class="uxdon-article-label">Views</span>
+          <div class="uxdon-metric-card">
+            <span class="uxdon-metric-count" id="blog-day"></span>
+            <span class="uxdon-metric-label" id="blog-month"></span>
+          </div>
         </div>
 
-        <div class="uxdon-article-metric">
-          <span class="uxdon-article-num">14</span>
-          <span class="uxdon-article-label">Shares</span>
-        </div>
-      </aside>
-
-      <!-- DYNAMIC CONTENT -->
-      <div class="uxdon-article-flow">
-        <div id="blog-content"></div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- SHOWCASE IMAGE -->
+    <section class="uxdon-showcase-wrap">
+      <div class="uxdon-shell">
+        <div class="uxdon-showcase-frame" id="blog-image">
+          <img id="main-blog-img" src="" alt="" style="width:100%; height:100%; object-fit:cover; display:none;">
+        </div>
+      </div>
+    </section>
 
-<!-- COMMENT FORM (commented out) -->
-<!--
+    <!-- ARTICLE CONTENT -->
+    <section class="uxdon-article-wrap">
+      <div class="uxdon-shell">
+        <div class="uxdon-article-grid">
+
+          <!-- STATIC METRICS -->
+          <aside class="uxdon-article-metrics">
+            <div class="uxdon-article-metric">
+              <span class="uxdon-article-num">247</span>
+              <span class="uxdon-article-label">Views</span>
+            </div>
+
+            <div class="uxdon-article-metric">
+              <span class="uxdon-article-num">14</span>
+              <span class="uxdon-article-label">Shares</span>
+            </div>
+          </aside>
+
+          <!-- DYNAMIC CONTENT -->
+          <div class="uxdon-article-flow">
+            <div id="blog-content"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMENT FORM (commented out) -->
+    <!--
 <section class="uxdon-comment-wrap">
   <div class="uxdon-shell">
     <h2 class="uxdon-comment-title">Write a comment</h2>
@@ -128,130 +141,138 @@
 </section>
 -->
 
-  <!-- Footer -->
-  <section class="Footer">
-    <div class="footer-bg-clip">
-      <div class="footer-bg-circle"></div>
-    </div>
-    <div class="footer-container">
-      <div class="footer-left">
-        <div class="footer-icons">
-          <a target="_blank" href="#"><img src="./assets/images/twitter2.png" alt="twitter" /></a>
-          <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img src="./assets/images/linkedin2.png" alt="linkedin" /></a>
-          <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img src="./assets/images/instagram.png" alt="instagram" /></a>
-          <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img src="./assets/images/facebook2.png" alt="facebook" /></a>
+    <!-- Footer -->
+    <section class="Footer">
+      <div class="footer-bg-clip">
+        <div class="footer-bg-circle"></div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-icons">
+            <a target="_blank" href="#"><img src="./assets/images/twitter2.png" alt="twitter" /></a>
+            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                src="./assets/images/linkedin2.png" alt="linkedin" /></a>
+            <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                src="./assets/images/instagram.png" alt="instagram" /></a>
+            <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                src="./assets/images/facebook2.png" alt="facebook" /></a>
+          </div>
+          <div class="footer-text">
+            <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
+            <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+            <p class="footer-email">info@alphabitinfoway.com</p>
+          </div>
         </div>
-        <div class="footer-text">
-          <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
-          <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
-          <p class="footer-email">info@alphabitinfoway.com</p>
+        <div class="footer-right">
+          <img src="./assets/images/AI Model.png" alt="Robot" />
         </div>
       </div>
-      <div class="footer-right">
-        <img src="./assets/images/AI Model.png" alt="Robot" />
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+        <div class="footer-links">
+          <a href="#">AGENCY</a>
+          <a href="#">CAREER</a>
+          <a href="#">PRIVACY</a>
+          <a href="#">TERMS &amp; CONDITION</a>
+        </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
-      <div class="footer-links">
-        <a href="#">AGENCY</a>
-        <a href="#">CAREER</a>
-        <a href="#">PRIVACY</a>
-        <a href="#">TERMS &amp; CONDITION</a>
-      </div>
-    </div>
-  </section>
-  <script src="./assets/js/config.js"></script>
-  <script src="./assets/js/main.js"></script>
-</div>
-<script src="./assets/js/scroll-animate.js"></script>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </div>
+  <script src="./assets/js/scroll-animate.js"></script>
 
-<script>
-  // BACK BUTTON
-  function goBack() {
-    window.history.back();
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-
-    const params = new URLSearchParams(window.location.search);
-    const blogId = params.get("id");
-
-    if (!blogId) {
-      alert("Blog ID missing in URL!");
-      return;
+  <script>
+    // BACK BUTTON
+    function goBack() {
+      window.history.back();
     }
 
-    const API_URL = `${BASE_URL}/users/getBlogs`;
+    document.addEventListener("DOMContentLoaded", () => {
 
-    fetch(API_URL)
-      .then(res => res.json())
-      .then(data => {
+      const params = new URLSearchParams(window.location.search);
+      const blogId = params.get("id");
 
-        const blog = data.find(item => item._id === blogId);
+      if (!blogId) {
+        alert("Blog ID missing in URL!");
+        return;
+      }
 
-        if (!blog) {
-          alert("Blog not found!");
-          return;
-        }
+      const API_URL = `${BASE_URL}/users/getBlogs`;
 
-        loadBlog(blog);
+      fetch(API_URL)
+        .then(res => res.json())
+        .then(data => {
 
-      })
-      .catch(err => {
-        console.error(err);
-        alert("Error loading blog");
-      });
+          const blog = data.find(item => item._id === blogId);
 
-  });
+          if (!blog) {
+            alert("Blog not found!");
+            return;
+          }
+
+          loadBlog(blog);
+
+        })
+        .catch(err => {
+          console.error(err);
+          alert("Error loading blog");
+        });
+
+    });
 
 
-  function loadBlog(blog) {
+    function loadBlog(blog) {
 
-    // TITLE
-    document.getElementById("blog-title").textContent = blog.title;
+      // TITLE
+      document.getElementById("blog-title").textContent = blog.title;
 
-    // DATE
-    const date = new Date(blog.createdAt);
-    document.getElementById("blog-day").textContent = date.getDate();
-    document.getElementById("blog-month").textContent =
-      date.toLocaleString("default", { month: "long" });
+      // DATE
+      const date = new Date(blog.createdAt);
+      document.getElementById("blog-day").textContent = date.getDate();
+      document.getElementById("blog-month").textContent =
+        date.toLocaleString("default", { month: "long" });
 
-    // IMAGE
-    const imageUrl = blog.image && blog.image.startsWith("http")
-      ? blog.image
-      : blog.image
-        ? `${BASE_URL}/uploads/${blog.image}`
-        : `https://picsum.photos/seed/${blog._id}/1200/600`;
+      // IMAGE
+      const imageUrl = blog.image && blog.image.startsWith("http")
+        ? blog.image
+        : blog.image
+          ? `${BASE_URL}/uploads/${blog.image}`
+          : `https://picsum.photos/seed/${blog._id}/1200/600`;
 
-    const imageDiv = document.getElementById("blog-image");
-    imageDiv.style.backgroundImage = `url('${imageUrl}')`;
-    imageDiv.style.backgroundSize = "cover";
-    imageDiv.style.backgroundPosition = "center";
+      const img = document.getElementById("main-blog-img");
+      if (img) {
+        img.src = imageUrl;
+        img.alt = blog.title;
+        img.style.display = "block";
+        img.onload = () => img.classList.add("loaded");
 
-    // CONTENT
-    const contentDiv = document.getElementById("blog-content");
+        // If cached
+        if (img.complete) img.classList.add("loaded");
+      }
 
-    if (blog.content) {
-      contentDiv.innerHTML = blog.content;
-    } else {
-      contentDiv.innerHTML = `
+      // CONTENT
+      const contentDiv = document.getElementById("blog-content");
+
+      if (blog.content) {
+        contentDiv.innerHTML = blog.content;
+      } else {
+        contentDiv.innerHTML = `
       <p class="uxdon-article-paragraph">
         ${blog.description || "No content available."}
       </p>`;
+      }
     }
-  }
 
-  // COMMENT SUBMIT (Frontend only)
-  const commentForm = document.getElementById("commentForm");
-  if (commentForm) {
-    commentForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("Comment submitted successfully!");
-      this.reset();
-    });
-  }
-</script>
+    // COMMENT SUBMIT (Frontend only)
+    const commentForm = document.getElementById("commentForm");
+    if (commentForm) {
+      commentForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Comment submitted successfully!");
+        this.reset();
+      });
+    }
+  </script>
 
 </body>
 

@@ -7347,6 +7347,8 @@ header {
   height: 560px;
   background: var(--uxdon-bg-lite);
   border-radius: var(--uxdon-radius);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 /* ================= ARTICLE CONTINUOUS ================= */
@@ -7357,7 +7359,7 @@ header {
 .uxdon-article-grid {
   display: grid;
   grid-template-columns: 120px 1fr;
-  gap: 220px;
+  gap: 80px;
 }
 
 
@@ -7399,6 +7401,16 @@ header {
   font-size: 14px;
   color: #666;
   margin-bottom: 16px;
+}
+
+/* Global Image Fade-in */
+img.fade-in {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+img.fade-in.loaded {
+  opacity: 1;
 }
 
 /* IMAGE */

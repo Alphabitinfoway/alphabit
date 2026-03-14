@@ -85,27 +85,42 @@
   </div>
 </section>
 
+
 <!-- CONTACT SECTION -->
 <section class="nx-contact-section">
   <div class="nx-contact-container">
+
+    <!-- LEFT CONTENT -->
     <div class="nx-contact-left">
-      <h2>We want to hear<br>from you. let's<br>us know how we<br>can help!</h2>
+      <h2>
+        We want to hear<br>
+        from you. let’s<br>
+        us know how we<br>
+        can help!
+      </h2>
     </div>
+
+    <!-- RIGHT FORM -->
     <div class="nx-contact-right">
-      <form class="nx-contact-form" id="contactForm" novalidate>
-        <div class="nx-form-row">
-          <input type="text" name="firstName" placeholder="First Name">
-          <input type="text" name="lastName" placeholder="Last Name">
-        </div>
-        <div class="nx-form-row">
-          <input type="tel" name="phone" placeholder="Phone">
-          <input type="email" name="email" placeholder="Email">
-        </div>
-        <input type="text" name="subject" class="nx-full" placeholder="Subject">
-        <textarea name="message" class="nx-full" placeholder="Message"></textarea>
-        <button type="submit">Contact Us</button>
-      </form>
+   <form class="nx-contact-form" id="contactForm" method="POST" novalidate>
+  <div class="nx-form-row">
+    <input type="text" name="firstName" placeholder="First Name">
+    <input type="text" name="lastName" placeholder="Last Name">
+  </div>
+
+  <div class="nx-form-row">
+    <input type="tel" name="phone" placeholder="Phone">
+    <input type="email" name="email" placeholder="Email">
+  </div>
+
+  <input type="text" name="subject" class="nx-full" placeholder="Subject">
+  <textarea name="message" class="nx-full" placeholder="Message"></textarea>
+
+  <button type="submit">Contact Us</button>
+</form>
+
     </div>
+
   </div>
 </section>
 
