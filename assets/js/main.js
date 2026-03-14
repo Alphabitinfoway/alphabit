@@ -373,8 +373,13 @@ document.addEventListener('DOMContentLoaded', () => {
     //  MAIN CARD
     if (latest && primaryCard) {
 
-      primaryCard.style.backgroundImage =
-        `url(${latest.image || 'https://picsum.photos/800/600'})`;
+      const latestImageUrl = latest.image && latest.image.startsWith("http")
+        ? latest.image
+        : latest.image
+          ? `${BASE_URL}/uploads/${latest.image}`
+          : 'https://picsum.photos/800/600';
+
+      primaryCard.style.backgroundImage = `url(${latestImageUrl})`;
 
       primaryCard.style.backgroundSize = "cover";
       primaryCard.style.backgroundPosition = "center";
@@ -386,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="primary-label">Featured Post</p>
             <span class="primary-date">${new Date(latest.createdAt).toDateString()}</span>
           </div>
-          <a href="blogdetails.shtml?id=${latest._id}" class="primary-arrow">↗</a>
+          <a href="blogdetails?id=${latest._id}" class="primary-arrow">↗</a>
         </div>
       `;
     }
@@ -396,14 +401,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (post && auxCards[index]) {
 
-        auxCards[index].style.backgroundImage =
-          `url(${post.image || 'https://picsum.photos/400/300'})`;
+        const auxImageUrl = post.image && post.image.startsWith("http")
+          ? post.image
+          : post.image
+            ? `${BASE_URL}/uploads/${post.image}`
+            : 'https://picsum.photos/400/300';
+
+        auxCards[index].style.backgroundImage = `url(${auxImageUrl})`;
 
         auxCards[index].style.backgroundSize = "cover";
         auxCards[index].style.backgroundPosition = "center";
 
         auxCards[index].innerHTML = `
-          <a href="blogdetails.shtml?id=${post._id}" style="display:block;width:100%;height:100%;"></a>
+          <a href="blogdetails?id=${post._id}" style="display:block;width:100%;height:100%;"></a>
         `;
       }
 
@@ -415,30 +425,33 @@ document.addEventListener('DOMContentLoaded', () => {
   //  GRID BLOGS
   // ==========================
   function renderFeedGrid(posts) {
-
     posts.forEach(post => {
-
-      const imageUrl = post.image
+      const imageUrl = post.image && post.image.startsWith("http")
         ? post.image
-        : `https://picsum.photos/seed/${post._id}/400/300`;
+        : post.image
+          ? `${BASE_URL}/uploads/${post.image}`
+          : `https://picsum.photos/seed/${post._id}/400/300`;
 
       const article = document.createElement("article");
       article.className = "feed-card";
 
       article.innerHTML = `
         <div class="feed-thumb">
-          <img src="${imageUrl}" alt="${post.title}">
+          <img src="${imageUrl}" alt="${post.title}" class="fade-in">
         </div>
 
         <div class="feed-card-footer">
           <p>${post.title}</p>
-          <a href="blogdetails.shtml?id=${post._id}" class="feed-arrow">↗</a>
+          <a href="blogdetails?id=${post._id}" class="feed-arrow">↗</a>
         </div>
       `;
 
+      const img = article.querySelector('img');
+      img.onload = () => img.classList.add('loaded');
+      if (img.complete) img.classList.add('loaded');
+
       blogContainer.appendChild(article);
     });
-
   }
 
   fetchBlogPosts();
@@ -580,9 +593,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     posts.forEach(post => {
 
-      const imageUrl = post.image
+      const imageUrl = post.image && post.image.startsWith("http")
         ? post.image
-        : `https://picsum.photos/seed/${post._id}/400/300`;
+        : post.image
+          ? `${BASE_URL}/uploads/${post.image}`
+          : `https://picsum.photos/seed/${post._id}/400/300`;
 
       const blogCard = document.createElement("div");
       blogCard.className = "blog-card";
@@ -592,11 +607,9 @@ document.addEventListener("DOMContentLoaded", () => {
           ${post.title}
         </h3>
 
-     <div class="blog-image" 
-     style="background-image: url('${imageUrl}'); background-size: cover; background-position: center;">
-</div>
-</div>
-
+        <div class="blog-image">
+           <img src="${imageUrl}" alt="${post.title}" class="fade-in" style="width:100%; height:100%; object-fit:cover;">
+        </div>
 
         <p class="blog-desc">
           ${post.description ? post.description.substring(0, 100) + "..." : ""}
@@ -607,8 +620,12 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       `;
 
+      const img = blogCard.querySelector('img');
+      img.onload = () => img.classList.add('loaded');
+      if (img.complete) img.classList.add('loaded');
+
       blogCard.addEventListener("click", () => {
-        window.location.href = `blogdetails.shtml?id=${post._id}`;
+        window.location.href = `blogdetails?id=${post._id}`;
       });
 
       blogContainer.appendChild(blogCard);

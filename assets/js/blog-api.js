@@ -38,23 +38,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
         posts.forEach(post => {
 
-            const imageUrl = post.image
+            const imageUrl = post.image && post.image.startsWith("http")
                 ? post.image
-                : `https://picsum.photos/seed/${post._id}/400/300`;
+                : post.image
+                    ? `${BASE_URL}/uploads/${post.image}`
+                    : `https://picsum.photos/seed/${post._id}/400/300`;
 
             const article = document.createElement('article');
             article.className = 'feed-card';
 
             article.innerHTML = `
               <div class="feed-thumb">
-                  <img src="${imageUrl}" alt="${post.title}" />
+                  <img src="${imageUrl}" alt="${post.title}" class="fade-in" />
               </div>
 
               <div class="feed-card-footer">
                   <p>${post.title}</p>
-                  <a href="blogdetails.shtml?id=${post._id}" class="feed-arrow">↗</a>
+                  <a href="blogdetails?id=${post._id}" class="feed-arrow">↗</a>
               </div>
           `;
+
+            const img = article.querySelector('img');
+            img.onload = () => img.classList.add('loaded');
+            if (img.complete) img.classList.add('loaded');
 
             blogContainer.appendChild(article);
         });

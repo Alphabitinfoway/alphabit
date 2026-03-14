@@ -1,6 +1,53 @@
-<!--#include file="head.shtml" -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!--#include file="header.shtml" -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alphabit Infoway - Connecting the bits" />
+  <meta name="keywords" content="Alphabit Infoway website" />
+  <meta name="author" content="Alphabit InfoWay" />
+  <title>Alphabit Infoway</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+  <script src="./assets/js/config.js"></script>
+</head>
+
+<body>
+<div class="container">
+<header>
+    <div class="logo-img">
+      <img src="./assets/images/logo.png" alt="Alphabit Infoway Logo" class="logo" />
+    </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar">
+      <h6><a href="index">Home</a></h6>
+      <h6><a href="services">Services</a></h6>
+      <h6><a href="#products">Products</a></h6>
+      <h6><a href="Technology">Technology</a></h6>
+      <h6><a href="about">About</a></h6>
+      <h6 class="dropdown">
+        <a href="#" class="dropdown-toggle">Insights</a>
+        <ul class="dropdown-menu">
+          <li><a href="blog">Blog</a></li>
+          <li><a href="career">Career</a></li>
+        </ul>
+      </h6>
+      <button class="contact-btn mobile-contact-btn">
+        <a href="contact" class="contact-btnn">Contact Us</a>
+      </button>
+    </nav>
+    <button class="contact-btn desktop-contact-btn">
+      <a href="contact" class="contact-btnn">Contact Us</a>
+    </button>
+  </header>
 
 <section class="insights-section">
 
@@ -15,7 +62,7 @@
 
     <div class="insights-summary">
       <p class="insights-text">
-        Explore the latest ideas, technology trends, and growth strategies from Alphabet’s experts.
+        Explore the latest ideas, technology trends, and growth strategies from Alphabet's experts.
       </p>
 
       <div class="insights-metrics">
@@ -70,7 +117,7 @@
       </h2>
 
       <p class="feed-description">
-        Add the best talent on the market, an agile skilled management & seamless involvement
+        Add the best talent on the market, an agile skilled management &amp; seamless involvement
       </p>
     </aside>
 
@@ -87,7 +134,44 @@
   </div>
 
 </section>
-<!--#include file="footer.shtml" -->
+
+  <!-- Footer -->
+  <section class="Footer">
+    <div class="footer-bg-clip">
+      <div class="footer-bg-circle"></div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-icons">
+          <a target="_blank" href="#"><img src="./assets/images/twitter2.png" alt="twitter" /></a>
+          <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img src="./assets/images/linkedin2.png" alt="linkedin" /></a>
+          <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img src="./assets/images/instagram.png" alt="instagram" /></a>
+          <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img src="./assets/images/facebook2.png" alt="facebook" /></a>
+        </div>
+        <div class="footer-text">
+          <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
+          <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+          <p class="footer-email">info@alphabitinfoway.com</p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <img src="./assets/images/AI Model.png" alt="Robot" />
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+      <div class="footer-links">
+        <a href="#">AGENCY</a>
+        <a href="#">CAREER</a>
+        <a href="#">PRIVACY</a>
+        <a href="#">TERMS &amp; CONDITION</a>
+      </div>
+    </div>
+  </section>
+  <script src="./assets/js/main.js"></script>
+</div>
+<script src="./assets/js/scroll-animate.js"></script>
+
 <script>
   document.addEventListener("DOMContentLoaded", () => {
 
@@ -146,7 +230,7 @@
 
         <div class="feed-card-footer">
           <p>${post.title}</p>
-          <a href="blogdetails.shtml?id=${post._id}" class="feed-arrow">↗</a>
+          <a href="blogdetails?id=${post._id}" class="feed-arrow">↗</a>
         </div>
       `;
 
@@ -204,3 +288,6 @@
     fetchBlogs();
   });
 </script>
+</body>
+
+</html>
