@@ -12,33 +12,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
-  <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+  <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
   <script src="./assets/js/config.js"></script>
 </head>
 
 <body>
-<div class="container">
+  <!-- Minimal Preloader -->
+  <div id="preloader">
+    <div class="minimal-loader">
+      <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+      <div class="loader-progress-bar"></div>
+      <div class="loader-text">Connecting the bits...</div>
+    </div>
+  </div>
+
+  <div class="container">
   <div class="info-container">
     <div class="info-content first">
       <h6>USA | INDIA</h6>
       <h6>
-        <img src="./assets/images/mail.png" class="icons" />
+        <img src="./assets/images/mail.webp" class="icons" />
         <a href="mailto:info@alphabitinfoway.com">info@alphabitinfoway.com</a>
       </h6>
     </div>
     <div class="info-content">
       <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/">
-        <img src="./assets/images/facebook.png" class="icons" /></a>
+        <img src="./assets/images/facebook.webp" class="icons" /></a>
       <a target="_blank" href="https://www.instagram.com/alphabitinfoway/">
-        <img src="./assets/images/insta.png" class="icons" /></a>
+        <img src="./assets/images/insta.webp" class="icons" /></a>
       <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true">
-        <img src="./assets/images/linkedin.png" class="icons" /></a>
-      <img src="./assets/images/twitter.png" class="icons" />
+        <img src="./assets/images/linkedin.webp" class="icons" /></a>
+      <img src="./assets/images/twitter.webp" class="icons" />
     </div>
   </div>
   <header>
     <div class="logo-img">
-      <img src="./assets/images/logo.png" alt="Alphabit Infoway Logo" class="logo" />
+      <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
     </div>
     <div class="menu-toggle">
       <span></span>
@@ -60,14 +69,10 @@
           <!-- <li><a href="careerdetails">Career Details</a></li> -->
         </ul>
       </h6>
-      <button class="contact-btn mobile-contact-btn">
-        <a href="contact" class="contact-btnn">Contact Us</a>
-      </button>
+      <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
     </nav>
 
-    <button class="contact-btn desktop-contact-btn">
-      <a href="contact" class="contact-btnn">Contact Us</a>
-    </button>
+    <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
   </header>
 
   <!-- Hero Section -->
@@ -103,7 +108,7 @@
         </h2>
       </div>
 
-      <img src="./assets/images/AI Model.png" alt="Alphabit Infoway Hero" class="hero-image" />
+      <img src="./assets/images/AI Model.webp" alt="Alphabit Infoway Hero" class="hero-image" />
     </div>
   </section>
   <!-- Counting-number Section -->
@@ -133,36 +138,36 @@
     </div>
     <div class="solution-card card1">
       <div class="solution-icon icon1">
-        <img src="./assets/images/Advance AI.png" alt="Solution 1 Icon" />
+        <img src="./assets/images/Advance AI.webp" alt="Solution 1 Icon" loading="lazy" />
       </div>
       <h3 class="solution-title">Advance AI</h3>
     </div>
     <div class="solution-card card2">
       <div class="solution-icon icon2">
-        <img src="./assets/images/AI Software_Development.png" alt="Solution 2 Icon" />
+        <img src="./assets/images/AI Software_Development.webp" alt="Solution 2 Icon" loading="lazy" />
       </div>
       <h3 class="solution-title">AI Software Development</h3>
     </div>
     <div class="solution-card card3">
       <div class="solution-icon icon3">
-        <img src="./assets/images/AI Mobile Application_Development.png" alt="Solution 2 Icon" />
+        <img src="./assets/images/AI Mobile Application_Development.webp" alt="Solution 2 Icon" loading="lazy" />
       </div>
       <h3 class="solution-title title3">AI Mobile Application Development</h3>
     </div>
     <div class="solution-card card5">
       <div class="solution-icon icon4">
-        <img src="./assets/images/AI Product_Engineering.png" alt="Solution 2 Icon" />
+        <img src="./assets/images/AI Product_Engineering.webp" alt="Solution 2 Icon" loading="lazy" />
       </div>
       <h3 class="solution-title">AI Product Engineering</h3>
     </div>
     <div class="solution-card card4">
       <div class="solution-icon icon5">
-        <img src="./assets/images/Data Services.png" alt="Solution 2 Icon" />
+        <img src="./assets/images/Data Services.webp" alt="Solution 2 Icon" loading="lazy" />
       </div>
       <h3 class="solution-title">Data Services</h3>
     </div>
     <div class="solutions-image-wrapper">
-      <img src="./assets/images/hero.png" alt="Alphabit Infoway Hero" class="solutions-image" />
+      <img src="./assets/images/hero.webp" alt="Alphabit Infoway Hero" class="solutions-image" loading="lazy" />
     </div>
   </section>
   <!-- About Section -->
@@ -171,7 +176,7 @@
       <div class="text-stack">
         <div class="about-text1">
           <div class="ellipse-icon">
-            <img src="./assets/images/orange-arrow.png" alt="Ellipse Icon" />
+            <img src="./assets/images/orange-arrow.webp" alt="Ellipse Icon" loading="lazy" />
           </div>
           <h2 class="about-text2">LET ME INTRODUCE</h2>
           <div class="about-text3 left-margin text3-mobile">
@@ -187,20 +192,20 @@
         </div>
       </div>
       <div class="about-image">
-        <img src="./assets/images/logo1.png" alt="About Image" />
+        <img src="./assets/images/logo1.webp" alt="About Image" loading="lazy" />
       </div>
     </div>
     <div class="about-container2">
       <div class="profile-section">
         <div class="image-section">
           <div class="profile">
-            <img src="./assets/images/profile3.png" alt="Profile Image 1" />
+            <img src="./assets/images/profile3.webp" alt="Profile Image 1" loading="lazy" />
           </div>
           <div class="profile">
-            <img src="./assets/images/profile2.png" alt="Profile Image 1" />
+            <img src="./assets/images/profile2.webp" alt="Profile Image 1" loading="lazy" />
           </div>
           <div class="profile">
-            <img src="./assets/images/profile1.png" alt="Profile Image 1" />
+            <img src="./assets/images/profile1.webp" alt="Profile Image 1" loading="lazy" />
           </div>
         </div>
         <div class="profile-text">
@@ -231,7 +236,7 @@
       </div>
       <div class="explore-card">
         <div class="explore-image">
-          <img src="./assets/images/logo3.png" alt="Explore More Image" />
+          <img src="./assets/images/logo3.webp" alt="Explore More Image" loading="lazy" />
         </div>
         <div class="explore-text">
           <p>
@@ -243,10 +248,10 @@
         </div>
       </div>
       <div>
-        <img src="./assets/images/home/About/1.jpg" alt="About Image" class="image-card1">
+        <img src="./assets/images/home/About/1.webp" alt="About Image" class="image-card1">
       </div>
       <div>
-        <img src="./assets/images/home/About/2.jpg" alt="About Image" class="image-card2">
+        <img src="./assets/images/home/About/2.webp" alt="About Image" class="image-card2">
       </div>
     </div>
 </div>
@@ -256,46 +261,46 @@
   <div class="cross-line orange-line">
     <div class="marquee">
       <span>
-        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-        Design <img src="./assets/images/arrow.png" alt="" /> Software
-        Development <img src="./assets/images/arrow.png" alt="" /> App
-        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-        <img src="./assets/images/arrow.png" alt="" />
+        Website Design <img src="./assets/images/arrow.webp" alt="" /> Brand
+        Design <img src="./assets/images/arrow.webp" alt="" /> Software
+        Development <img src="./assets/images/arrow.webp" alt="" /> App
+        Development <img src="./assets/images/arrow.webp" alt="" /> Logo Design
+        <img src="./assets/images/arrow.webp" alt="" />
       </span>
       <span>
-        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-        Design <img src="./assets/images/arrow.png" alt="" /> Software
-        Development <img src="./assets/images/arrow.png" alt="" /> App
-        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-        <img src="./assets/images/arrow.png" alt="" />
+        Website Design <img src="./assets/images/arrow.webp" alt="" /> Brand
+        Design <img src="./assets/images/arrow.webp" alt="" /> Software
+        Development <img src="./assets/images/arrow.webp" alt="" /> App
+        Development <img src="./assets/images/arrow.webp" alt="" /> Logo Design
+        <img src="./assets/images/arrow.webp" alt="" />
       </span>
       <span>
-        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-        Design <img src="./assets/images/arrow.png" alt="" /> Software
-        Development <img src="./assets/images/arrow.png" alt="" /> App
-        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-        <img src="./assets/images/arrow.png" alt="" />
+        Website Design <img src="./assets/images/arrow.webp" alt="" /> Brand
+        Design <img src="./assets/images/arrow.webp" alt="" /> Software
+        Development <img src="./assets/images/arrow.webp" alt="" /> App
+        Development <img src="./assets/images/arrow.webp" alt="" /> Logo Design
+        <img src="./assets/images/arrow.webp" alt="" />
       </span>
       <span>
-        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-        Design <img src="./assets/images/arrow.png" alt="" /> Software
-        Development <img src="./assets/images/arrow.png" alt="" /> App
-        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-        <img src="./assets/images/arrow.png" alt="" />
+        Website Design <img src="./assets/images/arrow.webp" alt="" /> Brand
+        Design <img src="./assets/images/arrow.webp" alt="" /> Software
+        Development <img src="./assets/images/arrow.webp" alt="" /> App
+        Development <img src="./assets/images/arrow.webp" alt="" /> Logo Design
+        <img src="./assets/images/arrow.webp" alt="" />
       </span>
       <span>
-        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-        Design <img src="./assets/images/arrow.png" alt="" /> Software
-        Development <img src="./assets/images/arrow.png" alt="" /> App
-        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-        <img src="./assets/images/arrow.png" alt="" />
+        Website Design <img src="./assets/images/arrow.webp" alt="" /> Brand
+        Design <img src="./assets/images/arrow.webp" alt="" /> Software
+        Development <img src="./assets/images/arrow.webp" alt="" /> App
+        Development <img src="./assets/images/arrow.webp" alt="" /> Logo Design
+        <img src="./assets/images/arrow.webp" alt="" />
       </span>
       <span>
-        Website Design <img src="./assets/images/arrow.png" alt="" /> Brand
-        Design <img src="./assets/images/arrow.png" alt="" /> Software
-        Development <img src="./assets/images/arrow.png" alt="" /> App
-        Development <img src="./assets/images/arrow.png" alt="" /> Logo Design
-        <img src="./assets/images/arrow.png" alt="" />
+        Website Design <img src="./assets/images/arrow.webp" alt="" /> Brand
+        Design <img src="./assets/images/arrow.webp" alt="" /> Software
+        Development <img src="./assets/images/arrow.webp" alt="" /> App
+        Development <img src="./assets/images/arrow.webp" alt="" /> Logo Design
+        <img src="./assets/images/arrow.webp" alt="" />
       </span>
     </div>
   </div>
@@ -304,52 +309,52 @@
     <div class="marquee">
       <span>
         Over 100+ Clients
-        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-        <img src="./assets/images/arrow2.png" alt="" />
+        <img src="./assets/images/arrow2.webp" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.webp" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.webp" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.webp" alt="" />
       </span>
       <span>
         Over 100+ Clients
-        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-        <img src="./assets/images/arrow2.png" alt="" />
+        <img src="./assets/images/arrow2.webp" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.webp" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.webp" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.webp" alt="" />
       </span>
       <span>
         Over 100+ Clients
-        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-        <img src="./assets/images/arrow2.png" alt="" />
+        <img src="./assets/images/arrow2.webp" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.webp" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.webp" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.webp" alt="" />
       </span>
       <span>
         Over 100+ Clients
-        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-        <img src="./assets/images/arrow2.png" alt="" />
+        <img src="./assets/images/arrow2.webp" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.webp" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.webp" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.webp" alt="" />
       </span>
       <span>
         Over 100+ Clients
-        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-        <img src="./assets/images/arrow2.png" alt="" />
+        <img src="./assets/images/arrow2.webp" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.webp" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.webp" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.webp" alt="" />
       </span>
       <span>
         Over 100+ Clients
-        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-        <img src="./assets/images/arrow2.png" alt="" />
+        <img src="./assets/images/arrow2.webp" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.webp" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.webp" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.webp" alt="" />
       </span>
       <span>
         Over 100+ Clients
-        <img src="./assets/images/arrow2.png" alt="" /> Experienced Team
-        <img src="./assets/images/arrow2.png" alt="" /> Creative Approach
-        <img src="./assets/images/arrow2.png" alt="" /> Strategic Thinking
-        <img src="./assets/images/arrow2.png" alt="" />
+        <img src="./assets/images/arrow2.webp" alt="" /> Experienced Team
+        <img src="./assets/images/arrow2.webp" alt="" /> Creative Approach
+        <img src="./assets/images/arrow2.webp" alt="" /> Strategic Thinking
+        <img src="./assets/images/arrow2.webp" alt="" />
       </span>
     </div>
   </div>
@@ -359,17 +364,17 @@
   <div class="schedule-content">
     <p>👋🏼 Hey Innovator,</p>
     <h2>
-      I'm Your<img src="./assets/images/home/Hey Innovator/1.jpg" class="span-image"></span><span class="span-orange">
+      I'm Your<img src="./assets/images/home/Hey Innovator/1.webp" class="span-image"></span><span class="span-orange">
         AI</span><span class="span-white">(Alphabit
         Infoway)</span>
     </h2>
     <h2>
-      <span class="span-orange">Buddy, </span>Let's<img src="./assets/images/home/Hey Innovator/2.jpg"
+      <span class="span-orange">Buddy, </span>Let's<img src="./assets/images/home/Hey Innovator/2.webp"
         class="span-image"></span>
       Convert
     </h2>
     <h2>
-      Your <span class="span-white">Idea</span><img src="./assets/images/home/Hey Innovator/3.jpg"
+      Your <span class="span-white">Idea</span><img src="./assets/images/home/Hey Innovator/3.webp"
         class="span-image"></span> into
       <span class="span-white">Reality</span>
     </h2>
@@ -387,8 +392,8 @@
   <!-- <div class="bg-card"></div> -->
   <!--  <div class="excellence-title">Data Backups</div>
   <div class="carousel">
-    <div class="card"><img src="./assets/images/img1.jpeg" /></div>
-    <div class="card"><img src="./assets/images/img2.jpeg" /></div>
+    <div class="card"><img src="./assets/images/img1.webp" /></div>
+    <div class="card"><img src="./assets/images/img2.webp" /></div>
     <div class="card"><img src="" /></div>
     <div class="card"><img src="" /></div>
     <div class="card"><img src="" /></div>
@@ -403,7 +408,7 @@
 
       <!-- Telecalling -->
       <div class="industry-card">
-        <img src="./assets/images/home/telecalling.jpg" class="industry-img">
+        <img src="./assets/images/delivering excellence/telecalling industry.jpg" class="industry-img">
         <div class="industry-overlay"></div>
         <div class="industry-content">
           <h3>Telecalling Industry</h3>
@@ -416,7 +421,7 @@
 
       <!-- Media -->
       <div class="industry-card">
-        <img src="./assets/images/home/download.jpg.jpeg" class="industry-img">
+        <img src="./assets/images/delivering excellence/media and content industry.jpg" class="industry-img">
         <div class="industry-overlay"></div>
         <div class="industry-content">
           <h3>Media and Content Industry</h3>
@@ -429,7 +434,7 @@
 
       <!-- Social -->
       <div class="industry-card">
-        <img src="./assets/images/home/13abdea9d2022fa11f63c4f5a311f471.jpg" class="industry-img">
+        <img src="./assets/images/delivering excellence/social networking.jpg" class="industry-img">
         <div class="industry-overlay"></div>
         <div class="industry-content">
           <h3>Social Networking</h3>
@@ -442,7 +447,7 @@
 
       <!-- Finance -->
       <div class="industry-card">
-        <img src="./assets/images/home/6529478bbd4ac00d2a90f89d_1.jpg" class="industry-img">
+        <img src="./assets/images/delivering excellence/finance and insurance industry.jpg" class="industry-img">
         <div class="industry-overlay"></div>
         <div class="industry-content">
           <h3>Finance and Insurance Industry</h3>
@@ -455,7 +460,7 @@
 
       <!-- health care -->
       <div class="industry-card">
-        <img src="./assets/images/home/health and wellness.jpg" class="industry-img">
+        <img src="./assets/images/delivering excellence/healthcare and wellness.jpg" class="industry-img">
         <div class="industry-overlay"></div>
         <div class="industry-content">
           <h3>Healthcare &amp; Wellness</h3>
@@ -470,7 +475,7 @@
 
       <!-- Telecalling -->
       <div class="industry-card">
-        <img src="./assets/images/home/telecalling.jpg" class="industry-img">
+        <img src="./assets/images/delivering excellence/telecalling industry.jpg" class="industry-img">
         <div class="industry-overlay"></div>
         <div class="industry-content">
           <h3>Telecalling Industry</h3>
@@ -483,7 +488,7 @@
 
       <!-- Media -->
       <div class="industry-card">
-        <img src="./assets/images/home/download.jpg.jpeg" class="industry-img">
+        <img src="./assets/images/delivering excellence/media and content industry.jpg" class="industry-img">
         <div class="industry-overlay"></div>
         <div class="industry-content">
           <h3>Media and Content Industry</h3>
@@ -496,7 +501,7 @@
 
       <!-- Social -->
       <div class="industry-card">
-        <img src="./assets/images/home/13abdea9d2022fa11f63c4f5a311f471.jpg" class="industry-img">
+        <img src="./assets/images/delivering excellence/social networking.jpg" class="industry-img">
         <div class="industry-overlay"></div>
         <div class="industry-content">
           <h3>Social Networking</h3>
@@ -509,7 +514,7 @@
 
       <!-- Finance -->
       <div class="industry-card">
-        <img src="./assets/images/home/6529478bbd4ac00d2a90f89d_1.jpg" class="industry-img">
+        <img src="./assets/images/delivering excellence/finance and insurance industry.jpg" class="industry-img">
         <div class="industry-overlay"></div>
         <div class="industry-content">
           <h3>Finance and Insurance Industry</h3>
@@ -522,7 +527,7 @@
 
       <!-- health care -->
       <div class="industry-card">
-        <img src="./assets/images/home/health and wellness.jpg" class="industry-img">
+        <img src="./assets/images/delivering excellence/healthcare and wellness.jpg" class="industry-img">
         <div class="industry-overlay"></div>
         <div class="industry-content">
           <h3>Healthcare &amp; Wellness</h3>
@@ -551,7 +556,7 @@
       <div class="step right">
         <div class="icon-wrapper">
           <div class="step-icon purple">
-            <img src="./assets/images/icon1.png" alt="process icon" />
+            <img src="./assets/images/icon1.webp" alt="process icon" />
           </div>
         </div>
         <div class="process-card">
@@ -572,14 +577,14 @@
         </div>
         <div class="icon-wrapper">
           <div class="step-icon purple">
-            <img src="./assets/images/icon2.png" alt="process icon" />
+            <img src="./assets/images/icon2.webp" alt="process icon" />
           </div>
         </div>
       </div>
       <div class="step right">
         <div class="icon-wrapper">
           <div class="step-icon purple">
-            <img src="./assets/images/icon3.png" alt="process icon" />
+            <img src="./assets/images/icon3.webp" alt="process icon" />
           </div>
         </div>
         <div class="process-card">
@@ -602,14 +607,14 @@
         </div>
         <div class="icon-wrapper">
           <div class="step-icon purple">
-            <img src="./assets/images/icon4.png" alt="process icon" />
+            <img src="./assets/images/icon4.webp" alt="process icon" />
           </div>
         </div>
       </div>
       <div class="step right">
         <div class="icon-wrapper">
           <div class="step-icon purple">
-            <img src="./assets/images/icon5.png" alt="process icon" />
+            <img src="./assets/images/icon5.webp" alt="process icon" />
           </div>
         </div>
         <div class="process-card">
@@ -631,7 +636,7 @@
         </div>
         <div class="icon-wrapper">
           <div class="step-icon purple">
-            <img src="./assets/images/icon6.png" alt="process icon" />
+            <img src="./assets/images/icon6.webp" alt="process icon" />
           </div>
         </div>
       </div>
@@ -639,7 +644,7 @@
       <div class="step right">
         <div class="icon-wrapper">
           <div class="step-icon purple">
-            <img src="./assets/images/icon7.png" alt="process icon" />
+            <img src="./assets/images/icon7.webp" alt="process icon" />
           </div>
         </div>
         <div class="process-card">
@@ -661,7 +666,7 @@
         </div>
         <div class="icon-wrapper">
           <div class="step-icon purple">
-            <img src="./assets/images/icon8.png" alt="process icon" />
+            <img src="./assets/images/icon8.webp" alt="process icon" />
           </div>
         </div>
       </div>
@@ -678,49 +683,49 @@
     <!-- floating icons -->
     <div class="icons-wrapper">
       <div class="icon icon-1">
-        <img src="./assets/images/industry/Frame.png" alt="" />
+        <img src="./assets/images/industry/Frame.webp" alt="" />
       </div>
 
       <div class="icon icon-2">
-        <img src="./assets/images/industry/Frame(4).png" alt="" />
+        <img src="./assets/images/industry/Frame(4).webp" alt="" />
       </div>
 
       <div class="icon icon-3">
-        <img src="./assets/images/industry/Frame(5).png" alt="" />
+        <img src="./assets/images/industry/Frame(5).webp" alt="" />
       </div>
 
       <div class="icon icon-4">
-        <img src="./assets/images/industry/Frame(6).png" alt="" />
+        <img src="./assets/images/industry/Frame(6).webp" alt="" />
       </div>
 
       <div class="icon icon-5">
-        <img src="./assets/images/industry/Frame(7).png" alt="" />
+        <img src="./assets/images/industry/Frame(7).webp" alt="" />
       </div>
 
       <div class="icon icon-6">
-        <img src="./assets/images/industry/Frame(8).png" alt="" />
+        <img src="./assets/images/industry/Frame(8).webp" alt="" />
       </div>
 
       <div class="icon icon-7">
-        <img src="./assets/images/industry/Frame(9).png" alt="" />
+        <img src="./assets/images/industry/Frame(9).webp" alt="" />
       </div>
 
       <div class="icon icon-8">
-        <img src="./assets/images/industry/Frame(3).png" alt="" />
+        <img src="./assets/images/industry/Frame(3).webp" alt="" />
       </div>
 
       <div class="icon icon-9">
-        <img src="./assets/images/industry/Frame(1).png" alt="" />
+        <img src="./assets/images/industry/Frame(1).webp" alt="" />
       </div>
 
       <div class="icon icon-10">
-        <img src="./assets/images/industry/Frame(2).png" alt="" />
+        <img src="./assets/images/industry/Frame(2).webp" alt="" />
       </div>
     </div>
 
     <div class="center-text">
-      <p>Where <img src="./assets/images/home/Trageted Industries/1.jpg" class="gray-pill"></><span>Ambition</span></p>
-      <p>Finds <span>Direction.</span> <img src="./assets/images/home/Trageted Industries/2.jpg"
+      <p>Where <img src="./assets/images/home/Trageted Industries/1.webp" class="gray-pill"></><span>Ambition</span></p>
+      <p>Finds <span>Direction.</span> <img src="./assets/images/home/Trageted Industries/2.webp"
           class="gray-pill"></span>
       </p>
     </div>
@@ -737,7 +742,7 @@
     <div class="expertise-cards">
       <div class="expertise-card">
         <div class="icon-box">
-          <img src="./assets/images/home/Experties/Clarity & Commitment.jpg" alt="icon" />
+          <img src="./assets/images/home/Experties/Clarity & Commitment.webp" alt="icon" />
         </div>
         <h3>Clarity &amp; Commitment</h3>
         <p>
@@ -749,7 +754,7 @@
 
       <div class="expertise-card">
         <div class="icon-box">
-          <img src="./assets/images/home/Experties/Your Extended Team.jpg" alt="icon" />
+          <img src="./assets/images/home/Experties/Your Extended Team.webp" alt="icon" />
         </div>
         <h3>Your Extended Team</h3>
         <p>
@@ -762,7 +767,7 @@
 
       <div class="expertise-card">
         <div class="icon-box">
-          <img src="./assets/images/home/Experties/Seamless Integration.jpg" alt="icon" />
+          <img src="./assets/images/home/Experties/Seamless Integration.webp" alt="icon" />
         </div>
         <h3>Seamless Integration</h3>
         <p>
@@ -780,16 +785,16 @@
     </div>
     <div class="Presence-container">
       <div class="Presence-card">
-        <img src="./assets/images/plogo1.png" alt="" />
+        <img src="./assets/images/plogo1.webp" alt="" />
       </div>
       <div class="Presence-card">
-        <img src="./assets/images/plogo2.png" alt="" />
+        <img src="./assets/images/plogo2.webp" alt="" />
       </div>
       <div class="Presence-card">
-        <img src="./assets/images/plogo3.png" alt="" />
+        <img src="./assets/images/plogo3.webp" alt="" />
       </div>
       <div class="Presence-card">
-        <img src="./assets/images/plogo4.png" alt="" />
+        <img src="./assets/images/plogo4.webp" alt="" />
       </div>
     </div>
   </section>
@@ -813,13 +818,13 @@
       <div class="footer-left">
         <div class="footer-icons">
           <a target="_blank" href="#">
-            <img src="./assets/images/twitter2.png" alt="twitter" /></a>
+            <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
           <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
-              src="./assets/images/linkedin2.png" alt="linkedin" /></a>
-          <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img src="./assets/images/instagram.png"
+              src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+          <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img src="./assets/images/instagram.webp"
               alt="instagram" /></a>
           <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
-              src="./assets/images/facebook2.png" alt="facebook" /></a>
+              src="./assets/images/facebook2.webp" alt="facebook" /></a>
         </div>
         <div class="footer-text">
           <p class="footer-greet">
@@ -836,7 +841,7 @@
       </div>
 
       <div class="footer-right">
-        <img src="./assets/images/AI Model.png" alt="Robot" />
+        <img src="./assets/images/AI Model.webp" alt="Robot" />
       </div>
     </div>
 
