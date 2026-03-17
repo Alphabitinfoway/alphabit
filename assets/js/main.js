@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // ======== MINIMAL PRELOADER ========
+  const preloader = document.getElementById("preloader");
+  const progress = document.querySelector(".loader-progress-bar");
+
+  // Animate progress bar to 80% quickly
+  if (progress) {
+    setTimeout(() => { progress.style.width = "80%"; }, 100);
+  }
+
+  window.addEventListener("load", () => {
+    // Complete to 100% on load
+    if (progress) progress.style.width = "100%";
+    
+    setTimeout(() => {
+      if (preloader) preloader.classList.add("fade-out");
+      window.scrollTo(0, 0);
+    }, 600);
+  });
+
   document.getElementById("year").textContent = new Date().getFullYear();
 
   // ======== CAROUSEL ========

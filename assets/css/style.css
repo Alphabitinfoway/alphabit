@@ -8,6 +8,7 @@
 }
 
 
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -105,11 +106,12 @@ header {
   justify-content: space-between;
   margin-top: 5px;
   padding: 15px 30px;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: nowrap;
+  gap: 20px;
   z-index: 999;
   color: #000 !important;
-  width: calc(100% - 125px) !important;
+  width: auto !important;
+  /* Let margins decide width */
 }
 
 .menu-toggle {
@@ -184,7 +186,7 @@ header {
   display: inline-block;
   width: 12px;
   height: 6px;
-  background-image: url("../images/drop.png");
+  background-image: url("../images/drop.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -201,32 +203,44 @@ header {
 }
 
 .contact-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #ff5622;
   border: none;
-
-  padding: 7px 10px;
-  height: 42px;
-  width: 130px;
+  padding: 0;
+  height: 42px !important;
+  width: 130px !important;
+  flex: none !important;
   border-radius: 10px;
-
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.2s ease,
     background-color 0.15s ease;
   will-change: transform, box-shadow;
-
-}
-
-.contact-btn a {
-  text-decoration: none;
-  color: white;
-}
-
-.contect-btnn {
-  color: white;
-  text-decoration: none;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  color: white !important;
   font-weight: bold;
   font-size: 14px;
+}
+
+/* Force white color and no underline for ALL states and selectors */
+.contact-btn,
+.navbar .contact-btn,
+div.container header a.contact-btn {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.contact-btn:hover,
+.contact-btn:active,
+.contact-btn:visited,
+.contact-btn:focus,
+.contact-btn:link {
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .contact-btn:hover,
@@ -234,11 +248,15 @@ header {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 10px 30px rgba(255, 86, 34, 0.22);
   outline: none;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .contact-btn:active {
   transform: translateY(0) scale(0.995);
   box-shadow: 0 6px 18px rgba(255, 86, 34, 0.18);
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .mobile-contact-btn {
@@ -453,12 +471,24 @@ header {
 
   /* ── Contact Button ── */
   .contact-btn {
-    width: calc(100% - 4px);
-    margin: 10px 2px 0;
-    height: 46px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #c0bfbf 0%, #f5f5f5 100%);
-    color: #000;
+    width: calc(100% - 32px) !important;
+    margin: 15px auto !important;
+    height: 32px !important;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff5622 0%, #ff7043 100%) !important;
+    color: white !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    box-shadow: 0 8px 24px rgba(255, 86, 34, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+    padding: 0 !important;
   }
 
   .contact-btn:active {
@@ -877,7 +907,7 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../images/bg lines.png");
+  background-image: url("../images/bg lines.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1523,7 +1553,7 @@ header {
   top: 0;
   width: 45%;
   height: 100%;
-  background: url("/alphabit/assets/images/schedule.png") no-repeat right center;
+  background: url("/alphabit/assets/images/schedule.webp") no-repeat right center;
   background-size: contain;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -1910,7 +1940,7 @@ header {
   }
 
   .industry-card {
-    height: 340px;
+    height: 280px;
   }
 
 }
@@ -2139,7 +2169,7 @@ header {
   margin: 40px 0;
   position: relative;
   width: 100%;
-  background-image: url("/alphabit/assets/images/bglines2.png");
+  background-image: url("/alphabit/assets/images/bglines2.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2540,7 +2570,7 @@ header {
 }
 
 .footer-right img {
-  height: 900px;
+  height: 800px;
   opacity: 0;
   animation: heroFade 1s ease-out forwards;
   animation-delay: 0.2s;
@@ -2642,7 +2672,7 @@ header {
   }
 
   .footer-title {
-    font-size: 130px;
+    font-size: 106px;
   }
 
   .footer-email {
@@ -5912,7 +5942,7 @@ header {
   content: "";
   width: 36px;
   height: 36px;
-  background-image: url("../images/arrow.png");
+  background-image: url("../images/arrow.webp");
   background-size: contain;
   background-repeat: no-repeat;
   flex-shrink: 0;
@@ -6754,7 +6784,7 @@ header {
   transform: translateY(-50%);
   width: 480px;
   height: 420px;
-  background-image: url("../images/about-logo-white.png");
+  background-image: url("../images/about-logo-white.webp");
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 1;
@@ -8790,7 +8820,7 @@ img.fade-in.loaded {
   margin-top: 200px;
   height: 360px;
   border-radius: 24px;
-  background-image: url("../images/Technology/hero.jpg");
+  background-image: url("../images/Technology/hero.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9610,4 +9640,64 @@ img.fade-in.loaded {
 
 .scroll-animate.stagger-3 {
   transition-delay: 0.3s;
+}
+
+/* ======== MINIMAL PRELOADER ======== */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.minimal-loader {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+}
+
+.minimal-loader .loader-logo {
+  width: 100px;
+  animation: logo-in 0.8s ease forwards;
+}
+
+.loader-progress-bar {
+  width: 0%;
+  height: 2px;
+  background: #f7941d;
+  margin: 20px auto 10px;
+  transition: width 0.4s ease;
+  border-radius: 2px;
+}
+
+.loader-text {
+  font-family: 'Sora', sans-serif;
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+@keyframes logo-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  to { opacity: 1; }
 }
