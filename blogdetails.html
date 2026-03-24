@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alphabit Infoway - Connecting the bits" />
-  <meta name="keywords" content="Alphabit Infoway website" />
-  <meta name="author" content="Alphabit InfoWay" />
-  <title>Alphabit Infoway</title>
+  <title>Blog Post | Alphabit Infoway</title>
+
+  <meta name="description" content="Alphabit Infoway - Alphabit Infoway. We specialize in high-performance Web Development, Mobile Apps, AI Solutions, and Premium IT Services for businesses globally." />
+  <meta name="keywords" content="Alphabit, Infoway, Alphabit Infoway, Software Development, Web Development, Mobile Apps, AI Development, IT Consulting, Premium Tech Solutions" />
+  <meta name="author" content="Alphabit Infoway" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alphabitinfoway.com/blogdetails" />
+  <meta property="og:title" content="Blog Post | Alphabit Infoway" />
+  <meta property="og:description" content="Alphabit Infoway - Alphabit Infoway. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
+  <meta property="og:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://alphabitinfoway.com/blogdetails" />
+  <meta name="twitter:title" content="Blog Post | Alphabit Infoway" />
+  <meta name="twitter:description" content="Alphabit Infoway - Alphabit Infoway. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
+  <meta name="twitter:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
+
+  <link rel="canonical" href="https://alphabitinfoway.com/blogdetails" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,13 +35,11 @@
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
     }
-
     .uxdon-showcase-frame img.loaded {
       opacity: 1;
     }
   </style>
 </head>
-
 <body>
   <!-- Minimal Preloader -->
   <div id="preloader">
@@ -35,7 +49,6 @@
       <div class="loader-text">Connecting the bits...</div>
     </div>
   </div>
-
   <div class="container">
     <header>
       <div class="logo-img">
@@ -47,11 +60,32 @@
         <span></span>
       </div>
       <nav class="navbar">
-        <h6><a href="index">Home</a></h6>
-        <h6><a href="services">Services</a></h6>
+        <h6><a href="./">Home</a></h6>
+        <h6 class="dropdown">
+          <a href="services" class="dropdown-toggle">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="services">AI & Machine Learning</a></li>
+            <li><a href="services">Cyber Security & Compliance</a></li>
+            <li><a href="services">Full Stack Web Development</a></li>
+            <li><a href="services">Mobile App & Product Design</a></li>
+          </ul>
+        </h6>
         <h6><a href="#products">Products</a></h6>
-        <h6><a href="Technology">Technology</a></h6>
+        <h6 class="dropdown">
+          <a href="Technology" class="dropdown-toggle">Technology</a>
+          <ul class="dropdown-menu">
+            <li><a href="Technology">AI & Machine Learning</a></li>
+            <li><a href="Technology">Software Development</a></li>
+            <li><a href="Technology">Web Development</a></li>
+            <li><a href="Technology">UI/UX Design</a></li>
+            <li><a href="Technology">Graphic Design</a></li>
+            <li><a href="Technology">MERN Stack Development</a></li>
+            <li><a href="Technology">Full Stack Development</a></li>
+            <li><a href="Technology">Python Development</a></li>
+          </ul>
+        </h6>
         <h6><a href="about">About</a></h6>
+        <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
         <h6 class="dropdown">
           <a href="#" class="dropdown-toggle">Insights</a>
           <ul class="dropdown-menu">
@@ -63,33 +97,26 @@
       </nav>
       <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
     </header>
-
     <!-- HERO -->
     <section class="uxdon-hero-wrap">
       <div class="uxdon-shell">
-
         <h1 class="uxdon-hero-heading" id="blog-title"></h1>
-
         <div class="uxdon-hero-metrics">
           <div class="uxdon-metric-card">
             <span class="uxdon-metric-count">320+</span>
             <span class="uxdon-metric-label">Comments</span>
           </div>
-
           <div class="uxdon-metric-card">
             <span class="uxdon-metric-count">20,512+</span>
             <span class="uxdon-metric-label">Likes</span>
           </div>
-
           <div class="uxdon-metric-card">
             <span class="uxdon-metric-count" id="blog-day"></span>
             <span class="uxdon-metric-label" id="blog-month"></span>
           </div>
         </div>
-
       </div>
     </section>
-
     <!-- SHOWCASE IMAGE -->
     <section class="uxdon-showcase-wrap">
       <div class="uxdon-shell">
@@ -98,34 +125,28 @@
         </div>
       </div>
     </section>
-
     <!-- ARTICLE CONTENT -->
     <section class="uxdon-article-wrap">
       <div class="uxdon-shell">
         <div class="uxdon-article-grid">
-
           <!-- STATIC METRICS -->
           <aside class="uxdon-article-metrics">
             <div class="uxdon-article-metric">
               <span class="uxdon-article-num">247</span>
               <span class="uxdon-article-label">Views</span>
             </div>
-
             <div class="uxdon-article-metric">
               <span class="uxdon-article-num">14</span>
               <span class="uxdon-article-label">Shares</span>
             </div>
           </aside>
-
           <!-- DYNAMIC CONTENT -->
           <div class="uxdon-article-flow">
             <div id="blog-content"></div>
           </div>
-
         </div>
       </div>
     </section>
-
     <!-- COMMENT FORM (commented out) -->
     <!--
 <section class="uxdon-comment-wrap">
@@ -145,7 +166,6 @@
   </div>
 </section>
 -->
-
     <!-- Footer -->
     <section class="Footer">
       <div class="footer-bg-clip">
@@ -185,79 +205,59 @@
     <script src="./assets/js/main.js"></script>
   </div>
   <script src="./assets/js/scroll-animate.js"></script>
-
   <script>
     // BACK BUTTON
     function goBack() {
       window.history.back();
     }
-
     document.addEventListener("DOMContentLoaded", () => {
-
       const params = new URLSearchParams(window.location.search);
       const blogId = params.get("id");
-
       if (!blogId) {
         alert("Blog ID missing in URL!");
         return;
       }
-
       const API_URL = `${BASE_URL}/users/getBlogs`;
-
       fetch(API_URL)
         .then(res => res.json())
         .then(data => {
-
           const blog = data.find(item => item._id === blogId);
-
           if (!blog) {
             alert("Blog not found!");
             return;
           }
-
           loadBlog(blog);
-
         })
         .catch(err => {
           console.error(err);
           alert("Error loading blog");
         });
-
     });
-
-
     function loadBlog(blog) {
-
       // TITLE
       document.getElementById("blog-title").textContent = blog.title;
-
       // DATE
       const date = new Date(blog.createdAt);
       document.getElementById("blog-day").textContent = date.getDate();
       document.getElementById("blog-month").textContent =
         date.toLocaleString("default", { month: "long" });
-
       // IMAGE
       const imageUrl = blog.image && blog.image.startsWith("http")
         ? blog.image
         : blog.image
           ? `${BASE_URL}/uploads/${blog.image}`
           : `https://picsum.photos/seed/${blog._id}/1200/600`;
-
       const img = document.getElementById("main-blog-img");
       if (img) {
         img.src = imageUrl;
         img.alt = blog.title;
         img.style.display = "block";
         img.onload = () => img.classList.add("loaded");
-
         // If cached
         if (img.complete) img.classList.add("loaded");
       }
-
       // CONTENT
       const contentDiv = document.getElementById("blog-content");
-
       if (blog.content) {
         contentDiv.innerHTML = blog.content;
       } else {
@@ -267,7 +267,6 @@
       </p>`;
       }
     }
-
     // COMMENT SUBMIT (Frontend only)
     const commentForm = document.getElementById("commentForm");
     if (commentForm) {
@@ -278,7 +277,5 @@
       });
     }
   </script>
-
 </body>
-
 </html>
