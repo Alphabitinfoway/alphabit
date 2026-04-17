@@ -72,5 +72,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// get message from contact form
+
 

@@ -622,20 +622,20 @@ document.addEventListener("DOMContentLoaded", () => {
       blogCard.className = "blog-card";
 
       blogCard.innerHTML = `
-        <h3 class="blog-title">
-          ${post.title}
-        </h3>
-
         <div class="blog-image">
-           <img src="${imageUrl}" alt="${post.title}" class="fade-in" style="width:100%; height:100%; object-fit:cover;">
+           <img src="${imageUrl}" alt="${post.title}" class="fade-in">
         </div>
-
-        <p class="blog-desc">
-          ${post.description ? post.description.substring(0, 100) + "..." : ""}
-        </p>
-
-        <div class="blog-author">
-          <span>${new Date(post.createdAt).toDateString()} - STORY</span>
+        <div class="blog-content">
+          <div class="blog-author">
+            <span>${new Date(post.createdAt).toDateString()} — Story</span>
+          </div>
+          <h3 class="blog-title">${post.title}</h3>
+          <p class="blog-desc">
+            ${post.description ? post.description.substring(0, 100) + "..." : ""}
+          </p>
+          <div class="blog-more">
+            Read More <span class="arrow">→</span>
+          </div>
         </div>
       `;
 
