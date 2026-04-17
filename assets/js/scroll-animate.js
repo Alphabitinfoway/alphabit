@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Select elements to animate
     // We target headings, paragraphs, images, buttons, and specific card classes
     const elementsToAnimate = document.querySelectorAll(
-        "h1, h2, h3, h4, h5, h6, p, .btn, img, .card, .blog-card, .service-item, .icon-box, .timeline-item, .process-card, .expertise-card, .target-industries-section .icon"
+        "h1, h2, h3, h4, h5, h6, p, .btn, img, .card, .blog-card, .service-item, .icon-box, .timeline-item, .process-card, .expertise-card, .target-industries-section .icon, .showcase-card, .bento-item, .offerings-header, .template-hero, .scroll-animate"
     );
 
     const callback = (entries, observer) => {
