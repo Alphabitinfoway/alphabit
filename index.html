@@ -34,6 +34,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script src="./assets/js/config.js"></script>
 </head>
 
@@ -66,11 +67,11 @@
       </div>
     </div>
     <header>
-    <div class="logo-img">
-  <a href="index.html">
-    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
-  </a>
-</div>
+      <div class="logo-img">
+        <a href="index.html">
+          <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+        </a>
+      </div>
       <div class="menu-toggle">
         <span></span>
         <span></span>
@@ -81,7 +82,7 @@
         <h6 class="dropdown">
           <a href="services" class="dropdown-toggle">Services</a>
           <ul class="dropdown-menu">
-                        <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+            <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
             <li><a href="services">Cyber Security & Compliance</a></li>
             <li><a href="services">Full Stack Web Development</a></li>
             <li><a href="services">Mobile App & Product Design</a></li>
@@ -91,7 +92,8 @@
         <h6 class="dropdown">
           <a href="Technology" class="dropdown-toggle">Technology</a>
           <ul class="dropdown-menu">
-            <li><a href="Technology">AI & Machine Learning</a></li>
+            <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+            <li><a href="ai-and-chatbot-technologies.html">AI Chatbot Tech</a></li>
             <li><a href="Technology">Software Development</a></li>
             <li><a href="Technology">Web Development</a></li>
             <li><a href="Technology">UI/UX Design</a></li>
@@ -205,8 +207,111 @@
         <img src="./assets/images/hero.webp" alt="Alphabit Infoway Hero" class="solutions-image" loading="lazy" />
       </div>
     </section>
-<!-- 
-  <section class="brand-carousel">
+
+    <!-- New Premium Services Section -->
+    <section class="premium-services-section">
+      <div class="container-box">
+        <div class="title-header" style="text-align: center; margin-bottom: 60px;">
+          <h2 class="section-title">OUR AI DEVELOPMENT &</h2>
+          <h2 class="section-title">
+            AUTOMATION <span class="orange-bg">SERVICES</span>
+          </h2>
+          <p class="section-description-premium" style="margin-top: 20px;">We offer end-to-end AI software development
+            services tailored to your business needs, helping you unlock the full potential of artificial intelligence.
+          </p>
+        </div>
+
+        <div class="premium-services-grid">
+          <!-- Card 1: AI & Machine Learning -->
+          <div class="premium-service-card">
+            <div class="card-top">
+              <div class="card-icon-box purple-bg">
+                <img src="./assets/images/industry/Frame.webp" alt="AI icon"
+                  style="width: 24px; filter: brightness(0) invert(1);">
+              </div>
+            </div>
+            <div class="card-image-placeholder">
+              <div class="image-mockup mockup-purple">
+                <!-- User will add image here -->
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>AI & Machine Learning Services</h3>
+              <p>We provide advanced AI and Machine Learning development services to help businesses automate processes,
+                gain predictive insights, and improve decision-making.</p>
+              <a href="services" class="explore-link">Explore AI Solutions →</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Full Stack Development -->
+          <div class="premium-service-card">
+            <div class="card-top">
+              <div class="card-icon-box blue-bg">
+                <img src="./assets/images/industry/Frame(4).webp" alt="Code icon"
+                  style="width: 24px; filter: brightness(0) invert(1);">
+              </div>
+            </div>
+            <div class="card-image-placeholder">
+              <div class="image-mockup mockup-blue">
+                <!-- User will add image here -->
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Full Stack Development</h3>
+              <p>Our full stack development services deliver scalable, high-performance web applications using modern
+                technologies from frontend to backend.</p>
+              <a href="services" class="explore-link blue-text">Build Scalable Solutions →</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Cyber Security & Compliance -->
+          <div class="premium-service-card">
+            <div class="card-top">
+              <div class="card-icon-box green-bg">
+                <img src="./assets/images/industry/Frame(5).webp" alt="Security icon"
+                  style="width: 24px; filter: brightness(0) invert(1);">
+              </div>
+            </div>
+            <div class="card-image-placeholder">
+              <div class="image-mockup mockup-green">
+                <!-- User will add image here -->
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Cyber Security & Compliance</h3>
+              <p>Protect your business with our AI-powered cybersecurity and compliance services. We help safeguard your
+                systems and detect threats in real-time.</p>
+              <a href="services" class="explore-link green-text">Secure Your Business →</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Mobile App Development -->
+          <div class="premium-service-card">
+            <div class="card-top">
+              <div class="card-icon-box orange-bg-service">
+                <img src="./assets/images/industry/Frame(6).webp" alt="Mobile icon"
+                  style="width: 24px; filter: brightness(0) invert(1);">
+              </div>
+            </div>
+            <div class="card-image-placeholder">
+              <div class="image-mockup mockup-orange">
+                <!-- User will add image here -->
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Mobile App Development</h3>
+              <p>We offer AI-powered mobile app development services for Android and iOS, delivering fast, scalable, and
+                user-friendly applications.</p>
+              <a href="services" class="explore-link orange-text">Launch Your App →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+  </section>
+
+  <!-- <section class="brand-carousel">
   <div class="carousel-track">
     <div class="logo"><img src="./assets/images/logo/Sport University.webp" /></div>
     <div class="logo"><img src="./assets/images/logo/Daksh Prajapat.webp" /></div>
@@ -235,86 +340,90 @@
   </div>
 </section> -->
 
-    <!-- About Section -->
-    <section class="about-section">
-      <div class="about-container1">
-        <div class="text-stack">
-          <div class="about-text1">
-            <div class="ellipse-icon">
-              <img src="./assets/images/orange-arrow.webp" alt="Ellipse Icon" loading="lazy" />
-            </div>
-            <h2 class="about-text2">LET ME INTRODUCE</h2>
-            <div class="about-text3 left-margin text3-mobile">
-              TURN YOUR IDEAS
-            </div>
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-container1">
+      <div class="text-stack">
+        <div class="about-text1">
+          <div class="ellipse-icon">
+            <img src="./assets/images/orange-arrow.webp" alt="Ellipse Icon" loading="lazy" />
           </div>
-          <div class="about-text3">INTO REAL BUSINESS GROWTH</div>
-          <div class="about-text3">
-         <span class="text-black"> WITH </span><span class="text-with-border"> ALPHABIT’S </span><span class="text-black"> EXPERT </span>
-          </div>
-          <div class="about-text3">
-            <span class="text-black">AI DEVELOPMENT SOLUTIONS</span>
+          <h2 class="about-text2">LET ME INTRODUCE</h2>
+          <div class="about-text3 left-margin text3-mobile">
+            TURN YOUR IDEAS
           </div>
         </div>
-        <div class="about-image">
-          <img src="./assets/images/logo1.webp" alt="About Image" loading="lazy" />
+        <div class="about-text3">INTO REAL BUSINESS GROWTH</div>
+        <div class="about-text3">
+          <span class="text-black"> WITH </span><span class="text-with-border"> ALPHABIT’S </span><span
+            class="text-black"> EXPERT </span>
+        </div>
+        <div class="about-text3">
+          <span class="text-black">AI DEVELOPMENT SOLUTIONS</span>
         </div>
       </div>
-      <div class="about-container2">
-        <div class="profile-section">
-          <div class="image-section">
-            <div class="profile">
-              <img src="./assets/images/profile3.webp" alt="Profile Image 1" loading="lazy" />
-            </div>
-            <div class="profile">
-              <img src="./assets/images/profile2.webp" alt="Profile Image 1" loading="lazy" />
-            </div>
-            <div class="profile">
-              <img src="./assets/images/profile1.webp" alt="Profile Image 1" loading="lazy" />
-            </div>
+      <div class="about-image">
+        <img src="./assets/images/logo1.webp" alt="About Image" loading="lazy" />
+      </div>
+    </div>
+    <div class="about-container2">
+      <div class="profile-section">
+        <div class="image-section">
+          <div class="profile">
+            <img src="./assets/images/profile3.webp" alt="Profile Image 1" loading="lazy" />
           </div>
-          <div class="profile-text">
-            <h6 class="profile-text1">32K +</h6>
-            <div class="client-stack">
-              <h6>happy clients</h6>
-              <h6>Across Global Industries</h6>
-            </div>
+          <div class="profile">
+            <img src="./assets/images/profile2.webp" alt="Profile Image 1" loading="lazy" />
+          </div>
+          <div class="profile">
+            <img src="./assets/images/profile1.webp" alt="Profile Image 1" loading="lazy" />
           </div>
         </div>
-        <div class="about-description">
-           <p class="description-text">“From startups to large enterprises, we deliver scalable AI-powered solutions.”</p>
-          <p class="description-text">
-           Founded in 2018, Alphabit Infoway Pvt. Ltd. is a trusted AI development company offering AI automation, custom software development, web and mobile app development. We help businesses transform operations, improve efficiency, and unlock growth through intelligent technologies.
+        <div class="profile-text">
+          <h6 class="profile-text1">32K +</h6>
+          <div class="client-stack">
+            <h6>happy clients</h6>
+            <h6>Across Global Industries</h6>
+          </div>
+        </div>
+      </div>
+      <div class="about-description">
+        <p class="description-text">“From startups to large enterprises, we deliver scalable AI-powered solutions.”
+        </p>
+        <p class="description-text">
+          Founded in 2018, Alphabit Infoway Pvt. Ltd. is a trusted AI development company offering AI automation,
+          custom software development, web and mobile app development. We help businesses transform operations,
+          improve efficiency, and unlock growth through intelligent technologies.
+        </p>
+      </div>
+    </div>
+    <div class="about-container3">
+      <div id="button-container">
+        <button class="explore-btn" onclick="window.location.href='./contact.html'">
+          Explore Us <br />More
+          <span class="round"></span>
+        </button>
+      </div>
+      <div class="explore-card">
+        <div class="explore-image">
+          <img src="./assets/images/logo3.webp" alt="Explore More Image" loading="lazy" />
+        </div>
+        <div class="explore-text">
+          <p>
+            AI-powered development with optimized workflows
           </p>
+          <h1 class="explore-count">1.8 <span>x</span></h1>
+          <div class="explore-title">Faster Service</div>
         </div>
       </div>
-      <div class="about-container3">
-        <div id="button-container">
-          <button class="explore-btn" onclick="window.location.href='./contact.html'">
-            Explore Us <br />More
-            <span class="round"></span>
-          </button>
-        </div>
-        <div class="explore-card">
-          <div class="explore-image">
-            <img src="./assets/images/logo3.webp" alt="Explore More Image" loading="lazy" />
-          </div>
-          <div class="explore-text">
-            <p>
-              AI-powered development with optimized workflows
-            </p>
-            <h1 class="explore-count">1.8 <span>x</span></h1>
-            <div class="explore-title">Faster Service</div>
-          </div>
-        </div>
-        <div>
-          <img src="./assets/images/home/About/1.webp" alt="About Image" class="image-card1">
-        </div>
-        <div>
-          <img src="./assets/images/home/About/2.webp" alt="About Image" class="image-card2">
-        </div>
+      <div>
+        <img src="./assets/images/home/About/1.webp" alt="About Image" class="image-card1">
       </div>
-  </div>
+      <div>
+        <img src="./assets/images/home/About/2.webp" alt="About Image" class="image-card2">
+      </div>
+    </div>
+    </div>
   </section>
   <!-- Cross-line Section -->
   <section class="cross-line-section">
@@ -449,10 +558,10 @@
       </h2>
       <p
         style="color: #666; font-size: 18px; margin-top: 20px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
-        Providing cutting-edge software solutions explicitly tailored for every major industry to accelerate growth and
-        scale impact.</p>
+        Providing AI-driven software solutions and business automation services tailored for major industries to
+        accelerate growth and improve operational efficiency.</p>
     </div>
-   
+
     <!--  <div class="excellence-title">Data Backups</div>
   <div class="carousel">
     <div class="card"><img src="./assets/images/img1.webp" /></div>
@@ -475,8 +584,8 @@
           <div class="industry-content">
             <h3>Telecalling Industry</h3>
             <p>
-              Build powerful telecalling and call-center management solutions
-              to improve communication and customer engagement.
+              Build AI-powered telecalling and call center solutions to enhance communication, automate workflows, and
+              improve customer engagement.
             </p>
           </div>
         </div>
@@ -487,8 +596,8 @@
           <div class="industry-content">
             <h3>Media and Content Industry</h3>
             <p>
-              Develop modern media platforms and content management systems
-              to streamline publishing and digital distribution.
+              Develop smart media platforms and content management systems (CMS) to streamline publishing, automate
+              processes, and optimize digital distribution.
             </p>
           </div>
         </div>
@@ -499,8 +608,8 @@
           <div class="industry-content">
             <h3>Social Networking</h3>
             <p>
-              Create engaging social networking applications that provide
-              unique user experiences and community interaction.
+              Create scalable social networking applications with AI-driven features to deliver personalized user
+              experiences and boost community engagement.
             </p>
           </div>
         </div>
@@ -536,8 +645,8 @@
           <div class="industry-content">
             <h3>Telecalling Industry</h3>
             <p>
-              Build powerful telecalling and call-center management solutions
-              to improve communication and customer engagement.
+              Build AI-powered telecalling and call center solutions to enhance communication, automate workflows, and
+              improve customer engagement.
             </p>
           </div>
         </div>
@@ -548,8 +657,8 @@
           <div class="industry-content">
             <h3>Media and Content Industry</h3>
             <p>
-              Develop modern media platforms and content management systems
-              to streamline publishing and digital distribution.
+              Develop smart media platforms and content management systems (CMS) to streamline publishing, automate
+              processes, and optimize digital distribution.
             </p>
           </div>
         </div>
@@ -560,8 +669,8 @@
           <div class="industry-content">
             <h3>Social Networking</h3>
             <p>
-              Create engaging social networking applications that provide
-              unique user experiences and community interaction.
+              Create scalable social networking applications with AI-driven features to deliver personalized user
+              experiences and boost community engagement.
             </p>
           </div>
         </div>
@@ -764,23 +873,34 @@
         </p>
       </div>
     </section>
+    <!-- Why Choose Us Section (Service Page Style) -->
+
     <!-- Products Section -->
     <section class="products-section" id="products">
       <div class="products-header">
         <h2 class="section-title">OUR INNOVATIVE <span class="orange-bg">PRODUCTS</span></h2>
       </div>
       <div class="products-grid">
-
-        <div class="product-card" onclick="window.location.href='dhihealth.html'">
+        <!-- Dhiyodha -->
+        <div class="product-card" onclick="window.location.href='genie-dial'">
           <div class="product-icon">
-            <img src="./assets/images/home/dhiyodha.jpg.jpeg" alt="Dhihealth" />
+            <img src="./assets/images/home/geniedial.jpg.jpeg" alt="genie-dial" />
           </div>
-          <h3 class="product-title">Dhiyodha</h3>
-          <p class="product-description">Manages hospital operations, patient records, and doctor schedules in one smart
-            system.</p>
-          <a href="dhihealth.html" class="product-link">Learn More</a>
+          <h3 class="product-title">Genie Dial</h3>
+          <p class="product-description">Automates and manages business calls 24/7 with intelligent AI voice assistants.
+          </p>
+          <a href="genie-dial.html" class="product-link">Learn More</a>
         </div>
-
+        <!-- Alphabit Skill Studio -->
+        <div class="product-card" onclick="window.location.href='skill-studio.html'">
+          <div class="product-icon">
+            <img src="./assets/images/logo.webp" alt="Alphabit Skill Studio" />
+          </div>
+          <h3 class="product-title">Alphabit Skill Studio</h3>
+          <p class="product-description">Transforms learners into industry-ready professionals through practical,
+            real-world training.</p>
+          <a href="skill-studio.html" class="product-link">Learn More</a>
+        </div>
         <!-- DhiRead -->
         <div class="product-card" onclick="window.location.href='dhiread.html'">
           <div class="product-icon">
@@ -812,6 +932,19 @@
             system.</p>
           <a href="dhihealth.html" class="product-link">Learn More</a>
         </div>
+
+        <!-- Dhiyodha Network -->
+        <div class="product-card" onclick="window.location.href='dhiyodha-network.html'">
+          <div class="product-icon">
+            <img src="./assets/images/home/dhiyodha.jpg.jpeg" alt="Dhiyodha Network" />
+          </div>
+          <h3 class="product-title">Dhiyodha</h3>
+          <p class="product-description">Connects ambitious women entrepreneurs and leaders through real-world
+            networking and collaboration.</p>
+          <a href="dhiyodha-network.html" class="product-link">Learn More</a>
+        </div>
+
+
       </div>
     </section>
     <!-- Expertise Section -->

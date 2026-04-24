@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#1A1A2E"/>
+  <circle cx="100" cy="88" r="50" fill="none" stroke="#00FF41" stroke-width="2" opacity="0.3"/>
+  <circle cx="100" cy="88" r="35" fill="none" stroke="#00FF41" stroke-width="2" opacity="0.5"/>
+  <circle cx="100" cy="88" r="20" fill="none" stroke="#00FF41" stroke-width="2" opacity="0.8"/>
+  <circle cx="100" cy="88" r="4" fill="#00FF41"/>
+  <line x1="100" y1="88" x2="138" y2="56" stroke="#00FF41" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="138" cy="56" r="5" fill="#00FF41"/>
+  <circle cx="68" cy="62" r="3" fill="#00FF41" opacity="0.6"/>
+  <circle cx="128" cy="110" r="3" fill="#00FF41" opacity="0.6"/>
+  <text x="100" y="162" font-family="Arial" font-weight="700" font-size="18" fill="#00FF41" text-anchor="middle" letter-spacing="2">NMAP</text>
+</svg>

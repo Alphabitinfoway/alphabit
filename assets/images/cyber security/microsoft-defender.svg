@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#FFFFFF"/>
+  <path d="M100 40 L155 65 L155 110 Q155 148 100 168 Q45 148 45 110 L45 65 Z" fill="url(#defGrad)"/>
+  <defs>
+    <linearGradient id="defGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0078D4"/>
+      <stop offset="100%" stop-color="#00BCF2"/>
+    </linearGradient>
+  </defs>
+  <path d="M80 104 L93 118 L122 88" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="192" font-family="Arial" font-weight="700" font-size="10" fill="#0078D4" text-anchor="middle">Microsoft Defender</text>
+</svg>

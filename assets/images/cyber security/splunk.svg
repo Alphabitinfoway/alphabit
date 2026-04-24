@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#000000"/>
+  <polygon points="40,130 100,60 160,130 130,130 100,90 70,130" fill="#EC3B1E"/>
+  <polygon points="55,150 100,100 145,150 120,150 100,118 80,150" fill="#FF6B35"/>
+  <text x="100" y="178" font-family="Arial" font-weight="700" font-size="18" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">SPLUNK</text>
+</svg>

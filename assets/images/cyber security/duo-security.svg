@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#6CC04A"/>
+  <circle cx="75" cy="90" r="28" fill="#FFFFFF"/>
+  <circle cx="125" cy="90" r="28" fill="#FFFFFF"/>
+  <circle cx="75" cy="90" r="16" fill="#6CC04A"/>
+  <circle cx="125" cy="90" r="16" fill="#6CC04A"/>
+  <rect x="90" y="82" width="20" height="16" rx="4" fill="#6CC04A"/>
+  <text x="100" y="152" font-family="Arial" font-weight="700" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">Duo Security</text>
+</svg>

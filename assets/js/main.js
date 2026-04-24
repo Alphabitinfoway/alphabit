@@ -329,25 +329,27 @@ statNumbers.forEach(statEl => {
 const toggle = document.querySelector('.menu-toggle');
 const navbar = document.querySelector('.navbar');
 
-toggle.addEventListener('click', () => {
-  toggle.classList.toggle('active');
-  navbar.classList.toggle('active');
-});
-
-document.querySelectorAll('.dropdown-toggle').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    btn.closest('.dropdown').classList.toggle('active');
+if (toggle && navbar) {
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('active');
+    navbar.classList.toggle('active');
   });
-});
 
-// Bahar click karo toh band ho jaye
-document.addEventListener('click', (e) => {
-  if (!toggle.contains(e.target) && !navbar.contains(e.target)) {
-    toggle.classList.remove('active');
-    navbar.classList.remove('active');
-  }
-});
+  document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      btn.closest('.dropdown').classList.toggle('active');
+    });
+  });
+
+  // Bahar click karo toh band ho jaye
+  document.addEventListener('click', (e) => {
+    if (!toggle.contains(e.target) && !navbar.contains(e.target)) {
+      toggle.classList.remove('active');
+      navbar.classList.remove('active');
+    }
+  });
+}
 
 
 

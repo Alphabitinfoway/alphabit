@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#232F3E"/>
+  <path d="M65 105 Q100 125 135 105" stroke="#FF9900" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M128 98 L135 105 L125 110" fill="#FF9900"/>
+  <path d="M52 78 Q52 62 68 62 Q74 52 86 54 Q92 44 104 46 Q116 40 124 50 Q138 48 140 62 Q152 64 150 78 Z" fill="#FFFFFF" opacity="0.15"/>
+  <text x="100" y="148" font-family="Arial" font-weight="700" font-size="20" fill="#FF9900" text-anchor="middle" letter-spacing="1">AWS</text>
+  <text x="100" y="168" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle" opacity="0.7" letter-spacing="0.5">Amazon Web Services</text>
+</svg>

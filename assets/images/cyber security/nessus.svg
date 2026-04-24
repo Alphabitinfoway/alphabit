@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#00B4E0"/>
+  <circle cx="100" cy="88" r="48" fill="#FFFFFF" opacity="0.15"/>
+  <circle cx="100" cy="88" r="32" fill="#FFFFFF" opacity="0.25"/>
+  <circle cx="100" cy="88" r="16" fill="#FFFFFF"/>
+  <path d="M100 40 L100 136 M52 88 L148 88" stroke="#FFFFFF" stroke-width="3" opacity="0.5"/>
+  <text x="100" y="165" font-family="Arial" font-weight="700" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">NESSUS</text>
+</svg>

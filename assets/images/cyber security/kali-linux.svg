@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#FFFFFF"/>
+  <path d="M60 155 L60 60 L80 60 L80 100 L120 60 L145 60 L105 102 L148 155 L124 155 L90 115 L80 125 L80 155 Z" fill="#2B7EB7"/>
+  <text x="100" y="182" font-family="Arial" font-weight="700" font-size="12" fill="#2B7EB7" text-anchor="middle" letter-spacing="0.5">Kali Linux</text>
+</svg>
