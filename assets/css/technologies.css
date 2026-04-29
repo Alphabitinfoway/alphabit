@@ -44,12 +44,6 @@ section,
     margin-bottom: 20px;
 }
 
-/* Header Fixes for Tech Pages */
-header {
-    background: rgba(255, 255, 255, 0.9) !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
-}
-
 .navbar a {
     color: #1e293b !important;
 }
@@ -438,12 +432,21 @@ header {
         flex-direction: column;
         padding: 0 40px;
     }
+
+    .btn-primary-tech,
+    .btn-outline-tech {
+        padding: 12px 30px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Modern Hero Section Design - Light Premium Version */
 .tech-hero-modern {
     position: relative;
-    padding: 160px 0 100px;
+    padding: 220px 0 60px;
+    margin-top: -90px;
     background: linear-gradient(135deg, #fdfbfb 0%, #f3f4f6 100%);
     overflow: hidden;
     color: #0f172a;
@@ -464,8 +467,8 @@ header {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(circle at 15% 25%, rgba(113, 67, 254, 0.05) 0%, transparent 40%),
-        radial-gradient(circle at 85% 75%, rgba(255, 86, 34, 0.05) 0%, transparent 40%);
+        radial-gradient(circle at 10% 10%, rgba(113, 67, 254, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 90% 90%, rgba(255, 86, 34, 0.05) 0%, transparent 60%);
 }
 
 .grid-overlay {
@@ -475,7 +478,7 @@ header {
         linear-gradient(rgba(113, 67, 254, 0.03) 1.5px, transparent 1.5px),
         linear-gradient(90deg, rgba(113, 67, 254, 0.03) 1.5px, transparent 1.5px);
     background-size: 60px 60px;
-    mask-image: radial-gradient(ellipse at center, black, transparent 90%);
+    mask-image: radial-gradient(ellipse at top center, black 0%, transparent 95%);
 }
 
 .wave-mesh {
@@ -492,18 +495,30 @@ header {
 }
 
 .tech-hero-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-areas:
+        "text image"
+        "btns image";
     align-items: center;
-    justify-content: space-between;
     gap: 60px;
     position: relative;
     z-index: 5;
+    margin-top: 40px;
 }
 
 .tech-hero-text {
-    flex: 1.2;
-    max-width: 700px;
-    text-align: left;
+    grid-area: text;
+}
+
+.tech-hero-illustration {
+    grid-area: image;
+}
+
+.hero-btns {
+    grid-area: btns;
+    margin-top: -20px;
+    /* Pull up closer to text */
 }
 
 .breadcrumb {
@@ -513,6 +528,7 @@ header {
     color: #64748b;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
@@ -527,7 +543,7 @@ header {
 }
 
 .tech-hero-text h1 {
-    font-size: clamp(36px, 6vw, 36px);
+    font-size: clamp(32px, 6vw, 42px);
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 25px;
@@ -538,7 +554,7 @@ header {
 .tech-hero-text p {
     font-size: 14px;
     color: #475569;
-    margin: 0 0 45px 0;
+  
     line-height: 1.7;
     max-width: 600px;
 }
@@ -570,7 +586,6 @@ header {
 }
 
 .tech-hero-illustration {
-    flex: 0.8;
     display: flex;
     justify-content: flex-end;
     perspective: 1000px;
@@ -598,9 +613,20 @@ header {
 
 @media (max-width: 1024px) {
     .tech-hero-content {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "text"
+            "image"
+            "btns";
         text-align: center;
-        gap: 40px;
+        gap: 30px;
+    }
+
+    .hero-btns {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .tech-hero-text {
@@ -633,13 +659,20 @@ header {
     }
 
     .tech-hero-text h1 {
-        font-size: 32px;
+        font-size: 28px;
+    }
+
+    .breadcrumb {
+        font-size: 11px;
+        justify-content: center;
+        gap: 5px;
+        line-height: 1.4;
     }
 }
 
 /* Impact Section - Modern Premium */
 .tech-impact-modern {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #ffffff;
     position: relative;
     overflow: hidden;
@@ -670,6 +703,7 @@ header {
     color: var(--tech-dark);
     margin-bottom: 20px;
     letter-spacing: -1px;
+    line-height: 1.2;
 }
 
 .section-header-modern p {
@@ -782,10 +816,18 @@ header {
 }
 
 @media (max-width: 768px) {
-    .section-header-modern h2 {
-        font-size: 32px;
+
+    .section-header-modern h2,
+    .apps-left-info h2,
+    .solutions-main-header h2,
+    .cta-content-v3 h2 {
+        font-size: 26px !important;
     }
-    
+
+    h3 {
+        font-size: 20px !important;
+    }
+
     .tech-impact-modern {
         padding: 80px 0;
     }
@@ -795,7 +837,7 @@ header {
 /* Evolution Section - Perfected Horizontal Timeline */
 .tech-evolution-perfect {
     padding: 60px 0;
-    background: #fdfdfd;
+    background: #f8fafc;
 }
 
 .evolution-timeline-container {
@@ -804,7 +846,8 @@ header {
     margin: 80px auto 0;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Center nodes on the main line */
+    align-items: center;
+    /* Center nodes on the main line */
     min-height: 450px;
     padding: 0 20px;
 }
@@ -815,12 +858,11 @@ header {
     right: 0;
     top: 50%;
     height: 2px;
-    background: linear-gradient(to right, 
-        rgba(113, 67, 254, 0.05) 0%, 
-        var(--tech-secondary) 20%, 
-        var(--tech-primary) 80%, 
-        rgba(255, 86, 34, 0.05) 100%
-    );
+    background: linear-gradient(to right,
+            rgba(113, 67, 254, 0.05) 0%,
+            var(--tech-secondary) 20%,
+            var(--tech-primary) 80%,
+            rgba(255, 86, 34, 0.05) 100%);
     z-index: 1;
     transform: translateY(-50%);
 }
@@ -838,7 +880,8 @@ header {
 }
 
 .timeline-node {
-    grid-row: 2; /* Always in the middle row */
+    grid-row: 2;
+    /* Always in the middle row */
     width: 64px;
     height: 64px;
     background: #fff;
@@ -871,7 +914,8 @@ header {
 
 /* Positioning based on Step Direction */
 .step-up .timeline-content-box {
-    grid-row: 1; /* Above dot */
+    grid-row: 1;
+    /* Above dot */
     align-self: end;
     margin-bottom: 20px;
 }
@@ -881,7 +925,8 @@ header {
 }
 
 .step-down .timeline-content-box {
-    grid-row: 3; /* Below dot */
+    grid-row: 3;
+    /* Below dot */
     align-self: start;
     margin-top: 20px;
 }
@@ -895,7 +940,8 @@ header {
 }
 
 .spacer-box {
-    display: none; /* No longer needed with grid */
+    display: none;
+    /* No longer needed with grid */
 }
 
 .step-tag {
@@ -935,7 +981,8 @@ header {
     }
 
     .timeline-main-line {
-        left: 31px; /* Half of node width (64/2 - 1 for border) */
+        left: 31px;
+        /* Half of node width (64/2 - 1 for border) */
         top: 0;
         bottom: 0;
         width: 2px;
@@ -948,10 +995,17 @@ header {
         flex-direction: row !important;
         align-items: center;
         text-align: left;
-        gap: 40px;
+        gap: 30px;
         width: 100%;
         min-height: auto;
-        grid-template-rows: none; /* Reset desktop grid */
+        grid-template-rows: none;
+        /* Reset desktop grid */
+    }
+
+    /* Keep icons on the left for all steps in mobile */
+    .timeline-column.step-up {
+        flex-direction: row-reverse !important;
+        justify-content: flex-end;
     }
 
     .timeline-node {
@@ -959,14 +1013,16 @@ header {
         left: 0;
         margin: 0;
         flex-shrink: 0;
-        grid-row: auto; /* Reset desktop grid */
+        grid-row: auto;
+        /* Reset desktop grid */
     }
 
     .timeline-content-box {
         max-width: 100%;
         padding: 0;
         margin: 0 !important;
-        grid-row: auto; /* Reset desktop grid */
+        grid-row: auto;
+        /* Reset desktop grid */
         align-self: center !important;
     }
 
@@ -978,25 +1034,105 @@ header {
 
 @media (max-width: 768px) {
     .evolution-timeline-container {
-        padding-left: 20px;
+        padding: 0 0 0 20px;
+        margin-top: 40px;
+        gap: 40px;
     }
-    .timeline-main-line {
-        left: 21px;
-    }
-    .timeline-node {
-        width: 44px;
-        height: 44px;
-        font-size: 16px;
-    }
+
     .timeline-column {
-        gap: 25px;
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        text-align: left;
+        gap: 20px;
+        width: 100%;
+        min-height: auto;
+        grid-template-rows: none;
+        /* Reset desktop grid */
+    }
+
+    /* Ensure all icons (timeline-node) are on the left */
+    .timeline-column.step-up {
+        flex-direction: row-reverse !important;
+        justify-content: flex-end;
+    }
+
+    .timeline-node {
+        position: relative;
+        left: 0px;
+        margin: 0;
+        flex-shrink: 0;
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+        grid-row: auto;
+        z-index: 10;
+        background: #fff;
+        border-width: 2px;
+    }
+
+    .timeline-content-box {
+        max-width: 100%;
+        padding: 0;
+        margin: 0 !important;
+        grid-row: auto;
+        /* Reset desktop grid */
+        align-self: center !important;
+    }
+
+    .step-tag {
+        background: rgba(113, 67, 254, 0.08);
+        padding: 4px 12px;
+        border-radius: 6px;
+        color: var(--tech-secondary);
+        font-weight: 700;
+        font-size: 10px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    /* Specific colors for phases like in the screenshot */
+    .timeline-column:nth-of-type(2) .step-tag {
+        background: rgba(255, 86, 34, 0.1);
+        color: #ff5622;
+    }
+
+    .timeline-column:nth-of-type(3) .step-tag {
+        background: rgba(59, 130, 246, 0.1);
+        color: #3b82f6;
+    }
+
+    .timeline-column:nth-of-type(4) .step-tag {
+        background: rgba(139, 92, 246, 0.1);
+        color: #8b5cf6;
+    }
+
+    .timeline-column:nth-of-type(5) .step-tag {
+        background: rgba(16, 185, 129, 0.1);
+        color: #10b981;
+    }
+
+    .timeline-column:nth-of-type(6) .step-tag {
+        background: rgba(244, 63, 94, 0.1);
+        color: #f43f5e;
+    }
+
+    .step-up .timeline-content-box,
+    .step-down .timeline-content-box {
+        margin: 0 !important;
+    }
+
+    .timeline-main-line {
+        left: 44px;
+        /* Container padding (20px) + Half of node (24px) */
+        opacity: 0.2;
     }
 }
 
 
 /* Types of GenAI Section - Modern Premium */
 .tech-types-modern {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -1036,12 +1172,29 @@ header {
 }
 
 /* Accent Colors */
-.accent-purple::before { background: var(--tech-secondary); }
-.accent-orange::before { background: var(--tech-primary); }
-.accent-blue::before { background: #0ea5e9; }
-.accent-cyan::before { background: #22d3ee; }
-.accent-emerald::before { background: #10b981; }
-.accent-rose::before { background: #f43f5e; }
+.accent-purple::before {
+    background: var(--tech-secondary);
+}
+
+.accent-orange::before {
+    background: var(--tech-primary);
+}
+
+.accent-blue::before {
+    background: #0ea5e9;
+}
+
+.accent-cyan::before {
+    background: #22d3ee;
+}
+
+.accent-emerald::before {
+    background: #10b981;
+}
+
+.accent-rose::before {
+    background: #f43f5e;
+}
 
 .type-icon-box {
     width: 48px;
@@ -1106,7 +1259,7 @@ header {
     .tech-types-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .type-card {
         padding: 30px;
     }
@@ -1114,7 +1267,7 @@ header {
 
 /* Advanced Tech Section - Staggered Grid */
 .tech-advanced-modern {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #f8fafc;
     position: relative;
 }
@@ -1192,7 +1345,7 @@ header {
     .advanced-tech-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .adv-card.featured {
         grid-column: span 2;
     }
@@ -1202,14 +1355,14 @@ header {
     .advanced-tech-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .adv-card.featured {
         grid-column: span 1;
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
     }
-    
+
     .adv-card.featured .adv-icon {
         width: 56px;
         height: 56px;
@@ -1221,14 +1374,14 @@ header {
 
 /* Key Components - Bento Grid Layout */
 .tech-components-bento {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
 /* Generative AI Lifecycle - Horizontal Stepper System */
 .tech-lifecycle-section {
-    padding: 120px 0;
-    background: #ffffff;
+    padding: 60px 0;
+    background: #f8fafc;
 }
 
 .horizontal-stepper-system {
@@ -1369,13 +1522,16 @@ header {
     .stepper-track-wrap {
         display: none;
     }
+
     .stepper-cards-grid {
         grid-template-columns: 1fr;
     }
+
     .stepper-card-item {
         padding: 30px;
         text-align: left;
     }
+
     .card-top-icon {
         margin-bottom: 15px;
     }
@@ -1385,7 +1541,9 @@ header {
     .bento-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .bento-card.large, .bento-card.large-v {
+
+    .bento-card.large,
+    .bento-card.large-v {
         grid-column: span 2;
     }
 }
@@ -1394,9 +1552,12 @@ header {
     .bento-grid {
         grid-template-columns: 1fr;
     }
-    .bento-card.large, .bento-card.large-v {
+
+    .bento-card.large,
+    .bento-card.large-v {
         grid-column: span 1;
     }
+
     .bento-card {
         padding: 30px;
     }
@@ -1404,7 +1565,7 @@ header {
 
 /* Tech Stack - Version 2 (Stunning Minimalist) */
 .tech-stack-v2 {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -1480,11 +1641,25 @@ header {
 }
 
 /* Themes */
-.theme-purple .card-cat { color: var(--tech-secondary); }
-.theme-orange .card-cat { color: #ff5622; }
-.theme-cyan .card-cat { color: #00bcd4; }
-.theme-blue .card-cat { color: #2196f3; }
-.theme-green .card-cat { color: #4caf50; }
+.theme-purple .card-cat {
+    color: var(--tech-secondary);
+}
+
+.theme-orange .card-cat {
+    color: #ff5622;
+}
+
+.theme-cyan .card-cat {
+    color: #00bcd4;
+}
+
+.theme-blue .card-cat {
+    color: #2196f3;
+}
+
+.theme-green .card-cat {
+    color: #4caf50;
+}
 
 /* Interactions */
 .stack-v2-card:hover {
@@ -1501,8 +1676,13 @@ header {
     top: 10px;
 }
 
-.theme-purple:hover { border-color: var(--tech-secondary); }
-.theme-orange:hover { border-color: #ff5622; }
+.theme-purple:hover {
+    border-color: var(--tech-secondary);
+}
+
+.theme-orange:hover {
+    border-color: #ff5622;
+}
 
 .stack-v2-card:hover .tags-row span {
     background: var(--tech-dark);
@@ -1520,11 +1700,11 @@ header {
     .stack-v2-container {
         grid-template-columns: 1fr;
     }
-    
+
     .stack-v2-card {
         padding: 30px;
     }
-    
+
     .card-bg-icon {
         font-size: 80px;
     }
@@ -1532,7 +1712,7 @@ header {
 
 /* Applications Section - Premium Split Layout */
 .tech-apps-minimal {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #ffffff;
     border-bottom: 1px solid #f1f5f9;
 }
@@ -1615,17 +1795,22 @@ header {
         grid-template-columns: 1fr;
         gap: 50px;
     }
+
     .apps-left-info p {
         max-width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-    .tech-apps-minimal { padding: 80px 0; }
+    .tech-apps-minimal {
+        padding: 80px 0;
+    }
+
     .apps-right-points {
         grid-template-columns: 1fr;
         gap: 25px;
     }
+
     .apps-left-info h2 {
         font-size: 32px;
     }
@@ -1633,8 +1818,8 @@ header {
 
 /* Practical Use Cases / Solutions Section - Premium Row Design */
 .tech-solutions-premium {
-    padding: 120px 0;
-    background: #ffffff;
+    padding: 60px 0;
+    background: #f8fafc;
 }
 
 .solutions-main-header {
@@ -1760,6 +1945,7 @@ header {
     .solution-row {
         padding: 25px;
     }
+
     .solution-mid {
         padding: 0 20px;
     }
@@ -1771,13 +1957,16 @@ header {
         align-items: flex-start;
         gap: 20px;
     }
+
     .solution-left {
         width: 100%;
         justify-content: space-between;
     }
+
     .solution-mid {
         padding: 0;
     }
+
     .solution-right {
         width: 100%;
     }
@@ -1785,7 +1974,7 @@ header {
 
 /* Industries Section - Modern Pill Layout */
 .tech-industries-curated {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -1863,6 +2052,7 @@ header {
     .industry-pills-grid {
         grid-template-columns: 1fr;
     }
+
     .industry-pill-item {
         border-radius: 20px;
         padding: 20px;
@@ -1871,8 +2061,8 @@ header {
 
 /* Benefits & Challenges - Restored Split with Effects */
 .tech-contrast-v3 {
-    padding: 120px 0;
-    background: #ffffff;
+    padding: 60px 0;
+    background: #f8fafc;
 }
 
 .contrast-grid-v3 {
@@ -1911,8 +2101,13 @@ header {
     transition: all 0.4s ease;
 }
 
-.benefits .card-icon-v3 { color: #16a34a; }
-.challenges .card-icon-v3 { color: #d97706; }
+.benefits .card-icon-v3 {
+    color: #16a34a;
+}
+
+.challenges .card-icon-v3 {
+    color: #d97706;
+}
 
 .contrast-card-v3 h3 {
     font-size: 32px;
@@ -1945,8 +2140,13 @@ header {
     transition: all 0.3s ease;
 }
 
-.benefits .effect-list li i { color: #16a34a; }
-.challenges .effect-list li i { color: #d97706; }
+.benefits .effect-list li i {
+    color: #16a34a;
+}
+
+.challenges .effect-list li i {
+    color: #d97706;
+}
 
 /* Effects */
 .contrast-card-v3:hover {
@@ -1955,8 +2155,13 @@ header {
     box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
 }
 
-.benefits:hover { border-color: #16a34a; }
-.challenges:hover { border-color: #d97706; }
+.benefits:hover {
+    border-color: #16a34a;
+}
+
+.challenges:hover {
+    border-color: #d97706;
+}
 
 .contrast-card-v3:hover .card-icon-v3 {
     background: var(--tech-dark);
@@ -1973,20 +2178,26 @@ header {
     .contrast-card-v3 {
         padding: 40px;
     }
+
     .contrast-card-v3 h3 {
         font-size: 26px;
     }
 }
 
 @media (max-width: 768px) {
-    .tech-contrast-v3 { padding: 80px 0; }
+    .tech-contrast-v3 {
+        padding: 80px 0;
+    }
+
     .contrast-grid-v3 {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
     .contrast-card-v3 {
         padding: 30px;
     }
+
     .contrast-card-v3 h3 {
         font-size: 22px;
         margin-bottom: 25px;
@@ -1995,7 +2206,7 @@ header {
 
 /* Why Our Approach - Dashboard Layout */
 .tech-approach-dashboard {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -2087,19 +2298,25 @@ header {
 }
 
 @media (max-width: 768px) {
-    .tech-approach-dashboard { padding: 80px 0; }
+    .tech-approach-dashboard {
+        padding: 80px 0;
+    }
+
     .dashboard-item {
         padding: 20px;
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
+
     .item-status {
         align-self: flex-start;
     }
+
     .item-arrow {
         display: none;
     }
+
     .item-main {
         width: 100%;
     }
@@ -2107,8 +2324,8 @@ header {
 
 /* Future of Generative AI - Compact Grid with Effects */
 .tech-future-compact {
-    padding: 120px 0;
-    background: #ffffff;
+    padding: 60px 0;
+    background: #f8fafc;
 }
 
 .compact-future-grid {
@@ -2156,8 +2373,13 @@ header {
 }
 
 @keyframes rotate-shimmer {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .compact-visual {
@@ -2219,6 +2441,7 @@ header {
     .compact-future-grid {
         grid-template-columns: 1fr;
     }
+
     .compact-future-item {
         padding: 25px;
     }
@@ -2232,8 +2455,8 @@ header {
 
 /* FAQ Section - Premium Accordion */
 .tech-faq-section {
-    padding: 120px 0;
-    background: #f8fafc;
+    padding: 60px 0;
+    background: #ffffff;
 }
 
 .faq-accordion-wrap {
@@ -2314,20 +2537,22 @@ header {
         padding: 20px;
         font-size: 16px;
     }
+
     .faq-answer {
         padding: 20px;
     }
 }
+
 /* Final CTA - High Impact V3 */
 .tech-final-cta-v3 {
-    padding: 120px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
 .cta-wrapper-v3 {
     background: var(--tech-dark);
     border-radius: 40px;
-    padding: 100px 60px;
+    padding: 40px 40px;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -2369,7 +2594,7 @@ header {
 }
 
 .cta-content-v3 h2 {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 900;
     color: #ffffff;
     line-height: 1.1;
@@ -2390,7 +2615,8 @@ header {
     gap: 20px;
 }
 
-.cta-btn-main, .cta-btn-alt {
+.cta-btn-main,
+.cta-btn-alt {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -2425,7 +2651,8 @@ header {
     transform: translateY(-5px) scale(1.05);
 }
 
-.cta-btn-main i, .cta-btn-alt i {
+.cta-btn-main i,
+.cta-btn-alt i {
     font-size: 18px;
     transition: transform 0.4s ease;
 }
@@ -2442,13 +2669,17 @@ header {
     .cta-wrapper-v3 {
         padding: 60px 30px;
     }
+
     .cta-content-v3 h2 {
-        font-size: 32px;
+        font-size: 26px !important;
     }
+
     .cta-action-v3 {
         flex-direction: column;
     }
-    .cta-btn-main, .cta-btn-alt {
+
+    .cta-btn-main,
+    .cta-btn-alt {
         justify-content: center;
     }
 }
@@ -2459,47 +2690,318 @@ header {
     .tech-final-cta-v3 {
         padding: 60px 0;
     }
+
     .cta-wrapper-v3 {
         padding: 60px 25px;
         border-radius: 30px;
     }
+
     .cta-content-v3 h2 {
-        font-size: 28px;
+        font-size: 26px !important;
     }
+
     .cta-content-v3 p {
         font-size: 15px;
         margin-bottom: 40px;
     }
+
     .cta-action-v3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         gap: 15px;
     }
-    .cta-btn-main, .cta-btn-alt {
-        padding: 16px 20px;
-        font-size: 14px;
+
+    .cta-btn-main,
+    .cta-btn-alt {
+        padding: 12px 20px;
+        font-size: 13px;
         width: 100%;
         justify-content: center;
     }
 }
 
 
-/* Global Responsive Section Spacing Fix */
+/* Just for mobile */
 @media (max-width: 768px) {
-    .tech-impact-modern, 
-    .tech-evolution-perfect, 
-    .tech-types-modern, 
-    .tech-advanced-modern, 
-    .tech-components-bento, 
-    .tech-lifecycle-section, 
-    .tech-stack-v2, 
-    .tech-apps-minimal, 
-    .tech-solutions-premium, 
-    .tech-industries-curated, 
-    .tech-contrast-v3, 
-    .tech-approach-dashboard, 
-    .tech-future-compact, 
-    .tech-faq-section, 
+
+    .tech-impact-modern,
+    .tech-evolution-perfect,
+    .tech-types-modern,
+    .tech-advanced-modern,
+    .tech-components-bento,
+    .tech-lifecycle-section,
+    .tech-stack-v2,
+    .tech-apps-minimal,
+    .tech-solutions-premium,
+    .tech-industries-curated,
+    .tech-contrast-v3,
+    .tech-approach-dashboard,
+    .tech-future-compact,
+    .tech-faq-section,
     .tech-final-cta-v3 {
-        padding: 80px 0 !important;
+        padding: 50px 0 !important;
+    }
+}
+/* Machine Learning Architecture Section */
+.tech-architecture-modern {
+    padding: 100px 0;
+    background: var(--tech-light);
+    position: relative;
+}
+
+.architecture-grid-simple {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.arch-item {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 24px;
+    border: 1px solid var(--tech-border);
+    text-align: center;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.arch-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--tech-secondary);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
+}
+
+.arch-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(113, 67, 254, 0.05);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tech-secondary);
+    font-size: 28px;
+    transition: all 0.4s ease;
+}
+
+.arch-item:hover .arch-icon {
+    background: var(--tech-secondary);
+    color: #fff;
+    transform: rotate(5deg);
+}
+
+.arch-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--tech-dark);
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .architecture-grid-simple {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
+@media (max-width: 600px) {
+    .architecture-grid-simple {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Neural Glassmorphism Map Design - Symmetrical Refinement */
+.tech-components-neural {
+    padding: 100px 0 150px;
+    background: #fdfbfb;
+    position: relative;
+    overflow: hidden;
+}
+
+.neural-map-viewport {
+    margin-top: 80px;
+    position: relative;
+}
+
+.neural-map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Connection Lines */
+.neural-pathways {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.path-line {
+    fill: none;
+    stroke: rgba(113, 67, 254, 0.15);
+    stroke-width: 2;
+    stroke-dasharray: 8, 8;
+    animation: flowDash 30s linear infinite;
+}
+
+@keyframes flowDash {
+    to { stroke-dashoffset: -1000; }
+}
+
+/* Central Hub */
+.neural-hub {
+    grid-area: 2 / 2;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hub-pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(113, 67, 254, 0.25) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: hubPulse 4s ease-in-out infinite;
+}
+
+.hub-glass {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(113, 67, 254, 0.2);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(113, 67, 254, 0.1);
+}
+
+.hub-glass i {
+    font-size: 40px;
+    color: var(--tech-secondary);
+    margin-bottom: 10px;
+}
+
+.hub-glass span {
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--tech-dark);
+    font-size: 11px;
+}
+
+@keyframes hubPulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.3); opacity: 0.8; }
+}
+
+/* Nodes */
+.neural-node {
+    z-index: 5;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.node-glass {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s ease;
+}
+
+.neural-node:hover .node-glass {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.8);
+    border-color: var(--tech-secondary);
+    box-shadow: 0 30px 60px rgba(113, 67, 254, 0.15);
+}
+
+.node-icon {
+    width: 54px;
+    height: 54px;
+    background: var(--tech-secondary);
+    color: #fff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 22px;
+}
+
+.node-glass h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: var(--tech-dark);
+}
+
+.node-glass p {
+    font-size: 13px;
+    color: var(--tech-gray);
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Precise Grid Positioning */
+.node-tl { grid-area: 1 / 1; }
+.node-tr { grid-area: 1 / 3; }
+.node-ml { grid-area: 2 / 1; }
+.node-mr { grid-area: 2 / 3; }
+.node-bl { grid-area: 3 / 1; }
+.node-br { grid-area: 3 / 3; }
+
+/* Mobile View for Neural Map */
+@media (max-width: 1024px) {
+    .neural-map-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        padding-top: 50px;
+    }
+    
+    .neural-pathways, .neural-hub, .hub-pulse {
+        display: none;
+    }
+    
+    .neural-node {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .node-glass {
+        width: 100%;
+        backdrop-filter: none;
+        background: #fff;
+        border: 1px solid var(--tech-border);
+    }
+}
