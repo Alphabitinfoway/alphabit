@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Platform Technologies | Scalable Infrastructure & Cloud Solutions</title>
+    <meta name="description"
+        content="Explore cloud platform technologies, infrastructure, and architecture. Build scalable, secure, and high-performance applications using modern cloud ecosystems.">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/technologies.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./assets/js/config.js"></script>
+</head>
+
+<body>
+    <!-- Minimal Preloader -->
+    <div id="preloader">
+        <div class="minimal-loader">
+            <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo">
+            <div class="loader-progress-bar"></div>
+            <div class="loader-text">Configuring Cloud...</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <h6><a href="./">Home</a></h6>
+                <h6 class="dropdown">
+                    <a href="services" class="dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+                        <li><a href="services">Cyber Security & Compliance</a></li>
+                        <li><a href="services">Full Stack Web Development</a></li>
+                        <li><a href="services">Mobile App & Product Design</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="index.html#products">Products</a></h6>
+                <h6 class="dropdown">
+                    <a href="Technology" class="dropdown-toggle">Technology</a>
+                    <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Artificial Intelligence</li>
+                        <li><a href="ai-development-technologies.html">AI Development</a></li>
+                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Web Technologies</li>
+                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+                        <li><a href="backend-technologies.html">Backend Development</a></li>
+                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Mobile Technologies</li>
+                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
+                        <li><a href="android-development-technologies.html">Android Development</a></li>
+                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cloud & DevOps</li>
+                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
+                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
+                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Data & Analytics</li>
+                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
+                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
+                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cyber Security</li>
+                        <li><a href="#">Security Solutions</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="about">About</a></h6>
+                <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+                <h6 class="dropdown">
+                    <a href="#" class="dropdown-toggle">Insights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="career">Career</a></li>
+                    </ul>
+                </h6>
+                <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+            </nav>
+            <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="tech-hero-modern">
+            <div class="tech-hero-background">
+                <div class="mesh-gradient"></div>
+                <div class="grid-overlay"></div>
+                <div class="wave-mesh"></div>
+            </div>
+            <div class="container-box">
+                <div class="tech-hero-content">
+                    <div class="tech-hero-text">
+                        <nav class="breadcrumb">
+                            <a href="index.html">Home</a> / <a href="Technology">Technology</a> / <span>Cloud Platform Technologies</span>
+                        </nav>
+                        <h1>Cloud Platform <br />Technologies & Capabilities</h1>
+                        <p>Cloud platform technologies power modern digital infrastructure — enabling businesses to build, deploy, and scale applications without managing physical servers. From startups to enterprises, cloud platforms provide flexibility, reliability, and global accessibility.
+                            <br /><br />Modern cloud ecosystems like AWS, Microsoft Azure, and Google Cloud offer scalable infrastructure, managed services, and advanced capabilities such as AI integration, serverless computing, and real-time data processing.
+                            <br /><br />At Alphabit, we design cloud-native solutions that are secure, scalable, and optimized for performance — helping businesses grow efficiently in a digital-first world.
+                        </p>
+
+                        <div class="hero-stats-row">
+                            <div class="hero-stat">
+                                <h3>10+</h3>
+                                <p>Cloud <br/>Services</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>20+</h3>
+                                <p>Tools<br/> Tech</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>5+</h3>
+                                <p>Architecture <br/> Patterns</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>12+</h3>
+                                <p>Use Cases</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-hero-illustration">
+                        <img src="./assets/images/generative-ai-hero.png" alt="Cloud Platform Technologies" />
+                    </div>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn-primary-tech">Talk to a Cloud Expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adoption & Impact -->
+        <section class="tech-impact-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Strategic Value</span>
+                    <h2>Cloud Adoption & Impact</h2>
+                    <p>Cloud platforms transform how applications are built and scaled.</p>
+                </div>
+                <div class="impact-cards-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon-main"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <div class="impact-content">
+                            <h3>Scalable Infrastructure</h3>
+                            <p>Easily scale resources based on demand without manual intervention.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main"><i class="fas fa-dollar-sign"></i></div>
+                        <div class="impact-content">
+                            <h3>Cost Efficiency</h3>
+                            <p>Pay-as-you-go pricing reduces infrastructure and maintenance costs.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main"><i class="fas fa-check-circle"></i></div>
+                        <div class="impact-content">
+                            <h3>High Availability</h3>
+                            <p>Ensure uptime and reliability with distributed cloud systems.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main"><i class="fas fa-rocket"></i></div>
+                        <div class="impact-content">
+                            <h3>Faster Deployment</h3>
+                            <p>Deploy applications quickly with automated cloud environments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution -->
+        <section class="tech-evolution-perfect" id="evolution">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">The Journey</span>
+                    <h2>Evolution of Cloud Computing</h2>
+                    <p>Cloud technologies have evolved to support modern applications.</p>
+                </div>
+
+                <div class="evolution-timeline-container">
+                    <div class="timeline-main-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 01</span>
+                            <h3>Traditional Hosting</h3>
+                            <p>Physical servers and on-premise infrastructure.</p>
+                        </div>
+                        <div class="timeline-node"><i class="fas fa-server"></i></div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node"><i class="fas fa-cubes"></i></div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 02</span>
+                            <h3>Virtualization</h3>
+                            <p>Multiple virtual machines on shared hardware.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 03</span>
+                            <h3>Infrastructure (IaaS)</h3>
+                            <p>On-demand computing resources and storage.</p>
+                        </div>
+                        <div class="timeline-node"><i class="fas fa-cloud"></i></div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node"><i class="fas fa-layer-group"></i></div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 04</span>
+                            <h3>Platform (PaaS)</h3>
+                            <p>Managed environments for application development.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 05</span>
+                            <h3>Serverless & Cloud-Native</h3>
+                            <p>Event-driven, scalable, and fully managed systems.</p>
+                        </div>
+                        <div class="timeline-node"><i class="fas fa-bolt"></i></div>
+                        <div class="spacer-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types of Cloud Platforms -->
+        <section class="tech-types-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Capabilities</span>
+                    <h2>Types of Cloud Platform Technologies</h2>
+                    <p>Cloud platform technologies enable scalable and efficient systems across various deployment models.</p>
+                </div>
+
+                <div class="tech-types-grid">
+                    <!-- IaaS -->
+                    <div class="type-card accent-purple">
+                        <div class="type-icon-box"><i class="fas fa-server"></i></div>
+                        <h3>Infrastructure as a Service (IaaS)</h3>
+                        <p>Provides virtual machines, storage, and networking with full control.</p>
+                        <div class="type-tags">
+                            <span>Flexible computing</span>
+                            <span>Scalable</span>
+                            <span>Full control</span>
+                            <span>Pay-as-you-go</span>
+                        </div>
+                    </div>
+
+                    <!-- PaaS -->
+                    <div class="type-card accent-orange">
+                        <div class="type-icon-box"><i class="fas fa-layer-group"></i></div>
+                        <h3>Platform as a Service (PaaS)</h3>
+                        <p>Offers managed platforms for building and deploying applications.</p>
+                        <div class="type-tags">
+                            <span>Simplified development</span>
+                            <span>Built-in tools</span>
+                            <span>Faster deployment</span>
+                            <span>Reduced maintenance</span>
+                        </div>
+                    </div>
+
+                    <!-- Serverless -->
+                    <div class="type-card accent-cyan">
+                        <div class="type-icon-box"><i class="fas fa-bolt"></i></div>
+                        <h3>Serverless Computing</h3>
+                        <p>Run code without managing servers with event-driven execution.</p>
+                        <div class="type-tags">
+                            <span>Event-driven</span>
+                            <span>Auto-scaling</span>
+                            <span>Cost-efficient</span>
+                            <span>Fully managed</span>
+                        </div>
+                    </div>
+
+                    <!-- Storage -->
+                    <div class="type-card accent-emerald">
+                        <div class="type-icon-box"><i class="fas fa-database"></i></div>
+                        <h3>Cloud Storage & Databases</h3>
+                        <p>Store and manage data securely in the cloud with managed SQL/NoSQL.</p>
+                        <div class="type-tags">
+                            <span>Scalable storage</span>
+                            <span>High availability</span>
+                            <span>Backup & recovery</span>
+                            <span>Managed DBs</span>
+                        </div>
+                    </div>
+
+                    <!-- AI -->
+                    <div class="type-card accent-blue">
+                        <div class="type-icon-box"><i class="fas fa-robot"></i></div>
+                        <h3>AI & Cloud Integration</h3>
+                        <p>Integrate AI and machine learning capabilities via cloud services.</p>
+                        <div class="type-tags">
+                            <span>AI services & APIs</span>
+                            <span>Data processing</span>
+                            <span>Predictive analytics</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Cloud Technologies -->
+        <section class="tech-advanced-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Advanced Architecture</span>
+                    <h2>Advanced Cloud Capabilities</h2>
+                    <p>Modern cloud systems go beyond basic hosting, leveraging complex architectures to solve high-value business challenges.</p>
+                </div>
+
+                <div class="advanced-tech-grid">
+                    <div class="adv-card featured">
+                        <div class="adv-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="adv-info">
+                            <h3>Auto-Scaling Systems</h3>
+                            <p>Automatically adjust resources based on real-time traffic and demand to optimize performance.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="adv-info">
+                            <h3>Multi-Cloud & Hybrid Cloud</h3>
+                            <p>Combine multiple cloud providers and on-premise systems for resilience and flexibility.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-cubes"></i></div>
+                        <div class="adv-info">
+                            <h3>Containerization & Orchestration</h3>
+                            <p>Deploy applications using Docker and Kubernetes for consistent, isolated environments.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="adv-info">
+                            <h3>Edge Computing</h3>
+                            <p>Process data closer to users for faster performance and ultra-low latency response.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="adv-info">
+                            <h3>Cloud Security & Compliance</h3>
+                            <p>Ensure data protection, encryption, and strict global compliance standards in the cloud.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Components (Neural Map) -->
+        <section class="tech-components-neural">
+            <div class="container-header-flow">
+                <div class="container-box">
+                    <div class="section-header-modern">
+                        <span class="tech-badge">System Neural Map</span>
+                        <h2>Integrated Cloud Architecture</h2>
+                        <p>Our cloud systems are built as an interconnected ecosystem of infrastructure, not just isolated components.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="neural-map-viewport">
+                <div class="container-box">
+                    <div class="neural-map-container">
+                        <!-- SVG Neural Pathways -->
+                        <svg class="neural-pathways" width="100%" height="100%" viewBox="0 0 1000 600" preserveAspectRatio="none">
+                            <path class="path-line" d="M500,300 L166,100" />
+                            <path class="path-line" d="M500,300 L833,100" />
+                            <path class="path-line" d="M500,300 L166,300" />
+                            <path class="path-line" d="M500,300 L833,300" />
+                            <path class="path-line" d="M500,300 L166,500" />
+                            <path class="path-line" d="M500,300 L833,500" />
+                        </svg>
+
+                        <!-- Central Hub -->
+                        <div class="neural-hub">
+                            <div class="hub-pulse"></div>
+                            <div class="hub-glass">
+                                <i class="fas fa-cloud"></i>
+                                <span>CLOUD CORE</span>
+                            </div>
+                        </div>
+
+                        <!-- Satellite Nodes -->
+                        <div class="neural-node node-tl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-microchip"></i></div>
+                                <h3>Compute Services</h3>
+                                <p>VMs & Serverless</p>
+                            </div>
+                        </div>
+
+                        <div class="neural-node node-tr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-hdd"></i></div>
+                                <h3>Storage Systems</h3>
+                                <p>Object & Block</p>
+                            </div>
+                        </div>
+
+                        <div class="neural-node node-ml">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-network-wired"></i></div>
+                                <h3>Networking</h3>
+                                <p>Load Balancers & CDN</p>
+                            </div>
+                        </div>
+
+                        <div class="neural-node node-mr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-database"></i></div>
+                                <h3>Database Systems</h3>
+                                <p>SQL & NoSQL</p>
+                            </div>
+                        </div>
+
+                        <div class="neural-node node-bl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-lock"></i></div>
+                                <h3>Security Layer</h3>
+                                <p>IAM & Encryption</p>
+                            </div>
+                        </div>
+
+                        <div class="neural-node node-br">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-chart-bar"></i></div>
+                                <h3>Monitoring</h3>
+                                <p>Logs & Alerts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-stack-v2">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Powered By</span>
+                    <h2>Cloud Tech Stack</h2>
+                </div>
+
+                <div class="stack-v2-container">
+                    <div class="stack-v2-card">
+                        <div class="card-bg-icon"><i class="fas fa-cloud"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Platforms</span>
+                            <h3>Cloud Providers</h3>
+                            <div class="tags-row"><span>AWS</span><span>Azure</span><span>Google Cloud</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-v2-card theme-purple">
+                        <div class="card-bg-icon"><i class="fas fa-cubes"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Containers</span>
+                            <h3>Orchestration</h3>
+                            <div class="tags-row"><span>Docker</span><span>Kubernetes</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-v2-card theme-orange">
+                        <div class="card-bg-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Serverless</span>
+                            <h3>Managed Code</h3>
+                            <div class="tags-row"><span>AWS Lambda</span><span>Azure Functions</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-v2-card theme-cyan">
+                        <div class="card-bg-icon"><i class="fas fa-database"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Databases</span>
+                            <h3>Data Storage</h3>
+                            <div class="tags-row"><span>DynamoDB</span><span>Firebase</span><span>PostgreSQL</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-v2-card theme-blue">
+                        <div class="card-bg-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Networking</span>
+                            <h3>Distribution</h3>
+                            <div class="tags-row"><span>CDN</span><span>Load Balancers</span><span>API Gateway</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-v2-card theme-green">
+                        <div class="card-bg-icon"><i class="fas fa-tools"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">DevOps</span>
+                            <h3>CI/CD & IaC</h3>
+                            <div class="tags-row"><span>Terraform</span><span>GitHub Actions</span><span>CI/CD</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifecycle Section -->
+        <section class="tech-lifecycle-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Methodology</span>
+                    <h2>Cloud Development Lifecycle</h2>
+                    <p>A structured approach to design, deploy, and optimize cloud-native applications.</p>
+                </div>
+
+                <div class="horizontal-stepper-system">
+                    <div class="stepper-track-wrap">
+                        <div class="stepper-main-line"><div class="stepper-progress-fill"></div></div>
+                        <div class="stepper-dots-row">
+                            <div class="stepper-dot active"><i class="fas fa-check"></i></div>
+                            <div class="stepper-dot">02</div>
+                            <div class="stepper-dot">03</div>
+                            <div class="stepper-dot">04</div>
+                            <div class="stepper-dot">05</div>
+                            <div class="stepper-dot">06</div>
+                        </div>
+                    </div>
+                    <div class="stepper-cards-grid">
+                        <div class="stepper-card-item active">
+                            <div class="card-top-icon"><i class="fas fa-search"></i></div>
+                            <span class="card-step-label">Step 1</span>
+                            <h3>Requirement Analysis</h3>
+                            <p>Define infrastructure and scalability needs.</p>
+                        </div>
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-drafting-compass"></i></div>
+                            <span class="card-step-label">Step 2</span>
+                            <h3>Architecture Design</h3>
+                            <p>Design cloud-native system architecture.</p>
+                        </div>
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-cogs"></i></div>
+                            <span class="card-step-label">Step 3</span>
+                            <h3>Setup & Config</h3>
+                            <p>Configure cloud services and environments.</p>
+                        </div>
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                            <span class="card-step-label">Step 4</span>
+                            <h3>Deployment</h3>
+                            <p>Deploy applications to cloud platforms.</p>
+                        </div>
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-chart-line"></i></div>
+                            <span class="card-step-label">Step 5</span>
+                            <h3>Monitoring</h3>
+                            <p>Track performance and optimize resources.</p>
+                        </div>
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-expand-alt"></i></div>
+                            <span class="card-step-label">Step 6</span>
+                            <h3>Scaling</h3>
+                            <p>Scale infrastructure and maintain systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Minimal -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Capabilities</span>
+                        <h2>Applications of <br>Cloud Platforms</h2>
+                        <p>Empowering businesses to build high-scale digital solutions with ease.</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-globe"></i></div>
+                            <h3>Web and mobile applications</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-box-open"></i></div>
+                            <h3>SaaS platforms</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-brain"></i></div>
+                            <h3>AI and data-driven systems</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-building"></i></div>
+                            <h3>Enterprise systems</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-shopping-cart"></i></div>
+                            <h3>E-commerce platforms</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-play-circle"></i></div>
+                            <h3>Streaming and real-time apps</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Use Cases -->
+        <section class="tech-solutions-premium">
+            <div class="container-box">
+                <div class="solutions-main-header">
+                    <span class="tech-badge">Functional Value</span>
+                    <h2>Practical Cloud Use Cases</h2>
+                </div>
+                <div class="solutions-stack">
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">01</span><div class="row-icon"><i class="fas fa-server"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Scalable web hosting</h3>
+                            <p>Deploy high-traffic websites that automatically handle spikes using elastic cloud resources.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">Hosting</span></div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">02</span><div class="row-icon"><i class="fas fa-cloud-sun"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Cloud-based SaaS platforms</h3>
+                            <p>Build and scale multi-tenant Software-as-a-Service applications with global reach and reliability.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">SaaS</span></div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">03</span><div class="row-icon"><i class="fas fa-chart-line"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Real-time analytics systems</h3>
+                            <p>Process massive streams of data instantly using managed cloud analytics and big data tools.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">Analytics</span></div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">04</span><div class="row-icon"><i class="fas fa-robot"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>AI model deployment</h3>
+                            <p>Host and serve complex machine learning models with high-performance GPU instances and APIs.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">AI</span></div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">05</span><div class="row-icon"><i class="fas fa-shield-virus"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Backup and disaster recovery</h3>
+                            <p>Ensure business continuity with automated, multi-region backups and rapid recovery systems.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">Security</span></div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">06</span><div class="row-icon"><i class="fas fa-globe-americas"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Multi-region applications</h3>
+                            <p>Deploy applications across multiple global data centers to reduce latency and improve reliability.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">Global</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries -->
+        <section class="tech-industries-curated">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Industries Using Cloud Platforms</h2>
+                    <p>Cloud infrastructure is the backbone of digital transformation across all sectors.</p>
+                </div>
+                <div class="industry-pills-grid">
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-code"></i></div><div class="pill-info"><h3>Technology</h3><p>SaaS, Development</p></div></div></div>
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-bank"></i></div><div class="pill-info"><h3>Finance</h3><p>Fintech, Payments</p></div></div></div>
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-heartbeat"></i></div><div class="pill-info"><h3>Healthcare</h3><p>EHR, Telemedicine</p></div></div></div>
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-shopping-bag"></i></div><div class="pill-info"><h3>Retail</h3><p>E-commerce, Supply Chain</p></div></div></div>
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-graduation-cap"></i></div><div class="pill-info"><h3>Education</h3><p>LMS, Remote Learning</p></div></div></div>
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-truck"></i></div><div class="pill-info"><h3>Logistics</h3><p>Fleet Tracking</p></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Challenges -->
+        <section class="tech-contrast-v3">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Strategic Analysis</span>
+                    <h2>Benefits vs. Challenges</h2>
+                </div>
+                <div class="contrast-grid-v3">
+                    <div class="contrast-card-v3 benefits">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-arrow-trend-up"></i></div>
+                            <h3>Benefits of <br>Cloud Platforms</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-check"></i> Scalability and flexibility</li>
+                                <li><i class="fas fa-circle-check"></i> Cost efficiency</li>
+                                <li><i class="fas fa-circle-check"></i> High availability</li>
+                                <li><i class="fas fa-circle-check"></i> Faster deployment</li>
+                                <li><i class="fas fa-circle-check"></i> Global accessibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contrast-card-v3 challenges">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-triangle-exclamation"></i></div>
+                            <h3>Challenges in <br>Cloud Computing</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-info"></i> Cloud cost management</li>
+                                <li><i class="fas fa-circle-info"></i> Security and compliance</li>
+                                <li><i class="fas fa-circle-info"></i> Vendor lock-in</li>
+                                <li><i class="fas fa-circle-info"></i> System complexity</li>
+                                <li><i class="fas fa-circle-info"></i> Data migration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Our Approach Stands Out -->
+        <section class="tech-approach-dashboard">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Our Advantage</span>
+                    <h2>Why Our Cloud Approach Stands Out</h2>
+                </div>
+                <div class="approach-dashboard-wrap">
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-drafting-compass"></i></div>
+                        <div class="item-main"><h3>Cloud-native architecture expertise</h3><p>We build applications from the ground up to leverage the full power of modern cloud environments.</p></div>
+                        <div class="item-status">Expert</div><div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-shield-alt"></i></div>
+                        <div class="item-main"><h3>Scalable and secure infrastructure</h3><p>Designing systems that grow with your business while maintaining strict enterprise-grade security.</p></div>
+                        <div class="item-status">Verified</div><div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-search-dollar"></i></div>
+                        <div class="item-main"><h3>Cost-optimized solutions</h3><p>Implementing monitoring and automation to ensure you only pay for the resources you actually need.</p></div>
+                        <div class="item-status">Certified</div><div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-infinity"></i></div>
+                        <div class="item-main"><h3>Strong DevOps integration</h3><p>Using CI/CD pipelines and infrastructure-as-code for rapid and highly reliable releases.</p></div>
+                        <div class="item-status">Premium</div><div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-sync"></i></div>
+                        <div class="item-main"><h3>Continuous monitoring and optimization</h3><p>Real-time tracking of performance and security to proactively handle any infrastructure issues.</p></div>
+                        <div class="item-status">Reliable</div><div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section class="tech-future-compact">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Future Tech</span>
+                    <h2>The Horizon of Cloud Platforms</h2>
+                </div>
+                <div class="compact-future-grid">
+                    <div class="compact-future-item"><div class="compact-visual"><i class="fas fa-bolt"></i></div><div class="compact-text"><h3>Serverless-first architecture</h3><p>Moving towards event-driven systems that eliminate all server management overhead.</p></div></div>
+                    <div class="compact-future-item"><div class="compact-visual"><i class="fas fa-robot"></i></div><div class="compact-text"><h3>AI-powered cloud systems</h3><p>Integrating AI into the infrastructure layer for self-healing and autonomous resource optimization.</p></div></div>
+                    <div class="compact-future-item"><div class="compact-visual"><i class="fas fa-microchip"></i></div><div class="compact-text"><h3>Edge and distributed computing</h3><p>Processing data at the network edge to deliver ultra-low latency for IoT and real-time apps.</p></div></div>
+                    <div class="compact-future-item"><div class="compact-visual"><i class="fas fa-project-diagram"></i></div><div class="compact-text"><h3>Multi-cloud strategies</h3><p>Using multiple cloud providers to avoid vendor lock-in and maximize service availability.</p></div></div>
+                    <div class="compact-future-item"><div class="compact-visual"><i class="fas fa-shield-virus"></i></div><div class="compact-text"><h3>Autonomous infrastructure</h3><p>Systems that automatically deploy, scale, and secure themselves based on high-level policies.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="tech-faq-section">
+            <div class="container-box">
+                <div class="section-header-modern"><span class="tech-badge">Knowledge Base</span><h2>Frequently Asked Questions (FAQs)</h2></div>
+                <div class="faq-accordion-wrap">
+                    <details class="faq-item" open><summary>What are cloud platforms?</summary><div class="faq-answer"><p>Cloud platforms provide infrastructure and services to build, run, and scale applications over the internet without managing physical hardware.</p></div></details>
+                    <details class="faq-item"><summary>What are examples of cloud platforms?</summary><div class="faq-answer"><p>The leading platforms include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).</p></div></details>
+                    <details class="faq-item"><summary>What is cloud-native development?</summary><div class="faq-answer"><p>It is the approach of building and running applications that exploit the advantages of the cloud computing delivery model.</p></div></details>
+                    <details class="faq-item"><summary>Is cloud scalable?</summary><div class="faq-answer"><p>Yes, one of the primary benefits is the ability to automatically scale resources up or down based on real-time demand.</p></div></details>
+                    <details class="faq-item"><summary>Can cloud platforms support AI applications?</summary><div class="faq-answer"><p>Absolutely. Modern cloud platforms offer extensive toolsets and GPU-powered infrastructure specifically for AI and ML.</p></div></details>
+                    <details class="faq-item"><summary>What is serverless computing?</summary><div class="faq-answer"><p>It's a model where you run code without managing servers. The cloud provider handles the infrastructure and scaling automatically.</p></div></details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="tech-final-cta-v3">
+            <div class="container-box">
+                <div class="cta-wrapper-v3">
+                    <div class="cta-glow-1"></div><div class="cta-glow-2"></div>
+                    <div class="cta-content-v3">
+                        <span class="cta-badge-v3">The Next Frontier</span>
+                        <h2>Ready to Build Scalable Cloud Solutions?</h2>
+                        <p>Leverage cloud platforms to build secure, scalable, and high-performance applications. Start your cloud journey with Alphabit today.</p>
+                        <div class="cta-action-v3"><a href="contact.php" class="cta-btn-main"><span>Start Your Cloud Project</span><i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="Footer">
+            <div class="footer-bg-clip"><div class="footer-bg-circle"></div></div>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-icons">
+                        <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter"></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img src="./assets/images/linkedin2.webp" alt="linkedin"></a>
+                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img src="./assets/images/instagram.webp" alt="instagram"></a>
+                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img src="./assets/images/facebook2.webp" alt="facebook"></a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
+                        <h1 class="footer-title"><span> LET'S</span> TALK <br>WITH US</h1>
+                        <p class="footer-email">info@alphabitinfoway.com</p>
+                    </div>
+                </div>
+                <div class="footer-right"><img src="./assets/images/AI Model.webp" alt="Robot"></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+                <div class="footer-links"><a href="#">AGENCY</a><a href="#">CAREER</a><a href="#">PRIVACY</a><a href="#">TERMS &amp; CONDITION</a></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        function updateStepper(stepIndex) {
+            const dots = document.querySelectorAll('.stepper-dot');
+            const cards = document.querySelectorAll('.stepper-card-item');
+            const fill = document.querySelector('.stepper-progress-fill');
+            const progressWidth = ((stepIndex - 1) / (dots.length - 1)) * 100;
+            fill.style.width = progressWidth + '%';
+            dots.forEach((dot, index) => {
+                if (index + 1 <= stepIndex) {
+                    dot.classList.add('active');
+                    dot.innerHTML = index + 1 < stepIndex || stepIndex === index + 1 ? '<i class="fas fa-check"></i>' : (index + 1).toString().padStart(2, '0');
+                } else { dot.classList.remove('active'); dot.innerHTML = (index + 1).toString().padStart(2, '0'); }
+            });
+            cards.forEach((card, index) => { card.classList.toggle('active', index + 1 === stepIndex); });
+        }
+        document.querySelectorAll('.stepper-card-item').forEach((card, index) => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => updateStepper(index + 1));
+        });
+        window.addEventListener('DOMContentLoaded', () => updateStepper(1));
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
