@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Backend Development Technologies | Scalable Systems & API Architecture | Alphabit</title>
+    <meta name="description"
+        content="Learn backend technologies, frameworks, and system design used to build scalable, secure, and high-performance applications. Power modern web apps with robust APIs, databases, and AI-driven backend systems." />
+    <meta name="keywords"
+        content="Backend Development, Scalable Systems, API Architecture, Microservices, Cloud Native, Alphabit Infoway" />
+    <meta name="author" content="Alphabit Infoway" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/technologies.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Minimal Preloader -->
+    <div id="preloader">
+        <div class="minimal-loader">
+            <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+            <div class="loader-progress-bar"></div>
+            <div class="loader-text">Compiling Backend Systems...</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <h6><a href="./">Home</a></h6>
+                <h6 class="dropdown">
+                    <a href="services" class="dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+                        <li><a href="services">Cyber Security & Compliance</a></li>
+                        <li><a href="services">Full Stack Web Development</a></li>
+                        <li><a href="services">Mobile App & Product Design</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="#products">Products</a></h6>
+                <h6 class="dropdown">
+                    <a href="Technology" class="dropdown-toggle">Technology</a>
+                    <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Artificial Intelligence</li>
+                        <li><a href="ai-development-technologies.html">AI Development</a></li>
+                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Web Technologies</li>
+                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+                        <li><a href="backend-technologies.html">Backend Development</a></li>
+                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Mobile Technologies</li>
+                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
+                        <li><a href="android-development-technologies.html">Android Development</a></li>
+                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cloud & DevOps</li>
+                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
+                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
+                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Data & Analytics</li>
+                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
+                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
+                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cyber Security</li>
+                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
+                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="about">About</a></h6>
+                <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+                <h6 class="dropdown">
+                    <a href="#" class="dropdown-toggle">Insights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="career">Career</a></li>
+                    </ul>
+                </h6>
+                <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+            </nav>
+            <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="tech-hero-modern">
+            <div class="tech-hero-background">
+                <div class="mesh-gradient"></div>
+                <div class="grid-overlay"></div>
+                <div class="wave-mesh"></div>
+            </div>
+            <div class="container-box">
+                <div class="tech-hero-content">
+                    <div class="tech-hero-text">
+                        <nav class="breadcrumb">
+                            <a href="index.html">Home</a> / <a href="Technology">Technology</a> / <span>Backend
+                                Technologies</span>
+                        </nav>
+                        <h1>Backend Development <br />Technologies & Capabilities</h1>
+                        <p>Backend development is the engine behind modern applications — handling data processing,
+                            business logic, authentication, and system scalability. In AI-driven systems, backend
+                            architectures manage model execution, real-time data pipelines, and intelligent
+                            decision-making. At Alphabit, backend systems are designed to be scalable, secure, and
+                            optimized for real-time and AI-powered applications.</p>
+
+                        <div class="hero-stats-row">
+                            <div class="hero-stat">
+                                <h3>8+</h3>
+                                <p>Frameworks & Runtimes</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>20+</h3>
+                                <p>Tools & Technologies</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>5+</h3>
+                                <p>Architecture Patterns</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>12+</h3>
+                                <p>Real-World Use Cases</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tech-hero-illustration">
+                        <img src="./assets/images/generative-ai-hero.png" alt="Backend Technologies" />
+                    </div>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn-primary-tech">Explore Backend Ecosystem</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adoption & Impact -->
+        <section class="tech-impact-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Strategic Value</span>
+                    <h2>Backend Adoption & Impact</h2>
+                    <p>Backend technologies play a critical role in powering scalable and intelligent applications.</p>
+                </div>
+                <div class="impact-cards-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Scalable System Architecture</h3>
+                            <p>Design systems that handle growing user loads and data efficiently.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>High-Performance Processing</h3>
+                            <p>Enable fast data processing, real-time operations, and optimized system performance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Secure Data Management</h3>
+                            <p>Ensure data protection, authentication, and secure communication across systems.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>API-Driven Development</h3>
+                            <p>Build flexible and reusable backend services accessible across platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution -->
+        <section class="tech-evolution-perfect">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">The Journey</span>
+                    <h2>Evolution of Backend Development</h2>
+                    <p>Backend technologies have evolved significantly to meet modern demands.</p>
+                </div>
+
+                <div class="evolution-timeline-container">
+                    <div class="timeline-main-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 01</span>
+                            <h3>Monolithic Systems</h3>
+                            <p>Single unified applications with tightly coupled components.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 02</span>
+                            <h3>Layered Architecture</h3>
+                            <p>Separation of concerns with structured backend layers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 03</span>
+                            <h3>Service-Oriented Architecture (SOA)</h3>
+                            <p>Reusable services communicating across systems.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 04</span>
+                            <h3>Microservices Architecture</h3>
+                            <p>Independent, scalable services with distributed deployment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 05</span>
+                            <h3>Cloud-Native & Serverless Systems</h3>
+                            <p>Highly scalable, event-driven backend systems using cloud infrastructure.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types of Tech -->
+        <section class="tech-types-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Capabilities</span>
+                    <h2>Types of Backend Technologies</h2>
+                    <p>Backend development includes various approaches to build scalable and efficient systems.</p>
+                </div>
+
+                <div class="tech-types-grid">
+                    <div class="type-card accent-purple">
+                        <div class="type-icon-box">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3>API-Driven Backends</h3>
+                        <p>Build applications using APIs to enable communication between frontend, mobile apps, and
+                            external systems.</p>
+                        <div class="type-tags">
+                            <span>REST and GraphQL APIs</span>
+                            <span>Scalable service endpoints</span>
+                            <span>Flexible integration</span>
+                            <span>Platform-independent architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-orange">
+                        <div class="type-icon-box">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Microservices Architecture</h3>
+                        <p>Develop applications as a collection of independent services for better scalability and
+                            maintainability.</p>
+                        <div class="type-tags">
+                            <span>Independent deployments</span>
+                            <span>Fault isolation</span>
+                            <span>Scalable services</span>
+                            <span>Faster development cycles</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-cyan">
+                        <div class="type-icon-box">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Real-Time Backend Systems</h3>
+                        <p>Enable live data processing and real-time communication across applications.</p>
+                        <div class="type-tags">
+                            <span>WebSockets & event streaming</span>
+                            <span>Live notifications</span>
+                            <span>Real-time analytics</span>
+                            <span>Instant updates</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-emerald">
+                        <div class="type-icon-box">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud-Native Backends</h3>
+                        <p>Leverage cloud platforms for scalable, resilient, and distributed systems.
+                        </p>
+                        <div class="type-tags">
+                            <span>Auto-scaling infrastructure</span>
+                            <span>Managed services</span>
+                            <span>High availability</span>
+                            <span>Global deployment</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-blue" style="grid-column: span 1;">
+                        <div class="type-icon-box">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI-Integrated Backends</h3>
+                        <p>Integrate AI models and data pipelines into backend systems for intelligent applications.</p>
+                        <div class="type-tags">
+                            <span>Machine learning APIs</span>
+                            <span>Data processing pipelines</span>
+                            <span>Predictive systems</span>
+                            <span>Automation workflows</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Technologies -->
+        <section class="tech-advanced-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Advanced Architecture</span>
+                    <h2>Advanced Backend Technologies</h2>
+                    <p>Modern backend development goes beyond traditional server logic — enabling intelligent, scalable
+                        systems.</p>
+                </div>
+
+                <div class="advanced-tech-grid">
+                    <div class="adv-card featured">
+                        <div class="adv-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="adv-info">
+                            <h3>Distributed System Architecture</h3>
+                            <p>Design systems that run across multiple servers and environments efficiently.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-stream"></i></div>
+                        <div class="adv-info">
+                            <h3>Event-Driven Systems</h3>
+                            <p>Process asynchronous events using message queues and streaming platforms.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-server"></i></div>
+                        <div class="adv-info">
+                            <h3>Serverless Computing</h3>
+                            <p>Execute backend logic without managing infrastructure.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="adv-info">
+                            <h3>API Gateway & Service Mesh</h3>
+                            <p>Manage service communication, routing, and security in distributed systems.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-database"></i></div>
+                        <div class="adv-info">
+                            <h3>Data Engineering Pipelines</h3>
+                            <p>Process and manage large-scale structured and unstructured data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Components Neural Map -->
+        <section class="tech-components-neural">
+            <div class="container-header-flow">
+                <div class="container-box">
+                    <div class="section-header-modern">
+                        <span class="tech-badge">System Neural Map</span>
+                        <h2>Key Components of Backend Systems</h2>
+                        <p>A production-ready backend system includes interconnected layers to process data and serve
+                            modern applications.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="neural-map-viewport">
+                <div class="container-box">
+                    <div class="neural-map-container">
+                        <!-- Connecting SVG Path (Neural Pathways) -->
+                        <svg class="neural-pathways" width="100%" height="100%" viewBox="0 0 1000 600"
+                            preserveAspectRatio="none">
+                            <path class="path-line" d="M500,300 L166,100" />
+                            <path class="path-line" d="M500,300 L833,100" />
+                            <path class="path-line" d="M500,300 L166,300" />
+                            <path class="path-line" d="M500,300 L833,300" />
+                            <path class="path-line" d="M500,300 L166,500" />
+                            <path class="path-line" d="M500,300 L833,500" />
+                        </svg>
+
+                        <!-- Central Hub -->
+                        <div class="neural-hub">
+                            <div class="hub-pulse"></div>
+                            <div class="hub-glass">
+                                <i class="fas fa-cogs"></i>
+                                <span>BACKEND CORE</span>
+                            </div>
+                        </div>
+
+                        <!-- Satellite Nodes -->
+                        <!-- Top Left -->
+                        <div class="neural-node node-tl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-laptop-code"></i></div>
+                                <h3>Application Layer</h3>
+                                <p>Handles core business logic and processing.</p>
+                            </div>
+                        </div>
+
+                        <!-- Top Right -->
+                        <div class="neural-node node-tr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-exchange-alt"></i></div>
+                                <h3>API Layer</h3>
+                                <p>Manages communication between frontend and backend services.</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Left -->
+                        <div class="neural-node node-ml">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-database"></i></div>
+                                <h3>Database Layer</h3>
+                                <p>Stores and retrieves structured and unstructured data.</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Right -->
+                        <div class="neural-node node-mr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-shield-alt"></i></div>
+                                <h3>Authentication & Security Layer</h3>
+                                <p>Ensures secure access and data protection.</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Left -->
+                        <div class="neural-node node-bl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-plug"></i></div>
+                                <h3>Integration Layer</h3>
+                                <p>Connects third-party services and external systems.</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Right -->
+                        <div class="neural-node node-br">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-tasks"></i></div>
+                                <h3>Processing Layer</h3>
+                                <p>Handles background jobs, queues, and data processing tasks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture & System Design -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Infrastructure</span>
+                        <h2>Backend Architecture <br>& System Design</h2>
+                        <p>Modern backend systems follow scalable architecture patterns.</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-cubes"></i></div>
+                            <h3>Microservices and modular architecture</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-code"></i></div>
+                            <h3>API-first development</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-bolt"></i></div>
+                            <h3>Event-driven systems</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>Distributed system design</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>Cloud-native infrastructure</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-database"></i></div>
+                            <h3>Scalable data architecture</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-stack-v2">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Powered By</span>
+                    <h2>Backend Tech Stack</h2>
+                    <p>We use robust languages, frameworks, and tools to build exceptional backend architectures.</p>
+                </div>
+
+                <div class="stack-v2-container">
+                    <!-- Languages -->
+                    <div class="stack-v2-card">
+                        <div class="card-bg-icon"><i class="fas fa-code"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Languages</span>
+                            <h3>Programming Languages</h3>
+                            <div class="tags-row">
+                                <span>JavaScript (Node.js)</span>
+                                <span>Python</span>
+                                <span>Java</span>
+                                <span>C#</span>
+                                <span>Go</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="stack-v2-card theme-purple">
+                        <div class="card-bg-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Frameworks</span>
+                            <h3>Frameworks & Runtimes</h3>
+                            <div class="tags-row">
+                                <span>Express.js</span>
+                                <span>NestJS</span>
+                                <span>Spring Boot</span>
+                                <span>Django</span>
+                                <span>ASP.NET Core</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="stack-v2-card theme-orange">
+                        <div class="card-bg-icon"><i class="fas fa-database"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Storage</span>
+                            <h3>Databases</h3>
+                            <div class="tags-row">
+                                <span>MySQL</span>
+                                <span>PostgreSQL</span>
+                                <span>MongoDB</span>
+                                <span>Redis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APIs -->
+                    <div class="stack-v2-card theme-cyan">
+                        <div class="card-bg-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Integration</span>
+                            <h3>API Technologies</h3>
+                            <div class="tags-row">
+                                <span>REST APIs</span>
+                                <span>GraphQL</span>
+                                <span>gRPC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Platforms -->
+                    <div class="stack-v2-card theme-blue">
+                        <div class="card-bg-icon"><i class="fas fa-cloud"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Cloud</span>
+                            <h3>Cloud Platforms</h3>
+                            <div class="tags-row">
+                                <span>AWS</span>
+                                <span>Microsoft Azure</span>
+                                <span>Google Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps -->
+                    <div class="stack-v2-card theme-green">
+                        <div class="card-bg-icon"><i class="fas fa-server"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Operations</span>
+                            <h3>DevOps & Deployment</h3>
+                            <div class="tags-row">
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                                <span>CI/CD pipelines</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Messaging -->
+                    <div class="stack-v2-card theme-blue" style="grid-column: span 1;">
+                        <div class="card-bg-icon"><i class="fas fa-stream"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Streaming</span>
+                            <h3>Messaging & Streaming</h3>
+                            <div class="tags-row">
+                                <span>Kafka</span>
+                                <span>RabbitMQ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Lifecycle -->
+        <section class="tech-lifecycle-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Development Flow</span>
+                    <h2>Backend Development Lifecycle</h2>
+                    <p>Our structured approach ensures scalable and robust backend solutions.</p>
+                </div>
+
+                <div class="horizontal-stepper-system">
+                    <!-- Progress Line & Dots -->
+                    <div class="stepper-track-wrap">
+                        <div class="stepper-main-line">
+                            <div class="stepper-progress-fill"></div>
+                        </div>
+                        <div class="stepper-dots-row">
+                            <div class="stepper-dot active"><i class="fas fa-check"></i></div>
+                            <div class="stepper-dot">02</div>
+                            <div class="stepper-dot">03</div>
+                            <div class="stepper-dot">04</div>
+                            <div class="stepper-dot">05</div>
+                            <div class="stepper-dot">06</div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Cards Grid -->
+                    <div class="stepper-cards-grid">
+                        <!-- Step 01 -->
+                        <div class="stepper-card-item active">
+                            <div class="card-top-icon"><i class="fas fa-clipboard-list"></i></div>
+                            <span class="card-step-label">Step 1</span>
+                            <h3>Requirement <br>Analysis</h3>
+                            <p>Define system requirements, data flow, and architecture.</p>
+                        </div>
+
+                        <!-- Step 02 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-sitemap"></i></div>
+                            <span class="card-step-label">Step 2</span>
+                            <h3>System <br>Design</h3>
+                            <p>Design scalable architecture and database structure.</p>
+                        </div>
+
+                        <!-- Step 03 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-plug"></i></div>
+                            <span class="card-step-label">Step 3</span>
+                            <h3>API <br>Development</h3>
+                            <p>Build secure and efficient APIs.</p>
+                        </div>
+
+                        <!-- Step 04 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-link"></i></div>
+                            <span class="card-step-label">Step 4</span>
+                            <h3>Integration</h3>
+                            <p>Connect frontend, third-party services, and external systems.</p>
+                        </div>
+
+                        <!-- Step 05 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-vial"></i></div>
+                            <span class="card-step-label">Step 5</span>
+                            <h3>Testing & <br>Optimization</h3>
+                            <p>Ensure performance, security, and scalability.</p>
+                        </div>
+
+                        <!-- Step 06 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-rocket"></i></div>
+                            <span class="card-step-label">Step 6</span>
+                            <h3>Deployment & <br>Monitoring</h3>
+                            <p>Deploy applications and continuously monitor system performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications of Tech -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Capabilities</span>
+                        <h2>Applications of <br>Backend Technologies</h2>
+                        <p>Backend systems power a wide range of mission-critical applications.</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-laptop"></i></div>
+                            <h3>Web applications</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <h3>Mobile applications</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>SaaS platforms</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-brain"></i></div>
+                            <h3>AI and data-driven systems</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-shopping-cart"></i></div>
+                            <h3>E-commerce platforms</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-building"></i></div>
+                            <h3>Enterprise systems</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Use Cases Section -->
+        <section class="tech-solutions-premium">
+            <div class="container-box">
+                <div class="solutions-main-header">
+                    <span class="tech-badge">Functional Value</span>
+                    <h2>Practical Use Cases</h2>
+                </div>
+
+                <div class="solutions-stack">
+                    <!-- Case 1 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">01</span>
+                            <div class="row-icon"><i class="fas fa-bolt"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Real-time data processing systems</h3>
+                            <p>Handling live streams of data for instant analytics and actions.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Data Processing</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">02</span>
+                            <div class="row-icon"><i class="fas fa-credit-card"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Payment and transaction systems</h3>
+                            <p>Secure, atomic, and scalable financial gateways.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Finance</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 3 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">03</span>
+                            <div class="row-icon"><i class="fas fa-robot"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>AI model integration</h3>
+                            <p>Serving machine learning predictions via high-throughput endpoints.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">AI</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 4 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">04</span>
+                            <div class="row-icon"><i class="fas fa-cloud"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Scalable SaaS platforms</h3>
+                            <p>Multi-tenant architectures supporting thousands of concurrent users.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">SaaS</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 5 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">05</span>
+                            <div class="row-icon"><i class="fas fa-network-wired"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>API platforms and integrations</h3>
+                            <p>Centralized hubs connecting disparate external systems safely.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Integration</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 6 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">06</span>
+                            <div class="row-icon"><i class="fas fa-sitemap"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Enterprise workflow systems</h3>
+                            <p>Automating complex business processes with durable execution.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Enterprise</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section class="tech-industries-curated">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Industries Using Backend Technologies</h2>
+                    <p>Delivering secure and robust systems across diverse sectors.</p>
+                </div>
+
+                <div class="industry-pills-grid">
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-laptop-code"></i></div>
+                            <div class="pill-info">
+                                <h3>Technology platforms</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-money-bill-wave"></i></div>
+                            <div class="pill-info">
+                                <h3>Finance & fintech</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-heartbeat"></i></div>
+                            <div class="pill-info">
+                                <h3>Healthcare systems</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-shopping-bag"></i></div>
+                            <div class="pill-info">
+                                <h3>Retail & e-commerce</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-truck"></i></div>
+                            <div class="pill-info">
+                                <h3>Logistics & supply chain</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="pill-info">
+                                <h3>Education platforms</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Challenges -->
+        <section class="tech-contrast-v3">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Benefits vs. Challenges</h2>
+                </div>
+
+                <div class="contrast-grid-v3">
+                    <!-- Benefits Panel -->
+                    <div class="contrast-card-v3 benefits">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-arrow-trend-up"></i></div>
+                            <h3>Benefits of <br>Backend Technologies</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-check"></i> Scalable and flexible systems</li>
+                                <li><i class="fas fa-circle-check"></i> High performance and reliability</li>
+                                <li><i class="fas fa-circle-check"></i> Secure data handling</li>
+                                <li><i class="fas fa-circle-check"></i> Efficient API integrations</li>
+                                <li><i class="fas fa-circle-check"></i> Real-time processing capabilities</li>
+                                <li><i class="fas fa-circle-check"></i> Cloud scalability</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Challenges Panel -->
+                    <div class="contrast-card-v3 challenges">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-triangle-exclamation"></i></div>
+                            <h3>Challenges in <br>Backend Development</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-info"></i> Managing system scalability</li>
+                                <li><i class="fas fa-circle-info"></i> Ensuring data security</li>
+                                <li><i class="fas fa-circle-info"></i> Handling distributed systems complexity</li>
+                                <li><i class="fas fa-circle-info"></i> Integration with multiple services</li>
+                                <li><i class="fas fa-circle-info"></i> Performance optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Our Approach Stands Out -->
+        <section class="tech-approach-dashboard">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Our Advantage</span>
+                    <h2>Why Our Backend Approach Stands Out</h2>
+                    <p>We combine advanced architecture with rigorous engineering standards.</p>
+                </div>
+
+                <div class="approach-dashboard-wrap">
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-layer-group"></i></div>
+                        <div class="item-main">
+                            <h3>Scalable and future-ready architecture</h3>
+                            <p>We build resilient systems designed for horizontal growth.</p>
+                        </div>
+                        <div class="item-status">Active</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-bolt"></i></div>
+                        <div class="item-main">
+                            <h3>Performance-optimized systems</h3>
+                            <p>Optimized queries and infrastructure for blazing fast response times.</p>
+                        </div>
+                        <div class="item-status">Verified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-shield-alt"></i></div>
+                        <div class="item-main">
+                            <h3>Secure and reliable backend solutions</h3>
+                            <p>Enterprise-grade security, auth, and data protection built in.</p>
+                        </div>
+                        <div class="item-status">Certified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-code"></i></div>
+                        <div class="item-main">
+                            <h3>Strong API design expertise</h3>
+                            <p>Following strict REST and GraphQL standards for clear integrations.</p>
+                        </div>
+                        <div class="item-status">Dynamic</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-sync"></i></div>
+                        <div class="item-main">
+                            <h3>Continuous monitoring and optimization</h3>
+                            <p>Iterative updates to ensure ongoing performance and security.</p>
+                        </div>
+                        <div class="item-status">Secure</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future of Tech -->
+        <section class="tech-future-compact">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Future Tech</span>
+                    <h2>Future of Backend Development</h2>
+                </div>
+
+                <div class="compact-future-grid">
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-server"></i></div>
+                        <div class="compact-text">
+                            <h3>Serverless-first architecture</h3>
+                            <p>Systems eliminating infrastructure management overhead.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-robot"></i></div>
+                        <div class="compact-text">
+                            <h3>AI-driven backend systems</h3>
+                            <p>Architectures optimizing themselves dynamically.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-bolt"></i></div>
+                        <div class="compact-text">
+                            <h3>Real-time data processing at scale</h3>
+                            <p>Instant analytics processing millions of events per second.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-network-wired"></i></div>
+                        <div class="compact-text">
+                            <h3>Edge computing integration</h3>
+                            <p>Moving computation closer to the source for lower latency.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-cogs"></i></div>
+                        <div class="compact-text">
+                            <h3>Autonomous system optimization</h3>
+                            <p>AI managing resource scaling and bottleneck resolution automatically.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="tech-faq-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Knowledge Base</span>
+                    <h2>Frequently Asked Questions (FAQs)</h2>
+                    <p>Everything you need to know about Backend technologies and how we implement them.</p>
+                </div>
+
+                <div class="faq-accordion-wrap">
+                    <details class="faq-item" open>
+                        <summary>What are backend technologies?</summary>
+                        <div class="faq-answer">
+                            <p>Backend technologies are tools and frameworks used to build server-side logic, APIs, and
+                                databases for applications.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is a backend tech stack?</summary>
+                        <div class="faq-answer">
+                            <p>It includes programming languages, frameworks, databases, and infrastructure used to
+                                build backend systems.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is API in backend development?</summary>
+                        <div class="faq-answer">
+                            <p>An API allows communication between frontend applications and backend services.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What are modern backend frameworks?</summary>
+                        <div class="faq-answer">
+                            <p>Node.js, Django, Spring Boot, and ASP.NET Core are widely used frameworks.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Is backend development important for AI applications?</summary>
+                        <div class="faq-answer">
+                            <p>Yes, backend systems handle data processing, model integration, and API delivery for AI
+                                applications.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is the difference between monolithic and microservices architecture?</summary>
+                        <div class="faq-answer">
+                            <p>Monolithic is a single system, while microservices divide the system into independent
+                                services.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Is the backend scalable?</summary>
+                        <div class="faq-answer">
+                            <p>Yes, with cloud-native architecture and proper system design, backend systems can scale
+                                efficiently.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="tech-final-cta-v3">
+            <div class="container-box">
+                <div class="cta-wrapper-v3">
+                    <div class="cta-glow-1"></div>
+                    <div class="cta-glow-2"></div>
+
+                    <div class="cta-content-v3">
+                        <span class="cta-badge-v3">The Next Frontier</span>
+                        <h2>Build Scalable Backend Systems</h2>
+                        <p>Create secure, high-performance backend systems that power modern applications.</p>
+
+                        <div class="cta-action-v3">
+                            <a href="contact.html" class="cta-btn-main">
+                                <span>Start Your Backend Project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="Footer">
+            <div class="footer-bg-clip">
+                <div class="footer-bg-circle"></div>
+            </div>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-icons">
+                        <a target="_blank" href="#">
+                            <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                                src="./assets/images/instagram.webp" alt="instagram" /></a>
+                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                                src="./assets/images/facebook2.webp" alt="facebook" /></a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="footer-greet">
+                            <span class="hand">👋</span> Hey Innovator,
+                        </p>
+                        <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+                        <p class="footer-email">info@alphabitinfoway.com</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <img src="./assets/images/AI Model.webp" alt="Robot" />
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+                <div class="footer-links">
+                    <a href="#">AGENCY</a>
+                    <a href="#">CAREER</a>
+                    <a href="#">PRIVACY</a>
+                    <a href="#">TERMS &amp; CONDITION</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Lifecycle Stepper Interactivity
+        function updateStepper(stepIndex) {
+            const dots = document.querySelectorAll('.stepper-dot');
+            const cards = document.querySelectorAll('.stepper-card-item');
+            const fill = document.querySelector('.stepper-progress-fill');
+
+            // Calculate progress width (0% to 100% across 6 steps)
+            const progressWidth = ((stepIndex - 1) / (dots.length - 1)) * 100;
+            fill.style.width = progressWidth + '%';
+
+            // Update Active States for Dots
+            dots.forEach((dot, index) => {
+                if (index + 1 <= stepIndex) {
+                    dot.classList.add('active');
+                    if (index + 1 < stepIndex || stepIndex === index + 1) {
+                        dot.innerHTML = '<i class="fas fa-check"></i>';
+                    }
+                } else {
+                    dot.classList.remove('active');
+                    dot.innerHTML = (index + 1).toString().padStart(2, '0');
+                }
+            });
+
+            // Update Active States for Cards
+            cards.forEach((card, index) => {
+                if (index + 1 === stepIndex) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+        }
+
+        // Add Click Events to Cards
+        document.querySelectorAll('.stepper-card-item').forEach((card, index) => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => updateStepper(index + 1));
+        });
+
+        // Initialize at Step 1
+        window.addEventListener('DOMContentLoaded', () => updateStepper(1));
+    </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
+

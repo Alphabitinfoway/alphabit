@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Data Processing Technologies & Capabilities | Alphabit</title>
+    <meta name="description"
+        content="Explore data processing technologies, tools, and capabilities. Learn data pipelines, batch and real-time processing, and how AI systems transform raw data into actionable insights." />
+    <meta name="keywords"
+        content="Data Processing, ETL, ELT, Apache Spark, Apache Kafka, Big Data, Data Pipelines, Alphabit Infoway" />
+    <meta name="author" content="Alphabit Infoway" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/technologies.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Minimal Preloader -->
+    <div id="preloader">
+        <div class="minimal-loader">
+            <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+            <div class="loader-progress-bar"></div>
+            <div class="loader-text">Transforming Raw Data...</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <h6><a href="./">Home</a></h6>
+                <h6 class="dropdown">
+                    <a href="services" class="dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+                        <li><a href="security-solutions-technologies.html">Cyber Security & Compliance</a></li>
+                        <li><a href="Webdevlopment.html">Full Stack Web Development</a></li>
+                        <li><a href="services">Mobile App & Product Design</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="./#products">Products</a></h6>
+                <h6 class="dropdown">
+                    <a href="Technology" class="dropdown-toggle">Technology</a>
+                    <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Artificial Intelligence</li>
+                        <li><a href="ai-development-technologies.html">AI Development</a></li>
+                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Web Technologies</li>
+                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+                        <li><a href="backend-technologies.html">Backend Development</a></li>
+                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Mobile Technologies</li>
+                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
+                        <li><a href="android-development-technologies.html">Android Development</a></li>
+                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cloud & DevOps</li>
+                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
+                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
+                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Data & Analytics</li>
+                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
+                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
+                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cyber Security</li>
+                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
+                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="about">About</a></h6>
+                <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+                <h6 class="dropdown">
+                    <a href="#" class="dropdown-toggle">Insights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="career">Career</a></li>
+                    </ul>
+                </h6>
+                <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+            </nav>
+            <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="tech-hero-modern">
+            <div class="tech-hero-background">
+                <div class="mesh-gradient"></div>
+                <div class="grid-overlay"></div>
+                <div class="wave-mesh"></div>
+            </div>
+            <div class="container-box">
+                <div class="tech-hero-content">
+                    <div class="tech-hero-text">
+                        <nav class="breadcrumb">
+                            <a href="index.html">Home</a> / <a href="Technology">Technology</a> / <span>Data Processing
+                                Technologies</span>
+                        </nav>
+                        <h1>Data Processing <br />Technologies & Capabilities</h1>
+                        <p>Data Processing is a critical layer in AI systems — transforming raw, unstructured data into
+                            clean, structured, and usable formats. At Alphabit, we build scalable data processing
+                            pipelines that power analytics, machine learning, and real-time intelligence.</p>
+
+                        <div class="hero-stats-row">
+                            <div class="hero-stat">
+                                <h3>5+</h3>
+                                <p>Processing Methods</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>10+</h3>
+                                <p>Tools & Frameworks</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>3</h3>
+                                <p>Cloud Platforms</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>6+</h3>
+                                <p>Industry Applications</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tech-hero-illustration">
+                        <img src="./assets/images/Service/ai_architecture.png" alt="Data Processing Technologies" />
+                    </div>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn-primary-tech">Talk to a Data Processing Expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Adoption & Impact -->
+        <section class="tech-impact-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Strategic Value</span>
+                    <h2>Data Processing Adoption & Impact</h2>
+                    <p>Modern businesses rely on efficient data processing to unlock value from massive datasets.</p>
+                </div>
+                <div class="impact-cards-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Efficient Data Transformation</h3>
+                            <p>Convert raw data into structured formats ready for analytics and AI.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Real-Time Insights</h3>
+                            <p>Process live data streams to enable instant decision-making.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Scalability</h3>
+                            <p>Handle growing volumes of data with distributed processing systems.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Improved Data Quality</h3>
+                            <p>Clean, validate, and standardize data for reliable outcomes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution -->
+        <section class="tech-evolution-perfect">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">The Journey</span>
+                    <h2>Evolution of Data Processing</h2>
+                    <p>Data processing has evolved from manual systems to intelligent, automated pipelines.</p>
+                </div>
+
+                <div class="evolution-timeline-container">
+                    <div class="timeline-main-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">01</span>
+                            <h3>Manual Processing</h3>
+                            <p>Early data handling using spreadsheets and basic tools.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">02</span>
+                            <h3>Batch Processing</h3>
+                            <p>Scheduled jobs process large datasets at intervals.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">03</span>
+                            <h3>Distributed Processing</h3>
+                            <p>Parallel systems handle large-scale data efficiently.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-stream"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">04</span>
+                            <h3>Stream Processing</h3>
+                            <p>Real-time systems process continuous data flows.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">05</span>
+                            <h3>AI-Driven Processing</h3>
+                            <p>Automated pipelines optimize data transformation using AI.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Types of Tech -->
+        <section class="tech-types-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Capabilities</span>
+                    <h2>Types of Data Processing Technologies</h2>
+                    <p>Different processing methods are used based on business needs and data velocity.</p>
+                </div>
+
+                <div class="tech-types-grid">
+                    <div class="type-card accent-purple">
+                        <div class="type-icon-box">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>Batch Processing (Large-Scale Scheduled Processing)</h3>
+                        <p>Processes high volumes of data at scheduled intervals.</p>
+                        <div class="type-tags">
+                            <span>ETL Pipelines</span>
+                            <span>Data Warehousing</span>
+                            <span>Historical Analysis</span>
+                            <span>Reporting Systems</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-orange">
+                        <div class="type-icon-box">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Stream Processing (Real-Time Data Processing)</h3>
+                        <p>Handles continuous data streams for immediate insights.</p>
+                        <div class="type-tags">
+                            <span>Event Streaming</span>
+                            <span>Real-Time Analytics</span>
+                            <span>Fraud Detection</span>
+                            <span>IoT Processing</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-cyan">
+                        <div class="type-icon-box">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>ETL Processing (Extract, Transform, Load)</h3>
+                        <p>Moves and transforms data from sources to storage systems.</p>
+                        <div class="type-tags">
+                            <span>Data Integration</span>
+                            <span>Data Cleaning</span>
+                            <span>Data Transformation</span>
+                            <span>Data Loading</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-emerald">
+                        <div class="type-icon-box">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3>ELT Processing (Extract, Load, Transform)</h3>
+                        <p>Loads raw data first and transforms it within modern data warehouses.</p>
+                        <div class="type-tags">
+                            <span>Cloud Data Warehousing</span>
+                            <span>Scalable Transformation</span>
+                            <span>Schema Flexibility</span>
+                            <span>Analytics Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Data Processing Technologies -->
+        <section class="tech-advanced-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Advanced Architecture</span>
+                    <h2>Advanced Data Processing Technologies</h2>
+                    <p>Modern systems focus on automation, speed, and intelligence.</p>
+                </div>
+
+                <div class="advanced-tech-grid">
+                    <div class="adv-card featured">
+                        <div class="adv-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="adv-info">
+                            <h3>Distributed Computing</h3>
+                            <p>Processes massive datasets across multiple nodes.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-memory"></i></div>
+                        <div class="adv-info">
+                            <h3>In-Memory Processing</h3>
+                            <p>Speeds up computations by storing data in memory.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-robot"></i></div>
+                        <div class="adv-info">
+                            <h3>Data Pipeline Automation</h3>
+                            <p>Automates workflows for ingestion, transformation, and delivery.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-stream"></i></div>
+                        <div class="adv-info">
+                            <h3>Real-Time Stream Processing</h3>
+                            <p>Enables instant processing of live data streams.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-brain"></i></div>
+                        <div class="adv-info">
+                            <h3>AI-Powered Data Processing</h3>
+                            <p>Uses machine learning to optimize and automate transformations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Key Components -->
+        <section class="tech-components-neural">
+            <div class="container-header-flow">
+                <div class="container-box">
+                    <div class="section-header-modern">
+                        <span class="tech-badge">System Neural Map</span>
+                        <h2>Key Components of Data Processing Systems</h2>
+                        <p>A production-grade system includes:</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="neural-map-viewport">
+                <div class="container-box">
+                    <div class="neural-map-container">
+                        <!-- Connecting SVG Path (Neural Pathways) -->
+                        <svg class="neural-pathways" width="100%" height="100%" viewBox="0 0 1000 600"
+                            preserveAspectRatio="none">
+                            <path class="path-line" d="M500,300 L166,100" />
+                            <path class="path-line" d="M500,300 L833,100" />
+                            <path class="path-line" d="M500,300 L166,300" />
+                            <path class="path-line" d="M500,300 L833,300" />
+                            <path class="path-line" d="M500,300 L166,500" />
+                            <path class="path-line" d="M500,300 L833,500" />
+                        </svg>
+
+                        <!-- Central Hub -->
+                        <div class="neural-hub">
+                            <div class="hub-pulse"></div>
+                            <div class="hub-glass">
+                                <i class="fas fa-microchip"></i>
+                                <span style="text-align:center;">PROCESSING <br /> HUB</span>
+                            </div>
+                        </div>
+
+                        <!-- Satellite Nodes -->
+                        <!-- Top Left -->
+                        <div class="neural-node node-tl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-file-import"></i></div>
+                                <h3>Data Ingestion</h3>
+                                <p>Collects data from multiple sources.</p>
+                            </div>
+                        </div>
+
+                        <!-- Top Right -->
+                        <div class="neural-node node-tr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-broom"></i></div>
+                                <h3>Data Cleaning</h3>
+                                <p>Removes errors and inconsistencies.</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Left -->
+                        <div class="neural-node node-ml">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-sync-alt"></i></div>
+                                <h3>Data Transformation</h3>
+                                <p>Converts data into usable formats.</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Right -->
+                        <div class="neural-node node-mr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-hdd"></i></div>
+                                <h3>Data Storage</h3>
+                                <p>Stores processed data efficiently.</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Left -->
+                        <div class="neural-node node-bl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-cogs"></i></div>
+                                <h3>Processing Engine</h3>
+                                <p>Executes transformations and computations.</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Right -->
+                        <div class="neural-node node-br">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-eye"></i></div>
+                                <h3>Monitoring</h3>
+                                <p>Tracks performance and ensures reliability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture & System Design -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Infrastructure</span>
+                        <h2>Data Processing Architecture <br>& System Design</h2>
+                        <p>Scalable architectures ensure efficient data handling:</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-file-import"></i></div>
+                            <h3>Data ingestion pipelines</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>Distributed processing frameworks</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-database"></i></div>
+                            <h3>Data lakes and warehouses</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>Stream processing systems</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-exchange-alt"></i></div>
+                            <h3>API-based data access</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-tasks"></i></div>
+                            <h3>Workflow orchestration tools</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-stack-v2">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Powered By</span>
+                    <h2>Data Processing Tech Stack</h2>
+                    <p>We build with a scalable and AI-ready stack:</p>
+                </div>
+
+                <div class="stack-v2-container">
+                    <!-- Languages -->
+                    <div class="stack-v2-card">
+                        <div class="card-bg-icon"><i class="fas fa-code"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Languages</span>
+                            <h3>Programming</h3>
+                            <div class="tags-row">
+                                <span>Python</span>
+                                <span>Java</span>
+                                <span>Scala</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="stack-v2-card theme-purple">
+                        <div class="card-bg-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Frameworks</span>
+                            <h3>Processing</h3>
+                            <div class="tags-row">
+                                <span>Apache Spark</span>
+                                <span>Apache Flink</span>
+                                <span>Hadoop</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pipeline Tools -->
+                    <div class="stack-v2-card theme-orange">
+                        <div class="card-bg-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Orchestration</span>
+                            <h3>Pipeline Tools</h3>
+                            <div class="tags-row">
+                                <span>Apache Airflow</span>
+                                <span>Luigi</span>
+                                <span>Prefect</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Streaming -->
+                    <div class="stack-v2-card theme-cyan">
+                        <div class="card-bg-icon"><i class="fas fa-stream"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Streaming</span>
+                            <h3>Technologies</h3>
+                            <div class="tags-row">
+                                <span>Apache Kafka</span>
+                                <span>AWS Kinesis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Storage -->
+                    <div class="stack-v2-card theme-blue">
+                        <div class="card-bg-icon"><i class="fas fa-hdd"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Storage</span>
+                            <h3>Data Lake</h3>
+                            <div class="tags-row">
+                                <span>Amazon S3</span>
+                                <span>GCS</span>
+                                <span>Azure Data Lake</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Warehousing -->
+                    <div class="stack-v2-card theme-green">
+                        <div class="card-bg-icon"><i class="fas fa-warehouse"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Warehousing</span>
+                            <h3>Data Warehouse</h3>
+                            <div class="tags-row">
+                                <span>Snowflake</span>
+                                <span>BigQuery</span>
+                                <span>Redshift</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud -->
+                    <div class="stack-v2-card theme-blue">
+                        <div class="card-bg-icon"><i class="fas fa-cloud"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Cloud</span>
+                            <h3>Platforms</h3>
+                            <div class="tags-row">
+                                <span>AWS</span>
+                                <span>Azure</span>
+                                <span>GCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps -->
+                    <div class="stack-v2-card theme-orange">
+                        <div class="card-bg-icon"><i class="fas fa-cogs"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">DevOps</span>
+                            <h3>Deployment</h3>
+                            <div class="tags-row">
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monitoring -->
+                    <div class="stack-v2-card theme-emerald">
+                        <div class="card-bg-icon"><i class="fas fa-eye"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Monitoring</span>
+                            <h3>Observability</h3>
+                            <div class="tags-row">
+                                <span>Prometheus</span>
+                                <span>Grafana</span>
+                                <span>Datadog</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Lifecycle -->
+        <section class="tech-lifecycle-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Development Flow</span>
+                    <h2>Data Processing Development Lifecycle</h2>
+                    <p>A structured lifecycle ensures reliable data systems:</p>
+                </div>
+
+                <div class="horizontal-stepper-system">
+                    <!-- Progress Line & Dots -->
+                    <div class="stepper-track-wrap">
+                        <div class="stepper-main-line">
+                            <div class="stepper-progress-fill"></div>
+                        </div>
+                        <div class="stepper-dots-row">
+                            <div class="stepper-dot active"><i class="fas fa-check"></i></div>
+                            <div class="stepper-dot">02</div>
+                            <div class="stepper-dot">03</div>
+                            <div class="stepper-dot">04</div>
+                            <div class="stepper-dot">05</div>
+                            <div class="stepper-dot">06</div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Cards Grid -->
+                    <div class="stepper-cards-grid">
+                        <!-- Step 01 -->
+                        <div class="stepper-card-item active">
+                            <div class="card-top-icon"><i class="fas fa-file-import"></i></div>
+                            <span class="card-step-label">Step 01</span>
+                            <h3>Data <br>Collection</h3>
+                            <p>Gathering raw data from sources.</p>
+                        </div>
+
+                        <!-- Step 02 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-broom"></i></div>
+                            <span class="card-step-label">Step 02</span>
+                            <h3>Data <br>Cleaning</h3>
+                            <p>Removing inconsistencies and errors.</p>
+                        </div>
+
+                        <!-- Step 03 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-sync-alt"></i></div>
+                            <span class="card-step-label">Step 03</span>
+                            <h3>Data <br>Transformation</h3>
+                            <p>Structuring and enriching data.</p>
+                        </div>
+
+                        <!-- Step 04 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-project-diagram"></i></div>
+                            <span class="card-step-label">Step 04</span>
+                            <h3>Pipeline <br>Development</h3>
+                            <p>Building automated workflows.</p>
+                        </div>
+
+                        <!-- Step 05 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-rocket"></i></div>
+                            <span class="card-step-label">Step 05</span>
+                            <h3>Deployment</h3>
+                            <p>Integrating into production systems.</p>
+                        </div>
+
+                        <!-- Step 06 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-chart-line"></i></div>
+                            <span class="card-step-label">Step 06</span>
+                            <h3>Monitoring & <br>Optimization</h3>
+                            <p>Ensuring performance and scalability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications & Use Cases -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Applications</span>
+                        <h2>Applications of <br>Data Processing Technologies</h2>
+                        <p>Data processing powers modern AI and analytics systems:</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-brain"></i></div>
+                            <h3>Machine learning pipelines</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3>Real-time analytics platforms</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-chart-bar"></i></div>
+                            <h3>Business intelligence systems</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Fraud detection systems</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-users"></i></div>
+                            <h3>Customer data platforms</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>IoT data processing</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Use Cases Section -->
+        <section class="tech-solutions-premium">
+            <div class="container-box">
+                <div class="solutions-main-header">
+                    <span class="tech-badge">Practical Scenarios</span>
+                    <h2>Practical Data Processing Use Cases</h2>
+                </div>
+
+                <div class="solutions-stack">
+                    <!-- Case 1 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">01</span>
+                            <div class="row-icon"><i class="fas fa-project-diagram"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Building ETL/ELT pipelines</h3>
+                            <p>Developing high-throughput pipelines for data movement and transformation.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">ETL/ELT</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">02</span>
+                            <div class="row-icon"><i class="fas fa-bolt"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Real-time event processing</h3>
+                            <p>Handling live event streams for instantaneous insights and actions.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Real-Time</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 3 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">03</span>
+                            <div class="row-icon"><i class="fas fa-broom"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Data cleaning and transformation</h3>
+                            <p>Ensuring data quality through automated cleaning and structuring processes.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Cleaning</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 4 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">04</span>
+                            <div class="row-icon"><i class="fas fa-file-import"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Data migration and integration</h3>
+                            <p>Seamlessly moving data between systems while maintaining integrity.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Migration</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 5 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">05</span>
+                            <div class="row-icon"><i class="fas fa-chart-area"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Large-scale data analytics</h3>
+                            <p>Processing massive datasets for complex business analysis.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Analytics</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 6 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">06</span>
+                            <div class="row-icon"><i class="fas fa-robot"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>AI-ready data preparation</h3>
+                            <p>Structuring and labeling data specifically for training AI models.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section class="tech-industries-curated">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Industries Using Data Processing Technologies</h2>
+                    <p>Powering data-driven growth across diverse sectors.</p>
+                </div>
+
+                <div class="industry-pills-grid">
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-stethoscope"></i></div>
+                            <div class="pill-info">
+                                <h3>Healthcare</h3>
+                                <p>Patient data processing</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-vault"></i></div>
+                            <div class="pill-info">
+                                <h3>Finance</h3>
+                                <p>Transaction and fraud analysis</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-store"></i></div>
+                            <div class="pill-info">
+                                <h3>Retail</h3>
+                                <p>Customer data analytics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-industry"></i></div>
+                            <div class="pill-info">
+                                <h3>Manufacturing</h3>
+                                <p>IoT data processing</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-truck"></i></div>
+                            <div class="pill-info">
+                                <h3>Logistics</h3>
+                                <p>Real-time tracking</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-broadcast-tower"></i></div>
+                            <div class="pill-info">
+                                <h3>Telecom</h3>
+                                <p>Network data processing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Challenges -->
+        <section class="tech-contrast-v3">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Analysis</span>
+                    <h2>Benefits vs. Challenges</h2>
+                </div>
+
+                <div class="contrast-grid-v3">
+                    <!-- Benefits Panel -->
+                    <div class="contrast-card-v3 benefits">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-arrow-trend-up"></i></div>
+                            <h3>Benefits of <br>Data Processing</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-check"></i> Faster data analysis</li>
+                                <li><i class="fas fa-circle-check"></i> Improved data quality</li>
+                                <li><i class="fas fa-circle-check"></i> Real-time insights</li>
+                                <li><i class="fas fa-circle-check"></i> Scalable systems</li>
+                                <li><i class="fas fa-circle-check"></i> Better decision-making</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Challenges Panel -->
+                    <div class="contrast-card-v3 challenges">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-triangle-exclamation"></i></div>
+                            <h3>Challenges in <br>Data Processing</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-info"></i> Handling large data volumes</li>
+                                <li><i class="fas fa-circle-info"></i> Data inconsistency</li>
+                                <li><i class="fas fa-circle-info"></i> Pipeline complexity</li>
+                                <li><i class="fas fa-circle-info"></i> Latency issues</li>
+                                <li><i class="fas fa-circle-info"></i> Infrastructure costs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Our Approach Stands Out -->
+        <section class="tech-approach-dashboard">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Our Advantage</span>
+                    <h2>Why Our Data Processing Approach Stands Out</h2>
+                    <p>We combine deep technical expertise with business-focused solutions.</p>
+                </div>
+
+                <div class="approach-dashboard-wrap">
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <div class="item-main">
+                            <h3>Scalable architecture</h3>
+                            <p>Designing systems that handle petabytes of data with ease.</p>
+                        </div>
+                        <div class="item-status">Active</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-magic"></i></div>
+                        <div class="item-main">
+                            <h3>Automated pipelines</h3>
+                            <p>End-to-end automation of data ingestion, cleaning, and delivery.</p>
+                        </div>
+                        <div class="item-status">Verified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-bolt"></i></div>
+                        <div class="item-main">
+                            <h3>Real-time processing expertise</h3>
+                            <p>Specialized knowledge in low-latency stream processing systems.</p>
+                        </div>
+                        <div class="item-status">Certified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-brain"></i></div>
+                        <div class="item-main">
+                            <h3>AI-ready data systems</h3>
+                            <p>Processing specifically optimized for machine learning requirements.</p>
+                        </div>
+                        <div class="item-status">Dynamic</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-shield-alt"></i></div>
+                        <div class="item-main">
+                            <h3>Secure and reliable infrastructure</h3>
+                            <p>Enterprise-grade security and reliability built into every pipeline.</p>
+                        </div>
+                        <div class="item-status">Secure</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section class="tech-future-compact">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Future Tech</span>
+                    <h2>Future of Data Processing</h2>
+                </div>
+
+                <div class="compact-future-grid">
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-sync"></i></div>
+                        <div class="compact-text">
+                            <h3>Real-time data ecosystems</h3>
+                            <p>Unified platforms for instant data availability.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-magic"></i></div>
+                        <div class="compact-text">
+                            <h3>AI-driven data pipelines</h3>
+                            <p>Self-optimizing and self-healing data flows.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-server"></i></div>
+                        <div class="compact-text">
+                            <h3>Serverless processing architectures</h3>
+                            <p>Dynamic scaling without infrastructure management.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-network-wired"></i></div>
+                        <div class="compact-text">
+                            <h3>Edge data processing</h3>
+                            <p>Processing data closer to the source for lower latency.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-robot"></i></div>
+                        <div class="compact-text">
+                            <h3>Integration with machine learning</h3>
+                            <p>Deeply coupled processing and inference loops.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="tech-faq-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Knowledge Base</span>
+                    <h2>Frequently Asked Questions (FAQs)</h2>
+                    <p>Everything you need to know about data processing and how we implement it.</p>
+                </div>
+
+                <div class="faq-accordion-wrap">
+                    <details class="faq-item" open>
+                        <summary>What is data processing?</summary>
+                        <div class="faq-answer">
+                            <p>Data processing is the transformation of raw data into meaningful and usable information
+                                for analysis and decision-making.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is the difference between ETL and ELT?</summary>
+                        <div class="faq-answer">
+                            <p>ETL transforms data before loading it, while ELT loads raw data first and transforms it
+                                within the data warehouse.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What tools are used in data processing?</summary>
+                        <div class="faq-answer">
+                            <p>Tools include Apache Spark, Kafka, Hadoop, Airflow, and cloud platforms like AWS and
+                                Azure.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is batch vs stream processing?</summary>
+                        <div class="faq-answer">
+                            <p>Batch processing handles data in chunks at intervals, while stream processing handles
+                                data in real time.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Why is data processing important in AI?</summary>
+                        <div class="faq-answer">
+                            <p>It prepares high-quality data required for training accurate machine learning models.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What are real-time data processing systems?</summary>
+                        <div class="faq-answer">
+                            <p>These systems process live data streams instantly, enabling immediate insights and
+                                actions.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is a data processing pipeline?</summary>
+                        <div class="faq-answer">
+                            <p>A pipeline is a sequence of steps that ingest, transform, and deliver data for analytics
+                                or AI.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What challenges exist in data processing?</summary>
+                        <div class="faq-answer">
+                            <p>Challenges include scalability, data quality, latency, and managing complex pipelines.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="tech-final-cta-v3">
+            <div class="container-box">
+                <div class="cta-wrapper-v3">
+                    <div class="cta-glow-1"></div>
+                    <div class="cta-glow-2"></div>
+
+                    <div class="cta-content-v3">
+                        <span class="cta-badge-v3">Scalable Excellence</span>
+                        <h2>Ready to Process Data at Scale?</h2>
+                        <p>Transform raw data into valuable insights and AI-ready assets with our expert solutions.</p>
+
+                        <div class="cta-action-v3">
+                            <a href="contact.html" class="cta-btn-main">
+                                <span>Start Your Data Processing Project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="data-engineering-technologies.html" class="cta-btn-alt">
+                                <span>Explore Data Engineering</span>
+                                <i class="fas fa-database"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="Footer">
+            <div class="footer-bg-clip">
+                <div class="footer-bg-circle"></div>
+            </div>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-icons">
+                        <a target="_blank" href="#">
+                            <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                                src="./assets/images/instagram.webp" alt="instagram" /></a>
+                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                                src="./assets/images/facebook2.webp" alt="facebook" /></a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="footer-greet">
+                            <span class="hand">👋</span> Hey Innovator,
+                        </p>
+                        <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+                        <p class="footer-email">info@alphabitinfoway.com</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <img src="./assets/images/AI Model.webp" alt="Robot" />
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+                <div class="footer-links">
+                    <a href="#">AGENCY</a>
+                    <a href="#">CAREER</a>
+                    <a href="#">PRIVACY</a>
+                    <a href="#">TERMS &amp; CONDITION</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Lifecycle Stepper Interactivity
+        function updateStepper(stepIndex) {
+            const dots = document.querySelectorAll('.stepper-dot');
+            const cards = document.querySelectorAll('.stepper-card-item');
+            const fill = document.querySelector('.stepper-progress-fill');
+
+            const progressWidth = ((stepIndex - 1) / (dots.length - 1)) * 100;
+            fill.style.width = progressWidth + '%';
+
+            dots.forEach((dot, index) => {
+                if (index + 1 <= stepIndex) {
+                    dot.classList.add('active');
+                    if (index + 1 < stepIndex || stepIndex === index + 1) {
+                        dot.innerHTML = '<i class="fas fa-check"></i>';
+                    }
+                } else {
+                    dot.classList.remove('active');
+                    dot.innerHTML = (index + 1).toString().padStart(2, '0');
+                }
+            });
+
+            cards.forEach((card, index) => {
+                if (index + 1 === stepIndex) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+        }
+
+        document.querySelectorAll('.stepper-card-item').forEach((card, index) => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => updateStepper(index + 1));
+        });
+
+        window.addEventListener('DOMContentLoaded', () => updateStepper(1));
+    </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
+

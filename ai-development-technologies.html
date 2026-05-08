@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AI Development Technologies & Capabilities | Alphabit</title>
+    <meta name="description"
+        content="Explore AI development technologies, tools, and capabilities. Learn artificial intelligence frameworks, architectures, use cases, and how businesses build scalable AI-powered solutions." />
+    <meta name="keywords"
+        content="AI Development, Artificial Intelligence, Machine Learning, Deep Learning, AI Frameworks, AI Architecture, Alphabit Infoway" />
+    <meta name="author" content="Alphabit Infoway" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/technologies.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Minimal Preloader -->
+    <div id="preloader">
+        <div class="minimal-loader">
+            <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+            <div class="loader-progress-bar"></div>
+            <div class="loader-text">Initializing AI Engines...</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <h6><a href="./">Home</a></h6>
+                <h6 class="dropdown">
+                    <a href="services" class="dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+                        <li><a href="services">Cyber Security & Compliance</a></li>
+                        <li><a href="services">Full Stack Web Development</a></li>
+                        <li><a href="services">Mobile App & Product Design</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="#products">Products</a></h6>
+                <h6 class="dropdown">
+                    <a href="Technology" class="dropdown-toggle">Technology</a>
+                    <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Artificial Intelligence</li>
+                        <li><a href="ai-development-technologies.html">AI Development</a></li>
+                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Web Technologies</li>
+                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+                        <li><a href="backend-technologies.html">Backend Development</a></li>
+                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Mobile Technologies</li>
+                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
+                        <li><a href="android-development-technologies.html">Android Development</a></li>
+                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cloud & DevOps</li>
+                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
+                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
+                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Data & Analytics</li>
+                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
+                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
+                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cyber Security</li>
+                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
+                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="about">About</a></h6>
+                <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+                <h6 class="dropdown">
+                    <a href="#" class="dropdown-toggle">Insights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="career">Career</a></li>
+                    </ul>
+                </h6>
+                <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+            </nav>
+            <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="tech-hero-modern">
+            <div class="tech-hero-background">
+                <div class="mesh-gradient"></div>
+                <div class="grid-overlay"></div>
+                <div class="wave-mesh"></div>
+            </div>
+            <div class="container-box">
+                <div class="tech-hero-content">
+                    <div class="tech-hero-text">
+                        <nav class="breadcrumb">
+                            <a href="index.html">Home</a> / <a href="Technology">Technology</a> / <span>AI Development
+                                Technologies</span>
+                        </nav>
+                        <h1>AI Development <br />Technologies & Capabilities</h1>
+                        <p>AI development is at the core of modern digital transformation—enabling systems to simulate
+                            human intelligence, automate complex processes, and deliver data-driven insights. At
+                            Alphabit, we build scalable, intelligent AI solutions that drive innovation, efficiency, and
+                            competitive advantage.</p>
+
+                        <div class="hero-stats-row">
+                            <div class="hero-stat">
+                                <h3>6+</h3>
+                                <p>AI Technologies</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>15+</h3>
+                                <p>Tools & Frameworks</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>3</h3>
+                                <p>Cloud Platforms</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>8+</h3>
+                                <p>Industry Applications</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tech-hero-illustration">
+                        <img src="./assets/images/generative-ai-hero.png" alt="AI Development Technologies" />
+                    </div>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn-primary-tech">Talk to an AI Expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Adoption & Impact -->
+        <section class="tech-impact-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Strategic Value</span>
+                    <h2>AI Adoption & Impact</h2>
+                    <p>Artificial Intelligence is transforming how businesses operate, innovate, and scale.</p>
+                </div>
+                <div class="impact-cards-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Intelligent Automation</h3>
+                            <p>Automate repetitive and complex tasks using AI-powered systems.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Enhanced Decision-Making</h3>
+                            <p>Leverage AI insights for faster, data-driven business decisions.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-user-tag"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Personalization at Scale</h3>
+                            <p>Deliver tailored experiences using user behavior and predictive analytics.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Operational Efficiency</h3>
+                            <p>Optimize workflows, reduce costs, and improve productivity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution -->
+        <section class="tech-evolution-perfect">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">The Journey</span>
+                    <h2>Evolution of AI Development</h2>
+                    <p>AI has evolved from rule-based systems to highly advanced, self-learning models.</p>
+                </div>
+
+                <div class="evolution-timeline-container">
+                    <div class="timeline-main-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 01</span>
+                            <h3>Rule-Based Systems</h3>
+                            <p>Early AI systems operated on predefined logic and rules.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 02</span>
+                            <h3>Machine Learning</h3>
+                            <p>Systems began learning patterns from data to improve predictions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 03</span>
+                            <h3>Deep Learning</h3>
+                            <p>Neural networks enabled breakthroughs in vision, speech, and NLP.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 04</span>
+                            <h3>Generative AI</h3>
+                            <p>AI models capable of creating content like text, images, and code.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 05</span>
+                            <h3>Autonomous AI Systems</h3>
+                            <p>Self-learning, adaptive systems operating with minimal human intervention.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Types of Tech -->
+        <section class="tech-types-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Capabilities</span>
+                    <h2>Types of AI Development Technologies</h2>
+                    <p>Different AI technologies solve different classes of problems.</p>
+                </div>
+
+                <div class="tech-types-grid">
+                    <div class="type-card accent-purple">
+                        <div class="type-icon-box">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Machine Learning (Data-Driven Intelligence)</h3>
+                        <p>Algorithms learn from data to make predictions and decisions.</p>
+                        <div class="type-tags">
+                            <span>Regression & Classification</span>
+                            <span>Recommendation Systems</span>
+                            <span>Fraud Detection</span>
+                            <span>Predictive Analytics</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-orange">
+                        <div class="type-icon-box">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Natural Language Processing (NLP)</h3>
+                        <p>Enables machines to understand and generate human language.</p>
+                        <div class="type-tags">
+                            <span>Chatbots & Assistants</span>
+                            <span>Sentiment Analysis</span>
+                            <span>Text Classification</span>
+                            <span>Language Translation</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-cyan">
+                        <div class="type-icon-box">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Computer Vision (Visual Intelligence)</h3>
+                        <p>AI systems interpret and analyze images and videos.</p>
+                        <div class="type-tags">
+                            <span>Object Detection</span>
+                            <span>Image Classification</span>
+                            <span>Facial Recognition</span>
+                            <span>Video Analytics</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-emerald">
+                        <div class="type-icon-box">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Generative AI (Content Creation)</h3>
+                        <p>Models generate text, images, and other content.</p>
+                        <div class="type-tags">
+                            <span>Text Generation</span>
+                            <span>Image Synthesis</span>
+                            <span>Code Generation</span>
+                            <span>AI Assistants</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced AI Development Technologies -->
+        <section class="tech-advanced-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Advanced Architecture</span>
+                    <h2>Advanced AI Development Technologies</h2>
+                    <p>Modern AI systems incorporate automation, scalability, and intelligence.</p>
+                </div>
+
+                <div class="advanced-tech-grid">
+                    <div class="adv-card featured">
+                        <div class="adv-icon"><i class="fas fa-comments"></i></div>
+                        <div class="adv-info">
+                            <h3>Large Language Models (LLMs)</h3>
+                            <p>Power conversational AI, automation, and content generation.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-user-astronaut"></i></div>
+                        <div class="adv-info">
+                            <h3>AI Agents & Autonomous Systems</h3>
+                            <p>Perform tasks independently using reasoning and decision-making.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-cogs"></i></div>
+                        <div class="adv-info">
+                            <h3>MLOps & AI Lifecycle Automation</h3>
+                            <p>Streamlines model development, deployment, and monitoring.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-lightbulb"></i></div>
+                        <div class="adv-info">
+                            <h3>Explainable AI (XAI)</h3>
+                            <p>Ensures transparency and trust in AI decision-making.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="adv-info">
+                            <h3>Real-Time AI Systems</h3>
+                            <p>Deliver instant predictions and responses on live data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Key Components -->
+        <section class="tech-components-neural">
+            <div class="container-header-flow">
+                <div class="container-box">
+                    <div class="section-header-modern">
+                        <span class="tech-badge">System Neural Map</span>
+                        <h2>Key Components of AI Systems</h2>
+                        <p>A production-ready AI system includes interconnected layers to process data and serve
+                            predictions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="neural-map-viewport">
+                <div class="container-box">
+                    <div class="neural-map-container">
+                        <!-- Connecting SVG Path (Neural Pathways) -->
+                        <svg class="neural-pathways" width="100%" height="100%" viewBox="0 0 1000 600"
+                            preserveAspectRatio="none">
+                            <path class="path-line" d="M500,300 L166,100" />
+                            <path class="path-line" d="M500,300 L833,100" />
+                            <path class="path-line" d="M500,300 L166,300" />
+                            <path class="path-line" d="M500,300 L833,300" />
+                            <path class="path-line" d="M500,300 L166,500" />
+                            <path class="path-line" d="M500,300 L833,500" />
+                        </svg>
+
+                        <!-- Central Hub -->
+                        <div class="neural-hub">
+                            <div class="hub-pulse"></div>
+                            <div class="hub-glass">
+                                <i class="fas fa-brain"></i>
+                                <span>AI CORE</span>
+                            </div>
+                        </div>
+
+                        <!-- Satellite Nodes -->
+                        <!-- Top Left -->
+                        <div class="neural-node node-tl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-database"></i></div>
+                                <h3>Data Collection</h3>
+                                <p>Gathering structured and unstructured data</p>
+                            </div>
+                        </div>
+
+                        <!-- Top Right -->
+                        <div class="neural-node node-tr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-filter"></i></div>
+                                <h3>Data Processing</h3>
+                                <p>Cleaning and preparing data</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Left -->
+                        <div class="neural-node node-ml">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-microchip"></i></div>
+                                <h3>Model Development</h3>
+                                <p>Training AI/ML models</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Right -->
+                        <div class="neural-node node-mr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-check-double"></i></div>
+                                <h3>Model Evaluation</h3>
+                                <p>Measuring accuracy and performance</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Left -->
+                        <div class="neural-node node-bl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                                <h3>Deployment</h3>
+                                <p>Integrating models into applications</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Right -->
+                        <div class="neural-node node-br">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-chart-line"></i></div>
+                                <h3>Monitoring</h3>
+                                <p>Tracking performance and improving over time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture & System Design -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Infrastructure</span>
+                        <h2>AI Architecture <br>& System Design</h2>
+                        <p>Scalable AI systems are built using modern architecture components.</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>Data pipelines and ingestion</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h3>Model training environments</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-server"></i></div>
+                            <h3>API-based model serving</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>Cloud infrastructure</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-bolt"></i></div>
+                            <h3>Real-time inference systems</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-database"></i></div>
+                            <h3>Feature stores and vector databases</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-stack-v2">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Powered By</span>
+                    <h2>AI Development Tech Stack</h2>
+                    <p>We use a cutting-edge, production-ready AI stack to deliver industry-leading solutions.</p>
+                </div>
+
+                <div class="stack-v2-container">
+                    <!-- Languages -->
+                    <div class="stack-v2-card">
+                        <div class="card-bg-icon"><i class="fas fa-code"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Languages</span>
+                            <h3>Programming</h3>
+                            <div class="tags-row">
+                                <span>Python</span>
+                                <span>JavaScript</span>
+                                <span>R</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="stack-v2-card theme-purple">
+                        <div class="card-bg-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Frameworks</span>
+                            <h3>AI & Libraries</h3>
+                            <div class="tags-row">
+                                <span>TensorFlow</span>
+                                <span>PyTorch</span>
+                                <span>Keras</span>
+                                <span>Scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NLP GenAI -->
+                    <div class="stack-v2-card theme-orange">
+                        <div class="card-bg-icon"><i class="fas fa-comment-dots"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Models</span>
+                            <h3>NLP & Generative AI</h3>
+                            <div class="tags-row">
+                                <span>Transformers</span>
+                                <span>Hugging Face</span>
+                                <span>OpenAI APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Engineering -->
+                    <div class="stack-v2-card theme-cyan">
+                        <div class="card-bg-icon"><i class="fas fa-database"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Data</span>
+                            <h3>Data Engineering</h3>
+                            <div class="tags-row">
+                                <span>Apache Spark</span>
+                                <span>Airflow</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Computer Vision -->
+                    <div class="stack-v2-card theme-blue">
+                        <div class="card-bg-icon"><i class="fas fa-eye"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Vision</span>
+                            <h3>Computer Vision</h3>
+                            <div class="tags-row">
+                                <span>OpenCV</span>
+                                <span>YOLO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deployment -->
+                    <div class="stack-v2-card theme-green">
+                        <div class="card-bg-icon"><i class="fas fa-server"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Deployment</span>
+                            <h3>Deployment & MLOps</h3>
+                            <div class="tags-row">
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                                <span>MLflow</span>
+                                <span>FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud -->
+                    <div class="stack-v2-card theme-blue" style="grid-column: span 1;">
+                        <div class="card-bg-icon"><i class="fas fa-cloud"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Cloud</span>
+                            <h3>Cloud Platforms</h3>
+                            <div class="tags-row">
+                                <span>AWS</span>
+                                <span>Azure</span>
+                                <span>GCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monitoring -->
+                    <div class="stack-v2-card theme-orange" style="grid-column: span 1;">
+                        <div class="card-bg-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Observability</span>
+                            <h3>Monitoring</h3>
+                            <div class="tags-row">
+                                <span>Prometheus</span>
+                                <span>Grafana</span>
+                                <span>Weights & Biases</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Lifecycle -->
+        <section class="tech-lifecycle-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Development Flow</span>
+                    <h2>AI Development Lifecycle</h2>
+                    <p>Our structured approach ensures scalable AI solutions.</p>
+                </div>
+
+                <div class="horizontal-stepper-system">
+                    <!-- Progress Line & Dots -->
+                    <div class="stepper-track-wrap">
+                        <div class="stepper-main-line">
+                            <div class="stepper-progress-fill"></div>
+                        </div>
+                        <div class="stepper-dots-row">
+                            <div class="stepper-dot active"><i class="fas fa-check"></i></div>
+                            <div class="stepper-dot">02</div>
+                            <div class="stepper-dot">03</div>
+                            <div class="stepper-dot">04</div>
+                            <div class="stepper-dot">05</div>
+                            <div class="stepper-dot">06</div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Cards Grid -->
+                    <div class="stepper-cards-grid">
+                        <!-- Step 01 -->
+                        <div class="stepper-card-item active">
+                            <div class="card-top-icon"><i class="fas fa-search"></i></div>
+                            <span class="card-step-label">Step 1</span>
+                            <h3>Problem <br>Definition</h3>
+                            <p>Identifying business use cases.</p>
+                        </div>
+
+                        <!-- Step 02 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-database"></i></div>
+                            <span class="card-step-label">Step 2</span>
+                            <h3>Data <br>Collection</h3>
+                            <p>Gathering relevant datasets.</p>
+                        </div>
+
+                        <!-- Step 03 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-filter"></i></div>
+                            <span class="card-step-label">Step 3</span>
+                            <h3>Data <br>Preparation</h3>
+                            <p>Cleaning and preprocessing data.</p>
+                        </div>
+
+                        <!-- Step 04 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-brain"></i></div>
+                            <span class="card-step-label">Step 4</span>
+                            <h3>Model <br>Development</h3>
+                            <p>Building and training AI models.</p>
+                        </div>
+
+                        <!-- Step 05 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-rocket"></i></div>
+                            <span class="card-step-label">Step 5</span>
+                            <h3>Deployment <br>Integration</h3>
+                            <p>Integrating into production systems.</p>
+                        </div>
+
+                        <!-- Step 06 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-chart-line"></i></div>
+                            <span class="card-step-label">Step 6</span>
+                            <h3>Monitoring & <br>Optimization</h3>
+                            <p>Improving performance continuously.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications of AI -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Capabilities</span>
+                        <h2>Applications of <br>AI Development Technologies</h2>
+                        <p>AI powers next-generation digital systems by enabling machines to compute with human-like
+                            intuition.</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-robot"></i></div>
+                            <h3>Intelligent chatbots</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-thumbs-up"></i></div>
+                            <h3>Recommendation engines</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Fraud detection systems</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-chart-bar"></i></div>
+                            <h3>Predictive analytics</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-photo-video"></i></div>
+                            <h3>Image and video analysis</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-cogs"></i></div>
+                            <h3>Process automation</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Use Cases Section -->
+        <section class="tech-solutions-premium">
+            <div class="container-box">
+                <div class="solutions-main-header">
+                    <span class="tech-badge">Functional Value</span>
+                    <h2>Practical AI Use Cases</h2>
+                </div>
+
+                <div class="solutions-stack">
+                    <!-- Case 1 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">01</span>
+                            <div class="row-icon"><i class="fas fa-headset"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>AI-powered customer support</h3>
+                            <p>Deploy intelligent agents that resolve queries automatically.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Support</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">02</span>
+                            <div class="row-icon"><i class="fas fa-bullseye"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Personalized recommendations</h3>
+                            <p>Suggest products and content tailored to user preferences.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Retail</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 3 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">03</span>
+                            <div class="row-icon"><i class="fas fa-file-alt"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Document processing automation</h3>
+                            <p>Extract information and insights from complex documents automatically.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Operations</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 4 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">04</span>
+                            <div class="row-icon"><i class="fas fa-chart-line"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Sales and demand forecasting</h3>
+                            <p>Predict future sales trends using historical data and ML models.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Sales</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 5 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">05</span>
+                            <div class="row-icon"><i class="fas fa-microphone"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Voice assistants</h3>
+                            <p>Enable voice-controlled interfaces and intelligent voice agents.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Interaction</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 6 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">06</span>
+                            <div class="row-icon"><i class="fas fa-chart-pie"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Smart analytics systems</h3>
+                            <p>Uncover hidden patterns and insights from massive business data.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section class="tech-industries-curated">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Industries Using AI Technologies</h2>
+                    <p>Transforming complex workflows across diverse sectors with specialized AI integration.</p>
+                </div>
+
+                <div class="industry-pills-grid">
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-stethoscope"></i></div>
+                            <div class="pill-info">
+                                <h3>Healthcare</h3>
+                                <p>Diagnostics and patient insights</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-vault"></i></div>
+                            <div class="pill-info">
+                                <h3>Finance</h3>
+                                <p>Risk analysis and fraud detection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-store"></i></div>
+                            <div class="pill-info">
+                                <h3>Retail</h3>
+                                <p>Personalization and recommendations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-industry"></i></div>
+                            <div class="pill-info">
+                                <h3>Manufacturing</h3>
+                                <p>Automation and predictive maintenance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-truck"></i></div>
+                            <div class="pill-info">
+                                <h3>Logistics</h3>
+                                <p>Route optimization and tracking</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="pill-info">
+                                <h3>Education</h3>
+                                <p>Adaptive learning systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Challenges -->
+        <section class="tech-contrast-v3">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Benefits vs. Challenges</h2>
+                </div>
+
+                <div class="contrast-grid-v3">
+                    <!-- Benefits Panel -->
+                    <div class="contrast-card-v3 benefits">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-arrow-trend-up"></i></div>
+                            <h3>Benefits of <br>AI Development</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-check"></i> Automation of complex tasks</li>
+                                <li><i class="fas fa-circle-check"></i> Improved decision-making</li>
+                                <li><i class="fas fa-circle-check"></i> Enhanced customer experience</li>
+                                <li><i class="fas fa-circle-check"></i> Scalable systems</li>
+                                <li><i class="fas fa-circle-check"></i> Competitive advantage</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Challenges Panel -->
+                    <div class="contrast-card-v3 challenges">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-triangle-exclamation"></i></div>
+                            <h3>Challenges in <br>AI Development</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-info"></i> Data quality and availability</li>
+                                <li><i class="fas fa-circle-info"></i> High development cost</li>
+                                <li><i class="fas fa-circle-info"></i> Model bias and fairness</li>
+                                <li><i class="fas fa-circle-info"></i> Integration complexity</li>
+                                <li><i class="fas fa-circle-info"></i> Lack of explainability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Our Approach Stands Out -->
+        <section class="tech-approach-dashboard">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Our Advantage</span>
+                    <h2>Why Our AI Development Approach Stands Out</h2>
+                    <p>We combine deep technical expertise with business-focused solutions.</p>
+                </div>
+
+                <div class="approach-dashboard-wrap">
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-chess-knight"></i></div>
+                        <div class="item-main">
+                            <h3>AI-first strategy</h3>
+                            <p>We embed AI into the core of your business processes.</p>
+                        </div>
+                        <div class="item-status">Active</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-server"></i></div>
+                        <div class="item-main">
+                            <h3>Scalable and secure architecture</h3>
+                            <p>Systems built to grow with robust enterprise security.</p>
+                        </div>
+                        <div class="item-status">Verified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-laptop-code"></i></div>
+                        <div class="item-main">
+                            <h3>Deep technical expertise</h3>
+                            <p>Our team masters the most advanced ML/AI models.</p>
+                        </div>
+                        <div class="item-status">Certified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-sync"></i></div>
+                        <div class="item-main">
+                            <h3>Continuous optimization</h3>
+                            <p>Real-time improvement through MLOps and monitoring.</p>
+                        </div>
+                        <div class="item-status">Dynamic</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-briefcase"></i></div>
+                        <div class="item-main">
+                            <h3>Business-focused solutions</h3>
+                            <p>Delivering measurable ROI through intelligent systems.</p>
+                        </div>
+                        <div class="item-status">Secure</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future of AI -->
+        <section class="tech-future-compact">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Future Tech</span>
+                    <h2>Future of AI Development</h2>
+                </div>
+
+                <div class="compact-future-grid">
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-user-astronaut"></i></div>
+                        <div class="compact-text">
+                            <h3>Autonomous AI agents</h3>
+                            <p>Systems executing complex multi-step goals independently.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-magic"></i></div>
+                        <div class="compact-text">
+                            <h3>Generative AI expansion</h3>
+                            <p>Broader capabilities in code, media, and design generation.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-network-wired"></i></div>
+                        <div class="compact-text">
+                            <h3>Edge AI systems</h3>
+                            <p>Processing data locally on devices for low latency.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-lightbulb"></i></div>
+                        <div class="compact-text">
+                            <h3>Explainable AI adoption</h3>
+                            <p>Making black-box models fully transparent and trustworthy.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-bolt"></i></div>
+                        <div class="compact-text">
+                            <h3>Real-time intelligent systems</h3>
+                            <p>Instantaneous processing and adaptive decision-making.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="tech-faq-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Knowledge Base</span>
+                    <h2>Frequently Asked Questions (FAQs)</h2>
+                    <p>Everything you need to know about AI development and how we implement it.</p>
+                </div>
+
+                <div class="faq-accordion-wrap">
+                    <details class="faq-item" open>
+                        <summary>What is AI development?</summary>
+                        <div class="faq-answer">
+                            <p>AI development involves building systems that simulate human intelligence using machine
+                                learning, NLP, and other AI technologies.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What technologies are used in AI development?</summary>
+                        <div class="faq-answer">
+                            <p>Common technologies include TensorFlow, PyTorch, NLP frameworks, computer vision tools,
+                                and cloud platforms.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is the difference between AI and machine learning?</summary>
+                        <div class="faq-answer">
+                            <p>AI is the broader concept of intelligent systems, while machine learning is a subset that
+                                focuses on learning from data.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is an AI tech stack?</summary>
+                        <div class="faq-answer">
+                            <p>It includes programming languages, frameworks, cloud platforms, and tools used to build
+                                and deploy AI systems.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What are real-world applications of AI?</summary>
+                        <div class="faq-answer">
+                            <p>Chatbots, recommendation systems, fraud detection, image recognition, and predictive
+                                analytics.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How long does AI development take?</summary>
+                        <div class="faq-answer">
+                            <p>It depends on complexity, data availability, and use case — typically ranging from weeks
+                                to months.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is MLOps in AI?</summary>
+                        <div class="faq-answer">
+                            <p>MLOps is the practice of managing the AI lifecycle, including deployment, monitoring, and
+                                continuous improvement.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Why is data important in AI?</summary>
+                        <div class="faq-answer">
+                            <p>High-quality data is essential for training accurate and reliable AI models.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="tech-final-cta-v3">
+            <div class="container-box">
+                <div class="cta-wrapper-v3">
+                    <div class="cta-glow-1"></div>
+                    <div class="cta-glow-2"></div>
+
+                    <div class="cta-content-v3">
+                        <span class="cta-badge-v3">The Next Frontier</span>
+                        <h2>Ready to Build AI-Powered Solutions?</h2>
+                        <p>Turn your ideas into intelligent, scalable systems tailored to your business needs.</p>
+
+                        <div class="cta-action-v3">
+                            <a href="contact.html" class="cta-btn-main">
+                                <span>Start Your AI Development Project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="ai-machine-learning.html" class="cta-btn-alt">
+                                <span>Explore AI Services</span>
+                                <i class="fas fa-microchip"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="Footer">
+            <div class="footer-bg-clip">
+                <div class="footer-bg-circle"></div>
+            </div>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-icons">
+                        <a target="_blank" href="#">
+                            <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                                src="./assets/images/instagram.webp" alt="instagram" /></a>
+                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                                src="./assets/images/facebook2.webp" alt="facebook" /></a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="footer-greet">
+                            <span class="hand">👋</span> Hey Innovator,
+                        </p>
+                        <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+                        <p class="footer-email">info@alphabitinfoway.com</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <img src="./assets/images/AI Model.webp" alt="Robot" />
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+                <div class="footer-links">
+                    <a href="#">AGENCY</a>
+                    <a href="#">CAREER</a>
+                    <a href="#">PRIVACY</a>
+                    <a href="#">TERMS &amp; CONDITION</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Lifecycle Stepper Interactivity
+        function updateStepper(stepIndex) {
+            const dots = document.querySelectorAll('.stepper-dot');
+            const cards = document.querySelectorAll('.stepper-card-item');
+            const fill = document.querySelector('.stepper-progress-fill');
+
+            // Calculate progress width (0% to 100% across 6 steps)
+            const progressWidth = ((stepIndex - 1) / (dots.length - 1)) * 100;
+            fill.style.width = progressWidth + '%';
+
+            // Update Active States for Dots
+            dots.forEach((dot, index) => {
+                if (index + 1 <= stepIndex) {
+                    dot.classList.add('active');
+                    if (index + 1 < stepIndex || stepIndex === index + 1) {
+                        dot.innerHTML = '<i class="fas fa-check"></i>';
+                    }
+                } else {
+                    dot.classList.remove('active');
+                    dot.innerHTML = (index + 1).toString().padStart(2, '0');
+                }
+            });
+
+            // Update Active States for Cards
+            cards.forEach((card, index) => {
+                if (index + 1 === stepIndex) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+        }
+
+        // Add Click Events to Cards
+        document.querySelectorAll('.stepper-card-item').forEach((card, index) => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => updateStepper(index + 1));
+        });
+
+        // Initialize at Step 1
+        window.addEventListener('DOMContentLoaded', () => updateStepper(1));
+    </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
+

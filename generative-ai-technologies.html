@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Generative AI Solutions & Technologies | Alphabit</title>
+    <meta name="description"
+        content="Explore generative AI technologies, models, and real-world use cases. Build intelligent AI systems using LLMs, diffusion models, and scalable cloud-based solutions." />
+    <meta name="keywords"
+        content="Generative AI, LLMs, Diffusion Models, GANs, AI Content Generation, AI Automation, Alphabit Infoway" />
+    <meta name="author" content="Alphabit Infoway" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/technologies.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Minimal Preloader -->
+    <div id="preloader">
+        <div class="minimal-loader">
+            <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+            <div class="loader-progress-bar"></div>
+            <div class="loader-text">Initializing Generative Engines...</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <h6><a href="./">Home</a></h6>
+                <h6 class="dropdown">
+                    <a href="services" class="dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+                        <li><a href="services">Cyber Security & Compliance</a></li>
+                        <li><a href="services">Full Stack Web Development</a></li>
+                        <li><a href="services">Mobile App & Product Design</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="#products">Products</a></h6>
+                <h6 class="dropdown">
+                    <a href="Technology" class="dropdown-toggle">Technology</a>
+                    <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Artificial Intelligence</li>
+                        <li><a href="ai-development-technologies.html">AI Development</a></li>
+                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Web Technologies</li>
+                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+                        <li><a href="backend-technologies.html">Backend Development</a></li>
+                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Mobile Technologies</li>
+                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
+                        <li><a href="android-development-technologies.html">Android Development</a></li>
+                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cloud & DevOps</li>
+                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
+                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
+                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Data & Analytics</li>
+                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
+                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
+                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cyber Security</li>
+                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
+                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="about">About</a></h6>
+                <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+                <h6 class="dropdown">
+                    <a href="#" class="dropdown-toggle">Insights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="career">Career</a></li>
+                    </ul>
+                </h6>
+                <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+            </nav>
+            <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="tech-hero-modern">
+            <div class="tech-hero-background">
+                <div class="mesh-gradient"></div>
+                <div class="grid-overlay"></div>
+                <div class="wave-mesh"></div>
+            </div>
+            <div class="container-box">
+                <div class="tech-hero-content">
+                    <div class="tech-hero-text">
+                        <nav class="breadcrumb">
+                            <a href="index.html">Home</a> / <a href="Technology">Technology</a> / <span>Generative AI
+                                Technologies & Capabilities</span>
+                        </nav>
+                        <h1>Generative AI <br />Technologies & Capabilities</h1>
+                        <p>Generative AI is transforming how businesses create, automate, and innovate by enabling
+                            machines to generate human-like content, code, images, and more. At Alphabit, we leverage
+                            advanced generative AI technologies to build intelligent systems that enhance creativity,
+                            accelerate workflows, and unlock new possibilities.</p>
+
+                        <div class="hero-stats-row">
+                            <div class="hero-stat">
+                                <h3>50+</h3>
+                                <p>AI Models</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>10+</h3>
+                                <p>Tools & Frameworks</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>3</h3>
+                                <p>Cloud Platforms</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>99%</h3>
+                                <p>Success Rate</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tech-hero-illustration">
+                        <img src="./assets/images/generative-ai-hero.png" alt="Generative AI Technologies" />
+                    </div>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn-primary-tech">Talk to a Generative AI Expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Adoption & Impact -->
+        <section class="tech-impact-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Strategic Value</span>
+                    <h2>Generative AI Adoption & Impact</h2>
+                    <p>Generative AI is redefining digital experiences by enabling businesses to create content and
+                        automate complex processes at scale.</p>
+                </div>
+                <div class="impact-cards-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Content Creation at Scale</h3>
+                            <p>Generate high-quality text, images, code, and media instantly.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Enhanced Productivity</h3>
+                            <p>Reduce manual effort in writing, designing, and development workflows.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Personalization</h3>
+                            <p>Deliver dynamic, user-specific content in real time.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Innovation Acceleration</h3>
+                            <p>Rapid prototyping and idea generation powered by AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution -->
+        <section class="tech-evolution-perfect">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">The Journey</span>
+                    <h2>Evolution of Generative AI</h2>
+                    <p>Generative AI has evolved rapidly with advancements in deep learning and large-scale models.</p>
+                </div>
+
+                <div class="evolution-timeline-container">
+                    <div class="timeline-main-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 01</span>
+                            <h3>Rule-Based Systems</h3>
+                            <p>Basic scripted outputs with limited flexibility and strict logic-based execution.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 02</span>
+                            <h3>Machine Learning</h3>
+                            <p>Statistical models capable of generating structured outputs from data patterns.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 03</span>
+                            <h3>Deep Learning Models</h3>
+                            <p>Neural networks significantly improving the quality of complex content generation.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 04</span>
+                            <h3>Transformer Tech</h3>
+                            <p>Breakthrough models enabling deep contextual understanding and parallel data.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 05</span>
+                            <h3>LLMs & Beyond</h3>
+                            <p>Advanced autonomous systems capable of generating complex human-level reasoning.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+   
+        <!-- Types of GenAI -->
+        <section class="tech-types-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Capabilities</span>
+                    <h2>Types of Generative AI Technologies</h2>
+                    <p>Generative AI includes multiple technologies designed for different types of content generation.
+                    </p>
+                </div>
+
+                <div class="tech-types-grid">
+                    <!-- Text Gen -->
+                    <div class="type-card accent-purple">
+                        <div class="type-icon-box">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <h3>Text Generation (LLMs)</h3>
+                        <p>Generate human-like text for content, chat, and automation.</p>
+                        <div class="type-tags">
+                            <span>Content Writing</span>
+                            <span>Chatbots</span>
+                            <span>Code Generation</span>
+                            <span>Summarization</span>
+                        </div>
+                    </div>
+
+                    <!-- Image Gen -->
+                    <div class="type-card accent-orange">
+                        <div class="type-icon-box">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>Image Generation</h3>
+                        <p>Create realistic or artistic images using AI models.</p>
+                        <div class="type-tags">
+                            <span>Image Synthesis</span>
+                            <span>Design Automation</span>
+                            <span>Content Creation</span>
+                            <span>Mockups</span>
+                        </div>
+                    </div>
+
+                    <!-- Audio Gen -->
+                    <div class="type-card accent-cyan">
+                        <div class="type-icon-box">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Audio & Speech Generation</h3>
+                        <p>Generate voice, music, and sound.</p>
+                        <div class="type-tags">
+                            <span>Text-to-Speech</span>
+                            <span>Voice Cloning</span>
+                            <span>Audio Synthesis</span>
+                            <span>Enhancement</span>
+                        </div>
+                    </div>
+
+                    <!-- Video Gen -->
+                    <div class="type-card accent-emerald">
+                        <div class="type-icon-box">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Generation</h3>
+                        <p>Create videos using AI-driven models.</p>
+                        <div class="type-tags">
+                            <span>AI Video Creation</span>
+                            <span>Animation</span>
+                            <span>Video Editing</span>
+                            <span>Synthetic Media</span>
+                        </div>
+                    </div>
+
+                    <!-- Code Gen -->
+                    <div class="type-card accent-blue">
+                        <div class="type-icon-box">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Code Generation</h3>
+                        <p>Assist developers with automated coding.</p>
+                        <div class="type-tags">
+                            <span>Code Suggestions</span>
+                            <span>Auto Debugging</span>
+                            <span>Code Completion</span>
+                            <span>Documentation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced GenAI Technologies -->
+        <section class="tech-advanced-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Advanced Architecture</span>
+                    <h2>Advanced Generative AI Technologies</h2>
+                    <p>Modern generative AI systems go beyond simple outputs, leveraging complex neural architectures to
+                        solve high-value business challenges.</p>
+                </div>
+
+                <div class="advanced-tech-grid">
+                    <div class="adv-card featured">
+                        <div class="adv-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="adv-info">
+                            <h3>Large Language Models (LLMs)</h3>
+                            <p> Advanced AI models that understand and generate human-like text with high contextual
+                                accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <div class="adv-info">
+                            <h3>Diffusion Models</h3>
+                            <p> AI models that create high-quality images and media by transforming noise into
+                                structured visuals.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-vial"></i></div>
+                        <div class="adv-info">
+                            <h3>GANs (Generative Adversarial Networks)</h3>
+                            <p> Dual-network systems that generate highly realistic synthetic data through competitive
+                                learning.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-layer-group"></i></div>
+                        <div class="adv-info">
+                            <h3>Multimodal AI</h3>
+                            <p>AI systems that process and generate multiple data types like text, images, and audio
+                                together.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-database"></i></div>
+                        <div class="adv-info">
+                            <h3>Retrieval-Augmented (RAG)</h3>
+                            <p>AI approach that combines real-time data retrieval with generation for more accurate and
+                                up-to-date outputs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+             <!-- Key Components -->
+        <section class="tech-components-neural">
+            <div class="container-header-flow">
+                <div class="container-box">
+                    <div class="section-header-modern">
+                        <span class="tech-badge">System Neural Map</span>
+                        <h2>Integrated Generative AI Architecture</h2>
+                        <p>Our production systems are built as an interconnected ecosystem of intelligence, not just isolated components.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="neural-map-viewport">
+                <div class="container-box">
+                    <div class="neural-map-container">
+                        <!-- Connecting SVG Path (Neural Pathways) -->
+                        <svg class="neural-pathways" width="100%" height="100%" viewBox="0 0 1000 600" preserveAspectRatio="none">
+                            <path class="path-line" d="M500,300 L166,100" />
+                            <path class="path-line" d="M500,300 L833,100" />
+                            <path class="path-line" d="M500,300 L166,300" />
+                            <path class="path-line" d="M500,300 L833,300" />
+                            <path class="path-line" d="M500,300 L166,500" />
+                            <path class="path-line" d="M500,300 L833,500" />
+                        </svg>
+
+                        <!-- Central Hub -->
+                        <div class="neural-hub">
+                            <div class="hub-pulse"></div>
+                            <div class="hub-glass">
+                                <i class="fas fa-brain"></i>
+                                <span>AI CORE</span>
+                            </div>
+                        </div>
+
+                        <!-- Satellite Nodes -->
+                        <!-- Top Left -->
+                        <div class="neural-node node-tl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-database"></i></div>
+                                <h3>Data Collection</h3>
+                                <p>Large-scale datasets</p>
+                            </div>
+                        </div>
+
+                        <!-- Top Right -->
+                        <div class="neural-node node-tr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-microchip"></i></div>
+                                <h3>Model Training</h3>
+                                <p>Deep architectures</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Left -->
+                        <div class="neural-node node-ml">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-terminal"></i></div>
+                                <h3>Prompt Engineering</h3>
+                                <p>Optimized input</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Right -->
+                        <div class="neural-node node-mr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-bolt"></i></div>
+                                <h3>Inference Layer</h3>
+                                <p>Real-time generation</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Left -->
+                        <div class="neural-node node-bl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-cloud"></i></div>
+                                <h3>Deployment</h3>
+                                <p>APIs & Cloud</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Right -->
+                        <div class="neural-node node-br">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-chart-line"></i></div>
+                                <h3>Monitoring</h3>
+                                <p>Quality & Performance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack - Re-Design 2 -->
+        <section class="tech-stack-v2">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Powered By</span>
+                    <h2>Generative AI Tech Stack</h2>
+                    <p>We use the most advanced tools and frameworks to deliver industry-leading AI solutions.</p>
+                </div>
+
+                <div class="stack-v2-container">
+                    <!-- Languages -->
+                    <div class="stack-v2-card">
+                        <div class="card-bg-icon"><i class="fas fa-terminal"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Languages</span>
+                            <h3>Core Coding</h3>
+                            <div class="tags-row">
+                                <span>Python</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="stack-v2-card theme-purple">
+                        <div class="card-bg-icon"><i class="fas fa-brain"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Frameworks</span>
+                            <h3>Neural Engines</h3>
+                            <div class="tags-row">
+                                <span>PyTorch</span>
+                                <span>TensorFlow</span>
+                                <span>HuggingFace</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Tools -->
+                    <div class="stack-v2-card theme-orange">
+                        <div class="card-bg-icon"><i class="fas fa-robot"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">AI Tools</span>
+                            <h3>GenAI Ecosystem</h3>
+                            <div class="tags-row">
+                                <span>OpenAI</span>
+                                <span>LangChain</span>
+                                <span>LlamaIndex</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Processing -->
+                    <div class="stack-v2-card theme-cyan">
+                        <div class="card-bg-icon"><i class="fas fa-database"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Data</span>
+                            <h3>Large Datasets</h3>
+                            <div class="tags-row">
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud -->
+                    <div class="stack-v2-card theme-blue">
+                        <div class="card-bg-icon"><i class="fas fa-cloud"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Cloud</span>
+                            <h3>Infrastructure</h3>
+                            <div class="tags-row">
+                                <span>AWS</span>
+                                <span>Azure</span>
+                                <span>GCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deployment -->
+                    <div class="stack-v2-card theme-green">
+                        <div class="card-bg-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Deployment</span>
+                            <h3>Scale & APIs</h3>
+                            <div class="tags-row">
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                                <span>APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Generative AI Development Lifecycle -->
+        <section class="tech-lifecycle-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Development Flow</span>
+                    <h2>Generative AI Development Lifecycle</h2>
+                    <p>A structured lifecycle ensures high performance, production-ready scalability, and ethical safety.</p>
+                </div>
+
+                <div class="horizontal-stepper-system">
+                    <!-- Progress Line & Dots -->
+                    <div class="stepper-track-wrap">
+                        <div class="stepper-main-line">
+                            <div class="stepper-progress-fill"></div>
+                        </div>
+                        <div class="stepper-dots-row">
+                            <div class="stepper-dot active"><i class="fas fa-check"></i></div>
+                            <div class="stepper-dot">02</div>
+                            <div class="stepper-dot">03</div>
+                            <div class="stepper-dot">04</div>
+                            <div class="stepper-dot">05</div>
+                            <div class="stepper-dot">06</div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Cards Grid -->
+                    <div class="stepper-cards-grid">
+                        <!-- Step 01 -->
+                        <div class="stepper-card-item active">
+                            <div class="card-top-icon"><i class="fas fa-database"></i></div>
+                            <span class="card-step-label">Step 1</span>
+                            <h3>Data <br>Preparation</h3>
+                            <p>Collecting and structuring training data.</p>
+                        </div>
+
+                        <!-- Step 02 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-microchip"></i></div>
+                            <span class="card-step-label">Step 2</span>
+                            <h3>Model <br>Selection</h3>
+                            <p>Choosing appropriate generative models.</p>
+                        </div>
+
+                        <!-- Step 03 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-brain"></i></div>
+                            <span class="card-step-label">Step 3</span>
+                            <h3>Training & <br>Fine-Tuning</h3>
+                            <p>Optimizing models for specific use cases.</p>
+                        </div>
+
+                        <!-- Step 04 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-vial"></i></div>
+                            <span class="card-step-label">Step 4</span>
+                            <h3>Testing & <br>Evaluation</h3>
+                            <p>Ensuring output quality and accuracy.</p>
+                        </div>
+
+                        <!-- Step 05 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-rocket"></i></div>
+                            <span class="card-step-label">Step 5</span>
+                            <h3>Deployment <br>& Integration</h3>
+                            <p>Integrating into existing applications.</p>
+                        </div>
+
+                        <!-- Step 06 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-chart-line"></i></div>
+                            <span class="card-step-label">Step 6</span>
+                            <h3>Continuous <br>Improvement</h3>
+                            <p>Updating models with new real-time data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Applications of Generative AI -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Capabilities</span>
+                        <h2>Applications of <br>Generative AI</h2>
+                        <p>Revolutionizing industries by enabling machines to create, reason, and compute with human-like intuition.</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+                    
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-pen-nib"></i></div>
+                            <h3>Content Generation</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-comment-dots"></i></div>
+                            <h3>AI Chatbots & Assistants</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-code"></i></div>
+                            <h3>Code Generation</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-bullhorn"></i></div>
+                            <h3>Marketing Automation</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-palette"></i></div>
+                            <h3>Design & Creativity Tools</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-database"></i></div>
+                            <h3>Synthetic Data Generation</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Use Cases Section - Unified Row Design -->
+        <section class="tech-solutions-premium">
+            <div class="container-box">
+                <div class="solutions-main-header">
+                    <span class="tech-badge">Functional Value</span>
+                    <h2>Practical Generative AI Use Cases</h2>
+                </div>
+
+                <div class="solutions-stack">
+                    <!-- Case 1 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">01</span>
+                            <div class="row-icon"><i class="fas fa-edit"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Automated blog and content writing</h3>
+                            <p>Generate high-quality, SEO-optimized articles and marketing copies instantly.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Content</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">02</span>
+                            <div class="row-icon"><i class="fas fa-headset"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>AI-powered customer support chatbots</h3>
+                            <p>Deploy 24/7 intelligent agents that resolve queries with human-like accuracy.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Support</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 3 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">03</span>
+                            <div class="row-icon"><i class="fas fa-paint-brush"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Image and design generation</h3>
+                            <p>Turn text prompts into stunning visuals, logos, and UI/UX mockups in seconds.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Creative</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 4 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">04</span>
+                            <div class="row-icon"><i class="fas fa-terminal"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Code generation and debugging</h3>
+                            <p>Write robust code and find bugs automatically across various platforms.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Development</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 5 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">05</span>
+                            <div class="row-icon"><i class="fas fa-bullhorn"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Personalized marketing campaigns</h3>
+                            <p>Deeply personalize emails and ad creatives based on individual user behavior.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Marketing</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 6 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">06</span>
+                            <div class="row-icon"><i class="fas fa-play-circle"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Video and media creation</h3>
+                            <p>Generate high-end video content and synthetic media from simple scripts.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Media</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section - Modern Pill Design -->
+        <section class="tech-industries-curated">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Industries Using Generative AI</h2>
+                    <p>Transforming complex workflows across diverse sectors with specialized AI integration.</p>
+                </div>
+                
+                <div class="industry-pills-grid">
+                    <!-- Healthcare -->
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-stethoscope"></i></div>
+                            <div class="pill-info">
+                                <h3>Healthcare</h3>
+                                <p>Medical documentation, research</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finance -->
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-vault"></i></div>
+                            <div class="pill-info">
+                                <h3>Finance</h3>
+                                <p>Automated reporting, insights</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Retail -->
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-store"></i></div>
+                            <div class="pill-info">
+                                <h3>Retail</h3>
+                                <p>Personalized marketing, product visuals</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Media -->
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-clapperboard"></i></div>
+                            <div class="pill-info">
+                                <h3>Media</h3>
+                                <p>Content and video creation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="pill-info">
+                                <h3>Education</h3>
+                                <p>AI tutors and content generation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technology -->
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-microchip"></i></div>
+                            <div class="pill-info">
+                                <h3>Technology</h3>
+                                <p>Code automation and development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Challenges - Restored Side-by-Side with Effects -->
+        <section class="tech-contrast-v3">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Benefits vs. Challenges</h2>
+                </div>
+
+                <div class="contrast-grid-v3">
+                    <!-- Benefits Panel -->
+                    <div class="contrast-card-v3 benefits">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-arrow-trend-up"></i></div>
+                            <h3>Benefits of <br>Generative AI</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-check"></i> Faster content creation</li>
+                                <li><i class="fas fa-circle-check"></i> Reduced operational cost</li>
+                                <li><i class="fas fa-circle-check"></i> Increased productivity</li>
+                                <li><i class="fas fa-circle-check"></i> Personalized user experiences</li>
+                                <li><i class="fas fa-circle-check"></i> Scalable creative solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Challenges Panel -->
+                    <div class="contrast-card-v3 challenges">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-triangle-exclamation"></i></div>
+                            <h3>Challenges in <br>Generative AI</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-info"></i> Data bias and hallucinations</li>
+                                <li><i class="fas fa-circle-info"></i> Content accuracy issues</li>
+                                <li><i class="fas fa-circle-info"></i> High computational cost</li>
+                                <li><i class="fas fa-circle-info"></i> Ethical and legal concerns</li>
+                                <li><i class="fas fa-circle-info"></i> Quality control and moderation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Our Generative AI Approach Section -->
+        <!-- Why Our Generative AI Approach Stands Out -->
+        <section class="tech-approach-dashboard">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Our Advantage</span>
+                    <h2>Why Our Generative AI Approach</h2>
+                    <p>We combine deep mathematical expertise with rapid production engineering.</p>
+                </div>
+
+                <div class="approach-dashboard-wrap">
+                    <!-- Dashboard Row 1 -->
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-microchip"></i></div>
+                        <div class="item-main">
+                            <h3>Expertise in modern AI models</h3>
+                            <p>Mastery over LLMs, GANs, and Diffusion models for tailored solutions.</p>
+                        </div>
+                        <div class="item-status">Active</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <!-- Dashboard Row 2 -->
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-layer-group"></i></div>
+                        <div class="item-main">
+                            <h3>Scalable and production-ready systems</h3>
+                            <p>Infrastructures that handle million-user loads with high performance.</p>
+                        </div>
+                        <div class="item-status">Verified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <!-- Dashboard Row 3 -->
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-check-double"></i></div>
+                        <div class="item-main">
+                            <h3>Focus on accuracy and quality</h3>
+                            <p>Rigorous validation and hallucination-control for reliable outputs.</p>
+                        </div>
+                        <div class="item-status">Certified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <!-- Dashboard Row 4 -->
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-bolt"></i></div>
+                        <div class="item-main">
+                            <h3>Continuous optimization</h3>
+                            <p>Real-time monitoring and iterative fine-tuning for peak efficiency.</p>
+                        </div>
+                        <div class="item-status">Dynamic</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <!-- Dashboard Row 5 -->
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-shield-halved"></i></div>
+                        <div class="item-main">
+                            <h3>Secure and compliant solutions</h3>
+                            <p>Enterprise-grade security and ethical AI implementations.</p>
+                        </div>
+                        <div class="item-status">Secure</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future of Generative AI - Compact Feature Grid -->
+        <section class="tech-future-compact">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Future Tech</span>
+                    <h2>The Horizon of Generative AI</h2>
+                </div>
+
+                <div class="compact-future-grid">
+                    <!-- Point 1 -->
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-robot"></i></div>
+                        <div class="compact-text">
+                            <h3>Autonomous Systems</h3>
+                            <p>Self-optimizing AI content workflows with minimal oversight.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 2 -->
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-cubes"></i></div>
+                        <div class="compact-text">
+                            <h3>Multimodal Models</h3>
+                            <p>Seamless mixing of text, image, and audio in unified AI architectures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-bolt"></i></div>
+                        <div class="compact-text">
+                            <h3>Real-time Generation</h3>
+                            <p>Instantaneous creation of complex assets for dynamic user experiences.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 4 -->
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-users-rays"></i></div>
+                        <div class="compact-text">
+                            <h3>AI Collaboration</h3>
+                            <p>Evolving AI into a strategic co-creator that amplifies human talent.</p>
+                        </div>
+                    </div>
+
+                    <!-- Point 5 -->
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <div class="compact-text">
+                            <h3>Creativity Suite</h3>
+                            <p>Professional-grade creative tools accessible to users of all skill levels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="tech-faq-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Knowledge Base</span>
+                    <h2>Frequently Asked Questions (FAQs)</h2>
+                    <p>Everything you need to know about Generative AI technologies and how we implement them.</p>
+                </div>
+
+                <div class="faq-accordion-wrap">
+                    <!-- Q1 -->
+                    <details class="faq-item" open>
+                        <summary>What is generative AI?</summary>
+                        <div class="faq-answer">
+                            <p>Generative AI refers to technologies that can create content such as text, images, audio, and code using machine learning models trained on vast datasets.</p>
+                        </div>
+                    </details>
+
+                    <!-- Q2 -->
+                    <details class="faq-item">
+                        <summary>How does generative AI work?</summary>
+                        <div class="faq-answer">
+                            <p>It uses deep learning models (like Transformers or GANs) trained on large datasets to identify patterns and generate new content based on user input prompts.</p>
+                        </div>
+                    </details>
+
+                    <!-- Q3 -->
+                    <details class="faq-item">
+                        <summary>What are examples of generative AI tools?</summary>
+                        <div class="faq-answer">
+                            <p>Examples include OpenAI models (GPT-4), DALL·E for images, Midjourney for creative visuals, and various AI-based content and code generation platforms.</p>
+                        </div>
+                    </details>
+
+                    <!-- Q4 -->
+                    <details class="faq-item">
+                        <summary>What is the difference between generative AI and machine learning?</summary>
+                        <div class="faq-answer">
+                            <p>Standard machine learning focuses on prediction and classification, while generative AI focuses on creating entirely new data and content that didn't exist before.</p>
+                        </div>
+                    </details>
+
+                    <!-- Q5 -->
+                    <details class="faq-item">
+                        <summary>What are the benefits of generative AI?</summary>
+                        <div class="faq-answer">
+                            <p>It significantly improves productivity, automates repetitive content creation, enables rapid prototyping, and provides highly personalized user experiences at scale.</p>
+                        </div>
+                    </details>
+
+                    <!-- Q6 -->
+                    <details class="faq-item">
+                        <summary>What are challenges in generative AI?</summary>
+                        <div class="faq-answer">
+                            <p>Key challenges include model bias, "hallucinations" (incorrect outputs), high computational costs, and maintaining content accuracy and ethical safety.</p>
+                        </div>
+                    </details>
+
+                    <!-- Q7 -->
+                    <details class="faq-item">
+                        <summary>How is generative AI used in real-world applications?</summary>
+                        <div class="faq-answer">
+                            <p>It is currently used in customer support chatbots, professional design automation, marketing content generation, automated coding, and synthetic data for research.</p>
+                        </div>
+                    </details>
+
+                    <!-- Q8 -->
+                    <details class="faq-item">
+                        <summary>What is the future of generative AI?</summary>
+                        <div class="faq-answer">
+                            <p>The future points towards multimodal AI (text/image/video combined), real-time generation on local devices, and deep human-AI collaboration across all creative fields.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action - High Impact Finish -->
+        <section class="tech-final-cta-v3">
+            <div class="container-box">
+                <div class="cta-wrapper-v3">
+                    <div class="cta-glow-1"></div>
+                    <div class="cta-glow-2"></div>
+                    
+                    <div class="cta-content-v3">
+                        <span class="cta-badge-v3">The Next Frontier</span>
+                        <h2>Ready to Build with Generative AI?</h2>
+                        <p>Leverage generative AI technologies to create smarter, faster, and more innovative solutions tailored to your business needs.</p>
+                        
+                        <div class="cta-action-v3">
+                            <a href="contact.php" class="cta-btn-main">
+                                <span>Get a Free Consultation</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="ai-machine-learning.php" class="cta-btn-alt">
+                                <span>Explore AI Services</span>
+                                <i class="fas fa-microchip"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regular Footer -->
+        <!-- Footer -->
+        <section class="Footer">
+            <div class="footer-bg-clip">
+                <div class="footer-bg-circle"></div>
+            </div>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-icons">
+                        <a target="_blank" href="#">
+                            <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                                src="./assets/images/instagram.webp" alt="instagram" /></a>
+                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                                src="./assets/images/facebook2.webp" alt="facebook" /></a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="footer-greet">
+                            <span class="hand">👋</span> Hey Innovator,
+                        </p>
+                        <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+                        <p class="footer-email">info@alphabitinfoway.com</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <img src="./assets/images/AI Model.webp" alt="Robot" />
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+                <div class="footer-links">
+                    <a href="#">AGENCY</a>
+                    <a href="#">CAREER</a>
+                    <a href="#">PRIVACY</a>
+                    <a href="#">TERMS &amp; CONDITION</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Lifecycle Stepper Interactivity
+        function updateStepper(stepIndex) {
+            const dots = document.querySelectorAll('.stepper-dot');
+            const cards = document.querySelectorAll('.stepper-card-item');
+            const fill = document.querySelector('.stepper-progress-fill');
+            
+            // Calculate progress width (0% to 100% across 6 steps)
+            const progressWidth = ((stepIndex - 1) / (dots.length - 1)) * 100;
+            fill.style.width = progressWidth + '%';
+
+            // Update Active States for Dots
+            dots.forEach((dot, index) => {
+                if (index + 1 <= stepIndex) {
+                    dot.classList.add('active');
+                    if (index + 1 < stepIndex || stepIndex === index + 1) {
+                         dot.innerHTML = '<i class="fas fa-check"></i>';
+                    }
+                } else {
+                    dot.classList.remove('active');
+                    dot.innerHTML = (index + 1).toString().padStart(2, '0');
+                }
+            });
+
+            // Update Active States for Cards
+            cards.forEach((card, index) => {
+                if (index + 1 === stepIndex) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+        }
+
+        // Add Click Events to Cards
+        document.querySelectorAll('.stepper-card-item').forEach((card, index) => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => updateStepper(index + 1));
+        });
+
+        // Initialize at Step 1
+        window.addEventListener('DOMContentLoaded', () => updateStepper(1));
+    </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
+

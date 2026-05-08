@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AI Chatbot Technologies | NLP, LLMs & Conversational AI | Alphabit</title>
+    <meta name="description"
+        content="Discover AI chatbot technologies including NLP, LLMs, and conversational AI frameworks. Learn how intelligent chatbots enable automation, customer interaction, and real-time communication." />
+    <meta name="keywords"
+        content="AI Chatbot, NLP, Conversational AI, LLMs, Dialogflow, Rasa, Generative AI Chatbots, Alphabit Infoway" />
+    <meta name="author" content="Alphabit Infoway" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/technologies.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Minimal Preloader -->
+    <div id="preloader">
+        <div class="minimal-loader">
+            <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+            <div class="loader-progress-bar"></div>
+            <div class="loader-text">Configuring Dialogue Engines...</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <h6><a href="./">Home</a></h6>
+                <h6 class="dropdown">
+                    <a href="services" class="dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+                        <li><a href="services">Cyber Security & Compliance</a></li>
+                        <li><a href="services">Full Stack Web Development</a></li>
+                        <li><a href="services">Mobile App & Product Design</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="#products">Products</a></h6>
+                <h6 class="dropdown">
+                    <a href="Technology" class="dropdown-toggle">Technology</a>
+                    <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Artificial Intelligence</li>
+                        <li><a href="ai-development-technologies.html">AI Development</a></li>
+                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Web Technologies</li>
+                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+                        <li><a href="backend-technologies.html">Backend Development</a></li>
+                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Mobile Technologies</li>
+                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
+                        <li><a href="android-development-technologies.html">Android Development</a></li>
+                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cloud & DevOps</li>
+                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
+                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
+                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Data & Analytics</li>
+                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
+                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
+                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+
+                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cyber Security</li>
+                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
+                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="about">About</a></h6>
+                <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+                <h6 class="dropdown">
+                    <a href="#" class="dropdown-toggle">Insights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="career">Career</a></li>
+                    </ul>
+                </h6>
+                <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+            </nav>
+            <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="tech-hero-modern">
+            <div class="tech-hero-background">
+                <div class="mesh-gradient"></div>
+                <div class="grid-overlay"></div>
+                <div class="wave-mesh"></div>
+            </div>
+            <div class="container-box">
+                <div class="tech-hero-content">
+                    <div class="tech-hero-text">
+                        <nav class="breadcrumb">
+                            <a href="index.html">Home</a> / <a href="Technology">Technology</a> / <span>AI Chatbot Technologies</span>
+                        </nav>
+                        <h1>AI Chatbot <br />Technologies & Capabilities</h1>
+                        <p>AI chatbots are transforming how businesses interact with users — enabling real-time, intelligent, and scalable conversations. Powered by Natural Language Processing (NLP), Large Language Models (LLMs), and automation frameworks, modern chatbots can understand context, generate human-like responses, and continuously improve through data.</p>
+
+                        <div class="hero-stats-row">
+                            <div class="hero-stat">
+                                <h3>5+</h3>
+                                <p>Core AI Models</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>10+</h3>
+                                <p>Tools & Frameworks</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>3</h3>
+                                <p>Cloud Platforms</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>8+</h3>
+                                <p>Industry Applications</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tech-hero-illustration">
+                        <!-- Reusing the generative ai hero image or generic neural network image, since it fits -->
+                        <img src="./assets/images/logo.png" alt="AI Chatbot Technologies" style="border-radius: 20px;" />
+                    </div>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn-primary-tech">Talk to a Chatbot Expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Adoption & Impact -->
+        <section class="tech-impact-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Strategic Value</span>
+                    <h2>AI Chatbot Adoption & Impact</h2>
+                    <p>AI chatbots are redefining customer interaction, automation, and digital engagement.</p>
+                </div>
+                <div class="impact-cards-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>24/7 Intelligent Support</h3>
+                            <p>Chatbots provide instant, always-on responses without human dependency.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Operational Efficiency</h3>
+                            <p>Reduce manual workload by automating repetitive queries and workflows.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Personalized Conversations</h3>
+                            <p>AI-driven chatbots tailor responses based on user behavior and context.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Scalable Communication</h3>
+                            <p>Handle thousands of simultaneous conversations without performance loss.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution -->
+        <section class="tech-evolution-perfect">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">The Journey</span>
+                    <h2>Evolution of AI Chatbots</h2>
+                    <p>Chatbots have evolved from simple scripted systems to intelligent conversational agents.</p>
+                </div>
+
+                <div class="evolution-timeline-container">
+                    <div class="timeline-main-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 01</span>
+                            <h3>Rule-Based Bots</h3>
+                            <p>Predefined scripts with limited decision trees and strict logic.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-list-ol"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 02</span>
+                            <h3>NLP-Based Bots</h3>
+                            <p>Understanding intent and extracting entities from user input naturally.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 03</span>
+                            <h3>Context-Aware Systems</h3>
+                            <p>Maintaining conversation flow, tracking context, and memory.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 04</span>
+                            <h3>AI & LLM Integration</h3>
+                            <p>Human-like conversations using advanced large language models.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 05</span>
+                            <h3>Autonomous AI Agents</h3>
+                            <p>Self-learning systems capable of complex end-to-end task execution.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+   
+        <!-- Types of Tech -->
+        <section class="tech-types-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Capabilities</span>
+                    <h2>Types of AI Chatbot Technologies</h2>
+                    <p>Different chatbot architectures solve specific conversational and automation needs.</p>
+                </div>
+
+                <div class="tech-types-grid">
+                    <div class="type-card accent-purple">
+                        <div class="type-icon-box">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3>Rule-Based Chatbots</h3>
+                        <p>Operate on predefined rules and flows for predictable interactions.</p>
+                        <div class="type-tags">
+                            <span>Decision Trees</span>
+                            <span>FAQ Bots</span>
+                            <span>Workflow Automation</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-orange">
+                        <div class="type-icon-box">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>NLP Chatbots (Intent-Based)</h3>
+                        <p>Understand user queries using Natural Language Processing.</p>
+                        <div class="type-tags">
+                            <span>Intent Recognition</span>
+                            <span>Entity Extraction</span>
+                            <span>Context Handling</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-cyan">
+                        <div class="type-icon-box">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI-Powered Chatbots (LLM)</h3>
+                        <p>Use large language models for dynamic and human-like conversations.</p>
+                        <div class="type-tags">
+                            <span>Contextual Responses</span>
+                            <span>Multi-turn Convos</span>
+                            <span>Knowledge Answers</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-emerald">
+                        <div class="type-icon-box">
+                            <i class="fas fa-random"></i>
+                        </div>
+                        <h3>Hybrid Chatbots</h3>
+                        <p>Combine rule-based logic with AI intelligence for better control.</p>
+                        <div class="type-tags">
+                            <span>Structured + Dynamic</span>
+                            <span>Logic Integration</span>
+                            <span>Flexible Flows</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-blue">
+                        <div class="type-icon-box">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <h3>Voice & Multimodal</h3>
+                        <p>Support voice, text, and visual interactions across platforms.</p>
+                        <div class="type-tags">
+                            <span>Speech Recognition</span>
+                            <span>Text-to-Speech</span>
+                            <span>Image Understanding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced AI Development Technologies -->
+        <section class="tech-advanced-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Advanced Architecture</span>
+                    <h2>Advanced Chatbot Technologies</h2>
+                    <p>Modern conversational AI systems incorporate high-level intelligence and real-time processing.</p>
+                </div>
+
+                <div class="advanced-tech-grid">
+                    <div class="adv-card featured">
+                        <div class="adv-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <div class="adv-info">
+                            <h3>Generative AI Integration</h3>
+                            <p>Enables chatbots to generate natural, highly nuanced, human-like responses.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-memory"></i></div>
+                        <div class="adv-info">
+                            <h3>Context Memory Systems</h3>
+                            <p>Retain user history and previous interactions for personalized sessions.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="adv-info">
+                            <h3>Conversational Analytics</h3>
+                            <p>Analyze conversations to continuously improve performance and UX.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-heart"></i></div>
+                        <div class="adv-info">
+                            <h3>Sentiment Analysis</h3>
+                            <p>Detect user emotions and intuitively adapt the tone and responses accordingly.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="adv-info">
+                            <h3>Real-Time AI Processing</h3>
+                            <p>Deliver instant, dynamic responses with minimal latency at scale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Key Components -->
+        <section class="tech-components-neural">
+            <div class="container-header-flow">
+                <div class="container-box">
+                    <div class="section-header-modern">
+                        <span class="tech-badge">System Neural Map</span>
+                        <h2>Key Components of AI Chatbot Systems</h2>
+                        <p>A production-ready chatbot includes seamlessly interconnected conversational layers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="neural-map-viewport">
+                <div class="container-box">
+                    <div class="neural-map-container">
+                        <!-- Connecting SVG Path (Neural Pathways) -->
+                        <svg class="neural-pathways" width="100%" height="100%" viewBox="0 0 1000 600" preserveAspectRatio="none">
+                            <path class="path-line" d="M500,300 L166,100" />
+                            <path class="path-line" d="M500,300 L833,100" />
+                            <path class="path-line" d="M500,300 L166,300" />
+                            <path class="path-line" d="M500,300 L833,300" />
+                            <path class="path-line" d="M500,300 L166,500" />
+                            <path class="path-line" d="M500,300 L833,500" />
+                        </svg>
+
+                        <!-- Central Hub -->
+                        <div class="neural-hub">
+                            <div class="hub-pulse"></div>
+                            <div class="hub-glass">
+                                <i class="fas fa-comments"></i>
+                                <span>AI ENGINE</span>
+                            </div>
+                        </div>
+
+                        <!-- Satellite Nodes -->
+                        <!-- Top Left -->
+                        <div class="neural-node node-tl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-mobile-alt"></i></div>
+                                <h3>User Interface</h3>
+                                <p>Web, mobile, or messaging apps</p>
+                            </div>
+                        </div>
+
+                        <!-- Top Right -->
+                        <div class="neural-node node-tr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-brain"></i></div>
+                                <h3>NLP Engine</h3>
+                                <p>Understand intent and context</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Left -->
+                        <div class="neural-node node-ml">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-sitemap"></i></div>
+                                <h3>Dialogue Manager</h3>
+                                <p>Control conversation flow</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Right -->
+                        <div class="neural-node node-mr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-book"></i></div>
+                                <h3>Knowledge Base</h3>
+                                <p>FAQs, documents, and data</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Left -->
+                        <div class="neural-node node-bl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-plug"></i></div>
+                                <h3>Integration Layer</h3>
+                                <p>APIs, CRM, and databases</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Right -->
+                        <div class="neural-node node-br">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-chart-pie"></i></div>
+                                <h3>Analytics</h3>
+                                <p>Performance tracking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture & System Design -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Infrastructure</span>
+                        <h2>Chatbot Architecture <br>& System Design</h2>
+                        <p>Modern chatbot systems are built with scalable, interconnected architecture components.</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-keyboard"></i></div>
+                            <h3>Input processing (text/voice)</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-brain"></i></div>
+                            <h3>NLP & intent detection</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-sitemap"></i></div>
+                            <h3>Dialogue management system</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-plug"></i></div>
+                            <h3>Backend integrations</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-robot"></i></div>
+                            <h3>Response generation (LLM/NLG)</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-server"></i></div>
+                            <h3>API-based deployment & Cloud</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-stack-v2">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Powered By</span>
+                    <h2>AI Chatbot Tech Stack</h2>
+                    <p>We leverage the most robust and advanced frameworks to build conversational intelligence.</p>
+                </div>
+
+                <div class="stack-v2-container">
+                    <!-- Languages -->
+                    <div class="stack-v2-card">
+                        <div class="card-bg-icon"><i class="fas fa-code"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Languages</span>
+                            <h3>Programming</h3>
+                            <div class="tags-row">
+                                <span>Python</span>
+                                <span>JavaScript</span>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="stack-v2-card theme-purple">
+                        <div class="card-bg-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">NLP</span>
+                            <h3>AI Frameworks</h3>
+                            <div class="tags-row">
+                                <span>Rasa</span>
+                                <span>Dialogflow</span>
+                                <span>Bot Framework</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NLP GenAI -->
+                    <div class="stack-v2-card theme-orange">
+                        <div class="card-bg-icon"><i class="fas fa-robot"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Models</span>
+                            <h3>LLM & GenAI</h3>
+                            <div class="tags-row">
+                                <span>OpenAI</span>
+                                <span>LLaMA</span>
+                                <span>Claude</span>
+                                <span>Gemini</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Engineering -->
+                    <div class="stack-v2-card theme-cyan">
+                        <div class="card-bg-icon"><i class="fas fa-database"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Data</span>
+                            <h3>Processing</h3>
+                            <div class="tags-row">
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                                <span>Elasticsearch</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deployment -->
+                    <div class="stack-v2-card theme-green">
+                        <div class="card-bg-icon"><i class="fas fa-server"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Deployment</span>
+                            <h3>Deploy & MLOps</h3>
+                            <div class="tags-row">
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                                <span>FastAPI</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cloud -->
+                    <div class="stack-v2-card theme-blue" style="grid-column: span 1;">
+                        <div class="card-bg-icon"><i class="fas fa-cloud"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Cloud</span>
+                            <h3>Cloud Platforms</h3>
+                            <div class="tags-row">
+                                <span>AWS</span>
+                                <span>Azure</span>
+                                <span>GCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monitoring -->
+                    <div class="stack-v2-card theme-orange" style="grid-column: span 1;">
+                        <div class="card-bg-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Observability</span>
+                            <h3>Analytics</h3>
+                            <div class="tags-row">
+                                <span>Google Analytics</span>
+                                <span>Grafana</span>
+                                <span>Kibana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Lifecycle -->
+        <section class="tech-lifecycle-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Development Flow</span>
+                    <h2>AI Chatbot Development Lifecycle</h2>
+                    <p>A rigorous, structured approach ensures conversational fluency and accuracy.</p>
+                </div>
+
+                <div class="horizontal-stepper-system">
+                    <!-- Progress Line & Dots -->
+                    <div class="stepper-track-wrap">
+                        <div class="stepper-main-line">
+                            <div class="stepper-progress-fill"></div>
+                        </div>
+                        <div class="stepper-dots-row">
+                            <div class="stepper-dot active"><i class="fas fa-check"></i></div>
+                            <div class="stepper-dot">02</div>
+                            <div class="stepper-dot">03</div>
+                            <div class="stepper-dot">04</div>
+                            <div class="stepper-dot">05</div>
+                            <div class="stepper-dot">06</div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Cards Grid -->
+                    <div class="stepper-cards-grid">
+                        <!-- Step 01 -->
+                        <div class="stepper-card-item active">
+                            <div class="card-top-icon"><i class="fas fa-clipboard-list"></i></div>
+                            <span class="card-step-label">Step 1</span>
+                            <h3>Requirement <br>Analysis</h3>
+                            <p>Define chatbot goals and business use cases.</p>
+                        </div>
+
+                        <!-- Step 02 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-database"></i></div>
+                            <span class="card-step-label">Step 2</span>
+                            <h3>Data <br>Collection</h3>
+                            <p>Gather training data and conversation flows.</p>
+                        </div>
+
+                        <!-- Step 03 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-brain"></i></div>
+                            <span class="card-step-label">Step 3</span>
+                            <h3>NLP & <br>Model Setup</h3>
+                            <p>Train intent recognition and LLM models.</p>
+                        </div>
+
+                        <!-- Step 04 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-comments"></i></div>
+                            <span class="card-step-label">Step 4</span>
+                            <h3>Conversation <br>Design</h3>
+                            <p>Build robust dialogue flows and user journeys.</p>
+                        </div>
+
+                        <!-- Step 05 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-rocket"></i></div>
+                            <span class="card-step-label">Step 5</span>
+                            <h3>Integration <br>& Deployment</h3>
+                            <p>Connect APIs, CRM, and deploy across channels.</p>
+                        </div>
+
+                        <!-- Step 06 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-sync"></i></div>
+                            <span class="card-step-label">Step 6</span>
+                            <h3>Monitoring & <br>Optimization</h3>
+                            <p>Continuously improve performance with analytics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Applications of AI Chatbots -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Capabilities</span>
+                        <h2>Applications of <br>AI Chatbot Technologies</h2>
+                        <p>Powering modern business systems with automated conversational intelligence across all touchpoints.</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+                    
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-headset"></i></div>
+                            <h3>Customer support automation</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-filter"></i></div>
+                            <h3>Lead generation & qualification</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-shopping-cart"></i></div>
+                            <h3>E-commerce assistance</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-calendar-check"></i></div>
+                            <h3>Appointment booking</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-laptop-medical"></i></div>
+                            <h3>IT helpdesk automation</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-users-cog"></i></div>
+                            <h3>Internal employee support</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Use Cases Section -->
+        <section class="tech-solutions-premium">
+            <div class="container-box">
+                <div class="solutions-main-header">
+                    <span class="tech-badge">Functional Value</span>
+                    <h2>Practical AI Chatbot Use Cases</h2>
+                </div>
+
+                <div class="solutions-stack">
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">01</span><div class="row-icon"><i class="fas fa-globe"></i></div></div>
+                        <div class="solution-mid"><h3>Website customer support bot</h3><p>Engage visitors instantly, resolve queries, and lower bounce rates.</p></div>
+                        <div class="solution-right"><span class="solution-tag">Support</span></div>
+                    </div>
+
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">02</span><div class="row-icon"><i class="fab fa-whatsapp"></i></div></div>
+                        <div class="solution-mid"><h3>WhatsApp & social media bots</h3><p>Meet customers where they are with seamless chat experiences.</p></div>
+                        <div class="solution-right"><span class="solution-tag">Omnichannel</span></div>
+                    </div>
+
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">03</span><div class="row-icon"><i class="fas fa-chart-line"></i></div></div>
+                        <div class="solution-mid"><h3>AI sales assistant</h3><p>Guide prospects through funnels, answer product questions, and close deals.</p></div>
+                        <div class="solution-right"><span class="solution-tag">Sales</span></div>
+                    </div>
+
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">04</span><div class="row-icon"><i class="fas fa-question-circle"></i></div></div>
+                        <div class="solution-mid"><h3>FAQ automation system</h3><p>Provide instantaneous answers to thousands of repetitive questions.</p></div>
+                        <div class="solution-right"><span class="solution-tag">Automation</span></div>
+                    </div>
+
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">05</span><div class="row-icon"><i class="fas fa-university"></i></div></div>
+                        <div class="solution-mid"><h3>Banking virtual assistant</h3><p>Securely handle balance inquiries, transfers, and report stolen cards.</p></div>
+                        <div class="solution-right"><span class="solution-tag">Finance</span></div>
+                    </div>
+
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">06</span><div class="row-icon"><i class="fas fa-heartbeat"></i></div></div>
+                        <div class="solution-mid"><h3>Healthcare chat assistant</h3><p>Manage patient triage, schedule appointments, and provide health tips.</p></div>
+                        <div class="solution-right"><span class="solution-tag">Healthcare</span></div>
+                    </div>
+
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">07</span><div class="row-icon"><i class="fas fa-user-tie"></i></div></div>
+                        <div class="solution-mid"><h3>HR & recruitment chatbot</h3><p>Automate candidate screening, interview scheduling, and employee onboarding.</p></div>
+                        <div class="solution-right"><span class="solution-tag">HR</span></div>
+                    </div>
+
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">08</span><div class="row-icon"><i class="fas fa-graduation-cap"></i></div></div>
+                        <div class="solution-mid"><h3>E-learning assistant</h3><p>Provide personalized tutoring, course recommendations, and instant query resolution.</p></div>
+                        <div class="solution-right"><span class="solution-tag">Education</span></div>
+                    </div>
+
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">09</span><div class="row-icon"><i class="fas fa-plane-departure"></i></div></div>
+                        <div class="solution-mid"><h3>Travel booking assistant</h3><p>Help users find flights, book hotels, and plan itineraries conversationally.</p></div>
+                        <div class="solution-right"><span class="solution-tag">Travel</span></div>
+                    </div>
+
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">10</span><div class="row-icon"><i class="fas fa-box-open"></i></div></div>
+                        <div class="solution-mid"><h3>Order tracking bot</h3><p>Provide real-time order status, shipping updates, and return processing.</p></div>
+                        <div class="solution-right"><span class="solution-tag">E-commerce</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section class="tech-industries-curated">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Industries Using AI Chatbots</h2>
+                    <p>Deploying tailored conversational solutions to solve specific industry challenges.</p>
+                </div>
+                
+                <div class="industry-pills-grid">
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-stethoscope"></i></div>
+                            <div class="pill-info">
+                                <h3>Healthcare</h3>
+                                <p>Patient support & scheduling</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-vault"></i></div>
+                            <div class="pill-info">
+                                <h3>Finance</h3>
+                                <p>Banking assistants & fraud alerts</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-store"></i></div>
+                            <div class="pill-info">
+                                <h3>Retail</h3>
+                                <p>Shopping assistance & recommendations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="pill-info">
+                                <h3>Education</h3>
+                                <p>Interactive learning assistants</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-plane"></i></div>
+                            <div class="pill-info">
+                                <h3>Travel</h3>
+                                <p>Booking & real-time customer support</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-home"></i></div>
+                            <div class="pill-info">
+                                <h3>Real Estate</h3>
+                                <p>Property inquiries & lead engagement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Challenges -->
+        <section class="tech-contrast-v3">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Benefits vs. Challenges</h2>
+                </div>
+
+                <div class="contrast-grid-v3">
+                    <!-- Benefits Panel -->
+                    <div class="contrast-card-v3 benefits">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-arrow-trend-up"></i></div>
+                            <h3>Benefits of <br>AI Chatbots</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-check"></i> 24/7 availability & support</li>
+                                <li><i class="fas fa-circle-check"></i> Faster response time</li>
+                                <li><i class="fas fa-circle-check"></i> Cost reduction</li>
+                                <li><i class="fas fa-circle-check"></i> Improved user experience</li>
+                                <li><i class="fas fa-circle-check"></i>Scalable communication</li>
+                                     <li><i class="fas fa-circle-check"></i>Data-driven insights</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Challenges Panel -->
+                    <div class="contrast-card-v3 challenges">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-triangle-exclamation"></i></div>
+                            <h3>Challenges in <br>AI Chatbots</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-info"></i> Understanding complex queries</li>
+                                <li><i class="fas fa-circle-info"></i> Maintaining conversation context</li>
+                                <li><i class="fas fa-circle-info"></i> Data privacy and security concerns</li>
+                                <li><i class="fas fa-circle-info"></i> Backend integration complexity</li>
+                                <li><i class="fas fa-circle-info"></i> Handling edge cases effectively</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Our Approach Stands Out -->
+        <section class="tech-approach-dashboard">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Our Advantage</span>
+                    <h2>Why Our Chatbot Approach Stands Out</h2>
+                    <p>We blend conversational design with deep engineering to build bots that people actually enjoy using.</p>
+                </div>
+
+                <div class="approach-dashboard-wrap">
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-brain"></i></div>
+                        <div class="item-main">
+                            <h3>Strong NLP & AI expertise</h3>
+                            <p>Utilizing the latest models to ensure perfect intent recognition.</p>
+                        </div>
+                        <div class="item-status">Active</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-sitemap"></i></div>
+                        <div class="item-main">
+                            <h3>Scalable architecture design</h3>
+                            <p>Handling thousands of concurrent users with zero latency.</p>
+                        </div>
+                        <div class="item-status">Verified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-comments"></i></div>
+                        <div class="item-main">
+                            <h3>Human-like conversational flow</h3>
+                            <p>UX-focused dialogue design that feels natural, not robotic.</p>
+                        </div>
+                        <div class="item-status">Certified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-sync"></i></div>
+                        <div class="item-main">
+                            <h3>Continuous learning & improvement</h3>
+                            <p>Analytics-driven optimizations to consistently improve accuracy.</p>
+                        </div>
+                        <div class="item-status">Dynamic</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-shield-alt"></i></div>
+                        <div class="item-main">
+                            <h3>Secure and reliable systems</h3>
+                            <p>Enterprise-grade security protecting user data and PII.</p>
+                        </div>
+                        <div class="item-status">Secure</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future of AI Chatbots -->
+        <section class="tech-future-compact">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Future Tech</span>
+                    <h2>Future of AI Chatbots</h2>
+                </div>
+
+                <div class="compact-future-grid">
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-user-astronaut"></i></div>
+                        <div class="compact-text">
+                            <h3>Autonomous Agents</h3>
+                            <p>AI that executes multi-step workflows without human prompting.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-cubes"></i></div>
+                        <div class="compact-text">
+                            <h3>Multimodal AI</h3>
+                            <p>Processing text, voice, and visual inputs simultaneously.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-heartbeat"></i></div>
+                        <div class="compact-text">
+                            <h3>Emotion-Aware</h3>
+                            <p>Detecting and adapting instantly to user sentiment shifts.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-network-wired"></i></div>
+                        <div class="compact-text">
+                            <h3>Deep System Integration</h3>
+                            <p>Seamlessly triggering actions across massive ERPs and CRMs.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-bolt"></i></div>
+                        <div class="compact-text">
+                            <h3>Real-time Adaptability</h3>
+                            <p>Instantaneous contextual updates without requiring retraining.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="tech-faq-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Knowledge Base</span>
+                    <h2>Frequently Asked Questions (FAQs)</h2>
+                    <p>Everything you need to know about conversational AI implementations.</p>
+                </div>
+
+                <div class="faq-accordion-wrap">
+                    <details class="faq-item" open>
+                        <summary>What is an AI chatbot?</summary>
+                        <div class="faq-answer">
+                            <p>An AI chatbot is a software application that uses artificial intelligence and NLP to simulate human-like conversations with users.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is the difference between rule-based and AI chatbots?</summary>
+                        <div class="faq-answer">
+                            <p>Rule-based chatbots follow predefined scripts, while AI chatbots use machine learning and NLP to understand and respond dynamically.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What technologies are used in AI chatbots?</summary>
+                        <div class="faq-answer">
+                            <p>Technologies include NLP, machine learning, Large Language Models (LLMs), APIs, and cloud platforms.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What are real-world examples of AI chatbots?</summary>
+                        <div class="faq-answer">
+                            <p>Customer support bots, virtual assistants (Siri, Alexa), banking chatbots, and e-commerce virtual shoppers.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How do AI chatbots improve over time?</summary>
+                        <div class="faq-answer">
+                            <p>They learn from user interactions, feedback loops, sentiment analysis, and continuous NLP model training.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is conversational AI?</summary>
+                        <div class="faq-answer">
+                            <p>Conversational AI refers to technologies that enable machines to understand, process, and respond to human language naturally.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What are the key components of a chatbot system?</summary>
+                        <div class="faq-answer">
+                            <p>An NLP engine, dialogue manager, integration APIs, knowledge base, and analytics monitoring systems.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What are the challenges in chatbot development?</summary>
+                        <div class="faq-answer">
+                            <p>Handling context, maintaining high accuracy, ensuring data privacy, and navigating highly complex or nuanced conversations.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="tech-final-cta-v3">
+            <div class="container-box">
+                <div class="cta-wrapper-v3">
+                    <div class="cta-glow-1"></div>
+                    <div class="cta-glow-2"></div>
+                    
+                    <div class="cta-content-v3">
+                        <span class="cta-badge-v3">The Next Frontier</span>
+                        <h2>Ready to Build Intelligent Chatbots?</h2>
+                        <p>Turn conversational AI into real business value with our tailored, scalable chatbot solutions.</p>
+                        
+                        <div class="cta-action-v3">
+                            <a href="contact.html" class="cta-btn-main">
+                                <span>Start Your AI Chatbot Project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="ai-machine-learning.html" class="cta-btn-alt">
+                                <span>Explore AI Services</span>
+                                <i class="fas fa-microchip"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="Footer">
+            <div class="footer-bg-clip">
+                <div class="footer-bg-circle"></div>
+            </div>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-icons">
+                        <a target="_blank" href="#">
+                            <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                                src="./assets/images/instagram.webp" alt="instagram" /></a>
+                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                                src="./assets/images/facebook2.webp" alt="facebook" /></a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="footer-greet">
+                            <span class="hand">👋</span> Hey Innovator,
+                        </p>
+                        <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+                        <p class="footer-email">info@alphabitinfoway.com</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <img src="./assets/images/AI Model.webp" alt="Robot" />
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+                <div class="footer-links">
+                    <a href="#">AGENCY</a>
+                    <a href="#">CAREER</a>
+                    <a href="#">PRIVACY</a>
+                    <a href="#">TERMS &amp; CONDITION</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Lifecycle Stepper Interactivity
+        function updateStepper(stepIndex) {
+            const dots = document.querySelectorAll('.stepper-dot');
+            const cards = document.querySelectorAll('.stepper-card-item');
+            const fill = document.querySelector('.stepper-progress-fill');
+            
+            // Calculate progress width (0% to 100% across 6 steps)
+            const progressWidth = ((stepIndex - 1) / (dots.length - 1)) * 100;
+            if(fill) fill.style.width = progressWidth + '%';
+
+            // Update Active States for Dots
+            dots.forEach((dot, index) => {
+                if (index + 1 <= stepIndex) {
+                    dot.classList.add('active');
+                    if (index + 1 < stepIndex || stepIndex === index + 1) {
+                         dot.innerHTML = '<i class="fas fa-check"></i>';
+                    }
+                } else {
+                    dot.classList.remove('active');
+                    dot.innerHTML = (index + 1).toString().padStart(2, '0');
+                }
+            });
+
+            // Update Active States for Cards
+            cards.forEach((card, index) => {
+                if (index + 1 === stepIndex) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+        }
+
+        // Add Click Events to Cards
+        document.querySelectorAll('.stepper-card-item').forEach((card, index) => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => updateStepper(index + 1));
+        });
+
+        // Initialize at Step 1
+        window.addEventListener('DOMContentLoaded', () => {
+            if(document.querySelector('.stepper-dot')) {
+                updateStepper(1);
+            }
+        });
+    </script>
+    <script>
+        const yearEl = document.getElementById('year');
+        if(yearEl) yearEl.textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
+

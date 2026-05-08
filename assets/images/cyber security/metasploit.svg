@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#2B2D42"/>
+  <polygon points="100,38 158,72 158,138 100,172 42,138 42,72" fill="none" stroke="#4A90D9" stroke-width="5"/>
+  <polygon points="100,60 140,84 140,128 100,152 60,128 60,84" fill="#4A90D9" opacity="0.15"/>
+  <text x="100" y="108" font-family="Arial" font-weight="900" font-size="28" fill="#4A90D9" text-anchor="middle">M</text>
+  <text x="100" y="178" font-family="Arial" font-weight="700" font-size="12" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">Metasploit</text>
+</svg>

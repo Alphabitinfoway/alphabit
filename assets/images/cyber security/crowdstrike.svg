@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#E2212A"/>
+  <path d="M50 100 Q50 58 80 42 L80 62 Q62 76 62 100 Q62 130 88 140 L88 158 Q50 145 50 100 Z" fill="#FFFFFF"/>
+  <path d="M150 100 Q150 142 120 158 L120 138 Q138 124 138 100 Q138 70 112 60 L112 42 Q150 55 150 100 Z" fill="#FFFFFF"/>
+  <path d="M80 80 L108 100 L80 120 L80 140 L130 100 L80 60 Z" fill="#FFFFFF"/>
+  <text x="100" y="185" font-family="Arial" font-weight="700" font-size="11" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">CrowdStrike</text>
+</svg>

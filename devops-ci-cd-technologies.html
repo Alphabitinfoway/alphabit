@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps & CI/CD Technologies | Automation, Deployment & Scalable Systems | Alphabit Infoway</title>
+    <meta name="description"
+        content="Explore DevOps and CI/CD technologies, tools, and workflows. Build automated, scalable, and high-performance applications with continuous integration and deployment.">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/technologies.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./assets/js/config.js"></script>
+</head>
+
+<body>
+    <!-- Minimal Preloader -->
+    <div id="preloader">
+        <div class="minimal-loader">
+            <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo">
+            <div class="loader-progress-bar"></div>
+            <div class="loader-text">Automating DevOps...</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <h6><a href="./">Home</a></h6>
+                <h6 class="dropdown">
+                    <a href="services" class="dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+                        <li><a href="services">Cyber Security & Compliance</a></li>
+                        <li><a href="services">Full Stack Web Development</a></li>
+                        <li><a href="services">Mobile App & Product Design</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="index.html#products">Products</a></h6>
+                <h6 class="dropdown">
+                    <a href="Technology" class="dropdown-toggle">Technology</a>
+                    <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Artificial Intelligence</li>
+                        <li><a href="ai-development-technologies.html">AI Development</a></li>
+                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Web Technologies</li>
+                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+                        <li><a href="backend-technologies.html">Backend Development</a></li>
+                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Mobile Technologies</li>
+                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
+                        <li><a href="android-development-technologies.html">Android Development</a></li>
+                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cloud & DevOps</li>
+                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
+                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
+                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Data & Analytics</li>
+                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
+                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
+                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cyber Security</li>
+                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
+                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="about">About</a></h6>
+                <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+                <h6 class="dropdown">
+                    <a href="#" class="dropdown-toggle">Insights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="career">Career</a></li>
+                    </ul>
+                </h6>
+                <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+            </nav>
+            <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="tech-hero-modern">
+            <div class="tech-hero-background">
+                <div class="mesh-gradient"></div>
+                <div class="grid-overlay"></div>
+                <div class="wave-mesh"></div>
+            </div>
+            <div class="container-box">
+                <div class="tech-hero-content">
+                    <div class="tech-hero-text">
+                        <nav class="breadcrumb">
+                            <a href="index.html">Home</a> / <a href="Technology">Technology</a> / <span>DevOps & CI/CD Technologies</span>
+                        </nav>
+                        <h1>DevOps & CI/CD <br />Technologies & Capabilities</h1>
+                        <p>DevOps and CI/CD technologies enable faster, more reliable software delivery by automating development, testing, and deployment processes. They bridge the gap between development and operations — ensuring continuous integration, rapid releases, and stable production systems.
+                            <br /><br />Modern DevOps practices leverage tools like Docker, Kubernetes, Jenkins, and cloud platforms to build scalable, automated, and resilient infrastructure. CI/CD pipelines ensure that code changes are tested, integrated, and deployed efficiently with minimal manual effort.
+                            <br /><br />At Alphabit, we implement DevOps strategies that improve speed, quality, and scalability — helping businesses deliver high-performance applications continuously.
+                        </p>
+
+                        <div class="hero-stats-row">
+                            <div class="hero-stat">
+                                <h3>12+</h3>
+                                <p>Tools & <br/>Platforms</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>6+</h3>
+                                <p>Automation<br/> Pipelines</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>5+</h3>
+                                <p>Deployment <br/> Strategies</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>10+</h3>
+                                <p>Use Cases</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-hero-illustration">
+                        <img src="./assets/images/Service/1.webp" alt="DevOps & CI/CD Technologies" />
+                    </div>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn-primary-tech">Start Your DevOps Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adoption & Impact -->
+        <section class="tech-impact-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Efficiency & Impact</span>
+                    <h2>DevOps Adoption & Impact</h2>
+                    <p>DevOps transforms how software is built, tested, and delivered by breaking down silos and automating the lifecycle.</p>
+                </div>
+                <div class="impact-cards-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon-main"><i class="fas fa-shipping-fast"></i></div>
+                        <div class="impact-content">
+                            <h3>Faster Release Cycles</h3>
+                            <p>Automate build and deployment processes for quicker releases.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main"><i class="fas fa-users-cog"></i></div>
+                        <div class="impact-content">
+                            <h3>Improved Collaboration</h3>
+                            <p>Align development and operations teams for better productivity.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="impact-content">
+                            <h3>High Reliability</h3>
+                            <p>Ensure stable applications with continuous testing and monitoring.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main"><i class="fas fa-layer-group"></i></div>
+                        <div class="impact-content">
+                            <h3>Scalable Infrastructure</h3>
+                            <p>Manage infrastructure efficiently with automation and cloud integration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution -->
+        <section class="tech-evolution-perfect" id="evolution">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">The Journey</span>
+                    <h2>Evolution of DevOps & CI/CD</h2>
+                    <p>DevOps has evolved alongside modern development practices from manual processes to fully autonomous infrastructure.</p>
+                </div>
+
+                <div class="evolution-timeline-container">
+                    <div class="timeline-main-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 01</span>
+                            <h3>Manual Deployment</h3>
+                            <p>Code releases handled manually with high risk of errors.</p>
+                        </div>
+                        <div class="timeline-node"><i class="fas fa-hand-pointer"></i></div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node"><i class="fas fa-scroll"></i></div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 02</span>
+                            <h3>Script-Based Automation</h3>
+                            <p>Basic automation using scripts for builds and deployments.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 03</span>
+                            <h3>Continuous Integration (CI)</h3>
+                            <p>Frequent code integration with automated testing.</p>
+                        </div>
+                        <div class="timeline-node"><i class="fas fa-sync"></i></div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node"><i class="fas fa-rocket"></i></div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 04</span>
+                            <h3>Continuous Delivery (CD)</h3>
+                            <p>Automated release pipelines for faster deployment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 05</span>
+                            <h3>DevOps & Cloud-Native</h3>
+                            <p>Fully automated, scalable pipelines integrated with cloud systems.</p>
+                        </div>
+                        <div class="timeline-node"><i class="fas fa-cloud"></i></div>
+                        <div class="spacer-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types of DevOps Technologies -->
+        <section class="tech-types-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Core Pillars</span>
+                    <h2>Types of DevOps & CI/CD Technologies</h2>
+                    <p>We leverage a wide range of technologies to build end-to-end automation and scalable systems.</p>
+                </div>
+
+                <div class="tech-types-grid">
+                    <!-- CI -->
+                    <div class="type-card accent-purple">
+                        <div class="type-icon-box"><i class="fas fa-sync"></i></div>
+                        <h3>Continuous Integration (CI)</h3>
+                        <p>Automatically build and test code changes to maintain quality.</p>
+                        <div class="type-tags">
+                            <span>Automated builds</span>
+                            <span>Unit testing</span>
+                            <span>Early bug detection</span>
+                            <span>Faster dev cycles</span>
+                        </div>
+                    </div>
+
+                    <!-- CD -->
+                    <div class="type-card accent-orange">
+                        <div class="type-icon-box"><i class="fas fa-rocket"></i></div>
+                        <h3>Continuous Delivery (CD)</h3>
+                        <p>Prepare code for deployment with automated pipelines.</p>
+                        <div class="type-tags">
+                            <span>Release-ready builds</span>
+                            <span>Staging tests</span>
+                            <span>Deployment automation</span>
+                            <span>Reduced effort</span>
+                        </div>
+                    </div>
+
+                    <!-- Continuous Deployment -->
+                    <div class="type-card accent-cyan">
+                        <div class="type-icon-box"><i class="fas fa-bolt"></i></div>
+                        <h3>Continuous Deployment</h3>
+                        <p>Automatically deploy code to production after passing tests.</p>
+                        <div class="type-tags">
+                            <span>Zero-touch deploy</span>
+                            <span>Faster releases</span>
+                            <span>Reduced downtime</span>
+                            <span>Continuous updates</span>
+                        </div>
+                    </div>
+
+                    <!-- Containerization -->
+                    <div class="type-card accent-emerald">
+                        <div class="type-icon-box"><i class="fas fa-box-open"></i></div>
+                        <h3>Containerization</h3>
+                        <p>Package applications with dependencies for consistent environments.</p>
+                        <div class="type-tags">
+                            <span>Docker containers</span>
+                            <span>Environment consistency</span>
+                            <span>Easy deployment</span>
+                            <span>Scalable apps</span>
+                        </div>
+                    </div>
+
+                    <!-- Orchestration -->
+                    <div class="type-card accent-blue">
+                        <div class="type-icon-box"><i class="fas fa-network-wired"></i></div>
+                        <h3>Container Orchestration</h3>
+                        <p>Manage and scale containerized applications with Kubernetes.</p>
+                        <div class="type-tags">
+                            <span>Kubernetes</span>
+                            <span>Auto-scaling</span>
+                            <span>Load balancing</span>
+                            <span>High availability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced DevOps Technologies -->
+        <section class="tech-advanced-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Intelligent Infrastructure</span>
+                    <h2>Advanced DevOps Capabilities</h2>
+                    <p>Modern DevOps goes beyond automation to enable intelligent infrastructure and safe deployments.</p>
+                </div>
+
+                <div class="advanced-tech-grid">
+                    <div class="adv-card featured">
+                        <div class="adv-icon"><i class="fas fa-code"></i></div>
+                        <div class="adv-info">
+                            <h3>Infrastructure as Code (IaC)</h3>
+                            <p>Manage infrastructure using code (Terraform, Ansible) for consistency and automation.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-eye"></i></div>
+                        <div class="adv-info">
+                            <h3>Monitoring & Observability</h3>
+                            <p>Track system performance, logs, and metrics in real time for proactive issue resolution.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <div class="adv-info">
+                            <h3>Auto-Scaling & Load Management</h3>
+                            <p>Adjust system resources dynamically based on demand to optimize performance.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-vial"></i></div>
+                        <div class="adv-info">
+                            <h3>Blue-Green & Canary Deployments</h3>
+                            <p>Release updates safely with minimal risk using advanced traffic splitting strategies.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-user-shield"></i></div>
+                        <div class="adv-info">
+                            <h3>Security Integration (DevSecOps)</h3>
+                            <p>Integrate security practices into the development pipeline from the very beginning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Components (Neural Map) -->
+        <section class="tech-components-neural">
+            <div class="container-header-flow">
+                <div class="container-box">
+                    <div class="section-header-modern">
+                        <span class="tech-badge">System Neural Map</span>
+                        <h2>Key Components of DevOps Systems</h2>
+                        <p>A production-ready DevOps setup includes integrated layers for seamless operation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="neural-map-viewport">
+                <div class="container-box">
+                    <div class="neural-map-container">
+                        <!-- SVG Neural Pathways -->
+                        <svg class="neural-pathways" width="100%" height="100%" viewBox="0 0 1000 600" preserveAspectRatio="none">
+                            <path class="path-line" d="M500,300 L166,100" />
+                            <path class="path-line" d="M500,300 L833,100" />
+                            <path class="path-line" d="M500,300 L166,300" />
+                            <path class="path-line" d="M500,300 L833,300" />
+                            <path class="path-line" d="M500,300 L166,500" />
+                            <path class="path-line" d="M500,300 L833,500" />
+                        </svg>
+
+                        <!-- Central Hub -->
+                        <div class="neural-hub">
+                            <div class="hub-pulse"></div>
+                            <div class="hub-glass">
+                                <i class="fab fa-dev"></i>
+                                <span>DEVOPS CORE</span>
+                            </div>
+                        </div>
+
+                        <!-- Satellite Nodes -->
+                        <div class="neural-node node-tl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-code-branch"></i></div>
+                                <h3>Source Control</h3>
+                                <p>Manage code repositories and versioning.</p>
+                            </div>
+                        </div>
+
+                        <div class="neural-node node-tr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-tools"></i></div>
+                                <h3>Build System</h3>
+                                <p>Compile and package applications.</p>
+                            </div>
+                        </div>
+
+                        <div class="neural-node node-ml">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-stream"></i></div>
+                                <h3>CI/CD Pipeline</h3>
+                                <p>Automate testing and deployment workflows.</p>
+                            </div>
+                        </div>
+
+                        <div class="neural-node node-mr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-layer-group"></i></div>
+                                <h3>Infrastructure Layer</h3>
+                                <p>Manage servers, containers, and cloud resources.</p>
+                            </div>
+                        </div>
+
+                        <div class="neural-node node-bl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-chart-area"></i></div>
+                                <h3>Monitoring & Logging</h3>
+                                <p>Track performance and detect issues.</p>
+                            </div>
+                        </div>
+
+                        <div class="neural-node node-br">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-user-shield"></i></div>
+                                <h3>Security Layer</h3>
+                                <p>Ensure secure deployments and data protection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-stack-v2">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Powered By</span>
+                    <h2>DevOps Tech Stack</h2>
+                </div>
+
+                <div class="stack-v2-container">
+                    <div class="stack-v2-card">
+                        <div class="card-bg-icon"><i class="fas fa-sync"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">CI/CD</span>
+                            <h3>CI/CD Tools</h3>
+                            <div class="tags-row"><span>Jenkins</span><span>GitHub Actions</span><span>GitLab CI</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-v2-card theme-purple">
+                        <div class="card-bg-icon"><i class="fas fa-box-open"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Containers</span>
+                            <h3>Containerization</h3>
+                            <div class="tags-row"><span>Docker</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-v2-card theme-orange">
+                        <div class="card-bg-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Orchestration</span>
+                            <h3>Orchestration</h3>
+                            <div class="tags-row"><span>Kubernetes</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-v2-card theme-cyan">
+                        <div class="card-bg-icon"><i class="fas fa-code"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Infrastructure</span>
+                            <h3>Infrastructure as Code</h3>
+                            <div class="tags-row"><span>Terraform</span><span>Ansible</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-v2-card theme-blue">
+                        <div class="card-bg-icon"><i class="fas fa-cloud"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Cloud</span>
+                            <h3>Cloud Platforms</h3>
+                            <div class="tags-row"><span>AWS</span><span>Microsoft Azure</span><span>Google Cloud</span></div>
+                        </div>
+                    </div>
+                    <div class="stack-v2-card theme-green">
+                        <div class="card-bg-icon"><i class="fas fa-eye"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Monitoring</span>
+                            <h3>Monitoring Tools</h3>
+                            <div class="tags-row"><span>Prometheus</span><span>Grafana</span><span>ELK Stack</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifecycle Section -->
+        <section class="tech-lifecycle-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Methodology</span>
+                    <h2>DevOps Lifecycle</h2>
+                    <p>A structured and results-driven approach to deliver reliable and scalable DevOps systems.</p>
+                </div>
+
+                <div class="horizontal-stepper-system">
+                    <div class="stepper-track-wrap">
+                        <div class="stepper-main-line"><div class="stepper-progress-fill"></div></div>
+                        <div class="stepper-dots-row">
+                            <div class="stepper-dot active"><i class="fas fa-check"></i></div>
+                            <div class="stepper-dot">02</div>
+                            <div class="stepper-dot">03</div>
+                            <div class="stepper-dot">04</div>
+                            <div class="stepper-dot">05</div>
+                            <div class="stepper-dot">06</div>
+                        </div>
+                    </div>
+                    <div class="stepper-cards-grid">
+                        <div class="stepper-card-item active">
+                            <div class="card-top-icon"><i class="fas fa-map"></i></div>
+                            <span class="card-step-label">Step 1</span>
+                            <h3>Planning</h3>
+                            <p>Define workflows, tools, and automation strategy.</p>
+                        </div>
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-code"></i></div>
+                            <span class="card-step-label">Step 2</span>
+                            <h3>Development</h3>
+                            <p>Write code and push to version control.</p>
+                        </div>
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-sync"></i></div>
+                            <span class="card-step-label">Step 3</span>
+                            <h3>Integration</h3>
+                            <p>Automatically build and test code changes.</p>
+                        </div>
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-rocket"></i></div>
+                            <span class="card-step-label">Step 4</span>
+                            <h3>Deployment</h3>
+                            <p>Deploy applications to staging and production.</p>
+                        </div>
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-chart-line"></i></div>
+                            <span class="card-step-label">Step 5</span>
+                            <h3>Monitoring</h3>
+                            <p>Track performance and system health.</p>
+                        </div>
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-magic"></i></div>
+                            <span class="card-step-label">Step 6</span>
+                            <h3>Optimization</h3>
+                            <p>Continuously improve pipelines and infrastructure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Minimal -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Capabilities</span>
+                        <h2>Applications of <br>DevOps & CI/CD</h2>
+                        <p>Empowering businesses to build high-scale digital solutions with automation.</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-globe"></i></div>
+                            <h3>Web and mobile applications</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-box-open"></i></div>
+                            <h3>SaaS platforms</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-building"></i></div>
+                            <h3>Enterprise systems</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>Cloud-native applications</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-brain"></i></div>
+                            <h3>AI and data platforms</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-cubes"></i></div>
+                            <h3>Microservices architectures</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Use Cases -->
+        <section class="tech-solutions-premium">
+            <div class="container-box">
+                <div class="solutions-main-header">
+                    <span class="tech-badge">Functional Value</span>
+                    <h2>Practical DevOps Use Cases</h2>
+                </div>
+                <div class="solutions-stack">
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">01</span><div class="row-icon"><i class="fas fa-stream"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Automated deployment pipelines</h3>
+                            <p>Eliminate manual errors and release code with confidence using end-to-end automation.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">Pipeline</span></div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">02</span><div class="row-icon"><i class="fas fa-vial"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Continuous testing systems</h3>
+                            <p>Automate regression and integration tests for every commit to ensure system stability.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">QA</span></div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">03</span><div class="row-icon"><i class="fas fa-expand-arrows-alt"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Scalable cloud infrastructure</h3>
+                            <p>Build infrastructure that grows with your user base automatically using cloud-native tools.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">Scalability</span></div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">04</span><div class="row-icon"><i class="fas fa-tachometer-alt"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Real-time monitoring systems</h3>
+                            <p>Gain deep visibility into application health and performance with integrated logging.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">Monitoring</span></div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">05</span><div class="row-icon"><i class="fas fa-layer-group"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Multi-environment deployments</h3>
+                            <p>Maintain consistent configurations across development, staging, and production environments.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">Consistency</span></div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="solution-left"><span class="row-num">06</span><div class="row-icon"><i class="fas fa-rocket"></i></div></div>
+                        <div class="solution-mid">
+                            <h3>Rapid feature delivery</h3>
+                            <p>Shorten time-to-market for new features and updates with efficient delivery pipelines.</p>
+                        </div>
+                        <div class="solution-right"><span class="solution-tag">Agility</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries -->
+        <section class="tech-industries-curated">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Industries Using DevOps</h2>
+                    <p>DevOps infrastructure is essential for digital transformation across all sectors.</p>
+                </div>
+                <div class="industry-pills-grid">
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-code"></i></div><div class="pill-info"><h3>Technology</h3><p>Software, SaaS</p></div></div></div>
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-bank"></i></div><div class="pill-info"><h3>Finance</h3><p>Fintech, Payments</p></div></div></div>
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-heartbeat"></i></div><div class="pill-info"><h3>Healthcare</h3><p>Compliance, EHR</p></div></div></div>
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-shopping-bag"></i></div><div class="pill-info"><h3>Retail</h3><p>E-commerce, UX</p></div></div></div>
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-graduation-cap"></i></div><div class="pill-info"><h3>Education</h3><p>LMS, Remote Ed</p></div></div></div>
+                    <div class="industry-pill-item"><div class="pill-main"><div class="pill-icon-box"><i class="fas fa-truck"></i></div><div class="pill-info"><h3>Logistics</h3><p>Supply Chain</p></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Challenges -->
+        <section class="tech-contrast-v3">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Strategic Analysis</span>
+                    <h2>Benefits vs. Challenges</h2>
+                </div>
+                <div class="contrast-grid-v3">
+                    <div class="contrast-card-v3 benefits">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-arrow-trend-up"></i></div>
+                            <h3>Benefits of <br>DevOps & CI/CD</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-check"></i> Faster software delivery</li>
+                                <li><i class="fas fa-circle-check"></i> Improved collaboration</li>
+                                <li><i class="fas fa-circle-check"></i> High system reliability</li>
+                                <li><i class="fas fa-circle-check"></i> Automated workflows</li>
+                                <li><i class="fas fa-circle-check"></i> Scalable infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contrast-card-v3 challenges">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-triangle-exclamation"></i></div>
+                            <h3>Challenges in <br>DevOps</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-info"></i> Toolchain complexity</li>
+                                <li><i class="fas fa-circle-info"></i> Initial setup effort</li>
+                                <li><i class="fas fa-circle-info"></i> Security management</li>
+                                <li><i class="fas fa-circle-info"></i> Skill requirements</li>
+                                <li><i class="fas fa-circle-info"></i> Continuous monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Our Approach Stands Out -->
+        <section class="tech-approach-dashboard">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Our Advantage</span>
+                    <h2>Why Our DevOps Approach Stands Out</h2>
+                </div>
+                <div class="approach-dashboard-wrap">
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-stream"></i></div>
+                        <div class="item-main"><h3>Automated and scalable pipelines</h3><p>We build robust CI/CD workflows that handle everything from build to production automatically.</p></div>
+                        <div class="item-status">Expert</div><div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-cloud"></i></div>
+                        <div class="item-main"><h3>Cloud-native infrastructure expertise</h3><p>Deep experience in AWS, Azure, and GCP for building resilient and efficient environments.</p></div>
+                        <div class="item-status">Verified</div><div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-tachometer-alt"></i></div>
+                        <div class="item-main"><h3>Performance-focused deployments</h3><p>Optimizing every stage of the pipeline to ensure rapid releases without sacrificing quality.</p></div>
+                        <div class="item-status">Certified</div><div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-shield-alt"></i></div>
+                        <div class="item-main"><h3>Strong monitoring and security</h3><p>Integrating security and observability into the core of your infrastructure for peace of mind.</p></div>
+                        <div class="item-status">Premium</div><div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-magic"></i></div>
+                        <div class="item-main"><h3>Continuous optimization</h3><p>We don't just set it and forget it; we continuously refine your pipelines for maximum efficiency.</p></div>
+                        <div class="item-status">Reliable</div><div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section class="tech-future-compact">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Future Tech</span>
+                    <h2>The Horizon of DevOps</h2>
+                </div>
+                <div class="compact-future-grid">
+                    <div class="compact-future-item"><div class="compact-visual"><i class="fas fa-brain"></i></div><div class="compact-text"><h3>AI-driven DevOps automation</h3><p>Leveraging AI to optimize pipelines and predict potential deployment failures before they happen.</p></div></div>
+                    <div class="compact-future-item"><div class="compact-visual"><i class="fas fa-magic"></i></div><div class="compact-text"><h3>Self-healing systems</h3><p>Infrastructure that automatically detects and resolves issues without human intervention.</p></div></div>
+                    <div class="compact-future-item"><div class="compact-visual"><i class="fas fa-bolt"></i></div><div class="compact-text"><h3>Serverless deployment pipelines</h3><p>Moving towards fully event-driven delivery models that scale to zero when not in use.</p></div></div>
+                    <div class="compact-future-item"><div class="compact-visual"><i class="fas fa-eye"></i></div><div class="compact-text"><h3>Advanced observability</h3><p>Gaining deeper insights into complex microservices architectures with distributed tracing.</p></div></div>
+                    <div class="compact-future-item"><div class="compact-visual"><i class="fas fa-robot"></i></div><div class="compact-text"><h3>Fully autonomous infrastructure</h3><p>Systems that manage their own lifecycle based on high-level business requirements.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="tech-faq-section">
+            <div class="container-box">
+                <div class="section-header-modern"><span class="tech-badge">Knowledge Base</span><h2>Frequently Asked Questions (FAQs)</h2></div>
+                <div class="faq-accordion-wrap">
+                    <details class="faq-item" open><summary>What is DevOps?</summary><div class="faq-answer"><p>DevOps is a practice that combines development and operations to improve software delivery speed and quality.</p></div></details>
+                    <details class="faq-item"><summary>What is CI/CD?</summary><div class="faq-answer"><p>CI/CD stands for Continuous Integration and Continuous Deployment — automating build, test, and release processes.</p></div></details>
+                    <details class="faq-item"><summary>Why is DevOps important?</summary><div class="faq-answer"><p>It improves speed, quality, and reliability of software delivery through automation and collaboration.</p></div></details>
+                    <details class="faq-item"><summary>What tools are used in DevOps?</summary><div class="faq-answer"><p>Leading tools include Jenkins, Docker, Kubernetes, GitHub Actions, and Terraform.</p></div></details>
+                    <details class="faq-item"><summary>Is DevOps suitable for startups?</summary><div class="faq-answer"><p>Yes, it helps startups release faster and scale efficiently while maintaining a small team.</p></div></details>
+                    <details class="faq-item"><summary>What is Infrastructure as Code?</summary><div class="faq-answer"><p>Managing infrastructure using code for automation and consistency across environments.</p></div></details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="tech-final-cta-v3">
+            <div class="container-box">
+                <div class="cta-wrapper-v3">
+                    <div class="cta-glow-1"></div><div class="cta-glow-2"></div>
+                    <div class="cta-content-v3">
+                        <span class="cta-badge-v3">The Next Frontier</span>
+                        <h2>Ready to Automate Your Development & Deployment?</h2>
+                        <p>Build faster, more reliable systems with modern DevOps and CI/CD practices. Start your project with Alphabit today.</p>
+                        <div class="cta-action-v3"><a href="contact.html" class="cta-btn-main"><span>Start Your DevOps Project</span><i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="Footer">
+            <div class="footer-bg-clip"><div class="footer-bg-circle"></div></div>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-icons">
+                        <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter"></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img src="./assets/images/linkedin2.webp" alt="linkedin"></a>
+                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img src="./assets/images/instagram.webp" alt="instagram"></a>
+                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img src="./assets/images/facebook2.webp" alt="facebook"></a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
+                        <h1 class="footer-title"><span> LET'S</span> TALK <br>WITH US</h1>
+                        <p class="footer-email">info@alphabitinfoway.com</p>
+                    </div>
+                </div>
+                <div class="footer-right"><img src="./assets/images/AI Model.webp" alt="Robot"></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+                <div class="footer-links"><a href="#">AGENCY</a><a href="#">CAREER</a><a href="#">PRIVACY</a><a href="#">TERMS &amp; CONDITION</a></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        function updateStepper(stepIndex) {
+            const dots = document.querySelectorAll('.stepper-dot');
+            const cards = document.querySelectorAll('.stepper-card-item');
+            const fill = document.querySelector('.stepper-progress-fill');
+            const progressWidth = ((stepIndex - 1) / (dots.length - 1)) * 100;
+            fill.style.width = progressWidth + '%';
+            dots.forEach((dot, index) => {
+                if (index + 1 <= stepIndex) {
+                    dot.classList.add('active');
+                    dot.innerHTML = index + 1 < stepIndex || stepIndex === index + 1 ? '<i class="fas fa-check"></i>' : (index + 1).toString().padStart(2, '0');
+                } else { dot.classList.remove('active'); dot.innerHTML = (index + 1).toString().padStart(2, '0'); }
+            });
+            cards.forEach((card, index) => { card.classList.toggle('active', index + 1 === stepIndex); });
+        }
+        document.querySelectorAll('.stepper-card-item').forEach((card, index) => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => updateStepper(index + 1));
+        });
+        window.addEventListener('DOMContentLoaded', () => updateStepper(1));
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#FF6633"/>
+  <path d="M60 50 L100 50 Q130 50 130 75 Q130 95 108 98 Q135 102 135 128 Q135 155 100 155 L60 155 Z" fill="#FFFFFF"/>
+  <path d="M78 68 L100 68 Q112 68 112 78 Q112 88 100 88 L78 88 Z" fill="#FF6633"/>
+  <path d="M78 105 L102 105 Q118 105 118 120 Q118 137 102 137 L78 137 Z" fill="#FF6633"/>
+  <text x="100" y="182" font-family="Arial" font-weight="700" font-size="12" fill="#FF6633" text-anchor="middle" letter-spacing="0.5">Burp Suite</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="20" fill="#FFFFFF"/>
+  <polygon points="100,28 155,60 155,90 100,58 100,28" fill="#FF6F00"/>
+  <polygon points="100,58 155,90 155,120 100,88 100,58" fill="#FF8F00"/>
+  <polygon points="100,88 155,120 155,150 100,118 100,88" fill="#FFA000"/>
+  <polygon points="100,28 45,60 45,90 100,58 100,28" fill="#FF8F00"/>
+  <polygon points="100,88 45,90 45,120 100,118 100,88" fill="#FFCA28"/>
+  <text x="100" y="178" font-family="Arial" font-weight="700" font-size="13" fill="#FF6F00" text-anchor="middle" letter-spacing="0.5">TensorFlow</text>
+</svg>

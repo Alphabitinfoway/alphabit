@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Front-End Development Technologies | Modern UI & Web Systems | Alphabit</title>
+    <meta name="description"
+        content="Learn front-end technologies, frameworks, and system design used in modern web apps. Create fast, scalable, and AI-powered user interfaces with advanced UI architecture." />
+    <meta name="keywords"
+        content="Front-End Development, UI Architecture, React, Next.js, Web Systems, Front-End Frameworks, Alphabit Infoway" />
+    <meta name="author" content="Alphabit Infoway" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/technologies.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Minimal Preloader -->
+    <div id="preloader">
+        <div class="minimal-loader">
+            <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+            <div class="loader-progress-bar"></div>
+            <div class="loader-text">Rendering Interfaces...</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <h6><a href="./">Home</a></h6>
+                <h6 class="dropdown">
+                    <a href="services" class="dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+                        <li><a href="services">Cyber Security & Compliance</a></li>
+                        <li><a href="services">Full Stack Web Development</a></li>
+                        <li><a href="services">Mobile App & Product Design</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="#products">Products</a></h6>
+                <h6 class="dropdown">
+                    <a href="Technology" class="dropdown-toggle">Technology</a>
+                    <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Artificial Intelligence</li>
+                        <li><a href="ai-development-technologies.html">AI Development</a></li>
+                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Web Technologies</li>
+                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+                        <li><a href="backend-technologies.html">Backend Development</a></li>
+                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Mobile Technologies</li>
+                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
+                        <li><a href="android-development-technologies.html">Android Development</a></li>
+                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cloud & DevOps</li>
+                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
+                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
+                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Data & Analytics</li>
+                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
+                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
+                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+
+                        <li class="dropdown-category"
+                            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+                            Cyber Security</li>
+                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
+                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
+                    </ul>
+                </h6>
+                <h6><a href="about">About</a></h6>
+                <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+                <h6 class="dropdown">
+                    <a href="#" class="dropdown-toggle">Insights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="career">Career</a></li>
+                    </ul>
+                </h6>
+                <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+            </nav>
+            <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="tech-hero-modern">
+            <div class="tech-hero-background">
+                <div class="mesh-gradient"></div>
+                <div class="grid-overlay"></div>
+                <div class="wave-mesh"></div>
+            </div>
+            <div class="container-box">
+                <div class="tech-hero-content">
+                    <div class="tech-hero-text">
+                        <nav class="breadcrumb">
+                            <a href="index.html">Home</a> / <a href="Technology">Technology</a> / <span>Front-End
+                                Technologies</span>
+                        </nav>
+                        <h1>Front-End Development <br />Technologies & Capabilities</h1>
+                        <p>Front-end development powers the user experience of modern digital products — transforming
+                            complex systems into intuitive, fast, and visually engaging interfaces. In AI-driven
+                            applications, front-end systems go beyond design to deliver dynamic, personalized, and
+                            real-time interactions. At Alphabit, we build scalable front-end systems that seamlessly
+                            integrate with AI models, backend architectures, and real-time data pipelines.</p>
+
+                        <div class="hero-stats-row">
+                            <div class="hero-stat">
+                                <h3>6+</h3>
+                                <p>Core Frameworks</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>15+</h3>
+                                <p>Tools & Libraries</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>3</h3>
+                                <p>Rendering Architectures</p>
+                            </div>
+                            <div class="hero-stat">
+                                <h3>10+</h3>
+                                <p>Real-World Use Cases</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tech-hero-illustration">
+                        <img src="./assets/images/generative-ai-hero.png" alt="Front-End Technologies" />
+                    </div>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn-primary-tech">Explore Front-End Ecosystem</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adoption & Impact -->
+        <section class="tech-impact-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Strategic Value</span>
+                    <h2>Front-End Adoption & Impact</h2>
+                    <p>Modern front-end development plays a critical role in shaping digital experiences across
+                        industries.</p>
+                </div>
+                <div class="impact-cards-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>User-Centric Experiences</h3>
+                            <p>Design interfaces focused on usability, accessibility, and seamless navigation for better
+                                engagement.</p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>High-Performance Interfaces</h3>
+                            <p>Optimized rendering and efficient code ensure fast load times and smooth interactions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>Dynamic & Real-Time UI</h3>
+                            <p>Deliver interactive experiences with live updates, animations, and responsive components.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon-main">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>AI-Integrated Interfaces</h3>
+                            <p>Enable personalization, recommendations, and intelligent UI behavior powered by AI
+                                systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution -->
+        <section class="tech-evolution-perfect">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">The Journey</span>
+                    <h2>Evolution of Front-End Development</h2>
+                    <p>Front-end technologies have evolved rapidly to support modern application needs.</p>
+                </div>
+
+                <div class="evolution-timeline-container">
+                    <div class="timeline-main-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 01</span>
+                            <h3>Static Interfaces</h3>
+                            <p>Basic HTML and CSS-based layouts with limited interactivity.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 02</span>
+                            <h3>Interactive JavaScript</h3>
+                            <p>Dynamic UI with DOM manipulation and event-driven interactions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 03</span>
+                            <h3>SPA Frameworks</h3>
+                            <p>Single Page Applications enabling seamless navigation and faster performance.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-column step-down">
+                        <div class="spacer-box"></div>
+                        <div class="timeline-node">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 04</span>
+                            <h3>Component-Based Systems</h3>
+                            <p>Reusable UI components for scalable and maintainable architecture.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-column step-up">
+                        <div class="timeline-content-box">
+                            <span class="step-tag">Phase 05</span>
+                            <h3>AI-Driven Interfaces</h3>
+                            <p>Smart, adaptive, and personalized user experiences powered by AI.</p>
+                        </div>
+                        <div class="timeline-node">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="spacer-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types of Tech -->
+        <section class="tech-types-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Capabilities</span>
+                    <h2>Types of Front-End Technologies</h2>
+                    <p>Front-end development includes multiple approaches to build modern, scalable interfaces.</p>
+                </div>
+
+                <div class="tech-types-grid">
+                    <div class="type-card accent-purple">
+                        <div class="type-icon-box">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h3>Framework-Based Development</h3>
+                        <p>Build dynamic user interfaces using modern frameworks that support component-based
+                            architecture and efficient rendering.</p>
+                        <div class="type-tags">
+                            <span>Reusable components</span>
+                            <span>Virtual DOM optimization</span>
+                            <span>Scalable architecture</span>
+                            <span>Strong ecosystem support</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-orange">
+                        <div class="type-icon-box">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Performance-Optimized Rendering</h3>
+                        <p>Use advanced rendering techniques to improve speed, SEO, and user experience.</p>
+                        <div class="type-tags">
+                            <span>Server-side rendering (SSR)</span>
+                            <span>Static site generation (SSG)</span>
+                            <span>Faster load times</span>
+                            <span>Better SEO performance</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-cyan">
+                        <div class="type-icon-box">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                        <h3>State & Data-Driven UI</h3>
+                        <p>Manage application state and data flow for dynamic and responsive interfaces.</p>
+                        <div class="type-tags">
+                            <span>Centralized state management</span>
+                            <span>Real-time data updates</span>
+                            <span>Efficient API handling</span>
+                            <span>Improved UI consistency</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-emerald">
+                        <div class="type-icon-box">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>UI Systems & Design Frameworks</h3>
+                        <p>Create consistent and visually appealing interfaces using design systems and UI libraries.
+                        </p>
+                        <div class="type-tags">
+                            <span>Design systems & components</span>
+                            <span>Responsive layouts</span>
+                            <span>Accessibility standards</span>
+                            <span>Faster UI development</span>
+                        </div>
+                    </div>
+
+                    <div class="type-card accent-blue" style="grid-column: span 1;">
+                        <div class="type-icon-box">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI-Integrated Front-End</h3>
+                        <p>Integrate AI capabilities into UI for intelligent and personalized experiences.</p>
+                        <div class="type-tags">
+                            <span>Chatbot interfaces</span>
+                            <span>Recommendation systems</span>
+                            <span>Predictive UI behavior</span>
+                            <span>Adaptive user journeys</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Technologies -->
+        <section class="tech-advanced-modern">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Advanced Architecture</span>
+                    <h2>Advanced Front-End Technologies</h2>
+                    <p>Modern front-end development goes beyond basic UI — enabling intelligent, scalable, and
+                        high-performance systems.</p>
+                </div>
+
+                <div class="advanced-tech-grid">
+                    <div class="adv-card featured">
+                        <div class="adv-icon"><i class="fas fa-cubes"></i></div>
+                        <div class="adv-info">
+                            <h3>Component-Based Architecture</h3>
+                            <p>Build modular UI components for reusable and maintainable code structures.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-fighter-jet"></i></div>
+                        <div class="adv-info">
+                            <h3>Advanced Rendering Engines</h3>
+                            <p>Leverage SSR, CSR, and SSG for optimized performance and SEO.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-puzzle-piece"></i></div>
+                        <div class="adv-info">
+                            <h3>Micro-Frontend Architecture</h3>
+                            <p>Break large applications into smaller, independent front-end modules.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-stream"></i></div>
+                        <div class="adv-info">
+                            <h3>Real-Time Data Systems</h3>
+                            <p>Enable live updates using WebSockets and streaming technologies.</p>
+                        </div>
+                    </div>
+                    <div class="adv-card">
+                        <div class="adv-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="adv-info">
+                            <h3>Progressive Web App (PWA) Capabilities</h3>
+                            <p>Create installable, offline-ready applications with native-like experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Components Neural Map -->
+        <section class="tech-components-neural">
+            <div class="container-header-flow">
+                <div class="container-box">
+                    <div class="section-header-modern">
+                        <span class="tech-badge">System Neural Map</span>
+                        <h2>Key Components of Front-End Systems</h2>
+                        <p>A production-ready front-end system includes interconnected layers to process data and serve
+                            modern interfaces.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="neural-map-viewport">
+                <div class="container-box">
+                    <div class="neural-map-container">
+                        <!-- Connecting SVG Path (Neural Pathways) -->
+                        <svg class="neural-pathways" width="100%" height="100%" viewBox="0 0 1000 600"
+                            preserveAspectRatio="none">
+                            <path class="path-line" d="M500,300 L166,100" />
+                            <path class="path-line" d="M500,300 L833,100" />
+                            <path class="path-line" d="M500,300 L166,300" />
+                            <path class="path-line" d="M500,300 L833,300" />
+                            <path class="path-line" d="M500,300 L166,500" />
+                            <path class="path-line" d="M500,300 L833,500" />
+                        </svg>
+
+                        <!-- Central Hub -->
+                        <div class="neural-hub">
+                            <div class="hub-pulse"></div>
+                            <div class="hub-glass">
+                                <i class="fas fa-code"></i>
+                                <span>FRONT-END CORE</span>
+                            </div>
+                        </div>
+
+                        <!-- Satellite Nodes -->
+                        <!-- Top Left -->
+                        <div class="neural-node node-tl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-desktop"></i></div>
+                                <h3>UI Layer</h3>
+                                <p>Handles visual components and user interactions.</p>
+                            </div>
+                        </div>
+
+                        <!-- Top Right -->
+                        <div class="neural-node node-tr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-sitemap"></i></div>
+                                <h3>State Management</h3>
+                                <p>Manages application data and UI state efficiently.</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Left -->
+                        <div class="neural-node node-ml">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-route"></i></div>
+                                <h3>Routing System</h3>
+                                <p>Controls navigation and page transitions.</p>
+                            </div>
+                        </div>
+
+                        <!-- Middle Right -->
+                        <div class="neural-node node-mr">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-plug"></i></div>
+                                <h3>API Integration</h3>
+                                <p>Connects frontend with backend services and data.</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Left -->
+                        <div class="neural-node node-bl">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <h3>Performance Layer</h3>
+                                <p>Optimizes loading speed and rendering performance.</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Right -->
+                        <div class="neural-node node-br">
+                            <div class="node-glass">
+                                <div class="node-icon"><i class="fas fa-universal-access"></i></div>
+                                <h3>Accessibility Layer</h3>
+                                <p>Ensures usability for all users, including those with disabilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture & System Design -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Infrastructure</span>
+                        <h2>Front-End Architecture <br>& System Design</h2>
+                        <p>Modern front-end systems follow scalable architecture patterns.</p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-layer-group"></i></div>
+                            <h3>Component-based UI architecture</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-database"></i></div>
+                            <h3>State-driven UI design</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>API-first development</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-cubes"></i></div>
+                            <h3>Modular code structure</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-bolt"></i></div>
+                            <h3>Performance-first architecture</h3>
+                        </div>
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-paint-roller"></i></div>
+                            <h3>Scalable design systems</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-stack-v2">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Powered By</span>
+                    <h2>Front-End Tech Stack</h2>
+                    <p>We use modern frameworks, tools, and methodologies to build exceptional UI architectures.</p>
+                </div>
+
+                <div class="stack-v2-container">
+                    <!-- Languages -->
+                    <div class="stack-v2-card">
+                        <div class="card-bg-icon"><i class="fas fa-code"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Languages</span>
+                            <h3>Core Tech</h3>
+                            <div class="tags-row">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="stack-v2-card theme-purple">
+                        <div class="card-bg-icon"><i class="fab fa-react"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Frameworks</span>
+                            <h3>Frameworks & Libraries</h3>
+                            <div class="tags-row">
+                                <span>React</span>
+                                <span>Angular</span>
+                                <span>Vue.js</span>
+                                <span>Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Styling -->
+                    <div class="stack-v2-card theme-orange">
+                        <div class="card-bg-icon"><i class="fab fa-css3-alt"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Styling</span>
+                            <h3>Styling Systems</h3>
+                            <div class="tags-row">
+                                <span>Tailwind CSS</span>
+                                <span>Bootstrap</span>
+                                <span>Material UI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- State -->
+                    <div class="stack-v2-card theme-cyan">
+                        <div class="card-bg-icon"><i class="fas fa-database"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Data</span>
+                            <h3>State Management</h3>
+                            <div class="tags-row">
+                                <span>Redux</span>
+                                <span>Zustand</span>
+                                <span>MobX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Build Tools -->
+                    <div class="stack-v2-card theme-blue">
+                        <div class="card-bg-icon"><i class="fas fa-hammer"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Tools</span>
+                            <h3>Build Tools</h3>
+                            <div class="tags-row">
+                                <span>Vite</span>
+                                <span>Webpack</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APIs -->
+                    <div class="stack-v2-card theme-green">
+                        <div class="card-bg-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Integration</span>
+                            <h3>API Layer</h3>
+                            <div class="tags-row">
+                                <span>REST APIs</span>
+                                <span>GraphQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deployment -->
+                    <div class="stack-v2-card theme-blue" style="grid-column: span 1;">
+                        <div class="card-bg-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="card-front">
+                            <span class="card-cat">Infrastructure</span>
+                            <h3>Deployment Platforms</h3>
+                            <div class="tags-row">
+                                <span>Vercel</span>
+                                <span>Netlify</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Lifecycle -->
+        <section class="tech-lifecycle-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Development Flow</span>
+                    <h2>Front-End Development Lifecycle</h2>
+                    <p>Our structured approach ensures scalable and pixel-perfect UI solutions.</p>
+                </div>
+
+                <div class="horizontal-stepper-system">
+                    <!-- Progress Line & Dots -->
+                    <div class="stepper-track-wrap">
+                        <div class="stepper-main-line">
+                            <div class="stepper-progress-fill"></div>
+                        </div>
+                        <div class="stepper-dots-row">
+                            <div class="stepper-dot active"><i class="fas fa-check"></i></div>
+                            <div class="stepper-dot">02</div>
+                            <div class="stepper-dot">03</div>
+                            <div class="stepper-dot">04</div>
+                            <div class="stepper-dot">05</div>
+                            <div class="stepper-dot">06</div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Cards Grid -->
+                    <div class="stepper-cards-grid">
+                        <!-- Step 01 -->
+                        <div class="stepper-card-item active">
+                            <div class="card-top-icon"><i class="fas fa-pencil-ruler"></i></div>
+                            <span class="card-step-label">Step 1</span>
+                            <h3>UI <br>Planning</h3>
+                            <p>Define application structure, layout, and user flows.</p>
+                        </div>
+
+                        <!-- Step 02 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-palette"></i></div>
+                            <span class="card-step-label">Step 2</span>
+                            <h3>Design <br>Implementation</h3>
+                            <p>Convert UI/UX designs into functional front-end code.</p>
+                        </div>
+
+                        <!-- Step 03 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-cubes"></i></div>
+                            <span class="card-step-label">Step 3</span>
+                            <h3>Component <br>Development</h3>
+                            <p>Build reusable UI components and modules.</p>
+                        </div>
+
+                        <!-- Step 04 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-plug"></i></div>
+                            <span class="card-step-label">Step 4</span>
+                            <h3>API <br>Integration</h3>
+                            <p>Connect frontend with backend APIs and services.</p>
+                        </div>
+
+                        <!-- Step 05 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <span class="card-step-label">Step 5</span>
+                            <h3>Performance <br>Optimization</h3>
+                            <p>Improve speed, performance, and responsiveness.</p>
+                        </div>
+
+                        <!-- Step 06 -->
+                        <div class="stepper-card-item">
+                            <div class="card-top-icon"><i class="fas fa-rocket"></i></div>
+                            <span class="card-step-label">Step 6</span>
+                            <h3>Deployment <br>& Monitoring</h3>
+                            <p>Launch application and continuously improve performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications of Tech -->
+        <section class="tech-apps-minimal">
+            <div class="container-box">
+                <div class="apps-split-layout">
+                    <div class="apps-left-info">
+                        <span class="tech-badge">Capabilities</span>
+                        <h2>Applications of <br>Front-End Technologies</h2>
+                        <p>Modern front-end frameworks power engaging, dynamic, and fast applications across platforms.
+                        </p>
+                        <div class="apps-visual-accent"></div>
+                    </div>
+
+                    <div class="apps-right-points">
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-window-maximize"></i></div>
+                            <h3>Web applications</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>SaaS platforms</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <h3>AI dashboards</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-shopping-cart"></i></div>
+                            <h3>E-commerce interfaces</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-user-shield"></i></div>
+                            <h3>Admin panels</h3>
+                        </div>
+
+                        <div class="app-point-item">
+                            <div class="app-point-icon"><i class="fas fa-chart-bar"></i></div>
+                            <h3>Data visualization systems</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Use Cases Section -->
+        <section class="tech-solutions-premium">
+            <div class="container-box">
+                <div class="solutions-main-header">
+                    <span class="tech-badge">Functional Value</span>
+                    <h2>Practical Use Cases</h2>
+                </div>
+
+                <div class="solutions-stack">
+                    <!-- Case 1 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">01</span>
+                            <div class="row-icon"><i class="fas fa-robot"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>AI chatbot interfaces</h3>
+                            <p>Dynamic chat UI that communicates seamlessly with language models.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Conversational AI</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">02</span>
+                            <div class="row-icon"><i class="fas fa-chart-line"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Real-time dashboards</h3>
+                            <p>Live data monitoring and metrics presented in an intuitive UI.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Analytics</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 3 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">03</span>
+                            <div class="row-icon"><i class="fas fa-chart-pie"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Interactive analytics UI</h3>
+                            <p>Visualizing complex data sets in easy-to-understand formats.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Data</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 4 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">04</span>
+                            <div class="row-icon"><i class="fas fa-user-circle"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Personalized web platforms</h3>
+                            <p>Interfaces that adapt dynamically to user preferences and behavior.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Personalization</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 5 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">05</span>
+                            <div class="row-icon"><i class="fas fa-mobile-alt"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Progressive web apps</h3>
+                            <p>App-like experiences running natively within the browser environment.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">PWA</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 6 -->
+                    <div class="solution-row">
+                        <div class="solution-left">
+                            <span class="row-num">06</span>
+                            <div class="row-icon"><i class="fas fa-users"></i></div>
+                        </div>
+                        <div class="solution-mid">
+                            <h3>Customer portals</h3>
+                            <p>Self-service platforms providing seamless account management.</p>
+                        </div>
+                        <div class="solution-right">
+                            <span class="solution-tag">Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section class="tech-industries-curated">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Industries Using Front-End Technologies</h2>
+                    <p>Delivering high-performance interfaces across all core digital industries.</p>
+                </div>
+
+                <div class="industry-pills-grid">
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-laptop-code"></i></div>
+                            <div class="pill-info">
+                                <h3>Technology platforms</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-money-bill-wave"></i></div>
+                            <div class="pill-info">
+                                <h3>Finance & fintech</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-heartbeat"></i></div>
+                            <div class="pill-info">
+                                <h3>Healthcare systems</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-shopping-bag"></i></div>
+                            <div class="pill-info">
+                                <h3>Retail & e-commerce</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="pill-info">
+                                <h3>Education platforms</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-pill-item">
+                        <div class="pill-main">
+                            <div class="pill-icon-box"><i class="fas fa-film"></i></div>
+                            <div class="pill-info">
+                                <h3>Media & entertainment</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Challenges -->
+        <section class="tech-contrast-v3">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Impact Analysis</span>
+                    <h2>Benefits vs. Challenges</h2>
+                </div>
+
+                <div class="contrast-grid-v3">
+                    <!-- Benefits Panel -->
+                    <div class="contrast-card-v3 benefits">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-arrow-trend-up"></i></div>
+                            <h3>Benefits of <br>Front-End Technologies</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-check"></i> Fast and responsive user interactions</li>
+                                <li><i class="fas fa-circle-check"></i> Scalable UI architecture</li>
+                                <li><i class="fas fa-circle-check"></i> Enhanced user engagement</li>
+                                <li><i class="fas fa-circle-check"></i> Cross-platform compatibility</li>
+                                <li><i class="fas fa-circle-check"></i> SEO-friendly rendering</li>
+                                <li><i class="fas fa-circle-check"></i> Reusable components</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Challenges Panel -->
+                    <div class="contrast-card-v3 challenges">
+                        <div class="card-particles"></div>
+                        <div class="card-content-v3">
+                            <div class="card-icon-v3"><i class="fas fa-triangle-exclamation"></i></div>
+                            <h3>Challenges in <br>Front-End Development</h3>
+                            <ul class="effect-list">
+                                <li><i class="fas fa-circle-info"></i> Performance optimization complexity</li>
+                                <li><i class="fas fa-circle-info"></i> Managing application state</li>
+                                <li><i class="fas fa-circle-info"></i> Rapid technology evolution</li>
+                                <li><i class="fas fa-circle-info"></i> Integration with backend systems</li>
+                                <li><i class="fas fa-circle-info"></i> Maintaining UI consistency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Our Approach Stands Out -->
+        <section class="tech-approach-dashboard">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Our Advantage</span>
+                    <h2>Why Our Front-End Approach Stands Out</h2>
+                    <p>We combine advanced architecture with pixel-perfect design solutions.</p>
+                </div>
+
+                <div class="approach-dashboard-wrap">
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-layer-group"></i></div>
+                        <div class="item-main">
+                            <h3>Scalable and modular UI architecture</h3>
+                            <p>We build resilient component libraries designed for growth.</p>
+                        </div>
+                        <div class="item-status">Active</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-bolt"></i></div>
+                        <div class="item-main">
+                            <h3>Performance-first development approach</h3>
+                            <p>Optimized rendering and payload size for blazing fast speeds.</p>
+                        </div>
+                        <div class="item-status">Verified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-robot"></i></div>
+                        <div class="item-main">
+                            <h3>AI-ready front-end systems</h3>
+                            <p>Interfaces prepped to integrate seamlessly with ML and AI features.</p>
+                        </div>
+                        <div class="item-status">Certified</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-code"></i></div>
+                        <div class="item-main">
+                            <h3>Clean and maintainable codebase</h3>
+                            <p>Following strict style guides and architectural best practices.</p>
+                        </div>
+                        <div class="item-status">Dynamic</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <div class="item-visual"><i class="fas fa-sync"></i></div>
+                        <div class="item-main">
+                            <h3>Continuous optimization and support</h3>
+                            <p>Iterative updates to ensure ongoing performance and security.</p>
+                        </div>
+                        <div class="item-status">Secure</div>
+                        <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future of Tech -->
+        <section class="tech-future-compact">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Future Tech</span>
+                    <h2>Future of Front-End Development</h2>
+                </div>
+
+                <div class="compact-future-grid">
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-magic"></i></div>
+                        <div class="compact-text">
+                            <h3>AI-generated user interfaces</h3>
+                            <p>Interfaces that dynamically compile based on user inputs and preferences.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-users"></i></div>
+                        <div class="compact-text">
+                            <h3>Real-time collaborative applications</h3>
+                            <p>Live, multi-user sync features seamlessly built into web applications.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-microphone"></i></div>
+                        <div class="compact-text">
+                            <h3>Voice-enabled UI systems</h3>
+                            <p>Navigating and interacting with complex interfaces entirely through voice.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-user-tag"></i></div>
+                        <div class="compact-text">
+                            <h3>Hyper-personalized experiences</h3>
+                            <p>Unique content tailored to every single user via predictive analytics.</p>
+                        </div>
+                    </div>
+
+                    <div class="compact-future-item">
+                        <div class="compact-visual"><i class="fas fa-brain"></i></div>
+                        <div class="compact-text">
+                            <h3>Web + AI convergence</h3>
+                            <p>Local AI models running directly in browser via WebAssembly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="tech-faq-section">
+            <div class="container-box">
+                <div class="section-header-modern">
+                    <span class="tech-badge">Knowledge Base</span>
+                    <h2>Frequently Asked Questions (FAQs)</h2>
+                    <p>Everything you need to know about Front-End technologies and how we implement them.</p>
+                </div>
+
+                <div class="faq-accordion-wrap">
+                    <details class="faq-item" open>
+                        <summary>What are front-end technologies?</summary>
+                        <div class="faq-answer">
+                            <p>Front-end technologies are tools and frameworks used to build the user interface of web
+                                and mobile applications.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is a front-end tech stack?</summary>
+                        <div class="faq-answer">
+                            <p>It includes languages, frameworks, libraries, and tools used to build UI systems.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What is the role of front-end in AI applications?</summary>
+                        <div class="faq-answer">
+                            <p>Front-end displays AI outputs such as recommendations, predictions, and chatbot
+                                interactions.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What are modern front-end frameworks?</summary>
+                        <div class="faq-answer">
+                            <p>React, Angular, Vue, and Next.js are widely used frameworks.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Is front-end development good for AI projects?</summary>
+                        <div class="faq-answer">
+                            <p>Yes, it is essential for presenting AI outputs through dashboards, chat interfaces, and
+                                personalized UI.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How to choose the right front-end framework?</summary>
+                        <div class="faq-answer">
+                            <p>Choose based on project size, performance needs, team expertise, and ecosystem support.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Can front-end development be used for mobile apps?</summary>
+                        <div class="faq-answer">
+                            <p>Yes, using technologies like PWAs and frameworks such as React Native, front-end can
+                                power mobile experiences.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="tech-final-cta-v3">
+            <div class="container-box">
+                <div class="cta-wrapper-v3">
+                    <div class="cta-glow-1"></div>
+                    <div class="cta-glow-2"></div>
+
+                    <div class="cta-content-v3">
+                        <span class="cta-badge-v3">The Next Frontier</span>
+                        <h2>Build Intelligent User Interfaces</h2>
+                        <p>Transform front-end into a powerful digital experience layer with scalable, high-performance
+                            UI systems.</p>
+
+                        <div class="cta-action-v3">
+                            <a href="contact.html" class="cta-btn-main">
+                                <span>Start Your Front-End Project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="Footer">
+            <div class="footer-bg-clip">
+                <div class="footer-bg-circle"></div>
+            </div>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-icons">
+                        <a target="_blank" href="#">
+                            <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                                src="./assets/images/instagram.webp" alt="instagram" /></a>
+                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                                src="./assets/images/facebook2.webp" alt="facebook" /></a>
+                    </div>
+                    <div class="footer-text">
+                        <p class="footer-greet">
+                            <span class="hand">👋</span> Hey Innovator,
+                        </p>
+                        <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+                        <p class="footer-email">info@alphabitinfoway.com</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <img src="./assets/images/AI Model.webp" alt="Robot" />
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+                <div class="footer-links">
+                    <a href="#">AGENCY</a>
+                    <a href="#">CAREER</a>
+                    <a href="#">PRIVACY</a>
+                    <a href="#">TERMS &amp; CONDITION</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Lifecycle Stepper Interactivity
+        function updateStepper(stepIndex) {
+            const dots = document.querySelectorAll('.stepper-dot');
+            const cards = document.querySelectorAll('.stepper-card-item');
+            const fill = document.querySelector('.stepper-progress-fill');
+
+            // Calculate progress width (0% to 100% across 6 steps)
+            const progressWidth = ((stepIndex - 1) / (dots.length - 1)) * 100;
+            fill.style.width = progressWidth + '%';
+
+            // Update Active States for Dots
+            dots.forEach((dot, index) => {
+                if (index + 1 <= stepIndex) {
+                    dot.classList.add('active');
+                    if (index + 1 < stepIndex || stepIndex === index + 1) {
+                        dot.innerHTML = '<i class="fas fa-check"></i>';
+                    }
+                } else {
+                    dot.classList.remove('active');
+                    dot.innerHTML = (index + 1).toString().padStart(2, '0');
+                }
+            });
+
+            // Update Active States for Cards
+            cards.forEach((card, index) => {
+                if (index + 1 === stepIndex) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+        }
+
+        // Add Click Events to Cards
+        document.querySelectorAll('.stepper-card-item').forEach((card, index) => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => updateStepper(index + 1));
+        });
+
+        // Initialize at Step 1
+        window.addEventListener('DOMContentLoaded', () => updateStepper(1));
+    </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
+
