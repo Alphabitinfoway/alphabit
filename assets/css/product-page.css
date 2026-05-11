@@ -1,0 +1,703 @@
+/* ==========================================================================
+   Product Page Template - Premium Modern Theme
+   Matches the Alphabit Infoway high-end technology UI
+   ========================================================================== */
+
+:root {
+  --prod-primary: #7143fe;
+  --prod-secondary: #ff5622;
+  --prod-dark: #0f172a;
+  --prod-gray: #64748b;
+  --prod-light: #f8fafc;
+  --prod-border: #e2e8f0;
+  
+  --prod-gradient-1: linear-gradient(135deg, #7143fe 0%, #a855f7 100%);
+  --prod-gradient-2: linear-gradient(135deg, #ff5622 0%, #fb923c 100%);
+  --prod-gradient-3: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%);
+  --prod-gradient-4: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  
+  --prod-shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.04);
+  --prod-shadow-hover: 0 30px 60px rgba(15, 23, 42, 0.08);
+  --prod-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-page-wrapper {
+  font-family: 'Sora', sans-serif;
+  color: var(--prod-dark);
+  background: #ffffff;
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+
+/* --------------------------------------------------------------------------
+   Modern Hero Section
+   -------------------------------------------------------------------------- */
+.product-hero-modern {
+  position: relative;
+  padding: 220px 0 100px;
+  background: linear-gradient(135deg, #fdfbfb 0%, #f3f4f6 100%);
+  color: var(--prod-dark);
+  text-align: center;
+}
+
+.product-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.product-mesh {
+  position: absolute;
+  inset: 0;
+  background:
+      radial-gradient(circle at 15% 20%, rgba(113, 67, 254, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 85% 80%, rgba(255, 86, 34, 0.06) 0%, transparent 50%);
+}
+
+.product-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: url('../images/services_bg_waves.png') no-repeat bottom center;
+  background-size: cover;
+  opacity: 0.15;
+  filter: grayscale(1) brightness(1.1);
+}
+
+.product-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.product-badge-modern {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(113, 67, 254, 0.08);
+  color: var(--prod-primary);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 100px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.product-hero-title {
+  font-size: clamp(38px, 6vw, 64px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--prod-dark);
+  margin-bottom: 25px;
+  letter-spacing: -1.5px;
+}
+
+.product-hero-title span {
+  background: var(--prod-gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product-hero-desc {
+  font-size: 18px;
+  color: var(--prod-gray);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.product-hero-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.prod-btn-primary {
+  background: var(--prod-gradient-2);
+  color: #fff !important;
+  padding: 16px 40px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: var(--prod-transition);
+  box-shadow: 0 10px 25px rgba(255, 86, 34, 0.25);
+  border: none;
+  cursor: pointer;
+}
+
+.prod-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(255, 86, 34, 0.35);
+}
+
+.prod-btn-secondary {
+  background: transparent;
+  color: var(--prod-dark) !important;
+  padding: 16px 40px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid var(--prod-border);
+  transition: var(--prod-transition);
+  cursor: pointer;
+}
+
+.prod-btn-secondary:hover {
+  border-color: var(--prod-primary);
+  color: var(--prod-primary) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Marquee / Trusted
+   -------------------------------------------------------------------------- */
+.product-trusted-modern {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--prod-border);
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.product-trusted-modern p {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--prod-gray);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+
+.prod-marquee-track {
+  display: flex;
+  gap: 80px;
+  animation: prodMarquee 40s linear infinite;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.prod-marquee-track span {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--prod-gray);
+  opacity: 0.3;
+}
+
+@keyframes prodMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* --------------------------------------------------------------------------
+   Common Sections Layout
+   -------------------------------------------------------------------------- */
+.prod-section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prod-section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.prod-section-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--prod-dark);
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.prod-section-header h2 span {
+  background: var(--prod-gradient-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prod-section-header p {
+  font-size: 18px;
+  color: var(--prod-gray);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   About / Split Layout
+   -------------------------------------------------------------------------- */
+.prod-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.prod-split-text p {
+  font-size: 18px;
+  color: var(--prod-gray);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.prod-feature-list {
+  background: #fff;
+  border: 1px solid var(--prod-border);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: var(--prod-shadow-soft);
+}
+
+.prod-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--prod-dark);
+}
+
+.prod-feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.prod-icon-check {
+  width: 32px;
+  height: 32px;
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/* --------------------------------------------------------------------------
+   Premium Impact Cards (Industries / Features)
+   -------------------------------------------------------------------------- */
+.prod-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.prod-impact-card {
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  padding: 40px 30px;
+  border-radius: 24px;
+  transition: var(--prod-transition);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prod-impact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--prod-shadow-hover);
+  border-color: rgba(113, 67, 254, 0.3);
+}
+
+.prod-impact-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--prod-gradient-1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(113, 67, 254, 0.2);
+}
+
+.prod-impact-card:nth-child(2n) .prod-impact-icon {
+  background: var(--prod-gradient-2);
+  box-shadow: 0 10px 20px rgba(255, 86, 34, 0.2);
+}
+
+.prod-impact-card:nth-child(3n) .prod-impact-icon {
+  background: var(--prod-gradient-3);
+  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.2);
+}
+
+.prod-impact-card h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--prod-dark);
+}
+
+.prod-impact-card p {
+  font-size: 15px;
+  color: var(--prod-gray);
+  line-height: 1.6;
+}
+
+.prod-card-ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  border-top: 1px solid var(--prod-border);
+  padding-top: 20px;
+}
+
+.prod-card-ul li {
+  font-size: 14px;
+  color: var(--prod-gray);
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.prod-card-ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--prod-primary);
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   Step-by-Step Modern (How it Works)
+   -------------------------------------------------------------------------- */
+.prod-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px 40px;
+  margin-top: 40px;
+  counter-reset: prod-steps;
+}
+
+.prod-step-item {
+  position: relative;
+  padding-left: 10px;
+}
+
+.prod-step-item::before {
+  counter-increment: prod-steps;
+  content: "0" counter(prod-steps);
+  font-size: 60px;
+  font-weight: 900;
+  color: rgba(113, 67, 254, 0.05);
+  line-height: 0.8;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: 0;
+}
+
+.prod-step-item h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--prod-dark);
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.prod-step-item p {
+  font-size: 15px;
+  color: var(--prod-gray);
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.prod-step-tag {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 4px 12px;
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 100px;
+}
+
+/* --------------------------------------------------------------------------
+   Modern Stats Section
+   -------------------------------------------------------------------------- */
+.prod-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  background: var(--prod-dark);
+  border-radius: 24px;
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.prod-stats::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--prod-gradient-1);
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.prod-stat-box {
+  text-align: center;
+}
+
+.prod-stat-number {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--prod-secondary);
+  margin-bottom: 10px;
+}
+
+.prod-stat-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.prod-stat-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+}
+
+/* --------------------------------------------------------------------------
+   Integrations Stack
+   -------------------------------------------------------------------------- */
+.prod-integrations-wrapper {
+  background: var(--prod-light);
+  border-radius: 30px;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.prod-integrations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.prod-integration-tag {
+  background: #fff;
+  border: 1px solid var(--prod-border);
+  padding: 14px 28px;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--prod-dark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--prod-transition);
+  box-shadow: var(--prod-shadow-soft);
+}
+
+.prod-integration-tag:hover {
+  transform: translateY(-3px);
+  border-color: var(--prod-primary);
+  color: var(--prod-primary);
+  box-shadow: 0 10px 20px rgba(113, 67, 254, 0.1);
+}
+
+/* --------------------------------------------------------------------------
+   Modern Comparison Table
+   -------------------------------------------------------------------------- */
+.prod-table-wrapper {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid var(--prod-border);
+  overflow-x: auto;
+  box-shadow: var(--prod-shadow-soft);
+}
+
+.prod-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+}
+
+.prod-table th, .prod-table td {
+  padding: 24px;
+  text-align: left;
+  border-bottom: 1px solid var(--prod-border);
+}
+
+.prod-table th {
+  font-weight: 800;
+  color: var(--prod-dark);
+  font-size: 16px;
+  background: var(--prod-light);
+}
+
+.prod-table th.prod-highlight {
+  background: var(--prod-gradient-1);
+  color: #fff;
+  border-bottom: none;
+}
+
+.prod-table td.prod-highlight {
+  background: rgba(113, 67, 254, 0.03);
+  font-weight: 700;
+  color: var(--prod-primary);
+}
+
+.prod-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* --------------------------------------------------------------------------
+   FAQ Section
+   -------------------------------------------------------------------------- */
+.prod-faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prod-faq-card {
+  background: #fff;
+  border: 1px solid var(--prod-border);
+  border-radius: 16px;
+  padding: 30px;
+  transition: var(--prod-transition);
+}
+
+.prod-faq-card:hover {
+  border-color: var(--prod-primary);
+  box-shadow: var(--prod-shadow-soft);
+}
+
+.prod-faq-card h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--prod-dark);
+  margin-bottom: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.prod-faq-card h4::before {
+  content: 'Q.';
+  color: var(--prod-secondary);
+}
+
+.prod-faq-card p {
+  font-size: 15px;
+  color: var(--prod-gray);
+  line-height: 1.6;
+  padding-left: 33px;
+}
+
+/* --------------------------------------------------------------------------
+   CTA Banner
+   -------------------------------------------------------------------------- */
+.prod-cta-banner {
+  margin: 80px 20px;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, var(--prod-dark) 0%, #1e1b4b 100%);
+  border-radius: 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.prod-cta-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(113, 67, 254, 0.3) 0%, transparent 60%);
+}
+
+.prod-cta-banner h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.prod-cta-banner h2 span {
+  color: var(--prod-secondary);
+}
+
+.prod-cta-banner p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.8);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.prod-btn-outline {
+  background: transparent;
+  color: #fff !important;
+  border: 2px solid rgba(255,255,255,0.3);
+  padding: 16px 40px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: var(--prod-transition);
+}
+
+.prod-btn-outline:hover {
+  border-color: #fff;
+  background: rgba(255,255,255,0.1);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  .prod-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-hero-modern {
+    padding: 160px 0 60px;
+  }
+  
+  .product-hero-title {
+    font-size: 42px;
+  }
+  
+  .product-hero-actions {
+    flex-direction: column;
+  }
+  
+  .prod-btn-primary, .prod-btn-secondary, .prod-btn-outline {
+    width: 100%;
+  }
+  
+  .prod-section {
+    padding: 60px 20px;
+  }
+  
+  .prod-section-header h2 {
+    font-size: 32px;
+  }
+  
+  .prod-cta-banner h2 {
+    font-size: 36px;
+  }
+}
