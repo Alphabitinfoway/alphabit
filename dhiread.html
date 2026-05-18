@@ -2,230 +2,531 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>DhiRead Solution | Alphabit Infoway</title>
-
-  <meta name="description" content="Alphabit Infoway - DhiRead. We specialize in high-performance Web Development, Mobile Apps, AI Solutions, and Premium IT Services for businesses globally." />
-  <meta name="keywords" content="DhiRead, Alphabit Infoway, Software Development, Web Development, Mobile Apps, AI Development, IT Consulting, Premium Tech Solutions" />
+  <title>DhiRead – AI Content Editing & Publishing Platform | Alphabit</title>
+  <meta name="description"
+    content="DhiRead helps publishers and content teams edit, format, manage, and publish content faster with AI-powered grammar correction and smart layouts." />
+  <meta name="keywords" content="DhiRead, AI Content Editing, Publishing Platform, Grammar Correction, Content Management" />
   <meta name="author" content="Alphabit Infoway" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alphabitinfoway.com/dhiread" />
-  <meta property="og:title" content="DhiRead Solution | Alphabit Infoway" />
-  <meta property="og:description" content="Alphabit Infoway - DhiRead. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
+  <meta property="og:title" content="DhiRead – AI Content Editing & Publishing Platform" />
+  <meta property="og:description"
+    content="Edit, format, and publish professional content faster with AI-powered editing and smart layout tools." />
   <meta property="og:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://alphabitinfoway.com/dhiread" />
-  <meta name="twitter:title" content="DhiRead Solution | Alphabit Infoway" />
-  <meta name="twitter:description" content="Alphabit Infoway - DhiRead. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
-  <meta name="twitter:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
 
   <link rel="canonical" href="https://alphabitinfoway.com/dhiread" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
-    <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/product-page.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+
 </head>
 
-<body>
-    <!-- Minimal Preloader -->
-    <div id="preloader">
-        <div class="minimal-loader">
-            <img src="./assets/images/preloder.svg" alt="Alphabit Logo" class="loader-logo" />
-            <div class="loader-text">
-                <div class="line1">Connecting</div>
-                <div class="line2">The <span class="highlight">Bits...</span></div>
-            </div>
-        </div>
+<body class="product-page-wrapper">
+  <!-- Minimal Preloader -->
+  <div id="preloader">
+    <div class="minimal-loader">
+      <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+      <div class="loader-progress-bar"></div>
+      <div class="loader-text">Loading DhiRead...</div>
     </div>
+  </div>
 
-    <div class="container">
-        <header>
-            <div class="logo-img">
-                <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
-            </div>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav class="navbar">
-                <h6><a href="./">Home</a></h6>
-                <h6 class="dropdown">
-                    <a href="services" class="dropdown-toggle">Services</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="services">AI & Machine Learning</a></li>
-                        <li><a href="services">Cyber Security & Compliance</a></li>
-                        <li><a href="services">Full Stack Web Development</a></li>
-                        <li><a href="services">Mobile App & Product Design</a></li>
-                    </ul>
-                </h6>
-                <h6><a href="./#products">Products</a></h6>
-                <h6 class="dropdown">
-                    <a href="Technology" class="dropdown-toggle">Technology</a>
-                    <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Artificial Intelligence</li>
-                        <li><a href="ai-development-technologies.html">AI Development</a></li>
-                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
-                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
-                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+  <!-- Header -->
+  <header>
+    <div class="logo-img">
+      <a href="index.html">
+        <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+      </a>
+    </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar">
+      <h6><a href="./">Home</a></h6>
+      <h6 class="dropdown">
+        <a href="services" class="dropdown-toggle">Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+          <li><a href="services">Cyber Security & Compliance</a></li>
+          <li><a href="services">Full Stack Web Development</a></li>
+          <li><a href="services">Mobile App & Product Design</a></li>
+        </ul>
+      </h6>
+      <h6><a href="./#products">Products</a></h6>
+      <h6 class="dropdown">
+        <a href="Technology" class="dropdown-toggle">Technology</a>
+        <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+          <li class="dropdown-category"
+            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+            Artificial Intelligence</li>
+          <li><a href="ai-development-technologies.html">AI Development</a></li>
+          <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+          <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+          <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+          <li class="dropdown-category"
+            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+            Web Technologies</li>
+          <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+          <li><a href="backend-technologies.html">Backend Development</a></li>
+          <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+        </ul>
+      </h6>
+      <h6><a href="about">About</a></h6>
+      <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+      <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+    </nav>
+    <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+  </header>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Web Technologies</li>
-                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
-                        <li><a href="backend-technologies.html">Backend Development</a></li>
-                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+  <!-- Hero Section -->
+  <section class="product-hero-split light">
+    <div class="product-hero-split-inner">
+      <div class="product-hero-split-content">
+        <span class="product-badge-modern">DATA INTELLIGENCE</span>
+        <h1 class="product-hero-title">DhiRead <br></h1>
+        <span class="product-hero-subtitle">AI Content Editing & Publishing Software</span>
+        <p class="product-hero-desc">DhiRead helps content teams create, edit, format, and publish professional content faster with AI-powered editing, smart layout tools, and scalable publishing workflows.</p>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Mobile Technologies</li>
-                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
-                        <li><a href="android-development-technologies.html">Android Development</a></li>
-                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+        <ul class="hero-check-list">
+          <li><i class="fas fa-check-circle"></i> Detect & Fix Grammar Errors Instantly</li>
+          <li><i class="fas fa-check-circle"></i> Design Professional Layouts with Ease</li>
+          <li><i class="fas fa-check-circle"></i> Manage Multi-page Documents at Scale</li>
+        </ul>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cloud & DevOps</li>
-                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
-                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
-                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+        <div class="product-hero-actions">
+          <a href="contact.html" class="prod-btn-primary">Start Free Trial</a>
+          <a href="contact.html" class="prod-btn-secondary">Book a Demo</a>
+        </div>
+      </div>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Data & Analytics</li>
-                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
-                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
-                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+      <div class="product-hero-split-image">
+        <img src="./assets/images/Technology/1.jpg" alt="DhiRead Platform">
+      </div>
+    </div>
+  </section>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cyber Security</li>
-                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
-                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
-                    </ul>
-                </h6>
-                <h6><a href="about">About</a></h6>
-                <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
-                <h6 class="dropdown">
-                    <a href="#" class="dropdown-toggle">Insights</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="blog">Blog</a></li>
-                        <li><a href="career">Career</a></li>
-                    </ul>
-                </h6>
-                <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
-            </nav>
-            <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
-        </header>
+  <!-- Trusted By -->
+  <section class="product-trusted-modern">
+    <div class="prod-marquee-wrapper">
+      <p>Trusted by content teams across industries — scalable from solo creators to enterprises.</p>
+      <div class="prod-marquee-track">
+        <div class="marquee-item"><span>EduMax Learning</span></div>
+        <div class="marquee-item"><span>MediaPro</span></div>
+        <div class="marquee-item"><span>ContentCo.</span></div>
+        <div class="marquee-item"><span>BrandMark Solutions</span></div>
+        <div class="marquee-item"><span>ScholarPress</span></div>
+        <div class="marquee-item"><span>DigitalEdge</span></div>
+        <!-- Repeat -->
+        <div class="marquee-item"><span>EduMax Learning</span></div>
+        <div class="marquee-item"><span>MediaPro</span></div>
+        <div class="marquee-item"><span>ContentCo.</span></div>
+        <div class="marquee-item"><span>BrandMark Solutions</span></div>
+        <div class="marquee-item"><span>ScholarPress</span></div>
+        <div class="marquee-item"><span>DigitalEdge</span></div>
+      </div>
+    </div>
+  </section>
 
-        <div class="product-page-wrapper">
-            <section class="product-hero">
-                <div class="product-hero-inner">
-                    <div class="product-hero-content">
-                        <span class="product-category">Data Intelligence</span>
-                        <h1 class="product-title">DhiRead</h1>
-                        <p class="product-tagline">Enhances content creation and publishing with smart editing and layout tools.</p>
-                        <div class="product-hero-btns">
-                            <button class="contact-btn" onclick="window.location.href='./contact.html'">Start Free
-                                Trial</button>
-                        </div>
-                    </div>
-                    <div class="product-hero-image">
-                        <img src="./assets/images/Technology/2.webp" alt="DhiRead Product Hero" />
-                    </div>
-                </div>
-            </section>
+  <!-- About Section -->
+  <section class="prod-section" id="about">
+    <div class="prod-split">
+      <div class="prod-split-image">
+        <img src="./assets/images/Technology/1.webp" alt="About DhiRead"
+          style="width: 100%; border-radius: 32px; box-shadow: 0 40px 80px rgba(0,0,0,0.15); animation: prodFloatImage 6s ease-in-out infinite;">
+      </div>
+      <div class="prod-split-text">
+        <h2>About <span class="gradient-text">DhiRead</span></h2>
+        <p>DhiRead is an AI-powered content editing and publishing platform built for publishers, editorial teams, marketers, and businesses that create content at scale.</p>
+        <p>From grammar correction and formatting to layout design and multi-page publishing, DhiRead helps teams create professional, polished content faster — all from one centralized platform.</p>
+        
+        <h4 style="font-weight: 800; margin-bottom: 20px; color: var(--prod-dark); display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-star" style="color: var(--prod-secondary); font-size: 18px;"></i> Key Features:
+        </h4>
+        <div class="prod-feature-list">
+          <div class="prod-feature-item"><div class="prod-icon-check"><i class="fas fa-check"></i></div> AI-Powered Grammar Detection</div>
+          <div class="prod-feature-item"><div class="prod-icon-check"><i class="fas fa-check"></i></div> Advanced Typography Controls</div>
+          <div class="prod-feature-item"><div class="prod-icon-check"><i class="fas fa-check"></i></div> Flexible Layout Templates</div>
+          <div class="prod-feature-item"><div class="prod-icon-check"><i class="fas fa-check"></i></div> Multi-page Document Management</div>
+          <div class="prod-feature-item"><div class="prod-icon-check"><i class="fas fa-check"></i></div> Team Collaboration Workflow</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <section class="product-details-section">
-                <div class="details-grid">
-                    <div class="details-text">
-                        <h2>About DhiRead</h2>
-                        <p>DhiRead empowers publishers and content creators to manage articles effortlessly with built-in grammar detection and editing support. It offers advanced typography control, flexible layouts, and multi-page document management for professional publishing. Accessible across platforms, it ensures a smooth and efficient content workflow from creation to publication.
-                        </p>
-                    </div>
-                    <div class="details-features">
-                        <h2>Key Capabilities</h2>
-                        <ul>
-                            <li>Smart Grammar & Edit Detection</li>
-                            <li>Advanced Typography Control</li>
-                            <li>Flexible Article Layout Templates</li>
-                            <li>Multi-page Document Management</li>
-                            <li>Integrated Content Workflow Tools</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+  <!-- How It Works -->
+  <section class="how-it-works-full">
+    <div class="container-fluid">
+      <div class="prod-section-header">
+        <span class="product-badge-modern" style="background: rgba(255,255,255,0.1); color: #fff;">HOW IT WORKS</span>
+        <h2>Get Started in <span class="orange-bg">Minutes</span>, Not Weeks</h2>
+        <p>No complicated setup. No technical team required. DhiRead fits directly into your content workflow and starts improving publishing quality from day one.</p>
+      </div>
 
-            <section class="product-benefits">
-                <div class="benefits-header">
-                    <h2>Why DhiRead?</h2>
-                </div>
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <h3>Effortless Management</h3>
-                        <p>Streamline your entire publishing lifecycle from initial draft to final publication with ease.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <h3>Professional Quality</h3>
-                        <p>Ensures every article meets high standards with built-in grammar and layout optimization tools.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <h3>Scalable Output</h3>
-                        <p>Manage thousands of articles and complex multi-page layouts without breaking your workflow.</p>
-                    </div>
-                </div>
-            </section>
+      <div class="prod-process-grid">
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 01</div>
+          <h3>Connect Your Workspace</h3>
+          <p>Import your existing documents, content library, or start fresh without disrupting your current workflow.</p>
+          <span class="prod-process-tag"><i class="far fa-clock"></i> Under 2 mins</span>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 02</div>
+          <h3>Set Up Your Editorial Style</h3>
+          <p>Upload your style guide, formatting preferences, templates, and tone settings. DhiRead learns automatically.</p>
+          <span class="prod-process-tag"><i class="fas fa-magic"></i> No coding</span>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 03</div>
+          <h3>Edit, Format & Publish</h3>
+          <p>Detect grammar issues instantly, maintain consistent layouts, and manage all content from one dashboard.</p>
+          <span class="prod-process-tag"><i class="fas fa-chart-line"></i> Real-time</span>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 04</div>
+          <h3>Scale Your Workflow</h3>
+          <p>As your volume grows, DhiRead scales effortlessly with multi-page management and collaborative editing.</p>
+          <span class="prod-process-tag"><i class="fas fa-rocket"></i> Built to grow</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">PERFORMANCE</span>
+        <h2>Results That <span class="orange-bg">Speak</span> for Themselves</h2>
+        <p>DhiRead streamlines your entire editing process, allowing your team to focus on creativity rather than formatting.</p>
+      </div>
+
+      <div class="prod-impact-grid">
+        <div class="benefit-accent-card">
+          <span class="stat-badge">99%</span>
+          <h3>Error-Free Publishing</h3>
+          <p>Detect grammar and formatting issues before content goes live.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">3x</span>
+          <h3>Faster Production</h3>
+          <p>Compared to traditional editing and formatting workflows.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">40+</span>
+          <h3>Layout Templates</h3>
+          <p>Publish consistently without starting from scratch every time.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">70%</span>
+          <h3>Less Time Editing</h3>
+          <p>Reduce manual formatting and proofreading work significantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Bento -->
+  <section class="industry-section-v4">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">ADAPTABILITY</span>
+        <h2>Built for <span class="orange-bg">Every </span>Industry</h2>
+        <p>Whether you publish articles, reports, research, or marketing content — DhiRead adapts to your workflow.</p>
+      </div>
+
+      <div class="premium-stages-grid">
+        <!-- Card 1 -->
+        <div class="stage-card stage-card-1">
+          <div class="stage-icon"><i class="fas fa-newspaper"></i></div>
+          <h4>News & Editorial</h4>
+          <p>Publish faster while maintaining consistency across every article and publication.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Grammar detection</span>
+            <span class="stage-tag">Workflow management</span>
+            <span class="stage-tag">Consistent formatting</span>
+          </div>
         </div>
 
-        <section class="schedule-section">
-            <div class="schedule-content">
-                <p>👋🏼 Hey Innovator,</p>
-                <h2>I'm Your<img src="./assets/images/home/Hey Innovator/1.webp" class="span-image"></span><span
-                        class="span-orange"> AI</span><span class="span-white">(Alphabit Infoway)</span></h2>
-                <h2><span class="span-orange">Buddy, </span>Let's<img src="./assets/images/home/Hey Innovator/2.webp"
-                        class="span-image"></span> Convert</h2>
-                <h2>Your <span class="span-white">Idea</span><img src="./assets/images/home/Hey Innovator/3.webp"
-                        class="span-image"></span> into <span class="span-white">Reality</span></h2>
-            </div>
-            <button class="schedule-btn">Schedule a Meeting</button>
-        </section>
+        <!-- Card 2 -->
+        <div class="stage-card stage-card-2">
+          <div class="stage-icon"><i class="fas fa-shopping-cart"></i></div>
+          <h4>E-Commerce & Retail</h4>
+          <p>Create descriptions, blogs, and promos at scale without sacrificing brand consistency.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Bulk formatting</span>
+            <span class="stage-tag">Brand consistency</span>
+            <span class="stage-tag">Layout templates</span>
+          </div>
+        </div>
 
-        <!-- Footer -->
-        <section class="Footer">
-            <div class="footer-bg-clip">
-                <div class="footer-bg-circle"></div>
-            </div>
-            <div class="footer-container">
-                <div class="footer-left">
-                    <div class="footer-icons">
-                        <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter" /></a>
-                        <a target="_blank"
-                            href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
-                                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
-                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
-                                src="./assets/images/instagram.webp" alt="instagram" /></a>
-                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
-                                src="./assets/images/facebook2.webp" alt="facebook" /></a>
-                    </div>
-                    <div class="footer-text">
-                        <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
-                        <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
-                        <p class="footer-email">info@alphabitinfoway.com</p>
-                    </div>
-                </div>
-                <div class="footer-right"><img src="./assets/images/AI Model.webp" alt="Robot" /></div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
-                <div class="footer-links">
-                    <a href="#">AGENCY</a><a href="#">CAREER</a><a href="#">PRIVACY</a><a href="#">TERMS &amp;
-                        CONDITION</a>
-                </div>
-            </div>
-        </section>
-        <script src="./assets/js/config.js"></script>
-        <script src="./assets/js/main.js"></script>
+        <!-- Card 3 -->
+        <div class="stage-card stage-card-3">
+          <div class="stage-icon"><i class="fas fa-building"></i></div>
+          <h4>Finance & Services</h4>
+          <p>Publish reports, whitepapers, and client documentation with structured professional layouts.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Multi-page docs</span>
+            <span class="stage-tag">Typography controls</span>
+            <span class="stage-tag">Professional layouts</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="stage-card stage-card-4">
+          <div class="stage-icon"><i class="fas fa-home"></i></div>
+          <h4>Real Estate</h4>
+          <p>Create visually structured brochures and market reports that communicate professionally.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Flexible templates</span>
+            <span class="stage-tag">Brochure management</span>
+            <span class="stage-tag">Brand formatting</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="stage-card stage-card-5">
+          <div class="stage-icon"><i class="fas fa-plane"></i></div>
+          <h4>Travel & Hospitality</h4>
+          <p>Publish itineraries and guest-facing content quickly without relying heavily on design teams.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Ready-to-use templates</span>
+            <span class="stage-tag">Multi-language support</span>
+            <span class="stage-tag">Fast workflows</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./assets/js/scroll-animate.js"></script>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="integration-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">ECOSYSTEM</span>
+        <h2>Plugs Into Your <span class="orange-bg">Existing </span>Stack</h2>
+        <p>DhiRead connects to the tools your content team already uses — no middleware, no headaches.</p>
+      </div>
+
+      <div class="integration-marquee-container">
+        <div class="integration-marquee">
+          <div class="integration-card"><i class="fab fa-google-drive"></i><span>Google Docs</span></div>
+          <div class="integration-card"><i class="fas fa-hdd"></i><span>Google Drive</span></div>
+          <div class="integration-card"><i class="fas fa-sticky-note"></i><span>Notion</span></div>
+          <div class="integration-card"><i class="fas fa-envelope"></i><span>Gmail</span></div>
+          <div class="integration-card"><i class="fab fa-hubspot"></i><span>HubSpot</span></div>
+          <!-- Repeat -->
+          <div class="integration-card"><i class="fab fa-google-drive"></i><span>Google Docs</span></div>
+          <div class="integration-card"><i class="fas fa-hdd"></i><span>Google Drive</span></div>
+          <div class="integration-card"><i class="fas fa-sticky-note"></i><span>Notion</span></div>
+          <div class="integration-card"><i class="fas fa-envelope"></i><span>Gmail</span></div>
+          <div class="integration-card"><i class="fab fa-hubspot"></i><span>HubSpot</span></div>
+        </div>
+
+        <div class="integration-marquee reverse">
+          <div class="integration-card"><i class="fab fa-slack"></i><span>Slack</span></div>
+          <div class="integration-card"><i class="fas fa-tasks"></i><span>Trello</span></div>
+          <div class="integration-card"><i class="fas fa-project-diagram"></i><span>Asana</span></div>
+          <div class="integration-card"><i class="fab fa-wordpress"></i><span>WordPress</span></div>
+          <div class="integration-card"><i class="fas fa-cog"></i><span>Zapier</span></div>
+          <div class="integration-card"><i class="fas fa-code"></i><span>REST API</span></div>
+          <!-- Repeat -->
+          <div class="integration-card"><i class="fab fa-slack"></i><span>Slack</span></div>
+          <div class="integration-card"><i class="fas fa-tasks"></i><span>Trello</span></div>
+          <div class="integration-card"><i class="fas fa-project-diagram"></i><span>Asana</span></div>
+          <div class="integration-card"><i class="fab fa-wordpress"></i><span>WordPress</span></div>
+          <div class="integration-card"><i class="fas fa-cog"></i><span>Zapier</span></div>
+          <div class="integration-card"><i class="fas fa-code"></i><span>REST API</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="comparison-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">THE SHIFT</span>
+        <h2 class="vs-heading-modern">
+          <span class="old">Traditional Tools</span>
+          <span class="vs-badge">VS</span>
+          <span class="genie">DhiRead</span>
+        </h2>
+        <p>See how DhiRead outperforms manual editing and basic CMS editors.</p>
+      </div>
+
+      <div class="prod-table-wrapper">
+        <table class="prod-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Manual Editing Tools</th>
+              <th>Basic CMS Editors</th>
+              <th class="prod-highlight">DhiRead</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>AI Grammar Detection</strong></td>
+              <td><i class="fas fa-times-circle"></i> Manual proofreading</td>
+              <td><i class="fas fa-minus-circle"></i> Basic spell-check</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> AI-powered editing</td>
+            </tr>
+            <tr>
+              <td><strong>Advanced Typography Control</strong></td>
+              <td><i class="fas fa-times-circle"></i> Very limited</td>
+              <td><i class="fas fa-minus-circle"></i> Minimal options</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Full formatting control</td>
+            </tr>
+            <tr>
+              <td><strong>Flexible Layout Templates</strong></td>
+              <td><i class="fas fa-times-circle"></i> Build manually</td>
+              <td><i class="fas fa-minus-circle"></i> Fixed layouts</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Ready-to-use templates</td>
+            </tr>
+            <tr>
+              <td><strong>Multi-page Document Support</strong></td>
+              <td><i class="fas fa-times-circle"></i> Fragmented workflows</td>
+              <td><i class="fas fa-minus-circle"></i> Limited support</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Native multi-page management</td>
+            </tr>
+            <tr>
+              <td><strong>Integrated Publishing Workflow</strong></td>
+              <td><i class="fas fa-times-circle"></i> Multiple tools required</td>
+              <td><i class="fas fa-minus-circle"></i> Partial workflow</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> End-to-end workflow</td>
+            </tr>
+            <tr>
+              <td><strong>Learns Editorial Preferences</strong></td>
+              <td><i class="fas fa-times-circle"></i> No intelligence</td>
+              <td><i class="fas fa-times-circle"></i> Static system</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> AI adapts over time</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">SUCCESS STORIES</span>
+        <h2>What Content Teams <span class="gradient-text">Say About DhiRead</span></h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="testimonial-content">“We reduced our editing time significantly within the first week. The AI grammar detection alone saves hours every day, and our publishing quality is much more consistent.”</div>
+          <div class="testimonial-author"><span class="author-name">Ananya Verma</span><span class="author-info">Content Director, EduMax Learning · Bengaluru</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="testimonial-content">“DhiRead replaced multiple tools we were using for formatting and publishing. Everything is now centralized, faster, and easier for the entire team.”</div>
+          <div class="testimonial-author"><span class="author-name">Raj Patel</span><span class="author-info">Head of Content, MediaPro · Ahmedabad</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="testimonial-content">“Managing multi-page reports used to be frustrating and time-consuming. DhiRead streamlined the entire workflow and improved collaboration.”</div>
+          <div class="testimonial-author"><span class="author-name">Karan Shah</span><span class="author-info">Editorial Lead, ScholarPress · Mumbai</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">HELP CENTER</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-accordion-wrap">
+        <details class="faq-item" open><summary>What is DhiRead?</summary><div class="faq-answer"><p>DhiRead is an AI-powered content editing and publishing platform designed to help teams create, format, manage, and publish professional content more efficiently.</p></div></details>
+        <details class="faq-item"><summary>Who can use DhiRead?</summary><div class="faq-answer"><p>DhiRead is built for publishers, content creators, editorial teams, educators, marketers, agencies, and businesses managing content workflows at scale.</p></div></details>
+        <details class="faq-item"><summary>Do I need technical or design experience?</summary><div class="faq-answer"><p>No. DhiRead is designed to be intuitive and beginner-friendly, with built-in templates, formatting tools, and guided workflows.</p></div></details>
+        <details class="faq-item"><summary>Can DhiRead manage long-form and multi-page documents?</summary><div class="faq-answer"><p>Yes. DhiRead supports multi-page document management for reports, ebooks, research papers, educational material, and editorial publications.</p></div></details>
+        <details class="faq-item"><summary>Does DhiRead support team collaboration?</summary><div class="faq-answer"><p>Yes. Teams can manage content workflows, review drafts, maintain editorial consistency, and collaborate from one centralized platform.</p></div></details>
+        <details class="faq-item"><summary>Can I use my own fonts and publishing styles?</summary><div class="faq-answer"><p>Absolutely. DhiRead allows full typography customization including fonts, layouts, spacing, and brand-specific formatting.</p></div></details>
+        <details class="faq-item"><summary>Is DhiRead accessible across devices?</summary><div class="faq-answer"><p>Yes. DhiRead works across desktop, tablet, and mobile devices for flexible publishing access anywhere.</p></div></details>
+        <details class="faq-item"><summary>How do I get started with DhiRead?</summary><div class="faq-answer"><p>Simply start your free trial, connect your workspace, and begin creating professional content with AI-powered publishing tools.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ready to Publish -->
+  <section class="cta-final-section">
+    <div class="prod-section">
+      <div class="prod-cta-banner">
+        <h2>Publish Smarter. <span>Scale Faster.</span></h2>
+        <p>Never Compromise Quality. DhiRead gives content teams everything they need to create, edit, format, and publish professional content faster.</p>
+        <div class="product-hero-actions">
+          <a href="contact.html" class="prod-btn-primary">Start Your Free Trial →</a>
+          <a href="contact.html" class="prod-btn-outline">Schedule a Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <!-- Footer -->
+      <section class="Footer">
+        <div class="footer-bg-clip">
+          <div class="footer-bg-circle"></div>
+        </div>
+        <div class="footer-container">
+          <div class="footer-left">
+            <div class="footer-icons">
+              <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+              <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                  src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+              <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                  src="./assets/images/instagram.webp" alt="instagram" /></a>
+              <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                  src="./assets/images/facebook2.webp" alt="facebook" /></a>
+            </div>
+            <div class="footer-text">
+              <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
+              <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+              <p class="footer-email">info@alphabitinfoway.com</p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <img src="./assets/images/AI Model.webp" alt="Robot" />
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+          <div class="footer-links">
+            <a href="#">AGENCY</a>
+            <a href="#">CAREER</a>
+            <a href="#">PRIVACY</a>
+            <a href="#">TERMS &amp; CONDITION</a>
+          </div>
+        </div>
+      </section>
+
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/scroll-animate.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.onload = () => { document.getElementById('preloader').style.display = 'none'; };
+  </script>
 </body>
-
 </html>
-

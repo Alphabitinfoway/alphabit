@@ -5,223 +5,587 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>DhiSure Solution | Alphabit Infoway</title>
-
-  <meta name="description" content="Alphabit Infoway - Dhisure. We specialize in high-performance Web Development, Mobile Apps, AI Solutions, and Premium IT Services for businesses globally." />
-  <meta name="keywords" content="Dhisure, Alphabit Infoway, Software Development, Web Development, Mobile Apps, AI Development, IT Consulting, Premium Tech Solutions" />
+  <title>DhiSure – Insurance Data Management for Brokers & Agents | Alphabit</title>
+  <meta name="description"
+    content="DhiSure is a unified insurance data management platform built for vehicle insurance brokers. Organise clients, agents & policies faster. No tech skills needed." />
+  <meta name="keywords" content="DhiSure, Insurance Management, Broker Software, Policy Tracking, Agent Management" />
   <meta name="author" content="Alphabit Infoway" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alphabitinfoway.com/dhisure" />
-  <meta property="og:title" content="DhiSure Solution | Alphabit Infoway" />
-  <meta property="og:description" content="Alphabit Infoway - Dhisure. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
+  <meta property="og:title" content="DhiSure – Insurance Data Management for Brokers & Agents" />
+  <meta property="og:description"
+    content="Unified insurance data management for vehicle insurance brokers. Organise clients, agents & policies faster." />
   <meta property="og:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://alphabitinfoway.com/dhisure" />
-  <meta name="twitter:title" content="DhiSure Solution | Alphabit Infoway" />
-  <meta name="twitter:description" content="Alphabit Infoway - Dhisure. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
-  <meta name="twitter:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
 
   <link rel="canonical" href="https://alphabitinfoway.com/dhisure" />
 
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/product-page.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+
 </head>
 
-<body>
+<body class="product-page-wrapper">
   <!-- Minimal Preloader -->
   <div id="preloader">
     <div class="minimal-loader">
-      <img src="./assets/images/preloder.svg" alt="Alphabit Logo" class="loader-logo" />
-      <div class="loader-text">
-        <div class="line1">Connecting</div>
-        <div class="line2">The <span class="highlight">Bits...</span></div>
-      </div>
+      <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+      <div class="loader-progress-bar"></div>
+      <div class="loader-text">Loading DhiSure...</div>
     </div>
   </div>
 
-  <div class="container">
-    <header>
-      <div class="logo-img">
+  <!-- Header -->
+  <header>
+    <div class="logo-img">
+      <a href="index.html">
         <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+      </a>
+    </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar">
+      <h6><a href="./">Home</a></h6>
+      <h6 class="dropdown">
+        <a href="services" class="dropdown-toggle">Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+          <li><a href="services">Cyber Security & Compliance</a></li>
+          <li><a href="services">Full Stack Web Development</a></li>
+          <li><a href="services">Mobile App & Product Design</a></li>
+        </ul>
+      </h6>
+      <h6><a href="./#products">Products</a></h6>
+      <h6 class="dropdown">
+        <a href="Technology" class="dropdown-toggle">Technology</a>
+        <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+          <li class="dropdown-category"
+            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+            Artificial Intelligence</li>
+          <li><a href="ai-development-technologies.html">AI Development</a></li>
+          <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+          <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+          <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+          <li class="dropdown-category"
+            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+            Web Technologies</li>
+          <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+          <li><a href="backend-technologies.html">Backend Development</a></li>
+          <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+        </ul>
+      </h6>
+      <h6><a href="about">About</a></h6>
+      <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+      <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+    </nav>
+    <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="product-hero-split light">
+    <div class="product-hero-split-inner">
+      <div class="product-hero-split-content">
+        <span class="product-badge-modern">INSURANCE SOLUTIONS</span>
+        <h1 class="product-hero-title">DhiSure <br></h1>
+        <span class="product-hero-subtitle">Insurance Data That Manages Itself</span>
+        <p class="product-hero-desc">Simplifies insurance data management for brokers and agents in one unified
+          platform. Reduce manual work, organise client records, and run your brokerage faster than ever.</p>
+
+        <ul class="hero-check-list">
+          <li><i class="fas fa-check-circle"></i> Manage All Client & Agent Data in One Place</li>
+          <li><i class="fas fa-check-circle"></i> Reduce Manual Work with Smart Organization Tools</li>
+          <li><i class="fas fa-check-circle"></i> Support Multiple Assistants Under One Account</li>
+        </ul>
+
+        <div class="product-hero-actions">
+          <a href="contact.html" class="prod-btn-primary">Get Started Free</a>
+          <a href="contact.html" class="prod-btn-secondary">Book a Demo</a>
+        </div>
       </div>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <div class="product-hero-split-image">
+        <img src="./assets/images/Technology/3.jpg" alt="DhiSure Platform">
       </div>
-      <nav class="navbar">
-        <h6><a href="./">Home</a></h6>
-        <h6 class="dropdown">
-          <a href="services" class="dropdown-toggle">Services</a>
-          <ul class="dropdown-menu">
-            <li><a href="services">AI & Machine Learning</a></li>
-            <li><a href="services">Cyber Security & Compliance</a></li>
-            <li><a href="services">Full Stack Web Development</a></li>
-            <li><a href="services">Mobile App & Product Design</a></li>
-          </ul>
-        </h6>
-        <h6><a href="./#products">Products</a></h6>
-        <h6 class="dropdown">
-          <a href="Technology" class="dropdown-toggle">Technology</a>
-          <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Artificial Intelligence</li>
-                        <li><a href="ai-development-technologies.html">AI Development</a></li>
-                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
-                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
-                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+    </div>
+  </section>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Web Technologies</li>
-                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
-                        <li><a href="backend-technologies.html">Backend Development</a></li>
-                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+  <!-- Trusted By -->
+  <section class="product-trusted-modern">
+    <div class="prod-marquee-wrapper">
+      <p>Trusted by insurance brokers across India — built for teams of all sizes.</p>
+      <div class="prod-marquee-track">
+        <div class="marquee-item"><span>InsurePoint</span></div>
+        <div class="marquee-item"><span>PolicyPro Brokers</span></div>
+        <div class="marquee-item"><span>VahanSure</span></div>
+        <div class="marquee-item"><span>QuickPolicy</span></div>
+        <div class="marquee-item"><span>BrokerEdge</span></div>
+        <div class="marquee-item"><span>SafeDrive Insurance</span></div>
+        <!-- Repeat -->
+        <div class="marquee-item"><span>InsurePoint</span></div>
+        <div class="marquee-item"><span>PolicyPro Brokers</span></div>
+        <div class="marquee-item"><span>VahanSure</span></div>
+        <div class="marquee-item"><span>QuickPolicy</span></div>
+        <div class="marquee-item"><span>BrokerEdge</span></div>
+        <div class="marquee-item"><span>SafeDrive Insurance</span></div>
+      </div>
+    </div>
+  </section>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Mobile Technologies</li>
-                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
-                        <li><a href="android-development-technologies.html">Android Development</a></li>
-                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+  <!-- About Section -->
+  <section class="prod-section" id="about">
+    <div class="prod-split">
+      <div class="prod-split-image">
+        <img src="./assets/images/Technology/3.webp" alt="About DhiSure"
+          style="width: 100%; border-radius: 32px; box-shadow: 0 40px 80px rgba(0,0,0,0.15); animation: prodFloatImage 6s ease-in-out infinite;">
+      </div>
+      <div class="prod-split-text">
+        <h2>About <span class="gradient-text">DhiSure</span></h2>
+        <p>DhiSure is designed specifically for vehicle insurance brokers who need to manage client and agent data
+          efficiently — without the chaos of spreadsheets or disconnected tools.</p>
+        <p>With a clean, unified workspace and support for multiple assistants, DhiSure helps brokerages operate faster,
+          more accurately, and with far less manual effort.</p>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cloud & DevOps</li>
-                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
-                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
-                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+        <h4
+          style="font-weight: 800; margin-bottom: 20px; color: var(--prod-dark); display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-star" style="color: var(--prod-secondary); font-size: 18px;"></i> Key Capabilities:
+        </h4>
+        <div class="prod-feature-list">
+          <div class="prod-feature-item">
+            <div class="prod-icon-check"><i class="fas fa-check"></i></div> Unified Client & Agent Data Management
+          </div>
+          <div class="prod-feature-item">
+            <div class="prod-icon-check"><i class="fas fa-check"></i></div> Multiple Assistant Account Support
+          </div>
+          <div class="prod-feature-item">
+            <div class="prod-icon-check"><i class="fas fa-check"></i></div> Vehicle Policy & Renewal Tracking
+          </div>
+          <div class="prod-feature-item">
+            <div class="prod-icon-check"><i class="fas fa-check"></i></div> Smart Organisation & Search Tools
+          </div>
+          <div class="prod-feature-item">
+            <div class="prod-icon-check"><i class="fas fa-check"></i></div> Role-Based Access for Your Entire Team
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Data & Analytics</li>
-                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
-                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
-                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+  <!-- How It Works -->
+  <section class="how-it-works-full">
+    <div class="container-fluid">
+      <div class="prod-section-header">
+        <span class="product-badge-modern" style="background: rgba(255,255,255,0.1); color: #fff;">HOW IT WORKS</span>
+        <h2>Get Started in <span class="orange-bg">Minutes</span>, Not Weeks</h2>
+        <p>No complex setup. No developer required. DhiSure plugs into your brokerage workflow and starts organising
+          your data immediately.</p>
+      </div>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cyber Security</li>
-                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
-                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
-                    </ul>
-        </h6>
-        <h6><a href="about">About</a></h6>
-        <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
-        <h6 class="dropdown">
-          <a href="#" class="dropdown-toggle">Insights</a>
-          <ul class="dropdown-menu">
-            <li><a href="blog">Blog</a></li>
-            <li><a href="career">Career</a></li>
-          </ul>
-        </h6>
-        <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
-      </nav>
-      <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
-    </header>
+      <div class="prod-process-grid">
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 01</div>
+          <h3>Create Your Workspace</h3>
+          <p>Sign up and set up your brokerage profile in minutes. No infrastructure to manage — just a clean workspace.
+          </p>
+          <span class="prod-process-tag"><i class="far fa-clock"></i> Under 5 mins</span>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 02</div>
+          <h3>Add Your Team & Clients</h3>
+          <p>Build your records or import existing data. Add client profiles, assign agents, and define access roles.
+          </p>
+          <span class="prod-process-tag"><i class="fas fa-magic"></i> No headaches</span>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 03</div>
+          <h3>Track Policies & Renewals</h3>
+          <p>Link policies directly to client profiles. Monitor renewal dates and document submissions in one view.</p>
+          <span class="prod-process-tag"><i class="fas fa-chart-line"></i> Everything in one place</span>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 04</div>
+          <h3>Operate Faster & Scale</h3>
+          <p>Handle more clients with the same effort. DhiSure scales with you as your brokerage grows effortlessly.</p>
+          <span class="prod-process-tag"><i class="fas fa-rocket"></i> Built to scale</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="product-page-wrapper">
-      <section class="product-hero">
-        <div class="product-hero-inner">
-          <div class="product-hero-content">
-            <span class="product-category">FinTech & InsurTech</span>
-            <h1 class="product-title">Dhisure</h1>
-            <p class="product-tagline">Simplifies insurance data management for brokers and agents in one unified platform.</p>
-            <div class="product-hero-btns">
-              <button class="contact-btn" onclick="window.location.href='./contact.html'">Request a Demo</button>
+  <!-- Benefits Section -->
+  <section class="benefits-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">OPERATIONS</span>
+        <h2>Results That <span class="orange-bg">Simplify</span> Insurance</h2>
+        <p>DhiSure gives insurance professionals one smart platform to manage everything with complete clarity.</p>
+      </div>
+
+      <div class="prod-impact-grid">
+        <div class="benefit-accent-card">
+          <span class="stat-badge">70%</span>
+          <h3>Less Manual Work</h3>
+          <p>Spend more time with clients, not fighting with spreadsheets.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">1</span>
+          <h3>Unified Workspace</h3>
+          <p>Policies, renewals, clients & agents together in one dashboard.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">FAST</span>
+          <h3>Policy Management</h3>
+          <p>Track renewals and customer activity effortlessly and accurately.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">SECURE</span>
+          <h3>Cloud Access</h3>
+          <p>Manage your insurance business securely from anywhere, anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Bento -->
+  <section class="industry-section-v4">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">ADAPTABILITY</span>
+        <h2>Designed for <span class="orange-bg">Every </span>Insurance Business</h2>
+        <p>Whether you're an independent agent or managing multiple branches — DhiSure adapts to your workflow.</p>
+      </div>
+
+      <div class="premium-stages-grid">
+        <!-- Card 1 -->
+        <div class="stage-card stage-card-1">
+          <div class="stage-icon"><i class="fas fa-car"></i></div>
+          <h4>High Volume Management</h4>
+          <p>Manage client records, renewals, and policies without missing important deadlines.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Vehicle profiles</span>
+            <span class="stage-tag">Renewal reminders</span>
+            <span class="stage-tag">Agent management</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="stage-card stage-card-2">
+          <div class="stage-icon"><i class="fas fa-building"></i></div>
+          <h4>Centralized Coordination</h4>
+          <p>Run your entire team from one centralized platform with better visibility and data control.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Multi-user access</span>
+            <span class="stage-tag">Role permissions</span>
+            <span class="stage-tag">Centralized records</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="stage-card stage-card-3">
+          <div class="stage-icon"><i class="fas fa-user-tie"></i></div>
+          <h4>Independent Agents</h4>
+          <p>Manage your clients professionally without relying on spreadsheets or manual paperwork.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Simple onboarding</span>
+            <span class="stage-tag">Policy tracking</span>
+            <span class="stage-tag">Fast data access</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="stage-card stage-card-4">
+          <div class="stage-icon"><i class="fas fa-file-excel"></i></div>
+          <h4>Excel To Digital</h4>
+          <p>Upgrade from scattered records to a system built specifically for insurance professionals.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Bulk data import</span>
+            <span class="stage-tag">Familiar interface</span>
+            <span class="stage-tag">Zero technical setup</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="stage-card stage-card-5">
+          <div class="stage-icon"><i class="fas fa-network-wired"></i></div>
+          <h4>Connected Workspaces</h4>
+          <p>Manage multiple teams, branches, and customer databases from one connected workspace.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Multi-location support</span>
+            <span class="stage-tag">Unified records</span>
+            <span class="stage-tag">Centralized dashboard</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="integration-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">CAPABILITIES</span>
+        <h2>Simplify <span class="orange-bg">Beyond </span>Spreadsheets</h2>
+        <p>One smart platform to manage clients, policies, agents, and business operations.</p>
+      </div>
+
+      <div class="integration-marquee-container">
+        <div class="integration-marquee">
+          <div class="integration-card"><i class="fas fa-users"></i><span>Client Management</span></div>
+          <div class="integration-card"><i class="fas fa-calendar-check"></i><span>Renewal Tracking</span></div>
+          <div class="integration-card"><i class="fas fa-car-crash"></i><span>Insurance Records</span></div>
+          <div class="integration-card"><i class="fas fa-user-friends"></i><span>Agent Management</span></div>
+          <div class="integration-card"><i class="fas fa-chart-pie"></i><span>Activity Tracking</span></div>
+          <!-- Repeat -->
+          <div class="integration-card"><i class="fas fa-users"></i><span>Client Management</span></div>
+          <div class="integration-card"><i class="fas fa-calendar-check"></i><span>Renewal Tracking</span></div>
+          <div class="integration-card"><i class="fas fa-car-crash"></i><span>Insurance Records</span></div>
+          <div class="integration-card"><i class="fas fa-user-friends"></i><span>Agent Management</span></div>
+          <div class="integration-card"><i class="fas fa-chart-pie"></i><span>Activity Tracking</span></div>
+        </div>
+
+        <div class="integration-marquee reverse">
+          <div class="integration-card"><i class="fas fa-cloud-upload-alt"></i><span>Cloud Access</span></div>
+          <div class="integration-card"><i class="fas fa-code-branch"></i><span>Multi-Branch</span></div>
+          <div class="integration-card"><i class="fas fa-search"></i><span>Fast Retrieval</span></div>
+          <div class="integration-card"><i class="fas fa-shield-alt"></i><span>Data Security</span></div>
+          <div class="integration-card"><i class="fas fa-plus"></i><span>And more</span></div>
+          <!-- Repeat -->
+          <div class="integration-card"><i class="fas fa-cloud-upload-alt"></i><span>Cloud Access</span></div>
+          <div class="integration-card"><i class="fas fa-code-branch"></i><span>Multi-Branch</span></div>
+          <div class="integration-card"><i class="fas fa-search"></i><span>Fast Retrieval</span></div>
+          <div class="integration-card"><i class="fas fa-shield-alt"></i><span>Data Security</span></div>
+          <div class="integration-card"><i class="fas fa-plus"></i><span>And more</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="comparison-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">THE SHIFT</span>
+        <h2 class="vs-heading-modern">
+          <span class="old">Manual Methods</span>
+          <span class="vs-badge">VS</span>
+          <span class="genie">DhiSure</span>
+        </h2>
+        <p>See why brokers are moving away from scattered spreadsheets to DhiSure.</p>
+      </div>
+
+      <div class="prod-table-wrapper">
+        <table class="prod-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Spreadsheets</th>
+              <th>Generic CRM</th>
+              <th class="prod-highlight">DhiSure</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Purpose-built for Insurance</strong></td>
+              <td><i class="fas fa-times-circle"></i> Generic tools</td>
+              <td><i class="fas fa-minus-circle"></i> Partial customization</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Insurance workflows</td>
+            </tr>
+            <tr>
+              <td><strong>Centralized Records</strong></td>
+              <td><i class="fas fa-times-circle"></i> Scattered data</td>
+              <td><i class="fas fa-minus-circle"></i> Requires setup</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Ready-to-use structure</td>
+            </tr>
+            <tr>
+              <td><strong>Multi-User Access</strong></td>
+              <td><i class="fas fa-times-circle"></i> Not supported</td>
+              <td><i class="fas fa-minus-circle"></i> Paid add-ons</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Included by default</td>
+            </tr>
+            <tr>
+              <td><strong>Renewal Tracking</strong></td>
+              <td><i class="fas fa-minus-circle"></i> Manual management</td>
+              <td><i class="fas fa-times-circle"></i> No native workflow</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Automated & structured</td>
+            </tr>
+            <tr>
+              <td><strong>Role-Based Access</strong></td>
+              <td><i class="fas fa-times-circle"></i> No control</td>
+              <td><i class="fas fa-minus-circle"></i> Complex setup</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Simple management</td>
+            </tr>
+            <tr>
+              <td><strong>Onboarding Time</strong></td>
+              <td><i class="fas fa-minus-circle"></i> Time-consuming</td>
+              <td><i class="fas fa-times-circle"></i> Long implementation</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Minutes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">SUCCESS STORIES</span>
+        <h2>What Insurance Pros <span class="gradient-text">Say About DhiSure</span></h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="testimonial-content">“Before DhiSure, our client data was scattered everywhere. Now everything is
+            organized in one place, my team works more efficiently, and admin work is gone.”</div>
+          <div class="testimonial-author"><span class="author-name">Rajesh Desai</span><span class="author-info">Vehicle
+              Insurance Broker · Ahmedabad</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="testimonial-content">“DhiSure gave us a structured system within a day, and the multi-agent
+            workflow saved our team hours every week. No more managing hundreds of clients on Excel.”</div>
+          <div class="testimonial-author"><span class="author-name">Nisha Patel</span><span class="author-info">Agency
+              Owner, SafeDrive Insurance · Surat</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="testimonial-content">“Renewal tracking used to be stressful and manual. With DhiSure, reminders
+            and policy details are always accessible and easy to manage.”</div>
+          <div class="testimonial-author"><span class="author-name">Mehul Joshi</span><span
+              class="author-info">Insurance Consultant · Rajkot</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">HELP CENTER</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-accordion-wrap">
+        <details class="faq-item" open>
+          <summary>What is DhiSure?</summary>
+          <div class="faq-answer">
+            <p>DhiSure is an insurance management software designed specifically for insurance brokers and agencies to
+              manage client records, renewals, and agents.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Is DhiSure only for vehicle insurance?</summary>
+          <div class="faq-answer">
+            <p>DhiSure is primarily built for vehicle insurance workflows but can also support other insurance
+              categories with similar requirements.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I import existing data?</summary>
+          <div class="faq-answer">
+            <p>Yes. DhiSure supports data import from spreadsheets and other systems, making migration simple and
+              efficient.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need technical knowledge?</summary>
+          <div class="faq-answer">
+            <p>No. DhiSure is designed for insurance professionals and requires no technical expertise, coding, or
+              complicated setup.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Can multiple assistants use it?</summary>
+          <div class="faq-answer">
+            <p>Yes. DhiSure supports multiple user accounts with role-based access control for teams and agency staff.
+            </p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How is DhiSure better than Excel?</summary>
+          <div class="faq-answer">
+            <p>DhiSure provides structured workflows, automated renewal tracking, secure collaboration, and centralized
+              records built specifically for insurance.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-final-section">
+    <div class="prod-section">
+      <div class="prod-cta-banner">
+        <h2>Your Insurance Business <span>Deserves Better.</span></h2>
+        <p>Join insurance brokers across India using DhiSure to simplify client management and coordination — all from
+          one smart platform.</p>
+        <div class="product-hero-actions">
+          <a href="contact.html" class="prod-btn-primary">Get Started Free</a>
+          <a href="contact.html" class="prod-btn-outline">Book a Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <!-- Footer -->
+      <section class="Footer">
+        <div class="footer-bg-clip">
+          <div class="footer-bg-circle"></div>
+        </div>
+        <div class="footer-container">
+          <div class="footer-left">
+            <div class="footer-icons">
+              <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+              <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                  src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+              <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                  src="./assets/images/instagram.webp" alt="instagram" /></a>
+              <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                  src="./assets/images/facebook2.webp" alt="facebook" /></a>
+            </div>
+            <div class="footer-text">
+              <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
+              <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+              <p class="footer-email">info@alphabitinfoway.com</p>
             </div>
           </div>
-          <div class="product-hero-image">
-            <img src="./assets/images/Technology/3.webp" alt="Dhisure Product Hero" />
+          <div class="footer-right">
+            <img src="./assets/images/AI Model.webp" alt="Robot" />
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+          <div class="footer-links">
+            <a href="#">AGENCY</a>
+            <a href="#">CAREER</a>
+            <a href="#">PRIVACY</a>
+            <a href="#">TERMS &amp; CONDITION</a>
           </div>
         </div>
       </section>
-
-      <section class="product-details-section">
-        <div class="details-grid">
-          <div class="details-text">
-            <h2>About Dhisure</h2>
-            <p> DhiSure is designed specifically for vehicle insurance brokers to efficiently manage client and agent data in one place. It reduces manual work with quick setup and smart organization tools. With multiple assistant support and streamlined workflows, it helps businesses operate faster and more accurately.</p>
-          </div>
-          <div class="details-features">
-            <h2>Core Features</h2>
-            <ul>
-              <li>Unified Vehicle Data Centralization</li>
-              <li>Multi-Assistant Support System</li>
-              <li>Smart Client & Agent Organization</li>
-              <li>Streamlined Data Entry Workflows</li>
-              <li>Real-time Dashboard Analytics</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="product-benefits">
-        <div class="benefits-header">
-          <h2>Why Choose Dhisure?</h2>
-        </div>
-        <div class="benefits-grid">
-          <div class="benefit-card">
-            <h3>Unified Platform</h3>
-            <p>Access all client and agent information in one sleek, unified interface designed for high-speed brokerage.</p>
-          </div>
-          <div class="benefit-card">
-            <h3>Boost Productivity</h3>
-            <p>Reduce manual data handling by up to 80% with our automated organization and setup tools.</p>
-          </div>
-          <div class="benefit-card">
-            <h3>Reliable Data</h3>
-            <p>High-accuracy data management ensures your records are always up-to-date and compliant with industry standards.</p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section class="schedule-section">
-      <div class="schedule-content">
-        <p>👋🏼 Hey Innovator,</p>
-        <h2>I'm Your<img src="./assets/images/home/Hey Innovator/1.webp" class="span-image"></span><span
-            class="span-orange"> AI</span><span class="span-white">(Alphabit Infoway)</span></h2>
-        <h2><span class="span-orange">Buddy, </span>Let's<img src="./assets/images/home/Hey Innovator/2.webp"
-            class="span-image"></span> Convert</h2>
-        <h2>Your <span class="span-white">Idea</span><img src="./assets/images/home/Hey Innovator/3.webp"
-            class="span-image"></span> into <span class="span-white">Reality</span></h2>
-      </div>
-      <button class="schedule-btn">Schedule a Meeting</button>
-    </section>
-
-    <!-- Footer -->
-    <section class="Footer">
-      <div class="footer-bg-clip">
-        <div class="footer-bg-circle"></div>
-      </div>
-      <div class="footer-container">
-        <div class="footer-left">
-          <div class="footer-icons">
-            <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter" /></a>
-            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
-                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
-            <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
-                src="./assets/images/instagram.webp" alt="instagram" /></a>
-            <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
-                src="./assets/images/facebook2.webp" alt="facebook" /></a>
-          </div>
-          <div class="footer-text">
-            <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
-            <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
-            <p class="footer-email">info@alphabitinfoway.com</p>
-          </div>
-        </div>
-        <div class="footer-right"><img src="./assets/images/AI Model.webp" alt="Robot" /></div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
-        <div class="footer-links">
-          <a href="#">AGENCY</a><a href="#">CAREER</a><a href="#">PRIVACY</a><a href="#">TERMS &amp; CONDITION</a>
-        </div>
-      </div>
-    </section>
-    <script src="./assets/js/config.js"></script>
-    <script src="./assets/js/main.js"></script>
-  </div>
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/main.js"></script>
   <script src="./assets/js/scroll-animate.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.onload = () => { document.getElementById('preloader').style.display = 'none'; };
+  </script>
 </body>
 
 </html>
-
