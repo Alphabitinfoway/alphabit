@@ -5,226 +5,572 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Alphabit Skill Studio | Alphabit Infoway</title>
-
-  <meta name="description" content="Alphabit Skill Studio transforms learners into industry-ready professionals through practical, real-world training." />
-  <meta name="keywords" content="Skill Studio, Tech Training, Python, AI/ML, Web Development, Full Stack, Cybersecurity, Alphabit Infoway" />
+  <title>Alphabit Skill Studio – Real-World Tech Training India | Alphabit</title>
+  <meta name="description"
+    content="Learn Python, AI/ML, Full Stack & Cybersecurity from real developers, inside a real office. Alphabit Skill Studio makes you genuinely job-ready with practical tech training." />
+  <meta name="keywords" content="Alphabit Skill Studio, Tech Training India, Python Course, AI/ML Training, Full Stack Development, Cybersecurity Course, Real-world Training" />
   <meta name="author" content="Alphabit Infoway" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alphabitinfoway.com/skill-studio" />
-  <meta property="og:title" content="Alphabit Skill Studio | Alphabit Infoway" />
-  <meta property="og:description" content="Hands-on learning platform designed to bridge the gap between theory and real industry skills." />
+  <meta property="og:title" content="Alphabit Skill Studio – Real-World Tech Training India" />
+  <meta property="og:description"
+    content="Hands-on tech training taught by real developers. Learn Python, AI/ML, and more inside a real office environment." />
   <meta property="og:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://alphabitinfoway.com/skill-studio" />
-  <meta name="twitter:title" content="Alphabit Skill Studio | Alphabit Infoway" />
-  <meta name="twitter:description" content="Hands-on learning platform designed to bridge the gap between theory and real industry skills." />
-  <meta name="twitter:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
 
   <link rel="canonical" href="https://alphabitinfoway.com/skill-studio" />
 
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/product-page.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+
 </head>
 
-<body>
+<body class="product-page-wrapper">
   <!-- Minimal Preloader -->
   <div id="preloader">
     <div class="minimal-loader">
-      <img src="./assets/images/preloder.svg" alt="Alphabit Logo" class="loader-logo" />
-      <div class="loader-text">
-        <div class="line1">Connecting</div>
-        <div class="line2">The <span class="highlight">Bits...</span></div>
-      </div>
+      <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+      <div class="loader-progress-bar"></div>
+      <div class="loader-text">Loading Alphabit Skill Studio...</div>
     </div>
   </div>
 
-  <div class="container">
-    <header>
-      <div class="logo-img">
-        <a href="index.html">
-          <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
-        </a>
+  <!-- Header -->
+  <header>
+    <div class="logo-img">
+      <a href="index.html">
+        <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+      </a>
+    </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar">
+      <h6><a href="./">Home</a></h6>
+      <h6 class="dropdown">
+        <a href="services" class="dropdown-toggle">Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
+          <li><a href="services">Cyber Security & Compliance</a></li>
+          <li><a href="services">Full Stack Web Development</a></li>
+          <li><a href="services">Mobile App & Product Design</a></li>
+        </ul>
+      </h6>
+      <h6><a href="./#products">Products</a></h6>
+      <h6 class="dropdown">
+        <a href="Technology" class="dropdown-toggle">Technology</a>
+        <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
+          <li class="dropdown-category"
+            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+            Artificial Intelligence</li>
+          <li><a href="ai-development-technologies.html">AI Development</a></li>
+          <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
+          <li><a href="generative-ai-technologies.html">Generative AI</a></li>
+          <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+          <li class="dropdown-category"
+            style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
+            Web Technologies</li>
+          <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
+          <li><a href="backend-technologies.html">Backend Development</a></li>
+          <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+        </ul>
+      </h6>
+      <h6><a href="about">About</a></h6>
+      <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+      <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+    </nav>
+    <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="product-hero-split light">
+    <div class="product-hero-split-inner">
+      <div class="product-hero-split-content">
+        <span class="product-badge-modern">TECH SKILL TRAINING</span>
+        <h1 class="product-hero-title">Alphabit Skill  <br></h1>
+        <span class="product-hero-subtitle">Practical Tech Training That Makes You Job-Ready</span>
+        <p class="product-hero-desc">Hands-on training in Python, AI/ML, Web Development, Full Stack & Cybersecurity — taught by real developers, inside a real office environment. Built for students, freshers, and career switchers across India.</p>
+
+        <ul class="hero-check-list">
+          <li><i class="fas fa-check-circle"></i> Learn Python, AI/ML, Web Dev, Full Stack & Cybersecurity</li>
+          <li><i class="fas fa-check-circle"></i> Get Trained by In-House Developers on Live Industry Projects</li>
+          <li><i class="fas fa-check-circle"></i> Office-Based Learning — Real Skills, Real Career Outcomes</li>
+        </ul>
+
+        <div class="product-hero-actions">
+          <a href="contact.html" class="prod-btn-primary">Enroll Now</a>
+          <a href="contact.html" class="prod-btn-secondary">Book a Free Demo</a>
+        </div>
+        <p class="hero-trust-text" style="margin-top: 20px; font-size: 0.9em; color: var(--prod-dark);">
+          Trusted by aspiring tech professionals across India — built for learners at every stage.
+        </p>
       </div>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <div class="product-hero-split-image">
+        <img src="./assets/images/Technology/6.jpg" alt="Alphabit Skill Studio Learning">
       </div>
-      <nav class="navbar">
-        <h6><a href="./">Home</a></h6>
-        <h6 class="dropdown">
-          <a href="services" class="dropdown-toggle">Services</a>
-          <ul class="dropdown-menu">
-            <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
-            <li><a href="services">Cyber Security & Compliance</a></li>
-            <li><a href="services">Full Stack Web Development</a></li>
-            <li><a href="services">Mobile App & Product Design</a></li>
-          </ul>
-        </h6>
-        <h6><a href="./#products">Products</a></h6>
-        <h6 class="dropdown">
-          <a href="Technology" class="dropdown-toggle">Technology</a>
-          <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Artificial Intelligence</li>
-                        <li><a href="ai-development-technologies.html">AI Development</a></li>
-                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
-                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
-                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
+    </div>
+  </section>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Web Technologies</li>
-                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
-                        <li><a href="backend-technologies.html">Backend Development</a></li>
-                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
+  <!-- Trusted By -->
+  <section class="product-trusted-modern">
+    <div class="prod-marquee-wrapper">
+      <p>Trusted by students, freshers & career switchers — CodeLaunch, DevReady, and more.</p>
+      <div class="prod-marquee-track">
+        <div class="marquee-item"><span>CodeLaunch</span></div>
+        <div class="marquee-item"><span>DevReady Learners</span></div>
+        <div class="marquee-item"><span>TechPath India</span></div>
+        <div class="marquee-item"><span>SkillBridge</span></div>
+        <div class="marquee-item"><span>CareerStack</span></div>
+        <div class="marquee-item"><span>BuildWithCode</span></div>
+        <!-- Repeat -->
+        <div class="marquee-item"><span>CodeLaunch</span></div>
+        <div class="marquee-item"><span>DevReady Learners</span></div>
+        <div class="marquee-item"><span>TechPath India</span></div>
+        <div class="marquee-item"><span>SkillBridge</span></div>
+        <div class="marquee-item"><span>CareerStack</span></div>
+        <div class="marquee-item"><span>BuildWithCode</span></div>
+      </div>
+    </div>
+  </section>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Mobile Technologies</li>
-                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
-                        <li><a href="android-development-technologies.html">Android Development</a></li>
-                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
+  <!-- About Section -->
+  <section class="prod-section" id="about">
+    <div class="prod-split">
+      <div class="prod-split-image">
+        <img src="./assets/images/Technology/6.webp" alt="About Alphabit Skill Studio"
+          style="width: 100%; border-radius: 32px; box-shadow: 0 40px 80px rgba(0,0,0,0.15); animation: prodFloatImage 6s ease-in-out infinite;">
+      </div>
+      <div class="prod-split-text">
+        <h2>About <span class="gradient-text">Alphabit Skill</span></h2>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cloud & DevOps</li>
-                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
-                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
-                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
+        <p>Alphabit Skill Studio is built for people who want to do more than just pass exams. Whether you're learning Python, diving into AI/ML, mastering Web Development, going Full Stack, or exploring Cybersecurity — you'll learn directly from in-house developers.</p>
+        <p>This isn't just a course. It's the closest thing to a real job — before you even have one. Train inside a real office environment and work on live projects.</p>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Data & Analytics</li>
-                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
-                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
-                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
+        <h4
+          style="font-weight: 800; margin-bottom: 20px; color: var(--prod-dark); display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-star" style="color: var(--prod-secondary); font-size: 18px;"></i> Key Features:
+        </h4>
+        <div class="prod-feature-list">
+          <div class="prod-feature-item">
+            <div class="prod-icon-check"><i class="fas fa-check"></i></div> Real Industry-Based Training
+          </div>
+          <div class="prod-feature-item">
+            <div class="prod-icon-check"><i class="fas fa-check"></i></div> Learn from In-House Developers
+          </div>
+          <div class="prod-feature-item">
+            <div class="prod-icon-check"><i class="fas fa-check"></i></div> Hands-On Practical Learning
+          </div>
+          <div class="prod-feature-item">
+            <div class="prod-icon-check"><i class="fas fa-check"></i></div> Multiple High-Demand Tech Skills
+          </div>
+          <div class="prod-feature-item">
+            <div class="prod-icon-check"><i class="fas fa-check"></i></div> Office-Based Learning Environment
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cyber Security</li>
-                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
-                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
-                    </ul>
-        </h6>
-        <h6><a href="about">About</a></h6>
-        <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
-        <h6 class="dropdown">
-          <a href="#" class="dropdown-toggle">Insights</a>
-          <ul class="dropdown-menu">
-            <li><a href="blog">Blog</a></li>
-            <li><a href="career">Career</a></li>
-          </ul>
-        </h6>
-        <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
-      </nav>
-      <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
-    </header>
+  <!-- How It Works -->
+  <section class="how-it-works-full">
+    <div class="container-fluid">
+      <div class="prod-section-header">
+        <span class="product-badge-modern" style="background: rgba(255,255,255,0.1); color: #fff;">HOW IT WORKS</span>
+        <h2>Real Skills from <span class="orange-bg">Real Developers</span></h2>
+        <p>No complicated process. No passive learning. Just real skills from day one.</p>
+      </div>
 
-    <div class="product-page-wrapper">
-      <section class="product-hero">
-        <div class="product-hero-inner">
-          <div class="product-hero-content">
-            <span class="product-category">Education & Training</span>
-            <h1 class="product-title">Alphabit Skill Studio</h1>
-            <p class="product-tagline">Transforms learners into industry-ready professionals through practical, real-world training.</p>
-            <div class="product-hero-btns">
-              <button class="contact-btn" onclick="window.location.href='./contact.html'">Enrol Now</button>
+      <div class="prod-process-grid">
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 01</div>
+          <h3>Choose Your Skill Track & Enroll</h3>
+          <p>Pick the course that matches your goals — Python, AI/ML, Web Dev, Full Stack, or Cybersecurity. No technical background needed to get started.</p>
+          <span class="prod-process-tag"><i class="far fa-clock"></i> Takes under 5 minutes</span>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 02</div>
+          <h3>Get Introduced to Your Mentor</h3>
+          <p>You're paired with an in-house developer actively working on real projects. No recorded lectures — a real person who knows the industry.</p>
+          <span class="prod-process-tag"><i class="fas fa-magic"></i> Real mentorship from professionals</span>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 03</div>
+          <h3>Build & Work on Live Projects</h3>
+          <p>Every session is hands-on. Write real code and solve real problems inside our office environment the way industry teams do every day.</p>
+          <span class="prod-process-tag"><i class="fas fa-chart-line"></i> Learn by doing, not watching</span>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 04</div>
+          <h3>Graduate Job-Ready</h3>
+          <p>Complete your track with a portfolio of real projects and industry-relevant skills. Walk out ready to contribute from day one on the job.</p>
+          <span class="prod-process-tag"><i class="fas fa-rocket"></i> Built to launch your career</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">THE OUTCOME</span>
+        <h2>Learning Built Around <span class="orange-bg">Real Careers</span></h2>
+        <p>Alphabit Skill Studio delivers measurable career growth and skill acquisition.</p>
+      </div>
+
+      <div class="prod-impact-grid">
+        <div class="benefit-accent-card">
+          <span class="stat-badge">500+</span>
+          <h3>Students Upskilled</h3>
+          <p>Learning industry-ready technologies and workflows.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">5</span>
+          <h3>Career-Focused Tracks</h3>
+          <p>AI/ML, Full Stack, Python, Web & Cybersecurity.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">LIVE</span>
+          <h3>Project-Based Training</h3>
+          <p>Learn by building actual real-world applications.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">REAL</span>
+          <h3>Working Mentors</h3>
+          <p>Direct guidance from active industry professionals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Bento -->
+  <section class="industry-section-v4">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">ADAPTABILITY</span>
+        <h2>Built for <span class="orange-bg">Every Learner</span></h2>
+        <p>Whether you're starting out or switching careers — we help you learn through practical training.</p>
+      </div>
+
+      <div class="premium-stages-grid">
+        <!-- Card 1 -->
+        <div class="stage-card stage-card-1">
+          <div class="stage-icon"><i class="fas fa-user-graduate"></i></div>
+          <h4>Students & Freshers</h4>
+          <p>Build real-world skills and a strong portfolio before entering the job market.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Industry learning</span>
+            <span class="stage-tag">Portfolio projects</span>
+            <span class="stage-tag">Career guidance</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="stage-card stage-card-2">
+          <div class="stage-icon"><i class="fas fa-sync-alt"></i></div>
+          <h4>Career Switchers</h4>
+          <p>Transition into tech with structured learning designed to make you job-ready faster.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Hands-on sessions</span>
+            <span class="stage-tag">Career roadmap</span>
+            <span class="stage-tag">Relevant skills</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="stage-card stage-card-3">
+          <div class="stage-icon"><i class="fas fa-code"></i></div>
+          <h4>Aspiring Developers</h4>
+          <p>Learn development workflows and problem-solving through real project experience.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Live coding</span>
+            <span class="stage-tag">Real projects</span>
+            <span class="stage-tag">Pro environment</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="stage-card stage-card-4">
+          <div class="stage-icon"><i class="fas fa-robot"></i></div>
+          <h4>AI & ML Enthusiasts</h4>
+          <p>Explore AI and Python with practical training guided by experienced mentors.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">AI & ML projects</span>
+            <span class="stage-tag">Python programming</span>
+            <span class="stage-tag">Emerging tech</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="stage-card stage-card-5">
+          <div class="stage-icon"><i class="fas fa-user-shield"></i></div>
+          <h4>Cybersecurity Learners</h4>
+          <p>Understand ethical hacking and security strategies through practical, lab-based learning.</p>
+          <div class="stage-tags">
+            <span class="stage-tag">Ethical hacking</span>
+            <span class="stage-tag">Security labs</span>
+            <span class="stage-tag">Industry modules</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="integration-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">THE STUDIO</span>
+        <h2>Learn <span class="orange-bg">Beyond Online Tutorials</span></h2>
+        <p>One trusted place to build real tech skills and get mentored by working developers.</p>
+      </div>
+
+      <div class="integration-marquee-container">
+        <div class="integration-marquee">
+          <div class="integration-card"><i class="fab fa-python"></i><span>Python Training</span></div>
+          <div class="integration-card"><i class="fas fa-robot"></i><span>AI/ML Courses</span></div>
+          <div class="integration-card"><i class="fas fa-globe"></i><span>Web Development</span></div>
+          <div class="integration-card"><i class="fas fa-shield-alt"></i><span>Cybersecurity</span></div>
+          <div class="integration-card"><i class="fas fa-layer-group"></i><span>Full Stack</span></div>
+          <!-- Repeat -->
+          <div class="integration-card"><i class="fab fa-python"></i><span>Python Training</span></div>
+          <div class="integration-card"><i class="fas fa-robot"></i><span>AI/ML Courses</span></div>
+          <div class="integration-card"><i class="fas fa-globe"></i><span>Web Development</span></div>
+          <div class="integration-card"><i class="fas fa-shield-alt"></i><span>Cybersecurity</span></div>
+          <div class="integration-card"><i class="fas fa-layer-group"></i><span>Full Stack</span></div>
+        </div>
+
+        <div class="integration-marquee reverse">
+          <div class="integration-card"><i class="fas fa-building"></i><span>Office Learning</span></div>
+          <div class="integration-card"><i class="fas fa-chart-line"></i><span>Career Development</span></div>
+          <div class="integration-card"><i class="fas fa-user-tie"></i><span>Mentorship</span></div>
+          <div class="integration-card"><i class="fas fa-briefcase"></i><span>Job-Ready</span></div>
+          <div class="integration-card"><i class="fas fa-plus"></i><span>And more</span></div>
+          <!-- Repeat -->
+          <div class="integration-card"><i class="fas fa-building"></i><span>Office Learning</span></div>
+          <div class="integration-card"><i class="fas fa-chart-line"></i><span>Career Development</span></div>
+          <div class="integration-card"><i class="fas fa-user-tie"></i><span>Mentorship</span></div>
+          <div class="integration-card"><i class="fas fa-briefcase"></i><span>Job-Ready</span></div>
+          <div class="integration-card"><i class="fas fa-plus"></i><span>And more</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="comparison-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">THE SHIFT</span>
+        <h2 class="vs-heading-modern">
+          <span class="old">Online Courses</span>
+          <span class="vs-badge">VS</span>
+          <span class="genie">Skill Studio</span>
+        </h2>
+        <p>Why serious learners choose Alphabit Skill Studio over traditional platforms.</p>
+      </div>
+
+      <div class="prod-table-wrapper">
+        <table class="prod-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>YouTube / Self</th>
+              <th>Online Platforms</th>
+              <th class="prod-highlight">Skill Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Developer Mentorship</strong></td>
+              <td><i class="fas fa-times-circle"></i> None</td>
+              <td><i class="fas fa-minus-circle"></i> Recorded</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> In-house mentors</td>
+            </tr>
+            <tr>
+              <td><strong>Project Experience</strong></td>
+              <td><i class="fas fa-times-circle"></i> Theory only</td>
+              <td><i class="fas fa-minus-circle"></i> Exercises</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Real-world projects</td>
+            </tr>
+            <tr>
+              <td><strong>Learning Culture</strong></td>
+              <td><i class="fas fa-times-circle"></i> Learn alone</td>
+              <td><i class="fas fa-times-circle"></i> Fully remote</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Office environment</td>
+            </tr>
+            <tr>
+              <td><strong>Curriculum</strong></td>
+              <td><i class="fas fa-minus-circle"></i> Often outdated</td>
+              <td><i class="fas fa-minus-circle"></i> Updated occasionally</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Modern & practical</td>
+            </tr>
+            <tr>
+              <td><strong>Career Training</strong></td>
+              <td><i class="fas fa-times-circle"></i> No roadmap</td>
+              <td><i class="fas fa-minus-circle"></i> Certificate-focused</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Portfolio-focused</td>
+            </tr>
+            <tr>
+              <td><strong>One-on-One Guidance</strong></td>
+              <td><i class="fas fa-times-circle"></i> None</td>
+              <td><i class="fas fa-minus-circle"></i> Community only</td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Personalized</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">LEARNER STORIES</span>
+        <h2>Feedback from Our <span class="gradient-text">Studio Graduates</span></h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="testimonial-content">“I'd watched hundreds of tutorials but never felt truly job-ready. At Alphabit Skill Studio, I built real projects with real developers — and walked into my first interview with confidence.”</div>
+          <div class="testimonial-author"><span class="author-name">Dhruvil Patel</span><span class="author-info">Python & Full Stack Graduate · Junagadh</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="testimonial-content">“The office environment changed everything for me. It wasn't just about coding — it was understanding how developers actually work, collaborate, and solve real problems.”</div>
+          <div class="testimonial-author"><span class="author-name">Krisha Mehta</span><span class="author-info">Web Development Graduate · Rajkot</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <div class="testimonial-content">“I switched careers at 27 with zero tech background. The mentors here focused on practical learning step by step, and that made the transition feel achievable.”</div>
+          <div class="testimonial-author"><span class="author-name">Rohan Vyas</span><span class="author-info">AI/ML Track Graduate · Ahmedabad</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">HELP CENTER</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-accordion-wrap">
+        <details class="faq-item" open>
+          <summary>What is Alphabit Skill Studio?</summary>
+          <div class="faq-answer">
+            <p>Alphabit Skill Studio is a practical tech training platform that helps students and professionals learn industry-focused skills through hands-on learning and mentorship from real developers.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Who can join Alphabit Skill Studio?</summary>
+          <div class="faq-answer">
+            <p>Anyone interested in building a career in technology can join, including students, freshers, career switchers, and working professionals.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need prior coding experience?</summary>
+          <div class="faq-answer">
+            <p>No. Most learning tracks start from beginner fundamentals and gradually progress toward advanced practical skills.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>What courses are available at Alphabit Skill Studio?</summary>
+          <div class="faq-answer">
+            <p>We offer practical training in Python, AI & Machine Learning, Web Development, Full Stack Development, and Cybersecurity.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How is Alphabit Skill Studio different from online tutorials?</summary>
+          <div class="faq-answer">
+            <p>Unlike recorded online tutorials, Alphabit Skill Studio focuses on live mentorship, hands-on projects, practical learning, and real developer guidance inside a professional environment.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Will I build real projects during training?</summary>
+          <div class="faq-answer">
+            <p>Yes. Every learning track includes practical assignments and real-world projects to help learners build strong portfolios and job-ready experience.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-final-section">
+    <div class="prod-section">
+      <div class="prod-cta-banner">
+        <h2>Your Tech Career <span>Starts with Practical Skills.</span></h2>
+        <p>Join learners building real-world projects, learning from experienced developers, and preparing for careers in today’s fast-growing tech industry.</p>
+        <div class="product-hero-actions">
+          <a href="contact.html" class="prod-btn-primary">Enroll Now</a>
+          <a href="contact.html" class="prod-btn-outline">Explore Programs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Footer -->
+      <section class="Footer">
+        <div class="footer-bg-clip">
+          <div class="footer-bg-circle"></div>
+        </div>
+        <div class="footer-container">
+          <div class="footer-left">
+            <div class="footer-icons">
+              <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+              <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                  src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+              <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                  src="./assets/images/instagram.webp" alt="instagram" /></a>
+              <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                  src="./assets/images/facebook2.webp" alt="facebook" /></a>
+            </div>
+            <div class="footer-text">
+              <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
+              <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+              <p class="footer-email">info@alphabitinfoway.com</p>
             </div>
           </div>
-          <div class="product-hero-image">
-            <img src="./assets/images/logo.webp" alt="Alphabit Skill Studio Hero" onerror="this.src='./assets/images/Technology/1.webp'" />
+          <div class="footer-right">
+            <img src="./assets/images/AI Model.webp" alt="Robot" />
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+          <div class="footer-links">
+            <a href="#">AGENCY</a>
+            <a href="#">CAREER</a>
+            <a href="#">PRIVACY</a>
+            <a href="#">TERMS &amp; CONDITION</a>
           </div>
         </div>
       </section>
 
-      <section class="product-details-section">
-        <div class="details-grid">
-          <div class="details-text">
-            <h2>About Alphabit Skill Studio</h2>
-            <p>Alphabit Skill Studio is a hands-on learning platform designed to bridge the gap between theory and real industry skills. From Python, AI/ML, Web Development, Full Stack, to Cybersecurity, students learn directly from in-house developers working on real projects. It’s not just learning — it’s building, practicing, and becoming job-ready.</p>
-          </div>
-          <div class="details-features">
-            <h2>Key Features</h2>
-            <ul>
-              <li>Real Industry-Based Training</li>
-              <li>Learn from In-House Developers</li>
-              <li>Hands-On Practical Learning</li>
-              <li>Multiple High-Demand Tech Skills</li>
-              <li>Office-Based Learning Environment</li>
-              <li>Career-Focused Skill Development</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="product-benefits">
-        <div class="benefits-header">
-          <h2>Why Choose Skill Studio?</h2>
-        </div>
-        <div class="benefits-grid">
-          <div class="benefit-card">
-            <h3>Practical Mentorship</h3>
-            <p>Skip the theoretical lectures. Learn by doing, guided by actual developers who build industry-leading products every day.</p>
-          </div>
-          <div class="benefit-card">
-            <h3>Real-World Projects</h3>
-            <p>Work on actual client projects and internal tools to build a portfolio that truly stands out to employers.</p>
-          </div>
-          <div class="benefit-card">
-            <h3>Job-Ready Skills</h3>
-            <p>Master the specific technologies and workflows used in modern software companies, making your transition to a career seamless.</p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section class="schedule-section">
-      <div class="schedule-content">
-        <p>👋🏼 Hey Innovator,</p>
-        <h2>I'm Your<img src="./assets/images/home/Hey Innovator/1.webp" class="span-image"></span><span
-            class="span-orange"> AI</span><span class="span-white">(Alphabit Infoway)</span></h2>
-        <h2><span class="span-orange">Buddy, </span>Let's<img src="./assets/images/home/Hey Innovator/2.webp"
-            class="span-image"></span> Convert</h2>
-        <h2>Your <span class="span-white">Idea</span><img src="./assets/images/home/Hey Innovator/3.webp"
-            class="span-image"></span> into <span class="span-white">Reality</span></h2>
-      </div>
-      <button class="schedule-btn" onclick="window.location.href='./contact.html'">Schedule a Meeting</button>
-    </section>
-
-    <!-- Footer -->
-    <section class="Footer">
-      <div class="footer-bg-clip">
-        <div class="footer-bg-circle"></div>
-      </div>
-      <div class="footer-container">
-        <div class="footer-left">
-          <div class="footer-icons">
-            <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter" /></a>
-            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
-                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
-            <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
-                src="./assets/images/instagram.webp" alt="instagram" /></a>
-            <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
-                src="./assets/images/facebook2.webp" alt="facebook" /></a>
-          </div>
-          <div class="footer-text">
-            <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
-            <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
-            <p class="footer-email">info@alphabitinfoway.com</p>
-          </div>
-        </div>
-        <div class="footer-right"><img src="./assets/images/AI Model.webp" alt="Robot" /></div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
-        <div class="footer-links">
-          <a href="#">AGENCY</a><a href="#">CAREER</a><a href="#">PRIVACY</a><a href="#">TERMS &amp; CONDITION</a>
-        </div>
-      </div>
-    </section>
-    <script src="./assets/js/config.js"></script>
-    <script src="./assets/js/main.js"></script>
-  </div>
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/main.js"></script>
   <script src="./assets/js/scroll-animate.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.onload = () => { document.getElementById('preloader').style.display = 'none'; };
+  </script>
 </body>
 
 </html>
-
