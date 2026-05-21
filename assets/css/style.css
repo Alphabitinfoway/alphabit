@@ -25,6 +25,12 @@ body {
   width: 100%;
 }
 
+html.nav-active,
+body.nav-active {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+
 .feed-thumb img {
   width: 100%;
   height: 100%;
@@ -285,90 +291,270 @@ div.container header a.contact-btn {
   display: none !important;
 }
 
-/* ===== Dropdown Base ===== */
+/* ===== Dropdown Base & Arrow Override ===== */
 .dropdown {
   position: relative;
 }
 
-/* Arrow animation smooth */
 .dropdown-toggle {
   cursor: pointer;
-}
-
-/* ===== Dropdown Menu ===== */
-.dropdown-menu {
-  position: absolute;
-  top: 130%;
-  left: 100%;
-  transform: translateX(-50%) translateY(10px);
-  min-width: 250px;
-  background: #f2f2f2e7;
-  border-radius: 16px;
-  padding: 10px 0;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.35s ease;
-  z-index: 999;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-}
-
-/* ===== Dropdown Items ===== */
-.dropdown-menu li {
-  list-style: none;
-}
-
-.dropdown-menu li a {
   display: flex;
   align-items: center;
-  padding: 12px 24px;
-
-  font-size: 14px;
-  font-weight: 500;
-  color: #333;
-  text-decoration: none;
-
-  transition: all 0.25s ease;
-  position: relative;
+  gap: 6px;
 }
 
-/* Hover effect */
-.dropdown-menu li a::before {
-  content: "";
-  position: absolute;
-  left: 14px;
-  width: 6px;
-  height: 6px;
-  background: #7143fe;
-  border-radius: 50%;
-  opacity: 0;
-  transform: scale(0.5);
-  transition: 0.25s;
+.dropdown-toggle::after {
+  display: none !important; /* Hide old drop.webp arrow */
 }
 
-.dropdown-menu li a:hover {
-  background: rgba(113, 67, 254, 0.08);
+.dropdown-toggle .toggle-icon {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+  color: #666;
+}
+
+.dropdown:hover .dropdown-toggle .toggle-icon {
+  transform: rotate(180deg);
   color: #7143fe;
-  padding-left: 36px;
 }
 
-.dropdown-menu li a:hover::before {
-  opacity: 1;
-  transform: scale(1);
+/* ===== Submenu Panels (Desktop) ===== */
+@media (min-width: 769px) {
+  .submenu-panel {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(15px);
+    min-width: 260px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+    padding: 10px 0;
+  }
+
+  .dropdown:hover .submenu-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .panel-header {
+    display: none; /* Only for mobile */
+  }
+
+  .submenu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submenu-list li {
+    list-style: none;
+  }
+
+  .submenu-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 12px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+
+  .submenu-list li a i {
+    font-size: 14px;
+    color: #7143fe;
+    transition: transform 0.25s ease;
+  }
+
+  .submenu-list li a:hover {
+    background: rgba(113, 67, 254, 0.08);
+    color: #7143fe;
+    padding-left: 28px;
+  }
+
+  .submenu-list li a:hover i {
+    transform: scale(1.15);
+  }
+
+  /* ===== Desktop Split-Pane Mega Menu (Technology) ===== */
+  .submenu-panel.mega-panel {
+    width: 800px;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+  }
+
+  .mega-menu-container {
+    display: flex;
+    min-height: 400px;
+  }
+
+  .mega-menu-sidebar {
+    width: 32%;
+    background: #f8f9fa;
+    border-right: 1.5px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 12px 14px;
+    border-radius: 10px;
+    text-align: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .sidebar-item i {
+    font-size: 15px;
+    width: 20px;
+    color: #ff5622;
+  }
+
+  .sidebar-item span {
+    flex: 1;
+    margin-left: 10px;
+  }
+
+  .sidebar-item .arrow-icon {
+    font-size: 11px;
+    color: #ccc;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: all 0.25s ease;
+  }
+
+  .sidebar-item:hover,
+  .sidebar-item.active {
+    background: rgba(113, 67, 254, 0.08);
+    color: #7143fe;
+  }
+
+  .sidebar-item:hover i,
+  .sidebar-item.active i {
+    color: #7143fe;
+  }
+
+  .sidebar-item:hover .arrow-icon,
+  .sidebar-item.active .arrow-icon {
+    opacity: 1;
+    transform: translateX(0);
+    color: #7143fe;
+  }
+
+  .mega-menu-content {
+    width: 68%;
+    background: #ffffff;
+    padding: 20px 25px;
+    position: relative;
+    overflow-y: auto;
+    max-height: 450px;
+  }
+
+  .tab-pane {
+    display: none;
+  }
+
+  .tab-pane.active {
+    display: block;
+    animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .pane-category-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff5622;
+    margin-bottom: 15px;
+    border-bottom: 1.5px solid rgba(255, 86, 34, 0.1);
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .pane-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .pane-item {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1.5px solid transparent;
+    transition: all 0.25s ease;
+    background: #fafafa;
+  }
+
+  .pane-item .item-title {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 4px;
+    transition: color 0.2s ease;
+  }
+
+  .pane-item .item-desc {
+    font-size: 11.5px;
+    color: #666;
+    line-height: 1.35;
+  }
+
+  .pane-item:hover {
+    background: rgba(113, 67, 254, 0.04);
+    border-color: rgba(113, 67, 254, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(113, 67, 254, 0.05);
+  }
+
+  .pane-item:hover .item-title {
+    color: #7143fe;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
 
   /* ── Header ── */
   header {
-    width: calc(100%) !important;
+    width: calc(100% - 20px) !important;
     margin: 0 10px;
     top: 10px;
     padding: 10px 16px;
@@ -433,10 +619,11 @@ div.container header a.contact-btn {
 
   /* ── Navbar Panel ── */
   .navbar {
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    right: 0;
+    position: fixed !important;
+    top: 85px !important;
+    left: 10px !important;
+    right: 10px !important;
+    width: calc(100% - 20px) !important;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
@@ -457,6 +644,24 @@ div.container header a.contact-btn {
     transition: opacity 0.35s ease,
       transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
       visibility 0.35s ease;
+    max-height: calc(100vh - 100px) !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    z-index: 1000;
+  }
+
+  /* Custom thin scrollbar for mobile navbar panel */
+  .navbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .navbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .navbar::-webkit-scrollbar-thumb {
+    background: rgba(113, 67, 254, 0.3);
+    border-radius: 10px;
   }
 
 
@@ -464,9 +669,10 @@ div.container header a.contact-btn {
     transform: translateY(0);
     opacity: 1;
     pointer-events: all;
-    margin-top: 10px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(233, 232, 232, 0.8) 100%);
+    margin-top: 0 !important;
+    border-radius: 20px !important;
+    background: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
     visibility: visible;
 
   }
@@ -541,7 +747,7 @@ div.container header a.contact-btn {
 
   /* ── Dropdown ── */
   .dropdown {
-    position: relative;
+    position: static !important;
     width: 100%;
   }
 
@@ -551,61 +757,214 @@ div.container header a.contact-btn {
     align-items: center;
   }
 
+  .dropdown-toggle .toggle-icon {
+    font-size: 12px;
+    color: #666;
+    transition: transform 0.3s;
+  }
 
-  .dropdown.active .dropdown-toggle::after {
-    transform: rotate(90deg);
+  .dropdown.active > .dropdown-toggle .toggle-icon {
+    transform: rotate(-90deg); /* points to the panel direction */
     color: #7143fe;
   }
 
-  /* Dropdown Card */
-  .dropdown-menu {
-    position: relative;
+  .submenu-panel {
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    min-width: 100%;
-    margin-top: 5px;
-
-    /* Accordion Logic */
-    max-height: 0;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: #ffffff;
+    z-index: 1005;
+    transform: translateX(-100%);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
     opacity: 0;
     visibility: hidden;
-
-    transform: none;
-    /* Reset transform */
-
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: none;
-    border: none;
-    border-radius: 12px;
-    padding: 0;
-
-    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
-    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
   }
 
-  .dropdown.active .dropdown-menu {
-    max-height: 500px;
-    /* Sufficient height to show content */
+  .submenu-panel.slide-in {
+    transform: translateX(0);
     opacity: 1;
     visibility: visible;
-    padding: 10px 0;
-    margin-bottom: 10px;
-    transform: none;
   }
 
-  .dropdown-menu li a {
-    padding: 11px 20px;
-    font-size: 13.5px;
+  .panel-header {
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
+    background: #f8f9fa;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #ff5622;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+
+  .back-btn:hover {
+    background-color: rgba(255, 86, 34, 0.08);
+  }
+
+  .panel-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* List & Links inside Mobile Slide panel */
+  .submenu-list {
+    list-style: none;
+    padding: 15px !important;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+    flex: 1;
+  }
+
+  .submenu-list li {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .submenu-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    flex-direction: row-reverse !important;
+    gap: 12px;
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    background: #fdfdfd;
+    border: 1px solid rgba(0, 0, 0, 0.03);
     border-radius: 10px;
-    margin: 0 6px;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+    transform: none !important;
   }
 
-  .dropdown-menu li a:hover {
-    background: rgba(113, 67, 254, 0.1);
+  .submenu-list li a:hover,
+  .submenu-list li a:active {
+    background: rgba(113, 67, 254, 0.06) !important;
+    color: #7143fe !important;
+    border-color: rgba(113, 67, 254, 0.1);
+  }
+
+  .submenu-list li a i {
+    font-size: 15px;
     color: #7143fe;
-    transform: translateX(4px);
+  }
+
+  /* ===== Mobile Split-Pane Mega Menu Flattening ===== */
+  .submenu-panel.mega-panel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+  }
+
+  .mega-menu-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .mega-menu-sidebar {
+    display: none !important; /* Hide category tabs on mobile */
+  }
+
+  .mega-menu-content {
+    padding: 15px !important;
+    width: 100% !important;
+    max-height: none !important;
+  }
+
+  .tab-pane {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    margin-bottom: 25px;
+  }
+
+  .tab-pane:last-child {
+    margin-bottom: 0;
+  }
+
+  .pane-category-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ff5622;
+    margin-bottom: 12px;
+    border-bottom: 1.5px solid rgba(255, 86, 34, 0.1);
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .pane-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .pane-item {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: #fdfdfd;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    transition: all 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pane-item:hover,
+  .pane-item:active {
+    background: rgba(113, 67, 254, 0.06);
+    border-color: rgba(113, 67, 254, 0.1);
+  }
+
+  .pane-item .item-title {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 2px;
+  }
+
+  .pane-item .item-desc {
+    font-size: 11.5px;
+    color: #666;
+    line-height: 1.3;
   }
 
 

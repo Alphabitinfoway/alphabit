@@ -211,7 +211,7 @@
   color: var(--prod-gray);
   text-transform: uppercase;
   letter-spacing: 2px;
-margin: 20px 20px 40px 40px;
+  margin: 20px 20px 40px 40px;
 }
 
 .prod-marquee-wrapper {
@@ -1310,7 +1310,7 @@ margin: 20px 20px 40px 40px;
   flex-direction: column;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2), inset 0 1px 1px rgba(255,255,255,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.05);
 }
 
 .how-it-works-full .prod-process-item:hover {
@@ -1591,7 +1591,7 @@ margin: 20px 20px 40px 40px;
   border-radius: 24px;
   padding: 40px;
   border: 1px solid rgba(113, 67, 254, 0.1);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
   position: relative;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1630,11 +1630,30 @@ margin: 20px 20px 40px 40px;
   transform: scale(1.1) rotate(5deg);
 }
 
-.stage-card-1 .stage-icon { background: rgba(255, 86, 34, 0.1); color: var(--prod-secondary); }
-.stage-card-2 .stage-icon { background: rgba(113, 67, 254, 0.1); color: var(--prod-primary); }
-.stage-card-3 .stage-icon { background: rgba(0, 200, 150, 0.1); color: #00c896; }
-.stage-card-4 .stage-icon { background: rgba(255, 193, 7, 0.1); color: #ffc107; }
-.stage-card-5 .stage-icon { background: rgba(233, 30, 99, 0.1); color: #e91e63; }
+.stage-card-1 .stage-icon {
+  background: rgba(255, 86, 34, 0.1);
+  color: var(--prod-secondary);
+}
+
+.stage-card-2 .stage-icon {
+  background: rgba(113, 67, 254, 0.1);
+  color: var(--prod-primary);
+}
+
+.stage-card-3 .stage-icon {
+  background: rgba(0, 200, 150, 0.1);
+  color: #00c896;
+}
+
+.stage-card-4 .stage-icon {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.stage-card-5 .stage-icon {
+  background: rgba(233, 30, 99, 0.1);
+  color: #e91e63;
+}
 
 .stage-card h4 {
   font-size: 24px;
@@ -1676,6 +1695,7 @@ margin: 20px 20px 40px 40px;
 }
 
 @media (max-width: 991px) {
+
   .stage-card:nth-child(1),
   .stage-card:nth-child(2),
   .stage-card:nth-child(n+3) {
@@ -1684,6 +1704,7 @@ margin: 20px 20px 40px 40px;
 }
 
 @media (max-width: 768px) {
+
   .stage-card:nth-child(1),
   .stage-card:nth-child(2),
   .stage-card:nth-child(n+3) {
@@ -1718,13 +1739,23 @@ margin: 20px 20px 40px 40px;
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes marquee-reverse {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .integration-card {
@@ -1815,7 +1846,7 @@ margin: 20px 20px 40px 40px;
   justify-content: center;
   width: 45px;
   height: 45px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .vs-heading-modern span.old {
@@ -1840,6 +1871,7 @@ margin: 20px 20px 40px 40px;
     font-size: 32px;
     gap: 10px;
   }
+
   .vs-heading-modern .vs-badge {
     width: 35px;
     height: 35px;
@@ -1902,14 +1934,23 @@ margin: 20px 20px 40px 40px;
   margin-right: 10px;
 }
 
-.prod-table td i.fa-check-circle { color: #10b981; }
-.prod-table td i.fa-times-circle { color: #ef4444; }
-.prod-table td i.fa-minus-circle { color: #f59e0b; }
+.prod-table td i.fa-check-circle {
+  color: #10b981;
+}
+
+.prod-table td i.fa-times-circle {
+  color: #ef4444;
+}
+
+.prod-table td i.fa-minus-circle {
+  color: #f59e0b;
+}
 
 @media (max-width: 768px) {
   .prod-table-wrapper {
     overflow-x: auto;
   }
+
   .prod-table {
     min-width: 800px;
   }
@@ -1918,7 +1959,7 @@ margin: 20px 20px 40px 40px;
 /* Testimonials Section Styles */
 .testimonials-section {
   background: #ffffff;
-  padding-top: 100px ;
+  padding-top: 100px;
 }
 
 .testimonial-grid {
@@ -2031,7 +2072,7 @@ margin: 20px 20px 40px 40px;
 /* CTA Final Banner */
 .cta-final-section {
   padding: 80px 20px;
-  background:#f5f5f5;
+  background: #f5f5f5;
 }
 
 .prod-cta-banner {
@@ -2213,9 +2254,11 @@ margin: 20px 20px 40px 40px;
   transform: rotate(180deg);
 }
 
-.faq-answer {
+details.faq-item .faq-answer {
   padding: 25px 30px;
   background: #ffffff;
+  max-height: none;
+  overflow: visible;
 }
 
 .faq-answer p {
@@ -2341,7 +2384,7 @@ margin: 20px 20px 40px 40px;
   .integration-section {
     padding: 60px 0;
   }
- 
+
   .integration-marquee-container {
     gap: 30px;
     margin-top: 30px;
@@ -2372,7 +2415,7 @@ margin: 20px 20px 40px 40px;
   .cta-final-section {
     padding: 40px 0 !important;
   }
-  
+
   .cta-final-section .prod-section {
     padding: 0 !important;
   }

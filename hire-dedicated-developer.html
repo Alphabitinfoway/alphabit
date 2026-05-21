@@ -5,51 +5,578 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Hire Dedicated Developers | Alphabit Infoway</title>
-
-  <meta name="description" content="Alphabit Infoway - Hire Developers. We specialize in high-performance Web Development, Mobile Apps, AI Solutions, and Premium IT Services for businesses globally." />
-  <meta name="keywords" content="Hire, Developers, Alphabit Infoway, Software Development, Web Development, Mobile Apps, AI Development, IT Consulting, Premium Tech Solutions" />
+  <title>Hire Developers — Pre-Vetted & Ready in 48hrs | Alphabit</title>
+  <meta name="description"
+    content="Hire developers without the wait. Pre-vetted engineers onboarded in 48 hrs. 7-day trial, 100% IP yours. Trusted by startups in US, UK, Canada & Australia." />
+  <meta name="keywords"
+    content="Hire Developers, Dedicated Developers, Remote Software Engineers, Staff Augmentation, Pre-vetted Developers, Tech Talent" />
   <meta name="author" content="Alphabit Infoway" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alphabitinfoway.com/hire-dedicated-developer" />
-  <meta property="og:title" content="Hire Dedicated Developers | Alphabit Infoway" />
-  <meta property="og:description" content="Alphabit Infoway - Hire Developers. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
+  <meta property="og:title" content="Hire Developers — Pre-Vetted & Ready in 48hrs" />
+  <meta property="og:description"
+    content="Hire developers without the wait. Pre-vetted engineers onboarded in 48 hrs. 7-day trial, 100% IP yours." />
   <meta property="og:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://alphabitinfoway.com/hire-dedicated-developer" />
-  <meta name="twitter:title" content="Hire Dedicated Developers | Alphabit Infoway" />
-  <meta name="twitter:description" content="Alphabit Infoway - Hire Developers. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
-  <meta name="twitter:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
 
   <link rel="canonical" href="https://alphabitinfoway.com/hire-dedicated-developer" />
 
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/product-page.css" />
+  <link rel="stylesheet" href="./assets/css/services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+
+  <style>
+    /* Custom Styles for Extended Layouts */
+    .hero-stats-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .gradient-text {
+      font-size: 42px;
+      font-weight: 800;
+      background: white;
+
+    }
+
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-stat .stat-num {
+      font-size: 2em;
+      font-weight: 800;
+      color: var(--prod-primary);
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+    .hero-stat .stat-text {
+      font-size: 0.85em;
+      color: var(--prod-dark);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .role-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid #eee;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .role-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      border-color: var(--prod-secondary);
+    }
+
+    .role-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 15px;
+      background: rgba(255, 87, 34, 0.1);
+      color: var(--prod-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .role-card h3 {
+      font-size: 1.3em;
+      color: var(--prod-dark);
+      margin-bottom: 5px;
+    }
+
+    .role-card .role-subtitle {
+      color: var(--prod-secondary);
+      font-weight: 600;
+      font-size: 0.85em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .role-card p {
+      color: #666;
+      font-size: 0.95em;
+      line-height: 1.6;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .role-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .role-tag {
+      background: #f0f4f8;
+      color: #444;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8em;
+      font-weight: 600;
+    }
+
+    .role-card a {
+      margin-top: auto;
+      color: var(--prod-primary);
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.3s;
+    }
+
+    .role-card a:hover {
+      color: var(--prod-secondary);
+    }
+
+    .tech-search-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .tech-search-bar {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .tech-search-bar i {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+      font-size: 1.1em;
+    }
+
+    .tech-search-bar input {
+      width: 100%;
+      padding: 16px 20px 16px 45px;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      font-size: 1em;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .tech-search-bar input:focus {
+      border-color: var(--prod-primary);
+      box-shadow: 0 4px 12px rgba(255,87,34,0.1);
+    }
+
+    .tech-tabs-modern {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 40px;
+      justify-content: center;
+    }
+
+    .tech-tab-modern {
+      padding: 10px 24px;
+      border-radius: 30px;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      cursor: pointer;
+      font-weight: 600;
+      color: #555;
+      transition: all 0.3s ease;
+      font-family: 'Sora', sans-serif;
+      font-size: 0.9em;
+    }
+
+    .tech-tab-modern.active,
+    .tech-tab-modern:hover {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    .tech-grid-modern {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .tech-card-modern {
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid #eee;
+      border-left: 4px solid var(--card-color, var(--prod-primary));
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tech-card-modern:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transform: translateY(-4px);
+      border-color: var(--prod-secondary);
+    }
+
+    .tech-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .tech-card-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .tech-card-title i {
+      font-size: 1.4em;
+      width: 24px;
+      text-align: center;
+    }
+
+    .tech-card-title h4 {
+      margin: 0;
+      color: var(--prod-dark);
+      font-size: 1.15em;
+      font-weight: 700;
+    }
+
+    .tech-card-badge {
+      font-size: 0.65em;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    .tech-card-modern p {
+      color: #666;
+      font-size: 0.9em;
+      line-height: 1.5;
+      margin: 0 0 20px 0;
+      flex-grow: 1;
+    }
+
+    .tech-card-modern a {
+      color: var(--prod-primary);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9em;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.3s;
+    }
+
+    .tech-card-modern a:hover {
+      color: var(--prod-secondary);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .pricing-card {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      position: relative;
+      border: 1px solid #eee;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      border-color: var(--prod-secondary);
+    }
+
+    .pricing-card.popular {
+      border: 2px solid var(--prod-secondary);
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--prod-secondary);
+      color: #fff;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 700;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .pricing-title {
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--prod-dark);
+    }
+
+    .pricing-price {
+      font-size: 2.5em;
+      font-weight: 800;
+      color: var(--prod-primary);
+      margin-bottom: 5px;
+    }
+
+    .pricing-subtitle {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    .pricing-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px 0;
+      flex-grow: 1;
+    }
+
+    .pricing-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 15px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .pricing-features li i {
+      color: #10b981;
+      margin-top: 4px;
+    }
+
+    .pricing-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--prod-primary);
+      color: var(--prod-primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--prod-primary);
+      color: #fff;
+    }
+
+    .btn-solid {
+      background: var(--prod-primary);
+      color: #fff;
+      border: 2px solid var(--prod-primary);
+    }
+
+    .btn-solid:hover {
+      background: transparent;
+      color: var(--prod-primary);
+      border-color: var(--prod-primary);
+    }
+
+    .trust-badges-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .trust-badge-item {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .trust-badge-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--prod-primary), var(--prod-secondary));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+      z-index: 2;
+    }
+
+    .trust-badge-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(255, 87, 34, 0.08);
+      border-color: rgba(255, 87, 34, 0.1);
+    }
+
+    .trust-badge-item:hover::before {
+      transform: scaleX(1);
+    }
+
+    .trust-badge-item i {
+      font-size: 48px;
+      background: linear-gradient(135deg, var(--prod-primary), var(--prod-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      display: inline-block;
+      transition: transform 0.4s ease;
+    }
+
+    .trust-badge-item:hover i {
+      transform: scale(1.15) rotate(5deg);
+    }
+
+    .trust-badge-item h4 {
+      margin: 0 0 12px 0;
+      color: var(--prod-dark);
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    .trust-badge-item p {
+      margin: 0;
+      color: #64748b;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .related-pages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .related-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid #eee;
+      text-decoration: none;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+    .related-card:hover {
+      border-color: var(--prod-secondary);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      transform: translateY(-3px);
+    }
+
+    .related-card h3 {
+      color: var(--prod-primary);
+      margin: 0 0 10px 0;
+      font-size: 1.2em;
+    }
+
+    .related-card .related-subtitle {
+      color: #888;
+      font-size: 0.85em;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .related-card p {
+      color: #666;
+      margin: 0;
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
 </head>
 
-<body>
+<body class="product-page-wrapper">
   <!-- Minimal Preloader -->
   <div id="preloader">
     <div class="minimal-loader">
-      <img src="./assets/images/preloder.svg" alt="Alphabit Logo" class="loader-logo" />
-      <div class="loader-text">
-        <div class="line1">Connecting</div>
-        <div class="line2">The <span class="highlight">Bits...</span></div>
-      </div>
+      <img src="./assets/images/logo.webp" alt="Alphabit Logo" class="loader-logo" />
+      <div class="loader-progress-bar"></div>
+      <div class="loader-text">Loading Talent Pool...</div>
     </div>
   </div>
 
-  <div class="container">
-    <header>
+  <!-- Header -->
+          <header>
       <div class="logo-img">
-        <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+        <a href="./">
+          <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+        </a>
       </div>
       <div class="menu-toggle">
         <span></span>
@@ -59,173 +586,2021 @@
       <nav class="navbar">
         <h6><a href="./">Home</a></h6>
         <h6 class="dropdown">
-          <a href="services" class="dropdown-toggle">Services</a>
-          <ul class="dropdown-menu">
-            <li><a href="services">AI & Machine Learning</a></li>
-            <li><a href="services">Cyber Security & Compliance</a></li>
-            <li><a href="services">Full Stack Web Development</a></li>
-            <li><a href="services">Mobile App & Product Design</a></li>
-          </ul>
+          <a href="services" class="dropdown-toggle">Services <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
+          <div class="submenu-panel">
+            <div class="panel-header">
+              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+              <span class="panel-title">Services</span>
+            </div>
+            <ul class="submenu-list">
+              <li><a href="ai-machine-learning"><i class="fa-solid fa-brain"></i> AI & Machine Learning</a></li>
+              <li><a href="cyber-security"><i class="fa-solid fa-shield-halved"></i> Cyber Security & Compliance</a></li>
+              <li><a href="ai-full-stack-development-services"><i class="fa-solid fa-code"></i> Full Stack Web Development</a></li>
+              <li><a href="ai-mobile-app-development-services"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App & Product Design</a></li>
+            </ul>
+          </div>
         </h6>
-        <h6><a href="./#products">Products</a></h6>
         <h6 class="dropdown">
-          <a href="Technology" class="dropdown-toggle">Technology</a>
-          <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Artificial Intelligence</li>
-                        <li><a href="ai-development-technologies.html">AI Development</a></li>
-                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
-                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
-                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
-
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Web Technologies</li>
-                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
-                        <li><a href="backend-technologies.html">Backend Development</a></li>
-                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
-
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Mobile Technologies</li>
-                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
-                        <li><a href="android-development-technologies.html">Android Development</a></li>
-                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
-
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cloud & DevOps</li>
-                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
-                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
-                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
-
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Data & Analytics</li>
-                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
-                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
-                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
-
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cyber Security</li>
-                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
-                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
-                    </ul>
+          <a href="./#products" class="dropdown-toggle">Products <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
+          <div class="submenu-panel">
+            <div class="panel-header">
+              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+              <span class="panel-title">Products</span>
+            </div>
+            <ul class="submenu-list">
+              <li><a href="genie-dial"><i class="fa-solid fa-phone"></i> Genie Dial</a></li>
+              <li><a href="skill-studio"><i class="fa-solid fa-graduation-cap"></i> Skill Studio</a></li>
+              <li><a href="dhiread"><i class="fa-solid fa-book-open"></i> DhiRead</a></li>
+              <li><a href="dhisure"><i class="fa-solid fa-square-check"></i> Dhisure</a></li>
+              <li><a href="dhihealth"><i class="fa-solid fa-heart-pulse"></i> Dhihealth</a></li>
+              <li><a href="dhiyodha-network"><i class="fa-solid fa-circle-nodes"></i> Dhiyodha Network</a></li>
+            </ul>
+          </div>
+        </h6>
+        <h6 class="dropdown">
+          <a href="Technology" class="dropdown-toggle">Technology <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
+          <div class="submenu-panel mega-panel">
+            <div class="panel-header">
+              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+              <span class="panel-title">Technology</span>
+            </div>
+            <div class="mega-menu-container">
+              <div class="mega-menu-sidebar">
+                <button class="sidebar-item active" data-tab="ai-tab">
+                  <i class="fa-solid fa-brain"></i>
+                  <span>Artificial Intelligence</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+                <button class="sidebar-item" data-tab="web-tab">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <span>Web Technologies</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+                <button class="sidebar-item" data-tab="mobile-tab">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <span>Mobile Technologies</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+                <button class="sidebar-item" data-tab="cloud-tab">
+                  <i class="fa-solid fa-cloud"></i>
+                  <span>Cloud & DevOps</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+                <button class="sidebar-item" data-tab="data-tab">
+                  <i class="fa-solid fa-chart-pie"></i>
+                  <span>Data & Analytics</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+                <button class="sidebar-item" data-tab="security-tab">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <span>Cyber Security</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+              </div>
+              <div class="mega-menu-content">
+                <!-- AI Pane -->
+                <div class="tab-pane active" id="ai-tab">
+                  <div class="pane-category-title">Artificial Intelligence</div>
+                  <div class="pane-grid">
+                    <a href="ai-development-technologies" class="pane-item">
+                      <span class="item-title">AI Development</span>
+                      <span class="item-desc">Custom AI & Intelligent agents development</span>
+                    </a>
+                    <a href="machine-learning-technologies" class="pane-item">
+                      <span class="item-title">Machine Learning</span>
+                      <span class="item-desc">Predictive modeling & pattern recognition</span>
+                    </a>
+                    <a href="generative-ai-technologies" class="pane-item">
+                      <span class="item-title">Generative AI</span>
+                      <span class="item-desc">LLMs, GPT integration & custom content generation</span>
+                    </a>
+                    <a href="ai-and-chatbot-technologies" class="pane-item">
+                      <span class="item-title">AI Chatbots</span>
+                      <span class="item-desc">Conversational UI & customer service automation</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Web Pane -->
+                <div class="tab-pane" id="web-tab">
+                  <div class="pane-category-title">Web Technologies</div>
+                  <div class="pane-grid">
+                    <a href="modern-front-end-technologies" class="pane-item">
+                      <span class="item-title">Frontend Development</span>
+                      <span class="item-desc">Modern interactive web user interfaces</span>
+                    </a>
+                    <a href="backend-technologies" class="pane-item">
+                      <span class="item-title">Backend Development</span>
+                      <span class="item-desc">Scalable server-side logic & APIs</span>
+                    </a>
+                    <a href="full-stack-development-technologies" class="pane-item">
+                      <span class="item-title">Full Stack</span>
+                      <span class="item-desc">End-to-end web product architecture</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Mobile Pane -->
+                <div class="tab-pane" id="mobile-tab">
+                  <div class="pane-category-title">Mobile Technologies</div>
+                  <div class="pane-grid">
+                    <a href="ios-development-technologies" class="pane-item">
+                      <span class="item-title">iOS Development</span>
+                      <span class="item-desc">Native Swift & Objective-C applications</span>
+                    </a>
+                    <a href="android-development-technologies" class="pane-item">
+                      <span class="item-title">Android Development</span>
+                      <span class="item-desc">Native Kotlin & Java mobile apps</span>
+                    </a>
+                    <a href="cross-platform-development-technologies" class="pane-item">
+                      <span class="item-title">Cross Platform Development</span>
+                      <span class="item-desc">React Native & Flutter solutions</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Cloud Pane -->
+                <div class="tab-pane" id="cloud-tab">
+                  <div class="pane-category-title">Cloud & DevOps</div>
+                  <div class="pane-grid">
+                    <a href="cloud-platform-technologies" class="pane-item">
+                      <span class="item-title">Cloud Platforms</span>
+                      <span class="item-desc">AWS, Azure & Google Cloud solutions</span>
+                    </a>
+                    <a href="devops-ci-cd-technologies" class="pane-item">
+                      <span class="item-title">DevOps & CI/CD</span>
+                      <span class="item-desc">Continuous integration & automation pipelines</span>
+                    </a>
+                    <a href="cloud-deployment-technologies" class="pane-item">
+                      <span class="item-title">Cloud Deployment</span>
+                      <span class="item-desc">Safe & scalable containerized orchestration</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Data Pane -->
+                <div class="tab-pane" id="data-tab">
+                  <div class="pane-category-title">Data & Analytics</div>
+                  <div class="pane-grid">
+                    <a href="data-engineering-technologies" class="pane-item">
+                      <span class="item-title">Data Engineering</span>
+                      <span class="item-desc">Data pipeline architecture & warehouse setups</span>
+                    </a>
+                    <a href="data-visualization-technologies" class="pane-item">
+                      <span class="item-title">Data Visualization</span>
+                      <span class="item-desc">Dashboards & advanced charts rendering</span>
+                    </a>
+                    <a href="data-processing-technologies" class="pane-item">
+                      <span class="item-title">Data Processing</span>
+                      <span class="item-desc">Big data analytics & real-time streams</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Security Pane -->
+                <div class="tab-pane" id="security-tab">
+                  <div class="pane-category-title">Cyber Security</div>
+                  <div class="pane-grid">
+                    <a href="security-solutions-technologies" class="pane-item">
+                      <span class="item-title">Security Solutions</span>
+                      <span class="item-desc">Threat detection & penetration protection</span>
+                    </a>
+                    <a href="security-compliance-technologies" class="pane-item">
+                      <span class="item-title">Compliance</span>
+                      <span class="item-desc">Standards auditing (SOC2, ISO, GDPR)</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </h6>
         <h6><a href="about">About</a></h6>
-        <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+        <h6><a href="hire-dedicated-developer">Hire Developers</a></h6>
         <h6 class="dropdown">
-          <a href="#" class="dropdown-toggle">Insights</a>
-          <ul class="dropdown-menu">
-            <li><a href="blog">Blog</a></li>
-            <li><a href="career">Career</a></li>
-          </ul>
+          <a href="#" class="dropdown-toggle">Insights <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
+          <div class="submenu-panel">
+            <div class="panel-header">
+              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+              <span class="panel-title">Insights</span>
+            </div>
+            <ul class="submenu-list">
+              <li><a href="blog"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
+              <li><a href="career"><i class="fa-solid fa-briefcase"></i> Career</a></li>
+            </ul>
+          </div>
         </h6>
         <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
       </nav>
       <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
     </header>
 
-    <div class="product-page-wrapper">
-      <section class="product-hero">
-        <div class="product-hero-inner">
-          <div class="product-hero-content">
-            <span class="product-category">Staff Augmentation</span>
-            <h1 class="product-title">Hire Developers</h1>
-            <p class="product-tagline">Scale your development team instantly with our pool of expert developers
-              dedicated to your success.</p>
-            <div class="product-hero-btns">
-              <button class="contact-btn" onclick="window.location.href='./contact.html'">Inquire Now</button>
-            </div>
-          </div>
-          <div class="product-hero-image">
-            <img src="./assets/images/Technology/1.webp" alt="Hire Developers" />
-          </div>
-        </div>
-      </section>
+  <!-- Hero Section -->
+  <section class="product-hero-split light">
+    <div class="product-hero-split-inner">
+      <div class="product-hero-split-content">
+        <span class="product-badge-modern">ALPHABIT INFOWAY — HIRE EXPERT TECH TALENT</span>
+        <h1 class="product-hero-title">Hire Developers <br><span class="gradient-text">Who Actually Deliver</span></h1>
+        <p class="product-hero-desc">Finding great developers shouldn't slow you down. When you hire dedicated
+          developers through Alphabit Infoway, you get pre-vetted engineers who integrate into your team and start
+          contributing from day one — no lengthy hiring cycles, no guesswork.</p>
 
-      <section class="product-details-section">
-        <div class="details-grid">
-          <div class="details-text">
-            <h2>Why Hire Developers?</h2>
-            <p>Our dedicated developer model is designed to provide you with full control over the development process
-              while eliminating the overhead costs of internal hiring. Our developers become an extension of your own
-              team, working exclusively on your project.</p>
-          </div>
-          <div class="details-features">
-            <h2>Our Expertise</h2>
-            <ul>
-              <li>AI & Machine Learning Engineers</li>
-              <li>Full Stack MERN/MEAN Developers</li>
-              <li>Mobile App (Flutter/React Native) Developers</li>
-              <li>UI/UX Designers & Graphic Experts</li>
-              <li>Cloud & DevOps Engineers</li>
-              <li>Cyber Security Specialists</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        <ul class="hero-check-list">
+          <li><i class="fas fa-check-circle"></i> NDA on day one</li>
+          <li><i class="fas fa-check-circle"></i> 7-day risk-free trial</li>
+          <li><i class="fas fa-check-circle"></i> 48-hr onboarding</li>
+          <li><i class="fas fa-check-circle"></i> 100% IP ownership</li>
+          <li><i class="fas fa-check-circle"></i> 8-hr response guarantee</li>
+        </ul>
 
-      <section class="product-benefits">
-        <div class="benefits-header">
-          <h2>Key Advantages</h2>
+        <div class="product-hero-actions">
+          <a href="contact.html" class="prod-btn-primary">Get a Free Consultation <i class="fas fa-arrow-right"
+              style="margin-left: 8px;"></i></a>
+          <a href="#how-it-works" class="prod-btn-secondary">See How It Works</a>
         </div>
-        <div class="benefits-grid">
-          <div class="benefit-card">
-            <h3>Direct Communication</h3>
-            <p>You work directly with your assigned developers, ensuring transparency and alignment at every step.</p>
-          </div>
-          <div class="benefit-card">
-            <h3>Cost Efficiency</h3>
-            <p>Reduce operational and recruitment costs by up to 50% while getting top-tier talent.</p>
-          </div>
-          <div class="benefit-card">
-            <h3>Flexible Scaling</h3>
-            <p>Easily scale your team up or down based on your project requirements and timelines.</p>
-          </div>
+
+
+      </div>
+
+      <div class="product-hero-split-image">
+        <img src="./assets/images/Technology/1.webp" alt="Hire Dedicated Tech Developers">
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Stats Section -->
+  <section class="section-padding process-bg" style="border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+    <div class="container-box">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; text-align: center;">
+        
+        <div style="flex: 1; min-width: 150px;">
+          <h3 style="font-size: 52px; font-weight: 800; color: #fff; margin: 0 0 10px 0;">200<span style="color: var(--primary-orange);">+</span></h3>
+          <p style="color: rgba(255,255,255,0.7); font-weight: 600; text-transform: uppercase; font-size: 13px; letter-spacing: 1.5px; margin: 0;">Developers available</p>
         </div>
-      </section>
+        
+        <div style="flex: 1; min-width: 150px;">
+          <h3 style="font-size: 52px; font-weight: 800; color: #fff; margin: 0 0 10px 0;">50<span style="color: var(--primary-orange);">+</span></h3>
+          <p style="color: rgba(255,255,255,0.7); font-weight: 600; text-transform: uppercase; font-size: 13px; letter-spacing: 1.5px; margin: 0;">Technologies covered</p>
+        </div>
+        
+        <div style="flex: 1; min-width: 150px;">
+          <h3 style="font-size: 52px; font-weight: 800; color: #fff; margin: 0 0 10px 0;">500<span style="color: var(--primary-orange);">+</span></h3>
+          <p style="color: rgba(255,255,255,0.7); font-weight: 600; text-transform: uppercase; font-size: 13px; letter-spacing: 1.5px; margin: 0;">Projects delivered</p>
+        </div>
+        
+        <div style="flex: 1; min-width: 150px;">
+          <h3 style="font-size: 52px; font-weight: 800; color: #fff; margin: 0 0 10px 0;">96<span style="color: var(--primary-orange);">%</span></h3>
+          <p style="color: rgba(255,255,255,0.7); font-weight: 600; text-transform: uppercase; font-size: 13px; letter-spacing: 1.5px; margin: 0;">Client satisfaction</p>
+        </div>
+        
+        <div style="flex: 1; min-width: 150px;">
+          <h3 style="font-size: 52px; font-weight: 800; color: #fff; margin: 0 0 10px 0;">48<span style="color: var(--primary-orange);">hr</span></h3>
+          <p style="color: rgba(255,255,255,0.7); font-weight: 600; text-transform: uppercase; font-size: 13px; letter-spacing: 1.5px; margin: 0;">Avg. onboarding</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted By -->
+  <section class="product-trusted-modern">
+    <div class="prod-marquee-wrapper">
+      <p>Trusted by companies across the US, UK, Canada & Australia</p>
+      <div class="prod-marquee-track">
+        <div class="marquee-item"><span>TechNova Inc.</span></div>
+        <div class="marquee-item"><span>GrowthStack</span></div>
+        <div class="marquee-item"><span>FinFlow Ltd.</span></div>
+        <div class="marquee-item"><span>MediCore</span></div>
+        <div class="marquee-item"><span>EduSpark</span></div>
+        <div class="marquee-item"><span>RetailEdge</span></div>
+        <div class="marquee-item"><span>LogiTrack</span></div>
+        <div class="marquee-item"><span>CloudPeak</span></div>
+        <!-- Repeat -->
+        <div class="marquee-item"><span>TechNova Inc.</span></div>
+        <div class="marquee-item"><span>GrowthStack</span></div>
+        <div class="marquee-item"><span>FinFlow Ltd.</span></div>
+        <div class="marquee-item"><span>MediCore</span></div>
+        <div class="marquee-item"><span>EduSpark</span></div>
+        <div class="marquee-item"><span>RetailEdge</span></div>
+        <div class="marquee-item"><span>LogiTrack</span></div>
+        <div class="marquee-item"><span>CloudPeak</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roles Grid Section -->
+  <section class="prod-section" id="roles">
+    <div class="prod-section-header">
+      <span class="product-badge-modern">HIRE DEDICATED DEVELOPERS</span>
+      <h2>Hire Pre-Vetted Software Developers — <br><span class="orange-bg">Every Role,</span> Every Stack</h2>
+      <p>Whether you want to hire dedicated developers for an early-stage MVP, scale your team with remote software
+        engineers, or plug in specialist expertise fast — Alphabit matches you with pre-vetted developers who have done
+        it before and hit the ground running. No agency overhead. No wasted onboarding time.</p>
     </div>
 
-    <section class="schedule-section">
-      <div class="schedule-content">
-        <p>👋🏼 Hey Innovator,</p>
-        <h2>I'm Your<img src="./assets/images/home/Hey Innovator/1.webp" class="span-image"></span><span
-            class="span-orange"> AI</span><span class="span-white">(Alphabit Infoway)</span></h2>
-        <h2><span class="span-orange">Buddy, </span>Let's<img src="./assets/images/home/Hey Innovator/2.webp"
-            class="span-image"></span> Convert</h2>
-        <h2>Your <span class="span-white">Idea</span><img src="./assets/images/home/Hey Innovator/3.webp"
-            class="span-image"></span> into <span class="span-white">Reality</span></h2>
+    <div class="roles-grid">
+      <!-- Web -->
+      <div class="role-card">
+        <div class="role-icon"><i class="fas fa-layer-group"></i></div>
+        <span class="role-subtitle">Web</span>
+        <h3>Hire full stack developers</h3>
+        <p>Hire dedicated full stack developers who own features from database to UI. Ideal for startups and lean teams
+          who need a versatile engineer who can ship independently across the entire product.</p>
+        <div class="role-tags">
+          <span class="role-tag">React</span><span class="role-tag">Node.js</span><span
+            class="role-tag">Next.js</span><span class="role-tag">PostgreSQL</span><span
+            class="role-tag">MongoDB</span><span class="role-tag">REST APIs</span>
+        </div>
+        <a href="contact.html">Hire full stack developers <i class="fas fa-arrow-right"></i></a>
       </div>
-      <button class="schedule-btn">Schedule a Meeting</button>
-    </section>
 
-    <!-- Footer -->
-    <section class="Footer">
-      <div class="footer-bg-clip">
-        <div class="footer-bg-circle"></div>
+      <!-- Frontend -->
+      <div class="role-card">
+        <div class="role-icon"><i class="fas fa-desktop"></i></div>
+        <span class="role-subtitle">Frontend</span>
+        <h3>Hire frontend developers</h3>
+        <p>Hire expert frontend developers who build fast, accessible, and visually polished interfaces. They translate
+          Figma designs into production-ready React, Vue, or Angular code — accurately and on time.</p>
+        <div class="role-tags">
+          <span class="role-tag">React</span><span class="role-tag">Vue.js</span><span
+            class="role-tag">TypeScript</span><span class="role-tag">Tailwind</span><span
+            class="role-tag">Next.js</span><span class="role-tag">Figma</span>
+        </div>
+        <a href="contact.html">Hire frontend developers <i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="footer-container">
-        <div class="footer-left">
-          <div class="footer-icons">
-            <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter" /></a>
-            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
-                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
-            <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
-                src="./assets/images/instagram.webp" alt="instagram" /></a>
-            <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
-                src="./assets/images/facebook2.webp" alt="facebook" /></a>
+
+      <!-- Backend -->
+      <div class="role-card">
+        <div class="role-icon"><i class="fas fa-server"></i></div>
+        <span class="role-subtitle">Backend</span>
+        <h3>Hire backend developers</h3>
+        <p>Hire dedicated backend developers to design and build the APIs, databases, and server logic that keep your
+          application fast, secure, and ready to scale. From REST to microservices.</p>
+        <div class="role-tags">
+          <span class="role-tag">Python</span><span class="role-tag">Node.js</span><span
+            class="role-tag">Java</span><span class="role-tag">Django</span><span class="role-tag">REST APIs</span><span
+            class="role-tag">AWS</span>
+        </div>
+        <a href="contact.html">Hire backend developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Mobile -->
+      <div class="role-card">
+        <div class="role-icon"><i class="fas fa-mobile-alt"></i></div>
+        <span class="role-subtitle">Mobile</span>
+        <h3>Hire mobile app developers</h3>
+        <p>Hire mobile app developers for iOS, Android, and cross-platform apps that users download, enjoy, and keep
+          returning to. Built for performance, App Store compliance, and long-term maintainability.</p>
+        <div class="role-tags">
+          <span class="role-tag">Flutter</span><span class="role-tag">React Native</span><span
+            class="role-tag">Swift</span><span class="role-tag">Kotlin</span><span class="role-tag">SwiftUI</span>
+        </div>
+        <a href="contact.html">Hire mobile app developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- AI / ML -->
+      <div class="role-card">
+        <div class="role-icon"><i class="fas fa-brain"></i></div>
+        <span class="role-subtitle">AI / ML</span>
+        <h3>Hire AI and ML engineers</h3>
+        <p>Hire AI developers and machine learning engineers for LLMs, recommendation engines, computer vision, NLP
+          pipelines, and custom model training. AI that actually works in production — not just in demos.</p>
+        <div class="role-tags">
+          <span class="role-tag">Python</span><span class="role-tag">TensorFlow</span><span
+            class="role-tag">PyTorch</span><span class="role-tag">OpenAI</span><span class="role-tag">LangChain</span>
+        </div>
+        <a href="contact.html">Hire AI / ML engineers <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Generative AI -->
+      <div class="role-card">
+        <div class="role-icon"><i class="fas fa-robot"></i></div>
+        <span class="role-subtitle">Generative AI</span>
+        <h3>Hire generative AI developers</h3>
+        <p>Hire generative AI developers and AI chatbot engineers who build RAG pipelines, conversational agents, and
+          LLM-powered features that users rely on every day — not just marketing experiments.</p>
+        <div class="role-tags">
+          <span class="role-tag">LangChain</span><span class="role-tag">GPT-4</span><span
+            class="role-tag">RAG</span><span class="role-tag">Pinecone</span><span class="role-tag">LlamaIndex</span>
+        </div>
+        <a href="contact.html">Hire generative AI developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Cloud -->
+      <div class="role-card">
+        <div class="role-icon"><i class="fas fa-cloud"></i></div>
+        <span class="role-subtitle">Cloud</span>
+        <h3>Hire cloud and DevOps engineers</h3>
+        <p>Hire DevOps engineers and cloud infrastructure specialists who automate CI/CD pipelines, manage AWS, GCP, and
+          Azure deployments, and keep your systems reliable, observable, and cost-efficient at scale.</p>
+        <div class="role-tags">
+          <span class="role-tag">AWS</span><span class="role-tag">Docker</span><span
+            class="role-tag">Kubernetes</span><span class="role-tag">Terraform</span><span class="role-tag">CI/CD</span>
+        </div>
+        <a href="contact.html">Hire DevOps engineers <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Data -->
+      <div class="role-card">
+        <div class="role-icon"><i class="fas fa-database"></i></div>
+        <span class="role-subtitle">Data</span>
+        <h3>Hire data engineers and analysts</h3>
+        <p>Hire data engineers who build the pipelines, warehouses, and visualization layers that turn raw data into
+          decisions your business can act on — from ingestion to Power BI dashboards.</p>
+        <div class="role-tags">
+          <span class="role-tag">Python</span><span class="role-tag">Spark</span><span
+            class="role-tag">Airflow</span><span class="role-tag">Snowflake</span><span class="role-tag">Power BI</span>
+        </div>
+        <a href="contact.html">Hire data engineers <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Security -->
+      <div class="role-card">
+        <div class="role-icon"><i class="fas fa-shield-alt"></i></div>
+        <span class="role-subtitle">Security</span>
+        <h3>Hire cybersecurity engineers</h3>
+        <p>Hire cybersecurity engineers for threat detection, penetration testing, compliance frameworks (ISO 27001, SOC
+          2, GDPR), and secure architecture. Engineers who keep your systems protected and audit-ready.</p>
+        <div class="role-tags">
+          <span class="role-tag">OWASP</span><span class="role-tag">SIEM</span><span class="role-tag">ISO
+            27001</span><span class="role-tag">Zero Trust</span><span class="role-tag">AWS Security</span>
+        </div>
+        <a href="contact.html">Hire cybersecurity engineers <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- CMS -->
+      <div class="role-card">
+        <div class="role-icon"><i class="fas fa-edit"></i></div>
+        <span class="role-subtitle">CMS</span>
+        <h3>Hire CMS & WordPress developers</h3>
+        <p>Hire WordPress developers and CMS specialists who deliver fast, SEO-optimised sites with custom themes,
+          plugins, and e-commerce integrations — no bloat, no shortcuts, no cookie-cutter designs.</p>
+        <div class="role-tags">
+          <span class="role-tag">WordPress</span><span class="role-tag">WooCommerce</span><span
+            class="role-tag">Shopify</span><span class="role-tag">Webflow</span><span class="role-tag">Contentful</span>
+        </div>
+        <a href="contact.html">Hire WordPress developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Technology Expertise Stats -->
+  <section class="benefits-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">TECHNOLOGY EXPERTISE</span>
+        <h2>80+ technologies. 6 core domains.<br><span class="orange-bg">One trusted development partner.</span></h2>
+        <p>Our Hire developers specialise across the full spectrum of modern technology stacks — from frontend
+          interfaces and backend APIs to AI models, cloud infrastructure, data pipelines, and cybersecurity systems.</p>
+      </div>
+
+      <div class="prod-impact-grid">
+        <div class="benefit-accent-card">
+          <span class="stat-badge">80+</span>
+          <h3>Technologies</h3>
+          <p>Extensive expertise across all modern stacks.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">6</span>
+          <h3>Core Domains</h3>
+          <p>AI, Web, Mobile, Cloud, Data, and Security.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">500+</span>
+          <h3>Vetted Developers</h3>
+          <p>The top 1% talent pool ready to deploy.</p>
+        </div>
+        <div class="benefit-accent-card">
+          <span class="stat-badge">48hr</span>
+          <h3>Avg. Match Time</h3>
+          <p>From request to candidate interview.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Choose your technology (Tabs) -->
+  <section class="prod-section bg-light" id="tech">
+    <div class="prod-section-header">
+      <h2>Choose your <span class="orange-bg">Technology</span></h2>
+      <p>Browse 80+ in-demand technologies and hire dedicated software developers who specialise in your exact stack —
+        from React and Python to Flutter, Kubernetes, and LangChain.</p>
+    </div>
+
+    <div class="tech-search-container">
+      <div class="tech-search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" id="techSearch" placeholder="Search technology...">
+      </div>
+    </div>
+
+    <div class="tech-tabs-modern">
+      <button class="tech-tab-modern active" data-filter="frontend">Frontend</button>
+      <button class="tech-tab-modern" data-filter="backend">Backend</button>
+      <button class="tech-tab-modern" data-filter="mobile">Mobile</button>
+      <button class="tech-tab-modern" data-filter="cloud">Cloud</button>
+      <button class="tech-tab-modern" data-filter="ai-ml">AI / ML</button>
+      <button class="tech-tab-modern" data-filter="gen-ai">Generative AI</button>
+      <button class="tech-tab-modern" data-filter="devops">DevOps</button>
+      <button class="tech-tab-modern" data-filter="cybersecurity">Cybersecurity</button>
+      <button class="tech-tab-modern" data-filter="data">Data & Analytics</button>
+      <button class="tech-tab-modern" data-filter="database">Database</button>
+      <button class="tech-tab-modern" data-filter="cms">CMS</button>
+      <button class="tech-tab-modern" data-filter="crm">CRM</button>
+    </div>
+
+    <div class="tech-grid-modern" id="techGridModern">
+      <!-- React -->
+      <div class="tech-card-modern" data-category="frontend" style="--card-color: #00d8ff;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-react" style="color: #00d8ff;"></i>
+            <h4>React</h4>
           </div>
-          <div class="footer-text">
-            <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
-            <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
-            <p class="footer-email">info@alphabitinfoway.com</p>
+          <span class="tech-card-badge" style="color: #00d8ff; background: rgba(0, 216, 255, 0.1);">FRONTEND</span>
+        </div>
+        <p>Hire React developers for dynamic, component-based SPAs and enterprise web apps.</p>
+        <a href="contact.html">Hire React developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Vue.js -->
+      <div class="tech-card-modern" data-category="frontend" style="--card-color: #00d8ff;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-vuejs" style="color: #00d8ff;"></i>
+            <h4>Vue.js</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00d8ff; background: rgba(0, 216, 255, 0.1);">FRONTEND</span>
+        </div>
+        <p>Hire Vue developers for progressive, lightweight web applications.</p>
+        <a href="contact.html">Hire Vue.js developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Angular -->
+      <div class="tech-card-modern" data-category="frontend" style="--card-color: #00d8ff;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-angular" style="color: #00d8ff;"></i>
+            <h4>Angular</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00d8ff; background: rgba(0, 216, 255, 0.1);">FRONTEND</span>
+        </div>
+        <p>Hire Angular developers for large-scale, enterprise-grade frontends.</p>
+        <a href="contact.html">Hire Angular developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Next.js -->
+      <div class="tech-card-modern" data-category="frontend" style="--card-color: #00d8ff;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-n" style="color: #00d8ff;"></i>
+            <h4>Next.js</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00d8ff; background: rgba(0, 216, 255, 0.1);">FRONTEND</span>
+        </div>
+        <p>Hire Next.js developers for SSR, static sites, and full-stack React.</p>
+        <a href="contact.html">Hire Next.js developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Nuxt.js -->
+      <div class="tech-card-modern" data-category="frontend" style="--card-color: #00d8ff;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-vuejs" style="color: #00d8ff;"></i>
+            <h4>Nuxt.js</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00d8ff; background: rgba(0, 216, 255, 0.1);">FRONTEND</span>
+        </div>
+        <p>Hire Nuxt developers for Vue-powered universal web applications.</p>
+        <a href="contact.html">Hire Nuxt.js developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- TypeScript -->
+      <div class="tech-card-modern" data-category="frontend" style="--card-color: #00d8ff;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-code" style="color: #00d8ff;"></i>
+            <h4>TypeScript</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00d8ff; background: rgba(0, 216, 255, 0.1);">FRONTEND</span>
+        </div>
+        <p>Hire TypeScript developers for type-safe, maintainable codebases.</p>
+        <a href="contact.html">Hire TypeScript developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Tailwind CSS -->
+      <div class="tech-card-modern" data-category="frontend" style="--card-color: #00d8ff;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-css3-alt" style="color: #00d8ff;"></i>
+            <h4>Tailwind CSS</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00d8ff; background: rgba(0, 216, 255, 0.1);">FRONTEND</span>
+        </div>
+        <p>Hire Tailwind developers for rapid, utility-first UI development.</p>
+        <a href="contact.html">Hire Tailwind CSS developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Figma to Code -->
+      <div class="tech-card-modern" data-category="frontend" style="--card-color: #00d8ff;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-figma" style="color: #00d8ff;"></i>
+            <h4>Figma to Code</h4> 
+          </div>
+          <span class="tech-card-badge" style="color: #00d8ff; background: rgba(0, 216, 255, 0.1);">FRONTEND</span>
+        </div>
+        <p>Hire developers who convert Figma designs to pixel-perfect production code.</p>
+        <a href="contact.html">Hire Figma to Code developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Node.js -->
+      <div class="tech-card-modern" data-category="backend" style="--card-color: #339933;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-node-js" style="color: #339933;"></i>
+            <h4>Node.js</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #339933; background: rgba(51, 153, 51, 0.1);">BACKEND</span>
+        </div>
+        <p>Hire Node.js developers for fast APIs, microservices, and real-time apps.</p>
+        <a href="contact.html">Hire Node.js developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Python -->
+      <div class="tech-card-modern" data-category="backend" style="--card-color: #339933;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-python" style="color: #339933;"></i>
+            <h4>Python</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #339933; background: rgba(51, 153, 51, 0.1);">BACKEND</span>
+        </div>
+        <p>Hire Python developers for scalable backends, automation, and data APIs.</p>
+        <a href="contact.html">Hire Python developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Java -->
+      <div class="tech-card-modern" data-category="backend" style="--card-color: #339933;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-java" style="color: #339933;"></i>
+            <h4>Java</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #339933; background: rgba(51, 153, 51, 0.1);">BACKEND</span>
+        </div>
+        <p>Hire Java developers for high-performance, high-scale backend platforms.</p>
+        <a href="contact.html">Hire Java developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- .NET -->
+      <div class="tech-card-modern" data-category="backend" style="--card-color: #339933;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-windows" style="color: #339933;"></i>
+            <h4>.NET</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #339933; background: rgba(51, 153, 51, 0.1);">BACKEND</span>
+        </div>
+        <p>Hire .NET developers for enterprise systems and Microsoft-stack apps.</p>
+        <a href="contact.html">Hire .NET developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Laravel -->
+      <div class="tech-card-modern" data-category="backend" style="--card-color: #339933;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-laravel" style="color: #339933;"></i>
+            <h4>Laravel</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #339933; background: rgba(51, 153, 51, 0.1);">BACKEND</span>
+        </div>
+        <p>Hire Laravel developers for elegant, rapid PHP web application development.</p>
+        <a href="contact.html">Hire Laravel developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Django -->
+      <div class="tech-card-modern" data-category="backend" style="--card-color: #339933;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-python" style="color: #339933;"></i>
+            <h4>Django</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #339933; background: rgba(51, 153, 51, 0.1);">BACKEND</span>
+        </div>
+        <p>Hire Django developers for batteries-included Python web APIs.</p>
+        <a href="contact.html">Hire Django developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- FastAPI -->
+      <div class="tech-card-modern" data-category="backend" style="--card-color: #339933;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-bolt" style="color: #339933;"></i>
+            <h4>FastAPI</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #339933; background: rgba(51, 153, 51, 0.1);">BACKEND</span>
+        </div>
+        <p>Hire FastAPI developers for high-performance Python REST APIs.</p>
+        <a href="contact.html">Hire FastAPI developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- REST & GraphQL -->
+      <div class="tech-card-modern" data-category="backend" style="--card-color: #339933;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-network-wired" style="color: #339933;"></i>
+            <h4>REST & GraphQL</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #339933; background: rgba(51, 153, 51, 0.1);">BACKEND</span>
+        </div>
+        <p>Hire API developers who design and build scalable, secure endpoints.</p>
+        <a href="contact.html">Hire REST & GraphQL developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Flutter -->
+      <div class="tech-card-modern" data-category="mobile" style="--card-color: #61dafb;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-mobile-screen" style="color: #61dafb;"></i>
+            <h4>Flutter</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #61dafb; background: rgba(97, 218, 251, 0.1);">MOBILE</span>
+        </div>
+        <p>Hire Flutter developers for cross-platform iOS and Android apps from one codebase.</p>
+        <a href="contact.html">Hire Flutter developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- React Native -->
+      <div class="tech-card-modern" data-category="mobile" style="--card-color: #61dafb;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-react" style="color: #61dafb;"></i>
+            <h4>React Native</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #61dafb; background: rgba(97, 218, 251, 0.1);">MOBILE</span>
+        </div>
+        <p>Hire React Native developers for JS-powered cross-platform mobile apps.</p>
+        <a href="contact.html">Hire React Native developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Swift / iOS -->
+      <div class="tech-card-modern" data-category="mobile" style="--card-color: #61dafb;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-apple" style="color: #61dafb;"></i>
+            <h4>Swift / iOS</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #61dafb; background: rgba(97, 218, 251, 0.1);">MOBILE</span>
+        </div>
+        <p>Hire iOS developers with Swift and SwiftUI expertise for native iPhone apps.</p>
+        <a href="contact.html">Hire Swift / iOS developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Kotlin / Android -->
+      <div class="tech-card-modern" data-category="mobile" style="--card-color: #61dafb;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-android" style="color: #61dafb;"></i>
+            <h4>Kotlin / Android</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #61dafb; background: rgba(97, 218, 251, 0.1);">MOBILE</span>
+        </div>
+        <p>Hire Android developers with Kotlin and Jetpack Compose expertise.</p>
+        <a href="contact.html">Hire Kotlin / Android developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Cross-platform -->
+      <div class="tech-card-modern" data-category="mobile" style="--card-color: #61dafb;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-mobile-button" style="color: #61dafb;"></i>
+            <h4>Cross-platform</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #61dafb; background: rgba(97, 218, 251, 0.1);">MOBILE</span>
+        </div>
+        <p>Hire cross-platform mobile developers for Expo, Ionic, and Capacitor apps.</p>
+        <a href="contact.html">Hire Cross-platform developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- AWS -->
+      <div class="tech-card-modern" data-category="cloud" style="--card-color: #ff9900;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-aws" style="color: #ff9900;"></i>
+            <h4>AWS</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff9900; background: rgba(255, 153, 0, 0.1);">CLOUD</span>
+        </div>
+        <p>Hire AWS developers to build, deploy, and optimise cloud infrastructure.</p>
+        <a href="contact.html">Hire AWS developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Google Cloud -->
+      <div class="tech-card-modern" data-category="cloud" style="--card-color: #ff9900;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-google" style="color: #ff9900;"></i>
+            <h4>Google Cloud</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff9900; background: rgba(255, 153, 0, 0.1);">CLOUD</span>
+        </div>
+        <p>Hire GCP engineers for cloud-native workloads and data platforms.</p>
+        <a href="contact.html">Hire Google Cloud developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Microsoft Azure -->
+      <div class="tech-card-modern" data-category="cloud" style="--card-color: #ff9900;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-microsoft" style="color: #ff9900;"></i>
+            <h4>Microsoft Azure</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff9900; background: rgba(255, 153, 0, 0.1);">CLOUD</span>
+        </div>
+        <p>Hire Azure developers for Microsoft cloud deployments and integrations.</p>
+        <a href="contact.html">Hire Microsoft Azure developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Docker -->
+      <div class="tech-card-modern" data-category="cloud" style="--card-color: #ff9900;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-docker" style="color: #ff9900;"></i>
+            <h4>Docker</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff9900; background: rgba(255, 153, 0, 0.1);">CLOUD</span>
+        </div>
+        <p>Hire Docker engineers for containerised application packaging and delivery.</p>
+        <a href="contact.html">Hire Docker developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Kubernetes -->
+      <div class="tech-card-modern" data-category="cloud" style="--card-color: #ff9900;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-dharmachakra" style="color: #ff9900;"></i>
+            <h4>Kubernetes</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff9900; background: rgba(255, 153, 0, 0.1);">CLOUD</span>
+        </div>
+        <p>Hire Kubernetes engineers for container orchestration at scale.</p>
+        <a href="contact.html">Hire Kubernetes developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Terraform -->
+      <div class="tech-card-modern" data-category="cloud" style="--card-color: #ff9900;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-cubes" style="color: #ff9900;"></i>
+            <h4>Terraform</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff9900; background: rgba(255, 153, 0, 0.1);">CLOUD</span>
+        </div>
+        <p>Hire Terraform engineers for infrastructure as code and cloud automation.</p>
+        <a href="contact.html">Hire Terraform developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- TensorFlow -->
+      <div class="tech-card-modern" data-category="ai-ml" style="--card-color: #ff6f00;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-brain" style="color: #ff6f00;"></i>
+            <h4>TensorFlow</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff6f00; background: rgba(255, 111, 0, 0.1);">AI / ML</span>
+        </div>
+        <p>Hire TensorFlow engineers to train and deploy production ML models.</p>
+        <a href="contact.html">Hire TensorFlow developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- PyTorch -->
+      <div class="tech-card-modern" data-category="ai-ml" style="--card-color: #ff6f00;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-fire" style="color: #ff6f00;"></i>
+            <h4>PyTorch</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff6f00; background: rgba(255, 111, 0, 0.1);">AI / ML</span>
+        </div>
+        <p>Hire PyTorch developers for deep learning and research-grade AI.</p>
+        <a href="contact.html">Hire PyTorch developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- OpenAI API -->
+      <div class="tech-card-modern" data-category="ai-ml" style="--card-color: #ff6f00;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-robot" style="color: #ff6f00;"></i>
+            <h4>OpenAI API</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff6f00; background: rgba(255, 111, 0, 0.1);">AI / ML</span>
+        </div>
+        <p>Hire OpenAI developers for GPT-4 integration, embeddings, and fine-tuning.</p>
+        <a href="contact.html">Hire OpenAI API developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Scikit-learn -->
+      <div class="tech-card-modern" data-category="ai-ml" style="--card-color: #ff6f00;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-chart-line" style="color: #ff6f00;"></i>
+            <h4>Scikit-learn</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff6f00; background: rgba(255, 111, 0, 0.1);">AI / ML</span>
+        </div>
+        <p>Hire ML engineers for predictive modelling and classical machine learning.</p>
+        <a href="contact.html">Hire Scikit-learn developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Hugging Face -->
+      <div class="tech-card-modern" data-category="ai-ml" style="--card-color: #ff6f00;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-face-smile" style="color: #ff6f00;"></i>
+            <h4>Hugging Face</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff6f00; background: rgba(255, 111, 0, 0.1);">AI / ML</span>
+        </div>
+        <p>Hire NLP developers to fine-tune and deploy open-source transformer models.</p>
+        <a href="contact.html">Hire Hugging Face developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Computer Vision -->
+      <div class="tech-card-modern" data-category="ai-ml" style="--card-color: #ff6f00;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-eye" style="color: #ff6f00;"></i>
+            <h4>Computer Vision</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #ff6f00; background: rgba(255, 111, 0, 0.1);">AI / ML</span>
+        </div>
+        <p>Hire computer vision engineers for image recognition and video AI systems.</p>
+        <a href="contact.html">Hire Computer Vision developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- LangChain -->
+      <div class="tech-card-modern" data-category="gen-ai" style="--card-color: #6c5ce7;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-link" style="color: #6c5ce7;"></i>
+            <h4>LangChain</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #6c5ce7; background: rgba(108, 92, 231, 0.1);">GENERATIVE AI</span>
+        </div>
+        <p>Hire LangChain developers to build LLM-powered apps and agent workflows.</p>
+        <a href="contact.html">Hire LangChain developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- LlamaIndex -->
+      <div class="tech-card-modern" data-category="gen-ai" style="--card-color: #6c5ce7;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-book" style="color: #6c5ce7;"></i>
+            <h4>LlamaIndex</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #6c5ce7; background: rgba(108, 92, 231, 0.1);">GENERATIVE AI</span>
+        </div>
+        <p>Hire LlamaIndex developers for document-grounded RAG pipeline development.</p>
+        <a href="contact.html">Hire LlamaIndex developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- RAG Pipelines -->
+      <div class="tech-card-modern" data-category="gen-ai" style="--card-color: #6c5ce7;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-diagram-project" style="color: #6c5ce7;"></i>
+            <h4>RAG Pipelines</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #6c5ce7; background: rgba(108, 92, 231, 0.1);">GENERATIVE AI</span>
+        </div>
+        <p>Hire RAG developers who build retrieval-augmented generation systems.</p>
+        <a href="contact.html">Hire RAG Pipelines developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Vector Databases -->
+      <div class="tech-card-modern" data-category="gen-ai" style="--card-color: #6c5ce7;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-database" style="color: #6c5ce7;"></i>
+            <h4>Vector Databases</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #6c5ce7; background: rgba(108, 92, 231, 0.1);">GENERATIVE AI</span>
+        </div>
+        <p>Hire vector DB engineers for Pinecone, Weaviate, and ChromaDB setups.</p>
+        <a href="contact.html">Hire Vector Databases developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- AI Chatbots -->
+      <div class="tech-card-modern" data-category="gen-ai" style="--card-color: #6c5ce7;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-comments" style="color: #6c5ce7;"></i>
+            <h4>AI Chatbots</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #6c5ce7; background: rgba(108, 92, 231, 0.1);">GENERATIVE AI</span>
+        </div>
+        <p>Hire AI chatbot developers who build conversational agents users rely on daily.</p>
+        <a href="contact.html">Hire AI Chatbots developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Generative AI -->
+      <div class="tech-card-modern" data-category="gen-ai" style="--card-color: #6c5ce7;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-wand-magic-sparkles" style="color: #6c5ce7;"></i>
+            <h4>Generative AI</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #6c5ce7; background: rgba(108, 92, 231, 0.1);">GENERATIVE AI</span>
+        </div>
+        <p>Hire generative AI developers for LLM integration and content generation features.</p>
+        <a href="contact.html">Hire Generative AI developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- CI/CD Pipelines -->
+      <div class="tech-card-modern" data-category="devops" style="--card-color: #00b8d4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-code-branch" style="color: #00b8d4;"></i>
+            <h4>CI/CD Pipelines</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00b8d4; background: rgba(0, 184, 212, 0.1);">DEVOPS</span>
+        </div>
+        <p>Hire CI/CD engineers to automate build, test, and deploy workflows.</p>
+        <a href="contact.html">Hire CI/CD Pipelines developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- GitHub Actions -->
+      <div class="tech-card-modern" data-category="devops" style="--card-color: #00b8d4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-github" style="color: #00b8d4;"></i>
+            <h4>GitHub Actions</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00b8d4; background: rgba(0, 184, 212, 0.1);">DEVOPS</span>
+        </div>
+        <p>Hire GitHub Actions engineers for automated, event-driven pipelines.</p>
+        <a href="contact.html">Hire GitHub Actions developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Jenkins -->
+      <div class="tech-card-modern" data-category="devops" style="--card-color: #00b8d4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-jenkins" style="color: #00b8d4;"></i>
+            <h4>Jenkins</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00b8d4; background: rgba(0, 184, 212, 0.1);">DEVOPS</span>
+        </div>
+        <p>Hire Jenkins engineers for robust, self-hosted CI/CD automation.</p>
+        <a href="contact.html">Hire Jenkins developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Grafana & Prometheus -->
+      <div class="tech-card-modern" data-category="devops" style="--card-color: #00b8d4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-chart-pie" style="color: #00b8d4;"></i>
+            <h4>Grafana & Prometheus</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00b8d4; background: rgba(0, 184, 212, 0.1);">DEVOPS</span>
+        </div>
+        <p>Hire monitoring engineers for observability, alerting, and dashboards.</p>
+        <a href="contact.html">Hire Grafana & Prometheus developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Ansible -->
+      <div class="tech-card-modern" data-category="devops" style="--card-color: #00b8d4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-redhat" style="color: #00b8d4;"></i>
+            <h4>Ansible</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00b8d4; background: rgba(0, 184, 212, 0.1);">DEVOPS</span>
+        </div>
+        <p>Hire Ansible engineers for configuration management and provisioning.</p>
+        <a href="contact.html">Hire Ansible developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Penetration Testing -->
+      <div class="tech-card-modern" data-category="cybersecurity" style="--card-color: #d32f2f;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-user-secret" style="color: #d32f2f;"></i>
+            <h4>Penetration Testing</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #d32f2f; background: rgba(211, 47, 47, 0.1);">CYBERSECURITY</span>
+        </div>
+        <p>Hire pen testers who identify and remediate security vulnerabilities.</p>
+        <a href="contact.html">Hire Penetration Testing developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- ISO 27001 / SOC 2 -->
+      <div class="tech-card-modern" data-category="cybersecurity" style="--card-color: #d32f2f;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-file-shield" style="color: #d32f2f;"></i>
+            <h4>ISO 27001 / SOC 2</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #d32f2f; background: rgba(211, 47, 47, 0.1);">CYBERSECURITY</span>
+        </div>
+        <p>Hire compliance engineers to achieve and maintain security certifications.</p>
+        <a href="contact.html">Hire ISO 27001 / SOC 2 developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- SIEM & Threat Detection -->
+      <div class="tech-card-modern" data-category="cybersecurity" style="--card-color: #d32f2f;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-shield-halved" style="color: #d32f2f;"></i>
+            <h4>SIEM & Threat Detection</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #d32f2f; background: rgba(211, 47, 47, 0.1);">CYBERSECURITY</span>
+        </div>
+        <p>Hire SIEM engineers for real-time threat monitoring and incident response.</p>
+        <a href="contact.html">Hire SIEM & Threat Detection developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Zero Trust Security -->
+      <div class="tech-card-modern" data-category="cybersecurity" style="--card-color: #d32f2f;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-lock" style="color: #d32f2f;"></i>
+            <h4>Zero Trust Security</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #d32f2f; background: rgba(211, 47, 47, 0.1);">CYBERSECURITY</span>
+        </div>
+        <p>Hire security architects who design identity-first, zero-trust infrastructure.</p>
+        <a href="contact.html">Hire Zero Trust Security developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Cloud Security -->
+      <div class="tech-card-modern" data-category="cybersecurity" style="--card-color: #d32f2f;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-cloud-showers-heavy" style="color: #d32f2f;"></i>
+            <h4>Cloud Security</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #d32f2f; background: rgba(211, 47, 47, 0.1);">CYBERSECURITY</span>
+        </div>
+        <p>Hire cloud security engineers for AWS, Azure, and GCP security hardening.</p>
+        <a href="contact.html">Hire Cloud Security developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Apache Spark -->
+      <div class="tech-card-modern" data-category="data" style="--card-color: #00bcd4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-bolt-lightning" style="color: #00bcd4;"></i>
+            <h4>Apache Spark</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00bcd4; background: rgba(0, 188, 212, 0.1);">DATA & ANALYTICS</span>
+        </div>
+        <p>Hire Spark engineers for large-scale distributed data processing.</p>
+        <a href="contact.html">Hire Apache Spark developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Apache Airflow -->
+      <div class="tech-card-modern" data-category="data" style="--card-color: #00bcd4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-wind" style="color: #00bcd4;"></i>
+            <h4>Apache Airflow</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00bcd4; background: rgba(0, 188, 212, 0.1);">DATA & ANALYTICS</span>
+        </div>
+        <p>Hire Airflow engineers for workflow orchestration and pipeline scheduling.</p>
+        <a href="contact.html">Hire Apache Airflow developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Power BI / Tableau -->
+      <div class="tech-card-modern" data-category="data" style="--card-color: #00bcd4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-chart-bar" style="color: #00bcd4;"></i>
+            <h4>Power BI / Tableau</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00bcd4; background: rgba(0, 188, 212, 0.1);">DATA & ANALYTICS</span>
+        </div>
+        <p>Hire BI developers who build dashboards that drive real business decisions.</p>
+        <a href="contact.html">Hire Power BI / Tableau developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Snowflake -->
+      <div class="tech-card-modern" data-category="data" style="--card-color: #00bcd4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-regular fa-snowflake" style="color: #00bcd4;"></i>
+            <h4>Snowflake</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00bcd4; background: rgba(0, 188, 212, 0.1);">DATA & ANALYTICS</span>
+        </div>
+        <p>Hire Snowflake engineers for cloud data warehousing and analytics.</p>
+        <a href="contact.html">Hire Snowflake developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- dbt -->
+      <div class="tech-card-modern" data-category="data" style="--card-color: #00bcd4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-layer-group" style="color: #00bcd4;"></i>
+            <h4>dbt</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00bcd4; background: rgba(0, 188, 212, 0.1);">DATA & ANALYTICS</span>
+        </div>
+        <p>Hire dbt developers for data transformation, modelling, and testing.</p>
+        <a href="contact.html">Hire dbt developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Apache Kafka -->
+      <div class="tech-card-modern" data-category="data" style="--card-color: #00bcd4;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-stream" style="color: #00bcd4;"></i>
+            <h4>Apache Kafka</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00bcd4; background: rgba(0, 188, 212, 0.1);">DATA & ANALYTICS</span>
+        </div>
+        <p>Hire Kafka engineers for real-time event streaming and data pipelines.</p>
+        <a href="contact.html">Hire Apache Kafka developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- PostgreSQL -->
+      <div class="tech-card-modern" data-category="database" style="--card-color: #4caf50;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-database" style="color: #4caf50;"></i>
+            <h4>PostgreSQL</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #4caf50; background: rgba(76, 175, 80, 0.1);">DATABASE</span>
+        </div>
+        <p>Hire PostgreSQL developers for reliable, feature-rich relational databases.</p>
+        <a href="contact.html">Hire PostgreSQL developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- MongoDB -->
+      <div class="tech-card-modern" data-category="database" style="--card-color: #4caf50;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-leaf" style="color: #4caf50;"></i>
+            <h4>MongoDB</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #4caf50; background: rgba(76, 175, 80, 0.1);">DATABASE</span>
+        </div>
+        <p>Hire MongoDB developers for flexible, document-oriented NoSQL databases.</p>
+        <a href="contact.html">Hire MongoDB developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Redis -->
+      <div class="tech-card-modern" data-category="database" style="--card-color: #4caf50;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-server" style="color: #4caf50;"></i>
+            <h4>Redis</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #4caf50; background: rgba(76, 175, 80, 0.1);">DATABASE</span>
+        </div>
+        <p>Hire Redis engineers for high-performance caching and message queuing.</p>
+        <a href="contact.html">Hire Redis developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- MySQL -->
+      <div class="tech-card-modern" data-category="database" style="--card-color: #4caf50;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-database" style="color: #4caf50;"></i>
+            <h4>MySQL</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #4caf50; background: rgba(76, 175, 80, 0.1);">DATABASE</span>
+        </div>
+        <p>Hire MySQL developers for open-source relational database development.</p>
+        <a href="contact.html">Hire MySQL developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Firebase -->
+      <div class="tech-card-modern" data-category="database" style="--card-color: #4caf50;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-fire" style="color: #4caf50;"></i>
+            <h4>Firebase</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #4caf50; background: rgba(76, 175, 80, 0.1);">DATABASE</span>
+        </div>
+        <p>Hire Firebase developers for real-time mobile and web backend services.</p>
+        <a href="contact.html">Hire Firebase developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Elasticsearch -->
+      <div class="tech-card-modern" data-category="database" style="--card-color: #4caf50;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-magnifying-glass" style="color: #4caf50;"></i>
+            <h4>Elasticsearch</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #4caf50; background: rgba(76, 175, 80, 0.1);">DATABASE</span>
+        </div>
+        <p>Hire Elasticsearch engineers for full-text search and log analytics.</p>
+        <a href="contact.html">Hire Elasticsearch developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- WordPress -->
+      <div class="tech-card-modern" data-category="cms" style="--card-color: #8e24aa;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-wordpress" style="color: #8e24aa;"></i>
+            <h4>WordPress</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #8e24aa; background: rgba(142, 36, 170, 0.1);">CMS</span>
+        </div>
+        <p>Hire WordPress developers for custom themes, plugins, and WooCommerce stores.</p>
+        <a href="contact.html">Hire WordPress developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Shopify -->
+      <div class="tech-card-modern" data-category="cms" style="--card-color: #8e24aa;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-shopify" style="color: #8e24aa;"></i>
+            <h4>Shopify</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #8e24aa; background: rgba(142, 36, 170, 0.1);">CMS</span>
+        </div>
+        <p>Hire Shopify developers for e-commerce stores and custom Liquid themes.</p>
+        <a href="contact.html">Hire Shopify developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Webflow -->
+      <div class="tech-card-modern" data-category="cms" style="--card-color: #8e24aa;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-laptop-code" style="color: #8e24aa;"></i>
+            <h4>Webflow</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #8e24aa; background: rgba(142, 36, 170, 0.1);">CMS</span>
+        </div>
+        <p>Hire Webflow developers for design-led, no-code web experiences.</p>
+        <a href="contact.html">Hire Webflow developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Contentful -->
+      <div class="tech-card-modern" data-category="cms" style="--card-color: #8e24aa;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-boxes-stacked" style="color: #8e24aa;"></i>
+            <h4>Contentful</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #8e24aa; background: rgba(142, 36, 170, 0.1);">CMS</span>
+        </div>
+        <p>Hire Contentful developers for headless CMS and omnichannel content delivery.</p>
+        <a href="contact.html">Hire Contentful developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Strapi -->
+      <div class="tech-card-modern" data-category="cms" style="--card-color: #8e24aa;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-rocket" style="color: #8e24aa;"></i>
+            <h4>Strapi</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #8e24aa; background: rgba(142, 36, 170, 0.1);">CMS</span>
+        </div>
+        <p>Hire Strapi developers for open-source headless CMS development.</p>
+        <a href="contact.html">Hire Strapi developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Salesforce -->
+      <div class="tech-card-modern" data-category="crm" style="--card-color: #00838f;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-salesforce" style="color: #00838f;"></i>
+            <h4>Salesforce</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00838f; background: rgba(0, 131, 143, 0.1);">CRM</span>
+        </div>
+        <p>Hire Salesforce developers for enterprise CRM customisation and integrations.</p>
+        <a href="contact.html">Hire Salesforce developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- HubSpot -->
+      <div class="tech-card-modern" data-category="crm" style="--card-color: #00838f;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-brands fa-hubspot" style="color: #00838f;"></i>
+            <h4>HubSpot</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00838f; background: rgba(0, 131, 143, 0.1);">CRM</span>
+        </div>
+        <p>Hire HubSpot developers for marketing automation and CRM workflows.</p>
+        <a href="contact.html">Hire HubSpot developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Zoho CRM -->
+      <div class="tech-card-modern" data-category="crm" style="--card-color: #00838f;">
+        <div class="tech-card-header">
+          <div class="tech-card-title">
+            <i class="fa-solid fa-z" style="color: #00838f;"></i>
+            <h4>Zoho CRM</h4>
+          </div>
+          <span class="tech-card-badge" style="color: #00838f; background: rgba(0, 131, 143, 0.1);">CRM</span>
+        </div>
+        <p>Hire Zoho developers for SMB CRM setup, automation, and customisation.</p>
+        <a href="contact.html">Hire Zoho CRM developers <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alphabit -->
+  <section class="section-padding" style="background: #ffffff; overflow: hidden;">
+    <div class="container-box">
+      <div class="why-choose-retail">
+        <!-- Left Column: Circular Image -->
+        <div class="choose-left">
+          <span class="badge"
+            style="background: rgba(113, 67, 254, 0.1); color: var(--primary-purple); border-color: rgba(113, 67, 254, 0.2);">   
+            Alphabit Infoway</span>
+          <h2 style="font-size: 44px; line-height: 1.2; font-weight: 900; color: #1e293b; margin: 10px 0 20px 0;">
+            What makes our developers <span
+              style="background: linear-gradient(135deg, var(--primary-purple), var(--primary-orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">different</span>
+          </h2>
+          <p style="color: #64748b; margin-bottom: 40px;">There's no shortage of development companies. Here's what
+            actually sets Alphabit Infoway apart — and our clients keep coming back.</p>
+
+          <div class="circular-img-wrapper">
+            <img src="./assets/images/Technology/3.webp" alt="Choose Us">
+          </div>
+          <div class="floating-play-btn">
+            <i class="fas fa-play"></i>
           </div>
         </div>
-        <div class="footer-right"><img src="./assets/images/AI Model.webp" alt="Robot" /></div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
-        <div class="footer-links">
-          <a href="#">AGENCY</a><a href="#">CAREER</a><a href="#">PRIVACY</a><a href="#">TERMS &amp; CONDITION</a>
+
+        <!-- Right Column: Guarantee Grid -->
+        <div class="choose-right">
+          <!-- Box 1 -->
+          <div class="guarantee-box">
+            <div class="semicircle-icon"><i class="fas fa-check-double"></i></div>
+            <h3>Pre-vetted developers</h3>
+            <p>Skilled developers tested for coding, problem-solving, and communication.</p>
+          </div>
+          <!-- Box 2 -->
+          <div class="guarantee-box">
+            <div class="semicircle-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Start in 48 hours</h3>
+            <p>Get matched developers onboarded quickly without long hiring delays.</p>
+          </div>
+          <!-- Box 3 -->
+          <div class="guarantee-box">
+            <div class="semicircle-icon"><i class="fas fa-users"></i></div>
+            <h3>Seamless team integration</h3>
+            <p>Our developers work with your tools, workflows, and daily standups.</p>
+          </div>
+          <!-- Box 4 -->
+          <div class="guarantee-box">
+            <div class="semicircle-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>7-day risk-free trial</h3>
+            <p>Try before you commit. Easy replacement if the fit isn’t right.</p>
+          </div>
+          <!-- Box 5 -->
+          <div class="guarantee-box">
+            <div class="semicircle-icon"><i class="fas fa-file-contract"></i></div>
+            <h3>Full IP protection</h3>
+            <p>Signed NDA and complete ownership of your code and data.</p>
+          </div>
+          <!-- Box 6 -->
+          <div class="guarantee-box">
+            <div class="semicircle-icon"><i class="fas fa-clock"></i></div>
+            <h3>Transparent work tracking</h3>
+            <p>Task-level timesheets keep every hour and deliverable visible.</p>
+          </div>
         </div>
       </div>
-    </section>
-    <script src="./assets/js/config.js"></script>
-    <script src="./assets/js/main.js"></script>
-  </div>
+    </div>
+  </section>
+  <!-- Pricing -->
+  <section class="prod-section bg-light" id="pricing">
+    <div class="prod-section-header">
+      <span class="product-badge-modern">ENGAGEMENT MODELS</span>
+      <h2>Transparent pricing. <br><span class="orange-bg">No surprise invoices.</span></h2>
+      <p>Choose the model that matches your project, team size, and budget. All plans include dedicated support and
+        weekly progress reports.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Hourly -->
+      <div class="pricing-card">
+        <h3 class="pricing-title">Hourly</h3>
+        <div class="pricing-price">$15 <span style="font-size: 0.4em; color: #666; font-weight: 500;">/ hr</span></div>
+        <span class="pricing-subtitle">Starting from — billed monthly</span>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check-circle"></i> Flexible, pay-as-you-go</li>
+          <li><i class="fas fa-check-circle"></i> Scale hours up or down anytime</li>
+          <li><i class="fas fa-check-circle"></i> Transparent, task-level time logs</li>
+          <li><i class="fas fa-check-circle"></i> Great for ongoing maintenance tasks</li>
+          <li><i class="fas fa-check-circle"></i> No minimum commitment</li>
+          <li><i class="fas fa-check-circle"></i> 8-hour response guarantee</li>
+        </ul>
+        <a href="contact.html" class="pricing-btn btn-outline">Get started</a>
+      </div>
+      <!-- Dedicated -->
+      <div class="pricing-card popular">
+        <div class="pricing-badge">Most popular</div>
+        <h3 class="pricing-title">Dedicated (Full-time)</h3>
+        <div class="pricing-price">$2,000 <span style="font-size: 0.4em; color: #666; font-weight: 500;">/ mo</span>
+        </div>
+        <span class="pricing-subtitle">Starting from — 160 hrs/month</span>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check-circle"></i> Dedicated developer, full-time focus</li>
+          <li><i class="fas fa-check-circle"></i> Works in your timezone</li>
+          <li><i class="fas fa-check-circle"></i> Joins your Slack, standups & sprints</li>
+          <li><i class="fas fa-check-circle"></i> 7-day risk-free trial included</li>
+          <li><i class="fas fa-check-circle"></i> Signed NDA before work begins</li>
+          <li><i class="fas fa-check-circle"></i> Replace at no cost if not the right fit</li>
+        </ul>
+        <a href="contact.html" class="pricing-btn btn-solid">Hire a developer</a>
+      </div>
+      <!-- Project -->
+      <div class="pricing-card">
+        <h3 class="pricing-title">Project-based</h3>
+        <div class="pricing-price">Custom</div>
+        <span class="pricing-subtitle">Fixed scope & budget — tailored quote</span>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check-circle"></i> Fixed scope & agreed budget</li>
+          <li><i class="fas fa-check-circle"></i> Milestone-based delivery</li>
+          <li><i class="fas fa-check-circle"></i> Clear timelines upfront</li>
+          <li><i class="fas fa-check-circle"></i> Full source code delivered</li>
+          <li><i class="fas fa-check-circle"></i> Perfect for MVPs and defined builds</li>
+          <li><i class="fas fa-check-circle"></i> Payroll & compliance handled by us</li>
+        </ul>
+        <a href="contact.html" class="pricing-btn btn-outline">Get a Quote</a>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 20px; font-size: 0.85em; color: #666;">* Final pricing depends on
+      developer seniority, tech stack, and project scope. All prices exclude taxes.</p>
+  </section>
+
+  <!-- How It Works (Process) -->
+  <section class="how-it-works-full" id="how-it-works">
+    <div class="container-fluid">
+      <div class="prod-section-header">
+        <span class="product-badge-modern" style="background: rgba(255,255,255,0.1); color: #fff;">PROCESS</span>
+        <h2>From inquiry to first commit in <span class="orange-bg">4 steps</span></h2>
+        <p>We've made the hiring process as simple and transparent as possible — no lengthy back-and-forth, no
+          surprises.</p>
+      </div>
+
+      <div class="prod-process-grid">
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 01</div>
+          <h3>Share your requirements</h3>
+          <p>Tell us your tech stack, team size, and preferred hiring model. A real consultant reads your brief and
+            responds within 8 hours — not an automated template, a genuine reply.</p>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 02</div>
+          <h3>We shortlist the right developers</h3>
+          <p>Within 24 hours, we hand-pick 2–3 developer profiles that match your needs. You get a skills overview,
+            portfolio samples, and availability for each candidate.</p>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 03</div>
+          <h3>Interview and choose your developer</h3>
+          <p>Talk to your shortlisted candidates. Ask technical questions, walk through your product, evaluate their
+            communication style. You always make the final hiring decision.</p>
+        </div>
+        <div class="prod-process-item">
+          <div class="prod-process-tag">Step 04</div>
+          <h3>Onboard and start shipping</h3>
+          <p>We handle contracts, tool access, and onboarding. Your developer joins your team and can start contributing
+            within 48 hours of the signed agreement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section class="industry-section-v4">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">INDUSTRIES WE SERVE</span>
+        <h2>We've built for every <span class="orange-bg">industry that matters</span></h2>
+        <p>Our developers bring real domain knowledge to the table — not just code. They understand your users, your
+          workflows, and your compliance requirements from day one.</p>
+      </div>
+
+      <div class="premium-stages-grid">
+        <div class="stage-card stage-card-1">
+          <div class="stage-icon"><i class="fas fa-heartbeat"></i></div>
+          <h4>Healthcare & Medtech</h4>
+          <p>HIPAA-compliant systems, patient portals, telemedicine apps, EHR integrations, and medical software built
+            by engineers who understand clinical workflows.</p>
+        </div>
+        <div class="stage-card stage-card-2">
+          <div class="stage-icon"><i class="fas fa-university"></i></div>
+          <h4>Fintech & Banking</h4>
+          <p>Payment gateways, lending platforms, fraud detection, trading dashboards, and regulatory-compliant
+            applications with security baked in.</p>
+        </div>
+        <div class="stage-card stage-card-3">
+          <div class="stage-icon"><i class="fas fa-shopping-cart"></i></div>
+          <h4>eCommerce & Retail</h4>
+          <p>Custom storefronts, inventory systems, recommendation engines, loyalty programmes, and omnichannel
+            platforms that convert visitors.</p>
+        </div>
+        <div class="stage-card stage-card-4">
+          <div class="stage-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h4>EdTech & e-Learning</h4>
+          <p>LMS platforms, interactive course builders, live classroom tools, and student analytics dashboards that
+            improve learning outcomes.</p>
+        </div>
+        <div class="stage-card stage-card-5">
+          <div class="stage-icon"><i class="fas fa-truck"></i></div>
+          <h4>Logistics & Supply Chain</h4>
+          <p>Fleet tracking, route optimisation, warehouse management, last-mile delivery solutions, and real-time
+            operations dashboards.</p>
+        </div>
+        <div class="stage-card stage-card-1">
+          <div class="stage-icon"><i class="fas fa-building"></i></div>
+          <h4>Real Estate & PropTech</h4>
+          <p>Property listing platforms, virtual tours, CRM tools for agents, mortgage calculators, and smart building
+            applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="comparison-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">ALPHABIT VS OTHERS</span>
+        <h2 class="vs-heading-modern">
+          How we compare to other hiring options
+        </h2>
+        <p>Not all developer hiring solutions are equal. Here's an honest look at what sets us apart.</p>
+      </div>
+
+      <div class="prod-table-wrapper">
+        <table class="prod-table">
+          <thead>
+            <tr>
+              <th>What matters to you</th>
+              <th class="prod-highlight">Alphabit Infoway</th>
+              <th>Freelancers</th>
+              <th>Local agencies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Pre-vetted developers</strong></td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Rigorous screening</td>
+              <td><i class="fas fa-times-circle"></i> Self-reported skills</td>
+              <td><i class="fas fa-minus-circle"></i> Varies by agency</td>
+            </tr>
+            <tr>
+              <td><strong>Dedicated account support</strong></td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> Account manager included</td>
+              <td><i class="fas fa-times-circle"></i> You're on your own</td>
+              <td><i class="fas fa-minus-circle"></i> Sometimes</td>
+            </tr>
+            <tr>
+              <td><strong>IP & NDA protection</strong></td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> On day one</td>
+              <td><i class="fas fa-times-circle"></i> Rarely enforced</td>
+              <td><i class="fas fa-check-circle"></i> Usually yes</td>
+            </tr>
+            <tr>
+              <td><strong>Risk-free trial period</strong></td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> 7-day trial included</td>
+              <td><i class="fas fa-times-circle"></i> No</td>
+              <td><i class="fas fa-times-circle"></i> No</td>
+            </tr>
+            <tr>
+              <td><strong>Time to start</strong></td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> 48 hours</td>
+              <td><i class="fas fa-minus-circle"></i> 1–3 weeks</td>
+              <td><i class="fas fa-times-circle"></i> 4–8 weeks</td>
+            </tr>
+            <tr>
+              <td><strong>Replace if not a fit</strong></td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> No questions asked</td>
+              <td><i class="fas fa-times-circle"></i> Restart from scratch</td>
+              <td><i class="fas fa-minus-circle"></i> Sometimes possible</td>
+            </tr>
+            <tr>
+              <td><strong>Transparent pricing</strong></td>
+              <td class="prod-highlight"><i class="fas fa-check-circle"></i> No hidden fees</td>
+              <td><i class="fas fa-minus-circle"></i> Inconsistent</td>
+              <td><i class="fas fa-times-circle"></i> Often inflated</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">CLIENT TESTIMONIALS</span>
+        <h2>What our clients <span class="orange-bg">are saying</span></h2>
+      </div>
+
+      <style>
+        .testimonial-marquee-wrapper {
+          overflow: hidden;
+          width: 100vw;
+          margin-left: calc(-50vw + 50%);
+          position: relative;
+          padding: 20px 0;
+          background: transparent;
+        }
+        .testimonial-marquee-wrapper::before,
+        .testimonial-marquee-wrapper::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          width: 150px;
+          height: 100%;
+          z-index: 2;
+          pointer-events: none;
+        }
+        .testimonial-marquee-wrapper::before {
+          left: 0;
+          background: linear-gradient(to right, #fff, transparent);
+        }
+        .testimonial-marquee-wrapper::after {
+          right: 0;
+          background: linear-gradient(to left, #fff, transparent);
+        }
+        .testimonial-marquee-track {
+          display: flex;
+          gap: 30px;
+          width: max-content;
+          animation: scroll-testimonials 30s linear infinite;
+          padding: 10px 15px;
+        }
+        .testimonial-marquee-track:hover {
+          animation-play-state: paused;
+        }
+        .testimonial-marquee-track .testimonial-card {
+          width: 400px;
+          flex-shrink: 0;
+          white-space: normal;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        @keyframes scroll-testimonials {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(calc(-50% - 15px)); }
+        }
+        @media (max-width: 768px) {
+          .testimonial-marquee-track .testimonial-card {
+            width: 300px;
+          }
+        }
+      </style>
+      <div class="testimonial-marquee-wrapper">
+        <div class="testimonial-marquee-track">
+          <!-- ORIGINAL SET -->
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <div class="testimonial-content">"We hired a full stack developer through Alphabit Infoway for a 6-month
+              product build. The developer was technically sharp, communicated proactively, and felt like a genuine part
+              of our team. We've already extended the contract and are planning to hire two more."</div>
+            <div class="testimonial-author"><span class="author-name">James M.</span><span class="author-info">CTO,
+                GrowthStack — USA</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <div class="testimonial-content">"We needed a Flutter developer on short notice for a client deadline.
+              Alphabit Infoway had someone onboarded within 48 hours. The developer understood our brief immediately and
+              delivered the module two days ahead of schedule. Highly recommended."</div>
+            <div class="testimonial-author"><span class="author-name">Simone R.</span><span class="author-info">Product
+                Manager, MediCore — UK</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <div class="testimonial-content">"The hourly model worked perfectly for us. We used Alphabit developers for
+              backend API work on our fintech platform and had full transparency via time logs. The code quality was
+              excellent and the team was always responsive. We'll be back."</div>
+            <div class="testimonial-author"><span class="author-name">Ananya P.</span><span class="author-info">Founder,
+                FinFlow — India</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <div class="testimonial-content">"Their AI/ML team built a recommendation engine for our e-learning platform
+              that increased course completion rates by 34%. What impressed me most was that they asked the right
+              questions upfront and pushed back when our initial approach wasn't optimal."</div>
+            <div class="testimonial-author"><span class="author-name">David K.</span><span class="author-info">CEO,
+                EduSpark — Canada</span></div>
+          </div>
+          <!-- DUPLICATE SET -->
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <div class="testimonial-content">"We hired a full stack developer through Alphabit Infoway for a 6-month
+              product build. The developer was technically sharp, communicated proactively, and felt like a genuine part
+              of our team. We've already extended the contract and are planning to hire two more."</div>
+            <div class="testimonial-author"><span class="author-name">James M.</span><span class="author-info">CTO,
+                GrowthStack — USA</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <div class="testimonial-content">"We needed a Flutter developer on short notice for a client deadline.
+              Alphabit Infoway had someone onboarded within 48 hours. The developer understood our brief immediately and
+              delivered the module two days ahead of schedule. Highly recommended."</div>
+            <div class="testimonial-author"><span class="author-name">Simone R.</span><span class="author-info">Product
+                Manager, MediCore — UK</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <div class="testimonial-content">"The hourly model worked perfectly for us. We used Alphabit developers for
+              backend API work on our fintech platform and had full transparency via time logs. The code quality was
+              excellent and the team was always responsive. We'll be back."</div>
+            <div class="testimonial-author"><span class="author-name">Ananya P.</span><span class="author-info">Founder,
+                FinFlow — India</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <div class="testimonial-content">"Their AI/ML team built a recommendation engine for our e-learning platform
+              that increased course completion rates by 34%. What impressed me most was that they asked the right
+              questions upfront and pushed back when our initial approach wasn't optimal."</div>
+            <div class="testimonial-author"><span class="author-name">David K.</span><span class="author-info">CEO,
+                EduSpark — Canada</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust & Recognition -->
+  <section class="prod-section bg-light">
+    <div class="prod-section-header">
+      <h2>Built on trust, <span class="orange-bg">validated by results</span></h2>
+    </div>
+    <div class="trust-badges-grid">
+      <div class="trust-badge-item">
+        <i class="fas fa-trophy"></i>
+        <h4>Top Developer 2024</h4>
+        <p>clutch.co - 4.9 / 5 Rating, 100+ reviews</p>
+      </div>
+      <div class="trust-badge-item">
+        <i class="fas fa-certificate"></i>
+        <h4>ISO 9001</h4>
+        <p>Quality certified operations</p>
+      </div>
+      <div class="trust-badge-item">
+        <i class="fas fa-user-shield"></i>
+        <h4>GDPR Compliant</h4>
+        <p>Data Privacy assured</p>
+      </div>
+      <div class="trust-badge-item">
+        <i class="fas fa-file-signature"></i>
+        <h4>100% IP Yours</h4>
+        <p>Signed NDA on Day One</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="prod-section">
+      <div class="prod-section-header">
+        <span class="product-badge-modern">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-accordion-wrap">
+        <details class="faq-item" open>
+          <summary>How quickly can I hire a developer?</summary>
+          <div class="faq-answer">
+            <p>Most clients get matched within 48–72 hours. Niche roles like ML or blockchain may take up to a week. Once you approve someone, they can start in 1–2 days.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>What do I need to share to get started?</summary>
+          <div class="faq-answer">
+            <p>Just tell us what you're building, the tech stack (if you know it), seniority level, timeline, and rough budget. No detailed spec needed — a plain-language description is enough.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How much does it cost?</summary>
+          <div class="faq-answer">
+            <p>Junior developers run $20–$60/hr, mid-level $60–$100/hr, seniors $100–$180/hr, and specialists up to $200/hr. That's a fraction of what an in-house hire costs when you factor in salary, benefits, and taxes.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Are there hidden fees?</summary>
+          <div class="faq-answer">
+            <p>None. We charge a flat platform fee that's disclosed upfront. No recruitment commissions, no onboarding charges, no exit penalties.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>What engagement models do you offer?</summary>
+          <div class="faq-answer">
+            <p>Three options — dedicated developer (long-term), fixed-scope project (defined deliverables), or hourly (on-demand). Not sure which fits? Tell us your goal and we'll recommend one.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I hire a full team?</summary>
+          <div class="faq-answer">
+            <p>Yes. We can build you a complete squad — frontend, backend, QA, DevOps, and a tech lead. Start small and scale up whenever you're ready.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>What if the developer doesn't work out?</summary>
+          <div class="faq-answer">
+            <p>We'll replace them free of charge within the first two weeks, no questions asked. You'll also have a real account manager — not a support ticket — to flag issues anytime.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I judge quality if I'm not technical?</summary>
+          <div class="faq-answer">
+            <p>Watch how they communicate. Do they ask smart questions? Flag problems early? Explain things clearly? Those are better signals than any coding test. We can also arrange a senior engineer review if you ever want a second opinion.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Do your developers use AI tools?</summary>
+          <div class="faq-answer">
+            <p>Yes — and that's a good thing. The best developers use tools like GitHub Copilot to move faster. What we test for is whether they can catch AI mistakes and deliver code that holds up in production, not just in a demo.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>What stacks can I hire for?</summary>
+          <div class="faq-answer">
+            <p>React, Vue, Next.js, Node.js, Python, Go, Java, Flutter, React Native, AWS, GCP, Azure — and specialists in AI/ML, blockchain, cybersecurity, and more. If you don't see it, just ask.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How do you handle time zones?</summary>
+          <div class="faq-answer">
+            <p>We match developers to your working hours so there's at least 4 hours of daily overlap. They use your existing tools — Slack, Jira, Notion — and fit into your workflow, not the other way around.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Pages -->
+  <section class="prod-section bg-light">
+    <div class="prod-section-header">
+      <h2>Related Developer Pages</h2>
+    </div>
+    <div class="related-pages-grid">
+      <a href="contact.html" class="related-card">
+        <span class="related-subtitle">Hire Developer / Angular</span>
+        <h3>Hire Angular Developer</h3>
+        <p>Enterprise-grade Angular Applications built by certified Angular specialists.</p>
+      </a>
+      <a href="contact.html" class="related-card">
+        <span class="related-subtitle">Hire Developer / React</span>
+        <h3>Hire React Developers</h3>
+        <p>Build fast, component-based web apps and SPAs with experienced React Developers.</p>
+      </a>
+      <a href="contact.html" class="related-card">
+        <span class="related-subtitle">Hire Developer / Vue.js</span>
+        <h3>Hire Vue.js Developer</h3>
+        <p>Progressive, lightweight web apps powered by Vue.js experts.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-final-section">
+    <div class="prod-section">
+      <div class="prod-cta-banner">
+        <h2>Ready to hire your <span>next developer?</span></h2>
+        <p>Let's talk about what you're building. No commitment, no hard sell — just a quick conversation to see if
+          we're the right fit for your team.</p>
+        <div class="product-hero-actions">
+          <a href="contact.html" class="prod-btn-primary">Get a free consultation <i class="fas fa-arrow-right"
+              style="margin-left: 8px;"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="Footer">
+    <div class="footer-bg-clip">
+      <div class="footer-bg-circle"></div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-icons">
+          <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+          <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+              src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+          <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img src="./assets/images/instagram.webp"
+              alt="instagram" /></a>
+          <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+              src="./assets/images/facebook2.webp" alt="facebook" /></a>
+        </div>
+        <div class="footer-text">
+          <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
+          <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+          <p class="footer-email">info@alphabitinfoway.com</p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <img src="./assets/images/AI Model.webp" alt="Robot" />
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+      <div class="footer-links">
+        <a href="#">AGENCY</a>
+        <a href="#">CAREER</a>
+        <a href="#">PRIVACY</a>
+        <a href="#">TERMS &amp; CONDITION</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/main.js"></script>
   <script src="./assets/js/scroll-animate.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.onload = () => { document.getElementById('preloader').style.display = 'none'; };
+
+    // Tech Tabs Script
+    const techSearch = document.getElementById('techSearch');
+    const techCards = document.querySelectorAll('.tech-card-modern');
+    const techTabs = document.querySelectorAll('.tech-tab-modern');
+
+    function filterTechs(category) {
+      const query = techSearch ? techSearch.value.toLowerCase() : '';
+      
+      techTabs.forEach(t => t.classList.remove('active'));
+      const activeTab = document.querySelector(`[data-filter="${category}"]`);
+      if (activeTab) activeTab.classList.add('active');
+
+      techCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const cardCategory = card.dataset.category;
+        
+        const matchesCategory = category === 'all' || cardCategory === category;
+        const matchesQuery = text.includes(query);
+
+        if (matchesCategory && matchesQuery) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    if(techSearch) {
+      techSearch.addEventListener('input', () => {
+        const activeTab = document.querySelector('.tech-tab-modern.active')?.dataset.filter || 'all';
+        filterTechs(activeTab);
+      });
+    }
+
+    techTabs.forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        filterTechs(e.target.dataset.filter);
+      });
+    });
+
+    // Initialize default active tab on load
+    const defaultActiveTab = document.querySelector('.tech-tab-modern.active')?.dataset.filter || 'frontend';
+    filterTechs(defaultActiveTab);
+  </script>
 </body>
 
 </html>
-

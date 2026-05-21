@@ -330,15 +330,96 @@ const toggle = document.querySelector('.menu-toggle');
 const navbar = document.querySelector('.navbar');
 
 if (toggle && navbar) {
+  // Helper to close all open submenus
+  const closeAllSubmenus = () => {
+    document.querySelectorAll('.submenu-panel').forEach(panel => {
+      panel.classList.remove('slide-in');
+    });
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      dropdown.classList.remove('active');
+    });
+    navbar.style.overflowY = 'auto';
+  };
+
   toggle.addEventListener('click', () => {
-    toggle.classList.toggle('active');
+    const isActive = toggle.classList.toggle('active');
     navbar.classList.toggle('active');
+    document.documentElement.classList.toggle('nav-active', isActive);
+    document.body.classList.toggle('nav-active', isActive);
+    
+    if (!isActive) {
+      closeAllSubmenus();
+    }
   });
 
+  // Mobile Submenu slide-in toggle
   document.querySelectorAll('.dropdown-toggle').forEach(btn => {
     btn.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const parentDropdown = btn.closest('.dropdown');
+        const submenuPanel = parentDropdown.querySelector('.submenu-panel');
+        
+        if (submenuPanel) {
+          parentDropdown.classList.add('active');
+          submenuPanel.classList.add('slide-in');
+          navbar.style.overflowY = 'hidden'; // Lock navbar scrolling
+          navbar.scrollTo(0, 0); // Scroll navbar to top so submenu drawer starts from top
+        }
+      }
+    });
+  });
+
+  // Mobile Submenu back button
+  document.querySelectorAll('.back-btn').forEach(backBtn => {
+    backBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      btn.closest('.dropdown').classList.toggle('active');
+      e.stopPropagation();
+      
+      const panel = backBtn.closest('.submenu-panel');
+      const parentDropdown = backBtn.closest('.dropdown');
+      
+      if (panel) {
+        panel.classList.remove('slide-in');
+      }
+      if (parentDropdown) {
+        parentDropdown.classList.remove('active');
+      }
+      
+      const openPanels = document.querySelectorAll('.submenu-panel.slide-in');
+      if (openPanels.length === 0) {
+        navbar.style.overflowY = 'auto';
+      }
+    });
+  });
+
+  // Desktop Split-Pane Mega Menu Hover/Click switching
+  document.querySelectorAll('.sidebar-item').forEach(item => {
+    const handleTabSwitch = () => {
+      if (window.innerWidth > 768) {
+        const tabId = item.getAttribute('data-tab');
+        const container = item.closest('.mega-menu-container');
+        if (!container) return;
+        
+        container.querySelectorAll('.sidebar-item').forEach(sib => sib.classList.remove('active'));
+        item.classList.add('active');
+        
+        container.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+        const targetPane = container.querySelector(`#${tabId}`);
+        if (targetPane) {
+          targetPane.classList.add('active');
+        }
+      }
+    };
+    
+    item.addEventListener('mouseenter', handleTabSwitch);
+    item.addEventListener('click', (e) => {
+      if (window.innerWidth > 768) {
+        e.preventDefault();
+        handleTabSwitch();
+      }
     });
   });
 
@@ -347,7 +428,21 @@ if (toggle && navbar) {
     if (!toggle.contains(e.target) && !navbar.contains(e.target)) {
       toggle.classList.remove('active');
       navbar.classList.remove('active');
+      document.documentElement.classList.remove('nav-active');
+      document.body.classList.remove('nav-active');
+      closeAllSubmenus();
     }
+  });
+
+  // Close menu and unlock scroll when clicking any link inside the navbar that isn't a dropdown toggle
+  navbar.querySelectorAll('a:not(.dropdown-toggle)').forEach(link => {
+    link.addEventListener('click', () => {
+      toggle.classList.remove('active');
+      navbar.classList.remove('active');
+      document.documentElement.classList.remove('nav-active');
+      document.body.classList.remove('nav-active');
+      closeAllSubmenus();
+    });
   });
 }
 
