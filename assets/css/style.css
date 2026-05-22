@@ -7457,7 +7457,7 @@ div.container header a.contact-btn {
 
 .insights-section {
   max-width: 1200px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Sora", sans-serif;
   margin: 160px auto;
   padding: 0 24px;
 }
@@ -7859,17 +7859,96 @@ div.container header a.contact-btn {
 }
 
 .page-num.active {
-  .feed-grid {
+  background: #7143fe !important;
+  color: #fff !important;
+  border-color: #7143fe !important;
+}
+
+/* Responsive adjustments for Blog Page */
+@media (max-width: 1024px) {
+  .feed-wrapper {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .primary-title {
+  .feed-intro {
+    max-width: 100%;
+  }
+
+  .feed-description {
+    max-width: 100%;
+  }
+
+  .feed-heading {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 991px) {
+  .insights-top {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feed-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .feed-pagination {
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .insights-heading {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .insights-heading {
     font-size: 32px;
   }
 
   .insights-section {
-    margin-top: 80px;
-    padding: 0 20px;
+    margin: 100px auto 40px auto;
+    padding: 0 16px;
+  }
+
+  .insight-feed {
+    padding: 0 16px;
+  }
+
+  .feed-heading {
+    font-size: 32px;
+  }
+
+  .primary-article {
+    height: 320px;
+    padding: 24px;
+  }
+
+  .primary-title {
+    font-size: 22px;
+  }
+
+  .primary-arrow {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  .feed-card {
+    border-radius: 24px;
+    padding: 8px;
+  }
+
+  .feed-thumb {
+    height: 200px;
+    border-radius: 18px;
   }
 }
 
@@ -8572,7 +8651,7 @@ img.fade-in.loaded {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  font-size: 16px;
+  font-size:32px;
   font-weight: 600;
   color: #111;
 }
@@ -8589,7 +8668,7 @@ img.fade-in.loaded {
 }
 
 .ab-values-description {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.7;
   color: #7a7a7a;
   max-width: 460px;
@@ -8945,7 +9024,7 @@ img.fade-in.loaded {
 }
 
 .ab-why-subtitle {
-  font-size: 15px;
+  font-size: 16px;
   color: #666;
   max-width: 380px;
   line-height: 1.6;
