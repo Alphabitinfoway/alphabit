@@ -27,6 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver(callback, options);
 
     elementsToAnimate.forEach((el) => {
+        // Skip elements inside header / navbar
+        if (el.closest('header') || el.closest('.navbar')) {
+            return;
+        }
         // Add the base class for initial state
         el.classList.add("scroll-animate");
         // Start observing

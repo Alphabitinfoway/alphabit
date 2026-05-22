@@ -34,6 +34,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script src="./assets/js/config.js"></script>
 </head>
 
@@ -47,9 +48,12 @@
     </div>
   </div>
   <div class="container">
+  
     <header>
       <div class="logo-img">
-        <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+        <a href="./">
+          <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+        </a>
       </div>
       <div class="menu-toggle">
         <span></span>
@@ -59,57 +63,204 @@
       <nav class="navbar">
         <h6><a href="./">Home</a></h6>
         <h6 class="dropdown">
-          <a href="services" class="dropdown-toggle">Services</a>
-          <ul class="dropdown-menu">
-            <li><a href="ai-machine-learning.html">AI & Machine Learning</a></li>
-            <li><a href="services">Cyber Security & Compliance</a></li>
-            <li><a href="services">Full Stack Web Development</a></li>
-            <li><a href="services">Mobile App & Product Design</a></li>
-          </ul>
+          <a href="services" class="dropdown-toggle">Services <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
+          <div class="submenu-panel">
+            <div class="panel-header">
+              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+              <span class="panel-title">Services</span>
+            </div>
+            <ul class="submenu-list">
+              <li><a href="ai-machine-learning"><i class="fa-solid fa-brain"></i> AI & Machine Learning</a></li>
+              <li><a href="cyber-security"><i class="fa-solid fa-shield-halved"></i> Cyber Security & Compliance</a></li>
+              <li><a href="ai-full-stack-development-services"><i class="fa-solid fa-code"></i> Full Stack Web Development</a></li>
+              <li><a href="ai-mobile-app-development-services"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App & Product Design</a></li>
+            </ul>
+          </div>
         </h6>
-        <h6><a href="#products">Products</a></h6>
         <h6 class="dropdown">
-          <a href="Technology" class="dropdown-toggle">Technology</a>
-          <ul class="dropdown-menu mega-list-dropdown" style="max-height: 70vh; overflow-y: auto;">
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Artificial Intelligence</li>
-                        <li><a href="ai-development-technologies.html">AI Development</a></li>
-                        <li><a href="machine-learning-technologies.html">Machine Learning</a></li>
-                        <li><a href="generative-ai-technologies.html">Generative AI</a></li>
-                        <li><a href="ai-and-chatbot-technologies.html">AI Chatbots</a></li>
-
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Web Technologies</li>
-                        <li><a href="modern-front-end-technologies.html">Frontend Development</a></li>
-                        <li><a href="backend-technologies.html">Backend Development</a></li>
-                        <li><a href="full-stack-development-technologies.html">Full Stack</a></li>
-
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Mobile Technologies</li>
-                        <li><a href="ios-development-technologies.html">iOS Development</a></li>
-                        <li><a href="android-development-technologies.html">Android Development</a></li>
-                        <li><a href="cross-platform-development-technologies.html">Cross Platform Development</a></li>
-
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cloud & DevOps</li>
-                        <li><a href="cloud-platform-technologies.html">Cloud Platforms</a></li>
-                        <li><a href="devops-ci-cd-technologies.html">DevOps & CI/CD</a></li>
-                        <li><a href="cloud-deployment-technologies.html">Cloud Deployment</a></li>
-
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Data & Analytics</li>
-                        <li><a href="data-engineering-technologies.html">Data Engineering</a></li>
-                        <li><a href="data-visualization-technologies.html">Data Visualization</a></li>
-                        <li><a href="data-processing-technologies.html">Data Processing</a></li>
-
-                        <li class="dropdown-category" style="font-weight: 700; color: #ff5722; padding: 10px 20px 5px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">Cyber Security</li>
-                        <li><a href="security-solutions-technologies.html">Security Solutions</a></li>
-                        <li><a href="security-compliance-technologies.html">Compliance</a></li>
-                    </ul>
+          <a href="./#products" class="dropdown-toggle">Products <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
+          <div class="submenu-panel">
+            <div class="panel-header">
+              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+              <span class="panel-title">Products</span>
+            </div>
+            <ul class="submenu-list">
+              <li><a href="genie-dial"><i class="fa-solid fa-phone"></i> Genie Dial</a></li>
+              <li><a href="skill-studio"><i class="fa-solid fa-graduation-cap"></i> Skill Studio</a></li>
+              <li><a href="dhiread"><i class="fa-solid fa-book-open"></i> DhiRead</a></li>
+              <li><a href="dhisure"><i class="fa-solid fa-square-check"></i> Dhisure</a></li>
+              <li><a href="dhihealth"><i class="fa-solid fa-heart-pulse"></i> Dhihealth</a></li>
+              <li><a href="dhiyodha-network"><i class="fa-solid fa-circle-nodes"></i> Dhiyodha Network</a></li>
+            </ul>
+          </div>
+        </h6>
+        <h6 class="dropdown">
+          <a href="Technology" class="dropdown-toggle">Technology <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
+          <div class="submenu-panel mega-panel">
+            <div class="panel-header">
+              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+              <span class="panel-title">Technology</span>
+            </div>
+            <div class="mega-menu-container">
+              <div class="mega-menu-sidebar">
+                <button class="sidebar-item active" data-tab="ai-tab">
+                  <i class="fa-solid fa-brain"></i>
+                  <span>Artificial Intelligence</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+                <button class="sidebar-item" data-tab="web-tab">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <span>Web Technologies</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+                <button class="sidebar-item" data-tab="mobile-tab">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <span>Mobile Technologies</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+                <button class="sidebar-item" data-tab="cloud-tab">
+                  <i class="fa-solid fa-cloud"></i>
+                  <span>Cloud & DevOps</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+                <button class="sidebar-item" data-tab="data-tab">
+                  <i class="fa-solid fa-chart-pie"></i>
+                  <span>Data & Analytics</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+                <button class="sidebar-item" data-tab="security-tab">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <span>Cyber Security</span>
+                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+              </div>
+              <div class="mega-menu-content">
+                <!-- AI Pane -->
+                <div class="tab-pane active" id="ai-tab">
+                  <div class="pane-category-title">Artificial Intelligence</div>
+                  <div class="pane-grid">
+                    <a href="ai-development-technologies" class="pane-item">
+                      <span class="item-title">AI Development</span>
+                      <span class="item-desc">Custom AI & Intelligent agents development</span>
+                    </a>
+                    <a href="machine-learning-technologies" class="pane-item">
+                      <span class="item-title">Machine Learning</span>
+                      <span class="item-desc">Predictive modeling & pattern recognition</span>
+                    </a>
+                    <a href="generative-ai-technologies" class="pane-item">
+                      <span class="item-title">Generative AI</span>
+                      <span class="item-desc">LLMs, GPT integration & custom content generation</span>
+                    </a>
+                    <a href="ai-and-chatbot-technologies" class="pane-item">
+                      <span class="item-title">AI Chatbots</span>
+                      <span class="item-desc">Conversational UI & customer service automation</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Web Pane -->
+                <div class="tab-pane" id="web-tab">
+                  <div class="pane-category-title">Web Technologies</div>
+                  <div class="pane-grid">
+                    <a href="modern-front-end-technologies" class="pane-item">
+                      <span class="item-title">Frontend Development</span>
+                      <span class="item-desc">Modern interactive web user interfaces</span>
+                    </a>
+                    <a href="backend-technologies" class="pane-item">
+                      <span class="item-title">Backend Development</span>
+                      <span class="item-desc">Scalable server-side logic & APIs</span>
+                    </a>
+                    <a href="full-stack-development-technologies" class="pane-item">
+                      <span class="item-title">Full Stack</span>
+                      <span class="item-desc">End-to-end web product architecture</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Mobile Pane -->
+                <div class="tab-pane" id="mobile-tab">
+                  <div class="pane-category-title">Mobile Technologies</div>
+                  <div class="pane-grid">
+                    <a href="ios-development-technologies" class="pane-item">
+                      <span class="item-title">iOS Development</span>
+                      <span class="item-desc">Native Swift & Objective-C applications</span>
+                    </a>
+                    <a href="android-development-technologies" class="pane-item">
+                      <span class="item-title">Android Development</span>
+                      <span class="item-desc">Native Kotlin & Java mobile apps</span>
+                    </a>
+                    <a href="cross-platform-development-technologies" class="pane-item">
+                      <span class="item-title">Cross Platform Development</span>
+                      <span class="item-desc">React Native & Flutter solutions</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Cloud Pane -->
+                <div class="tab-pane" id="cloud-tab">
+                  <div class="pane-category-title">Cloud & DevOps</div>
+                  <div class="pane-grid">
+                    <a href="cloud-platform-technologies" class="pane-item">
+                      <span class="item-title">Cloud Platforms</span>
+                      <span class="item-desc">AWS, Azure & Google Cloud solutions</span>
+                    </a>
+                    <a href="devops-ci-cd-technologies" class="pane-item">
+                      <span class="item-title">DevOps & CI/CD</span>
+                      <span class="item-desc">Continuous integration & automation pipelines</span>
+                    </a>
+                    <a href="cloud-deployment-technologies" class="pane-item">
+                      <span class="item-title">Cloud Deployment</span>
+                      <span class="item-desc">Safe & scalable containerized orchestration</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Data Pane -->
+                <div class="tab-pane" id="data-tab">
+                  <div class="pane-category-title">Data & Analytics</div>
+                  <div class="pane-grid">
+                    <a href="data-engineering-technologies" class="pane-item">
+                      <span class="item-title">Data Engineering</span>
+                      <span class="item-desc">Data pipeline architecture & warehouse setups</span>
+                    </a>
+                    <a href="data-visualization-technologies" class="pane-item">
+                      <span class="item-title">Data Visualization</span>
+                      <span class="item-desc">Dashboards & advanced charts rendering</span>
+                    </a>
+                    <a href="data-processing-technologies" class="pane-item">
+                      <span class="item-title">Data Processing</span>
+                      <span class="item-desc">Big data analytics & real-time streams</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Security Pane -->
+                <div class="tab-pane" id="security-tab">
+                  <div class="pane-category-title">Cyber Security</div>
+                  <div class="pane-grid">
+                    <a href="security-solutions-technologies" class="pane-item">
+                      <span class="item-title">Security Solutions</span>
+                      <span class="item-desc">Threat detection & penetration protection</span>
+                    </a>
+                    <a href="security-compliance-technologies" class="pane-item">
+                      <span class="item-title">Compliance</span>
+                      <span class="item-desc">Standards auditing (SOC2, ISO, GDPR)</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </h6>
         <h6><a href="about">About</a></h6>
-        <h6><a href="hire-dedicated-developer.html">Hire Developers</a></h6>
+        <h6><a href="hire-dedicated-developer">Hire Developers</a></h6>
         <h6 class="dropdown">
-          <a href="#" class="dropdown-toggle">Insights</a>
-          <ul class="dropdown-menu">
-            <li><a href="blog">Blog</a></li>
-            <li><a href="career">Career</a></li>
-          </ul>
+          <a href="#" class="dropdown-toggle">Insights <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
+          <div class="submenu-panel">
+            <div class="panel-header">
+              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+              <span class="panel-title">Insights</span>
+            </div>
+            <ul class="submenu-list">
+              <li><a href="blog"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
+              <li><a href="career"><i class="fa-solid fa-briefcase"></i> Career</a></li>
+            </ul>
+          </div>
         </h6>
         <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
       </nav>
