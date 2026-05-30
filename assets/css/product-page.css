@@ -81,7 +81,7 @@
   padding: 8px 20px;
   background: rgba(113, 67, 254, 0.08);
   color: var(--prod-primary);
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -91,7 +91,7 @@
 }
 
 .product-hero-title {
-  font-size: clamp(38px, 6vw, 64px);
+  font-size: clamp(32px, 6vw, 46px);
   font-weight: 800;
   line-height: 1.15;
   color: var(--prod-dark);
@@ -107,7 +107,7 @@
 
 .product-hero-subtitle {
   display: block;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--prod-primary);
   margin-top: -15px;
@@ -115,7 +115,7 @@
 }
 
 .product-hero-desc {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--prod-gray);
   line-height: 1.7;
   max-width: 700px;
@@ -1232,7 +1232,7 @@
 /* Comparison Table Redesign */
 .comparison-section {
   background: #f8fafc;
-  padding: 100px 0;
+ 
 }
 
 .prod-highlight-col {
@@ -1714,7 +1714,7 @@
 
 /* Integration Section - Premium Marquee */
 .integration-section {
-  padding: 100px 0;
+
   background: #ffffff;
   position: relative;
   overflow: hidden;
@@ -1809,11 +1809,7 @@
   background: linear-gradient(to left, #fff, transparent);
 }
 
-/* Comparison Table SaaS Look */
-.comparison-section {
-  background: #f8fafc;
-  padding: 100px 0;
-}
+
 
 .vs-heading-modern {
   font-size: 48px;
@@ -1959,7 +1955,7 @@
 /* Testimonials Section Styles */
 .testimonials-section {
   background: #ffffff;
-  padding-top: 100px;
+ 
 }
 
 .testimonial-grid {

@@ -14,13 +14,13 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://alphabitinfoway.com/hire-dedicated-developer" />
+  <meta property="og:url" content="https://alphabitinfoway.com/hire-developers" />
   <meta property="og:title" content="Hire Developers — Pre-Vetted & Ready in 48hrs" />
   <meta property="og:description"
     content="Hire developers without the wait. Pre-vetted engineers onboarded in 48 hrs. 7-day trial, 100% IP yours." />
   <meta property="og:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
 
-  <link rel="canonical" href="https://alphabitinfoway.com/hire-dedicated-developer" />
+  <link rel="canonical" href="https://alphabitinfoway.com/hire-developers" />
 
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/product-page.css" />
@@ -82,29 +82,36 @@
       background: #fff;
       padding: 30px;
       border-radius: 20px;
-      border: 1px solid #eee;
-      transition: all 0.3s ease;
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       display: flex;
       flex-direction: column;
     }
 
     .role-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-      border-color: var(--prod-secondary);
+      box-shadow: 0 20px 40px rgba(113, 67, 254, 0.06);
+      border-color: #7143fe;
     }
 
     .role-icon {
-      width: 60px;
-      height: 60px;
-      border-radius: 15px;
-      background: rgba(255, 87, 34, 0.1);
-      color: var(--prod-secondary);
+      width: 55px;
+      height: 55px;
+      border-radius: 12px;
+      background: rgba(113, 67, 254, 0.08);
+      color: #7143fe;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 24px;
+      font-size: 22px;
       margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .role-card:hover .role-icon {
+      background: #7143fe;
+      color: #fff;
+      transform: scale(1.05);
     }
 
     .role-card h3 {
@@ -114,7 +121,7 @@
     }
 
     .role-card .role-subtitle {
-      color: var(--prod-secondary);
+      color: #7143fe;
       font-weight: 600;
       font-size: 0.85em;
       text-transform: uppercase;
@@ -139,12 +146,20 @@
     }
 
     .role-tag {
-      background: #f0f4f8;
-      color: #444;
+      background: #f8fafc;
+      color: #64748b;
+      border: 1px solid #e2e8f0;
       padding: 4px 10px;
       border-radius: 6px;
       font-size: 0.8em;
       font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .role-card:hover .role-tag {
+      border-color: rgba(113, 67, 254, 0.2);
+      color: #7143fe;
+      background: #fff;
     }
 
     .role-card a {
@@ -238,17 +253,18 @@
       background: #fff;
       padding: 24px;
       border-radius: 12px;
-      border: 1px solid #eee;
-      border-left: 4px solid var(--card-color, var(--prod-primary));
-      transition: all 0.3s ease;
+      border: 1px solid #e2e8f0 !important;
+      border-left: 4px solid #cbd5e1 !important;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       display: flex;
       flex-direction: column;
     }
 
     .tech-card-modern:hover {
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      border-color: rgba(113, 67, 254, 0.2) !important;
+      border-left-color: #7143fe !important;
+      box-shadow: 0 12px 30px rgba(113, 67, 254, 0.06) !important;
       transform: translateY(-4px);
-      border-color: var(--prod-secondary);
     }
 
     .tech-card-header {
@@ -268,6 +284,12 @@
       font-size: 1.4em;
       width: 24px;
       text-align: center;
+      color: #64748b !important;
+      transition: color 0.3s ease;
+    }
+
+    .tech-card-modern:hover .tech-card-title i {
+      color: #7143fe !important;
     }
 
     .tech-card-title h4 {
@@ -284,6 +306,16 @@
       letter-spacing: 0.8px;
       padding: 4px 8px;
       border-radius: 6px;
+      color: #64748b !important;
+      background: #f1f5f9 !important;
+      border: 1px solid #e2e8f0 !important;
+      transition: all 0.3s ease;
+    }
+
+    .tech-card-modern:hover .tech-card-badge {
+      color: #7143fe !important;
+      background: rgba(113, 67, 254, 0.08) !important;
+      border-color: rgba(113, 67, 254, 0.2) !important;
     }
 
     .tech-card-modern p {
@@ -295,7 +327,7 @@
     }
 
     .tech-card-modern a {
-      color: var(--prod-primary);
+      color: #64748b !important;
       font-weight: 600;
       text-decoration: none;
       font-size: 0.9em;
@@ -305,8 +337,8 @@
       transition: color 0.3s;
     }
 
-    .tech-card-modern a:hover {
-      color: var(--prod-secondary);
+    .tech-card-modern:hover a {
+      color: #7143fe !important;
     }
 
     .pricing-grid {
@@ -322,20 +354,20 @@
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
       position: relative;
-      border: 1px solid #eee;
-      transition: all 0.3s ease;
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       display: flex;
       flex-direction: column;
     }
 
     .pricing-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      border-color: var(--prod-secondary);
+      box-shadow: 0 20px 40px rgba(113, 67, 254, 0.08);
+      border-color: #7143fe;
     }
 
     .pricing-card.popular {
-      border: 2px solid var(--prod-secondary);
+      border: 2px solid #7143fe;
     }
 
     .pricing-badge {
@@ -343,7 +375,7 @@
       top: -15px;
       left: 50%;
       transform: translateX(-50%);
-      background: var(--prod-secondary);
+      background: #7143fe;
       color: #fff;
       padding: 5px 20px;
       border-radius: 20px;
@@ -570,9 +602,8 @@
       <div class="loader-text">Loading Talent Pool...</div>
     </div>
   </div>
-
-  <!-- Header -->
-          <header>
+  <div class="container">
+            <header>
       <div class="logo-img">
         <a href="./">
           <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
@@ -593,7 +624,7 @@
               <span class="panel-title">Services</span>
             </div>
             <ul class="submenu-list">
-              <li><a href="ai-machine-learning"><i class="fa-solid fa-brain"></i> AI & Machine Learning</a></li>
+              <li><a href="ai-machine-learning"><i class="fa-solid fa-brain"0></i> AI & Machine Learning</a></li>
               <li><a href="cyber-security"><i class="fa-solid fa-shield-halved"></i> Cyber Security & Compliance</a></li>
               <li><a href="ai-full-stack-development-services"><i class="fa-solid fa-code"></i> Full Stack Web Development</a></li>
               <li><a href="ai-mobile-app-development-services"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App & Product Design</a></li>
@@ -771,7 +802,7 @@
           </div>
         </h6>
         <h6><a href="about">About</a></h6>
-        <h6><a href="hire-dedicated-developer">Hire Developers</a></h6>
+        <h6><a href="hire-developers">Hire Developers</a></h6>
         <h6 class="dropdown">
           <a href="#" class="dropdown-toggle">Insights <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
           <div class="submenu-panel">
@@ -789,6 +820,200 @@
       </nav>
       <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
     </header>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- <div class="hero-bg"></div> -->
+      <div class="hero-container">
+        <div class="hero-text">
+          <h2 class="greeting word">
+            <span class="hand">👋🏼</span>Hello Innovator,
+          </h2>
+        </div>
+        <div class="hero-text2">
+          <h6 class="greeting2">
+            <span class="word">I'm</span>
+            <span class="word">Your</span>
+          </h6>
+        </div>
+        <div class="hero-text3">
+          <h6 class="greeting2">
+            <span class="orange-text word">AI</span>
+            <span class="word">Buddy</span>
+          </h6>
+        </div>
+        <div class="hero-text4">
+          <h2 class="greeting word">From</h2>
+        </div>
+        <div class="hero-text5">
+          <h2 class="greeting4">
+            <span class="bracket left-bracket">[</span>
+            <span class="greeting3">Alphabit <br />Infoway</span>
+            <span class="bracket right-bracket">]</span>
+          </h2>
+        </div>
+        <img src="./assets/images/AI Model.webp" alt="Alphabit Infoway Hero" class="hero-image" />
+      </div>
+    </section>
+    <!-- Counting-number Section -->
+    <section class="counting-section">
+      <div class="counting-item">
+        <h1 class="counting-number" data-target="10" data-suffix="+">0+</h1>
+        <h6 class="counting-text">YEARS OF EXPERIENCE</h6>
+      </div>
+      <div class="counting-item">
+        <h1 class="counting-number" data-target="100" data-suffix="+">0+</h1>
+        <h6 class="counting-text">PROJECTS COMPLETED</h6>
+      </div>
+      <div class="counting-item">
+        <h1 class="counting-number" data-target="60" data-suffix="K+">0</h1>
+        <h6 class="counting-text">PRODUCT USERS</h6>
+      </div>
+    </section>
+    <!-- Solutions Section -->
+    <section class="solutions-section">
+      <div class="title-header">
+        <h2 class="section-title">EXPLORE THE FULL RANGE</h2>
+        <h2 class="section-title">
+          OF <span class="orange-bg">SOLUTIONS</span> WE DELIVER.
+        </h2>
+      </div>
+      <div class="solution-card card1">
+        <div class="solution-icon icon1">
+          <img src="./assets/images/Advance AI.webp" alt="Solution 1 Icon" loading="lazy" />
+        </div>
+        <h3 class="solution-title">Advance AI</h3>
+      </div>
+      <div class="solution-card card2">
+        <div class="solution-icon icon2">
+          <img src="./assets/images/AI Software_Development.webp" alt="Solution 2 Icon" loading="lazy" />
+        </div>
+        <h3 class="solution-title">AI Software Development</h3>
+      </div>
+      <div class="solution-card card3">
+        <div class="solution-icon icon3">
+          <img src="./assets/images/AI Mobile Application_Development.webp" alt="Solution 2 Icon" loading="lazy" />
+        </div>
+        <h3 class="solution-title title3">AI Mobile Application Development</h3>
+      </div>
+      <div class="solution-card card5">
+        <div class="solution-icon icon4">
+          <img src="./assets/images/AI Product_Engineering.webp" alt="Solution 2 Icon" loading="lazy" />
+        </div>
+        <h3 class="solution-title">AI Product Engineering</h3>
+      </div>
+      <div class="solution-card card4">
+        <div class="solution-icon icon5">
+          <img src="./assets/images/Data Services.webp" alt="Solution 2 Icon" loading="lazy" />
+        </div>
+        <h3 class="solution-title">Data Services</h3>
+      </div>
+      <div class="solutions-image-wrapper">
+        <img src="./assets/images/hero.webp" alt="Alphabit Infoway Hero" class="solutions-image" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- New Premium Services Section -->
+    <section class="premium-services-section">
+      <div class="container-box">
+        <div class="title-header" style="text-align: center; margin-bottom: 60px;">
+          <h2 class="section-title">OUR AI DEVELOPMENT &</h2>
+          <h2 class="section-title">
+            AUTOMATION <span class="orange-bg">SERVICES</span>
+          </h2>
+          <p class="section-description-premium" style="margin-top: 20px;">We offer end-to-end AI software development
+            services tailored to your business needs, helping you unlock the full potential of artificial intelligence.
+          </p>
+        </div>
+
+        <div class="premium-services-grid">
+          <!-- Card 1: AI & Machine Learning -->
+          <div class="premium-service-card">
+            <div class="card-top">
+              <div class="card-icon-box purple-bg">
+                <img src="./assets/images/industry/Frame.webp" alt="AI icon"
+                  style="width: 24px; filter: brightness(0) invert(1);">
+              </div>
+            </div>
+            <div class="card-image-placeholder">
+              <div class="image-mockup mockup-purple">
+               <img src="./assets/images/Artboard 2wded.jpg" alt="AI & Machine Learning">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>AI & Machine Learning Services</h3>
+              <p>We provide advanced AI and Machine Learning development services to help businesses automate processes,
+                gain predictive insights, and improve decision-making.</p>
+              <a href="./ai-machine-learning.html" class="explore-link">Explore AI Solutions →</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Full Stack Development -->
+          <div class="premium-service-card">
+            <div class="card-top">
+              <div class="card-icon-box blue-bg">
+                <img src="./assets/images/industry/Frame(4).webp" alt="Code icon"
+                  style="width: 24px; filter: brightness(0) invert(1);">
+              </div>
+            </div>
+            <div class="card-image-placeholder">
+              <div class="image-mockup mockup-blue">
+                <img src="./assets/images/home/Artboard 2.webp" alt="Full Stack Development">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Full Stack Development</h3>
+              <p>Our full stack development services deliver scalable, high-performance web applications using modern
+                technologies from frontend to backend.</p>
+              <a href="./ai-full-stack-development-services.html" class="explore-link blue-text">Build Scalable Solutions →</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Cyber Security & Compliance -->
+          <div class="premium-service-card">
+            <div class="card-top">
+              <div class="card-icon-box green-bg">
+                <img src="./assets/images/industry/Frame(5).webp" alt="Security icon"
+                  style="width: 24px; filter: brightness(0) invert(1);">
+              </div>
+            </div>
+            <div class="card-image-placeholder">
+              <div class="image-mockup mockup-green">
+                <img src="./assets/images/home/Artboard 3.webp" alt="Cyber Security & Compliance">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Cyber Security & Compliance</h3>
+              <p>Protect your business with our AI-powered cybersecurity and compliance services. We help safeguard your
+                systems and detect threats in real-time.</p>
+              <a href="./cyber-security.html" class="explore-link green-text">Secure Your Business →</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Mobile App Development -->
+          <div class="premium-service-card">
+            <div class="card-top">
+              <div class="card-icon-box orange-bg-service">
+                <img src="./assets/images/industry/Frame(6).webp" alt="Mobile icon"
+                  style="width: 24px; filter: brightness(0) invert(1);">
+              </div>
+            </div>
+            <div class="card-image-placeholder">
+              <div class="image-mockup mockup-orange">
+                <img src="./assets/images/home/Artboard 4.webp" alt="Mobile App Development"> 
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Mobile App Development</h3>
+              <p>We offer AI-powered mobile app development services for Android and iOS, delivering fast, scalable, and
+                user-friendly applications.</p>
+              <a href="./ai-mobile-app-development-services.html" class="explore-link orange-text">Launch Your App →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
 
   <!-- Hero Section -->
   <section class="product-hero-split light">
@@ -1044,7 +1269,7 @@
     <div class="prod-section">
       <div class="prod-section-header">
         <span class="product-badge-modern">TECHNOLOGY EXPERTISE</span>
-        <h2>80+ technologies. 6 core domains.<br><span class="orange-bg">One trusted development partner.</span></h2>
+        <h2>80+ technologies. 6 core domains.<br>One<span class="orange-bg"> trusted </span>development partner.</h2>
         <p>Our Hire developers specialise across the full spectrum of modern technology stacks — from frontend
           interfaces and backend APIs to AI models, cloud infrastructure, data pipelines, and cybersecurity systems.</p>
       </div>
@@ -2006,7 +2231,7 @@
   <section class="prod-section bg-light" id="pricing">
     <div class="prod-section-header">
       <span class="product-badge-modern">ENGAGEMENT MODELS</span>
-      <h2>Transparent pricing. <br><span class="orange-bg">No surprise invoices.</span></h2>
+      <h2>Transparent pricing. <br>No<span class="orange-bg"> surprise </span>invoices.</h2>
       <p>Choose the model that matches your project, team size, and budget. All plans include dedicated support and
         weekly progress reports.</p>
     </div>
@@ -2108,7 +2333,7 @@
     <div class="prod-section">
       <div class="prod-section-header">
         <span class="product-badge-modern">INDUSTRIES WE SERVE</span>
-        <h2>We've built for every <span class="orange-bg">industry that matters</span></h2>
+        <h2>We've built for every <span class="orange-bg">industry </span>that matters</h2>
         <p>Our developers bring real domain knowledge to the table — not just code. They understand your users, your
           workflows, and your compliance requirements from day one.</p>
       </div>
@@ -2369,7 +2594,7 @@
   <!-- Trust & Recognition -->
   <section class="prod-section bg-light">
     <div class="prod-section-header">
-      <h2>Built on trust, <span class="orange-bg">validated by results</span></h2>
+      <h2>Built on trust, <span class="orange-bg">validated </span>by results</h2>
     </div>
     <div class="trust-badges-grid">
       <div class="trust-badge-item">
