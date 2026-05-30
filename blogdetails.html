@@ -39,7 +39,7 @@
   <style>
     .uxdon-showcase-frame img {
       opacity: 0;
-      transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out, transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
     }
 
     .uxdon-showcase-frame img.loaded {
@@ -263,7 +263,7 @@
           </div>
         </h6>
         <h6><a href="about">About</a></h6>
-        <h6><a href="hire-dedicated-developer">Hire Developers</a></h6>
+        <h6><a href="hire-developers">Hire Developers</a></h6>
         <h6 class="dropdown">
           <a href="#" class="dropdown-toggle">Insights <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
           <div class="submenu-panel">
@@ -362,9 +362,9 @@
                 <a href="#" onclick="shareOnLinkedIn(event)" class="share-btn linkedin-btn" title="Share on LinkedIn">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="#" onclick="shareOnTwitter(event)" class="share-btn twitter-btn" title="Share on X">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </a>
+              <a href="#" onclick="shareOnTwitter(event)" class="share-btn twitter-btn" title="Share on Twitter">
+  <i class="fa-brands fa-twitter"></i>
+</a> 
                 <a href="#" onclick="shareOnFacebook(event)" class="share-btn facebook-btn" title="Share on Facebook">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
@@ -446,6 +446,35 @@
       window.history.back();
     }
     document.addEventListener("DOMContentLoaded", () => {
+      // Scroll progress indicator behavior
+      window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        const progress = document.getElementById('reading-progress');
+        if (progress) {
+          progress.style.width = scrolled + '%';
+        }
+      });
+
+      // Back to top button behavior
+      const backToTopBtn = document.getElementById('back-to-top');
+      if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.add('visible');
+          } else {
+            backToTopBtn.classList.remove('visible');
+          }
+        });
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      }
+
       const params = new URLSearchParams(window.location.search);
       const blogId = params.get("id");
       if (!blogId) {
@@ -492,7 +521,7 @@
         if (img.complete) img.classList.add("loaded");
       }
       // CONTENT
-      const contentDiv = document.getElementById("blog-content");
+      const contentDiv = document.getElementById("blog-content" );
       if (blog.content) {
         contentDiv.innerHTML = blog.content;
       } else {
@@ -511,33 +540,6 @@
         this.reset();
       });
     }
-
-    // Scroll progress indicator behavior
-    window.addEventListener('scroll', () => {
-      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
-      const progress = document.getElementById('reading-progress');
-      if (progress) {
-        progress.style.width = scrolled + '%';
-      }
-    });
-
-    // Back to top button behavior
-    const backToTopBtn = document.getElementById('back-to-top');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        backToTopBtn.classList.add('visible');
-      } else {
-        backToTopBtn.classList.remove('visible');
-      }
-    });
-    backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
 
     // Share handlers
     function shareOnLinkedIn(e) {

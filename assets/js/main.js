@@ -212,6 +212,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observerFooter.observe(footer);
   }
+
+  // ======== AUTO ACTIVE NAVBAR LINK ========
+  const currentPath = window.location.pathname;
+  const pageName = currentPath.substring(currentPath.lastIndexOf("/") + 1);
+
+  document.querySelectorAll(".navbar a").forEach(link => {
+    let hrefAttr = link.getAttribute("href");
+    if (!hrefAttr) return;
+
+    let isMatch = false;
+    if (hrefAttr === "./" || hrefAttr === "/") {
+      isMatch = pageName === "" || pageName === "index.html";
+    } else {
+      let normalizedHref = hrefAttr.replace(/^(\.\/|\/)/, "").replace(/\.html$/, "");
+      let normalizedPage = pageName.replace(/\.html$/, "");
+      isMatch = normalizedHref === normalizedPage;
+    }
+
+    if (isMatch) {
+      link.classList.add("active");
+      const dropdownParent = link.closest('.dropdown');
+      if (dropdownParent) {
+        const toggleBtn = dropdownParent.querySelector('.dropdown-toggle');
+        if (toggleBtn) {
+          toggleBtn.classList.add('active');
+        }
+      }
+    }
+  });
 });
 
 // our history
@@ -338,7 +367,11 @@ if (toggle && navbar) {
     document.querySelectorAll('.dropdown').forEach(dropdown => {
       dropdown.classList.remove('active');
     });
-    navbar.style.overflowY = 'auto';
+    if (window.innerWidth <= 768) {
+      navbar.style.overflowY = 'auto';
+    } else {
+      navbar.style.overflowY = '';
+    }
   };
 
   toggle.addEventListener('click', () => {
@@ -390,7 +423,11 @@ if (toggle && navbar) {
       
       const openPanels = document.querySelectorAll('.submenu-panel.slide-in');
       if (openPanels.length === 0) {
-        navbar.style.overflowY = 'auto';
+        if (window.innerWidth <= 768) {
+          navbar.style.overflowY = 'auto';
+        } else {
+          navbar.style.overflowY = '';
+        }
       }
     });
   });
