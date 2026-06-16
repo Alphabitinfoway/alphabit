@@ -1,6 +1,18 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    function slugify(text) {
+        return text
+            .toString()
+            .toLowerCase()
+            .trim()
+            .replace(/\s+/g, '-')
+            .replace(/[^\w\-]+/g, '')
+            .replace(/\-\-+/g, '-')
+            .replace(/^-+/, '')
+            .replace(/-+$/, '');
+    }
+
     const blogContainer = document.getElementById('blog-feed-container');
 
     if (!blogContainer) {
@@ -47,14 +59,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const article = document.createElement('article');
             article.className = 'feed-card';
 
+            const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
+            const postSlug = post.slug || slugify(cleanTitle);
+
             article.innerHTML = `
               <div class="feed-thumb">
-                  <img src="${imageUrl}" alt="${post.title}" class="fade-in" />
+                  <img src="${imageUrl}" alt="${cleanTitle}" class="fade-in" />
               </div>
 
               <div class="feed-card-footer">
-                  <p>${post.title}</p>
-                  <a href="blogdetails?id=${post._id}" class="feed-arrow">↗</a>
+                  <p>${cleanTitle}</p>
+                  <a href="blogdetails?slug=${postSlug}" class="feed-arrow">↗</a>
               </div>
           `;
 

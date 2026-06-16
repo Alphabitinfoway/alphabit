@@ -1,3 +1,15 @@
+function slugify(text) {
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // ======== MINIMAL PRELOADER ========
   const preloader = document.getElementById("preloader");
@@ -488,9 +500,10 @@ if (toggle && navbar) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const API_URL = `${BASE_URL}/users/getBlogs`;
-
   const blogContainer = document.getElementById('blog-feed-container');
+  if (!blogContainer) return;
+
+  const API_URL = `${BASE_URL}/users/getBlogs`;
   const primaryCard = document.querySelector('.primary-article');
   const auxCards = document.querySelectorAll('.aux-card');
 
@@ -537,14 +550,16 @@ document.addEventListener('DOMContentLoaded', () => {
       primaryCard.style.backgroundSize = "cover";
       primaryCard.style.backgroundPosition = "center";
 
+      const cleanTitle = latest.title ? latest.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
+      const latestSlug = latest.slug || slugify(cleanTitle);
       primaryCard.innerHTML = `
         <div class="primary-info">
           <div>
-            <h3 class="primary-title">${latest.title}</h3>
+            <h3 class="primary-title">${cleanTitle}</h3>
             <p class="primary-label">Featured Post</p>
             <span class="primary-date">${new Date(latest.createdAt).toDateString()}</span>
           </div>
-          <a href="blogdetails?id=${latest._id}" class="primary-arrow">↗</a>
+          <a href="blogdetails?slug=${latestSlug}" class="primary-arrow">↗</a>
         </div>
       `;
     }
@@ -565,8 +580,10 @@ document.addEventListener('DOMContentLoaded', () => {
         auxCards[index].style.backgroundSize = "cover";
         auxCards[index].style.backgroundPosition = "center";
 
+        const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
+        const postSlug = post.slug || slugify(cleanTitle);
         auxCards[index].innerHTML = `
-          <a href="blogdetails?id=${post._id}" style="display:block;width:100%;height:100%;"></a>
+          <a href="blogdetails?slug=${postSlug}" style="display:block;width:100%;height:100%;"></a>
         `;
       }
 
@@ -588,14 +605,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const article = document.createElement("article");
       article.className = "feed-card";
 
+      const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
+      const postSlug = post.slug || slugify(cleanTitle);
       article.innerHTML = `
         <div class="feed-thumb">
-          <img src="${imageUrl}" alt="${post.title}" class="fade-in">
+          <img src="${imageUrl}" alt="${cleanTitle}" class="fade-in">
         </div>
 
         <div class="feed-card-footer">
-          <p>${post.title}</p>
-          <a href="blogdetails?id=${post._id}" class="feed-arrow">↗</a>
+          <p>${cleanTitle}</p>
+          <a href="blogdetails?slug=${postSlug}" class="feed-arrow">↗</a>
         </div>
       `;
 
@@ -752,20 +771,22 @@ document.addEventListener("DOMContentLoaded", () => {
           ? `${BASE_URL}/uploads/${post.image}`
           : `https://picsum.photos/seed/${post._id}/400/300`;
 
+      const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
+      const cleanDesc = post.description ? post.description.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
       const blogCard = document.createElement("div");
       blogCard.className = "blog-card";
 
       blogCard.innerHTML = `
         <div class="blog-image">
-           <img src="${imageUrl}" alt="${post.title}" class="fade-in">
+           <img src="${imageUrl}" alt="${cleanTitle}" class="fade-in">
         </div>
         <div class="blog-content">
           <div class="blog-author">
             <span>${new Date(post.createdAt).toDateString()} — Story</span>
           </div>
-          <h3 class="blog-title">${post.title}</h3>
+          <h3 class="blog-title">${cleanTitle}</h3>
           <p class="blog-desc">
-            ${post.description ? post.description.substring(0, 100) + "..." : ""}
+            ${cleanDesc ? cleanDesc.substring(0, 100) + "..." : ""}
           </p>
           <div class="blog-more">
             Read More <span class="arrow">→</span>
@@ -777,8 +798,9 @@ document.addEventListener("DOMContentLoaded", () => {
       img.onload = () => img.classList.add('loaded');
       if (img.complete) img.classList.add('loaded');
 
+      const postSlug = post.slug || slugify(cleanTitle);
       blogCard.addEventListener("click", () => {
-        window.location.href = `blogdetails?id=${post._id}`;
+        window.location.href = `blogdetails?slug=${postSlug}`;
       });
 
       blogContainer.appendChild(blogCard);
