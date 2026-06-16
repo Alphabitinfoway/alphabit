@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -375,6 +376,18 @@
   <script src="./assets/js/scroll-animate.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
+      function slugify(text) {
+        return text
+          .toString()
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, '-')
+          .replace(/[^\w\-]+/g, '')
+          .replace(/\-\-+/g, '-')
+          .replace(/^-+/, '')
+          .replace(/-+$/, '');
+      }
+
       const blogContainer = document.getElementById("blog-feed-container");
       const paginationContainer = document.getElementById("pagination");
       const API_URL = `${BASE_URL}/users/getBlogs`;
@@ -408,6 +421,8 @@
               : `https://picsum.photos/seed/${post._id}/400/300`;
           const article = document.createElement("article");
           article.className = "feed-card";
+          const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
+          const postSlug = post.slug || slugify(cleanTitle);
           article.innerHTML = `
         <div class="feed-thumb"
           style="background-image:url('${imageUrl}');
@@ -415,8 +430,8 @@
                  background-position:center;">
         </div>
         <div class="feed-card-footer">
-          <p>${post.title}</p>
-          <a href="blogdetails?id=${post._id}" class="feed-arrow">↗</a>
+          <p>${cleanTitle}</p>
+          <a href="blogdetails?slug=${postSlug}" class="feed-arrow">↗</a>
         </div>
       `;
           blogContainer.appendChild(article);

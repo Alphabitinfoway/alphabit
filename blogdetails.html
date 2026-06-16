@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
   <script src="./assets/js/config.js"></script>
@@ -44,6 +45,79 @@
 
     .uxdon-showcase-frame img.loaded {
       opacity: 1;
+    }
+
+    /* Premium Table Styling for Dynamic Content */
+    #blog-content table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 32px 0;
+      border: 1px solid rgba(113, 67, 254, 0.12);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+      font-size: 15px;
+    }
+
+    #blog-content th, 
+    #blog-content td {
+      padding: 14px 20px;
+      text-align: left;
+      border-bottom: 1px solid rgba(113, 67, 254, 0.08);
+      border-right: 1px solid rgba(113, 67, 254, 0.08);
+      color: #4b5563;
+      vertical-align: middle;
+    }
+
+    #blog-content th:last-child,
+    #blog-content td:last-child {
+      border-right: none;
+    }
+
+    #blog-content tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Table Header styling */
+    #blog-content tr:first-child {
+      background-color: rgba(113, 67, 254, 0.05);
+    }
+
+    #blog-content tr:first-child td,
+    #blog-content tr:first-child th {
+      color: var(--uxdon-text-main);
+      font-weight: 700;
+      border-bottom: 2px solid rgba(113, 67, 254, 0.15);
+      font-family: "Sora", sans-serif;
+    }
+
+    /* Zebra striping for rows */
+    #blog-content tr:nth-child(even):not(:first-child) {
+      background-color: rgba(113, 67, 254, 0.015);
+    }
+
+    /* Hover effect */
+    #blog-content tr:not(:first-child):hover {
+      background-color: rgba(113, 67, 254, 0.04);
+      transition: background-color 0.2s ease;
+    }
+
+    /* Responsive table wrapping container */
+    .table-responsive-wrapper {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
+      border-radius: 12px;
+      border: 1px solid rgba(113, 67, 254, 0.12);
+    }
+    
+    .table-responsive-wrapper table {
+      margin: 0 !important;
+      border: none !important;
+      border-radius: 0 !important;
     }
   </style>
 </head>
@@ -362,9 +436,9 @@
                 <a href="#" onclick="shareOnLinkedIn(event)" class="share-btn linkedin-btn" title="Share on LinkedIn">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-              <a href="#" onclick="shareOnTwitter(event)" class="share-btn twitter-btn" title="Share on Twitter">
-  <i class="fa-brands fa-twitter"></i>
-</a> 
+                <a href="#" onclick="shareOnTwitter(event)" class="share-btn twitter-btn" title="Share on Twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a> 
                 <a href="#" onclick="shareOnFacebook(event)" class="share-btn facebook-btn" title="Share on Facebook">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
@@ -382,25 +456,7 @@
         </div>
       </div>
     </section>
-    <!-- COMMENT FORM (commented out) -->
-    <!--
-<section class="uxdon-comment-wrap">
-  <div class="uxdon-shell">
-    <h2 class="uxdon-comment-title">Write a comment</h2>
-    <form class="uxdon-comment-form" id="commentForm">
-      <div class="uxdon-form-grid">
-        <div class="uxdon-form-field"><label>First Name</label><input type="text" required /></div>
-        <div class="uxdon-form-field"><label>Last Name</label><input type="text" required /></div>
-        <div class="uxdon-form-field"><label>Phone</label><input type="tel" /></div>
-        <div class="uxdon-form-field"><label>Email</label><input type="email" required /></div>
-      </div>
-      <div class="uxdon-form-field uxdon-full"><label>Subject</label><input type="text" /></div>
-      <div class="uxdon-form-field uxdon-full"><label>Message</label><textarea rows="3" required></textarea></div>
-      <button type="submit" class="uxdon-submit-btn">Submit Comment</button>
-    </form>
-  </div>
-</section>
--->
+
     <!-- Footer -->
     <section class="Footer">
       <div class="footer-bg-clip">
@@ -475,17 +531,40 @@
         });
       }
 
+      function slugify(text) {
+        return text
+          .toString()
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, '-')
+          .replace(/[^\w\-]+/g, '')
+          .replace(/\-\-+/g, '-')
+          .replace(/^-+/, '')
+          .replace(/-+$/, '');
+      }
+
       const params = new URLSearchParams(window.location.search);
       const blogId = params.get("id");
-      if (!blogId) {
-        alert("Blog ID missing in URL!");
+      const blogSlug = params.get("slug");
+      if (!blogId && !blogSlug) {
+        alert("Blog parameter missing in URL!");
         return;
       }
       const API_URL = `${BASE_URL}/users/getBlogs`;
       fetch(API_URL)
         .then(res => res.json())
         .then(data => {
-          const blog = data.find(item => item._id === blogId);
+          let blog;
+          if (blogId) {
+            blog = data.find(item => item._id === blogId);
+          } else if (blogSlug) {
+            blog = data.find(item => {
+              if (item.slug && item.slug === blogSlug) {
+                return true;
+              }
+              return slugify(item.title) === blogSlug;
+            });
+          }
           if (!blog) {
             alert("Blog not found!");
             return;
@@ -497,9 +576,11 @@
           alert("Error loading blog");
         });
     });
+
     function loadBlog(blog) {
       // TITLE
-      document.getElementById("blog-title").textContent = blog.title;
+      const cleanTitle = blog.title ? blog.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : "";
+      document.getElementById("blog-title").textContent = cleanTitle;
       // DATE
       const date = new Date(blog.createdAt);
       document.getElementById("blog-day").textContent = date.getDate();
@@ -514,7 +595,7 @@
       const img = document.getElementById("main-blog-img");
       if (img) {
         img.src = imageUrl;
-        img.alt = blog.title;
+        img.alt = cleanTitle;
         img.style.display = "block";
         img.onload = () => img.classList.add("loaded");
         // If cached
@@ -523,21 +604,21 @@
       // CONTENT
       const contentDiv = document.getElementById("blog-content" );
       if (blog.content) {
-        contentDiv.innerHTML = blog.content;
+        contentDiv.innerHTML = blog.content.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ');
       } else {
+        const cleanDescription = blog.description ? blog.description.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : "No content available.";
         contentDiv.innerHTML = `
       <p class="uxdon-article-paragraph">
-        ${blog.description || "No content available."}
+        ${cleanDescription}
       </p>`;
       }
-    }
-    // COMMENT SUBMIT (Frontend only)
-    const commentForm = document.getElementById("commentForm");
-    if (commentForm) {
-      commentForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert("Comment submitted successfully!");
-        this.reset();
+
+      // Make tables responsive
+      contentDiv.querySelectorAll("table").forEach(table => {
+        const wrapper = document.createElement("div");
+        wrapper.className = "table-responsive-wrapper";
+        table.parentNode.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
       });
     }
 
@@ -579,4 +660,3 @@
 </body>
 
 </html>
-
