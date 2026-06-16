@@ -1,3 +1,6 @@
+# Custom 404 Redirect
+ErrorDocument 404 /404
+
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
 </IfModule>

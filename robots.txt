@@ -1,0 +1,9 @@
+# Robots.txt file for Alphabit Infoway
+User-agent: *
+Allow: /
+
+# Host
+Host: https://alphabitinfoway.com/
+
+# Sitemap location
+Sitemap: https://alphabitinfoway.com/sitemap.xml
