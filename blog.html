@@ -28,7 +28,7 @@
     content="Alphabit Infoway - Alphabit Infoway. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
   <meta name="twitter:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
 
-  <link rel="canonical" href="https://alphabitinfoway.com/blog" />
+  <link rel="canonical" href="https://alphabitinfoway.com/blogs" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -248,7 +248,7 @@
             </div>
           </div>
         </h6>
-        <h6><a href="about">About</a></h6>
+        <h6><a href="aboutus">About</a></h6>
         <h6><a href="hire-developers">Hire Developers</a></h6>
         <h6 class="dropdown">
           <a href="#" class="dropdown-toggle">Insights <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
@@ -258,14 +258,14 @@
               <span class="panel-title">Insights</span>
             </div>
             <ul class="submenu-list">
-              <li><a href="blog"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
+              <li><a href="blogs"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
               <li><a href="career"><i class="fa-solid fa-briefcase"></i> Career</a></li>
             </ul>
           </div>
         </h6>
-        <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+        <a href="contact-us" class="contact-btn mobile-contact-btn">Contact Us</a>
       </nav>
-      <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
+      <a href="contact-us" class="contact-btn desktop-contact-btn">Contact Us</a>
     </header>
     <section class="insights-section">
       <!-- Header Area -->
@@ -288,27 +288,13 @@
               <h3 class="metric-value">99+</h3>
               <span class="metric-title">Expert Writers</span>
             </div>
+            
           </div>
         </div>
       </div>
-      <!-- Cards Area -->
-      <div class="insights-grid">
-        <!-- Main Card -->
-        <article class="primary-article">
-          <div class="primary-info">
-            <div>
-              <h3 class="primary-title">Lorem Ipsum Lorem</h3>
-              <p class="primary-label">Featured Post</p>
-              <span class="primary-date">DEC – 2026</span>
-            </div>
-            <a href="blogdetails" class="primary-arrow">↗</a>
-          </div>
-        </article>
-        <!-- Side Cards -->
-        <div class="auxiliary-articles">
-          <article class="aux-card"></article>
-          <article class="aux-card"></article>
-        </div>
+      <!-- Featured Post Area -->
+      <div class="insights-featured" id="featured-post-container">
+        <!-- Featured post will load here dynamically -->
       </div>
     </section>
     <!-- section 2 -->
@@ -390,18 +376,66 @@
 
       const blogContainer = document.getElementById("blog-feed-container");
       const paginationContainer = document.getElementById("pagination");
+      const featuredContainer = document.getElementById("featured-post-container");
       const API_URL = `${BASE_URL}/users/getBlogs`;
       const postsPerPage = 6;
       let currentPage = 1;
       let allPosts = [];
+      
+      function renderFeaturedPost(post) {
+        if (!post) {
+          if (featuredContainer) featuredContainer.style.display = 'none';
+          return;
+        }
+        if (!featuredContainer) return;
+        
+        const imageUrl = post.image && post.image.startsWith("http")
+            ? post.image
+            : post.image
+              ? `${BASE_URL}/uploads/${post.image}`
+              : `https://picsum.photos/seed/${post._id || 'featured'}/800/600`;
+              
+        const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
+        const postSlug = post.slug || slugify(cleanTitle);
+        const category = post.category || 'INSIGHTS';
+        const author = post.author || 'Alphabit';
+        
+        let dateStr = '';
+        if (post.createdAt) {
+          dateStr = new Date(post.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        }
+        
+        featuredContainer.innerHTML = `
+        <a href="blogdetails?slug=${postSlug}" class="featured-horizontal-card">
+          <div class="featured-image">
+            <img src="${imageUrl}" alt="${cleanTitle}">
+          </div>
+          <div class="featured-content">
+            <span class="featured-category">${category}</span>
+            <h3 class="featured-title">${cleanTitle}</h3>
+            <div class="featured-meta">  ${dateStr || '5 min read'}</div>
+          </div>
+        </a>
+        `;
+      }
+
       async function fetchBlogs() {
         try {
           const response = await fetch(API_URL);
           const data = await response.json();
           // Sort latest first
-          allPosts = data.sort(
+          let sortedPosts = data.sort(
             (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
           );
+          
+          if (sortedPosts.length > 0) {
+            renderFeaturedPost(sortedPosts[0]);
+            allPosts = sortedPosts.slice(1);
+          } else {
+            allPosts = [];
+            renderFeaturedPost(null);
+          }
+          
           renderPage(currentPage);
           setupPagination();
         } catch (error) {
@@ -439,18 +473,25 @@
       }
       function setupPagination() {
         paginationContainer.innerHTML = "";
-        const totalPages = Math.ceil(allPosts.length / postsPerPage);
+        const totalPages = Math.ceil(allPosts.length / postsPerPage) || 1;
+        
+        if (totalPages <= 1 && allPosts.length === 0) return; // Hide pagination if no posts
+        
         // Previous
         const prevBtn = document.createElement("button");
         prevBtn.textContent = "←";
         prevBtn.className = "page-nav";
-        prevBtn.disabled = currentPage === 1;
+        prevBtn.disabled = currentPage <= 1;
         prevBtn.onclick = () => {
-          currentPage--;
-          renderPage(currentPage);
-          setupPagination();
+          if (currentPage > 1) {
+            currentPage--;
+            renderPage(currentPage);
+            setupPagination();
+            window.scrollTo({ top: blogContainer.offsetTop - 100, behavior: 'smooth' });
+          }
         };
         paginationContainer.appendChild(prevBtn);
+        
         // Page Numbers
         for (let i = 1; i <= totalPages; i++) {
           const pageBtn = document.createElement("button");
@@ -461,18 +502,23 @@
             currentPage = i;
             renderPage(currentPage);
             setupPagination();
+            window.scrollTo({ top: blogContainer.offsetTop - 100, behavior: 'smooth' });
           };
           paginationContainer.appendChild(pageBtn);
         }
+        
         // Next
         const nextBtn = document.createElement("button");
         nextBtn.textContent = "→";
         nextBtn.className = "page-nav";
-        nextBtn.disabled = currentPage === totalPages;
+        nextBtn.disabled = currentPage >= totalPages;
         nextBtn.onclick = () => {
-          currentPage++;
-          renderPage(currentPage);
-          setupPagination();
+          if (currentPage < totalPages) {
+            currentPage++;
+            renderPage(currentPage);
+            setupPagination();
+            window.scrollTo({ top: blogContainer.offsetTop - 100, behavior: 'smooth' });
+          }
         };
         paginationContainer.appendChild(nextBtn);
       }

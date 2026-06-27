@@ -2067,15 +2067,50 @@
 
 /* CTA Final Banner */
 .cta-final-section {
-  padding: 80px 20px;
+  padding: 100px 20px;
   background: #f5f5f5;
+  position: relative;
+  z-index: 9999; /* Critical fix: forces this section above any absolute footer elements */
+  pointer-events: auto;
 }
 
 .prod-cta-banner {
   background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
   border-radius: 48px;
-  padding: 100px 40px;
+  padding: 80px 40px;
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  text-align: center; /* Center everything beautifully */
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15); /* Premium shadow */
+}
+
+.prod-cta-banner h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.prod-cta-banner h2 span {
+  color: #ff5622; /* Highlighting the span inside CTA */
+}
+
+.prod-cta-banner p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.prod-cta-banner .product-hero-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  z-index: 20; /* Ensures buttons are clickable above the banner background */
 }
 
 @media (max-width: 991px) {

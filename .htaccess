@@ -1,5 +1,6 @@
 # Custom 404 Redirect
-ErrorDocument 404 /404
+# Use project subfolder path so XAMPP/Apache finds the file correctly
+ErrorDocument 404 /alphabit/404.html
 
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
@@ -12,6 +13,38 @@ ErrorDocument 404 /404
 # Remove .html extension from URLs
 Options -MultiViews
 RewriteEngine On
+# Set RewriteBase to the project folder so rules work under /alphabit/
+RewriteBase /alphabit/
+
+# Redirect about to aboutus
+RewriteRule ^about/?$ /alphabit/aboutus [R=301,L]
+
+# Serve the new URL from the existing about.html page
+RewriteRule ^aboutus/?$ about.html [L]
+
+# Redirect blog to blogs
+RewriteRule ^blog/?$ /alphabit/blogs [R=301,L]
+
+# Serve the new URL from the existing blog.html page
+RewriteRule ^blogs/?$ blog.html [L]
+
+# Redirect contact to contact-us
+RewriteRule ^contact/?$ /alphabit/contact-us [R=301,L]
+
+# Serve the new URL from the existing contact.html page
+RewriteRule ^contact-us/?$ contact.html [L]
+
+# Redirect obsolete AI page to updated URL
+RewriteRule ^ai-machine-learning/?$ /alphabit/ai-and-machine-learning-development-services [R=301,L]
+
+# Serve the new URL from the existing ai-machine-learning.html page
+RewriteRule ^ai-and-machine-learning-development-services/?$ ai-machine-learning.html [L]
+
+# Redirect obsolete Cyber Security page to updated URL
+RewriteRule ^cyber-security/?$ /alphabit/ai-cyber-security-and-compliance-services [R=301,L]
+
+# Serve the new URL from the existing cyber-security.html page
+RewriteRule ^ai-cyber-security-and-compliance-services/?$ cyber-security.html [L]
 
 # If the request is not for a real file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -21,8 +54,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 # Redirect /page.html to /page (remove extension from browser URL)
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R=301]
+# Capture only the last path segment so redirects work from the subfolder
+RewriteCond %{THE_REQUEST} /([^/]+)\.html [NC]
+RewriteRule ^ %1 [NC,L,R=301]
 
 # ----------------------------------------------------------------------
 # | Gzip/Deflate Compression                                           |
