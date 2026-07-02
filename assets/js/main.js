@@ -559,7 +559,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="primary-label">Featured Post</p>
             <span class="primary-date">${new Date(latest.createdAt).toDateString()}</span>
           </div>
-          <a href="blogdetails?slug=${latestSlug}" class="primary-arrow">↗</a>
+          <a href="${latestSlug}" class="primary-arrow">↗</a>
         </div>
       `;
     }
@@ -583,7 +583,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
         const postSlug = post.slug || slugify(cleanTitle);
         auxCards[index].innerHTML = `
-          <a href="blogdetails?slug=${postSlug}" style="display:block;width:100%;height:100%;"></a>
+          <a href="${postSlug}" style="display:block;width:100%;height:100%;"></a>
         `;
       }
 
@@ -614,7 +614,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <div class="feed-card-footer">
           <p>${cleanTitle}</p>
-          <a href="blogdetails?slug=${postSlug}" class="feed-arrow">↗</a>
+          <a href="${postSlug}" class="feed-arrow">↗</a>
         </div>
       `;
 
@@ -800,7 +800,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const postSlug = post.slug || slugify(cleanTitle);
       blogCard.addEventListener("click", () => {
-        window.location.href = `blogdetails?slug=${postSlug}`;
+        window.location.href = `${postSlug}`;
       });
 
       blogContainer.appendChild(blogCard);

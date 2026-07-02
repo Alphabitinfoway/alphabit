@@ -390,7 +390,7 @@
     <section class="uxdon-showcase-wrap">
       <div class="uxdon-shell">
         <div class="uxdon-showcase-frame" id="blog-image">
-          <img id="main-blog-img" src="" alt="" style="width:100%; height:100%; object-fit:cover; display:none;">
+          <img id="main-blog-img" src="" alt="" style="width:100%; display:none;">
         </div>
       </div>
     </section>
@@ -544,8 +544,20 @@
       }
 
       const params = new URLSearchParams(window.location.search);
-      const blogId = params.get("id");
-      const blogSlug = params.get("slug");
+      let blogId = params.get("id");
+      let blogSlug = params.get("slug");
+      
+      // Fallback for direct clean URLs (e.g. /slug-name)
+      if (!blogId && !blogSlug) {
+        const pathSegments = window.location.pathname.split('/').filter(Boolean);
+        if (pathSegments.length > 0) {
+          const lastSegment = pathSegments[pathSegments.length - 1];
+          if (lastSegment !== 'blogdetails' && lastSegment !== 'blogdetails.html' && lastSegment !== 'alphabit') {
+            blogSlug = lastSegment;
+          }
+        }
+      }
+
       if (!blogId && !blogSlug) {
         alert("Blog parameter missing in URL!");
         return;

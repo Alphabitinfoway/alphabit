@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -321,7 +321,7 @@
         </div>
       </div>
     </section>
-    <!-- Footer -->
+        <!-- Footer -->
     <section class="Footer">
       <div class="footer-bg-clip">
         <div class="footer-bg-circle"></div>
@@ -329,7 +329,8 @@
       <div class="footer-container">
         <div class="footer-left">
           <div class="footer-icons">
-            <a target="_blank" href="#"><img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+            <a target="_blank" href="#">
+              <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
             <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
                 src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
             <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
@@ -338,8 +339,10 @@
                 src="./assets/images/facebook2.webp" alt="facebook" /></a>
           </div>
           <div class="footer-text">
-            <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
-            <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
+            <p class="footer-greet">
+              <span class="hand">👋</span> Hey Innovator,
+            </p>
+            <h2 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h2>
             <p class="footer-email">info@alphabitinfoway.com</p>
           </div>
         </div>
@@ -406,7 +409,7 @@
         }
         
         featuredContainer.innerHTML = `
-        <a href="blogdetails?slug=${postSlug}" class="featured-horizontal-card">
+        <a href="${postSlug}" class="featured-horizontal-card">
           <div class="featured-image">
             <img src="${imageUrl}" alt="${cleanTitle}">
           </div>
@@ -465,7 +468,7 @@
         </div>
         <div class="feed-card-footer">
           <p>${cleanTitle}</p>
-          <a href="blogdetails?slug=${postSlug}" class="feed-arrow">↗</a>
+          <a href="${postSlug}" class="feed-arrow">â†—</a>
         </div>
       `;
           blogContainer.appendChild(article);
@@ -479,7 +482,7 @@
         
         // Previous
         const prevBtn = document.createElement("button");
-        prevBtn.textContent = "←";
+        prevBtn.textContent = "â†";
         prevBtn.className = "page-nav";
         prevBtn.disabled = currentPage <= 1;
         prevBtn.onclick = () => {
@@ -509,7 +512,7 @@
         
         // Next
         const nextBtn = document.createElement("button");
-        nextBtn.textContent = "→";
+        nextBtn.textContent = "â†’";
         nextBtn.className = "page-nav";
         nextBtn.disabled = currentPage >= totalPages;
         nextBtn.onclick = () => {
@@ -528,4 +531,5 @@
 </body>
 
 </html>
+
 

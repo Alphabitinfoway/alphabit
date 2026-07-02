@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
     <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
 </head>
@@ -34,223 +34,235 @@
     </div>
 
     <div class="container">
-                <header>
-      <div class="logo-img">
-        <a href="./">
-          <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
-        </a>
-      </div>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="navbar">
-        <h6><a href="./">Home</a></h6>
-        <h6 class="dropdown">
-          <a href="services" class="dropdown-toggle">Services <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
-          <div class="submenu-panel">
-            <div class="panel-header">
-              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
-              <span class="panel-title">Services</span>
+        <header>
+            <div class="logo-img">
+                <a href="./">
+                    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+                </a>
             </div>
-            <ul class="submenu-list">
-              <li><a href="ai-machine-learning"><i class="fa-solid fa-brain"></i> AI & Machine Learning</a></li>
-              <li><a href="cyber-security"><i class="fa-solid fa-shield-halved"></i> Cyber Security & Compliance</a></li>
-              <li><a href="ai-full-stack-development-services"><i class="fa-solid fa-code"></i> Full Stack Web Development</a></li>
-              <li><a href="ai-mobile-app-development-services"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App & Product Design</a></li>
-            </ul>
-          </div>
-        </h6>
-        <h6 class="dropdown">
-          <a href="./#products" class="dropdown-toggle">Products <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
-          <div class="submenu-panel">
-            <div class="panel-header">
-              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
-              <span class="panel-title">Products</span>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <ul class="submenu-list">
-              <li><a href="genie-dial"><i class="fa-solid fa-phone"></i> Genie Dial</a></li>
-              <li><a href="skill-studio"><i class="fa-solid fa-graduation-cap"></i> Skill Studio</a></li>
-              <li><a href="dhiread"><i class="fa-solid fa-book-open"></i> DhiRead</a></li>
-              <li><a href="dhisure"><i class="fa-solid fa-square-check"></i> Dhisure</a></li>
-              <li><a href="dhihealth"><i class="fa-solid fa-heart-pulse"></i> Dhihealth</a></li>
-              <li><a href="dhiyodha-network"><i class="fa-solid fa-circle-nodes"></i> Dhiyodha Network</a></li>
-            </ul>
-          </div>
-        </h6>
-        <h6 class="dropdown">
-          <a href="Technology" class="dropdown-toggle">Technology <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
-          <div class="submenu-panel mega-panel">
-            <div class="panel-header">
-              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
-              <span class="panel-title">Technology</span>
-            </div>
-            <div class="mega-menu-container">
-              <div class="mega-menu-sidebar">
-                <button class="sidebar-item active" data-tab="ai-tab">
-                  <i class="fa-solid fa-brain"></i>
-                  <span>Artificial Intelligence</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-                <button class="sidebar-item" data-tab="web-tab">
-                  <i class="fa-solid fa-laptop-code"></i>
-                  <span>Web Technologies</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-                <button class="sidebar-item" data-tab="mobile-tab">
-                  <i class="fa-solid fa-mobile-screen-button"></i>
-                  <span>Mobile Technologies</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-                <button class="sidebar-item" data-tab="cloud-tab">
-                  <i class="fa-solid fa-cloud"></i>
-                  <span>Cloud & DevOps</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-                <button class="sidebar-item" data-tab="data-tab">
-                  <i class="fa-solid fa-chart-pie"></i>
-                  <span>Data & Analytics</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-                <button class="sidebar-item" data-tab="security-tab">
-                  <i class="fa-solid fa-shield-halved"></i>
-                  <span>Cyber Security</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-              </div>
-              <div class="mega-menu-content">
-                <!-- AI Pane -->
-                <div class="tab-pane active" id="ai-tab">
-                  <div class="pane-category-title">Artificial Intelligence</div>
-                  <div class="pane-grid">
-                    <a href="ai-development-technologies" class="pane-item">
-                      <span class="item-title">AI Development</span>
-                      <span class="item-desc">Custom AI & Intelligent agents development</span>
-                    </a>
-                    <a href="machine-learning-technologies" class="pane-item">
-                      <span class="item-title">Machine Learning</span>
-                      <span class="item-desc">Predictive modeling & pattern recognition</span>
-                    </a>
-                    <a href="generative-ai-technologies" class="pane-item">
-                      <span class="item-title">Generative AI</span>
-                      <span class="item-desc">LLMs, GPT integration & custom content generation</span>
-                    </a>
-                    <a href="ai-and-chatbot-technologies" class="pane-item">
-                      <span class="item-title">AI Chatbots</span>
-                      <span class="item-desc">Conversational UI & customer service automation</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Web Pane -->
-                <div class="tab-pane" id="web-tab">
-                  <div class="pane-category-title">Web Technologies</div>
-                  <div class="pane-grid">
-                    <a href="modern-front-end-technologies" class="pane-item">
-                      <span class="item-title">Frontend Development</span>
-                      <span class="item-desc">Modern interactive web user interfaces</span>
-                    </a>
-                    <a href="backend-technologies" class="pane-item">
-                      <span class="item-title">Backend Development</span>
-                      <span class="item-desc">Scalable server-side logic & APIs</span>
-                    </a>
-                    <a href="full-stack-development-technologies" class="pane-item">
-                      <span class="item-title">Full Stack</span>
-                      <span class="item-desc">End-to-end web product architecture</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Mobile Pane -->
-                <div class="tab-pane" id="mobile-tab">
-                  <div class="pane-category-title">Mobile Technologies</div>
-                  <div class="pane-grid">
-                    <a href="ios-development-technologies" class="pane-item">
-                      <span class="item-title">iOS Development</span>
-                      <span class="item-desc">Native Swift & Objective-C applications</span>
-                    </a>
-                    <a href="android-development-technologies" class="pane-item">
-                      <span class="item-title">Android Development</span>
-                      <span class="item-desc">Native Kotlin & Java mobile apps</span>
-                    </a>
-                    <a href="cross-platform-development-technologies" class="pane-item">
-                      <span class="item-title">Cross Platform Development</span>
-                      <span class="item-desc">React Native & Flutter solutions</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Cloud Pane -->
-                <div class="tab-pane" id="cloud-tab">
-                  <div class="pane-category-title">Cloud & DevOps</div>
-                  <div class="pane-grid">
-                    <a href="cloud-platform-technologies" class="pane-item">
-                      <span class="item-title">Cloud Platforms</span>
-                      <span class="item-desc">AWS, Azure & Google Cloud solutions</span>
-                    </a>
-                    <a href="devops-ci-cd-technologies" class="pane-item">
-                      <span class="item-title">DevOps & CI/CD</span>
-                      <span class="item-desc">Continuous integration & automation pipelines</span>
-                    </a>
-                    <a href="cloud-deployment-technologies" class="pane-item">
-                      <span class="item-title">Cloud Deployment</span>
-                      <span class="item-desc">Safe & scalable containerized orchestration</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Data Pane -->
-                <div class="tab-pane" id="data-tab">
-                  <div class="pane-category-title">Data & Analytics</div>
-                  <div class="pane-grid">
-                    <a href="data-engineering-technologies" class="pane-item">
-                      <span class="item-title">Data Engineering</span>
-                      <span class="item-desc">Data pipeline architecture & warehouse setups</span>
-                    </a>
-                    <a href="data-visualization-technologies" class="pane-item">
-                      <span class="item-title">Data Visualization</span>
-                      <span class="item-desc">Dashboards & advanced charts rendering</span>
-                    </a>
-                    <a href="data-processing-technologies" class="pane-item">
-                      <span class="item-title">Data Processing</span>
-                      <span class="item-desc">Big data analytics & real-time streams</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Security Pane -->
-                <div class="tab-pane" id="security-tab">
-                  <div class="pane-category-title">Cyber Security</div>
-                  <div class="pane-grid">
-                    <a href="security-solutions-technologies" class="pane-item">
-                      <span class="item-title">Security Solutions</span>
-                      <span class="item-desc">Threat detection & penetration protection</span>
-                    </a>
-                    <a href="security-compliance-technologies" class="pane-item">
-                      <span class="item-title">Compliance</span>
-                      <span class="item-desc">Standards auditing (SOC2, ISO, GDPR)</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </h6>
-        <h6><a href="aboutus">About</a></h6>
-        <h6><a href="hire-developers">Hire Developers</a></h6>
-        <h6 class="dropdown">
-          <a href="#" class="dropdown-toggle">Insights <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
-          <div class="submenu-panel">
-            <div class="panel-header">
-              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
-              <span class="panel-title">Insights</span>
-            </div>
-            <ul class="submenu-list">
-              <li><a href="blogs"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
-              <li><a href="career"><i class="fa-solid fa-briefcase"></i> Career</a></li>
-            </ul>
-          </div>
-        </h6>
-        <a href="contact-us" class="contact-btn mobile-contact-btn">Contact Us</a>
-      </nav>
-      <a href="contact-us" class="contact-btn desktop-contact-btn">Contact Us</a>
-    </header>
+            <nav class="navbar">
+                <h6><a href="./">Home</a></h6>
+                <h6 class="dropdown">
+                    <a href="services" class="dropdown-toggle">Services <i
+                            class="fa-solid fa-chevron-down toggle-icon"></i></a>
+                    <div class="submenu-panel">
+                        <div class="panel-header">
+                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+                            <span class="panel-title">Services</span>
+                        </div>
+                        <ul class="submenu-list">
+                            <li><a href="ai-machine-learning"><i class="fa-solid fa-brain"></i> AI & Machine
+                                    Learning</a></li>
+                            <li><a href="cyber-security"><i class="fa-solid fa-shield-halved"></i> Cyber Security &
+                                    Compliance</a></li>
+                            <li><a href="ai-full-stack-development-services"><i class="fa-solid fa-code"></i> Full Stack
+                                    Web Development</a></li>
+                            <li><a href="ai-mobile-app-development-services"><i
+                                        class="fa-solid fa-mobile-screen-button"></i> Mobile App & Product Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                </h6>
+                <h6 class="dropdown">
+                    <a href="./#products" class="dropdown-toggle">Products <i
+                            class="fa-solid fa-chevron-down toggle-icon"></i></a>
+                    <div class="submenu-panel">
+                        <div class="panel-header">
+                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+                            <span class="panel-title">Products</span>
+                        </div>
+                        <ul class="submenu-list">
+                            <li><a href="genie-dial"><i class="fa-solid fa-phone"></i> Genie Dial</a></li>
+                            <li><a href="skill-studio"><i class="fa-solid fa-graduation-cap"></i> Skill Studio</a></li>
+                            <li><a href="dhiread"><i class="fa-solid fa-book-open"></i> DhiRead</a></li>
+                            <li><a href="dhisure"><i class="fa-solid fa-square-check"></i> Dhisure</a></li>
+                            <li><a href="dhihealth"><i class="fa-solid fa-heart-pulse"></i> Dhihealth</a></li>
+                            <li><a href="dhiyodha-network"><i class="fa-solid fa-circle-nodes"></i> Dhiyodha Network</a>
+                            </li>
+                        </ul>
+                    </div>
+                </h6>
+                <h6 class="dropdown">
+                    <a href="Technology" class="dropdown-toggle">Technology <i
+                            class="fa-solid fa-chevron-down toggle-icon"></i></a>
+                    <div class="submenu-panel mega-panel">
+                        <div class="panel-header">
+                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+                            <span class="panel-title">Technology</span>
+                        </div>
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-sidebar">
+                                <button class="sidebar-item active" data-tab="ai-tab">
+                                    <i class="fa-solid fa-brain"></i>
+                                    <span>Artificial Intelligence</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                                <button class="sidebar-item" data-tab="web-tab">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    <span>Web Technologies</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                                <button class="sidebar-item" data-tab="mobile-tab">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <span>Mobile Technologies</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                                <button class="sidebar-item" data-tab="cloud-tab">
+                                    <i class="fa-solid fa-cloud"></i>
+                                    <span>Cloud & DevOps</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                                <button class="sidebar-item" data-tab="data-tab">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                    <span>Data & Analytics</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                                <button class="sidebar-item" data-tab="security-tab">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <span>Cyber Security</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                            </div>
+                            <div class="mega-menu-content">
+                                <!-- AI Pane -->
+                                <div class="tab-pane active" id="ai-tab">
+                                    <div class="pane-category-title">Artificial Intelligence</div>
+                                    <div class="pane-grid">
+                                        <a href="ai-development-technologies" class="pane-item">
+                                            <span class="item-title">AI Development</span>
+                                            <span class="item-desc">Custom AI & Intelligent agents development</span>
+                                        </a>
+                                        <a href="machine-learning-technologies" class="pane-item">
+                                            <span class="item-title">Machine Learning</span>
+                                            <span class="item-desc">Predictive modeling & pattern recognition</span>
+                                        </a>
+                                        <a href="generative-ai-technologies" class="pane-item">
+                                            <span class="item-title">Generative AI</span>
+                                            <span class="item-desc">LLMs, GPT integration & custom content
+                                                generation</span>
+                                        </a>
+                                        <a href="ai-and-chatbot-technologies" class="pane-item">
+                                            <span class="item-title">AI Chatbots</span>
+                                            <span class="item-desc">Conversational UI & customer service
+                                                automation</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Web Pane -->
+                                <div class="tab-pane" id="web-tab">
+                                    <div class="pane-category-title">Web Technologies</div>
+                                    <div class="pane-grid">
+                                        <a href="modern-front-end-technologies" class="pane-item">
+                                            <span class="item-title">Frontend Development</span>
+                                            <span class="item-desc">Modern interactive web user interfaces</span>
+                                        </a>
+                                        <a href="backend-technologies" class="pane-item">
+                                            <span class="item-title">Backend Development</span>
+                                            <span class="item-desc">Scalable server-side logic & APIs</span>
+                                        </a>
+                                        <a href="full-stack-development-technologies" class="pane-item">
+                                            <span class="item-title">Full Stack</span>
+                                            <span class="item-desc">End-to-end web product architecture</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Mobile Pane -->
+                                <div class="tab-pane" id="mobile-tab">
+                                    <div class="pane-category-title">Mobile Technologies</div>
+                                    <div class="pane-grid">
+                                        <a href="ios-development-technologies" class="pane-item">
+                                            <span class="item-title">iOS Development</span>
+                                            <span class="item-desc">Native Swift & Objective-C applications</span>
+                                        </a>
+                                        <a href="android-development-technologies" class="pane-item">
+                                            <span class="item-title">Android Development</span>
+                                            <span class="item-desc">Native Kotlin & Java mobile apps</span>
+                                        </a>
+                                        <a href="cross-platform-development-technologies" class="pane-item">
+                                            <span class="item-title">Cross Platform Development</span>
+                                            <span class="item-desc">React Native & Flutter solutions</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Cloud Pane -->
+                                <div class="tab-pane" id="cloud-tab">
+                                    <div class="pane-category-title">Cloud & DevOps</div>
+                                    <div class="pane-grid">
+                                        <a href="cloud-platform-technologies" class="pane-item">
+                                            <span class="item-title">Cloud Platforms</span>
+                                            <span class="item-desc">AWS, Azure & Google Cloud solutions</span>
+                                        </a>
+                                        <a href="devops-ci-cd-technologies" class="pane-item">
+                                            <span class="item-title">DevOps & CI/CD</span>
+                                            <span class="item-desc">Continuous integration & automation pipelines</span>
+                                        </a>
+                                        <a href="cloud-deployment-technologies" class="pane-item">
+                                            <span class="item-title">Cloud Deployment</span>
+                                            <span class="item-desc">Safe & scalable containerized orchestration</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Data Pane -->
+                                <div class="tab-pane" id="data-tab">
+                                    <div class="pane-category-title">Data & Analytics</div>
+                                    <div class="pane-grid">
+                                        <a href="data-engineering-technologies" class="pane-item">
+                                            <span class="item-title">Data Engineering</span>
+                                            <span class="item-desc">Data pipeline architecture & warehouse setups</span>
+                                        </a>
+                                        <a href="data-visualization-technologies" class="pane-item">
+                                            <span class="item-title">Data Visualization</span>
+                                            <span class="item-desc">Dashboards & advanced charts rendering</span>
+                                        </a>
+                                        <a href="data-processing-technologies" class="pane-item">
+                                            <span class="item-title">Data Processing</span>
+                                            <span class="item-desc">Big data analytics & real-time streams</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Security Pane -->
+                                <div class="tab-pane" id="security-tab">
+                                    <div class="pane-category-title">Cyber Security</div>
+                                    <div class="pane-grid">
+                                        <a href="security-solutions-technologies" class="pane-item">
+                                            <span class="item-title">Security Solutions</span>
+                                            <span class="item-desc">Threat detection & penetration protection</span>
+                                        </a>
+                                        <a href="security-compliance-technologies" class="pane-item">
+                                            <span class="item-title">Compliance</span>
+                                            <span class="item-desc">Standards auditing (SOC2, ISO, GDPR)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </h6>
+                <h6><a href="aboutus">About</a></h6>
+                <h6><a href="hire-developers">Hire Developers</a></h6>
+                <h6 class="dropdown">
+                    <a href="#" class="dropdown-toggle">Insights <i
+                            class="fa-solid fa-chevron-down toggle-icon"></i></a>
+                    <div class="submenu-panel">
+                        <div class="panel-header">
+                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+                            <span class="panel-title">Insights</span>
+                        </div>
+                        <ul class="submenu-list">
+                            <li><a href="blogs"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
+                            <li><a href="career"><i class="fa-solid fa-briefcase"></i> Career</a></li>
+                        </ul>
+                    </div>
+                </h6>
+                <a href="contact-us" class="contact-btn mobile-contact-btn">Contact Us</a>
+            </nav>
+            <a href="contact-us" class="contact-btn desktop-contact-btn">Contact Us</a>
+        </header>
 
         <!-- Hero Section -->
         <section class="tech-hero-modern">
@@ -267,9 +279,14 @@
                                 Technologies</span>
                         </nav>
                         <h1>Cross-Platform Development <br />Technologies & Capabilities</h1>
-                        <p>Cross-platform development technologies enable building mobile applications for Android and iOS using a single codebase, reducing development time and cost while maintaining a consistent user experience. 
-                            <br /><br />Modern frameworks like Flutter and React Native offer near-native performance, scalable architecture, and faster deployment. These technologies are widely used to build efficient, high-performance cross-platform mobile apps.
-                            <br /><br />At Alphabit, we leverage advanced multi-platform frameworks to deliver seamless, native-like experiences across all devices.
+                        <p>Cross-platform development technologies enable building mobile applications for Android and
+                            iOS using a single codebase, reducing development time and cost while maintaining a
+                            consistent user experience.
+                            <br /><br />Modern frameworks like Flutter and React Native offer near-native performance,
+                            scalable architecture, and faster deployment. These technologies are widely used to build
+                            efficient, high-performance cross-platform mobile apps.
+                            <br /><br />At Alphabit, we leverage advanced multi-platform frameworks to deliver seamless,
+                            native-like experiences across all devices.
                         </p>
 
                         <div class="hero-stats-row">
@@ -308,7 +325,8 @@
                 <div class="section-header-modern">
                     <span class="tech-badge">Strategic Value</span>
                     <h2>Cross-Platform Adoption & Impact</h2>
-                    <p>Cross-platform development is transforming mobile app strategies by enabling faster, scalable, and cost-efficient application development.
+                    <p>Cross-platform development is transforming mobile app strategies by enabling faster, scalable,
+                        and cost-efficient application development.
                     </p>
                 </div>
                 <div class="impact-cards-grid">
@@ -318,7 +336,8 @@
                         </div>
                         <div class="impact-content">
                             <h3>Faster Time-to-Market</h3>
-                            <p>Launch applications quickly on both Android and iOS using a single codebase, reducing development time.
+                            <p>Launch applications quickly on both Android and iOS using a single codebase, reducing
+                                development time.
                             </p>
                         </div>
                     </div>
@@ -328,7 +347,8 @@
                         </div>
                         <div class="impact-content">
                             <h3>Cost Efficiency</h3>
-                            <p>Lower development and maintenance costs by sharing code and resources across multiple platforms.</p>
+                            <p>Lower development and maintenance costs by sharing code and resources across multiple
+                                platforms.</p>
                         </div>
                     </div>
                     <div class="impact-card">
@@ -337,7 +357,8 @@
                         </div>
                         <div class="impact-content">
                             <h3>Consistent User Experience</h3>
-                            <p>Deliver a uniform UI and seamless functionality across devices, ensuring brand consistency.</p>
+                            <p>Deliver a uniform UI and seamless functionality across devices, ensuring brand
+                                consistency.</p>
                         </div>
                     </div>
                     <div class="impact-card">
@@ -346,7 +367,8 @@
                         </div>
                         <div class="impact-content">
                             <h3>Scalable Development</h3>
-                            <p>Build flexible applications that easily adapt to new features and growing user demands.</p>
+                            <p>Build flexible applications that easily adapt to new features and growing user demands.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -439,7 +461,8 @@
                 <div class="section-header-modern">
                     <span class="tech-badge">Capabilities</span>
                     <h2>Types of Cross-Platform Technologies</h2>
-                    <p>Cross-platform development includes various approaches to build scalable and efficient mobile applications across platforms.</p>
+                    <p>Cross-platform development includes various approaches to build scalable and efficient mobile
+                        applications across platforms.</p>
                 </div>
 
                 <div class="tech-types-grid" style="grid-template-columns: repeat(2, 1fr);">
@@ -448,7 +471,8 @@
                             <i class="fas fa-code"></i>
                         </div>
                         <h3>Hybrid Frameworks</h3>
-                        <p>Use web technologies to build applications that run across multiple devices with a single codebase.</p>
+                        <p>Use web technologies to build applications that run across multiple devices with a single
+                            codebase.</p>
                         <div class="type-tags">
                             <span>HTML, CSS, JavaScript-based</span>
                             <span>Faster development cycles</span>
@@ -490,7 +514,8 @@
                             <i class="fas fa-globe"></i>
                         </div>
                         <h3>Progressive & Web-Based Apps</h3>
-                        <p>Run applications through web browsers with installable capabilities and offline functionality.</p>
+                        <p>Run applications through web browsers with installable capabilities and offline
+                            functionality.</p>
                         <div class="type-tags">
                             <span>Lightweight applications</span>
                             <span>Offline functionality</span>
@@ -508,7 +533,8 @@
                 <div class="section-header-modern">
                     <span class="tech-badge">Advanced Features</span>
                     <h2>Advanced Cross-Platform Technologies</h2>
-                    <p> Modern cross-platform development goes beyond basic code sharing — enabling high performance, native-like experiences, and scalable architectures across multiple platforms.</p>
+                    <p> Modern cross-platform development goes beyond basic code sharing â€” enabling high performance,
+                        native-like experiences, and scalable architectures across multiple platforms.</p>
                 </div>
 
                 <div class="advanced-tech-grid">
@@ -523,7 +549,8 @@
                         <div class="adv-icon"><i class="fas fa-tachometer-alt"></i></div>
                         <div class="adv-info">
                             <h3>Near-Native Performance Engines</h3>
-                            <p> Leverages optimized rendering engines and native bridges to deliver smooth, high-performance user experiences.</p>
+                            <p> Leverages optimized rendering engines and native bridges to deliver smooth,
+                                high-performance user experiences.</p>
                         </div>
                     </div>
                     <div class="adv-card">
@@ -537,14 +564,16 @@
                         <div class="adv-icon"><i class="fas fa-plug"></i></div>
                         <div class="adv-info">
                             <h3>API & Backend Integration</h3>
-                            <p> Seamlessly connects with cloud services, APIs, and databases for real-time data synchronization.</p>
+                            <p> Seamlessly connects with cloud services, APIs, and databases for real-time data
+                                synchronization.</p>
                         </div>
                     </div>
                     <div class="adv-card">
                         <div class="adv-icon"><i class="fas fa-bolt"></i></div>
                         <div class="adv-info">
                             <h3>PWA Capabilities</h3>
-                            <p> Enables installable, offline-ready applications that run directly in browsers with native-like functionality.</p>
+                            <p> Enables installable, offline-ready applications that run directly in browsers with
+                                native-like functionality.</p>
                         </div>
                     </div>
                 </div>
@@ -558,7 +587,8 @@
                     <div class="section-header-modern">
                         <span class="tech-badge">System Neural Map</span>
                         <h2>Key Components of Cross-Platform Apps</h2>
-                        <p>A production-ready cross-platform application includes interconnected layers for maximum efficiency.</p>
+                        <p>A production-ready cross-platform application includes interconnected layers for maximum
+                            efficiency.</p>
                     </div>
                 </div>
             </div>
@@ -685,7 +715,7 @@
                 <div class="section-header-modern">
                     <span class="tech-badge">Powered By</span>
                     <h2>Cross-Platform Tech Stack</h2>
-                    
+
                 </div>
 
                 <div class="stack-v2-container">
@@ -918,7 +948,8 @@
                         </div>
                         <div class="solution-mid">
                             <h3>Startup MVP development</h3>
-                            <p>Launch your product quickly on both iOS and Android with minimal resources and faster time-to-market.</p>
+                            <p>Launch your product quickly on both iOS and Android with minimal resources and faster
+                                time-to-market.</p>
                         </div>
                         <div class="solution-right">
                             <span class="solution-tag">Startup</span>
@@ -933,7 +964,8 @@
                         </div>
                         <div class="solution-mid">
                             <h3>Multi-platform business apps</h3>
-                            <p>Build robust enterprise applications that serve employees and clients seamlessly across all mobile devices.</p>
+                            <p>Build robust enterprise applications that serve employees and clients seamlessly across
+                                all mobile devices.</p>
                         </div>
                         <div class="solution-right">
                             <span class="solution-tag">Enterprise</span>
@@ -948,7 +980,8 @@
                         </div>
                         <div class="solution-mid">
                             <h3>Customer engagement apps</h3>
-                            <p>Increase brand loyalty with high-performance apps accessible to all smartphone users through a single codebase.</p>
+                            <p>Increase brand loyalty with high-performance apps accessible to all smartphone users
+                                through a single codebase.</p>
                         </div>
                         <div class="solution-right">
                             <span class="solution-tag">Marketing</span>
@@ -963,7 +996,8 @@
                         </div>
                         <div class="solution-mid">
                             <h3>Internal enterprise tools</h3>
-                            <p>Optimize workflows with unified mobile tools that integrate directly with existing corporate backend systems.</p>
+                            <p>Optimize workflows with unified mobile tools that integrate directly with existing
+                                corporate backend systems.</p>
                         </div>
                         <div class="solution-right">
                             <span class="solution-tag">Corporate</span>
@@ -978,7 +1012,8 @@
                         </div>
                         <div class="solution-mid">
                             <h3>Subscription-based platforms</h3>
-                            <p>Deliver premium content and services through scalable apps with integrated payment and subscription management.</p>
+                            <p>Deliver premium content and services through scalable apps with integrated payment and
+                                subscription management.</p>
                         </div>
                         <div class="solution-right">
                             <span class="solution-tag">SaaS</span>
@@ -993,7 +1028,8 @@
                         </div>
                         <div class="solution-mid">
                             <h3>Real-time service apps</h3>
-                            <p>Build on-demand platforms for logistics or services with real-time data synchronization across all devices.</p>
+                            <p>Build on-demand platforms for logistics or services with real-time data synchronization
+                                across all devices.</p>
                         </div>
                         <div class="solution-right">
                             <span class="solution-tag">Real-time</span>
@@ -1130,7 +1166,8 @@
                         <div class="item-visual"><i class="fas fa-award"></i></div>
                         <div class="item-main">
                             <h3>Expertise in modern frameworks</h3>
-                            <p>Proficiency in Flutter, React Native, and leading SDKs to build high-performance apps.</p>
+                            <p>Proficiency in Flutter, React Native, and leading SDKs to build high-performance apps.
+                            </p>
                         </div>
                         <div class="item-status">Expert</div>
                         <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
@@ -1140,7 +1177,8 @@
                         <div class="item-visual"><i class="fas fa-sitemap"></i></div>
                         <div class="item-main">
                             <h3>Scalable and clean architecture</h3>
-                            <p>Implementing MVVM and modular patterns for long-term maintainability and easy updates.</p>
+                            <p>Implementing MVVM and modular patterns for long-term maintainability and easy updates.
+                            </p>
                         </div>
                         <div class="item-status">Verified</div>
                         <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
@@ -1150,7 +1188,8 @@
                         <div class="item-visual"><i class="fas fa-bolt"></i></div>
                         <div class="item-main">
                             <h3>Performance-focused development</h3>
-                            <p>Optimizing bridges and rendering engines to ensure near-native speed and responsiveness.</p>
+                            <p>Optimizing bridges and rendering engines to ensure near-native speed and responsiveness.
+                            </p>
                         </div>
                         <div class="item-status">Certified</div>
                         <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
@@ -1160,7 +1199,8 @@
                         <div class="item-visual"><i class="fas fa-paint-brush"></i></div>
                         <div class="item-main">
                             <h3>Strong UI/UX consistency</h3>
-                            <p>Delivering a uniform and high-end brand experience across both iOS and Android platforms.</p>
+                            <p>Delivering a uniform and high-end brand experience across both iOS and Android platforms.
+                            </p>
                         </div>
                         <div class="item-status">Premium</div>
                         <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
@@ -1170,7 +1210,8 @@
                         <div class="item-visual"><i class="fas fa-sync"></i></div>
                         <div class="item-main">
                             <h3>Continuous optimization and support</h3>
-                            <p>Ongoing monitoring and updates to keep your application compatible with the latest OS releases.</p>
+                            <p>Ongoing monitoring and updates to keep your application compatible with the latest OS
+                                releases.</p>
                         </div>
                         <div class="item-status">Reliable</div>
                         <div class="item-arrow"><i class="fas fa-chevron-right"></i></div>
@@ -1192,7 +1233,8 @@
                         <div class="compact-visual"><i class="fas fa-tachometer-alt"></i></div>
                         <div class="compact-text">
                             <h3>Near-native performance improvements</h3>
-                            <p>Leveraging optimized rendering engines and AOT compilation to match native application speed.</p>
+                            <p>Leveraging optimized rendering engines and AOT compilation to match native application
+                                speed.</p>
                         </div>
                     </div>
 
@@ -1200,7 +1242,8 @@
                         <div class="compact-visual"><i class="fas fa-robot"></i></div>
                         <div class="compact-text">
                             <h3>AI-powered app experiences</h3>
-                            <p>Integrating intelligent features like predictive analytics and voice commands directly into the core app logic.</p>
+                            <p>Integrating intelligent features like predictive analytics and voice commands directly
+                                into the core app logic.</p>
                         </div>
                     </div>
 
@@ -1208,7 +1251,8 @@
                         <div class="compact-visual"><i class="fas fa-rocket"></i></div>
                         <div class="compact-text">
                             <h3>Faster development frameworks</h3>
-                            <p>Using modular components and advanced hot-reload features to drastically reduce overall deployment time.</p>
+                            <p>Using modular components and advanced hot-reload features to drastically reduce overall
+                                deployment time.</p>
                         </div>
                     </div>
 
@@ -1216,7 +1260,8 @@
                         <div class="compact-visual"><i class="fas fa-cloud"></i></div>
                         <div class="compact-text">
                             <h3>Deeper cloud integration</h3>
-                            <p>Seamlessly connecting mobile applications with scalable serverless backends and real-time cloud databases.</p>
+                            <p>Seamlessly connecting mobile applications with scalable serverless backends and real-time
+                                cloud databases.</p>
                         </div>
                     </div>
 
@@ -1224,7 +1269,8 @@
                         <div class="compact-visual"><i class="fas fa-project-diagram"></i></div>
                         <div class="compact-text">
                             <h3>Unified development ecosystems</h3>
-                            <p>Creating a single workflow that extends from mobile to web, desktop, and smart device ecosystems.</p>
+                            <p>Creating a single workflow that extends from mobile to web, desktop, and smart device
+                                ecosystems.</p>
                         </div>
                     </div>
                 </div>
@@ -1243,35 +1289,40 @@
                     <details class="faq-item" open>
                         <summary>What is cross-platform development?</summary>
                         <div class="faq-answer">
-                            <p>Cross-platform development is the process of building apps that run on multiple platforms (Android and iOS) using a single codebase.</p>
+                            <p>Cross-platform development is the process of building apps that run on multiple platforms
+                                (Android and iOS) using a single codebase.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
                         <summary>Which framework is best for cross-platform apps?</summary>
                         <div class="faq-answer">
-                            <p>Flutter is best for UI-rich apps with complex designs, while React Native is ideal for flexibility and faster development using JavaScript.</p>
+                            <p>Flutter is best for UI-rich apps with complex designs, while React Native is ideal for
+                                flexibility and faster development using JavaScript.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
                         <summary>Is cross-platform development suitable for startups?</summary>
                         <div class="faq-answer">
-                            <p>Yes, it is highly recommended for startups as it helps reduce cost and speeds up the product launch on both platforms simultaneously.</p>
+                            <p>Yes, it is highly recommended for startups as it helps reduce cost and speeds up the
+                                product launch on both platforms simultaneously.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
                         <summary>Can cross-platform apps replace native apps?</summary>
                         <div class="faq-answer">
-                            <p>They can handle most use cases perfectly, but highly complex apps with extreme performance requirements may still require native development.</p>
+                            <p>They can handle most use cases perfectly, but highly complex apps with extreme
+                                performance requirements may still require native development.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
                         <summary>Is cross-platform development scalable?</summary>
                         <div class="faq-answer">
-                            <p>Yes, with proper architecture and modular design, cross-platform applications can support large-scale enterprise deployments efficiently.</p>
+                            <p>Yes, with proper architecture and modular design, cross-platform applications can support
+                                large-scale enterprise deployments efficiently.</p>
                         </div>
                     </details>
                 </div>
@@ -1301,46 +1352,45 @@
             </div>
         </section>
 
-        <!-- Footer -->
-        <section class="Footer">
-            <div class="footer-bg-clip">
-                <div class="footer-bg-circle"></div>
-            </div>
-            <div class="footer-container">
-                <div class="footer-left">
-                    <div class="footer-icons">
-                        <a target="_blank" href="#">
-                            <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
-                        <a target="_blank"
-                            href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
-                                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
-                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
-                                src="./assets/images/instagram.webp" alt="instagram" /></a>
-                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
-                                src="./assets/images/facebook2.webp" alt="facebook" /></a>
-                    </div>
-                    <div class="footer-text">
-                        <p class="footer-greet">
-                            <span class="hand">👋</span> Hey Innovator,
-                        </p>
-                        <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
-                        <p class="footer-email">info@alphabitinfoway.com</p>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <img src="./assets/images/AI Model.webp" alt="Robot" />
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
-                <div class="footer-links">
-                    <a href="#">AGENCY</a>
-                    <a href="#">CAREER</a>
-                    <a href="#">PRIVACY</a>
-                    <a href="#">TERMS &amp; CONDITION</a>
-                </div>
-            </div>
-        </section>
+            <!-- Footer -->
+    <section class="Footer">
+      <div class="footer-bg-clip">
+        <div class="footer-bg-circle"></div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-icons">
+            <a target="_blank" href="#">
+              <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+            <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                src="./assets/images/instagram.webp" alt="instagram" /></a>
+            <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                src="./assets/images/facebook2.webp" alt="facebook" /></a>
+          </div>
+          <div class="footer-text">
+            <p class="footer-greet">
+              <span class="hand">👋</span> Hey Innovator,
+            </p>
+            <h2 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h2>
+            <p class="footer-email">info@alphabitinfoway.com</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <img src="./assets/images/AI Model.webp" alt="Robot" />
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+        <div class="footer-links">
+          <a href="#">AGENCY</a>
+          <a href="#">CAREER</a>
+          <a href="#">PRIVACY</a>
+          <a href="#">TERMS &amp; CONDITION</a>
+        </div>
+      </div>
+    </section>
     </div>
 
     <script src="./assets/js/main.js"></script>
@@ -1388,4 +1438,3 @@
 </body>
 
 </html>
-

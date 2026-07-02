@@ -1,6 +1,6 @@
 # Custom 404 Redirect
-# Use project subfolder path so XAMPP/Apache finds the file correctly
-ErrorDocument 404 /alphabit/404.html
+# On live server, this should be /404.html. On XAMPP it was /alphabit/404.html
+ErrorDocument 404 /404.html
 
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
@@ -13,49 +13,74 @@ ErrorDocument 404 /alphabit/404.html
 # Remove .html extension from URLs
 Options -MultiViews
 RewriteEngine On
-# Set RewriteBase to the project folder so rules work under /alphabit/
-RewriteBase /alphabit/
+
+# ---------------------------------------------------------
+# IMPORTANT:
+# For LIVE SERVER, use RewriteBase /
+# For LOCAL XAMPP, use RewriteBase /alphabit/
+# ---------------------------------------------------------
+RewriteBase /
 
 # Redirect about to aboutus
-RewriteRule ^about/?$ /alphabit/aboutus [R=301,L]
+RewriteRule ^about/?$ aboutus [R=301,L]
 
 # Serve the new URL from the existing about.html page
 RewriteRule ^aboutus/?$ about.html [L]
 
 # Redirect blog to blogs
-RewriteRule ^blog/?$ /alphabit/blogs [R=301,L]
+# RewriteRule ^blog/?$ blogs [R=301,L]
 
 # Serve the new URL from the existing blog.html page
 RewriteRule ^blogs/?$ blog.html [L]
 
 # Redirect contact to contact-us
-RewriteRule ^contact/?$ /alphabit/contact-us [R=301,L]
+RewriteRule ^contact/?$ contact-us [R=301,L]
 
 # Serve the new URL from the existing contact.html page
 RewriteRule ^contact-us/?$ contact.html [L]
 
 # Redirect obsolete AI page to updated URL
-RewriteRule ^ai-machine-learning/?$ /alphabit/ai-and-machine-learning-development-services [R=301,L]
+RewriteRule ^ai-machine-learning/?$ ai-and-machine-learning-development-services [R=301,L]
 
 # Serve the new URL from the existing ai-machine-learning.html page
 RewriteRule ^ai-and-machine-learning-development-services/?$ ai-machine-learning.html [L]
 
 # Redirect obsolete Cyber Security page to updated URL
-RewriteRule ^cyber-security/?$ /alphabit/ai-cyber-security-and-compliance-services [R=301,L]
+RewriteRule ^cyber-security/?$ ai-cyber-security-and-compliance-services [R=301,L]
 
 # Serve the new URL from the existing cyber-security.html page
 RewriteRule ^ai-cyber-security-and-compliance-services/?$ cyber-security.html [L]
 
+# Redirect old blogdetails?slug=xxx to /xxx
+RewriteCond %{QUERY_STRING} ^slug=([^&]+) [NC]
+RewriteRule ^blogdetails(?:\.html)?$ %1? [R=301,L]
+
 # If the request is not for a real file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-
+# Check if the corresponding .html file exists
+RewriteCond %{REQUEST_FILENAME}.html -f
 # Rewrite /page to /page.html
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
+# If .html doesn't exist, route to blogdetails.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html !-f
+RewriteRule ^([^\.]+)$ blogdetails.html?slug=$1 [NC,L,QSA]
+
+# Remove trailing slashes (unless it's a directory)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ $1 [L,R=301]
+
+# Redirect index.html to root
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ / [R=301,L]
+
 # Redirect /page.html to /page (remove extension from browser URL)
-# Capture only the last path segment so redirects work from the subfolder
 RewriteCond %{THE_REQUEST} /([^/]+)\.html [NC]
+# Make sure we don't redirect index.html again
+RewriteCond %1 !=index
 RewriteRule ^ %1 [NC,L,R=301]
 
 # ----------------------------------------------------------------------

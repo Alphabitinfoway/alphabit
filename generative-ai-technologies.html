@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
     <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
 </head>
@@ -34,223 +34,235 @@
     </div>
 
     <div class="container">
-                <header>
-      <div class="logo-img">
-        <a href="./">
-          <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
-        </a>
-      </div>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="navbar">
-        <h6><a href="./">Home</a></h6>
-        <h6 class="dropdown">
-          <a href="services" class="dropdown-toggle">Services <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
-          <div class="submenu-panel">
-            <div class="panel-header">
-              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
-              <span class="panel-title">Services</span>
+        <header>
+            <div class="logo-img">
+                <a href="./">
+                    <img src="./assets/images/logo.webp" alt="Alphabit Infoway Logo" class="logo" />
+                </a>
             </div>
-            <ul class="submenu-list">
-              <li><a href="ai-machine-learning"><i class="fa-solid fa-brain"></i> AI & Machine Learning</a></li>
-              <li><a href="cyber-security"><i class="fa-solid fa-shield-halved"></i> Cyber Security & Compliance</a></li>
-              <li><a href="ai-full-stack-development-services"><i class="fa-solid fa-code"></i> Full Stack Web Development</a></li>
-              <li><a href="ai-mobile-app-development-services"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App & Product Design</a></li>
-            </ul>
-          </div>
-        </h6>
-        <h6 class="dropdown">
-          <a href="./#products" class="dropdown-toggle">Products <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
-          <div class="submenu-panel">
-            <div class="panel-header">
-              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
-              <span class="panel-title">Products</span>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <ul class="submenu-list">
-              <li><a href="genie-dial"><i class="fa-solid fa-phone"></i> Genie Dial</a></li>
-              <li><a href="skill-studio"><i class="fa-solid fa-graduation-cap"></i> Skill Studio</a></li>
-              <li><a href="dhiread"><i class="fa-solid fa-book-open"></i> DhiRead</a></li>
-              <li><a href="dhisure"><i class="fa-solid fa-square-check"></i> Dhisure</a></li>
-              <li><a href="dhihealth"><i class="fa-solid fa-heart-pulse"></i> Dhihealth</a></li>
-              <li><a href="dhiyodha-network"><i class="fa-solid fa-circle-nodes"></i> Dhiyodha Network</a></li>
-            </ul>
-          </div>
-        </h6>
-        <h6 class="dropdown">
-          <a href="Technology" class="dropdown-toggle">Technology <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
-          <div class="submenu-panel mega-panel">
-            <div class="panel-header">
-              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
-              <span class="panel-title">Technology</span>
-            </div>
-            <div class="mega-menu-container">
-              <div class="mega-menu-sidebar">
-                <button class="sidebar-item active" data-tab="ai-tab">
-                  <i class="fa-solid fa-brain"></i>
-                  <span>Artificial Intelligence</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-                <button class="sidebar-item" data-tab="web-tab">
-                  <i class="fa-solid fa-laptop-code"></i>
-                  <span>Web Technologies</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-                <button class="sidebar-item" data-tab="mobile-tab">
-                  <i class="fa-solid fa-mobile-screen-button"></i>
-                  <span>Mobile Technologies</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-                <button class="sidebar-item" data-tab="cloud-tab">
-                  <i class="fa-solid fa-cloud"></i>
-                  <span>Cloud & DevOps</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-                <button class="sidebar-item" data-tab="data-tab">
-                  <i class="fa-solid fa-chart-pie"></i>
-                  <span>Data & Analytics</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-                <button class="sidebar-item" data-tab="security-tab">
-                  <i class="fa-solid fa-shield-halved"></i>
-                  <span>Cyber Security</span>
-                  <i class="fa-solid fa-chevron-right arrow-icon"></i>
-                </button>
-              </div>
-              <div class="mega-menu-content">
-                <!-- AI Pane -->
-                <div class="tab-pane active" id="ai-tab">
-                  <div class="pane-category-title">Artificial Intelligence</div>
-                  <div class="pane-grid">
-                    <a href="ai-development-technologies" class="pane-item">
-                      <span class="item-title">AI Development</span>
-                      <span class="item-desc">Custom AI & Intelligent agents development</span>
-                    </a>
-                    <a href="machine-learning-technologies" class="pane-item">
-                      <span class="item-title">Machine Learning</span>
-                      <span class="item-desc">Predictive modeling & pattern recognition</span>
-                    </a>
-                    <a href="generative-ai-technologies" class="pane-item">
-                      <span class="item-title">Generative AI</span>
-                      <span class="item-desc">LLMs, GPT integration & custom content generation</span>
-                    </a>
-                    <a href="ai-and-chatbot-technologies" class="pane-item">
-                      <span class="item-title">AI Chatbots</span>
-                      <span class="item-desc">Conversational UI & customer service automation</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Web Pane -->
-                <div class="tab-pane" id="web-tab">
-                  <div class="pane-category-title">Web Technologies</div>
-                  <div class="pane-grid">
-                    <a href="modern-front-end-technologies" class="pane-item">
-                      <span class="item-title">Frontend Development</span>
-                      <span class="item-desc">Modern interactive web user interfaces</span>
-                    </a>
-                    <a href="backend-technologies" class="pane-item">
-                      <span class="item-title">Backend Development</span>
-                      <span class="item-desc">Scalable server-side logic & APIs</span>
-                    </a>
-                    <a href="full-stack-development-technologies" class="pane-item">
-                      <span class="item-title">Full Stack</span>
-                      <span class="item-desc">End-to-end web product architecture</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Mobile Pane -->
-                <div class="tab-pane" id="mobile-tab">
-                  <div class="pane-category-title">Mobile Technologies</div>
-                  <div class="pane-grid">
-                    <a href="ios-development-technologies" class="pane-item">
-                      <span class="item-title">iOS Development</span>
-                      <span class="item-desc">Native Swift & Objective-C applications</span>
-                    </a>
-                    <a href="android-development-technologies" class="pane-item">
-                      <span class="item-title">Android Development</span>
-                      <span class="item-desc">Native Kotlin & Java mobile apps</span>
-                    </a>
-                    <a href="cross-platform-development-technologies" class="pane-item">
-                      <span class="item-title">Cross Platform Development</span>
-                      <span class="item-desc">React Native & Flutter solutions</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Cloud Pane -->
-                <div class="tab-pane" id="cloud-tab">
-                  <div class="pane-category-title">Cloud & DevOps</div>
-                  <div class="pane-grid">
-                    <a href="cloud-platform-technologies" class="pane-item">
-                      <span class="item-title">Cloud Platforms</span>
-                      <span class="item-desc">AWS, Azure & Google Cloud solutions</span>
-                    </a>
-                    <a href="devops-ci-cd-technologies" class="pane-item">
-                      <span class="item-title">DevOps & CI/CD</span>
-                      <span class="item-desc">Continuous integration & automation pipelines</span>
-                    </a>
-                    <a href="cloud-deployment-technologies" class="pane-item">
-                      <span class="item-title">Cloud Deployment</span>
-                      <span class="item-desc">Safe & scalable containerized orchestration</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Data Pane -->
-                <div class="tab-pane" id="data-tab">
-                  <div class="pane-category-title">Data & Analytics</div>
-                  <div class="pane-grid">
-                    <a href="data-engineering-technologies" class="pane-item">
-                      <span class="item-title">Data Engineering</span>
-                      <span class="item-desc">Data pipeline architecture & warehouse setups</span>
-                    </a>
-                    <a href="data-visualization-technologies" class="pane-item">
-                      <span class="item-title">Data Visualization</span>
-                      <span class="item-desc">Dashboards & advanced charts rendering</span>
-                    </a>
-                    <a href="data-processing-technologies" class="pane-item">
-                      <span class="item-title">Data Processing</span>
-                      <span class="item-desc">Big data analytics & real-time streams</span>
-                    </a>
-                  </div>
-                </div>
-                <!-- Security Pane -->
-                <div class="tab-pane" id="security-tab">
-                  <div class="pane-category-title">Cyber Security</div>
-                  <div class="pane-grid">
-                    <a href="security-solutions-technologies" class="pane-item">
-                      <span class="item-title">Security Solutions</span>
-                      <span class="item-desc">Threat detection & penetration protection</span>
-                    </a>
-                    <a href="security-compliance-technologies" class="pane-item">
-                      <span class="item-title">Compliance</span>
-                      <span class="item-desc">Standards auditing (SOC2, ISO, GDPR)</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </h6>
-        <h6><a href="aboutus">About</a></h6>
-        <h6><a href="hire-developers">Hire Developers</a></h6>
-        <h6 class="dropdown">
-          <a href="#" class="dropdown-toggle">Insights <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
-          <div class="submenu-panel">
-            <div class="panel-header">
-              <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
-              <span class="panel-title">Insights</span>
-            </div>
-            <ul class="submenu-list">
-              <li><a href="blogs"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
-              <li><a href="career"><i class="fa-solid fa-briefcase"></i> Career</a></li>
-            </ul>
-          </div>
-        </h6>
-        <a href="contact-us" class="contact-btn mobile-contact-btn">Contact Us</a>
-      </nav>
-      <a href="contact-us" class="contact-btn desktop-contact-btn">Contact Us</a>
-    </header>
+            <nav class="navbar">
+                <h6><a href="./">Home</a></h6>
+                <h6 class="dropdown">
+                    <a href="services" class="dropdown-toggle">Services <i
+                            class="fa-solid fa-chevron-down toggle-icon"></i></a>
+                    <div class="submenu-panel">
+                        <div class="panel-header">
+                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+                            <span class="panel-title">Services</span>
+                        </div>
+                        <ul class="submenu-list">
+                            <li><a href="ai-machine-learning"><i class="fa-solid fa-brain"></i> AI & Machine
+                                    Learning</a></li>
+                            <li><a href="cyber-security"><i class="fa-solid fa-shield-halved"></i> Cyber Security &
+                                    Compliance</a></li>
+                            <li><a href="ai-full-stack-development-services"><i class="fa-solid fa-code"></i> Full Stack
+                                    Web Development</a></li>
+                            <li><a href="ai-mobile-app-development-services"><i
+                                        class="fa-solid fa-mobile-screen-button"></i> Mobile App & Product Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                </h6>
+                <h6 class="dropdown">
+                    <a href="./#products" class="dropdown-toggle">Products <i
+                            class="fa-solid fa-chevron-down toggle-icon"></i></a>
+                    <div class="submenu-panel">
+                        <div class="panel-header">
+                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+                            <span class="panel-title">Products</span>
+                        </div>
+                        <ul class="submenu-list">
+                            <li><a href="genie-dial"><i class="fa-solid fa-phone"></i> Genie Dial</a></li>
+                            <li><a href="skill-studio"><i class="fa-solid fa-graduation-cap"></i> Skill Studio</a></li>
+                            <li><a href="dhiread"><i class="fa-solid fa-book-open"></i> DhiRead</a></li>
+                            <li><a href="dhisure"><i class="fa-solid fa-square-check"></i> Dhisure</a></li>
+                            <li><a href="dhihealth"><i class="fa-solid fa-heart-pulse"></i> Dhihealth</a></li>
+                            <li><a href="dhiyodha-network"><i class="fa-solid fa-circle-nodes"></i> Dhiyodha Network</a>
+                            </li>
+                        </ul>
+                    </div>
+                </h6>
+                <h6 class="dropdown">
+                    <a href="Technology" class="dropdown-toggle">Technology <i
+                            class="fa-solid fa-chevron-down toggle-icon"></i></a>
+                    <div class="submenu-panel mega-panel">
+                        <div class="panel-header">
+                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+                            <span class="panel-title">Technology</span>
+                        </div>
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-sidebar">
+                                <button class="sidebar-item active" data-tab="ai-tab">
+                                    <i class="fa-solid fa-brain"></i>
+                                    <span>Artificial Intelligence</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                                <button class="sidebar-item" data-tab="web-tab">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    <span>Web Technologies</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                                <button class="sidebar-item" data-tab="mobile-tab">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <span>Mobile Technologies</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                                <button class="sidebar-item" data-tab="cloud-tab">
+                                    <i class="fa-solid fa-cloud"></i>
+                                    <span>Cloud & DevOps</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                                <button class="sidebar-item" data-tab="data-tab">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                    <span>Data & Analytics</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                                <button class="sidebar-item" data-tab="security-tab">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <span>Cyber Security</span>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </button>
+                            </div>
+                            <div class="mega-menu-content">
+                                <!-- AI Pane -->
+                                <div class="tab-pane active" id="ai-tab">
+                                    <div class="pane-category-title">Artificial Intelligence</div>
+                                    <div class="pane-grid">
+                                        <a href="ai-development-technologies" class="pane-item">
+                                            <span class="item-title">AI Development</span>
+                                            <span class="item-desc">Custom AI & Intelligent agents development</span>
+                                        </a>
+                                        <a href="machine-learning-technologies" class="pane-item">
+                                            <span class="item-title">Machine Learning</span>
+                                            <span class="item-desc">Predictive modeling & pattern recognition</span>
+                                        </a>
+                                        <a href="generative-ai-technologies" class="pane-item">
+                                            <span class="item-title">Generative AI</span>
+                                            <span class="item-desc">LLMs, GPT integration & custom content
+                                                generation</span>
+                                        </a>
+                                        <a href="ai-and-chatbot-technologies" class="pane-item">
+                                            <span class="item-title">AI Chatbots</span>
+                                            <span class="item-desc">Conversational UI & customer service
+                                                automation</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Web Pane -->
+                                <div class="tab-pane" id="web-tab">
+                                    <div class="pane-category-title">Web Technologies</div>
+                                    <div class="pane-grid">
+                                        <a href="modern-front-end-technologies" class="pane-item">
+                                            <span class="item-title">Frontend Development</span>
+                                            <span class="item-desc">Modern interactive web user interfaces</span>
+                                        </a>
+                                        <a href="backend-technologies" class="pane-item">
+                                            <span class="item-title">Backend Development</span>
+                                            <span class="item-desc">Scalable server-side logic & APIs</span>
+                                        </a>
+                                        <a href="full-stack-development-technologies" class="pane-item">
+                                            <span class="item-title">Full Stack</span>
+                                            <span class="item-desc">End-to-end web product architecture</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Mobile Pane -->
+                                <div class="tab-pane" id="mobile-tab">
+                                    <div class="pane-category-title">Mobile Technologies</div>
+                                    <div class="pane-grid">
+                                        <a href="ios-development-technologies" class="pane-item">
+                                            <span class="item-title">iOS Development</span>
+                                            <span class="item-desc">Native Swift & Objective-C applications</span>
+                                        </a>
+                                        <a href="android-development-technologies" class="pane-item">
+                                            <span class="item-title">Android Development</span>
+                                            <span class="item-desc">Native Kotlin & Java mobile apps</span>
+                                        </a>
+                                        <a href="cross-platform-development-technologies" class="pane-item">
+                                            <span class="item-title">Cross Platform Development</span>
+                                            <span class="item-desc">React Native & Flutter solutions</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Cloud Pane -->
+                                <div class="tab-pane" id="cloud-tab">
+                                    <div class="pane-category-title">Cloud & DevOps</div>
+                                    <div class="pane-grid">
+                                        <a href="cloud-platform-technologies" class="pane-item">
+                                            <span class="item-title">Cloud Platforms</span>
+                                            <span class="item-desc">AWS, Azure & Google Cloud solutions</span>
+                                        </a>
+                                        <a href="devops-ci-cd-technologies" class="pane-item">
+                                            <span class="item-title">DevOps & CI/CD</span>
+                                            <span class="item-desc">Continuous integration & automation pipelines</span>
+                                        </a>
+                                        <a href="cloud-deployment-technologies" class="pane-item">
+                                            <span class="item-title">Cloud Deployment</span>
+                                            <span class="item-desc">Safe & scalable containerized orchestration</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Data Pane -->
+                                <div class="tab-pane" id="data-tab">
+                                    <div class="pane-category-title">Data & Analytics</div>
+                                    <div class="pane-grid">
+                                        <a href="data-engineering-technologies" class="pane-item">
+                                            <span class="item-title">Data Engineering</span>
+                                            <span class="item-desc">Data pipeline architecture & warehouse setups</span>
+                                        </a>
+                                        <a href="data-visualization-technologies" class="pane-item">
+                                            <span class="item-title">Data Visualization</span>
+                                            <span class="item-desc">Dashboards & advanced charts rendering</span>
+                                        </a>
+                                        <a href="data-processing-technologies" class="pane-item">
+                                            <span class="item-title">Data Processing</span>
+                                            <span class="item-desc">Big data analytics & real-time streams</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Security Pane -->
+                                <div class="tab-pane" id="security-tab">
+                                    <div class="pane-category-title">Cyber Security</div>
+                                    <div class="pane-grid">
+                                        <a href="security-solutions-technologies" class="pane-item">
+                                            <span class="item-title">Security Solutions</span>
+                                            <span class="item-desc">Threat detection & penetration protection</span>
+                                        </a>
+                                        <a href="security-compliance-technologies" class="pane-item">
+                                            <span class="item-title">Compliance</span>
+                                            <span class="item-desc">Standards auditing (SOC2, ISO, GDPR)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </h6>
+                <h6><a href="aboutus">About</a></h6>
+                <h6><a href="hire-developers">Hire Developers</a></h6>
+                <h6 class="dropdown">
+                    <a href="#" class="dropdown-toggle">Insights <i
+                            class="fa-solid fa-chevron-down toggle-icon"></i></a>
+                    <div class="submenu-panel">
+                        <div class="panel-header">
+                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
+                            <span class="panel-title">Insights</span>
+                        </div>
+                        <ul class="submenu-list">
+                            <li><a href="blogs"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
+                            <li><a href="career"><i class="fa-solid fa-briefcase"></i> Career</a></li>
+                        </ul>
+                    </div>
+                </h6>
+                <a href="contact-us" class="contact-btn mobile-contact-btn">Contact Us</a>
+            </nav>
+            <a href="contact-us" class="contact-btn desktop-contact-btn">Contact Us</a>
+        </header>
 
         <!-- Hero Section -->
         <section class="tech-hero-modern">
@@ -432,8 +444,8 @@
                 </div>
             </div>
         </section>
-        
-   
+
+
         <!-- Types of GenAI -->
         <section class="tech-types-modern">
             <div class="container-box">
@@ -579,14 +591,15 @@
         </section>
 
 
-             <!-- Key Components -->
+        <!-- Key Components -->
         <section class="tech-components-neural">
             <div class="container-header-flow">
                 <div class="container-box">
                     <div class="section-header-modern">
                         <span class="tech-badge">System Neural Map</span>
                         <h2>Integrated Generative AI Architecture</h2>
-                        <p>Our production systems are built as an interconnected ecosystem of intelligence, not just isolated components.</p>
+                        <p>Our production systems are built as an interconnected ecosystem of intelligence, not just
+                            isolated components.</p>
                     </div>
                 </div>
             </div>
@@ -595,7 +608,8 @@
                 <div class="container-box">
                     <div class="neural-map-container">
                         <!-- Connecting SVG Path (Neural Pathways) -->
-                        <svg class="neural-pathways" width="100%" height="100%" viewBox="0 0 1000 600" preserveAspectRatio="none">
+                        <svg class="neural-pathways" width="100%" height="100%" viewBox="0 0 1000 600"
+                            preserveAspectRatio="none">
                             <path class="path-line" d="M500,300 L166,100" />
                             <path class="path-line" d="M500,300 L833,100" />
                             <path class="path-line" d="M500,300 L166,300" />
@@ -773,7 +787,8 @@
                 <div class="section-header-modern">
                     <span class="tech-badge">Development Flow</span>
                     <h2>Generative AI Development Lifecycle</h2>
-                    <p>A structured lifecycle ensures high performance, production-ready scalability, and ethical safety.</p>
+                    <p>A structured lifecycle ensures high performance, production-ready scalability, and ethical
+                        safety.</p>
                 </div>
 
                 <div class="horizontal-stepper-system">
@@ -845,7 +860,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Applications of Generative AI -->
         <section class="tech-apps-minimal">
             <div class="container-box">
@@ -853,10 +868,11 @@
                     <div class="apps-left-info">
                         <span class="tech-badge">Capabilities</span>
                         <h2>Applications of <br>Generative AI</h2>
-                        <p>Revolutionizing industries by enabling machines to create, reason, and compute with human-like intuition.</p>
+                        <p>Revolutionizing industries by enabling machines to create, reason, and compute with
+                            human-like intuition.</p>
                         <div class="apps-visual-accent"></div>
                     </div>
-                    
+
                     <div class="apps-right-points">
                         <div class="app-point-item">
                             <div class="app-point-icon"><i class="fas fa-pen-nib"></i></div>
@@ -1002,7 +1018,7 @@
                     <h2>Industries Using Generative AI</h2>
                     <p>Transforming complex workflows across diverse sectors with specialized AI integration.</p>
                 </div>
-                
+
                 <div class="industry-pills-grid">
                     <!-- Healthcare -->
                     <div class="industry-pill-item">
@@ -1256,7 +1272,8 @@
                     <details class="faq-item" open>
                         <summary>What is generative AI?</summary>
                         <div class="faq-answer">
-                            <p>Generative AI refers to technologies that can create content such as text, images, audio, and code using machine learning models trained on vast datasets.</p>
+                            <p>Generative AI refers to technologies that can create content such as text, images, audio,
+                                and code using machine learning models trained on vast datasets.</p>
                         </div>
                     </details>
 
@@ -1264,7 +1281,8 @@
                     <details class="faq-item">
                         <summary>How does generative AI work?</summary>
                         <div class="faq-answer">
-                            <p>It uses deep learning models (like Transformers or GANs) trained on large datasets to identify patterns and generate new content based on user input prompts.</p>
+                            <p>It uses deep learning models (like Transformers or GANs) trained on large datasets to
+                                identify patterns and generate new content based on user input prompts.</p>
                         </div>
                     </details>
 
@@ -1272,7 +1290,8 @@
                     <details class="faq-item">
                         <summary>What are examples of generative AI tools?</summary>
                         <div class="faq-answer">
-                            <p>Examples include OpenAI models (GPT-4), DALL·E for images, Midjourney for creative visuals, and various AI-based content and code generation platforms.</p>
+                            <p>Examples include OpenAI models (GPT-4), DALLÂ·E for images, Midjourney for creative
+                                visuals, and various AI-based content and code generation platforms.</p>
                         </div>
                     </details>
 
@@ -1280,7 +1299,8 @@
                     <details class="faq-item">
                         <summary>What is the difference between generative AI and machine learning?</summary>
                         <div class="faq-answer">
-                            <p>Standard machine learning focuses on prediction and classification, while generative AI focuses on creating entirely new data and content that didn't exist before.</p>
+                            <p>Standard machine learning focuses on prediction and classification, while generative AI
+                                focuses on creating entirely new data and content that didn't exist before.</p>
                         </div>
                     </details>
 
@@ -1288,7 +1308,8 @@
                     <details class="faq-item">
                         <summary>What are the benefits of generative AI?</summary>
                         <div class="faq-answer">
-                            <p>It significantly improves productivity, automates repetitive content creation, enables rapid prototyping, and provides highly personalized user experiences at scale.</p>
+                            <p>It significantly improves productivity, automates repetitive content creation, enables
+                                rapid prototyping, and provides highly personalized user experiences at scale.</p>
                         </div>
                     </details>
 
@@ -1296,7 +1317,8 @@
                     <details class="faq-item">
                         <summary>What are challenges in generative AI?</summary>
                         <div class="faq-answer">
-                            <p>Key challenges include model bias, "hallucinations" (incorrect outputs), high computational costs, and maintaining content accuracy and ethical safety.</p>
+                            <p>Key challenges include model bias, "hallucinations" (incorrect outputs), high
+                                computational costs, and maintaining content accuracy and ethical safety.</p>
                         </div>
                     </details>
 
@@ -1304,7 +1326,8 @@
                     <details class="faq-item">
                         <summary>How is generative AI used in real-world applications?</summary>
                         <div class="faq-answer">
-                            <p>It is currently used in customer support chatbots, professional design automation, marketing content generation, automated coding, and synthetic data for research.</p>
+                            <p>It is currently used in customer support chatbots, professional design automation,
+                                marketing content generation, automated coding, and synthetic data for research.</p>
                         </div>
                     </details>
 
@@ -1312,7 +1335,8 @@
                     <details class="faq-item">
                         <summary>What is the future of generative AI?</summary>
                         <div class="faq-answer">
-                            <p>The future points towards multimodal AI (text/image/video combined), real-time generation on local devices, and deep human-AI collaboration across all creative fields.</p>
+                            <p>The future points towards multimodal AI (text/image/video combined), real-time generation
+                                on local devices, and deep human-AI collaboration across all creative fields.</p>
                         </div>
                     </details>
                 </div>
@@ -1325,12 +1349,13 @@
                 <div class="cta-wrapper-v3">
                     <div class="cta-glow-1"></div>
                     <div class="cta-glow-2"></div>
-                    
+
                     <div class="cta-content-v3">
                         <span class="cta-badge-v3">The Next Frontier</span>
                         <h2>Ready to Build with Generative AI?</h2>
-                        <p>Leverage generative AI technologies to create smarter, faster, and more innovative solutions tailored to your business needs.</p>
-                        
+                        <p>Leverage generative AI technologies to create smarter, faster, and more innovative solutions
+                            tailored to your business needs.</p>
+
                         <div class="cta-action-v3">
                             <a href="contact.php" class="cta-btn-main">
                                 <span>Get a Free Consultation</span>
@@ -1347,46 +1372,45 @@
         </section>
 
         <!-- Regular Footer -->
-        <!-- Footer -->
-        <section class="Footer">
-            <div class="footer-bg-clip">
-                <div class="footer-bg-circle"></div>
-            </div>
-            <div class="footer-container">
-                <div class="footer-left">
-                    <div class="footer-icons">
-                        <a target="_blank" href="#">
-                            <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
-                        <a target="_blank"
-                            href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
-                                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
-                        <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
-                                src="./assets/images/instagram.webp" alt="instagram" /></a>
-                        <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
-                                src="./assets/images/facebook2.webp" alt="facebook" /></a>
-                    </div>
-                    <div class="footer-text">
-                        <p class="footer-greet">
-                            <span class="hand">👋</span> Hey Innovator,
-                        </p>
-                        <h1 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h1>
-                        <p class="footer-email">info@alphabitinfoway.com</p>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <img src="./assets/images/AI Model.webp" alt="Robot" />
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
-                <div class="footer-links">
-                    <a href="#">AGENCY</a>
-                    <a href="#">CAREER</a>
-                    <a href="#">PRIVACY</a>
-                    <a href="#">TERMS &amp; CONDITION</a>
-                </div>
-            </div>
-        </section>
+            <!-- Footer -->
+    <section class="Footer">
+      <div class="footer-bg-clip">
+        <div class="footer-bg-circle"></div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-icons">
+            <a target="_blank" href="#">
+              <img src="./assets/images/twitter2.webp" alt="twitter" /></a>
+            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+                src="./assets/images/linkedin2.webp" alt="linkedin" /></a>
+            <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
+                src="./assets/images/instagram.webp" alt="instagram" /></a>
+            <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
+                src="./assets/images/facebook2.webp" alt="facebook" /></a>
+          </div>
+          <div class="footer-text">
+            <p class="footer-greet">
+              <span class="hand">👋</span> Hey Innovator,
+            </p>
+            <h2 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h2>
+            <p class="footer-email">info@alphabitinfoway.com</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <img src="./assets/images/AI Model.webp" alt="Robot" />
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> ALPHABIT INFOWAY</p>
+        <div class="footer-links">
+          <a href="#">AGENCY</a>
+          <a href="#">CAREER</a>
+          <a href="#">PRIVACY</a>
+          <a href="#">TERMS &amp; CONDITION</a>
+        </div>
+      </div>
+    </section>
     </div>
 
     <script src="./assets/js/main.js"></script>
@@ -1396,7 +1420,7 @@
             const dots = document.querySelectorAll('.stepper-dot');
             const cards = document.querySelectorAll('.stepper-card-item');
             const fill = document.querySelector('.stepper-progress-fill');
-            
+
             // Calculate progress width (0% to 100% across 6 steps)
             const progressWidth = ((stepIndex - 1) / (dots.length - 1)) * 100;
             fill.style.width = progressWidth + '%';
@@ -1406,7 +1430,7 @@
                 if (index + 1 <= stepIndex) {
                     dot.classList.add('active');
                     if (index + 1 < stepIndex || stepIndex === index + 1) {
-                         dot.innerHTML = '<i class="fas fa-check"></i>';
+                        dot.innerHTML = '<i class="fas fa-check"></i>';
                     }
                 } else {
                     dot.classList.remove('active');
@@ -1440,4 +1464,3 @@
 </body>
 
 </html>
-
