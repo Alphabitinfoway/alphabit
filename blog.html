@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -468,7 +468,7 @@
         </div>
         <div class="feed-card-footer">
           <p>${cleanTitle}</p>
-          <a href="${postSlug}" class="feed-arrow">â†—</a>
+          <a href="${postSlug}" class="feed-arrow"><img src="./assets/images/arrow.webp" alt="arrow" style="width: 24px; height: 24px;"></a>
         </div>
       `;
           blogContainer.appendChild(article);
@@ -482,7 +482,7 @@
         
         // Previous
         const prevBtn = document.createElement("button");
-        prevBtn.textContent = "â†";
+        prevBtn.innerHTML = '<img src="./assets/images/arrow.webp" alt="prev" style="width: 20px; height: 20px; transform: rotate(-135deg);">';
         prevBtn.className = "page-nav";
         prevBtn.disabled = currentPage <= 1;
         prevBtn.onclick = () => {
@@ -512,7 +512,7 @@
         
         // Next
         const nextBtn = document.createElement("button");
-        nextBtn.textContent = "â†’";
+        nextBtn.innerHTML = '<img src="./assets/images/arrow.webp" alt="next" style="width: 20px; height: 20px; transform: rotate(45deg);">';
         nextBtn.className = "page-nav";
         nextBtn.disabled = currentPage >= totalPages;
         nextBtn.onclick = () => {

@@ -7898,41 +7898,16 @@ div.container header a.contact-btn {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  border: 1px solid #eee;
-  background: #fdfdfd;
-  color: #333;
-  font-size: 22px;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  border: 1px solid #ddd;
+  background: transparent;
+  transition: all 0.3s ease;
   text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
   flex-shrink: 0;
 }
 
-.feed-arrow::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #7143fe;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  z-index: -1;
-  border-radius: 50%;
-}
-
 .feed-card:hover .feed-arrow {
-  border-color: transparent;
-  color: #fff;
-  transform: scale(1.1) rotate(45deg);
-  box-shadow: 0 10px 20px rgba(113, 67, 254, 0.3);
-}
-
-.feed-card:hover .feed-arrow::before {
-  top: 0;
-  border-radius: 0;
+  transform: scale(1.1);
+  border-color: #7143fe;
 }
 
 /* Pagination */

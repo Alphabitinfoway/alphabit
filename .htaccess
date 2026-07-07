@@ -52,6 +52,7 @@ RewriteRule ^cyber-security/?$ ai-cyber-security-and-compliance-services [R=301,
 RewriteRule ^ai-cyber-security-and-compliance-services/?$ cyber-security.html [L]
 
 # Redirect old blogdetails?slug=xxx to /xxx
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{QUERY_STRING} ^slug=([^&]+) [NC]
 RewriteRule ^blogdetails(?:\.html)?$ %1? [R=301,L]
 
@@ -154,4 +155,37 @@ RewriteRule ^ %1 [NC,L,R=301]
     </FilesMatch>
 </IfModule>
 
+# ----------------------------------------------------------------------
+# | Brotli Compression (Better than GZIP if supported)                 |
+# ----------------------------------------------------------------------
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/plain text/html text/xml text/css application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript application/x-font-ttf application/vnd.ms-fontobject font/opentype font/ttf font/otf image/svg+xml image/x-icon
+</IfModule>
 
+# ----------------------------------------------------------------------
+# | Vary: Accept-Encoding Header                                       |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|xml|gz|html|svg)$">
+        Header append Vary: Accept-Encoding
+    </FilesMatch>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Disable ETags                                                      |
+# ----------------------------------------------------------------------
+# Prevents caching issues and reduces server load by relying on Cache-Control instead
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None
+
+# ----------------------------------------------------------------------
+# | Enable Keep-Alive                                                  |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
