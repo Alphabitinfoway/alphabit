@@ -36,7 +36,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="./assets/images/logo.webp" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <script src="./assets/js/config.js"></script>
+  <link rel="preload" as="image" href="./assets/images/AI Model.webp" fetchpriority="high" />
+  <script src="./assets/js/config.js" defer></script>
 </head>
 
 <body>
@@ -321,7 +322,8 @@
             <span class="bracket right-bracket">]</span>
           </h2>
         </div>
-        <img src="./assets/images/AI Model.webp" alt="Alphabit Infoway Hero" class="hero-image" />
+        <img src="./assets/images/AI Model.webp" alt="Alphabit Infoway Hero" class="hero-image" fetchpriority="high"
+          loading="eager" />
       </div>
     </section>
     <!-- Counting-number Section -->
@@ -486,7 +488,7 @@
       </div>
   </div>
   </section>
-    
+
   <!-- About Section -->
   <section class="about-section">
     <div class="about-container1">
@@ -709,19 +711,6 @@
         accelerate growth and improve operational efficiency.</p>
     </div>
 
-    <!--  <div class="excellence-title">Data Backups</div>
-  <div class="carousel">
-    <div class="card"><img src="./assets/images/img1.webp" /></div>
-    <div class="card"><img src="./assets/images/img2.webp" /></div>
-    <div class="card"><img src="" /></div>
-    <div class="card"><img src="" /></div>
-    <div class="card"><img src="" /></div>
-  </div>
-  <p class="excellence-description">
-    We carefully maintain our client's project backups to make sure to
-    minimize the chances of data misfortunes.
-  </p>
-</section> -->
     <div class="industry-slider-wrapper">
       <div class="industry-grid">
         <!-- Telecalling -->
@@ -1206,9 +1195,9 @@
         </div>
       </div>
     </section>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" defer></script>
     </div>
-    <script src="./assets/js/scroll-animate.js"></script>
+    <script src="./assets/js/scroll-animate.js" defer></script>
 </body>
 
 </html>

@@ -401,6 +401,8 @@ div.container header a.contact-btn {
 /* ===== Submenu Panels (Desktop) ===== */
 @media (min-width: 769px) {
   .submenu-panel {
+    border-radius: 20px;
+    overflow: hidden;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -603,9 +605,10 @@ div.container header a.contact-btn {
   }
 
   .pane-item .item-desc {
-    font-size: 11.5px;
+    font-size: 12px;
     color: #666;
     line-height: 1.35;
+    text-align: center;
   }
 
   .pane-item:hover {
@@ -854,6 +857,8 @@ div.container header a.contact-btn {
   }
 
   .submenu-panel {
+    border-radius: 20px;
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -2104,94 +2109,6 @@ div.container header a.contact-btn {
   cursor: pointer;
   z-index: 2;
 }
-
-/* ========== Delivering Excellence Section ========== */
-
-/* .delivering-excellence {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.excellence-title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #000;
-  margin-top: 140px;
-}
-
-.excellence-description {
-  font-size: 16px;
-  font-weight: 400;
-  color: #7a7a7a;
-  max-width: 540px;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
-
-.bg-card {
-  position: absolute;
-  background-color: #fff;
-  border-radius: 40px;
-  width: 58%;
-  height: 450px;
-  z-index: -1;
-}
-
-.carousel {
-  justify-content: center;
-  gap: 40px;
-  height: 380px;
-  display: flex;
-  margin-top: 10px;
-  width: 80%;
-  max-width: 1400px;
-  position: relative;
-  display: flex;
-  align-items: end;
-  text-align: center;
-  z-index: 1;
-}
-
-.card {
-  overflow: hidden;
-  transition: all 0.6s ease;
-  background-color: #dcdcdc;
-  border-radius: 20px;
-  border: #fff 2px solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 160px;
-  height: 220px;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card.big {
-  background-color: #dcdcdc;
-  border-radius: 40px;
-  border: #fff 2px solid;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 600px;
-  height: 380px;
-  font-size: 32px;
-  font-weight: 600;
-  color: #000;
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
-} */
-
 
 .industry-section-wrapper {
   width: 100%;
@@ -11604,3 +11521,4 @@ html {
   white-space: nowrap;
   border: 0;
 }
+
