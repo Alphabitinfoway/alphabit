@@ -62,7 +62,7 @@
   left: 0;
   width: 100%;
   height: 50%;
-  background: url('../images/services_bg_waves.webp') no-repeat bottom center;
+  background: url('https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683200/services_bg_waves.jpg') no-repeat bottom center;
   background-size: cover;
   opacity: 0.15;
   filter: grayscale(1) brightness(1.1);

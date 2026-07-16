@@ -1,7 +1,15 @@
-const form = document.getElementById("contactForm");
+let autoCloseTimeout;
 
-form.addEventListener("submit", async function (e) {
+// Handle Form Submission with event delegation
+document.addEventListener("submit", function (e) {
+  if (e.target && e.target.id === "contactForm") {
+    handleFormSubmit(e);
+  }
+});
+
+async function handleFormSubmit(e) {
   e.preventDefault();
+  const form = e.target;
 
   clearMessage();
 
@@ -31,18 +39,52 @@ form.addEventListener("submit", async function (e) {
       throw new Error("Something went wrong.");
     }
 
-    showMessage("Message sent successfully!", "success");
+    // Reset Form & Show Premium Modal
     form.reset();
+    openThankYouModal();
 
   } catch (error) {
-    showMessage("Failed to send message. Please try again.", "error");
+    showMessage(form, "Failed to send message. Please try again.", "error");
   } finally {
     submitBtn.disabled = false;
     submitBtn.innerText = "Contact Us";
   }
+}
+
+function openThankYouModal() {
+  const modal = document.getElementById("thankYouModal");
+  if (!modal) return;
+  modal.classList.add("active");
+  
+  // Auto close after 5 seconds (matching progress bar animation)
+  clearTimeout(autoCloseTimeout);
+  autoCloseTimeout = setTimeout(closeThankYouModal, 5000);
+}
+
+function closeThankYouModal() {
+  const modal = document.getElementById("thankYouModal");
+  if (!modal) return;
+  modal.classList.remove("active");
+  clearTimeout(autoCloseTimeout);
+}
+
+// Global Event Listeners for closing the modal
+document.addEventListener("click", function (e) {
+  const modal = document.getElementById("thankYouModal");
+  if (!modal) return;
+
+  // Click close button or "Awesome" button
+  if (e.target.closest("#closeModal") || e.target.closest("#modalPrimaryBtn")) {
+    closeThankYouModal();
+  }
+  
+  // Click outside on the dark overlay background
+  if (e.target === modal) {
+    closeThankYouModal();
+  }
 });
 
-function showMessage(message, type) {
+function showMessage(form, message, type) {
   clearMessage();
 
   const div = document.createElement("div");

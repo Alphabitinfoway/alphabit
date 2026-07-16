@@ -487,7 +487,7 @@ section,
     left: -10%;
     width: 120%;
     height: 100%;
-    background: url('../images/services_bg_waves.webp') no-repeat bottom center;
+    background: url('https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683200/services_bg_waves.jpg') no-repeat bottom center;
     background-size: cover;
     opacity: 0.1;
     filter: grayscale(1) brightness(1.1);
@@ -518,7 +518,6 @@ section,
 .hero-btns {
     grid-area: btns;
     margin-top: -20px;
-    /* Pull up closer to text */
 }
 
 .breadcrumb {
@@ -554,7 +553,6 @@ section,
 .tech-hero-text p {
     font-size: 14px;
     color: #475569;
-  
     line-height: 1.7;
     max-width: 600px;
 }
@@ -2812,7 +2810,8 @@ section,
     .architecture-grid-simple {
         grid-template-columns: 1fr;
     }
-}
+}
+
 
 /* Neural Glassmorphism Map Design - Symmetrical Refinement */
 .tech-components-neural {
@@ -3004,7 +3003,8 @@ section,
         background: #fff;
         border: 1px solid var(--tech-border);
     }
-}
+}
+
 
 /* Future Section */
 .tech-future-modern {
@@ -3135,4 +3135,5 @@ section,
         grid-template-columns: 1fr;
     }
 }
-
+
+
