@@ -67,51 +67,47 @@
   "rewrites": [
     {
       "source": "/aboutus",
-      "destination": "/about.html"
+      "destination": "/about"
     },
     {
       "source": "/blogs",
-      "destination": "/blog.html"
+      "destination": "/blog"
     },
     {
       "source": "/blogs/:slug",
-      "destination": "/blogdetails.html?slug=:slug"
+      "destination": "/blogdetails?slug=:slug"
     },
     {
       "source": "/blog-details/:slug",
-      "destination": "/blogdetails.html?slug=:slug"
+      "destination": "/blogdetails?slug=:slug"
     },
     {
       "source": "/case-studies",
-      "destination": "/case-studies.html"
+      "destination": "/case-studies"
     },
     {
       "source": "/case-study/:slug",
-      "destination": "/casestudydetails.html?slug=:slug"
+      "destination": "/casestudydetails?slug=:slug"
     },
     {
       "source": "/casestudydetails",
-      "destination": "/casestudydetails.html"
+      "destination": "/casestudydetails"
     },
     {
       "source": "/contact-us",
-      "destination": "/contact.html"
+      "destination": "/contact"
     },
     {
       "source": "/services",
-      "destination": "/services.html"
+      "destination": "/services"
     },
     {
       "source": "/ai-and-machine-learning-development-services",
-      "destination": "/ai-machine-learning.html"
+      "destination": "/ai-machine-learning"
     },
     {
       "source": "/ai-cyber-security-and-compliance-services",
-      "destination": "/cyber-security.html"
-    },
-    {
-      "source": "/:path*/assets/:file*",
-      "destination": "/assets/:file*"
+      "destination": "/cyber-security"
     }
   ]
 }
