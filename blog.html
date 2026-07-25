@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -275,8 +275,9 @@
               <span class="panel-title">Insights</span>
             </div>
             <ul class="submenu-list">
-              <li><a href="blogs"><i class="fa-regular fa-newspaper"></i> Blog</a></li>
-              <li><a href="career"><i class="fa-solid fa-briefcase"></i> Career</a></li>
+              <li><a href="blogs"><i class="fa-regular fa-newspaper"></i> Blogs</a></li>
+              <li><a href="case-studies"><i class="fa-solid fa-briefcase"></i> Case Studies</a></li>
+              <li><a href="career"><i class="fa-solid fa-user-tie"></i> Career</a></li>
             </ul>
           </div>
         </h6>
@@ -428,7 +429,7 @@
         }
 
         featuredContainer.innerHTML = `
-        <a href="${postSlug}" class="featured-horizontal-card">
+        <a href="blogs/${postSlug}" class="featured-horizontal-card">
           <div class="featured-image">
             <img src="${imageUrl}" alt="${cleanTitle}">
           </div>
@@ -480,16 +481,18 @@
           const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
           const postSlug = post.slug || slugify(cleanTitle);
           article.innerHTML = `
-        <div class="feed-thumb"
-          style="background-image:url('${imageUrl}');
-                 background-size:cover;
-                 background-position:center;">
-        </div>
-        <div class="feed-card-footer">
-          <p>${cleanTitle}</p>
-          <a href="${postSlug}" class="feed-arrow"><img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783682873/arrow.webp" alt="arrow" style="width: 24px; height: 24px;"></a>
-        </div>
-      `;
+            <a href="blogs/${postSlug}" style="text-decoration:none; color:inherit; display:block; height:100%;">
+              <div class="feed-thumb"
+                style="background-image:url('${imageUrl}');
+                       background-size:cover;
+                       background-position:center;">
+              </div>
+              <div class="feed-card-footer">
+                <p>${cleanTitle}</p>
+                <span class="feed-arrow"><img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783682873/arrow.webp" alt="arrow" style="width: 24px; height: 24px;"></span>
+              </div>
+            </a>
+          `;
           blogContainer.appendChild(article);
         });
       }

@@ -23,17 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const API_URL = `${BASE_URL}/users/getBlogs`;
 
     async function fetchBlogPosts() {
-
         try {
             const response = await fetch(API_URL);
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
+            const data = await response.json();
+            const postsList = Array.isArray(data) ? data : (data && Array.isArray(data.data) ? data.data : []);
 
-            const posts = await response.json();
-
-            renderBlogPosts(posts.slice(0, 6));
+            renderBlogPosts(postsList.slice(0, 6));
 
         } catch (error) {
 
@@ -52,9 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const imageUrl = post.image && post.image.startsWith("http")
                 ? post.image
-                : post.image
-                    ? `${BASE_URL}/uploads/${post.image}`
-                    : `https://picsum.photos/seed/${post._id}/400/300`;
+                : post.image && post.image.startsWith("uploads/")
+                    ? `${BASE_URL}/${post.image}`
+                    : post.image
+                        ? `${BASE_URL}/uploads/${post.image}`
+                        : `https://picsum.photos/seed/${post._id}/400/300`;
 
             const article = document.createElement('article');
             article.className = 'feed-card';
@@ -69,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
               <div class="feed-card-footer">
                   <p>${cleanTitle}</p>
-                  <a href="${postSlug}" class="feed-arrow">↗</a>
+                  <a href="blog/${postSlug}" class="feed-arrow">↗</a>
               </div>
           `;
 

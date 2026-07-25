@@ -7244,8 +7244,10 @@ div.container header a.contact-btn {
   height: 30%;
   background-color: #eee;
 }
+
 .phone-link {
-  color: inherit;       /* Uses the parent text color */
+  color: inherit;
+  /* Uses the parent text color */
   text-decoration: none;
 }
 
@@ -7262,6 +7264,7 @@ div.container header a.contact-btn {
 .email-link:hover {
   text-decoration: underline;
 }
+
 .wait-box:last-child::after {
   display: none;
 }
@@ -7316,7 +7319,7 @@ div.container header a.contact-btn {
 }
 
 .neo-process-badge {
-  background: rgb(113, 67, 254,0.1);
+  background: rgb(113, 67, 254, 0.1);
   color: #7143fe;
   padding: 6px 14px;
   border-radius: 50px;
@@ -7377,7 +7380,7 @@ div.container header a.contact-btn {
 .neo-process-num {
   font-size: 28px;
   font-weight: 800;
-  color:#7143fe;
+  color: #7143fe;
 }
 
 .neo-process-dot {
@@ -7449,33 +7452,33 @@ div.container header a.contact-btn {
   .neo-process-section {
     margin: 80px auto;
   }
-  
+
   .neo-process-header {
     margin-bottom: 40px;
   }
-  
+
   .neo-process-header h2 {
     font-size: 32px;
   }
-  
+
   .neo-process-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .neo-process-footer {
     margin-top: 40px;
   }
-  
+
   .neo-process-footer-note {
     font-size: 15px;
     margin-bottom: 30px;
   }
-  
+
   .neo-process-cta-box {
     padding: 30px 20px;
   }
-  
+
   .neo-process-cta-box h3 {
     font-size: 18px;
   }
@@ -12126,4 +12129,4 @@ a.offering-head:hover .offering-heading-text {
 
 .offering-learn-more:hover i {
   transform: translateX(2px);
-}
+}

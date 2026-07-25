@@ -14,42 +14,42 @@
   <script>
     (function() {
       var path = window.location.pathname;
-      var isSubFolder = path.indexOf('/case-study/') !== -1 || path.indexOf('/blog-details/') !== -1 || path.indexOf('/blogs/') !== -1;
+      var isSubFolder = path.indexOf('/case-study/') !== -1 || path.indexOf('/blog-details/') !== -1;
       var base = document.createElement('base');
       base.href = isSubFolder ? '../' : './';
       document.head.appendChild(base);
     })();
   </script>
-  <title>Blog Post | Alphabit Infoway</title>
+  <title>Case Study Details | Alphabit Infoway</title>
 
   <meta name="description"
-    content="Alphabit Infoway - Alphabit Infoway. We specialize in high-performance Web Development, Mobile Apps, AI Solutions, and Premium IT Services for businesses globally." />
+    content="Explore detailed Case Studies & Engineering Success Stories by Alphabit Infoway. Scalable Web Development, Mobile Apps, AI & Cloud Solutions." />
   <meta name="keywords"
-    content="Alphabit, Infoway, Alphabit Infoway, Software Development, Web Development, Mobile Apps, AI Development, IT Consulting, Premium Tech Solutions" />
+    content="Alphabit Infoway Case Study, Software Engineering Results, Tech Portfolio, Web Development Case Study, AI App Success Story" />
   <meta name="author" content="Alphabit Infoway" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://alphabitinfoway.com/blogdetails" />
-  <meta property="og:title" content="Blog Post | Alphabit Infoway" />
+  <meta property="og:url" content="https://alphabitinfoway.com/casestudydetails" />
+  <meta property="og:title" content="Case Study Details | Alphabit Infoway" />
   <meta property="og:description"
-    content="Alphabit Infoway - Alphabit Infoway. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
+    content="Discover how Alphabit Infoway builds high-performance Web, Mobile & AI Solutions." />
   <meta property="og:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://alphabitinfoway.com/blogdetails" />
-  <meta name="twitter:title" content="Blog Post | Alphabit Infoway" />
+  <meta name="twitter:url" content="https://alphabitinfoway.com/casestudydetails" />
+  <meta name="twitter:title" content="Case Study Details | Alphabit Infoway" />
   <meta name="twitter:description"
-    content="Alphabit Infoway - Alphabit Infoway. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
+    content="Discover how Alphabit Infoway builds high-performance Web, Mobile & AI Solutions." />
   <meta name="twitter:image" content="https://alphabitinfoway.com/assets/images/logo.webp" />
 
-  <link rel="canonical" href="https://alphabitinfoway.com/blogdetails" />
+  <link rel="canonical" href="https://alphabitinfoway.com/casestudydetails" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/case-study.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783496703/logo.webp" type="image/x-icon" />
   <script src="./assets/js/config.js"></script>
@@ -63,8 +63,8 @@
       opacity: 1;
     }
 
-    /* Premium Table Styling for Dynamic Content */
-    #blog-content table {
+    /* Table styling for dynamic content */
+    #cs-content table {
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
@@ -76,8 +76,8 @@
       font-size: 15px;
     }
 
-    #blog-content th,
-    #blog-content td {
+    #cs-content th,
+    #cs-content td {
       padding: 14px 20px;
       text-align: left;
       border-bottom: 1px solid rgba(113, 67, 254, 0.08);
@@ -86,40 +86,36 @@
       vertical-align: middle;
     }
 
-    #blog-content th:last-child,
-    #blog-content td:last-child {
+    #cs-content th:last-child,
+    #cs-content td:last-child {
       border-right: none;
     }
 
-    #blog-content tr:last-child td {
+    #cs-content tr:last-child td {
       border-bottom: none;
     }
 
-    /* Table Header styling */
-    #blog-content tr:first-child {
+    #cs-content tr:first-child {
       background-color: rgba(113, 67, 254, 0.05);
     }
 
-    #blog-content tr:first-child td,
-    #blog-content tr:first-child th {
+    #cs-content tr:first-child td,
+    #cs-content tr:first-child th {
       color: var(--uxdon-text-main, #1e293b);
       font-weight: 700;
       border-bottom: 2px solid rgba(113, 67, 254, 0.15);
       font-family: "Sora", sans-serif;
     }
 
-    /* Zebra striping for rows */
-    #blog-content tr:nth-child(even):not(:first-child) {
+    #cs-content tr:nth-child(even):not(:first-child) {
       background-color: rgba(113, 67, 254, 0.015);
     }
 
-    /* Hover effect */
-    #blog-content tr:not(:first-child):hover {
+    #cs-content tr:not(:first-child):hover {
       background-color: rgba(113, 67, 254, 0.04);
       transition: background-color 0.2s ease;
     }
 
-    /* Responsive table wrapping container */
     .table-responsive-wrapper {
       display: block;
       width: 100%;
@@ -155,7 +151,7 @@
       <img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783496703/logo.webp" alt="Alphabit Logo"
         class="loader-logo" />
       <div class="loader-progress-bar"></div>
-      <div class="loader-text">Connecting the bits...</div>
+      <div class="loader-text">Loading Case Study...</div>
     </div>
   </div>
 
@@ -184,18 +180,14 @@
             </div>
             <ul class="submenu-list">
               <li><a href="ai-machine-learning"><i class="fa-solid fa-brain"></i> AI & Machine Learning</a></li>
-              <li><a href="cyber-security"><i class="fa-solid fa-shield-halved"></i> Cyber Security & Compliance</a>
-              </li>
-              <li><a href="ai-full-stack-development-services"><i class="fa-solid fa-code"></i> Full Stack Web
-                  Development</a></li>
-              <li><a href="ai-mobile-app-development-services"><i class="fa-solid fa-mobile-screen-button"></i> Mobile
-                  App & Product Design</a></li>
+              <li><a href="cyber-security"><i class="fa-solid fa-shield-halved"></i> Cyber Security & Compliance</a></li>
+              <li><a href="ai-full-stack-development-services"><i class="fa-solid fa-code"></i> Full Stack Web Development</a></li>
+              <li><a href="ai-mobile-app-development-services"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App & Product Design</a></li>
             </ul>
           </div>
         </h6>
         <h6 class="dropdown">
-          <a href="./#products" class="dropdown-toggle">Products <i
-              class="fa-solid fa-chevron-down toggle-icon"></i></a>
+          <a href="./#products" class="dropdown-toggle">Products <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
           <div class="submenu-panel">
             <div class="panel-header">
               <button class="back-btn"><i class="fa-solid fa-chevron-left"></i> Back</button>
@@ -252,7 +244,6 @@
                 </button>
               </div>
               <div class="mega-menu-content">
-                <!-- AI Pane -->
                 <div class="tab-pane active" id="ai-tab">
                   <div class="pane-category-title">Artificial Intelligence</div>
                   <div class="pane-grid">
@@ -274,7 +265,6 @@
                     </a>
                   </div>
                 </div>
-                <!-- Web Pane -->
                 <div class="tab-pane" id="web-tab">
                   <div class="pane-category-title">Web Technologies</div>
                   <div class="pane-grid">
@@ -292,7 +282,6 @@
                     </a>
                   </div>
                 </div>
-                <!-- Mobile Pane -->
                 <div class="tab-pane" id="mobile-tab">
                   <div class="pane-category-title">Mobile Technologies</div>
                   <div class="pane-grid">
@@ -310,7 +299,6 @@
                     </a>
                   </div>
                 </div>
-                <!-- Cloud Pane -->
                 <div class="tab-pane" id="cloud-tab">
                   <div class="pane-category-title">Cloud & DevOps</div>
                   <div class="pane-grid">
@@ -328,7 +316,6 @@
                     </a>
                   </div>
                 </div>
-                <!-- Data Pane -->
                 <div class="tab-pane" id="data-tab">
                   <div class="pane-category-title">Data & Analytics</div>
                   <div class="pane-grid">
@@ -346,7 +333,6 @@
                     </a>
                   </div>
                 </div>
-                <!-- Security Pane -->
                 <div class="tab-pane" id="security-tab">
                   <div class="pane-category-title">Cyber Security</div>
                   <div class="pane-grid">
@@ -364,7 +350,7 @@
             </div>
           </div>
         </h6>
-        <h6><a href="aboutus">About</a></h6>
+        <h6><a href="about">About</a></h6>
         <h6><a href="hire-developers">Hire Developers</a></h6>
         <h6 class="dropdown">
           <a href="#" class="dropdown-toggle">Insights <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
@@ -380,38 +366,32 @@
             </ul>
           </div>
         </h6>
-        <a href="contact-us" class="contact-btn mobile-contact-btn">Contact Us</a>
+        <a href="contact" class="contact-btn mobile-contact-btn">Contact Us</a>
       </nav>
-      <a href="contact-us" class="contact-btn desktop-contact-btn">Contact Us</a>
+      <a href="contact" class="contact-btn desktop-contact-btn">Contact Us</a>
     </header>
 
-    <!-- HERO -->
+    <!-- HERO SECTION -->
     <section class="uxdon-hero-wrap">
       <div class="uxdon-shell">
-        <a href="blogs" class="blog-back-link">
-          <i class="fa-solid fa-arrow-left"></i> Back to Insights
+        <a href="case-studies" class="blog-back-link">
+          <i class="fa-solid fa-arrow-left"></i> Back to Case Studies
         </a>
-        <h1 class="uxdon-hero-heading" id="blog-title"></h1>
+        <h1 class="uxdon-hero-heading" id="cs-title">Case Study Details</h1>
         <div class="uxdon-hero-metrics">
           <div class="uxdon-metric-pill uxdon-metric-date">
             <i class="fa-regular fa-calendar-days"></i>
             <span class="uxdon-metric-text">
-              <span id="blog-month"></span> <span id="blog-day"></span>
+              <span id="cs-month"></span> <span id="cs-day"></span>
             </span>
           </div>
           <div class="uxdon-metric-pill">
             <i class="fa-regular fa-clock"></i>
-            <span id="blog-read-time">5 min read</span>
+            <span id="cs-read-time">5 min read</span>
           </div>
           <div class="uxdon-metric-pill">
-            <i class="fa-regular fa-thumbs-up"></i>
-            <span class="uxdon-metric-count">20.5K</span>
-            <span class="uxdon-metric-label">Likes</span>
-          </div>
-          <div class="uxdon-metric-pill">
-            <i class="fa-regular fa-comment-dots"></i>
-            <span class="uxdon-metric-count">320+</span>
-            <span class="uxdon-metric-label">Comments</span>
+            <i class="fa-solid fa-award"></i>
+            <span id="cs-author-tag">Alphabit Engineering</span>
           </div>
         </div>
       </div>
@@ -420,8 +400,8 @@
     <!-- SHOWCASE IMAGE -->
     <section class="uxdon-showcase-wrap">
       <div class="uxdon-shell">
-        <div class="uxdon-showcase-frame" id="blog-image">
-          <img id="main-blog-img" src="" alt="" style="width:100%; display:none;">
+        <div class="uxdon-showcase-frame" id="cs-image-frame">
+          <img id="main-cs-img" src="" alt="" style="width:100%; display:none;">
         </div>
       </div>
     </section>
@@ -439,32 +419,14 @@
                   alt="Alphabit Logo" />
               </div>
               <div class="author-info">
-                <h4 class="author-name" id="blog-author-name">Alphabit Editorial</h4>
-                <p class="author-title">Tech & Strategy Team</p>
-              </div>
-            </div>
-
-            <!-- Engagement Widget -->
-            <div class="sidebar-widget metrics-widget">
-              <div class="uxdon-article-metric">
-                <i class="fa-regular fa-eye"></i>
-                <div class="metric-meta">
-                  <span class="uxdon-article-num">2.4K</span>
-                  <span class="uxdon-article-label">Views</span>
-                </div>
-              </div>
-              <div class="uxdon-article-metric">
-                <i class="fa-regular fa-share-from-square"></i>
-                <div class="metric-meta">
-                  <span class="uxdon-article-num">14</span>
-                  <span class="uxdon-article-label">Shares</span>
-                </div>
+                <h4 class="author-name" id="cs-author-name">Alphabit Tech Team</h4>
+                <p class="author-title">Engineering & Architecture</p>
               </div>
             </div>
 
             <!-- Share Widget -->
             <div class="sidebar-widget share-widget">
-              <h5 class="widget-title">Share Article</h5>
+              <h5 class="widget-title">Share Case Study</h5>
               <div class="share-buttons">
                 <a href="#" onclick="shareOnLinkedIn(event)" class="share-btn linkedin-btn" title="Share on LinkedIn">
                   <i class="fa-brands fa-linkedin-in"></i>
@@ -485,13 +447,13 @@
 
           <!-- DYNAMIC CONTENT -->
           <div class="uxdon-article-flow">
-            <div id="blog-content"></div>
+            <div id="cs-content"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <section class="Footer">
       <div class="footer-bg-clip">
         <div class="footer-bg-circle"></div>
@@ -499,21 +461,13 @@
       <div class="footer-container">
         <div class="footer-left">
           <div class="footer-icons">
-            <a target="_blank" href="#">
-              <img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/twitter2.webp"
-                alt="twitter" /></a>
-            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
-                src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/linkedin2.webp" alt="linkedin" /></a>
-            <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
-                src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/instagram.webp"
-                alt="instagram" /></a>
-            <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img
-                src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783682979/facebook2.webp" alt="facebook" /></a>
+            <a target="_blank" href="#"><img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/twitter2.webp" alt="twitter" /></a>
+            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/linkedin2.webp" alt="linkedin" /></a>
+            <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/instagram.webp" alt="instagram" /></a>
+            <a target="_blank" href="https://www.facebook.com/alphabit.infoway.pvt.ltd/"><img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783682979/facebook2.webp" alt="facebook" /></a>
           </div>
           <div class="footer-text">
-            <p class="footer-greet">
-              <span class="hand">👋</span> Hey Innovator,
-            </p>
+            <p class="footer-greet"><span class="hand">👋</span> Hey Innovator,</p>
             <h2 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h2>
             <p class="footer-email">info@alphabitinfoway.com</p>
           </div>
@@ -532,218 +486,93 @@
         </div>
       </div>
     </section>
-
-    <script src="./assets/js/main.js"></script>
   </div>
+
+  <script src="./assets/js/main.js"></script>
   <script src="./assets/js/scroll-animate.js"></script>
   <script>
-    // Global helper functions
-    function goBack() {
-      window.history.back();
-    }
-
-    function updateMetaTag(selector, attribute, value) {
-      if (!value) return;
-      let tag = document.querySelector(selector);
-      if (tag) {
-        tag.setAttribute(attribute, value);
-      }
-    }
-
-    function hidePreloader() {
-      const preloader = document.getElementById("preloader");
-      if (preloader) {
-        preloader.style.opacity = '0';
-        preloader.style.transition = 'opacity 0.3s ease';
-        setTimeout(() => { preloader.style.display = 'none'; }, 300);
-      }
-    }
-
-    function showError(message) {
-      const contentDiv = document.getElementById("blog-content");
-      if (contentDiv) {
-        contentDiv.innerHTML = `
-          <div style="text-align: center; padding: 60px 20px;">
-            <i class="fa-solid fa-circle-exclamation" style="font-size: 48px; color: #7143fe; margin-bottom: 16px;"></i>
-            <h3 style="font-size: 24px; margin-bottom: 12px; color: #1e293b;">${message}</h3>
-            <p style="color: #64748b; margin-bottom: 24px;">The blog article you are looking for could not be displayed.</p>
-            <a href="blogs" class="blog-back-link" style="display: inline-block; padding: 10px 24px; background: #7143fe; color: #fff; border-radius: 30px; text-decoration: none;">
-              <i class="fa-solid fa-arrow-left"></i> Back to Insights
-            </a>
-          </div>
-        `;
-      }
-      hidePreloader();
-    }
-
-    function slugify(text) {
-      return text
-        .toString()
-        .toLowerCase()
-        .trim()
-        .replace(/\s+/g, '-')
-        .replace(/[^\w\-]+/g, '')
-        .replace(/\-\-+/g, '-')
-        .replace(/^-+/, '')
-        .replace(/-+$/, '');
-    }
-
-    function loadBlog(blog) {
-      const cleanTitle = blog.title ? blog.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : "Blog Post";
-      const cleanDescription = blog.description ? blog.description.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : cleanTitle;
-
-      // TITLE
-      const titleElem = document.getElementById("blog-title");
-      if (titleElem) titleElem.textContent = cleanTitle;
-
-      // SEO META TAGS
-      const metaTitle = (blog.seo && blog.seo.metaTitle) ? blog.seo.metaTitle : `${cleanTitle} | Alphabit Infoway`;
-      const metaDescription = (blog.seo && blog.seo.metaDescription) ? blog.seo.metaDescription : cleanDescription;
-
-      document.title = metaTitle;
-      updateMetaTag('meta[name="description"]', 'content', metaDescription);
-      updateMetaTag('meta[property="og:title"]', 'content', metaTitle);
-      updateMetaTag('meta[property="og:description"]', 'content', metaDescription);
-      updateMetaTag('meta[name="twitter:title"]', 'content', metaTitle);
-      updateMetaTag('meta[name="twitter:description"]', 'content', metaDescription);
-
-      // DATE
-      const dateSource = blog.createdAt || blog.updatedAt;
-      if (dateSource) {
-        const date = new Date(dateSource);
-        if (!isNaN(date.getTime())) {
-          const dayElem = document.getElementById("blog-day");
-          const monthElem = document.getElementById("blog-month");
-          if (dayElem) dayElem.textContent = date.getDate();
-          if (monthElem) monthElem.textContent = date.toLocaleString("default", { month: "long" });
-        }
-      }
-
-      // AUTHOR
-      const authorNameElem = document.getElementById("blog-author-name");
-      if (authorNameElem && blog.author) {
-        authorNameElem.textContent = blog.author;
-      }
-
-      // READING TIME
-      const readTimeElem = document.getElementById("blog-read-time");
-      if (readTimeElem) {
-        const textContent = (blog.content || blog.description || "").replace(/<[^>]*>/g, " ");
-        const words = textContent.trim().split(/\s+/).filter(Boolean).length;
-        const readMinutes = Math.max(1, Math.ceil(words / 200));
-        readTimeElem.textContent = `${readMinutes} min read`;
-      }
-
-      // IMAGE
-      let imageUrl = "";
-      if (blog.image && blog.image.startsWith("http")) {
-        imageUrl = blog.image;
-      } else if (blog.image && blog.image.startsWith("uploads/")) {
-        imageUrl = `${BASE_URL}/${blog.image}`;
-      } else if (blog.image) {
-        imageUrl = `${BASE_URL}/uploads/${blog.image}`;
-      } else {
-        imageUrl = `https://picsum.photos/seed/${blog._id || 'blog'}/1200/600`;
-      }
-
-      const img = document.getElementById("main-blog-img");
-      if (img) {
-        img.src = imageUrl;
-        img.alt = cleanTitle;
-        img.style.display = "block";
-        img.onload = () => img.classList.add("loaded");
-        if (img.complete) img.classList.add("loaded");
-      }
-
-      updateMetaTag('meta[property="og:image"]', 'content', imageUrl);
-      updateMetaTag('meta[name="twitter:image"]', 'content', imageUrl);
-
-      // CONTENT
-      const contentDiv = document.getElementById("blog-content");
-      if (contentDiv) {
-        if (blog.content && blog.content.trim().length > 0) {
-          contentDiv.innerHTML = blog.content.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ');
-        } else {
-          contentDiv.innerHTML = `
-            <p class="uxdon-article-paragraph">
-              ${cleanDescription}
-            </p>`;
-        }
-
-        // Make tables responsive
-        contentDiv.querySelectorAll("table").forEach(table => {
-          const wrapper = document.createElement("div");
-          wrapper.className = "table-responsive-wrapper";
-          table.parentNode.insertBefore(wrapper, table);
-          wrapper.appendChild(table);
-        });
-      }
-
-      // Hide preloader smoothly once blog is loaded
-      hidePreloader();
-    }
-
     document.addEventListener("DOMContentLoaded", () => {
-      // Scroll progress indicator behavior
+      // Reading progress bar
       window.addEventListener('scroll', () => {
         const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
         const progress = document.getElementById('reading-progress');
-        if (progress) {
-          progress.style.width = scrolled + '%';
-        }
+        if (progress) progress.style.width = scrolled + '%';
       });
 
-      // Back to top button behavior
-      const backToTopBtn = document.getElementById('back-to-top');
-      if (backToTopBtn) {
-        window.addEventListener('scroll', () => {
-          if (window.scrollY > 300) {
-            backToTopBtn.classList.add('visible');
-          } else {
-            backToTopBtn.classList.remove('visible');
-          }
-        });
-        backToTopBtn.addEventListener('click', () => {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-        });
+      function slugify(text) {
+        return text
+          .toString()
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, '-')
+          .replace(/[^\w\-]+/g, '')
+          .replace(/\-\-+/g, '-')
+          .replace(/^-+/, '')
+          .replace(/-+$/, '');
+      }
+
+      function updateMetaTag(selector, attribute, value) {
+        if (!value) return;
+        let tag = document.querySelector(selector);
+        if (tag) tag.setAttribute(attribute, value);
+      }
+
+      function hidePreloader() {
+        const preloader = document.getElementById("preloader");
+        if (preloader) {
+          preloader.style.opacity = '0';
+          preloader.style.transition = 'opacity 0.3s ease';
+          setTimeout(() => { preloader.style.display = 'none'; }, 300);
+        }
+      }
+
+      function showError(message) {
+        const contentDiv = document.getElementById("cs-content");
+        if (contentDiv) {
+          contentDiv.innerHTML = `
+            <div style="text-align: center; padding: 60px 20px;">
+              <i class="fa-solid fa-circle-exclamation" style="font-size: 48px; color: #7143fe; margin-bottom: 16px;"></i>
+              <h3 style="font-size: 24px; margin-bottom: 12px; color: #1e293b;">${message}</h3>
+              <p style="color: #64748b; margin-bottom: 24px;">The case study you are looking for could not be displayed.</p>
+              <a href="case-studies" class="blog-back-link" style="display: inline-block; padding: 10px 24px; background: #7143fe; color: #fff; border-radius: 30px; text-decoration: none;">
+                <i class="fa-solid fa-arrow-left"></i> Back to Case Studies
+              </a>
+            </div>
+          `;
+        }
+        hidePreloader();
       }
 
       const params = new URLSearchParams(window.location.search);
-      let blogId = params.get("id");
-      let blogSlug = params.get("slug");
+      let csId = params.get("id");
+      let csSlug = params.get("slug");
 
-      // Fallback for direct clean URLs (e.g. /slug-name)
-      if (!blogId && !blogSlug) {
+      if (!csId && !csSlug) {
         const pathSegments = window.location.pathname.split('/').filter(Boolean);
         if (pathSegments.length > 0) {
           const lastSegment = pathSegments[pathSegments.length - 1];
-          if (lastSegment !== 'blogdetails' && lastSegment !== 'blogdetails.html' && lastSegment !== 'blog-details' && lastSegment !== 'blogs' && lastSegment !== 'alphabit') {
-            blogSlug = lastSegment;
+          if (lastSegment !== 'casestudydetails' && lastSegment !== 'casestudydetails.html' && lastSegment !== 'case-study' && lastSegment !== 'alphabit') {
+            csSlug = lastSegment;
           }
         }
       }
 
-      const API_URL = `${BASE_URL}/users/getBlogs`;
-      if (!blogId && !blogSlug) {
-        // Fallback: If no blog parameter is in URL, fetch and display the latest blog post
+      const API_URL = `${BASE_URL}/case-studies`;
+
+      if (!csId && !csSlug) {
         fetch(API_URL)
           .then(res => res.json())
           .then(data => {
-            const posts = Array.isArray(data) ? data : (data && Array.isArray(data.data) ? data.data : []);
-            if (posts.length > 0) {
-              loadBlog(posts[0]);
+            const items = Array.isArray(data) ? data : (data && Array.isArray(data.data) ? data.data : []);
+            if (items.length > 0) {
+              loadCaseStudy(items[0]);
             } else {
-              showError("No blog posts available.");
+              showError("No case studies available.");
             }
           })
-          .catch(err => {
-            showError("Blog parameter missing in URL!");
-          });
+          .catch(() => showError("Case study parameter missing in URL!"));
         return;
       }
 
@@ -753,32 +582,120 @@
           return res.json();
         })
         .then(data => {
-          // Normalize response: direct array or paginated data property
-          const posts = Array.isArray(data) ? data : (data && Array.isArray(data.data) ? data.data : []);
-
-          let blog;
-          if (blogId) {
-            blog = posts.find(item => item._id === blogId);
-          } else if (blogSlug) {
-            const targetSlug = decodeURIComponent(blogSlug).toLowerCase();
-            blog = posts.find(item => {
-              if (item.slug && item.slug.toLowerCase() === targetSlug) {
-                return true;
-              }
-              return slugify(item.title) === targetSlug;
-            });
+          const items = Array.isArray(data) ? data : (data && Array.isArray(data.data) ? data.data : []);
+          let cs;
+          if (csId) {
+            cs = items.find(item => item._id === csId);
+          } else if (csSlug) {
+            const targetSlug = decodeURIComponent(csSlug).toLowerCase();
+            cs = items.find(item => (item.slug && item.slug.toLowerCase() === targetSlug) || slugify(item.title) === targetSlug);
           }
 
-          if (!blog) {
-            showError("Blog not found!");
+          if (!cs) {
+            showError("Case study not found!");
             return;
           }
-          loadBlog(blog);
+          loadCaseStudy(cs);
         })
         .catch(err => {
-          console.error("Error fetching blog:", err);
-          showError("Failed to load blog post. Please check your connection.");
+          console.error("Error fetching case study:", err);
+          showError("Failed to load case study. Please check your connection.");
         });
+
+      function loadCaseStudy(cs) {
+        const cleanTitle = cs.title ? cs.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : "Case Study";
+        const cleanDescription = cs.description ? cs.description.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : cleanTitle;
+
+        // Title
+        const titleElem = document.getElementById("cs-title");
+        if (titleElem) titleElem.textContent = cleanTitle;
+
+        // SEO Meta
+        const metaTitle = (cs.seo && cs.seo.metaTitle) ? cs.seo.metaTitle : `${cleanTitle} | Alphabit Infoway Case Study`;
+        const metaDescription = (cs.seo && cs.seo.metaDescription) ? cs.seo.metaDescription : cleanDescription;
+
+        document.title = metaTitle;
+        updateMetaTag('meta[name="description"]', 'content', metaDescription);
+        updateMetaTag('meta[property="og:title"]', 'content', metaTitle);
+        updateMetaTag('meta[property="og:description"]', 'content', metaDescription);
+        updateMetaTag('meta[name="twitter:title"]', 'content', metaTitle);
+        updateMetaTag('meta[name="twitter:description"]', 'content', metaDescription);
+
+        // Date
+        const dateSource = cs.createdAt || cs.updatedAt;
+        if (dateSource) {
+          const date = new Date(dateSource);
+          if (!isNaN(date.getTime())) {
+            const dayElem = document.getElementById("cs-day");
+            const monthElem = document.getElementById("cs-month");
+            if (dayElem) dayElem.textContent = date.getDate();
+            if (monthElem) monthElem.textContent = date.toLocaleString("default", { month: "long" });
+          }
+        }
+
+        // Author
+        const authorElem = document.getElementById("cs-author-name");
+        const authorTagElem = document.getElementById("cs-author-tag");
+        if (cs.author) {
+          if (authorElem) authorElem.textContent = cs.author;
+          if (authorTagElem) authorTagElem.textContent = cs.author;
+        }
+
+        // Read Time
+        const readTimeElem = document.getElementById("cs-read-time");
+        if (readTimeElem) {
+          const textContent = (cs.content || cs.description || "").replace(/<[^>]*>/g, " ");
+          const words = textContent.trim().split(/\s+/).filter(Boolean).length;
+          const readMinutes = Math.max(1, Math.ceil(words / 200));
+          readTimeElem.textContent = `${readMinutes} min read`;
+        }
+
+        // Image
+        let imageUrl = "";
+        if (cs.image && cs.image.startsWith("http")) {
+          imageUrl = cs.image;
+        } else if (cs.image && cs.image.startsWith("uploads/")) {
+          imageUrl = `${BASE_URL}/${cs.image}`;
+        } else if (cs.image) {
+          imageUrl = `${BASE_URL}/uploads/${cs.image}`;
+        } else {
+          imageUrl = `https://picsum.photos/seed/${cs._id || 'cs'}/1200/600`;
+        }
+
+        const img = document.getElementById("main-cs-img");
+        if (img) {
+          img.src = imageUrl;
+          img.alt = cleanTitle;
+          img.style.display = "block";
+          img.onload = () => img.classList.add("loaded");
+          if (img.complete) img.classList.add("loaded");
+        }
+
+        updateMetaTag('meta[property="og:image"]', 'content', imageUrl);
+        updateMetaTag('meta[name="twitter:image"]', 'content', imageUrl);
+
+        // Content
+        const contentDiv = document.getElementById("cs-content");
+        if (contentDiv) {
+          if (cs.content && cs.content.trim().length > 0) {
+            contentDiv.innerHTML = cs.content.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ');
+          } else {
+            contentDiv.innerHTML = `
+              <p class="uxdon-article-paragraph">
+                ${cleanDescription}
+              </p>`;
+          }
+
+          contentDiv.querySelectorAll("table").forEach(table => {
+            const wrapper = document.createElement("div");
+            wrapper.className = "table-responsive-wrapper";
+            table.parentNode.insertBefore(wrapper, table);
+            wrapper.appendChild(table);
+          });
+        }
+
+        hidePreloader();
+      }
     });
 
     // Share handlers
@@ -807,15 +724,10 @@
           }, 2000);
         }
       }).catch(err => {
-        console.error('Failed to copy text: ', err);
+        console.error('Failed to copy link: ', err);
       });
     }
   </script>
-
-  <!-- Floating Back to Top Button -->
-  <button id="back-to-top" class="back-to-top-btn" title="Back to Top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
 </body>
 
 </html>

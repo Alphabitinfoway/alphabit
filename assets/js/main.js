@@ -505,14 +505,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchBlogPosts() {
     try {
-
       const response = await fetch(API_URL);
-      const posts = await response.json();
+      const data = await response.json();
+      const posts = Array.isArray(data) ? data : (data && Array.isArray(data.data) ? data.data : []);
 
       if (!posts || posts.length === 0) return;
 
-      // Latest first (assuming latest = last created)
-      const sortedPosts = posts.reverse();
+      // Latest first
+      const sortedPosts = posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
       renderTopCards(sortedPosts);
       renderFeedGrid(sortedPosts.slice(3));
@@ -522,81 +522,80 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-
   // ==========================
   // TOP 3 CARDS
   // ==========================
   function renderTopCards(posts) {
-
     const latest = posts[0];
     const second = posts[1];
     const third = posts[2];
 
-    //  MAIN CARD
+    // MAIN CARD
     if (latest && primaryCard) {
-
       const latestImageUrl = latest.image && latest.image.startsWith("http")
         ? latest.image
-        : latest.image
-          ? `${BASE_URL}/uploads/${latest.image}`
-          : 'https://picsum.photos/800/600';
+        : latest.image && latest.image.startsWith("uploads/")
+          ? `${BASE_URL}/${latest.image}`
+          : latest.image
+            ? `${BASE_URL}/uploads/${latest.image}`
+            : 'https://picsum.photos/800/600';
 
       primaryCard.style.backgroundImage = `url(${latestImageUrl})`;
-
       primaryCard.style.backgroundSize = "cover";
       primaryCard.style.backgroundPosition = "center";
 
       const cleanTitle = latest.title ? latest.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
       const latestSlug = latest.slug || slugify(cleanTitle);
       primaryCard.innerHTML = `
-        <div class="primary-info">
-          <div>
-            <h3 class="primary-title">${cleanTitle}</h3>
-            <p class="primary-label">Featured Post</p>
-            <span class="primary-date">${new Date(latest.createdAt).toDateString()}</span>
+        <a href="blogs/${latestSlug}" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
+          <div class="primary-info">
+            <div>
+              <h3 class="primary-title">${cleanTitle}</h3>
+              <p class="primary-label">Featured Post</p>
+              <span class="primary-date">${new Date(latest.createdAt).toDateString()}</span>
+            </div>
+            <span class="primary-arrow">↗</span>
           </div>
-          <a href="${latestSlug}" class="primary-arrow">↗</a>
-        </div>
+        </a>
       `;
     }
 
-    //SIDE CARDS
+    // SIDE CARDS
     [second, third].forEach((post, index) => {
-
       if (post && auxCards[index]) {
-
         const auxImageUrl = post.image && post.image.startsWith("http")
           ? post.image
-          : post.image
-            ? `${BASE_URL}/uploads/${post.image}`
-            : 'https://picsum.photos/400/300';
+          : post.image && post.image.startsWith("uploads/")
+            ? `${BASE_URL}/${post.image}`
+            : post.image
+              ? `${BASE_URL}/uploads/${post.image}`
+              : 'https://picsum.photos/400/300';
 
         auxCards[index].style.backgroundImage = `url(${auxImageUrl})`;
-
         auxCards[index].style.backgroundSize = "cover";
         auxCards[index].style.backgroundPosition = "center";
 
         const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
         const postSlug = post.slug || slugify(cleanTitle);
         auxCards[index].innerHTML = `
-          <a href="${postSlug}" style="display:block;width:100%;height:100%;"></a>
+          <a href="blogs/${postSlug}" style="display:block;width:100%;height:100%;"></a>
         `;
       }
-
     });
   }
 
-
   // ==========================
-  //  GRID BLOGS
+  // GRID BLOGS
   // ==========================
   function renderFeedGrid(posts) {
     posts.forEach(post => {
       const imageUrl = post.image && post.image.startsWith("http")
         ? post.image
-        : post.image
-          ? `${BASE_URL}/uploads/${post.image}`
-          : `https://picsum.photos/seed/${post._id}/400/300`;
+        : post.image && post.image.startsWith("uploads/")
+          ? `${BASE_URL}/${post.image}`
+          : post.image
+            ? `${BASE_URL}/uploads/${post.image}`
+            : `https://picsum.photos/seed/${post._id}/400/300`;
 
       const article = document.createElement("article");
       article.className = "feed-card";
@@ -604,26 +603,29 @@ document.addEventListener('DOMContentLoaded', () => {
       const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
       const postSlug = post.slug || slugify(cleanTitle);
       article.innerHTML = `
-        <div class="feed-thumb">
-          <img src="${imageUrl}" alt="${cleanTitle}" class="fade-in">
-        </div>
+        <a href="blogs/${postSlug}" style="text-decoration:none; color:inherit; display:block; height:100%;">
+          <div class="feed-thumb">
+            <img src="${imageUrl}" alt="${cleanTitle}" class="fade-in">
+          </div>
 
-        <div class="feed-card-footer">
-          <p>${cleanTitle}</p>
-          <a href="${postSlug}" class="feed-arrow">↗</a>
-        </div>
+          <div class="feed-card-footer">
+            <p>${cleanTitle}</p>
+            <span class="feed-arrow">↗</span>
+          </div>
+        </a>
       `;
 
       const img = article.querySelector('img');
-      img.onload = () => img.classList.add('loaded');
-      if (img.complete) img.classList.add('loaded');
+      if (img) {
+        img.onload = () => img.classList.add('loaded');
+        if (img.complete) img.classList.add('loaded');
+      }
 
       blogContainer.appendChild(article);
     });
   }
 
   fetchBlogPosts();
-
 });
 
 
@@ -728,6 +730,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const API_URL = `${BASE_URL}/users/getBlogs`;
+
   async function fetchBlogs() {
     try {
       const response = await fetch(API_URL);
@@ -746,7 +749,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // Fir sirf 3 latest lo
       renderBlogs(sortedPosts.slice(0, 3));
 
-
     } catch (error) {
       console.error("Error fetching blogs:", error);
       blogContainer.innerHTML =
@@ -763,14 +765,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const imageUrl = post.image && post.image.startsWith("http")
         ? post.image
-        : post.image
-          ? `${BASE_URL}/uploads/${post.image}`
-          : `https://picsum.photos/seed/${post._id}/400/300`;
+        : post.image && post.image.startsWith("uploads/")
+          ? `${BASE_URL}/${post.image}`
+          : post.image
+            ? `${BASE_URL}/uploads/${post.image}`
+            : `https://picsum.photos/seed/${post._id}/400/300`;
 
       const cleanTitle = post.title ? post.title.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
       const cleanDesc = post.description ? post.description.replace(/&nbsp;/g, ' ').replace(/\u00a0/g, ' ') : '';
-      const blogCard = document.createElement("div");
+      const postSlug = post.slug || slugify(cleanTitle);
+
+      const blogCard = document.createElement("a");
       blogCard.className = "blog-card";
+      blogCard.href = `blogs/${postSlug}`;
+      blogCard.style.textDecoration = "none";
+      blogCard.style.color = "inherit";
 
       blogCard.innerHTML = `
         <div class="blog-image">
@@ -791,13 +800,10 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
 
       const img = blogCard.querySelector('img');
-      img.onload = () => img.classList.add('loaded');
-      if (img.complete) img.classList.add('loaded');
-
-      const postSlug = post.slug || slugify(cleanTitle);
-      blogCard.addEventListener("click", () => {
-        window.location.href = `${postSlug}`;
-      });
+      if (img) {
+        img.onload = () => img.classList.add('loaded');
+        if (img.complete) img.classList.add('loaded');
+      }
 
       blogContainer.appendChild(blogCard);
     });

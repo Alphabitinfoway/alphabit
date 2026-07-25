@@ -1,0 +1,1142 @@
+/* ==========================================================================
+   Alphabit Infoway - Ultra Modern Case Study CSS (case-study.css)
+   Theme: High-Tech Glassmorphism, Neon Glows, Dark/Light Hybrid Contrast
+   Brand Colors: Alphabit Purple (#7143fe), Alphabit Orange (#ff5622)
+   ========================================================================== */
+
+:root {
+  --cs-purple: #7143fe;
+  --cs-purple-glow: rgba(113, 67, 254, 0.4);
+  --cs-purple-light: rgba(113, 67, 254, 0.08);
+  --cs-orange: #ff5622;
+  --cs-orange-glow: rgba(255, 86, 34, 0.4);
+  --cs-orange-light: rgba(255, 86, 34, 0.08);
+  --cs-dark-bg: #090b15;
+  --cs-dark-card: #121629;
+  --cs-dark-border: rgba(255, 255, 255, 0.08);
+  --cs-text-dark: #0f172a;
+  --cs-text-muted: #64748b;
+  --cs-text-light: #f8fafc;
+  --cs-gradient-brand: linear-gradient(135deg, #7143fe 0%, #ff5622 100%);
+  --cs-gradient-glow: linear-gradient(135deg, rgba(113, 67, 254, 0.15) 0%, rgba(255, 86, 34, 0.15) 100%);
+  --cs-radius-lg: 24px;
+  --cs-radius-md: 16px;
+  --cs-shadow-glow: 0 20px 50px rgba(113, 67, 254, 0.15);
+  --cs-transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Page Layout Defaults */
+body.case-study-wrapper {
+  font-family: 'Sora', sans-serif;
+  color: var(--cs-text-dark);
+  background-color: #f8fafc;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.cs-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Base Header Spacer Fix */
+.cs-modern-hero {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background: var(--cs-dark-bg);
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Background Glowing Mesh Effects */
+.cs-hero-mesh {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cs-hero-mesh::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(113, 67, 254, 0.3) 0%, transparent 70%);
+  filter: blur(80px);
+}
+
+.cs-hero-mesh::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 86, 34, 0.25) 0%, transparent 70%);
+  filter: blur(80px);
+}
+
+.cs-modern-hero .cs-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Modern Breadcrumbs */
+.cs-modern-breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  font-size: 13px;
+  color: #94a3b8;
+  backdrop-filter: blur(10px);
+  margin-bottom: 30px;
+}
+
+.cs-modern-breadcrumbs a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: var(--cs-transition);
+}
+
+.cs-modern-breadcrumbs a:hover {
+  color: #ffffff;
+}
+
+.cs-modern-breadcrumbs .sep {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.cs-modern-breadcrumbs span.active {
+  color: #ff5622;
+  font-weight: 700;
+}
+
+/* Modern Hero Layout Grid */
+.cs-modern-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 50px;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .cs-modern-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.cs-modern-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: linear-gradient(135deg, rgba(113, 67, 254, 0.2) 0%, rgba(255, 86, 34, 0.2) 100%);
+  border: 1px solid rgba(255, 86, 34, 0.4);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.cs-modern-tag i {
+  color: #ff5622;
+}
+
+.cs-modern-hero-text h1 {
+  font-size: clamp(32px, 4vw, 50px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 22px;
+  letter-spacing: -1px;
+}
+
+.cs-highlight-glow {
+  background: linear-gradient(135deg, #ffffff 0%, #ff5622 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.cs-modern-hero-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 35px;
+}
+
+/* Modern Hero Metric Badges Bar */
+.cs-modern-hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .cs-modern-hero-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cs-metric-chip {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 18px 12px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: var(--cs-transition);
+}
+
+.cs-metric-chip:hover {
+  transform: translateY(-5px);
+  background: rgba(113, 67, 254, 0.15);
+  border-color: rgba(113, 67, 254, 0.4);
+  box-shadow: 0 10px 25px rgba(113, 67, 254, 0.2);
+}
+
+.cs-metric-chip .val {
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  display: block;
+}
+
+.cs-metric-chip .val.highlight {
+  background: var(--cs-gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cs-metric-chip .lbl {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+/* Modern Visual Widget Box */
+.cs-widget-box {
+  background: var(--cs-dark-card);
+  border: 1px solid var(--cs-dark-border);
+  border-radius: var(--cs-radius-lg);
+  padding: 30px;
+  position: relative;
+  box-shadow: var(--cs-shadow-glow);
+  backdrop-filter: blur(20px);
+}
+
+.cs-widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cs-widget-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cs-widget-title i {
+  color: #7143fe;
+}
+
+.cs-live-pulse {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.cs-pulse-dot {
+  width: 7px;
+  height: 7px;
+  background: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #22c55e;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.cs-widget-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cs-widget-stat-row {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cs-widget-stat-info h5 {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.cs-widget-stat-info h3 {
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 800;
+}
+
+.cs-widget-badge {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cs-widget-tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.cs-widget-tech-pills span {
+  background: rgba(113, 67, 254, 0.12);
+  color: #c084fc;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(113, 67, 254, 0.25);
+}
+
+/* Floating Glow Card Overlay */
+.cs-floating-glow-card {
+  position: absolute;
+  bottom: -25px;
+  right: -20px;
+  background: linear-gradient(135deg, #1e1b4b 0%, #31103f 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  animation: floatCard 4s ease-in-out infinite alternate;
+}
+
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-8px); }
+}
+
+.cs-floating-glow-card i {
+  font-size: 26px;
+  color: #ff5622;
+}
+
+.cs-floating-glow-card h5 {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+}
+
+.cs-floating-glow-card p {
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* ==========================================
+   2. CLIENT OVERVIEW FLOATING BAR
+   ========================================== */
+.cs-overview-wrapper {
+  background: #ffffff;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 5;
+}
+
+.cs-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .cs-overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .cs-overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cs-overview-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: var(--cs-radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: var(--cs-transition);
+}
+
+.cs-overview-card:hover {
+  transform: translateY(-4px);
+  background: #ffffff;
+  border-color: rgba(113, 67, 254, 0.25);
+  box-shadow: 0 12px 30px rgba(113, 67, 254, 0.08);
+}
+
+.cs-overview-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: var(--cs-gradient-glow);
+  color: #7143fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.cs-overview-text span {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ff5622;
+  letter-spacing: 0.8px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.cs-overview-text h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* ==========================================
+   COMMON MODERN SECTION HEADINGS
+   ========================================== */
+.cs-section {
+  padding: 95px 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .cs-section {
+    padding: 60px 0;
+  }
+}
+
+.cs-section-title-box {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 55px auto;
+}
+
+.cs-modern-section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(113, 67, 254, 0.08);
+  color: #7143fe;
+  border: 1px solid rgba(113, 67, 254, 0.2);
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.cs-modern-section-tag i {
+  color: #ff5622;
+}
+
+.cs-section-title-box h2 {
+  font-size: clamp(30px, 3.8vw, 44px);
+  font-weight: 800;
+  line-height: 1.25;
+  color: #0f172a;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.cs-section-title-box p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0;
+}
+
+/* ==========================================
+   3. THE CHALLENGE (MODERN HYBRID CARDS)
+   ========================================== */
+.cs-challenge-section {
+  background: #f8fafc;
+}
+
+.cs-challenge-grid-modern {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 35px;
+}
+
+@media (max-width: 991px) {
+  .cs-challenge-grid-modern {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cs-challenge-narrative-card {
+  background: #ffffff;
+  border-radius: var(--cs-radius-lg);
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cs-challenge-narrative-card p {
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.cs-challenge-narrative-card p:last-child {
+  margin-bottom: 0;
+}
+
+.cs-challenge-cards-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cs-problem-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fff6f4 100%);
+  border: 1px solid rgba(255, 86, 34, 0.25);
+  border-left: 6px solid #ff5622;
+  border-radius: var(--cs-radius-md);
+  padding: 26px;
+}
+
+.cs-problem-card h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cs-problem-card h4 i {
+  color: #ff5622;
+}
+
+.cs-problem-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cs-problem-list li {
+  font-size: 14.5px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cs-problem-list li i {
+  color: #ff5622;
+  font-size: 14px;
+}
+
+.cs-advantage-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f5f2ff 100%);
+  border: 1px solid rgba(113, 67, 254, 0.25);
+  border-left: 6px solid #7143fe;
+  border-radius: var(--cs-radius-md);
+  padding: 26px;
+}
+
+.cs-advantage-card h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cs-advantage-card h4 i {
+  color: #7143fe;
+}
+
+.cs-advantage-card p {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #475569;
+  margin: 0;
+}
+
+/* ==========================================
+   4. OUR APPROACH (NEON STEPPER TIMELINE)
+   ========================================== */
+.cs-approach-section {
+  background: #ffffff;
+}
+
+.cs-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 991px) {
+  .cs-timeline-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cs-phase-card-modern {
+  background: #f8fafc;
+  border-radius: var(--cs-radius-lg);
+  padding: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: var(--cs-transition);
+}
+
+.cs-phase-card-modern:hover {
+  transform: translateY(-6px);
+  background: #ffffff;
+  border-color: rgba(113, 67, 254, 0.3);
+  box-shadow: 0 20px 40px rgba(113, 67, 254, 0.08);
+}
+
+.cs-phase-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.cs-phase-num {
+  font-size: 32px;
+  font-weight: 800;
+  background: var(--cs-gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cs-phase-badge-week {
+  background: var(--cs-orange-light);
+  color: #ff5622;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.cs-phase-card-modern h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.cs-phase-card-modern p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.cs-phase-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.cs-phase-tag-item {
+  background: rgba(113, 67, 254, 0.06);
+  color: #7143fe;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cs-phase-tag-item i {
+  font-size: 11px;
+  color: #7143fe;
+}
+
+/* ==========================================
+   5. THE RESULTS (DARK NEON DASHBOARD)
+   ========================================== */
+.cs-results-section {
+  background: var(--cs-dark-bg);
+  color: #ffffff;
+}
+
+.cs-results-section h2 {
+  color: #ffffff !important;
+}
+
+.cs-results-section p {
+  color: #94a3b8 !important;
+}
+
+.cs-results-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .cs-results-dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .cs-results-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cs-neon-stat-card {
+  background: var(--cs-dark-card);
+  border: 1px solid var(--cs-dark-border);
+  border-radius: var(--cs-radius-lg);
+  padding: 32px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: var(--cs-transition);
+}
+
+.cs-neon-stat-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(113, 67, 254, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(113, 67, 254, 0.25);
+}
+
+.cs-neon-stat-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--cs-gradient-brand);
+  opacity: 0;
+  transition: var(--cs-transition);
+}
+
+.cs-neon-stat-card:hover::after {
+  opacity: 1;
+}
+
+.cs-neon-value {
+  font-size: clamp(38px, 4vw, 52px);
+  font-weight: 800;
+  line-height: 1;
+  background: var(--cs-gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+}
+
+.cs-neon-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.cs-neon-sub {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.cs-modern-narrative {
+  background: linear-gradient(135deg, rgba(113, 67, 254, 0.2) 0%, rgba(255, 86, 34, 0.2) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--cs-radius-lg);
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .cs-modern-narrative {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+}
+
+.cs-narrative-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--cs-gradient-brand);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.cs-narrative-info h4 {
+  font-size: 19px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.cs-narrative-info p {
+  font-size: 15px;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   6. CLIENT TESTIMONIAL QUOTE
+   ========================================== */
+.cs-testimonial-section {
+  background: #ffffff;
+}
+
+.cs-executive-quote-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(113, 67, 254, 0.2);
+  border-radius: 28px;
+  padding: 50px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(113, 67, 254, 0.08);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .cs-executive-quote-card {
+    padding: 30px 20px;
+  }
+}
+
+.cs-quote-icon-large {
+  font-size: 46px;
+  color: #7143fe;
+  opacity: 0.3;
+  margin-bottom: 12px;
+}
+
+.cs-quote-statement {
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 600;
+  line-height: 1.65;
+  color: #0f172a;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.cs-quote-author-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cs-author-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--cs-gradient-brand);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.cs-author-meta h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.cs-author-meta p {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+.cs-star-ratings {
+  margin-left: auto;
+  color: #ffb800;
+  font-size: 14px;
+  display: flex;
+  gap: 4px;
+}
+
+@media (max-width: 576px) {
+  .cs-star-ratings {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .cs-quote-author-row {
+    flex-wrap: wrap;
+  }
+}
+
+/* ==========================================
+   7. WHY IT WORKED (3 PILLARS)
+   ========================================== */
+.cs-why-section {
+  background: #f8fafc;
+}
+
+.cs-why-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 991px) {
+  .cs-why-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cs-pillar-card {
+  background: #ffffff;
+  border-radius: var(--cs-radius-lg);
+  padding: 35px 28px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: var(--cs-transition);
+}
+
+.cs-pillar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  border-color: rgba(113, 67, 254, 0.25);
+}
+
+.cs-pillar-badge {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--cs-orange-light);
+  color: #ff5622;
+  font-weight: 800;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cs-pillar-card h3 {
+  font-size: 19px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.cs-pillar-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0;
+}
+
+/* ==========================================
+   8. TECHNOLOGIES USED
+   ========================================== */
+.cs-tech-section {
+  background: #ffffff;
+}
+
+.cs-tech-grid-modern {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cs-modern-tech-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background: #f8fafc;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  transition: var(--cs-transition);
+}
+
+.cs-modern-tech-pill:hover {
+  transform: translateY(-4px);
+  background: #ffffff;
+  border-color: #7143fe;
+  box-shadow: 0 10px 25px rgba(113, 67, 254, 0.12);
+}
+
+.cs-modern-tech-pill i {
+  font-size: 20px;
+}
+.cs-modern-tech-pill i.fa-react { color: #61dafb; }
+.cs-modern-tech-pill i.fa-node-js { color: #68a063; }
+.cs-modern-tech-pill i.fa-database { color: #47a248; }
+.cs-modern-tech-pill i.fa-credit-card { color: #02042b; }
+.cs-modern-tech-pill i.fa-mobile-screen { color: #ff5622; }
+.cs-modern-tech-pill i.fa-aws { color: #ff9900; }
+.cs-modern-tech-pill i.fa-figma { color: #f24e1e; }
+
+/* ==========================================
+   9. HIGH-IMPACT MODERN CTA BANNER
+   ========================================== */
+.cs-cta-section {
+  background: var(--cs-dark-bg);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs-cta-box-modern {
+  background: linear-gradient(135deg, rgba(113, 67, 254, 0.3) 0%, rgba(255, 86, 34, 0.3) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 32px;
+  padding: 65px 40px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .cs-cta-box-modern {
+    padding: 40px 20px;
+  }
+}
+
+.cs-cta-box-modern h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.cs-cta-box-modern p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cbd5e1;
+  max-width: 780px;
+  margin: 0 auto 36px auto;
+}
+
+.cs-cta-btn-modern {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 42px;
+  background: var(--cs-gradient-brand);
+  color: #ffffff !important;
+  font-size: 17px;
+  font-weight: 800;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(255, 86, 34, 0.4);
+  transition: var(--cs-transition);
+}
+
+.cs-cta-btn-modern:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 20px 45px rgba(113, 67, 254, 0.5);
+}
+
+.cs-cta-btn-modern i {
+  transition: transform 0.3s ease;
+}
+
+.cs-cta-btn-modern:hover i {
+  transform: translateX(8px);
+}
