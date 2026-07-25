@@ -9,31 +9,6 @@
       "permanent": true
     },
     {
-      "source": "/about",
-      "destination": "/aboutus",
-      "permanent": true
-    },
-    {
-      "source": "/blog",
-      "destination": "/blogs",
-      "permanent": true
-    },
-    {
-      "source": "/contact",
-      "destination": "/contact-us",
-      "permanent": true
-    },
-    {
-      "source": "/ai-machine-learning",
-      "destination": "/ai-and-machine-learning-development-services",
-      "permanent": true
-    },
-    {
-      "source": "/cyber-security",
-      "destination": "/ai-cyber-security-and-compliance-services",
-      "permanent": true
-    },
-    {
       "source": "/services/ai-and-machine-learning-development-services",
       "destination": "/ai-and-machine-learning-development-services",
       "permanent": true
