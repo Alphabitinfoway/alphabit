@@ -1,0 +1,117 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/aboutus",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blogs",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact-us",
+      "permanent": true
+    },
+    {
+      "source": "/ai-machine-learning",
+      "destination": "/ai-and-machine-learning-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/cyber-security",
+      "destination": "/ai-cyber-security-and-compliance-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/ai-and-machine-learning-development-services",
+      "destination": "/ai-and-machine-learning-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/ai-machine-learning",
+      "destination": "/ai-and-machine-learning-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/ai-cyber-security-and-compliance-services",
+      "destination": "/ai-cyber-security-and-compliance-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/cyber-security",
+      "destination": "/ai-cyber-security-and-compliance-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/ai-full-stack-development-services",
+      "destination": "/ai-full-stack-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/ai-mobile-app-development-services",
+      "destination": "/ai-mobile-app-development-services",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/aboutus",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/blogs",
+      "destination": "/blog.html"
+    },
+    {
+      "source": "/blogs/:slug",
+      "destination": "/blogdetails.html?slug=:slug"
+    },
+    {
+      "source": "/blog-details/:slug",
+      "destination": "/blogdetails.html?slug=:slug"
+    },
+    {
+      "source": "/case-studies",
+      "destination": "/case-studies.html"
+    },
+    {
+      "source": "/case-study/:slug",
+      "destination": "/casestudydetails.html?slug=:slug"
+    },
+    {
+      "source": "/casestudydetails",
+      "destination": "/casestudydetails.html"
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/services",
+      "destination": "/services.html"
+    },
+    {
+      "source": "/ai-and-machine-learning-development-services",
+      "destination": "/ai-machine-learning.html"
+    },
+    {
+      "source": "/ai-cyber-security-and-compliance-services",
+      "destination": "/cyber-security.html"
+    },
+    {
+      "source": "/:path*/assets/:file*",
+      "destination": "/assets/:file*"
+    }
+  ]
+}
