@@ -1,4 +1,4 @@
-# Custom 404 Page (Served from public_html/404.html)
+# Custom 404 Page (Served from 404.html)
 ErrorDocument 404 /404.html
 
 <IfModule mod_headers.c>
@@ -20,104 +20,154 @@ RewriteCond %{HTTP_HOST} !^127\.0\.0\.1 [NC]
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
 
 # ---------------------------------------------------------
-# ASSET ROUTING (Points subfolder asset calls to public_html/assets/)
+# ASSET ROUTING (Points subfolder asset calls to assets/)
 # ---------------------------------------------------------
 RewriteCond %{REQUEST_URI} !^/assets/
 RewriteRule ^.*/assets/(.*)$ /assets/$1 [L,NC]
 
-# Serve real files and directories directly from public_html/
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-
 # ---------------------------------------------------------
-# REWRITE & REDIRECT RULES
+# 301 REDIRECTIONS FOR OLD / BROKEN / 404 URLS
 # ---------------------------------------------------------
 
-# Redirect index.html to root /
-RewriteCond %{THE_REQUEST} /index\.html [NC]
-RewriteRule ^(.*)index\.html$ / [R=301,L]
+# 1. Root & Index
+RewriteCond %{THE_REQUEST} /index(?:\.html)?[\s\?] [NC]
+RewriteRule ^(.*)index(?:\.html)?$ / [R=301,L]
 
-# About
-RewriteRule ^about/?$ /aboutus [R=301,L]
-RewriteRule ^aboutus/?$ about.html [L]
+# 2. Technology -> /ai-development-technologies
+RewriteRule ^technology/?$ /ai-development-technologies [R=301,L,NC]
 
-# Blog
-RewriteRule ^blog/?$ /blogs [R=301,L]
-RewriteRule ^blogs/?$ blog.html [L]
-RewriteRule ^blogs/([^/]+)/?$ blogdetails.html?slug=$1 [NC,L,QSA]
-RewriteRule ^blog-details/([^/]+)/?$ blogdetails.html?slug=$1 [NC,L,QSA]
+# 3. Developer hiring pages
+RewriteRule ^hire-dedicated-developer/?$ /hire-developers [R=301,L,NC]
+RewriteRule ^hire-software-developer/?$ /hire-developers [R=301,L,NC]
 
-# Case Studies
-RewriteRule ^case-studies/?$ case-studies.html [L]
-RewriteRule ^case-study/([^/]+)/?$ casestudydetails.html?slug=$1 [NC,L,QSA]
-RewriteRule ^casestudydetails/?$ casestudydetails.html [L]
+# 4. Legacy .shtml / .php / old pages
+RewriteRule ^about\.shtml$ /aboutus [R=301,L,NC]
+RewriteRule ^about/?$ /aboutus [R=301,L,NC]
+RewriteRule ^services\.shtml$ /services [R=301,L,NC]
+RewriteCond %{THE_REQUEST} \s/contact\.(?:php|html)[\s\?] [NC]
+RewriteRule ^ /contact-us [R=301,L]
+RewriteRule ^contact/?$ /contact-us [R=301,L,NC]
+RewriteRule ^ai-machine-learning\.php$ /ai-and-machine-learning-development-services [R=301,L,NC]
+RewriteRule ^ai-mobile-app-development-services\.htm$ /ai-mobile-app-development-services [R=301,L,NC]
 
-# Contact
-RewriteRule ^contact/?$ /contact-us [R=301,L]
-RewriteRule ^contact-us/?$ contact.html [L]
+# 5. Inactive / removed old URLs -> Home (/)
+RewriteRule ^entrepreneur/?$ / [R=301,L,NC]
+RewriteRule ^e-commerce/?$ / [R=301,L,NC]
+RewriteRule ^training-master/?$ / [R=301,L,NC]
+RewriteRule ^business-branding/?$ / [R=301,L,NC]
+RewriteRule ^indur?strial-service-provider/?$ / [R=301,L,NC]
+RewriteRule ^webdevelopment/?$ / [R=301,L,NC]
 
-# ---------------------------------------------------------
-# DIRECT SERVICE URL STRUCTURE (Without /services/ subfolder)
-# ---------------------------------------------------------
+# 6. Products anchor -> /#products
+RewriteRule ^products/?$ /#products [R=301,NE,L,NC]
 
-# Main Services Page
-RewriteRule ^services/?$ services.html [L]
+# 7. Careers
+RewriteRule ^careers/?$ /career [R=301,L,NC]
 
-# AI & Machine Learning Service Page
-RewriteRule ^ai-machine-learning/?$ /ai-and-machine-learning-development-services [R=301,L]
-RewriteRule ^ai-and-machine-learning-development-services/?$ ai-machine-learning.html [L]
+# 8. Case Study Old URLs
+RewriteRule ^case-study-ecommerce/?$ /case-studies [R=301,L,NC]
+RewriteRule ^case-study-1/?$ /case-studies [R=301,L,NC]
+RewriteRule ^case-study/case-study-ecommerce/?$ /case-studies [R=301,L,NC]
+RewriteRule ^case-study/case-study-1/?$ /case-studies [R=301,L,NC]
 
-# Cyber Security & Compliance Service Page
-RewriteRule ^cyber-security/?$ /ai-cyber-security-and-compliance-services [R=301,L]
-RewriteRule ^ai-cyber-security-and-compliance-services/?$ cyber-security.html [L]
+# 9. Direct Service URLs & 301 Redirects from old service names
+RewriteCond %{THE_REQUEST} \s/ai-machine-learning(?:\.html)?[\s\?] [NC]
+RewriteRule ^ /ai-and-machine-learning-development-services [R=301,L]
 
-# Full Stack Web Development Service Page
-RewriteRule ^ai-full-stack-development-services/?$ ai-full-stack-development-services.html [L]
+RewriteCond %{THE_REQUEST} \s/cyber-security(?:\.html)?[\s\?] [NC]
+RewriteRule ^ /ai-cyber-security-and-compliance-services [R=301,L]
+RewriteRule ^services/ai-and-machine-learning-development-services/?$ /ai-and-machine-learning-development-services [R=301,L,NC]
+RewriteRule ^services/ai-machine-learning/?$ /ai-and-machine-learning-development-services [R=301,L,NC]
+RewriteRule ^services/ai-cyber-security-and-compliance-services/?$ /ai-cyber-security-and-compliance-services [R=301,L,NC]
+RewriteRule ^services/cyber-security/?$ /ai-cyber-security-and-compliance-services [R=301,L,NC]
+RewriteRule ^services/ai-full-stack-development-services/?$ /ai-full-stack-development-services [R=301,L,NC]
+RewriteRule ^services/ai-mobile-app-development-services/?$ /ai-mobile-app-development-services [R=301,L,NC]
 
-# Mobile App & Product Design Service Page
-RewriteRule ^ai-mobile-app-development-services/?$ ai-mobile-app-development-services.html [L]
+# 10. Specific Blog Redirections
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{QUERY_STRING} ^slug=beyond-code [NC]
+RewriteRule ^blogdetails(?:\.html)?$ /blogs/role-of-web-developer-in-business? [R=301,L]
+RewriteRule ^(?:blogs|blog-details)/beyond-code.*$ /blogs/role-of-web-developer-in-business [R=301,L,NC]
 
-# 301 Redirect old /services/... URLs to new Direct URLs
-RewriteRule ^services/ai-and-machine-learning-development-services/?$ /ai-and-machine-learning-development-services [R=301,L]
-RewriteRule ^services/ai-machine-learning/?$ /ai-and-machine-learning-development-services [R=301,L]
-RewriteRule ^services/ai-cyber-security-and-compliance-services/?$ /ai-cyber-security-and-compliance-services [R=301,L]
-RewriteRule ^services/cyber-security/?$ /ai-cyber-security-and-compliance-services [R=301,L]
-RewriteRule ^services/ai-full-stack-development-services/?$ /ai-full-stack-development-services [R=301,L]
-RewriteRule ^services/ai-mobile-app-development-services/?$ /ai-mobile-app-development-services [R=301,L]
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{QUERY_STRING} ^slug=ai-voice-agents-for-business [NC]
+RewriteRule ^blogdetails(?:\.html)?$ /blogs/genie-dial-ai-voice-agent-for-business-calls? [R=301,L]
+RewriteRule ^(?:blogs|blog-details)/ai-voice-agents-for-business/?$ /blogs/genie-dial-ai-voice-agent-for-business-calls [R=301,L,NC]
 
-# Redirect old blogdetails?slug=xxx to /blog-details/xxx
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{QUERY_STRING} ^slug=how-e-commerce [NC]
+RewriteRule ^blogdetails(?:\.html)?$ /blogs/ai-mobile-apps-for-ecommerce-2026-to-boost-sales-retention? [R=301,L]
+RewriteRule ^(?:blogs|blog-details)/how-e-commerce.*$ /blogs/ai-mobile-apps-for-ecommerce-2026-to-boost-sales-retention [R=301,L,NC]
+RewriteRule ^how-e-commerce-.*$ /blogs/ai-mobile-apps-for-ecommerce-2026-to-boost-sales-retention [R=301,L,NC]
+
+# Generic blog query string redirect: blogdetails?slug=xxx -> /blogs/xxx
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{QUERY_STRING} ^slug=([^&]+) [NC]
-RewriteRule ^blogdetails(?:\.html)?$ /blog-details/%1? [R=301,L]
+RewriteRule ^blogdetails(?:\.html)?$ /blogs/%1? [R=301,L]
 
-# Redirect old casestudydetails?slug=xxx to /case-study/xxx
+# Generic casestudy query string redirect: casestudydetails?slug=xxx -> /case-study/xxx
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{QUERY_STRING} ^slug=([^&]+) [NC]
 RewriteRule ^casestudydetails(?:\.html)?$ /case-study/%1? [R=301,L]
 
-# Match existing .html pages without extension
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+# Blog root redirects
+RewriteRule ^blog/?$ /blogs [R=301,L,NC]
+RewriteCond %{THE_REQUEST} \s/blog\.html[\s\?] [NC]
+RewriteRule ^ /blogs [R=301,L]
 
-# ---------------------------------------------------------
-# 404 ERROR PAGE FOR NON-EXISTENT URLS
-# ---------------------------------------------------------
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html !-f
-RewriteRule ^ - [R=404,L]
+# Strip .html extension from direct requests (e.g. /dhiread.html -> /dhiread)
+RewriteCond %{THE_REQUEST} /([^/]+)\.html[\s\?] [NC]
+RewriteCond %1 !^(index|404)$ [NC]
+RewriteRule ^ /%1 [NC,L,R=301]
 
 # Remove trailing slashes (unless directory)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-# Redirect /page.html to /page
-RewriteCond %{THE_REQUEST} /([^/]+)\.html [NC]
-RewriteCond %1 !=index
-RewriteRule ^ /%1 [NC,L,R=301]
+# ---------------------------------------------------------
+# REAL FILE PASSTHROUGH
+# ---------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# ---------------------------------------------------------
+# INTERNAL REWRITES (Clean URL to Physical File Mapping)
+# ---------------------------------------------------------
+
+# Core Pages
+RewriteRule ^aboutus/?$ about.html [L]
+RewriteRule ^blogs/?$ blog.html [L]
+RewriteRule ^blogs/([^/]+)/?$ blogdetails.html?slug=$1 [NC,L,QSA]
+RewriteRule ^blog-details/([^/]+)/?$ blogdetails.html?slug=$1 [NC,L,QSA]
+RewriteRule ^case-studies/?$ case-studies.html [L]
+RewriteRule ^case-study/([^/]+)/?$ casestudydetails.html?slug=$1 [NC,L,QSA]
+RewriteRule ^casestudydetails/?$ casestudydetails.html [L]
+RewriteRule ^contact-us/?$ contact.html [L]
+RewriteRule ^services/?$ services.html [L]
+RewriteRule ^career/?$ career.html [L]
+RewriteRule ^hire-developers/?$ hire-developers.html [L]
+
+# Service Mappings
+RewriteRule ^ai-and-machine-learning-development-services/?$ ai-machine-learning.html [L]
+RewriteRule ^ai-cyber-security-and-compliance-services/?$ cyber-security.html [L]
+RewriteRule ^ai-full-stack-development-services/?$ ai-full-stack-development-services.html [L]
+RewriteRule ^ai-mobile-app-development-services/?$ ai-mobile-app-development-services.html [L]
+
+# Match existing .html pages without extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f [OR]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# ---------------------------------------------------------
+# 404 ERROR HANDLING FOR NON-EXISTENT URLS
+# ---------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html !-f
+RewriteRule ^ - [R=404,L]
 
 # ----------------------------------------------------------------------
 # | Compression & Caching Headers                                      |

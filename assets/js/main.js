@@ -118,47 +118,49 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // ======== COUNTING ========
-  const counters = document.querySelectorAll(".counting-number");
-  const section = document.querySelector(".counting-section");
-  let started = false;
+  // ======== COUNTING (SMOOTH & SLOWER ANIMATION) ========
+  const countingSections = document.querySelectorAll(".counting-section");
+  countingSections.forEach((sec) => {
+    let secStarted = false;
+    const secCounters = sec.querySelectorAll(".counting-number");
 
-  function startCounting() {
-    counters.forEach((counter) => {
-      const target = +counter.getAttribute("data-target");
-      const suffix = counter.getAttribute("data-suffix") || "";
-      let current = 0;
-      const speed = target / 200;
-
-      const updateCount = () => {
-        if (current < target) {
-          current += speed;
-          counter.innerText = Math.floor(current) + suffix;
-          requestAnimationFrame(updateCount);
-        } else {
-          counter.innerText = target + suffix;
-        }
-      };
-
-      updateCount();
-    });
-  }
-
-  if (section) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !started) {
-            startCounting();
-            started = true;
+          if (entry.isIntersecting && !secStarted) {
+            secStarted = true;
+            secCounters.forEach((counter) => {
+              const target = +counter.getAttribute("data-target");
+              const suffix = counter.getAttribute("data-suffix") || "";
+              const duration = 2500; // 2.5 seconds duration
+              let startTime = null;
+
+              const animate = (timestamp) => {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                // Ease-out cubic for smooth deceleration
+                const easeProgress = 1 - Math.pow(1 - progress, 3);
+                const currentVal = Math.floor(easeProgress * target);
+
+                counter.innerText = currentVal + suffix;
+
+                if (progress < 1) {
+                  requestAnimationFrame(animate);
+                } else {
+                  counter.innerText = target + suffix;
+                }
+              };
+
+              requestAnimationFrame(animate);
+            });
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     );
 
-    observer.observe(section);
-  }
+    observer.observe(sec);
+  });
 
   // ======== EXPLORE BUTTON ========
   const button = document.querySelector(".explore-btn");
@@ -249,6 +251,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+
+  // ======== SEO-FRIENDLY AUTO-CLONE FOR MARQUEE SLIDERS ========
+  const industryGrids = document.querySelectorAll('.delivering-excellence .industry-grid');
+  industryGrids.forEach(grid => {
+    if (!grid.dataset.cloned) {
+      grid.dataset.cloned = 'true';
+      const cards = Array.from(grid.children);
+      cards.forEach(card => {
+        const clone = card.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        grid.appendChild(clone);
+      });
+    }
+  });
 });
 
 // our history
@@ -272,44 +288,46 @@ items.forEach((item) => observer.observe(item));
 
 // counting numbers FOR ABOUT PAGE
 
-const counters = document.querySelectorAll(".counting");
-const section = document.querySelector(".aboutpage-container2");
-let started = false;
+const aboutSection = document.querySelector(".aboutpage-container2");
+if (aboutSection) {
+  const aboutCounters = aboutSection.querySelectorAll(".counting");
+  let startedAbout = false;
 
-function startCounting() {
-  counters.forEach((counter) => {
-    const target = +counter.getAttribute("data-target");
-    const suffix = counter.getAttribute("data-suffix") || "";
-    let current = 0;
-    const speed = target / 200;
-
-    const updateCount = () => {
-      if (current < target) {
-        current += speed;
-        counter.innerText = Math.floor(current) + suffix;
-        requestAnimationFrame(updateCount);
-      } else {
-        counter.innerText = target + suffix;
-      }
-    };
-
-    updateCount();
-  });
-}
-
-if (section) {
-  const observer = new IntersectionObserver(
+  const observerAbout = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && !started) {
-          startCounting();
-          started = true;
+        if (entry.isIntersecting && !startedAbout) {
+          startedAbout = true;
+          aboutCounters.forEach((counter) => {
+            const target = +counter.getAttribute("data-target");
+            const suffix = counter.getAttribute("data-suffix") || "";
+            const duration = 2500;
+            let startTime = null;
+
+            const animate = (timestamp) => {
+              if (!startTime) startTime = timestamp;
+              const progress = Math.min((timestamp - startTime) / duration, 1);
+              const easeProgress = 1 - Math.pow(1 - progress, 3);
+              const currentVal = Math.floor(easeProgress * target);
+
+              counter.innerText = currentVal + suffix;
+
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                counter.innerText = target + suffix;
+              }
+            };
+
+            requestAnimationFrame(animate);
+          });
         }
       });
     },
     { threshold: 0.3 }
   );
-  observer.observe(section);
+
+  observerAbout.observe(aboutSection);
 }
 
 

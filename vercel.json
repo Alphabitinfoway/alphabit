@@ -9,6 +9,91 @@
       "permanent": true
     },
     {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Technology",
+      "destination": "/ai-development-technologies",
+      "permanent": true
+    },
+    {
+      "source": "/technology",
+      "destination": "/ai-development-technologies",
+      "permanent": true
+    },
+    {
+      "source": "/hire-dedicated-developer",
+      "destination": "/hire-developers",
+      "permanent": true
+    },
+    {
+      "source": "/hire-software-developer",
+      "destination": "/hire-developers",
+      "permanent": true
+    },
+    {
+      "source": "/about.shtml",
+      "destination": "/aboutus",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/aboutus",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/aboutus",
+      "permanent": true
+    },
+    {
+      "source": "/entrepreneur",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/e-commerce",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/training-master",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/business-branding",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/products",
+      "destination": "/#products",
+      "permanent": true
+    },
+    {
+      "source": "/indurstrial-service-provider",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/industrial-service-provider",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/webdevelopment",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services.shtml",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
       "source": "/services/ai-and-machine-learning-development-services",
       "destination": "/ai-and-machine-learning-development-services",
       "permanent": true
@@ -37,52 +122,247 @@
       "source": "/services/ai-mobile-app-development-services",
       "destination": "/ai-mobile-app-development-services",
       "permanent": true
+    },
+    {
+      "source": "/cyber-security",
+      "destination": "/ai-cyber-security-and-compliance-services",
+      "permanent": true
+    },
+    {
+      "source": "/cyber-security.html",
+      "destination": "/ai-cyber-security-and-compliance-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-machine-learning.php",
+      "destination": "/ai-and-machine-learning-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-machine-learning",
+      "destination": "/ai-and-machine-learning-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-machine-learning.html",
+      "destination": "/ai-and-machine-learning-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-mobile-app-development-services.htm",
+      "destination": "/ai-mobile-app-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-mobile-app-development-services.html",
+      "destination": "/ai-mobile-app-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-full-stack-development-services.html",
+      "destination": "/ai-full-stack-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/contact.php",
+      "destination": "/contact-us",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact-us",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact-us",
+      "permanent": true
+    },
+    {
+      "source": "/careers",
+      "destination": "/career",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-1",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-ecommerce",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/case-study/case-study-1",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/case-study/case-study-ecommerce",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blogs",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/blogs",
+      "permanent": true
+    },
+    {
+      "source": "/blogdetails",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "beyond-code(?<rest>.*)"
+        }
+      ],
+      "destination": "/blogs/role-of-web-developer-in-business",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/beyond-code:slug*",
+      "destination": "/blogs/role-of-web-developer-in-business",
+      "permanent": true
+    },
+    {
+      "source": "/blog-details/beyond-code:slug*",
+      "destination": "/blogs/role-of-web-developer-in-business",
+      "permanent": true
+    },
+    {
+      "source": "/blogdetails",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "ai-voice-agents-for-business"
+        }
+      ],
+      "destination": "/blogs/genie-dial-ai-voice-agent-for-business-calls",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/ai-voice-agents-for-business",
+      "destination": "/blogs/genie-dial-ai-voice-agent-for-business-calls",
+      "permanent": true
+    },
+    {
+      "source": "/blog-details/ai-voice-agents-for-business",
+      "destination": "/blogs/genie-dial-ai-voice-agent-for-business-calls",
+      "permanent": true
+    },
+    {
+      "source": "/blogdetails",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "how-e-commerce(?<rest>.*)"
+        }
+      ],
+      "destination": "/blogs/ai-mobile-apps-for-ecommerce-2026-to-boost-sales-retention",
+      "permanent": true
+    },
+    {
+      "source": "/how-e-commerce:slug*",
+      "destination": "/blogs/ai-mobile-apps-for-ecommerce-2026-to-boost-sales-retention",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/how-e-commerce:slug*",
+      "destination": "/blogs/ai-mobile-apps-for-ecommerce-2026-to-boost-sales-retention",
+      "permanent": true
+    },
+    {
+      "source": "/blog-details/how-e-commerce:slug*",
+      "destination": "/blogs/ai-mobile-apps-for-ecommerce-2026-to-boost-sales-retention",
+      "permanent": true
+    },
+    {
+      "source": "/dhiread.html",
+      "destination": "/dhiread",
+      "permanent": true
+    },
+    {
+      "source": "/dhiyodha-network.html",
+      "destination": "/dhiyodha-network",
+      "permanent": true
+    },
+    {
+      "source": "/genie-dial.html",
+      "destination": "/genie-dial",
+      "permanent": true
+    },
+    {
+      "source": "/dhisure.html",
+      "destination": "/dhisure",
+      "permanent": true
+    },
+    {
+      "source": "/dhihealth.html",
+      "destination": "/dhihealth",
+      "permanent": true
+    },
+    {
+      "source": "/skill-studio.html",
+      "destination": "/skill-studio",
+      "permanent": true
     }
   ],
   "rewrites": [
     {
       "source": "/aboutus",
-      "destination": "/about"
+      "destination": "/about.html"
     },
     {
       "source": "/blogs",
-      "destination": "/blog"
+      "destination": "/blog.html"
     },
     {
       "source": "/blogs/:slug",
-      "destination": "/blogdetails?slug=:slug"
+      "destination": "/blogdetails.html?slug=:slug"
     },
     {
       "source": "/blog-details/:slug",
-      "destination": "/blogdetails?slug=:slug"
+      "destination": "/blogdetails.html?slug=:slug"
     },
     {
       "source": "/case-studies",
-      "destination": "/case-studies"
+      "destination": "/case-studies.html"
     },
     {
       "source": "/case-study/:slug",
-      "destination": "/casestudydetails?slug=:slug"
+      "destination": "/casestudydetails.html?slug=:slug"
     },
     {
       "source": "/casestudydetails",
-      "destination": "/casestudydetails"
+      "destination": "/casestudydetails.html"
     },
     {
       "source": "/contact-us",
-      "destination": "/contact"
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/career",
+      "destination": "/career.html"
     },
     {
       "source": "/services",
-      "destination": "/services"
+      "destination": "/services.html"
     },
     {
       "source": "/ai-and-machine-learning-development-services",
-      "destination": "/ai-machine-learning"
+      "destination": "/ai-machine-learning.html"
     },
     {
       "source": "/ai-cyber-security-and-compliance-services",
-      "destination": "/cyber-security"
+      "destination": "/cyber-security.html"
     }
   ]
 }
