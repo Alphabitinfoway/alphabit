@@ -1064,7 +1064,7 @@ div.container header a.contact-btn {
 /* ========== Hero Section ========== */
 .hero-section {
   width: 100%;
-  padding: 0;
+  padding: 0 0 50px 0;
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -1074,6 +1074,39 @@ div.container header a.contact-btn {
   margin-top: 14vh;
   flex-direction: column;
   justify-content: flex-end;
+  background: linear-gradient(180deg, #f9f7ff 0%, #f1ebfe 35%, #e8ddfe 75%, #dfd2fe 100%);
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 320px;
+  height: 450px;
+  background-image: radial-gradient(#9365fe 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  opacity: 0.35;
+  mask-image: radial-gradient(circle at bottom left, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at bottom left, black 30%, transparent 80%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  height: 450px;
+  background-image: radial-gradient(#9365fe 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  opacity: 0.35;
+  mask-image: radial-gradient(circle at bottom right, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at bottom right, black 30%, transparent 80%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-container {
@@ -1308,6 +1341,8 @@ div.container header a.contact-btn {
   opacity: 0;
   animation: heroFade 1s ease-out forwards;
   animation-delay: 0.8s;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 68%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 68%, rgba(0, 0, 0, 0) 100%);
 }
 
 @keyframes heroFade {
@@ -1320,6 +1355,82 @@ div.container header a.contact-btn {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Hero Bottom Content & Buttons */
+.hero-bottom-content {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  max-width: 920px;
+  margin: -25px auto 0 auto;
+  padding: 0 20px;
+}
+
+.hero-subtext {
+  font-size: 19px;
+  line-height: 1.65;
+  color: #2b2540;
+  font-weight: 500;
+  margin: 0 auto 30px auto;
+}
+
+.hero-subtext .purple-highlight {
+  color: #6128ee;
+  font-weight: 700;
+}
+
+.hero-cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-btn-primary {
+  background: #6128ee;
+  color: #ffffff !important;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 10px 25px rgba(97, 40, 238, 0.35);
+  transition: all 0.3s ease;
+}
+
+.hero-btn-primary:hover {
+  background: #4f1ecb;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(97, 40, 238, 0.45);
+}
+
+.hero-btn-secondary {
+  background: rgba(255, 255, 255, 0.85);
+  color: #231c38 !important;
+  border: 1.5px solid #6128ee;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.hero-btn-secondary:hover {
+  background: #ffffff;
+  border-color: #4f1ecb;
+  color: #6128ee !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(97, 40, 238, 0.2);
 }
 
 /* ========== counting number Section ========== */
@@ -3722,7 +3833,7 @@ div.container header a.contact-btn {
 
   /* Responsive Expertise Section styles */
   .expertise-card h3 {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   .expertise-card p {
@@ -3786,6 +3897,21 @@ div.container header a.contact-btn {
   /* Responsive adjustments for info-container */
   .info-container {
     display: none;
+  }
+
+  /* Responsive Preloader styles */
+  .minimal-loader {
+    max-width: 120px;
+  }
+
+  .minimal-loader .loader-logo {
+    width: 60px;
+  }
+
+  .loader-text {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
   }
 
   /* Responsive header styles */
@@ -3908,6 +4034,47 @@ div.container header a.contact-btn {
 
   .hero-text5 .greeting3 br {
     display: none;
+  }
+
+  /* Responsive Hero Bottom Content & Buttons */
+  .hero-section::before,
+  .hero-section::after {
+    width: 140px;
+    height: 250px;
+    opacity: 0.2;
+  }
+
+  .hero-bottom-content {
+    margin-top: 10px;
+    padding: 0 16px 20px 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-subtext {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+    padding: 0 5px;
+  }
+
+  .hero-subtext br {
+    display: none;
+  }
+
+  .hero-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 13px 20px;
+    font-size: 15px;
   }
 
   /* Counting-number Section */
@@ -4534,7 +4701,7 @@ div.container header a.contact-btn {
 
   .section-title {
     line-height: 1.2;
-    font-size: 16px !important;
+    font-size: 20px !important;
   }
 
   .solution-title {
