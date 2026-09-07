@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/alphauxx/public_html/
+    # The trailing slash on './' ensures only the contents are copied directly into public_html
+    # and prevents creating a subfolder like public_html/alphabit/
+    - /bin/rsync -av --exclude='.git*' --exclude='.github' --exclude='.vercel' --exclude='vercel.json' --exclude='README.md' ./ $DEPLOYPATH
