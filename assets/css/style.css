@@ -11027,6 +11027,12 @@ div.container header a.contact-btn {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .product-page-wrapper {
+    padding-top: 0 !important;
+  }
+}
+
 
 .product-hero {
   padding: 120px 40px 80px;
