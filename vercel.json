@@ -368,12 +368,9 @@
       "destination": "/services.html"
     },
     {
-      "source": "/ai-and-machine-learning-development-services",
-      "destination": "/ai-machine-learning.html"
-    },
-    {
       "source": "/ai-cyber-security-and-compliance-services",
       "destination": "/cyber-security.html"
     }
   ]
 }
+

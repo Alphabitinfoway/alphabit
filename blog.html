@@ -24,7 +24,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://alphabitinfoway.com/blog" />
+  <meta property="og:url" content="https://alphabitinfoway.com/blogs" />
   <meta property="og:title" content="Our Blog & Insights | Alphabit Infoway" />
   <meta property="og:description"
     content="Alphabit Infoway - Alphabit Infoway. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
@@ -32,7 +32,7 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://alphabitinfoway.com/blog" />
+  <meta name="twitter:url" content="https://alphabitinfoway.com/blogs" />
   <meta name="twitter:title" content="Our Blog & Insights | Alphabit Infoway" />
   <meta name="twitter:description"
     content="Alphabit Infoway - Alphabit Infoway. We build high-performance Web, App & AI Solutions tailored for scalable businesses." />
@@ -353,7 +353,7 @@
             <a target="_blank" href="https://x.com/AlphabitInfoway">
               <img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/twitter2.webp"
                 alt="twitter" /></a>
-            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+            <a target="_blank" href="https://www.linkedin.com/company/alphabitinfoway.com/?viewAsMember=true"><img
                 src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/linkedin2.webp" alt="linkedin" /></a>
             <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
                 src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/instagram.webp"
@@ -448,26 +448,30 @@
       async function fetchBlogs() {
         try {
           const response = await fetch(API_URL);
+          if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
           const data = await response.json();
-          // Sort latest first
-          let sortedPosts = data.sort(
+          const posts = Array.isArray(data)
+            ? data
+            : (data && Array.isArray(data.data) ? data.data : []);
+          const sortedPosts = posts.sort(
             (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
           );
 
-          if (sortedPosts.length > 0) {
-            renderFeaturedPost(sortedPosts[0]);
-            allPosts = sortedPosts.slice(1);
-          } else {
-            allPosts = [];
-            renderFeaturedPost(null);
-          }
-
+          renderFeaturedPost(sortedPosts[0]);
+          allPosts = sortedPosts.slice(1);
           renderPage(currentPage);
           setupPagination();
         } catch (error) {
           console.error("Error loading blogs:", error);
+          renderFeaturedPost(null);
+          allPosts = [];
+          renderPage(currentPage);
+          setupPagination();
         }
       }
+
+
       function renderPage(page) {
         blogContainer.innerHTML = "";
         const start = (page - 1) * postsPerPage;
@@ -550,7 +554,9 @@
         };
         paginationContainer.appendChild(nextBtn);
       }
-      fetchBlogs();
+      if (!window.__SSR_BLOG_LIST__) {
+        fetchBlogs();
+      }
     });
   </script>
 </body>

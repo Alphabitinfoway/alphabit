@@ -56,6 +56,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="icon" href="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783496703/logo.webp" type="image/x-icon" />
   <script src="./assets/js/config.js"></script>
+  <script type="application/ld+json" id="blog-article-schema">{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Blog Post | Alphabit Infoway",
+    "author": {"@type": "Organization", "name": "Alphabit Infoway"},
+    "publisher": {"@type": "Organization", "name": "Alphabit Infoway"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://alphabitinfoway.com/blogs"}
+  }</script>
   <style>
     .uxdon-showcase-frame img {
       opacity: 0;
@@ -505,7 +513,7 @@
             <a target="_blank" href="https://x.com/AlphabitInfoway">
               <img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/twitter2.webp"
                 alt="twitter" /></a>
-            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+            <a target="_blank" href="https://www.linkedin.com/company/alphabitinfoway.com/?viewAsMember=true"><img
                 src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/linkedin2.webp" alt="linkedin" /></a>
             <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
                 src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/instagram.webp"
@@ -604,6 +612,19 @@
       const metaDescription = (blog.seo && blog.seo.metaDescription) ? blog.seo.metaDescription : cleanDescription;
 
       document.title = metaTitle;
+      const schema = document.getElementById("blog-article-schema");
+      if (schema) {
+        schema.textContent = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: cleanTitle,
+          description: metaDescription,
+          author: { "@type": "Person", name: blog.author || "Alphabit Infoway" },
+          datePublished: blog.createdAt,
+          dateModified: blog.updatedAt || blog.createdAt,
+          mainEntityOfPage: { "@type": "WebPage", "@id": window.location.href }
+        });
+      }
       updateMetaTag('meta[name="description"]', 'content', metaDescription);
       updateMetaTag('meta[property="og:title"]', 'content', metaTitle);
       updateMetaTag('meta[property="og:description"]', 'content', metaDescription);

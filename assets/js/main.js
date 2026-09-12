@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo(0, 0);
   }, 150);
 
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const yearElement = document.getElementById("year");
+  if (yearElement) yearElement.textContent = new Date().getFullYear();
 
   // ======== CAROUSEL ========
   let track = document.querySelector(".carousel");
@@ -540,6 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const blogContainer = document.getElementById('blog-feed-container');
   if (!blogContainer) return;
+  if (document.getElementById('featured-post-container') || document.getElementById('pagination')) return;
 
   const API_URL = `${BASE_URL}/users/getBlogs`;
   const primaryCard = document.querySelector('.primary-article');
