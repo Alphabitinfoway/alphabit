@@ -15,33 +15,30 @@
   <meta charset="UTF-8" />
   <script>
     (function () {
-      try {
-        var hash = window.location.hash || '';
-        var href = window.location.href || '';
-        var search = window.location.search || '';
-        if (
-          hash.indexOf(':~:text=') !== -1 ||
-          href.indexOf(':~:text=') !== -1 ||
-          search.indexOf(':~:text=') !== -1 ||
-          hash.indexOf('Explore%20Us') !== -1 ||
-          hash.indexOf('Explore Us') !== -1
-        ) {
-          if (window.history && window.history.replaceState) {
-            window.history.replaceState(null, '', window.location.pathname + window.location.search);
-          } else {
-            window.location.replace('https://alphabitinfoway.com/');
-          }
-        }
-      } catch (e) { }
-    })();
+  try {
+    var hash = window.location.hash || '';
+    var href = window.location.href || '';
+    var search = window.location.search || '';
+    if (
+      hash.indexOf(':~:text=') !== -1 ||
+      href.indexOf(':~:text=') !== -1 ||
+      search.indexOf(':~:text=') !== -1 ||
+      hash.indexOf('Explore%20Us') !== -1 ||
+      hash.indexOf('Explore Us') !== -1
+    ) {
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+      } else {
+        window.location.replace('https://alphabitinfoway.com/');
+      }
+    }
+  } catch (e) { }
+})();
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Development Company in India | Alphabit Infoway</title>
 
-  <meta name="description"
-    content="Alphabit Infoway is a leading AI development company in India, providing AI automation, chatbot development, machine learning, and custom AI software solutions for businesses across India and the USA." />
-  <meta name="keywords"
-    content="AI Development company in India, AI Automation services, AI software company, AI Solutions" />
+  <meta name="description" content="Alphabit Infoway is an AI development company in India offering AI automation, chatbot development, machine learning & custom software for India & USA businesses.">
   <meta name="author" content="Alphabit Infoway" />
 
   <!-- Open Graph / Facebook -->
@@ -66,7 +63,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
-  <link rel="icon" href="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783496703/logo.webp" type="image/x-icon" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  <meta name="theme-color" content="#7143FE" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="preload" as="image" href="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783682866/AI_Model.webp"
     fetchpriority="high" />
@@ -79,6 +81,11 @@
     "url": "https://alphabitinfoway.com/",
     "logo": "https://res.cloudinary.com/dn4blj1nq/image/upload/v1783496703/logo.webp",
     "description": "AI development company offering AI automation, chatbot development, machine learning, and custom AI software solutions.",
+    "founder": {
+  "@type": "Person",
+  "name": "Poonam Tala"
+},
+"foundingDate": "2018-03-08",
     "contactPoint": {
       "@type": "ContactPoint",
       "email": "info@alphabitinfoway.com",
@@ -92,8 +99,9 @@
     },
     "areaServed": {
       "@type": "Country",
-      "name": "India"
+      "name": ["India", "USA"]
     },
+    
     "sameAs": [
       "https://www.facebook.com/alphabit.infoway.pvt.ltd/",
       "https://www.instagram.com/alphabitinfoway/",

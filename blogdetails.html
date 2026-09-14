@@ -27,7 +27,7 @@
 
   <meta name="description"
     content="Alphabit Infoway - Alphabit Infoway. We specialize in high-performance Web Development, Mobile Apps, AI Solutions, and Premium IT Services for businesses globally." />
-  <meta name="keywords"
+  
     content="Alphabit, Infoway, Alphabit Infoway, Software Development, Web Development, Mobile Apps, AI Development, IT Consulting, Premium Tech Solutions" />
   <meta name="author" content="Alphabit Infoway" />
 
@@ -54,11 +54,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
-  <link rel="icon" href="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783496703/logo.webp" type="image/x-icon" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  <meta name="theme-color" content="#7143FE" />
   <script src="./assets/js/config.js"></script>
   <script type="application/ld+json" id="blog-article-schema">{
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     "headline": "Blog Post | Alphabit Infoway",
     "author": {"@type": "Organization", "name": "Alphabit Infoway"},
     "publisher": {"@type": "Organization", "name": "Alphabit Infoway"},
@@ -544,7 +549,7 @@
       </div>
     </section>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" defer></script>
   </div>
   <script src="./assets/js/scroll-animate.js"></script>
   <script>
@@ -616,7 +621,7 @@
       if (schema) {
         schema.textContent = JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Article",
+          "@type": "BlogPosting",
           headline: cleanTitle,
           description: metaDescription,
           author: { "@type": "Person", name: blog.author || "Alphabit Infoway" },
