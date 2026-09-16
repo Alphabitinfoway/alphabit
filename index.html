@@ -67,7 +67,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  <script>
+    if (window.location.protocol !== "file:") {
+      var manifestLink = document.createElement("link");
+      manifestLink.rel = "manifest";
+      manifestLink.href = "./assets/favicon/site.webmanifest";
+      document.head.appendChild(manifestLink);
+    }
+  </script>
   <meta name="theme-color" content="#7143FE" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="preload" as="image" href="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783682866/AI_Model.webp"
@@ -186,7 +193,7 @@
   <div class="container">
     <div class="info-container">
       <div class="info-content first">
-        <h6>USA | INDIA</h6>
+        <h6 id="visitor-country">USA | INDIA</h6>
         <h6>
           <img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783496775/mail.webp" class="icons" />
           <a href="mailto:info@alphabitinfoway.com">info@alphabitinfoway.com</a>

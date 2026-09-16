@@ -66,6 +66,11 @@ body.nav-active {
   flex-wrap: wrap;
 }
 
+.visitor-country-container {
+  position: relative;
+  z-index: 1000;
+}
+
 .info-content {
   display: flex;
   align-items: center;
