@@ -1,7 +1,8 @@
-const isLocalhost = Boolean(
+// `file://` pages have an empty hostname, but they are not a local API server.
+// Use the deployed API when an HTML file is opened directly from disk.
+const isLocalhost = window.location.protocol !== 'file:' && (
   window.location.hostname === 'localhost' ||
-  window.location.hostname === '127.0.0.1' ||
-  window.location.hostname === ''
+  window.location.hostname === '127.0.0.1'
 );
 
 const BASE_URL = isLocalhost

@@ -18,9 +18,8 @@
 
   <meta name="description"
     content="Alphabit Infoway is a Rajkot-based AI, cybersecurity & full stack development company serving startups and enterprises across India. Build smarter, safer, faster." />
-  <meta name="keywords"
-    content="Alphabit, Infoway, Alphabit Infoway, Software Development, Web Development, Mobile Apps, AI Development, IT Consulting, Premium Tech Solutions" />
-  <meta name="author" content="Alphabit Infoway" />
+  
+   <meta name="author" content="Alphabit Infoway" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -45,7 +44,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
-  <link rel="icon" href="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783496703/logo.webp" type="image/x-icon" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <script>if (window.location.protocol !== "file:") { var manifestLink = document.createElement("link"); manifestLink.rel = "manifest"; manifestLink.href = "./assets/favicon/site.webmanifest"; document.head.appendChild(manifestLink); }</script>
+  <meta name="theme-color" content="#7143FE" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <!-- Structured Data (JSON-LD Schemas) -->
@@ -58,15 +62,20 @@
       "url": "https://alphabitinfoway.com",
       "logo": "https://alphabitinfoway.com/assets/images/logo.webp",
       "sameAs": [
-        "https://www.linkedin.com/company/alpabitinfoway.com/",
+        "https://www.linkedin.com/company/alphabitinfoway.com/",
         "https://www.instagram.com/alphabitinfoway/",
         "https://www.facebook.com/alphabit.infoway.pvt.ltd/"
       ],
       "areaServed": {
         "@type": "Country",
-        "name": "India"
+        "name": ["India", "USA"]
       },
       "description": "Alphabit Infoway is a Rajkot-based AI development, cybersecurity, and full-stack web and mobile application development company."
+   "founder": {
+  "@type": "Person",
+  "name": "Poonam Tala"
+},
+"foundingDate": "2018-03-08",
     },
     {
       "@context": "https://schema.org",
@@ -172,6 +181,28 @@
     }
   ]
   </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://alphabitinfoway.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://alphabitinfoway.com/services"
+    }
+  ]
+}
+</script>
+
 </head>
 
 <body>
@@ -202,8 +233,8 @@
         <span></span>
       </div>
       <nav class="navbar">
-        <h6><a href="/">Home</a></h6>
-        <h6 class="dropdown">
+        <div><a href="/">Home</a></div>
+        <div class="dropdown">
           <a href="/services" class="dropdown-toggle">Services <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
           <div class="submenu-panel">
             <div class="panel-header">
@@ -221,8 +252,8 @@
                   Mobile App & Product Design</a></li>
             </ul>
           </div>
-        </h6>
-        <h6 class="dropdown">
+        </div>
+        <div class="dropdown">
           <a href="/#products" class="dropdown-toggle">Products <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
           <div class="submenu-panel">
             <div class="panel-header">
@@ -238,8 +269,8 @@
               <li><a href="/dhiyodha-network"><i class="fa-solid fa-circle-nodes"></i> Dhiyodha Network</a></li>
             </ul>
           </div>
-        </h6>
-        <h6 class="dropdown">
+        </div>
+        <div class="dropdown">
           <a class="dropdown-toggle">Technology <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
           <div class="submenu-panel mega-panel">
             <div class="panel-header">
@@ -391,10 +422,10 @@
               </div>
             </div>
           </div>
-        </h6>
-        <h6><a href="/aboutus">About</a></h6>
-        <h6><a href="/hire-developers">Hire Developers</a></h6>
-        <h6 class="dropdown">
+        </div>
+        <div><a href="/aboutus">About</a></div>
+        <div><a href="/hire-developers">Hire Developers</a></div>
+        <div class="dropdown">
           <a href="#" class="dropdown-toggle">Insights <i class="fa-solid fa-chevron-down toggle-icon"></i></a>
           <div class="submenu-panel">
             <div class="panel-header">
@@ -407,7 +438,7 @@
               <li><a href="/career"><i class="fa-solid fa-user-tie"></i> Career</a></li>
             </ul>
           </div>
-        </h6>
+        </div>
         <a href="/contact-us" class="contact-btn mobile-contact-btn">Contact Us</a>
       </nav>
       <a href="/contact-us" class="contact-btn desktop-contact-btn">Contact Us</a>
@@ -440,7 +471,7 @@
     <!-- Counting-number Section -->
     <section class="counting-section">
       <div class="counting-item">
-        <h2 class="counting-number" data-target="10" data-suffix="+">10+</h2>
+        <h2 class="counting-number" data-target="8" data-suffix="+">8+</h2>
         <h6 class="counting-text">YEARS OF EXPERIENCE</h6>
       </div>
       <div class="counting-item">
@@ -456,7 +487,7 @@
     <!-- second section -->
     <div class="premium-offerings-wrapper">
       <div class="offerings-header-container">
-        <h1 class="offerings-main-heading">Our Exclusive Services</h1>
+        <h2 class="offerings-main-heading">Our Exclusive Services</h2>
         <p class="offerings-intro-text">
           We partner with founders who want more than a vendor — they want a team that adds real, measurable value to
           their business.
@@ -790,7 +821,7 @@
             <a target="_blank" href="https://x.com/AlphabitInfoway">
               <img src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/twitter2.webp"
                 alt="twitter" /></a>
-            <a target="_blank" href="https://www.linkedin.com/company/alpabitinfoway.com/?viewAsMember=true"><img
+            <a target="_blank" href="https://www.linkedin.com/company/alphabitinfoway.com/?viewAsMember=true"><img
                 src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/linkedin2.webp" alt="linkedin" /></a>
             <a target="_blank" href="https://www.instagram.com/alphabitinfoway/"><img
                 src="https://res.cloudinary.com/dn4blj1nq/image/upload/v1783683215/instagram.webp"
@@ -803,7 +834,7 @@
               <span class="hand">👋</span> Hey Innovator,
             </p>
             <h2 class="footer-title"><span> LET'S</span> TALK <br />WITH US</h2>
-            <p class="footer-email">info@alphabitinfoway.com</p>
+            <a class="footer-email" href="mailto:info@alphabitinfoway.com">info@alphabitinfoway.com</a>
           </div>
         </div>
         <div class="footer-right">
@@ -821,7 +852,7 @@
       </div>
     </section>
     <script src="./assets/js/config.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" defer></script>
   </div>
   <script src="./assets/js/scroll-animate.js"></script>
 </body>

@@ -8,3 +8,5 @@ Host: https://alphabitinfoway.com/
 
 # Sitemap location
 Sitemap: https://alphabitinfoway.com/sitemap.xml
+Sitemap: https://alphabitinfoway.com/sitemap-blogs.xml
+Sitemap: https://alphabitinfoway.com/sitemap-case-studies.xml

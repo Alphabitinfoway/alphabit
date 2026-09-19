@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
               <div class="feed-card-footer">
                   <p>${cleanTitle}</p>
-                  <a href="blog/${postSlug}" class="feed-arrow">↗</a>
+                  <a href="blogs/${postSlug}" class="feed-arrow">↗</a>
               </div>
           `;
 

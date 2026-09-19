@@ -19,7 +19,7 @@
         }
       }
     }
-  } catch (e) {}
+  } catch (e) { }
 })();
 
 function slugify(text) {
@@ -50,7 +50,14 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo(0, 0);
   }, 150);
 
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const yearElement = document.getElementById("year");
+  if (yearElement) yearElement.textContent = new Date().getFullYear();
+
+  document.querySelectorAll(".footer-links a").forEach((link) => {
+    const label = link.textContent.trim().toLowerCase();
+    if (label === "privacy") link.href = "./privacy.html";
+    if (label === "terms & condition") link.href = "./terms-and-conditions.html";
+  });
 
   // ======== CAROUSEL ========
   let track = document.querySelector(".carousel");
@@ -429,7 +436,7 @@ if (toggle && navbar) {
     navbar.classList.toggle('active');
     document.documentElement.classList.toggle('nav-active', isActive);
     document.body.classList.toggle('nav-active', isActive);
-    
+
     if (!isActive) {
       closeAllSubmenus();
     }
@@ -441,10 +448,10 @@ if (toggle && navbar) {
       if (window.innerWidth <= 768) {
         e.preventDefault();
         e.stopPropagation();
-        
+
         const parentDropdown = btn.closest('.dropdown');
         const submenuPanel = parentDropdown.querySelector('.submenu-panel');
-        
+
         if (submenuPanel) {
           parentDropdown.classList.add('active');
           submenuPanel.classList.add('slide-in');
@@ -460,17 +467,17 @@ if (toggle && navbar) {
     backBtn.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
-      
+
       const panel = backBtn.closest('.submenu-panel');
       const parentDropdown = backBtn.closest('.dropdown');
-      
+
       if (panel) {
         panel.classList.remove('slide-in');
       }
       if (parentDropdown) {
         parentDropdown.classList.remove('active');
       }
-      
+
       const openPanels = document.querySelectorAll('.submenu-panel.slide-in');
       if (openPanels.length === 0) {
         if (window.innerWidth <= 768) {
@@ -489,10 +496,10 @@ if (toggle && navbar) {
         const tabId = item.getAttribute('data-tab');
         const container = item.closest('.mega-menu-container');
         if (!container) return;
-        
+
         container.querySelectorAll('.sidebar-item').forEach(sib => sib.classList.remove('active'));
         item.classList.add('active');
-        
+
         container.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
         const targetPane = container.querySelector(`#${tabId}`);
         if (targetPane) {
@@ -500,7 +507,7 @@ if (toggle && navbar) {
         }
       }
     };
-    
+
     item.addEventListener('mouseenter', handleTabSwitch);
     item.addEventListener('click', (e) => {
       if (window.innerWidth > 768) {
@@ -540,6 +547,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const blogContainer = document.getElementById('blog-feed-container');
   if (!blogContainer) return;
+  if (document.getElementById('featured-post-container') || document.getElementById('pagination')) return;
 
   const API_URL = `${BASE_URL}/users/getBlogs`;
   const primaryCard = document.querySelector('.primary-article');
@@ -855,7 +863,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Sticky Navbar logic
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   if (header) {
     if (window.scrollY > 100) {
@@ -868,3 +876,42 @@ window.addEventListener("scroll", function() {
 
 
 
+(function () {
+  function detectVisitorCountry() {
+    const countryElement = document.getElementById("visitor-country");
+
+    if (!countryElement) return;
+
+    fetch("https://ipwho.is/")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Country API request failed");
+        }
+
+        return response.json();
+      })
+      .then(data => {
+        const countryCode =
+          data.success && typeof data.country_code === "string"
+            ? data.country_code.toUpperCase()
+            : "";
+
+        if (countryCode === "IN") {
+          countryElement.textContent = "🇮🇳 India";
+        } else if (countryCode === "US") {
+          countryElement.textContent = "🇺🇸 USA";
+        } else {
+          countryElement.textContent = "USA | INDIA";
+        }
+      })
+      .catch(() => {
+        countryElement.textContent = "USA | INDIA";
+      });
+  }
+ 
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", detectVisitorCountry);
+  } else {
+    detectVisitorCountry();
+  }
+})();
