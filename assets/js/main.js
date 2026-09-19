@@ -53,6 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearElement = document.getElementById("year");
   if (yearElement) yearElement.textContent = new Date().getFullYear();
 
+  document.querySelectorAll(".footer-links a").forEach((link) => {
+    const label = link.textContent.trim().toLowerCase();
+    if (label === "privacy") link.href = "./privacy.html";
+    if (label === "terms & condition") link.href = "./terms-and-conditions.html";
+  });
+
   // ======== CAROUSEL ========
   let track = document.querySelector(".carousel");
 
